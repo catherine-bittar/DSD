@@ -1,0 +1,36 @@
+|g21_lab1
+AeqB <= <GND>
+A[0] => g21_comp7:inst.A[0]
+A[1] => g21_comp7:inst.A[1]
+A[2] => g21_comp7:inst.A[2]
+A[3] => g21_comp7:inst.A[3]
+A[4] => g21_comp7:inst.A[4]
+A[5] => g21_comp7:inst.A[5]
+A[6] => g21_comp7:inst.A[6]
+B[0] => g21_comp7:inst.B[0]
+B[1] => g21_comp7:inst.B[1]
+B[2] => g21_comp7:inst.B[2]
+B[3] => g21_comp7:inst.B[3]
+B[4] => g21_comp7:inst.B[4]
+B[5] => g21_comp7:inst.B[5]
+B[6] => g21_comp7:inst.B[6]
+
+
+|g21_lab1|g21_comp7:inst
+AeqB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst6.IN0
+A[1] => inst5.IN0
+A[2] => inst4.IN0
+A[3] => inst3.IN0
+A[4] => inst2.IN0
+A[5] => inst1.IN0
+A[6] => inst.IN0
+B[0] => inst6.IN1
+B[1] => inst5.IN1
+B[2] => inst4.IN1
+B[3] => inst3.IN1
+B[4] => inst2.IN1
+B[5] => inst1.IN1
+B[6] => inst.IN1
+
+

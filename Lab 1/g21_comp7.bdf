@@ -587,8 +587,3 @@ applicable agreement for further details.
 	(pt 552 360)
 	(pt 784 360)
 )
-(connector
-	(pt 784 360)
-	(pt 800 360)
-)
-(junction (pt 784 360))
