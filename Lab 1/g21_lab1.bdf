@@ -97,10 +97,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 536 248)
-	(pt 576 248)
-)
-(connector
 	(text "A[6..0]" (rect 362 232 395 244)(font "Arial" ))
 	(pt 416 248)
 	(pt 320 248)
@@ -111,4 +107,9 @@ applicable agreement for further details.
 	(pt 416 264)
 	(pt 320 264)
 	(bus)
+)
+(connector
+	(text "AeqB" (rect 546 232 571 244)(font "Arial" ))
+	(pt 536 248)
+	(pt 576 248)
 )

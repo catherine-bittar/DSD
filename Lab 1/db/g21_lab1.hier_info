@@ -1,5 +1,5 @@
 |g21_lab1
-AeqB <= <GND>
+AeqB <= g21_comp7:inst.AeqB
 A[0] => g21_comp7:inst.A[0]
 A[1] => g21_comp7:inst.A[1]
 A[2] => g21_comp7:inst.A[2]
