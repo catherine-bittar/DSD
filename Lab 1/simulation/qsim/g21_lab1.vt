@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/22/2017 09:57:59"
+// Generated on "09/22/2017 14:09:08"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g21_lab1
 // 
@@ -172,132 +172,134 @@ g21_lab1 i1 (
 // A[ 6 ]
 initial
 begin
-	repeat(39)
+	repeat(78)
 	begin
 		A[6] = 1'b0;
-		A[6] = #1280000 1'b1;
-		# 1280000;
+		A[6] = #640000 1'b1;
+		# 640000;
 	end
 	A[6] = 1'b0;
 end 
 // A[ 5 ]
 initial
 begin
-	repeat(78)
+	repeat(156)
 	begin
 		A[5] = 1'b0;
-		A[5] = #640000 1'b1;
-		# 640000;
+		A[5] = #320000 1'b1;
+		# 320000;
 	end
 	A[5] = 1'b0;
 end 
 // A[ 4 ]
 initial
 begin
-	repeat(156)
+	repeat(312)
 	begin
 		A[4] = 1'b0;
-		A[4] = #320000 1'b1;
-		# 320000;
+		A[4] = #160000 1'b1;
+		# 160000;
 	end
 	A[4] = 1'b0;
 end 
 // A[ 3 ]
-initial
+always
 begin
-	repeat(312)
-	begin
-		A[3] = 1'b0;
-		A[3] = #160000 1'b1;
-		# 160000;
-	end
 	A[3] = 1'b0;
+	A[3] = #80000 1'b1;
+	#80000;
 end 
 // A[ 2 ]
 always
 begin
 	A[2] = 1'b0;
-	A[2] = #80000 1'b1;
-	#80000;
+	A[2] = #40000 1'b1;
+	#40000;
 end 
 // A[ 1 ]
 always
 begin
 	A[1] = 1'b0;
-	A[1] = #40000 1'b1;
-	#40000;
+	A[1] = #20000 1'b1;
+	#20000;
 end 
 // A[ 0 ]
 always
 begin
 	A[0] = 1'b0;
-	A[0] = #20000 1'b1;
-	#20000;
+	A[0] = #10000 1'b1;
+	#10000;
 end 
 // B[ 6 ]
 initial
 begin
 	B[6] = 1'b0;
+	B[6] = #81920000 1'b1;
 end 
 // B[ 5 ]
 initial
 begin
 	B[5] = 1'b0;
-	B[5] = #81920000 1'b1;
+	B[5] = #40960000 1'b1;
+	B[5] = #40960000 1'b0;
 end 
 // B[ 4 ]
 initial
 begin
+	repeat(2)
+	begin
+		B[4] = 1'b0;
+		B[4] = #20480000 1'b1;
+		# 20480000;
+	end
 	B[4] = 1'b0;
-	B[4] = #40960000 1'b1;
-	B[4] = #40960000 1'b0;
 end 
 // B[ 3 ]
 initial
 begin
-	repeat(2)
+	repeat(4)
 	begin
 		B[3] = 1'b0;
-		B[3] = #20480000 1'b1;
-		# 20480000;
+		B[3] = #10240000 1'b1;
+		# 10240000;
 	end
 	B[3] = 1'b0;
+	B[3] = #10240000 1'b1;
 end 
 // B[ 2 ]
 initial
 begin
-	repeat(4)
+	repeat(9)
 	begin
 		B[2] = 1'b0;
-		B[2] = #10240000 1'b1;
-		# 10240000;
+		B[2] = #5120000 1'b1;
+		# 5120000;
 	end
 	B[2] = 1'b0;
-	B[2] = #10240000 1'b1;
+	B[2] = #5120000 1'b1;
 end 
 // B[ 1 ]
 initial
 begin
-	repeat(9)
+	repeat(19)
 	begin
 		B[1] = 1'b0;
-		B[1] = #5120000 1'b1;
-		# 5120000;
+		B[1] = #2560000 1'b1;
+		# 2560000;
 	end
 	B[1] = 1'b0;
-	B[1] = #5120000 1'b1;
+	B[1] = #2560000 1'b1;
 end 
 // B[ 0 ]
 initial
 begin
-	repeat(19)
+	repeat(39)
 	begin
 		B[0] = 1'b0;
-		B[0] = #2560000 1'b1;
-		# 2560000;
+		B[0] = #1280000 1'b1;
+		# 1280000;
 	end
 	B[0] = 1'b0;
-	B[0] = #2560000 1'b1;
 end 
 
 g21_lab1_vlg_sample_tst tb_sample (

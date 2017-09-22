@@ -24,7 +24,7 @@
 # Loading work.g21_lab1_vlg_sample_tst
 # Loading work.g21_lab1_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port AeqB :: @time = 20660000.000 ps
+# ERROR! Vector Mismatch for output port AeqB :: @time = 20650000.000 ps
 #      Expected value = 0
 #      Real value = 1
 #           1 mismatched vectors : Simulation failed !
