@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab1
-Thu Sep 21 14:21:42 2017
+Thu Sep 21 19:15:11 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 14:21:42 2017           ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 21 19:15:11 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab1                                        ;
 ; Top-level Entity Name              ; g21_lab1                                        ;
@@ -234,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Sep 21 14:21:40 2017
+    Info: Processing started: Thu Sep 21 19:15:09 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab1 -c g21_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_comp7.bdf
@@ -251,7 +251,7 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21061): Implemented 5 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 479 megabytes
-    Info: Processing ended: Thu Sep 21 14:21:42 2017
+    Info: Processing ended: Thu Sep 21 19:15:11 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

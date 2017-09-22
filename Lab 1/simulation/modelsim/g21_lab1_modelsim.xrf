@@ -2,6 +2,7 @@ vendor_name = ModelSim
 source_file = 1, C:/Users/bitta/Documents/GitHub/DSD/Lab 1/g21_comp7.bdf
 source_file = 1, C:/Users/bitta/Documents/GitHub/DSD/Lab 1/g21_lab1.bdf
 source_file = 1, C:/Users/bitta/Documents/GitHub/DSD/Lab 1/g21_lab1.vwf
+source_file = 1, g21_lab1_.vwf
 source_file = 1, C:/Users/bitta/Documents/GitHub/DSD/Lab 1/db/g21_lab1.cbx.xml
 design_name = g21_lab1
 instance = comp, \B[6]~I , B[6], g21_lab1, 1

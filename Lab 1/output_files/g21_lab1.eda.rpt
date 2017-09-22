@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g21_lab1
-Thu Sep 21 15:08:29 2017
+Fri Sep 22 09:58:01 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Sep 21 15:08:29 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 22 09:58:01 2017 ;
 ; Revision Name             ; g21_lab1                              ;
 ; Top-level Entity Name     ; g21_lab1                              ;
 ; Family                    ; Cyclone II                            ;
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Sep 21 15:08:28 2017
+    Info: Processing started: Fri Sep 22 09:58:00 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1
 Info (204019): Generated file g21_lab1.vo in folder "C:/Users/bitta/Documents/GitHub/DSD/Lab 1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 414 megabytes
-    Info: Processing ended: Thu Sep 21 15:08:29 2017
+    Info: Processing ended: Fri Sep 22 09:58:01 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -8,7 +8,7 @@ Z1 !s100 _3<<bm27Bn`0Vzm3VPlE12
 Z2 ICmQc[[JBI0Qb4F=Na_XR_2
 Z3 Vhc<^c4XCCMmMXM?F3:g0Z2
 Z4 dC:\Users\bitta\Documents\GitHub\DSD\Lab 1\simulation\qsim
-Z5 w1506020909
+Z5 w1506088681
 Z6 8g21_lab1.vo
 Z7 Fg21_lab1.vo
 L0 31
@@ -19,16 +19,16 @@ Z9 !s90 -work|work|g21_lab1.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1506020910.114000
+Z11 !s108 1506088682.969000
 Z12 !s107 g21_lab1.vo|
 !s101 -O0
 vg21_lab1_vlg_check_tst
 !i10b 1
-Z13 !s100 Q0T5gMnaQdngN:lBdlPVZ1
-Z14 I:a[aI4;XSaz73<Z=VaE1I3
+Z13 !s100 ;4f[fU;QWbM4=Pc1PHXk_3
+Z14 I[]^Jh4cfTYJVLfn8_`B3k2
 Z15 VVEWAf2a4>EeS70LW8jG203
 R4
-Z16 w1506020906
+Z16 w1506088679
 Z17 8g21_lab1.vt
 Z18 Fg21_lab1.vt
 L0 59
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1506020910.296000
+Z19 !s108 1506088683.133000
 Z20 !s107 g21_lab1.vt|
 Z21 !s90 -work|work|g21_lab1.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R21
 R10
 vg21_lab1_vlg_vec_tst
 !i10b 1
-!s100 :mOhSUQg4LaoZmF;0O4n:3
-I48UdBfhWMcz?`nWgb`ICi1
-Z25 VbC5R@O3^1GO7i2=X3^5F_2
+Z25 !s100 B^S`mSbcfiO7igNleSWF<1
+Z26 I^eMcOUbn578YiKklDl0^e1
+Z27 VbC5R@O3^1GO7i2=X3^5F_2
 R4
 R16
 R17
 R18
-Z26 L0 156
+Z28 L0 155
 R8
 r1
 !s85 0
