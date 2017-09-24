@@ -24,9 +24,6 @@
 # Loading work.g21_lab1_vlg_sample_tst
 # Loading work.g21_lab1_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port AeqB :: @time = 20650000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#           1 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab1.vt(151)
+# Simulation passed !
+# ** Note: $finish    : g21_lab1.vt(289)
 #    Time: 100 us  Iteration: 0  Instance: /g21_lab1_vlg_vec_tst/tb_out
