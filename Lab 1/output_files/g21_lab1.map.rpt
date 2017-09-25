@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab1
-Mon Sep 25 16:02:53 2017
+Mon Sep 25 16:54:27 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Sep 25 16:02:53 2017               ;
+; Analysis & Synthesis Status        ; Failed - Mon Sep 25 16:54:27 2017               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab1                                        ;
 ; Top-level Entity Name              ; g21_lab1                                        ;
@@ -154,7 +154,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 25 16:02:53 2017
+    Info: Processing started: Mon Sep 25 16:54:26 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab1 -c g21_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_comp7.bdf
@@ -165,22 +165,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file g21_add
     Info (12023): Found entity 1: g21_adder
 Info (12021): Found 1 design units, including 1 entities, in source file g21_1bitadder.bdf
     Info (12023): Found entity 1: g21_1bitAdder
-Info (12021): Found 1 design units, including 1 entities, in source file modulo13.bdf
-    Info (12023): Found entity 1: modulo13
+Warning (12019): Can't analyze file -- file modulo13.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file g21_modulo_13.bdf
     Info (12023): Found entity 1: g21_Modulo_13
 Info (12127): Elaborating entity "g21_lab1" for the top level hierarchy
-Warning (275009): Pin "in_1" not connected
-Warning (275009): Pin "in_2" not connected
 Info (12128): Elaborating entity "g21_comp7" for hierarchy "g21_comp7:inst"
 Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_adder:inst1"
 Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_adder:inst1|g21_1bitAdder:inst30"
-Error (12009): Node "Ground[1]" is missing source
-Error (12009): Node "Ground[0]" is missing source
-Error (12009): Node "A7" is missing source
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 3 warnings
+Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst4"
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[1]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[0]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[2]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[4]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[3]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[6]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|GROUND[5]" is missing source
+Error (12009): Node "g21_Modulo_13:inst4|VCC[0]" is missing source
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 8 errors, 2 warnings
     Error: Peak virtual memory: 479 megabytes
-    Error: Processing ended: Mon Sep 25 16:02:54 2017
+    Error: Processing ended: Mon Sep 25 16:54:27 2017
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
