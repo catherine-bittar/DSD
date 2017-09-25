@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 112 224 280 240)
+	(rect 96 72 264 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "B[6..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 112 184 280 200)
+	(rect 96 32 264 48)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "A[6..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 120 416 288 432)
+	(rect 64 408 232 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in_1[7..0]" (rect 5 0 52 12)(font "Arial" ))
+	(text "in_2[7..0]" (rect 5 0 51 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 112 464 280 480)
+	(rect 64 360 232 376)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in_2[7..0]" (rect 5 0 52 12)(font "Arial" ))
+	(text "in_1[7..0]" (rect 5 0 51 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 696 176 872 192)
+	(rect 688 40 864 56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "AeqB" (rect 90 0 115 12)(font "Arial" ))
 	(pt 0 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 840 448 1016 464)
+	(rect 832 448 1008 464)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
@@ -132,7 +132,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 416 216 536 312)
+	(rect 464 80 584 176)
 	(text "g21_comp7" (rect 5 0 71 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -161,7 +161,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 432 400 584 496)
+	(rect 408 344 560 440)
 	(text "g21_adder" (rect 5 0 66 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -197,42 +197,42 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "A[6..0]" (rect 362 232 395 244)(font "Arial" ))
-	(pt 416 248)
-	(pt 320 248)
+	(text "A[6..0]" (rect 410 96 443 108)(font "Arial" ))
+	(pt 464 112)
+	(pt 368 112)
 	(bus)
 )
 (connector
-	(text "B[6..0]" (rect 330 248 363 260)(font "Arial" ))
-	(pt 416 264)
-	(pt 320 264)
+	(text "B[6..0]" (rect 378 112 411 124)(font "Arial" ))
+	(pt 464 128)
+	(pt 368 128)
 	(bus)
 )
 (connector
-	(text "AeqB" (rect 546 232 571 244)(font "Arial" ))
-	(pt 536 248)
-	(pt 576 248)
+	(text "AeqB" (rect 594 96 619 108)(font "Arial" ))
+	(pt 584 112)
+	(pt 624 112)
 )
 (connector
-	(text "in_1[7..0]" (rect 394 416 440 428)(font "Arial" ))
-	(pt 432 432)
-	(pt 384 432)
+	(text "out[7..0]" (rect 570 360 611 372)(font "Arial" ))
+	(pt 560 376)
+	(pt 600 376)
 	(bus)
 )
 (connector
-	(text "in_2[7..0]" (rect 394 432 440 444)(font "Arial" ))
-	(pt 432 448)
-	(pt 384 448)
+	(text "Cout" (rect 570 376 593 388)(font "Arial" ))
+	(pt 560 392)
+	(pt 592 392)
+)
+(connector
+	(text "A[7..0]" (rect 322 384 355 396)(font "Arial" ))
+	(pt 408 392)
+	(pt 360 392)
 	(bus)
 )
 (connector
-	(text "out[7..0]" (rect 594 416 635 428)(font "Arial" ))
-	(pt 584 432)
-	(pt 624 432)
+	(text "A[5..0], Ground[1..0]" (rect 266 360 367 372)(font "Arial" ))
+	(pt 408 376)
+	(pt 360 376)
 	(bus)
-)
-(connector
-	(text "Cout" (rect 594 432 617 444)(font "Arial" ))
-	(pt 584 448)
-	(pt 616 448)
 )
