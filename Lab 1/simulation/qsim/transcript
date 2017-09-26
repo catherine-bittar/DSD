@@ -24,6 +24,18 @@
 # Loading work.g21_lab1_vlg_sample_tst
 # Loading work.g21_lab1_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
-# ** Note: $finish    : g21_lab1.vt(289)
+# ERROR! Vector Mismatch for output port Amod13[0] :: @time = 4000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000001
+# ERROR! Vector Mismatch for output port Amod13[1] :: @time = 6000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000010
+# ERROR! Vector Mismatch for output port Amod13[2] :: @time = 10000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000100
+# ERROR! Vector Mismatch for output port Amod13[3] :: @time = 18000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00001000
+#           4 mismatched vectors : Simulation failed !
+# ** Note: $finish    : g21_lab1.vt(309)
 #    Time: 100 us  Iteration: 0  Instance: /g21_lab1_vlg_vec_tst/tb_out

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab1
-Tue Sep 26 10:06:53 2017
+Tue Sep 26 14:13:36 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 26 10:06:53 2017           ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 26 14:13:36 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab1                                        ;
 ; Top-level Entity Name              ; g21_lab1                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 45                                              ;
-;     Total combinational functions  ; 45                                              ;
+; Total logic elements               ; 48                                              ;
+;     Total combinational functions  ; 48                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 54                                              ;
+; Total pins                         ; 57                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -171,27 +171,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 45     ;
+; Estimated Total logic elements              ; 48     ;
 ;                                             ;        ;
-; Total combinational functions               ; 45     ;
+; Total combinational functions               ; 48     ;
 ; Logic element usage by number of LUT inputs ;        ;
 ;     -- 4 input functions                    ; 28     ;
-;     -- 3 input functions                    ; 10     ;
-;     -- <=2 input functions                  ; 7      ;
+;     -- 3 input functions                    ; 12     ;
+;     -- <=2 input functions                  ; 8      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 45     ;
+;     -- normal mode                          ; 48     ;
 ;     -- arithmetic mode                      ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
 ;     -- Dedicated logic registers            ; 0      ;
 ;     -- I/O registers                        ; 0      ;
 ;                                             ;        ;
-; I/O pins                                    ; 54     ;
+; I/O pins                                    ; 57     ;
 ; Embedded Multiplier 9-bit elements          ; 0      ;
 ; Maximum fan-out node                        ; Ain[4] ;
-; Maximum fan-out                             ; 12     ;
-; Total fan-out                               ; 174    ;
+; Maximum fan-out                             ; 13     ;
+; Total fan-out                               ; 185    ;
 ; Average fan-out                             ; 1.76   ;
 +---------------------------------------------+--------+
 
@@ -201,27 +201,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; |g21_lab1                       ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |g21_lab1                                                          ; work         ;
-;    |g21_Modulo_13:inst2|        ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2                                      ; work         ;
-;       |g21_adder:inst1|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1                      ; work         ;
-;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26 ; work         ;
-;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27 ; work         ;
-;          |g21_1bitAdder:inst28| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28 ; work         ;
-;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29 ; work         ;
-;       |g21_adder:inst3|         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3                      ; work         ;
-;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26 ; work         ;
-;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27 ; work         ;
-;          |g21_1bitAdder:inst28| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28 ; work         ;
-;       |g21_adder:inst4|         ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4                      ; work         ;
-;          |g21_1bitAdder:inst25| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25 ; work         ;
-;          |g21_1bitAdder:inst26| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26 ; work         ;
-;       |g21_adder:inst5|         ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5                      ; work         ;
-;          |g21_1bitAdder:inst25| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25 ; work         ;
-;          |g21_1bitAdder:inst26| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26 ; work         ;
-;          |g21_1bitAdder:inst27| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27 ; work         ;
-;          |g21_1bitAdder:inst28| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28 ; work         ;
-;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29 ; work         ;
-;          |g21_1bitAdder:inst30| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30 ; work         ;
+; |g21_lab1                       ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |g21_lab1                                                          ; work         ;
+;    |g21_Modulo_13:inst5|        ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5                                      ; work         ;
+;       |g21_adder:inst1|         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1                      ; work         ;
+;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1|g21_1bitAdder:inst26 ; work         ;
+;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1|g21_1bitAdder:inst27 ; work         ;
+;          |g21_1bitAdder:inst28| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1|g21_1bitAdder:inst28 ; work         ;
+;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1|g21_1bitAdder:inst29 ; work         ;
+;          |g21_1bitAdder:inst30| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst1|g21_1bitAdder:inst30 ; work         ;
+;       |g21_adder:inst3|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst3                      ; work         ;
+;          |g21_1bitAdder:inst28| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst3|g21_1bitAdder:inst28 ; work         ;
+;       |g21_adder:inst4|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst4                      ; work         ;
+;          |g21_1bitAdder:inst25| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst4|g21_1bitAdder:inst25 ; work         ;
+;       |g21_adder:inst5|         ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5                      ; work         ;
+;          |g21_1bitAdder:inst24| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst24 ; work         ;
+;          |g21_1bitAdder:inst25| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst25 ; work         ;
+;          |g21_1bitAdder:inst26| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst26 ; work         ;
+;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst27 ; work         ;
+;          |g21_1bitAdder:inst28| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst28 ; work         ;
+;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst29 ; work         ;
+;          |g21_1bitAdder:inst30| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst30 ; work         ;
+;          |g21_1bitAdder:inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst5|g21_adder:inst5|g21_1bitAdder:inst   ; work         ;
 ;    |g21_adder:inst1|            ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1                                          ; work         ;
 ;       |g21_1bitAdder:inst24|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst24                     ; work         ;
 ;       |g21_1bitAdder:inst25|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst25                     ; work         ;
@@ -266,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Sep 26 10:06:48 2017
+    Info: Processing started: Tue Sep 26 14:13:34 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab1 -c g21_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_comp7.bdf
@@ -284,17 +284,17 @@ Info (12127): Elaborating entity "g21_lab1" for the top level hierarchy
 Info (12128): Elaborating entity "g21_comp7" for hierarchy "g21_comp7:inst"
 Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_adder:inst1"
 Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_adder:inst1|g21_1bitAdder:inst30"
-Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst2"
+Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst5"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 105 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 36 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 45 logic cells
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 48 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 490 megabytes
-    Info: Processing ended: Tue Sep 26 10:06:53 2017
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 479 megabytes
+    Info: Processing ended: Tue Sep 26 14:13:36 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

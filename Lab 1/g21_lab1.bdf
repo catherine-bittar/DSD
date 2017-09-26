@@ -149,9 +149,25 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 616 640 792 656)
+	(rect 720 656 896 672)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Amod13[7..0]" (rect 90 0 156 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 640 896 656)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "floor[2..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -231,7 +247,7 @@ applicable agreement for further details.
 (symbol
 	(rect 408 616 560 712)
 	(text "g21_Modulo_13" (rect 5 0 94 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -242,9 +258,16 @@ applicable agreement for further details.
 	(port
 		(pt 152 32)
 		(output)
-		(text "modA[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "modA[7..0]" (rect 70 27 131 41)(font "Arial" (font_size 8)))
+		(text "floor[2..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "floor[2..0]" (rect 77 27 131 41)(font "Arial" (font_size 8)))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "modA[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "modA[7..0]" (rect 70 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 136 80))
@@ -284,11 +307,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 560 648)
-	(pt 616 648)
-	(bus)
-)
-(connector
 	(text "in_2[7..0]" (rect 306 384 352 396)(font "Arial" ))
 	(pt 408 392)
 	(pt 360 392)
@@ -298,5 +316,15 @@ applicable agreement for further details.
 	(text "in_1[7..0]" (rect 314 360 360 372)(font "Arial" ))
 	(pt 408 376)
 	(pt 360 376)
+	(bus)
+)
+(connector
+	(pt 560 664)
+	(pt 720 664)
+	(bus)
+)
+(connector
+	(pt 560 648)
+	(pt 720 648)
 	(bus)
 )

@@ -51,6 +51,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 720 216 896 232)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "floor[2..0]" (rect 90 0 138 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 382 80 534 176)
 	(text "g21_adder" (rect 5 0 66 14)(font "Arial" (font_size 8)))
@@ -419,12 +435,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[5..0],Ground[1..0]" (rect 538 584 635 596)(font "Arial" ))
-	(pt 656 608)
-	(pt 616 608)
-	(bus)
-)
-(connector
 	(text "Ground[6..0],VCC[0]" (rect 210 616 311 628)(font "Arial" ))
 	(pt 384 624)
 	(pt 328 624)
@@ -446,5 +456,27 @@ applicable agreement for further details.
 	(text "VCC[0]" (rect 208 519 220 555)(font "Arial" )(vertical))
 	(pt 224 512)
 	(pt 224 560)
+	(bus)
+)
+(connector
+	(pt 720 224)
+	(pt 712 224)
+	(bus)
+)
+(connector
+	(pt 712 224)
+	(pt 712 232)
+	(bus)
+)
+(connector
+	(text "Cout1,out1[7..6]" (rect 608 216 688 228)(font "Arial" ))
+	(pt 712 232)
+	(pt 608 232)
+	(bus)
+)
+(connector
+	(text "Ground[1..0],A[5..0]" (rect 538 584 635 596)(font "Arial" ))
+	(pt 656 608)
+	(pt 616 608)
 	(bus)
 )

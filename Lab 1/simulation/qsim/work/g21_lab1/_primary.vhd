@@ -8,6 +8,9 @@ entity g21_lab1 is
         Cout            : out    vl_logic;
         in_1            : in     vl_logic_vector(7 downto 0);
         in_2            : in     vl_logic_vector(7 downto 0);
+        Amod13          : out    vl_logic_vector(7 downto 0);
+        Ain             : in     vl_logic_vector(5 downto 0);
+        floor           : out    vl_logic_vector(2 downto 0);
         \out\           : out    vl_logic_vector(7 downto 0)
     );
 end g21_lab1;

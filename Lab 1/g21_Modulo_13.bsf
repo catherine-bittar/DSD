@@ -33,9 +33,16 @@ applicable agreement for further details.
 	(port
 		(pt 152 32)
 		(output)
-		(text "modA[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "modA[7..0]" (rect 70 27 131 41)(font "Arial" (font_size 8)))
+		(text "floor[2..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "floor[2..0]" (rect 77 27 131 41)(font "Arial" (font_size 8)))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "modA[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "modA[7..0]" (rect 70 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 136 80))
