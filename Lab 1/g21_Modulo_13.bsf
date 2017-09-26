@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 168 112)
+	(rect 16 16 176 112)
 	(text "g21_Modulo_13" (rect 5 0 94 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -31,20 +31,20 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 152 32)
+		(pt 160 32)
 		(output)
 		(text "floor[2..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "floor[2..0]" (rect 77 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32)(line_width 3))
+		(text "floor[2..0]" (rect 85 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(port
-		(pt 152 48)
+		(pt 160 48)
 		(output)
-		(text "modA[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "modA[7..0]" (rect 70 43 131 57)(font "Arial" (font_size 8)))
-		(line (pt 152 48)(pt 136 48)(line_width 3))
+		(text "modout[3..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "modout[3..0]" (rect 70 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 136 80))
+		(rectangle (rect 16 16 144 80))
 	)
 )

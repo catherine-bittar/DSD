@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 600 1104 616)
+	(rect 720 216 896 232)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "modA[7..0]" (rect 90 0 144 12)(font "Arial" ))
+	(text "floor[2..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 720 216 896 232)
+	(rect 936 600 1112 616)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "floor[2..0]" (rect 90 0 138 12)(font "Arial" ))
+	(text "modout[3..0]" (rect 90 0 152 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -478,5 +478,11 @@ applicable agreement for further details.
 	(text "Ground[1..0],A[5..0]" (rect 538 584 635 596)(font "Arial" ))
 	(pt 656 608)
 	(pt 616 608)
+	(bus)
+)
+(connector
+	(text "modA[3..0]" (rect 896 584 950 596)(font "Arial" ))
+	(pt 936 608)
+	(pt 904 608)
 	(bus)
 )

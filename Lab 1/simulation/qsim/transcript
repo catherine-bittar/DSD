@@ -16,26 +16,32 @@
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_lab1_vlg_vec_tst 
 # Loading work.g21_lab1_vlg_vec_tst
 # Loading work.g21_lab1
+# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading work.g21_lab1_vlg_sample_tst
 # Loading work.g21_lab1_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # ERROR! Vector Mismatch for output port Amod13[0] :: @time = 4000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000001
+#      Expected value = 0000
+#      Real value = 0001
 # ERROR! Vector Mismatch for output port Amod13[1] :: @time = 6000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000010
+#      Expected value = 0000
+#      Real value = 0010
 # ERROR! Vector Mismatch for output port Amod13[2] :: @time = 10000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000100
+#      Expected value = 0000
+#      Real value = 0100
 # ERROR! Vector Mismatch for output port Amod13[3] :: @time = 18000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00001000
-#           4 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab1.vt(366)
+#      Expected value = 0000
+#      Real value = 1000
+# ERROR! Vector Mismatch for output port floor[0] :: @time = 28000000.000 ps
+#      Expected value = 000
+#      Real value = 001
+# ERROR! Vector Mismatch for output port floor[1] :: @time = 54000000.000 ps
+#      Expected value = 000
+#      Real value = 010
+#           6 mismatched vectors : Simulation failed !
+# ** Note: $finish    : g21_lab1.vt(293)
 #    Time: 100 us  Iteration: 0  Instance: /g21_lab1_vlg_vec_tst/tb_out
