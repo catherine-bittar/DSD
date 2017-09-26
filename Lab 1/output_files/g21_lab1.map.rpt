@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab1
-Mon Sep 25 16:54:27 2017
+Tue Sep 26 10:06:53 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +41,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Sep 25 16:54:27 2017               ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 26 10:06:53 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab1                                        ;
 ; Top-level Entity Name              ; g21_lab1                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 45                                              ;
+;     Total combinational functions  ; 45                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 54                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -148,13 +153,120 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; g21_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_comp7.bdf     ;         ;
+; g21_lab1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_lab1.bdf      ;         ;
+; g21_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_adder.bdf     ;         ;
+; g21_1bitAdder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_1bitAdder.bdf ;         ;
+; g21_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_Modulo_13.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 45     ;
+;                                             ;        ;
+; Total combinational functions               ; 45     ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 28     ;
+;     -- 3 input functions                    ; 10     ;
+;     -- <=2 input functions                  ; 7      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 45     ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 54     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; Ain[4] ;
+; Maximum fan-out                             ; 12     ;
+; Total fan-out                               ; 174    ;
+; Average fan-out                             ; 1.76   ;
++---------------------------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; |g21_lab1                       ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |g21_lab1                                                          ; work         ;
+;    |g21_Modulo_13:inst2|        ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2                                      ; work         ;
+;       |g21_adder:inst1|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1                      ; work         ;
+;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26 ; work         ;
+;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27 ; work         ;
+;          |g21_1bitAdder:inst28| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28 ; work         ;
+;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29 ; work         ;
+;       |g21_adder:inst3|         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3                      ; work         ;
+;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26 ; work         ;
+;          |g21_1bitAdder:inst27| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27 ; work         ;
+;          |g21_1bitAdder:inst28| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28 ; work         ;
+;       |g21_adder:inst4|         ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4                      ; work         ;
+;          |g21_1bitAdder:inst25| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25 ; work         ;
+;          |g21_1bitAdder:inst26| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26 ; work         ;
+;       |g21_adder:inst5|         ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5                      ; work         ;
+;          |g21_1bitAdder:inst25| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25 ; work         ;
+;          |g21_1bitAdder:inst26| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26 ; work         ;
+;          |g21_1bitAdder:inst27| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27 ; work         ;
+;          |g21_1bitAdder:inst28| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28 ; work         ;
+;          |g21_1bitAdder:inst29| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29 ; work         ;
+;          |g21_1bitAdder:inst30| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30 ; work         ;
+;    |g21_adder:inst1|            ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1                                          ; work         ;
+;       |g21_1bitAdder:inst24|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst24                     ; work         ;
+;       |g21_1bitAdder:inst25|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst25                     ; work         ;
+;       |g21_1bitAdder:inst26|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst26                     ; work         ;
+;       |g21_1bitAdder:inst27|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst27                     ; work         ;
+;       |g21_1bitAdder:inst28|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst28                     ; work         ;
+;       |g21_1bitAdder:inst29|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst29                     ; work         ;
+;       |g21_1bitAdder:inst30|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst30                     ; work         ;
+;       |g21_1bitAdder:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_adder:inst1|g21_1bitAdder:inst                       ; work         ;
+;    |g21_comp7:inst|             ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab1|g21_comp7:inst                                           ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 25 16:54:26 2017
+    Info: Processing started: Tue Sep 26 10:06:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab1 -c g21_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_comp7.bdf
@@ -172,19 +284,17 @@ Info (12127): Elaborating entity "g21_lab1" for the top level hierarchy
 Info (12128): Elaborating entity "g21_comp7" for hierarchy "g21_comp7:inst"
 Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_adder:inst1"
 Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_adder:inst1|g21_1bitAdder:inst30"
-Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst4"
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[1]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[0]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[2]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[4]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[3]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[6]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|GROUND[5]" is missing source
-Error (12009): Node "g21_Modulo_13:inst4|VCC[0]" is missing source
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 8 errors, 2 warnings
-    Error: Peak virtual memory: 479 megabytes
-    Error: Processing ended: Mon Sep 25 16:54:27 2017
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst2"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 45 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 490 megabytes
+    Info: Processing ended: Tue Sep 26 10:06:53 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
 
 

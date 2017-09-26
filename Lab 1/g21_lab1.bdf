@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 640 360 656)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Ain[5..0]" (rect 5 0 47 12)(font "Arial" ))
+	(text "Ain[5..0]" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -231,7 +231,7 @@ applicable agreement for further details.
 (symbol
 	(rect 408 616 560 712)
 	(text "g21_Modulo_13" (rect 5 0 94 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

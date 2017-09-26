@@ -1,5 +1,5 @@
 Assembler report for g21_lab1
-Sun Sep 24 10:52:21 2017
+Tue Sep 26 10:07:02 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.sof
-  6. Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.pof
+  5. Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.sof
+  6. Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Sep 24 10:52:21 2017 ;
+; Assembler Status      ; Successful - Tue Sep 26 10:07:02 2017 ;
 ; Revision Name         ; g21_lab1                              ;
 ; Top-level Entity Name ; g21_lab1                              ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Generated Files                                           ;
-+---------------------------------------------------------------------+
-; File Name                                                           ;
-+---------------------------------------------------------------------+
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.sof ;
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.pof ;
-+---------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                             ;
++---------------------------------------------------------------------------------------+
+; File Name                                                                             ;
++---------------------------------------------------------------------------------------+
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.sof ;
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.pof ;
++---------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.sof ;
-+----------------+------------------------------------------------------------------------------+
-; Option         ; Setting                                                                      ;
-+----------------+------------------------------------------------------------------------------+
-; Device         ; EP2C5T144C6                                                                  ;
-; JTAG usercode  ; 0x0007816D                                                                   ;
-; Checksum       ; 0x0007816D                                                                   ;
-+----------------+------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.sof ;
++----------------+------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C6                                                                                    ;
+; JTAG usercode  ; 0x0007C1F7                                                                                     ;
+; Checksum       ; 0x0007C1F7                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 1/output_files/g21_lab1.pof ;
-+--------------------+--------------------------------------------------------------------------+
-; Option             ; Setting                                                                  ;
-+--------------------+--------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                    ;
-; JTAG usercode      ; 0x00000000                                                               ;
-; Checksum           ; 0x07515A42                                                               ;
-; Compression Ratio  ; 3                                                                        ;
-+--------------------+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/output_files/g21_lab1.pof ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                    ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                                      ;
+; JTAG usercode      ; 0x00000000                                                                                 ;
+; Checksum           ; 0x07511278                                                                                 ;
+; Compression Ratio  ; 3                                                                                          ;
++--------------------+--------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Sep 24 10:52:19 2017
+    Info: Processing started: Tue Sep 26 10:07:01 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off g21_lab1 -c g21_lab1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 430 megabytes
-    Info: Processing ended: Sun Sep 24 10:52:21 2017
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 439 megabytes
+    Info: Processing ended: Tue Sep 26 10:07:02 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

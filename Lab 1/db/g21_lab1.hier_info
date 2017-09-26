@@ -31,20 +31,20 @@ in_2[4] => g21_adder:inst1.in_2[4]
 in_2[5] => g21_adder:inst1.in_2[5]
 in_2[6] => g21_adder:inst1.in_2[6]
 in_2[7] => g21_adder:inst1.in_2[7]
-Amod13[0] <= g21_Modulo_13:inst4.modA[0]
-Amod13[1] <= g21_Modulo_13:inst4.modA[1]
-Amod13[2] <= g21_Modulo_13:inst4.modA[2]
-Amod13[3] <= g21_Modulo_13:inst4.modA[3]
-Amod13[4] <= g21_Modulo_13:inst4.modA[4]
-Amod13[5] <= g21_Modulo_13:inst4.modA[5]
-Amod13[6] <= g21_Modulo_13:inst4.modA[6]
-Amod13[7] <= g21_Modulo_13:inst4.modA[7]
-Ain[0] => g21_Modulo_13:inst4.A[0]
-Ain[1] => g21_Modulo_13:inst4.A[1]
-Ain[2] => g21_Modulo_13:inst4.A[2]
-Ain[3] => g21_Modulo_13:inst4.A[3]
-Ain[4] => g21_Modulo_13:inst4.A[4]
-Ain[5] => g21_Modulo_13:inst4.A[5]
+Amod13[0] <= g21_Modulo_13:inst2.modA[0]
+Amod13[1] <= g21_Modulo_13:inst2.modA[1]
+Amod13[2] <= g21_Modulo_13:inst2.modA[2]
+Amod13[3] <= g21_Modulo_13:inst2.modA[3]
+Amod13[4] <= g21_Modulo_13:inst2.modA[4]
+Amod13[5] <= g21_Modulo_13:inst2.modA[5]
+Amod13[6] <= g21_Modulo_13:inst2.modA[6]
+Amod13[7] <= g21_Modulo_13:inst2.modA[7]
+Ain[0] => g21_Modulo_13:inst2.A[0]
+Ain[1] => g21_Modulo_13:inst2.A[1]
+Ain[2] => g21_Modulo_13:inst2.A[2]
+Ain[3] => g21_Modulo_13:inst2.A[3]
+Ain[4] => g21_Modulo_13:inst2.A[4]
+Ain[5] => g21_Modulo_13:inst2.A[5]
 out[0] <= g21_adder:inst1.out[0]
 out[1] <= g21_adder:inst1.out[1]
 out[2] <= g21_adder:inst1.out[2]
@@ -189,7 +189,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4
+|g21_lab1|g21_Modulo_13:inst2
 modA[0] <= g21_adder:inst5.out[0]
 modA[1] <= g21_adder:inst5.out[1]
 modA[2] <= g21_adder:inst5.out[2]
@@ -218,7 +218,7 @@ A[5] => g21_adder:inst1.in_1[7]
 A[5] => g21_adder:inst1.in_2[5]
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -246,7 +246,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst30
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -257,7 +257,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst29
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -268,7 +268,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst28
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -279,7 +279,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst27
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -290,7 +290,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst26
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -301,7 +301,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst25
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -312,7 +312,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst24
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -323,7 +323,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst5|g21_1bitAdder:inst
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -334,7 +334,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -362,7 +362,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst30
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -373,7 +373,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst29
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -384,7 +384,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst28
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -395,7 +395,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst27
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -406,7 +406,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst26
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -417,7 +417,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst25
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -428,7 +428,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst24
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -439,7 +439,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst4|g21_1bitAdder:inst
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -450,7 +450,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -478,7 +478,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst30
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -489,7 +489,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst29
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -500,7 +500,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst28
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -511,7 +511,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst27
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -522,7 +522,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst26
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -533,7 +533,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst25
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -544,7 +544,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst24
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -555,7 +555,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst3|g21_1bitAdder:inst
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -566,7 +566,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -594,7 +594,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst30
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -605,7 +605,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst29
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -616,7 +616,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst28
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -627,7 +627,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst27
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -638,7 +638,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst26
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -649,7 +649,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst25
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -660,7 +660,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst24
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -671,7 +671,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst2|g21_1bitAdder:inst
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -682,7 +682,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -710,7 +710,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst30
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -721,7 +721,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst29
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -732,7 +732,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst28
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -743,7 +743,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst27
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -754,7 +754,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst26
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -765,7 +765,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst25
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -776,7 +776,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst24
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -787,7 +787,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab1|g21_Modulo_13:inst4|g21_adder:inst1|g21_1bitAdder:inst
+|g21_lab1|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
