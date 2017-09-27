@@ -1,5 +1,5 @@
 Flow report for g21_lab1
-Tue Sep 26 14:52:20 2017
+Tue Sep 26 22:06:23 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Sep 26 14:52:20 2017           ;
+; Flow Status                        ; Successful - Tue Sep 26 22:06:23 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab1                                        ;
 ; Top-level Entity Name              ; g21_lab1                                        ;
@@ -99,7 +99,9 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +118,8 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -129,6 +133,8 @@ quartus_sta g21_lab1 -c g21_lab1
 quartus_eda --read_settings_files=off --write_settings_files=off g21_lab1 -c g21_lab1
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1 --vector_source="C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_Modulo_13.vwf" --testbench_file=./simulation/qsim/g21_lab1.vt
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1 --vector_source="C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 1/g21_Modulo_13.vwf" --testbench_file=./simulation/qsim/g21_lab1.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 1/g21_Modulo_13.vwf" --testbench_file=./simulation/qsim/g21_lab1.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g21_lab1 -c g21_lab1
 
 
