@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 72 64 240 80)
+	(rect 24 88 192 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "A[5..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -274,7 +274,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 136 528 168 560)
+	(rect 16 216 48 248)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -291,7 +291,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 208 496 240 512)
+	(rect 16 272 48 288)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -326,24 +326,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 600 232)
-	(pt 600 336)
-	(bus)
-)
-(connector
-	(text "out2[7..0]" (rect 546 208 593 220)(font "Arial" ))
-	(pt 360 336)
-	(pt 600 336)
-	(bus)
-)
-(connector
 	(pt 360 384)
 	(pt 384 384)
-	(bus)
-)
-(connector
-	(pt 360 336)
-	(pt 360 384)
 	(bus)
 )
 (connector
@@ -447,34 +431,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Ground[6..0]" (rect 105 449 117 510)(font "Arial" )(vertical))
-	(pt 152 528)
-	(pt 152 480)
-	(bus)
-)
-(connector
-	(text "VCC[0]" (rect 208 519 220 555)(font "Arial" )(vertical))
-	(pt 224 512)
-	(pt 224 560)
-	(bus)
-)
-(connector
-	(pt 720 224)
-	(pt 712 224)
-	(bus)
-)
-(connector
-	(pt 712 224)
-	(pt 712 232)
-	(bus)
-)
-(connector
-	(text "Cout1,out1[7..6]" (rect 608 216 688 228)(font "Arial" ))
-	(pt 712 232)
-	(pt 608 232)
-	(bus)
-)
-(connector
 	(text "Ground[1..0],A[5..0]" (rect 538 584 635 596)(font "Arial" ))
 	(pt 656 608)
 	(pt 616 608)
@@ -486,3 +442,43 @@ applicable agreement for further details.
 	(pt 904 608)
 	(bus)
 )
+(connector
+	(text "Ground[6..0]" (rect 1 153 13 214)(font "Arial" )(vertical))
+	(pt 32 216)
+	(pt 32 168)
+	(bus)
+)
+(connector
+	(text "VCC[0]" (rect 16 295 28 331)(font "Arial" )(vertical))
+	(pt 32 288)
+	(pt 32 336)
+	(bus)
+)
+(connector
+	(text "Cout1,out1[7..6]" (rect 648 208 728 220)(font "Arial" ))
+	(pt 648 224)
+	(pt 720 224)
+	(bus)
+)
+(connector
+	(pt 600 232)
+	(pt 600 344)
+	(bus)
+)
+(connector
+	(text "out2[7..0]" (rect 546 216 593 228)(font "Arial" ))
+	(pt 360 344)
+	(pt 600 344)
+	(bus)
+)
+(connector
+	(pt 360 384)
+	(pt 360 344)
+	(bus)
+)
+(text "Step A" (rect 440 56 478 70)(font "Arial" (font_size 8)))
+(text "Step B" (rect 440 184 477 198)(font "Arial" (font_size 8)))
+(text "Step B" (rect 448 328 485 342)(font "Arial" (font_size 8)))
+(text "Step C" (rect 448 480 485 494)(font "Arial" (font_size 8)))
+(text "Step C" (rect 440 552 477 566)(font "Arial" (font_size 8)))
+(text "Step D" (rect 720 560 757 574)(font "Arial" (font_size 8)))

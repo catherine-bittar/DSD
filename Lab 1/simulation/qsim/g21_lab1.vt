@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/26/2017 22:06:21"
+// Generated on "09/28/2017 12:49:02"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g21_lab1
 // 
@@ -329,55 +329,64 @@ g21_lab1 i1 (
 initial
 begin
 	Ain[5] = 1'b0;
-	Ain[5] = #64000000 1'b1;
+	Ain[5] = #48000000 1'b1;
+	Ain[5] = #48000000 1'b0;
 end 
 // Ain[ 4 ]
 initial
 begin
+	repeat(2)
+	begin
+		Ain[4] = 1'b0;
+		Ain[4] = #24000000 1'b1;
+		# 24000000;
+	end
 	Ain[4] = 1'b0;
-	Ain[4] = #32000000 1'b1;
-	Ain[4] = #32000000 1'b0;
-	Ain[4] = #32000000 1'b1;
 end 
 // Ain[ 3 ]
 initial
 begin
-	repeat(3)
+	repeat(4)
 	begin
 		Ain[3] = 1'b0;
-		Ain[3] = #16000000 1'b1;
-		# 16000000;
+		Ain[3] = #12000000 1'b1;
+		# 12000000;
 	end
 	Ain[3] = 1'b0;
 end 
 // Ain[ 2 ]
 initial
 begin
-	repeat(6)
+	repeat(8)
 	begin
 		Ain[2] = 1'b0;
-		Ain[2] = #8000000 1'b1;
-		# 8000000;
+		Ain[2] = #6000000 1'b1;
+		# 6000000;
 	end
 	Ain[2] = 1'b0;
 end 
 // Ain[ 1 ]
 initial
 begin
-	repeat(12)
+	repeat(16)
 	begin
 		Ain[1] = 1'b0;
-		Ain[1] = #4000000 1'b1;
-		# 4000000;
+		Ain[1] = #3000000 1'b1;
+		# 3000000;
 	end
 	Ain[1] = 1'b0;
+	Ain[1] = #3000000 1'b1;
 end 
 // Ain[ 0 ]
-always
+initial
 begin
+	repeat(33)
+	begin
+		Ain[0] = 1'b0;
+		Ain[0] = #1500000 1'b1;
+		# 1500000;
+	end
 	Ain[0] = 1'b0;
-	Ain[0] = #2000000 1'b1;
-	#2000000;
 end 
 
 g21_lab1_vlg_sample_tst tb_sample (
