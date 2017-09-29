@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab2
-Fri Sep 29 14:21:44 2017
+Fri Sep 29 15:13:25 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
+ 11. Parameter Settings for User Entity Instance: add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
+ 12. Port Connectivity Checks: "add_sub:A2"
+ 13. Port Connectivity Checks: "add_sub:A1"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +46,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Sep 29 14:21:44 2017               ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 29 15:13:25 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab2                                        ;
 ; Top-level Entity Name              ; g21_RANDU                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 45                                              ;
+;     Total combinational functions  ; 45                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 64                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -148,24 +158,221 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; g21_RANDU.vhd                    ; yes             ; User VHDL File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/g21_RANDU.vhd      ;         ;
+; add_sub.vhd                      ; yes             ; User Wizard-Generated File   ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/add_sub.vhd        ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf              ;         ;
+; addcore.inc                      ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                  ;         ;
+; look_add.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                 ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                 ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc      ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
+; db/add_sub_plh.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/db/add_sub_plh.tdf ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 45      ;
+;                                             ;         ;
+; Total combinational functions               ; 45      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 0       ;
+;     -- 3 input functions                    ; 43      ;
+;     -- <=2 input functions                  ; 2       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 2       ;
+;     -- arithmetic mode                      ; 43      ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 64      ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+; Maximum fan-out node                        ; seed[0] ;
+; Maximum fan-out                             ; 3       ;
+; Total fan-out                               ; 164     ;
+; Average fan-out                             ; 1.50    ;
++---------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; |g21_RANDU                                ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |g21_RANDU                                                                         ; work         ;
+;    |add_sub:A1|                           ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A1                                                              ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component                            ; work         ;
+;          |add_sub_plh:auto_generated|     ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated ; work         ;
+;    |add_sub:A2|                           ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A2                                                              ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component                            ; work         ;
+;          |add_sub_plh:auto_generated|     ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_RANDU|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                           ;
++--------+--------------+---------+--------------+--------------+-----------------------+-------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance       ; IP Include File                                                         ;
++--------+--------------+---------+--------------+--------------+-----------------------+-------------------------------------------------------------------------+
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |g21_RANDU|add_sub:A1 ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/add_sub.vhd ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |g21_RANDU|add_sub:A2 ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/add_sub.vhd ;
++--------+--------------+---------+--------------+--------------+-----------------------+-------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+-------------+----------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                               ;
++------------------------+-------------+----------------------------------------------------+
+; LPM_WIDTH              ; 32          ; Signed Integer                                     ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                            ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                            ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                            ;
+; LPM_PIPELINE           ; 0           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                            ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                            ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                            ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                 ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                            ;
+; USE_WYS                ; OFF         ; Untyped                                            ;
+; STYLE                  ; FAST        ; Untyped                                            ;
+; CBXI_PARAMETER         ; add_sub_plh ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                     ;
++------------------------+-------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+-------------+----------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                               ;
++------------------------+-------------+----------------------------------------------------+
+; LPM_WIDTH              ; 32          ; Signed Integer                                     ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                            ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                            ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                            ;
+; LPM_PIPELINE           ; 0           ; Untyped                                            ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                            ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                            ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                            ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                            ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                 ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                            ;
+; USE_WYS                ; OFF         ; Untyped                                            ;
+; STYLE                  ; FAST        ; Untyped                                            ;
+; CBXI_PARAMETER         ; add_sub_plh ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                     ;
++------------------------+-------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_sub:A2"                                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; result[31] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "add_sub:A1"         ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; dataa[15..0] ; Input ; Info     ; Stuck at GND ;
+; datab[0]     ; Input ; Info     ; Stuck at GND ;
++--------------+-------+----------+--------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 29 14:21:42 2017
+    Info: Processing started: Fri Sep 29 15:13:22 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab2 -c g21_lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file g21_randu.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file g21_randu.vhd
+    Info (12022): Found design unit 1: g21_RANDU-RANDU
     Info (12023): Found entity 1: g21_RANDU
+Info (12021): Found 2 design units, including 1 entities, in source file add_sub.vhd
+    Info (12022): Found design unit 1: add_sub-SYN
+    Info (12023): Found entity 1: add_sub
 Info (12127): Elaborating entity "g21_RANDU" for the top level hierarchy
-Error (10793): VHDL error at g21_RANDU.vhd(15): entity g21_RANDU does not have an architecture File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/g21_RANDU.vhd Line: 15
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 523 megabytes
-    Error: Processing ended: Fri Sep 29 14:21:44 2017
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12128): Elaborating entity "add_sub" for hierarchy "add_sub:A1"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_plh.tdf
+    Info (12023): Found entity 1: add_sub_plh
+Info (12128): Elaborating entity "add_sub_plh" for hierarchy "add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rand[31]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "seed[31]"
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 45 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Fri Sep 29 15:13:25 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
