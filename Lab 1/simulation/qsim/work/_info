@@ -8,7 +8,7 @@ Z1 !s100 NJ_6XRoXXaaWlHi1ib]6n1
 Z2 IaYlnCYPRc=EkWO__D=AO<0
 Z3 VQG>;Tzb8OHbzS2]SB?4Ha2
 Z4 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 1\simulation\qsim
-Z5 w1506617343
+Z5 w1506707538
 Z6 8g21_lab1.vo
 Z7 Fg21_lab1.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|g21_lab1.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1506617344.586000
+Z11 !s108 1506707539.547000
 Z12 !s107 g21_lab1.vo|
 !s101 -O0
 vg21_lab1_vlg_check_tst
@@ -28,7 +28,7 @@ vg21_lab1_vlg_check_tst
 If^6G1[4Ncc7ZgQbGIPMBW3
 Z13 VEkGzZh]QGYkh6Uk8X<f]61
 R4
-Z14 w1506617342
+Z14 w1506707537
 Z15 8g21_lab1.vt
 Z16 Fg21_lab1.vt
 L0 65
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z17 !s108 1506617344.734000
+Z17 !s108 1506707539.640000
 Z18 !s107 g21_lab1.vt|
 Z19 !s90 -work|work|g21_lab1.vt|
 !s101 -O0
