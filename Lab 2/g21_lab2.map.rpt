@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab2
-Fri Sep 29 14:14:09 2017
+Fri Sep 29 14:21:44 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,11 +36,11 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Sep 29 14:14:09 2017               ;
+; Analysis & Synthesis Status        ; Failed - Fri Sep 29 14:21:44 2017               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab2                                        ;
-; Top-level Entity Name              ; g21_lab2                                        ;
-; Family                             ; Cyclone IV GX                                   ;
+; Top-level Entity Name              ; g21_RANDU                                       ;
+; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
 ;     Dedicated logic registers      ; N/A until Partition Merge                       ;
@@ -49,10 +49,6 @@ applicable agreement for further details.
 ; Total virtual pins                 ; N/A until Partition Merge                       ;
 ; Total memory bits                  ; N/A until Partition Merge                       ;
 ; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
-; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
-; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
-; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
 ; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
@@ -62,8 +58,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; g21_lab2           ; g21_lab2           ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Top-level entity name                                                      ; g21_RANDU          ; g21_lab2           ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -102,14 +98,12 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -117,7 +111,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
@@ -160,14 +154,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 29 14:14:09 2017
+    Info: Processing started: Fri Sep 29 14:21:42 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab2 -c g21_lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Error (12007): Top-level design entity "g21_lab2" is undefined
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 509 megabytes
-    Error: Processing ended: Fri Sep 29 14:14:09 2017
-    Error: Elapsed time: 00:00:00
+Info (12021): Found 1 design units, including 1 entities, in source file g21_randu.vhd
+    Info (12023): Found entity 1: g21_RANDU
+Info (12127): Elaborating entity "g21_RANDU" for the top level hierarchy
+Error (10793): VHDL error at g21_RANDU.vhd(15): entity g21_RANDU does not have an architecture File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/g21_RANDU.vhd Line: 15
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 523 megabytes
+    Error: Processing ended: Fri Sep 29 14:21:44 2017
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:01
 
 

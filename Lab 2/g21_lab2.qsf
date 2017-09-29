@@ -18,7 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-# Date created = 13:56:47  September 29, 2017
+# Date created = 14:18:44  September 29, 2017
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,13 +36,38 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone IV GX"
-set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY g21_lab2
+
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:56:47  SEPTEMBER 29, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name TOP_LEVEL_ENTITY g21_RANDU
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE AUTO
+
+# ----------------------
+# start ENTITY(g21_lab2)
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(g21_lab2)
+# --------------------
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE g21_RANDU.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
