@@ -3,7 +3,7 @@ $comment
 		vcd file g21_lab1.msim.vcd -direction
 $end
 $date
-	Fri Sep 29 13:52:19 2017
+	Sun Oct 01 20:42:13 2017
 $end
 $version
 	ModelSim Version 10.1d
