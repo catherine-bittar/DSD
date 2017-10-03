@@ -3,7 +3,7 @@ $comment
 		vcd file g21_lab2.msim.vcd -direction
 $end
 $date
-	Mon Oct 02 11:03:37 2017
+	Tue Oct 03 14:50:41 2017
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,332 +11,694 @@ $end
 $timescale
 	1ps
 $end
-$scope module g21_RANDU_vlg_vec_tst $end
-$var reg 32 ! seed [31:0] $end
-$var wire 1 " rand [31] $end
-$var wire 1 # rand [30] $end
-$var wire 1 $ rand [29] $end
-$var wire 1 % rand [28] $end
-$var wire 1 & rand [27] $end
-$var wire 1 ' rand [26] $end
-$var wire 1 ( rand [25] $end
-$var wire 1 ) rand [24] $end
-$var wire 1 * rand [23] $end
-$var wire 1 + rand [22] $end
-$var wire 1 , rand [21] $end
-$var wire 1 - rand [20] $end
-$var wire 1 . rand [19] $end
-$var wire 1 / rand [18] $end
-$var wire 1 0 rand [17] $end
-$var wire 1 1 rand [16] $end
-$var wire 1 2 rand [15] $end
-$var wire 1 3 rand [14] $end
-$var wire 1 4 rand [13] $end
-$var wire 1 5 rand [12] $end
-$var wire 1 6 rand [11] $end
-$var wire 1 7 rand [10] $end
-$var wire 1 8 rand [9] $end
-$var wire 1 9 rand [8] $end
-$var wire 1 : rand [7] $end
-$var wire 1 ; rand [6] $end
-$var wire 1 < rand [5] $end
-$var wire 1 = rand [4] $end
-$var wire 1 > rand [3] $end
-$var wire 1 ? rand [2] $end
-$var wire 1 @ rand [1] $end
-$var wire 1 A rand [0] $end
-$var wire 1 B sampler $end
+$scope module g21_7_segment_decoder_vlg_vec_tst $end
+$var reg 4 ! code [3:0] $end
+$var reg 1 " mode $end
+$var wire 1 # segments_out [6] $end
+$var wire 1 $ segments_out [5] $end
+$var wire 1 % segments_out [4] $end
+$var wire 1 & segments_out [3] $end
+$var wire 1 ' segments_out [2] $end
+$var wire 1 ( segments_out [1] $end
+$var wire 1 ) segments_out [0] $end
+$var wire 1 * sampler $end
 $scope module i1 $end
-$var wire 1 C gnd $end
-$var wire 1 D vcc $end
-$var wire 1 E unknown $end
-$var tri1 1 F devclrn $end
-$var tri1 1 G devpor $end
-$var tri1 1 H devoe $end
-$var wire 1 I A2|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
-$var wire 1 J A2|LPM_ADD_SUB_component|auto_generated|op_1~1 $end
-$var wire 1 K A2|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
-$var wire 1 L A2|LPM_ADD_SUB_component|auto_generated|op_1~3 $end
-$var wire 1 M A2|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
-$var wire 1 N A2|LPM_ADD_SUB_component|auto_generated|op_1~5 $end
-$var wire 1 O A2|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
-$var wire 1 P A2|LPM_ADD_SUB_component|auto_generated|op_1~7 $end
-$var wire 1 Q A2|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
-$var wire 1 R A2|LPM_ADD_SUB_component|auto_generated|op_1~9 $end
-$var wire 1 S A2|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
-$var wire 1 T A2|LPM_ADD_SUB_component|auto_generated|op_1~11 $end
-$var wire 1 U A2|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
-$var wire 1 V A2|LPM_ADD_SUB_component|auto_generated|op_1~13 $end
-$var wire 1 W A2|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
-$var wire 1 X A2|LPM_ADD_SUB_component|auto_generated|op_1~15 $end
-$var wire 1 Y A2|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
-$var wire 1 Z A2|LPM_ADD_SUB_component|auto_generated|op_1~17 $end
-$var wire 1 [ A2|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
-$var wire 1 \ A2|LPM_ADD_SUB_component|auto_generated|op_1~19 $end
-$var wire 1 ] A2|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
-$var wire 1 ^ A2|LPM_ADD_SUB_component|auto_generated|op_1~21 $end
-$var wire 1 _ A2|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
-$var wire 1 ` A2|LPM_ADD_SUB_component|auto_generated|op_1~23 $end
-$var wire 1 a A2|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
-$var wire 1 b A2|LPM_ADD_SUB_component|auto_generated|op_1~25 $end
-$var wire 1 c A2|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
-$var wire 1 d A2|LPM_ADD_SUB_component|auto_generated|op_1~27 $end
-$var wire 1 e A2|LPM_ADD_SUB_component|auto_generated|op_1~28_combout $end
-$var wire 1 f A1|LPM_ADD_SUB_component|auto_generated|op_1~0_combout $end
-$var wire 1 g A2|LPM_ADD_SUB_component|auto_generated|op_1~29 $end
-$var wire 1 h A2|LPM_ADD_SUB_component|auto_generated|op_1~30_combout $end
-$var wire 1 i A1|LPM_ADD_SUB_component|auto_generated|op_1~1 $end
-$var wire 1 j A1|LPM_ADD_SUB_component|auto_generated|op_1~2_combout $end
-$var wire 1 k A2|LPM_ADD_SUB_component|auto_generated|op_1~31 $end
-$var wire 1 l A2|LPM_ADD_SUB_component|auto_generated|op_1~32_combout $end
-$var wire 1 m A1|LPM_ADD_SUB_component|auto_generated|op_1~3 $end
-$var wire 1 n A1|LPM_ADD_SUB_component|auto_generated|op_1~4_combout $end
-$var wire 1 o A2|LPM_ADD_SUB_component|auto_generated|op_1~33 $end
-$var wire 1 p A2|LPM_ADD_SUB_component|auto_generated|op_1~34_combout $end
-$var wire 1 q A1|LPM_ADD_SUB_component|auto_generated|op_1~5 $end
-$var wire 1 r A1|LPM_ADD_SUB_component|auto_generated|op_1~6_combout $end
-$var wire 1 s A2|LPM_ADD_SUB_component|auto_generated|op_1~35 $end
-$var wire 1 t A2|LPM_ADD_SUB_component|auto_generated|op_1~36_combout $end
-$var wire 1 u A1|LPM_ADD_SUB_component|auto_generated|op_1~7 $end
-$var wire 1 v A1|LPM_ADD_SUB_component|auto_generated|op_1~8_combout $end
-$var wire 1 w A2|LPM_ADD_SUB_component|auto_generated|op_1~37 $end
-$var wire 1 x A2|LPM_ADD_SUB_component|auto_generated|op_1~38_combout $end
-$var wire 1 y A1|LPM_ADD_SUB_component|auto_generated|op_1~9 $end
-$var wire 1 z A1|LPM_ADD_SUB_component|auto_generated|op_1~10_combout $end
-$var wire 1 { A2|LPM_ADD_SUB_component|auto_generated|op_1~39 $end
-$var wire 1 | A2|LPM_ADD_SUB_component|auto_generated|op_1~40_combout $end
-$var wire 1 } A1|LPM_ADD_SUB_component|auto_generated|op_1~11 $end
-$var wire 1 ~ A1|LPM_ADD_SUB_component|auto_generated|op_1~12_combout $end
-$var wire 1 !! A2|LPM_ADD_SUB_component|auto_generated|op_1~41 $end
-$var wire 1 "! A2|LPM_ADD_SUB_component|auto_generated|op_1~42_combout $end
-$var wire 1 #! A1|LPM_ADD_SUB_component|auto_generated|op_1~13 $end
-$var wire 1 $! A1|LPM_ADD_SUB_component|auto_generated|op_1~14_combout $end
-$var wire 1 %! A2|LPM_ADD_SUB_component|auto_generated|op_1~43 $end
-$var wire 1 &! A2|LPM_ADD_SUB_component|auto_generated|op_1~44_combout $end
-$var wire 1 '! A1|LPM_ADD_SUB_component|auto_generated|op_1~15 $end
-$var wire 1 (! A1|LPM_ADD_SUB_component|auto_generated|op_1~16_combout $end
-$var wire 1 )! A2|LPM_ADD_SUB_component|auto_generated|op_1~45 $end
-$var wire 1 *! A2|LPM_ADD_SUB_component|auto_generated|op_1~46_combout $end
-$var wire 1 +! A1|LPM_ADD_SUB_component|auto_generated|op_1~17 $end
-$var wire 1 ,! A1|LPM_ADD_SUB_component|auto_generated|op_1~18_combout $end
-$var wire 1 -! A2|LPM_ADD_SUB_component|auto_generated|op_1~47 $end
-$var wire 1 .! A2|LPM_ADD_SUB_component|auto_generated|op_1~48_combout $end
-$var wire 1 /! A1|LPM_ADD_SUB_component|auto_generated|op_1~19 $end
-$var wire 1 0! A1|LPM_ADD_SUB_component|auto_generated|op_1~20_combout $end
-$var wire 1 1! A2|LPM_ADD_SUB_component|auto_generated|op_1~49 $end
-$var wire 1 2! A2|LPM_ADD_SUB_component|auto_generated|op_1~50_combout $end
-$var wire 1 3! A1|LPM_ADD_SUB_component|auto_generated|op_1~21 $end
-$var wire 1 4! A1|LPM_ADD_SUB_component|auto_generated|op_1~22_combout $end
-$var wire 1 5! A2|LPM_ADD_SUB_component|auto_generated|op_1~51 $end
-$var wire 1 6! A2|LPM_ADD_SUB_component|auto_generated|op_1~52_combout $end
-$var wire 1 7! A1|LPM_ADD_SUB_component|auto_generated|op_1~23 $end
-$var wire 1 8! A1|LPM_ADD_SUB_component|auto_generated|op_1~24_combout $end
-$var wire 1 9! A2|LPM_ADD_SUB_component|auto_generated|op_1~53 $end
-$var wire 1 :! A2|LPM_ADD_SUB_component|auto_generated|op_1~54_combout $end
-$var wire 1 ;! A1|LPM_ADD_SUB_component|auto_generated|op_1~25 $end
-$var wire 1 <! A1|LPM_ADD_SUB_component|auto_generated|op_1~26_combout $end
-$var wire 1 =! A2|LPM_ADD_SUB_component|auto_generated|op_1~55 $end
-$var wire 1 >! A2|LPM_ADD_SUB_component|auto_generated|op_1~56_combout $end
-$var wire 1 ?! A1|LPM_ADD_SUB_component|auto_generated|op_1~27 $end
-$var wire 1 @! A1|LPM_ADD_SUB_component|auto_generated|op_1~28_combout $end
-$var wire 1 A! A2|LPM_ADD_SUB_component|auto_generated|op_1~57 $end
-$var wire 1 B! A2|LPM_ADD_SUB_component|auto_generated|op_1~58_combout $end
-$var wire 1 C! seed~combout [31] $end
-$var wire 1 D! seed~combout [30] $end
-$var wire 1 E! seed~combout [29] $end
-$var wire 1 F! seed~combout [28] $end
-$var wire 1 G! seed~combout [27] $end
-$var wire 1 H! seed~combout [26] $end
-$var wire 1 I! seed~combout [25] $end
-$var wire 1 J! seed~combout [24] $end
-$var wire 1 K! seed~combout [23] $end
-$var wire 1 L! seed~combout [22] $end
-$var wire 1 M! seed~combout [21] $end
-$var wire 1 N! seed~combout [20] $end
-$var wire 1 O! seed~combout [19] $end
-$var wire 1 P! seed~combout [18] $end
-$var wire 1 Q! seed~combout [17] $end
-$var wire 1 R! seed~combout [16] $end
-$var wire 1 S! seed~combout [15] $end
-$var wire 1 T! seed~combout [14] $end
-$var wire 1 U! seed~combout [13] $end
-$var wire 1 V! seed~combout [12] $end
-$var wire 1 W! seed~combout [11] $end
-$var wire 1 X! seed~combout [10] $end
-$var wire 1 Y! seed~combout [9] $end
-$var wire 1 Z! seed~combout [8] $end
-$var wire 1 [! seed~combout [7] $end
-$var wire 1 \! seed~combout [6] $end
-$var wire 1 ]! seed~combout [5] $end
-$var wire 1 ^! seed~combout [4] $end
-$var wire 1 _! seed~combout [3] $end
-$var wire 1 `! seed~combout [2] $end
-$var wire 1 a! seed~combout [1] $end
-$var wire 1 b! seed~combout [0] $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 mode~combout $end
+$var wire 1 2 Mux6~1_combout $end
+$var wire 1 3 Mux6~0_combout $end
+$var wire 1 4 Mux6~2_combout $end
+$var wire 1 5 Mux5~0_combout $end
+$var wire 1 6 Mux5~1_combout $end
+$var wire 1 7 Mux4~0_combout $end
+$var wire 1 8 Mux4~1_combout $end
+$var wire 1 9 Mux3~0_combout $end
+$var wire 1 : Mux3~1_combout $end
+$var wire 1 ; Mux2~0_combout $end
+$var wire 1 < Mux2~1_combout $end
+$var wire 1 = Mux1~0_combout $end
+$var wire 1 > Mux1~1_combout $end
+$var wire 1 ? Mux1~2_combout $end
+$var wire 1 @ Mux0~0_combout $end
+$var wire 1 A Mux0~1_combout $end
+$var wire 1 B Mux0~2_combout $end
+$var wire 1 C code~combout [3] $end
+$var wire 1 D code~combout [2] $end
+$var wire 1 E code~combout [1] $end
+$var wire 1 F code~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b11011000000000001010001 !
-1A
-1@
-0?
-0>
-1=
-1<
-1;
-1:
-09
-08
-07
-06
-05
-04
-03
-02
-11
-00
-1/
-0.
-1-
-0,
-0+
-1*
-1)
+b0 !
+0"
+0)
 0(
 0'
 0&
 0%
 0$
-0#
-0"
-xB
+1#
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+1B
+0F
+0E
+0D
 0C
-1D
-xE
-1F
-1G
-1H
-1I
-0J
-0K
-1L
-0M
-0N
-1O
-1P
-1Q
-0R
-1S
-1T
-1U
-0V
-0W
-1X
-0Y
-0Z
-0[
-1\
-0]
-0^
-0_
-1`
-0a
-0b
-0c
-1d
-0e
-1f
-0g
-1h
-0i
-0j
-1k
-0l
-1m
-0n
-0o
-1p
-0q
-1r
-1s
-0t
-1u
-0v
-1w
-1x
-1y
-1z
-1{
-0|
-1}
-0~
-1!!
-0"!
-1#!
-0$!
-0%!
-1&!
-0'!
-1(!
-0)!
-1*!
-0+!
-0,!
-1-!
-0.!
-1/!
-00!
-01!
-02!
-03!
-04!
-15!
-06!
-17!
-08!
-09!
-0:!
-0;!
-0<!
-1=!
-0>!
-1?!
-0@!
-0A!
-0B!
-1b!
-0a!
-0`!
-0_!
-1^!
-0]!
-1\!
-0[!
-0Z!
-0Y!
-0X!
-0W!
-0V!
-0U!
-0T!
-0S!
-0R!
-0Q!
-1P!
-1O!
-0N!
-1M!
-1L!
-0K!
-0J!
-0I!
-0H!
-0G!
-0F!
-0E!
-0D!
-zC!
 $end
+#25000
+1"
+11
+0*
+1A
+1:
+0B
+1&
+0#
+#50000
+b1 !
+0"
+1F
+01
+1*
+09
+15
+12
+0:
+16
+14
+0&
+1(
+1)
+#75000
+1"
+11
+0*
+1@
+1>
+1=
+17
+05
+02
+1?
+18
+06
+04
+1$
+1'
+0(
+0)
+#100000
+b11 !
+b10 !
+0"
+0F
+1E
+01
+1*
+0@
+0>
+0=
+1;
+0?
+1?
+0$
+1$
+#125000
+1"
+11
+0*
+1@
+1<
+07
+13
+08
+1%
+0'
+#150000
+b11 !
+0"
+1F
+01
+1*
+0@
+19
+15
+#175000
+1"
+11
+0*
+1>
+1=
+0<
+1:
+05
+12
+0?
+14
+0%
+1&
+0$
+1)
+#200000
+b111 !
+b101 !
+b100 !
+0"
+0F
+0E
+1D
+01
+1*
+1@
+0=
+03
+1?
+0?
+1$
+0$
+#225000
+1"
+11
+0*
+0@
+0>
+1<
+0:
+15
+13
+02
+16
+04
+1%
+0&
+1(
+0)
+#250000
+b101 !
+0"
+1F
+01
+1*
+09
+1:
+0:
+1&
+0&
+#275000
+1"
+11
+0*
+1@
+1>
+0<
+17
+0%
+#300000
+b111 !
+b110 !
+0"
+0F
+1E
+01
+1*
+0@
+05
+03
+06
+16
+0(
+1(
+#325000
+1"
+11
+0*
+0A
+1@
+0>
+1<
+07
+15
+13
+1B
+1?
+06
+1%
+1#
+1$
+0(
+#350000
+b111 !
+0"
+1F
+01
+1*
+0@
+03
+#375000
+1"
+11
+0*
+1A
+1@
+1>
+0<
+13
+0B
+0?
+0%
+0#
+0$
+#400000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0"
+0F
+0E
+0D
+1C
+01
+1*
+0A
+0@
+05
+03
+1B
+14
+0B
+04
+1#
+1)
+0#
+0)
+#425000
+1"
+11
+0*
+1A
+0>
+1<
+17
+1%
+#450000
+b1001 !
+0"
+1F
+01
+1*
+1>
+15
+12
+#475000
+1"
+11
+0*
+1@
+0>
+0<
+07
+02
+1B
+0%
+1#
+#500000
+b1011 !
+b1010 !
+0"
+0F
+1E
+01
+1*
+0@
+1>
+0;
+19
+05
+1?
+16
+0B
+0?
+1:
+06
+1$
+1(
+0#
+0$
+1&
+0(
+#525000
+1"
+11
+0*
+1@
+0>
+0:
+13
+1B
+1?
+14
+0&
+1#
+1$
+1)
+#550000
+b1011 !
+0"
+1F
+01
+1*
+0@
+1>
+09
+15
+1:
+0B
+0?
+0:
+16
+1&
+0#
+0$
+0&
+1(
+#575000
+1"
+11
+0*
+0>
+12
+1?
+1$
+#600000
+b1111 !
+b1101 !
+b1100 !
+0"
+0F
+0E
+1D
+01
+1*
+1@
+1>
+03
+0?
+18
+1B
+04
+0$
+1'
+1#
+0)
+#625000
+1"
+11
+0*
+0@
+0>
+1:
+17
+05
+13
+02
+0B
+08
+06
+14
+1&
+0#
+0'
+0(
+1)
+#650000
+b1101 !
+0"
+1F
+01
+1*
+1>
+1=
+0:
+1?
+0&
+1$
+#675000
+1"
+11
+0*
+1@
+0>
+1<
+1:
+07
+15
+1B
+18
+16
+1%
+1&
+1#
+1'
+1(
+#700000
+b1111 !
+b1110 !
+0"
+0F
+1E
+01
+1*
+0@
+1>
+0=
+0<
+1;
+03
+0:
+0B
+0?
+04
+0%
+0&
+0#
+0$
+0)
+#725000
+1"
+11
+0*
+0A
+1@
+0>
+1<
+1:
+05
+13
+1B
+1?
+14
+1%
+1&
+1#
+1$
+1)
+#750000
+b1111 !
+0"
+1F
+01
+1*
+0@
+1>
+1=
+0;
+19
+03
+0:
+0B
+0?
+0<
+1:
+04
+0&
+0#
+0$
+0%
+1&
+0)
+#775000
+1"
+11
+0*
+1A
+1@
+0>
+1<
+15
+13
+1B
+1?
+14
+1%
+1#
+1$
+1)
+#800000
+b111 !
+b11 !
+b1 !
+b0 !
+0"
+0F
+0E
+0D
+0C
+01
+1*
+0A
+0@
+0=
+0<
+05
+03
+0:
+08
+0B
+04
+1B
+0?
+06
+0%
+0&
+0'
+0#
+0)
+1#
+0$
+0(
+#825000
+1"
+11
+0*
+1A
+1:
+0B
+1&
+0#
+#850000
+b1 !
+0"
+1F
+01
+1*
+09
+15
+12
+0:
+16
+14
+0&
+1(
+1)
+#875000
+1"
+11
+0*
+1@
+1>
+1=
+17
+05
+02
+1?
+18
+06
+04
+1$
+1'
+0(
+0)
+#900000
+b11 !
+b10 !
+0"
+0F
+1E
+01
+1*
+0@
+0>
+0=
+1;
+0?
+1?
+0$
+1$
+#925000
+1"
+11
+0*
+1@
+1<
+07
+13
+08
+1%
+0'
+#950000
+b11 !
+0"
+1F
+01
+1*
+0@
+19
+15
+#975000
+1"
+11
+0*
+1>
+1=
+0<
+1:
+05
+12
+0?
+14
+0%
+1&
+0$
+1)
 #1000000
