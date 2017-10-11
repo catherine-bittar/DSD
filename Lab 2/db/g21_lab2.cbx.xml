@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="g21_lab2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_pop_enable|g21_lab2_rom1:R1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q371.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_lab2|g21_pop_enable:inst|g21_lab2_rom1:R1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q371.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

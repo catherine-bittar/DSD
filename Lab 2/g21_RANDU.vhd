@@ -1,4 +1,4 @@
--- this circuit implements th IBM RANDU version of a linear congruential generator
+-- this circuit implements the IBM RANDU version of a linear congruential generator
 
 -- entity name: g21_RANDU
 

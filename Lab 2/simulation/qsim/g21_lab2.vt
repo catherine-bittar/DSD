@@ -18,15 +18,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/10/2017 21:41:16"
+// Generated on "10/11/2017 11:57:01"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    g21_pop_enable
+// Verilog Self-Checking Test Bench (with test vectors) for design :    g21_lab2
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module g21_pop_enable_vlg_sample_tst(
+module g21_lab2_vlg_sample_tst(
 	clk,
 	N,
 	sampler_tx
@@ -56,7 +56,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module g21_pop_enable_vlg_check_tst (
+module g21_lab2_vlg_check_tst (
 	P_EN,
 	sampler_rx
 );
@@ -1120,7 +1120,7 @@ $finish;
 end 
 endmodule
 
-module g21_pop_enable_vlg_vec_tst();
+module g21_lab2_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
@@ -1131,7 +1131,7 @@ wire [51:0] P_EN;
 wire sampler;                             
 
 // assign statements (if any)                          
-g21_pop_enable i1 (
+g21_lab2 i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
 	.N(N),
@@ -1142,8 +1142,8 @@ g21_pop_enable i1 (
 always
 begin
 	clk = 1'b0;
-	clk = #500000 1'b1;
-	#500000;
+	clk = #5000 1'b1;
+	#5000;
 end 
 // N[ 5 ]
 always
@@ -1188,13 +1188,13 @@ begin
 	#1000000;
 end 
 
-g21_pop_enable_vlg_sample_tst tb_sample (
+g21_lab2_vlg_sample_tst tb_sample (
 	.clk(clk),
 	.N(N),
 	.sampler_tx(sampler)
 );
 
-g21_pop_enable_vlg_check_tst tb_out(
+g21_lab2_vlg_check_tst tb_out(
 	.P_EN(P_EN),
 	.sampler_rx(sampler)
 );

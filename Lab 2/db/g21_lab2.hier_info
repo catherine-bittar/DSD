@@ -1,4 +1,66 @@
-|g21_pop_enable
+|g21_lab2
+P_EN[0] <= g21_pop_enable:inst.P_EN[0]
+P_EN[1] <= g21_pop_enable:inst.P_EN[1]
+P_EN[2] <= g21_pop_enable:inst.P_EN[2]
+P_EN[3] <= g21_pop_enable:inst.P_EN[3]
+P_EN[4] <= g21_pop_enable:inst.P_EN[4]
+P_EN[5] <= g21_pop_enable:inst.P_EN[5]
+P_EN[6] <= g21_pop_enable:inst.P_EN[6]
+P_EN[7] <= g21_pop_enable:inst.P_EN[7]
+P_EN[8] <= g21_pop_enable:inst.P_EN[8]
+P_EN[9] <= g21_pop_enable:inst.P_EN[9]
+P_EN[10] <= g21_pop_enable:inst.P_EN[10]
+P_EN[11] <= g21_pop_enable:inst.P_EN[11]
+P_EN[12] <= g21_pop_enable:inst.P_EN[12]
+P_EN[13] <= g21_pop_enable:inst.P_EN[13]
+P_EN[14] <= g21_pop_enable:inst.P_EN[14]
+P_EN[15] <= g21_pop_enable:inst.P_EN[15]
+P_EN[16] <= g21_pop_enable:inst.P_EN[16]
+P_EN[17] <= g21_pop_enable:inst.P_EN[17]
+P_EN[18] <= g21_pop_enable:inst.P_EN[18]
+P_EN[19] <= g21_pop_enable:inst.P_EN[19]
+P_EN[20] <= g21_pop_enable:inst.P_EN[20]
+P_EN[21] <= g21_pop_enable:inst.P_EN[21]
+P_EN[22] <= g21_pop_enable:inst.P_EN[22]
+P_EN[23] <= g21_pop_enable:inst.P_EN[23]
+P_EN[24] <= g21_pop_enable:inst.P_EN[24]
+P_EN[25] <= g21_pop_enable:inst.P_EN[25]
+P_EN[26] <= g21_pop_enable:inst.P_EN[26]
+P_EN[27] <= g21_pop_enable:inst.P_EN[27]
+P_EN[28] <= g21_pop_enable:inst.P_EN[28]
+P_EN[29] <= g21_pop_enable:inst.P_EN[29]
+P_EN[30] <= g21_pop_enable:inst.P_EN[30]
+P_EN[31] <= g21_pop_enable:inst.P_EN[31]
+P_EN[32] <= g21_pop_enable:inst.P_EN[32]
+P_EN[33] <= g21_pop_enable:inst.P_EN[33]
+P_EN[34] <= g21_pop_enable:inst.P_EN[34]
+P_EN[35] <= g21_pop_enable:inst.P_EN[35]
+P_EN[36] <= g21_pop_enable:inst.P_EN[36]
+P_EN[37] <= g21_pop_enable:inst.P_EN[37]
+P_EN[38] <= g21_pop_enable:inst.P_EN[38]
+P_EN[39] <= g21_pop_enable:inst.P_EN[39]
+P_EN[40] <= g21_pop_enable:inst.P_EN[40]
+P_EN[41] <= g21_pop_enable:inst.P_EN[41]
+P_EN[42] <= g21_pop_enable:inst.P_EN[42]
+P_EN[43] <= g21_pop_enable:inst.P_EN[43]
+P_EN[44] <= g21_pop_enable:inst.P_EN[44]
+P_EN[45] <= g21_pop_enable:inst.P_EN[45]
+P_EN[46] <= g21_pop_enable:inst.P_EN[46]
+P_EN[47] <= g21_pop_enable:inst.P_EN[47]
+P_EN[48] <= g21_pop_enable:inst.P_EN[48]
+P_EN[49] <= g21_pop_enable:inst.P_EN[49]
+P_EN[50] <= g21_pop_enable:inst.P_EN[50]
+P_EN[51] <= g21_pop_enable:inst.P_EN[51]
+clk => g21_pop_enable:inst.clk
+N[0] => g21_pop_enable:inst.N[0]
+N[1] => g21_pop_enable:inst.N[1]
+N[2] => g21_pop_enable:inst.N[2]
+N[3] => g21_pop_enable:inst.N[3]
+N[4] => g21_pop_enable:inst.N[4]
+N[5] => g21_pop_enable:inst.N[5]
+
+
+|g21_lab2|g21_pop_enable:inst
 N[0] => g21_lab2_rom1:R1.address[0]
 N[1] => g21_lab2_rom1:R1.address[1]
 N[2] => g21_lab2_rom1:R1.address[2]
@@ -60,7 +122,7 @@ P_EN[51] <= g21_lab2_rom1:R1.q[51]
 clk => g21_lab2_rom1:R1.clock
 
 
-|g21_pop_enable|g21_lab2_rom1:R1
+|g21_lab2|g21_pop_enable:inst|g21_lab2_rom1:R1
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -122,7 +184,7 @@ q[50] <= altsyncram:altsyncram_component.q_a[50]
 q[51] <= altsyncram:altsyncram_component.q_a[51]
 
 
-|g21_pop_enable|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+|g21_lab2|g21_pop_enable:inst|g21_lab2_rom1:R1|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -257,7 +319,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|g21_pop_enable|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+|g21_lab2|g21_pop_enable:inst|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR

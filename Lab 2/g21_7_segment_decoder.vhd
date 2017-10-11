@@ -1,3 +1,11 @@
+-- this circuit implements the segment decoder function as described in the Lab 2 PDF
+-- entity name: g21_RANDU
+
+-- Copyright (C) 2017 Catherine Bittar & Kevin Sorto-Ventura
+-- Version 1.0
+-- Author: Catherine Bittar & Kevin Sorto-Ventura; catherine.bittar@mail.mcgill.ca & kevin-rafael.sorto-ventura@mail.mcgill.ca
+-- Date: 09/29-2017
+
 library ieee; -- allows use of the std_logic_vector type and lpm components
 use ieee.std_logic_1164.all;
 

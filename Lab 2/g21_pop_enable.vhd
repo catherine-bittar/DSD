@@ -1,3 +1,12 @@
+-- this circuit implements the pop_enable function as decribed in the Lab 2 PDF
+
+-- entity name: g21_pop_enable
+
+-- Copyright (C) 2017 Catherine Bittar & Kevin Sorto-Ventura
+-- Version 1.0
+-- Author: Catherine Bittar & Kevin Sorto-Ventura; catherine.bittar@mail.mcgill.ca & kevin-rafael.sorto-ventura@mail.mcgill.ca
+-- Date: 10/11-2017
+
 library ieee; -- allows use of the std_logic_vector type and lpm components
 use ieee.std_logic_1164.all;
 library lpm;

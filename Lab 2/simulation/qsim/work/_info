@@ -79,12 +79,12 @@ Z28 !s100 HJ3kY_=DzUHKgfOkMi_350
 !i10b 1
 !s85 0
 !s101 -O0
-vg21_pop_enable
-Z29 !s100 obFF:gm9HJh]4YQXK[2=T1
-Z30 I<6cWAkVMzoA81FdGBz[A?2
-Z31 V7g4XL`2A^T4dJ<E8IG<QT1
-Z32 dC:\Users\bitta\Documents\GitHub\DSD\Lab 2\simulation\qsim
-Z33 w1507686077
+vg21_lab2
+Z29 !s100 aO>Eoj_;R83;jjFNI7b103
+Z30 IQZS1lmm_>Xbo:@YSFAGJ92
+Z31 VKZLeFEEn02SG]aQZV1b_i2
+R3
+Z32 w1507737422
 R5
 R6
 L0 31
@@ -95,16 +95,16 @@ R8
 R9
 !i10b 1
 !s85 0
-Z34 !s108 1507686077.846000
+Z33 !s108 1507737423.317000
 R12
 !s101 -O0
-vg21_pop_enable_vlg_check_tst
+vg21_lab2_vlg_check_tst
 !i10b 1
-Z35 !s100 7i]6g3NVK7bUPT>geO9cM3
-Z36 I^Yh^@BBO^WdGX0S5jPfjG2
-Z37 V9g@M<M_i<V^8C>:T0lnck0
-R32
-Z38 w1507686076
+Z34 !s100 dP=ORbN:FmX_Wl842ZFHz0
+Z35 IW:lKoU<3N6mh2]___NCjk0
+Z36 V?VZSBXE3ghMiWeYPO=QCL2
+R3
+Z37 w1507737421
 R16
 R17
 L0 59
@@ -112,18 +112,18 @@ R7
 r1
 !s85 0
 31
-Z39 !s108 1507686077.943000
-Z40 !s107 g21_lab2.vt|
+Z38 !s108 1507737423.395000
+Z39 !s107 g21_lab2.vt|
 R20
 !s101 -O0
 R9
-vg21_pop_enable_vlg_sample_tst
+vg21_lab2_vlg_sample_tst
 !i10b 1
-Z41 !s100 KNJDiYKP8gn1SA1Nm`MC=1
-Z42 IVQ>O3M^b`Sc9>dmdIIKK73
-Z43 VEe0n64h]P_N0d7]=Fg>8K3
-R32
-R38
+Z40 !s100 Y?XgYE`WjQDD9KD_b6dNm2
+Z41 IjLkFma5IYQN^40PT>MR<32
+Z42 V^3MGi3<OX3Ck2L6?WMOZf3
+R3
+R37
 R16
 R17
 L0 29
@@ -131,36 +131,36 @@ R7
 r1
 !s85 0
 31
+R38
 R39
-R40
 R20
 !s101 -O0
 R9
-vg21_pop_enable_vlg_vec_tst
+vg21_lab2_vlg_vec_tst
 !i10b 1
-Z44 !s100 ;TgUBWB7[=:h<;BEN:YNH3
-Z45 I;dDWAm@?:cI_>b_<kY[L82
-Z46 VI?^8AG0>C5:9;hOai2kda1
-R32
-R38
+!s100 d[KQRE4:Ce7mlRfndLH=<3
+I3_P3SPBk=eTfCkMkE?4[[0
+Z43 V=ELV?2KFc[Fz0zaml4dlJ0
+R3
+R37
 R16
 R17
-Z47 L0 1123
+Z44 L0 1123
 R7
 r1
 !s85 0
 31
+R38
 R39
-R40
 R20
 !s101 -O0
 R9
-vg21_RANDU
-Z48 !s100 OokaEMf0bj4jQZ1aYXD<f3
-Z49 Ii9Co:?_VficlHS_a;MhTG1
-Z50 V64HAQbZfkBHfT>M@oW]>O0
+vg21_pop_enable
+Z45 !s100 obFF:gm9HJh]4YQXK[2=T1
+Z46 I<6cWAkVMzoA81FdGBz[A?2
+Z47 V7g4XL`2A^T4dJ<E8IG<QT1
 R3
-Z51 w1506956615
+Z48 w1507736072
 R5
 R6
 L0 31
@@ -169,69 +169,145 @@ r1
 31
 R8
 R9
-Z52 ng21_@r@a@n@d@u
-Z53 !s108 1506956616.761000
+Z49 !s108 1507736073.553000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
-vg21_RANDU_vlg_check_tst
-Z54 !s100 RNYXYCe_<84?^hoj?=L803
-Z55 Icma:hNcA_bghZcdlXnb4E0
-Z56 Vz?Na=^W_93FZa251<S5R_3
+vg21_pop_enable_vlg_check_tst
+Z50 !s100 7i]6g3NVK7bUPT>geO9cM3
+Z51 I^Yh^@BBO^WdGX0S5jPfjG2
+Z52 V9g@M<M_i<V^8C>:T0lnck0
 R3
-Z57 w1506956614
+Z53 w1507736071
 R16
 R17
-L0 57
+L0 59
 R7
 r1
 31
-Z58 !s108 1506956616.911000
+Z54 !s108 1507736073.667000
 R19
 R20
 R9
-Z59 ng21_@r@a@n@d@u_vlg_check_tst
 !i10b 1
 !s85 0
 !s101 -O0
-vg21_RANDU_vlg_sample_tst
-Z60 !s100 hQlkT`abDa:LNO]8N`VeR0
-Z61 InNTj_jJnmJM@Fme>3m5C;0
-Z62 Vh3oTJFc>SgAg]mAHK5k1[1
+vg21_pop_enable_vlg_sample_tst
+Z55 !s100 KNJDiYKP8gn1SA1Nm`MC=1
+Z56 IVQ>O3M^b`Sc9>dmdIIKK73
+Z57 VEe0n64h]P_N0d7]=Fg>8K3
 R3
-R57
+R53
 R16
 R17
 L0 29
 R7
 r1
 31
-R58
+R54
 R19
 R20
 R9
-Z63 ng21_@r@a@n@d@u_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_pop_enable_vlg_vec_tst
+Z58 !s100 ;TgUBWB7[=:h<;BEN:YNH3
+Z59 I;dDWAm@?:cI_>b_<kY[L82
+Z60 VI?^8AG0>C5:9;hOai2kda1
+R3
+R53
+R16
+R17
+R44
+R7
+r1
+31
+R54
+R19
+R20
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_RANDU
+Z61 !s100 OokaEMf0bj4jQZ1aYXD<f3
+Z62 Ii9Co:?_VficlHS_a;MhTG1
+Z63 V64HAQbZfkBHfT>M@oW]>O0
+R3
+Z64 w1506956615
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z65 ng21_@r@a@n@d@u
+Z66 !s108 1506956616.761000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_RANDU_vlg_check_tst
+Z67 !s100 RNYXYCe_<84?^hoj?=L803
+Z68 Icma:hNcA_bghZcdlXnb4E0
+Z69 Vz?Na=^W_93FZa251<S5R_3
+R3
+Z70 w1506956614
+R16
+R17
+L0 57
+R7
+r1
+31
+Z71 !s108 1506956616.911000
+R19
+R20
+R9
+Z72 ng21_@r@a@n@d@u_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_RANDU_vlg_sample_tst
+Z73 !s100 hQlkT`abDa:LNO]8N`VeR0
+Z74 InNTj_jJnmJM@Fme>3m5C;0
+Z75 Vh3oTJFc>SgAg]mAHK5k1[1
+R3
+R70
+R16
+R17
+L0 29
+R7
+r1
+31
+R71
+R19
+R20
+R9
+Z76 ng21_@r@a@n@d@u_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vg21_RANDU_vlg_vec_tst
-Z64 InWVb[m:R]6`j406_]JeMi0
-Z65 V0dde_:WKJ@1?IiCT72e2i0
+Z77 InWVb[m:R]6`j406_]JeMi0
+Z78 V0dde_:WKJ@1?IiCT72e2i0
 R3
-R57
+R70
 R16
 R17
-Z66 L0 709
+Z79 L0 709
 R7
 r1
 31
-R58
+R71
 R19
 R20
 R9
-Z67 ng21_@r@a@n@d@u_vlg_vec_tst
-Z68 !s100 A;L20FhHhgNfmcWC2iz_z3
+Z80 ng21_@r@a@n@d@u_vlg_vec_tst
+Z81 !s100 A;L20FhHhgNfmcWC2iz_z3
 !i10b 1
 !s85 0
 !s101 -O0
