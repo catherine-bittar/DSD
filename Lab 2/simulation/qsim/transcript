@@ -2,28 +2,18 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_7_segment_decoder
+# -- Compiling module g21_pop_enable
 # 
 # Top level modules:
-# 	g21_7_segment_decoder
+# 	g21_pop_enable
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_7_segment_decoder_vlg_sample_tst
-# -- Compiling module g21_7_segment_decoder_vlg_check_tst
-# -- Compiling module g21_7_segment_decoder_vlg_vec_tst
+# -- Compiling module g21_pop_enable_vlg_sample_tst
+# -- Compiling module g21_pop_enable_vlg_check_tst
+# -- Compiling module g21_pop_enable_vlg_vec_tst
 # 
 # Top level modules:
-# 	g21_7_segment_decoder_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_7_segment_decoder_vlg_vec_tst 
-# Loading work.g21_7_segment_decoder_vlg_vec_tst
-# Loading work.g21_7_segment_decoder
-# Loading cycloneii_ver.cycloneii_io
-# Loading cycloneii_ver.cycloneii_mux21
-# Loading cycloneii_ver.cycloneii_dffe
-# Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading work.g21_7_segment_decoder_vlg_sample_tst
-# Loading work.g21_7_segment_decoder_vlg_check_tst
-# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
-# ** Note: $finish    : g21_lab2.vt(257)
-#    Time: 1 us  Iteration: 0  Instance: /g21_7_segment_decoder_vlg_vec_tst/tb_out
+# 	g21_pop_enable_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_lab2_vlg_vec_tst 
+# ** Error: (vsim-3170) Could not find 'C:/Users/bitta/Documents/GitHub/DSD/Lab 2/simulation/qsim/work.g21_lab2_vlg_vec_tst'.
+# 
+# Error loading design

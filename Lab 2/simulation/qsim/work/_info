@@ -16,75 +16,75 @@ r1
 31
 Z8 !s90 -work|work|g21_lab2.vo|
 Z9 o-work work -O0
-!i10b 1
 Z10 !s100 25O@N0SBLzWUmh4e7Xe`03
-!s85 0
 Z11 !s108 1507056640.931000
 Z12 !s107 g21_lab2.vo|
+!i10b 1
+!s85 0
 !s101 -O0
 vg21_7_segment_decoder_vlg_check_tst
-!i10b 1
-!s100 ]m`7KJn3BFJD[VzzV?NQJ2
-IX@Z^hSCBe83Df7H:=KIgf3
-VKKfHnH;QdzV0XmYUXJ^lo3
+Z13 IX@Z^hSCBe83Df7H:=KIgf3
+Z14 VKKfHnH;QdzV0XmYUXJ^lo3
 R3
-Z13 w1507056638
-Z14 8g21_lab2.vt
-Z15 Fg21_lab2.vt
+Z15 w1507056638
+Z16 8g21_lab2.vt
+Z17 Fg21_lab2.vt
 L0 59
 R7
 r1
-!s85 0
 31
-Z16 !s108 1507056641.061000
-Z17 !s107 g21_lab2.vt|
-Z18 !s90 -work|work|g21_lab2.vt|
-!s101 -O0
+Z18 !s108 1507056641.061000
+Z19 !s107 g21_lab2.vt|
+Z20 !s90 -work|work|g21_lab2.vt|
 R9
-vg21_7_segment_decoder_vlg_sample_tst
+Z21 !s100 ]m`7KJn3BFJD[VzzV?NQJ2
 !i10b 1
-!s100 P_QAgoo=eoNfE92A<i;O<3
-IQ`6WQ;`[^6^_^VAVNBl3`0
-V`IWADUC1f`NV?gWWWEE?n2
+!s85 0
+!s101 -O0
+vg21_7_segment_decoder_vlg_sample_tst
+Z22 IQ`6WQ;`[^6^_^VAVNBl3`0
+Z23 V`IWADUC1f`NV?gWWWEE?n2
 R3
-R13
-R14
 R15
+R16
+R17
 L0 29
 R7
 r1
-!s85 0
 31
+R18
+R19
+R20
+R9
+Z24 !s100 P_QAgoo=eoNfE92A<i;O<3
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_7_segment_decoder_vlg_vec_tst
+Z25 Io25JFgkkBPBNAYzGb?R723
+Z26 V4Ja]]fgjafY7X7@3Lk[Ui3
+R3
+R15
 R16
 R17
-R18
-!s101 -O0
-R9
-vg21_7_segment_decoder_vlg_vec_tst
-!i10b 1
-!s100 HJ3kY_=DzUHKgfOkMi_350
-Io25JFgkkBPBNAYzGb?R723
-V4Ja]]fgjafY7X7@3Lk[Ui3
-R3
-R13
-R14
-R15
-L0 261
+Z27 L0 261
 R7
 r1
-!s85 0
 31
-R16
-R17
 R18
-!s101 -O0
+R19
+R20
 R9
-vg21_RANDU
-Z19 !s100 OokaEMf0bj4jQZ1aYXD<f3
-Z20 Ii9Co:?_VficlHS_a;MhTG1
-Z21 V64HAQbZfkBHfT>M@oW]>O0
-R3
-Z22 w1506956615
+Z28 !s100 HJ3kY_=DzUHKgfOkMi_350
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_pop_enable
+Z29 !s100 obFF:gm9HJh]4YQXK[2=T1
+Z30 I<6cWAkVMzoA81FdGBz[A?2
+Z31 V7g4XL`2A^T4dJ<E8IG<QT1
+Z32 dC:\Users\bitta\Documents\GitHub\DSD\Lab 2\simulation\qsim
+Z33 w1507686077
 R5
 R6
 L0 31
@@ -93,69 +93,145 @@ r1
 31
 R8
 R9
-Z23 ng21_@r@a@n@d@u
-Z24 !s108 1506956616.761000
+!i10b 1
+!s85 0
+Z34 !s108 1507686077.846000
+R12
+!s101 -O0
+vg21_pop_enable_vlg_check_tst
+!i10b 1
+Z35 !s100 7i]6g3NVK7bUPT>geO9cM3
+Z36 I^Yh^@BBO^WdGX0S5jPfjG2
+Z37 V9g@M<M_i<V^8C>:T0lnck0
+R32
+Z38 w1507686076
+R16
+R17
+L0 59
+R7
+r1
+!s85 0
+31
+Z39 !s108 1507686077.943000
+Z40 !s107 g21_lab2.vt|
+R20
+!s101 -O0
+R9
+vg21_pop_enable_vlg_sample_tst
+!i10b 1
+Z41 !s100 KNJDiYKP8gn1SA1Nm`MC=1
+Z42 IVQ>O3M^b`Sc9>dmdIIKK73
+Z43 VEe0n64h]P_N0d7]=Fg>8K3
+R32
+R38
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R39
+R40
+R20
+!s101 -O0
+R9
+vg21_pop_enable_vlg_vec_tst
+!i10b 1
+Z44 !s100 ;TgUBWB7[=:h<;BEN:YNH3
+Z45 I;dDWAm@?:cI_>b_<kY[L82
+Z46 VI?^8AG0>C5:9;hOai2kda1
+R32
+R38
+R16
+R17
+Z47 L0 1123
+R7
+r1
+!s85 0
+31
+R39
+R40
+R20
+!s101 -O0
+R9
+vg21_RANDU
+Z48 !s100 OokaEMf0bj4jQZ1aYXD<f3
+Z49 Ii9Co:?_VficlHS_a;MhTG1
+Z50 V64HAQbZfkBHfT>M@oW]>O0
+R3
+Z51 w1506956615
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z52 ng21_@r@a@n@d@u
+Z53 !s108 1506956616.761000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vg21_RANDU_vlg_check_tst
-Z25 !s100 RNYXYCe_<84?^hoj?=L803
-Z26 Icma:hNcA_bghZcdlXnb4E0
-Z27 Vz?Na=^W_93FZa251<S5R_3
+Z54 !s100 RNYXYCe_<84?^hoj?=L803
+Z55 Icma:hNcA_bghZcdlXnb4E0
+Z56 Vz?Na=^W_93FZa251<S5R_3
 R3
-Z28 w1506956614
-R14
-R15
+Z57 w1506956614
+R16
+R17
 L0 57
 R7
 r1
 31
-Z29 !s108 1506956616.911000
-Z30 !s107 g21_lab2.vt|
-R18
+Z58 !s108 1506956616.911000
+R19
+R20
 R9
-Z31 ng21_@r@a@n@d@u_vlg_check_tst
+Z59 ng21_@r@a@n@d@u_vlg_check_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vg21_RANDU_vlg_sample_tst
-Z32 !s100 hQlkT`abDa:LNO]8N`VeR0
-Z33 InNTj_jJnmJM@Fme>3m5C;0
-Z34 Vh3oTJFc>SgAg]mAHK5k1[1
+Z60 !s100 hQlkT`abDa:LNO]8N`VeR0
+Z61 InNTj_jJnmJM@Fme>3m5C;0
+Z62 Vh3oTJFc>SgAg]mAHK5k1[1
 R3
-R28
-R14
-R15
+R57
+R16
+R17
 L0 29
 R7
 r1
 31
-R29
-R30
-R18
+R58
+R19
+R20
 R9
-Z35 ng21_@r@a@n@d@u_vlg_sample_tst
+Z63 ng21_@r@a@n@d@u_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vg21_RANDU_vlg_vec_tst
-Z36 InWVb[m:R]6`j406_]JeMi0
-Z37 V0dde_:WKJ@1?IiCT72e2i0
+Z64 InWVb[m:R]6`j406_]JeMi0
+Z65 V0dde_:WKJ@1?IiCT72e2i0
 R3
-R28
-R14
-R15
-Z38 L0 709
+R57
+R16
+R17
+Z66 L0 709
 R7
 r1
 31
-R29
-R30
-R18
+R58
+R19
+R20
 R9
-Z39 ng21_@r@a@n@d@u_vlg_vec_tst
-Z40 !s100 A;L20FhHhgNfmcWC2iz_z3
+Z67 ng21_@r@a@n@d@u_vlg_vec_tst
+Z68 !s100 A;L20FhHhgNfmcWC2iz_z3
 !i10b 1
 !s85 0
 !s101 -O0

@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Oct 10 21:20:51 2017
+Analysis & Synthesis Status : Successful - Tue Oct 10 21:35:59 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : g21_lab2
-Top-level Entity Name : g21_7_segment_decoder
+Top-level Entity Name : g21_pop_enable
 Family : Cyclone II
-Total logic elements : 17
-    Total combinational functions : 17
+Total logic elements : 0
+    Total combinational functions : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 12
+Total pins : 59
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 3,328
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
