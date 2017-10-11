@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab2
-Tue Oct 03 14:45:07 2017
+Tue Oct 10 21:20:51 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 03 14:45:07 2017           ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 10 21:20:51 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab2                                        ;
 ; Top-level Entity Name              ; g21_7_segment_decoder                           ;
@@ -148,18 +148,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; g21_7_segment_decoder.vhd        ; yes             ; User VHDL File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 2/g21_7_segment_decoder.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; g21_7_segment_decoder.vhd        ; yes             ; User VHDL File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 2/g21_7_segment_decoder.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -232,7 +232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 03 14:45:05 2017
+    Info: Processing started: Tue Oct 10 21:20:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab2 -c g21_lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file g21_randu.vhd
@@ -244,6 +244,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file add_sub
 Info (12021): Found 2 design units, including 1 entities, in source file g21_7_segment_decoder.vhd
     Info (12022): Found design unit 1: g21_7_segment_decoder-g21_7_segment_decoder_arch
     Info (12023): Found entity 1: g21_7_segment_decoder
+Info (12021): Found 2 design units, including 1 entities, in source file g21_lab2_rom1.vhd
+    Info (12022): Found design unit 1: g21_lab2_rom1-SYN
+    Info (12023): Found entity 1: g21_lab2_rom1
+Info (12021): Found 2 design units, including 1 entities, in source file g21_pop_enable.vhd
+    Info (12022): Found design unit 1: g21_pop_enable-g21_pop_enable_arch
+    Info (12023): Found entity 1: g21_pop_enable
 Info (12127): Elaborating entity "g21_7_segment_decoder" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -252,9 +258,9 @@ Info (21057): Implemented 29 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 17 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 537 megabytes
-    Info: Processing ended: Tue Oct 03 14:45:07 2017
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 515 megabytes
+    Info: Processing ended: Tue Oct 10 21:20:51 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
