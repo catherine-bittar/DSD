@@ -29,6 +29,15 @@
 # Loading work.g21_lab2_vlg_sample_tst
 # Loading work.g21_lab2_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: kevin  Hostname: LAPTOP-5DDC22IG  ProcessID: 8512
+# 
+#           Attempting to use alternate WLF file "./wlftaymee9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftaymee9
+# 
 # ERROR! Vector Mismatch for output port P_EN[0] :: @time = 1000000.000 ps
 #      Expected value = 0000000000000000000000000000000000000000000000000000
 #      Real value = 1111111111111111111111111111111111111111111111111111
