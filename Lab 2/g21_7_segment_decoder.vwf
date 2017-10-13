@@ -235,12 +235,7 @@ TRANSITION_LIST("mode")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
