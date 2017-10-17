@@ -9,7 +9,7 @@
 
 library ieee; -- allows use of the std_logic_vector type and lpm components
 use ieee.std_logic_1164.all;
-library lpm;
+library lpm; 
 use lpm.lpm_components.all;
 
 entity g21_RANDU is -- begin description of g21_RANDU entity

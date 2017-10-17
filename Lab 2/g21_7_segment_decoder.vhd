@@ -6,26 +6,26 @@
 -- Author: Catherine Bittar & Kevin Sorto-Ventura; catherine.bittar@mail.mcgill.ca & kevin-rafael.sorto-ventura@mail.mcgill.ca
 -- Date: 09/29-2017
 
-library ieee; -- allows use of the std_logic_vector type and lpm components
+library ieee; -- allows use of the std_logic_vector type 
 use ieee.std_logic_1164.all;
 
 
-entity g21_7_segment_decoder is
+entity g21_7_segment_decoder is -- begin description of g21_7_segment_decoder entity
 
-	port (code : in std_logic_vector(3 downto 0);
-			mode : in std_logic;
-			segments_out : out std_logic_vector(6 downto 0));
+	port (code : in std_logic_vector(3 downto 0); -- define input port code (4-bit)
+			mode : in std_logic; -- define input port mode (1-bit)
+			segments_out : out std_logic_vector(6 downto 0)); -- define output port segments_out (7-bit)
 			
 end g21_7_segment_decoder;
 
-architecture g21_7_segment_decoder_arch of g21_7_segment_decoder is
+architecture g21_7_segment_decoder_arch of g21_7_segment_decoder is -- begin description of g21_7_segment_decoder_arch architecture
 
-	signal xcode : std_logic_vector(4 downto 0);
+	signal xcode : std_logic_vector(4 downto 0); -- create internal signal xcode (5-bit)
 
 	begin
-	xcode(4 downto 1) <= code; xcode(0) <= mode;
+	xcode(4 downto 1) <= code; xcode(0) <= mode; -- define xcode: bits 4 downto 1 = code & bit 0 = mode
 
-	with xcode select
+	with xcode select -- begin "select when" satement assigning segments_out values based on xcode
 	segments_out <=
 		"1000000" when "00000",
 		"0001000" when "00001",

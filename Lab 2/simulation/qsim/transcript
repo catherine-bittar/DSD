@@ -34,10 +34,10 @@
 # 
 #           File in use by: kevin  Hostname: LAPTOP-5DDC22IG  ProcessID: 8512
 # 
-#           Attempting to use alternate WLF file "./wlfted7fi4".
+#           Attempting to use alternate WLF file "./wlftd2v6jc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlfted7fi4
+#           Using alternate file: ./wlftd2v6jc
 # 
 # Simulation passed !
 # ** Note: $finish    : g21_lab2.vt(273)

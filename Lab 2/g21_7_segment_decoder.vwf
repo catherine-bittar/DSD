@@ -235,7 +235,12 @@ TRANSITION_LIST("mode")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+		}
 	}
 }
 
@@ -306,7 +311,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "code";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 	CHILDREN = 1, 2, 3, 4;
@@ -316,7 +321,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "code[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -326,7 +331,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "code[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -336,7 +341,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "code[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -346,7 +351,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "code[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 0;
