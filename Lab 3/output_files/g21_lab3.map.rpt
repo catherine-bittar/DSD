@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Tue Oct 24 14:48:03 2017
+Wed Oct 25 14:29:34 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -122,11 +122,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 114. Parameter Settings for User Entity Instance: LPM_FF:inst102
 115. Parameter Settings for User Entity Instance: BUSMUX:inst103
 116. Parameter Settings for User Entity Instance: g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
-117. Parameter Settings for User Entity Instance: BUSMUX:NOP_EN
-118. Parameter Settings for User Entity Instance: BUSMUX:REG_EN
-119. altsyncram Parameter Settings by Entity Instance
-120. Elapsed Time Per Partition
-121. Analysis & Synthesis Messages
+117. Parameter Settings for User Entity Instance: lpm_mux2:inst116|LPM_MUX:LPM_MUX_component
+118. altsyncram Parameter Settings by Entity Instance
+119. Elapsed Time Per Partition
+120. Analysis & Synthesis Messages
 
 
 
@@ -152,7 +151,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 24 14:48:03 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 25 14:29:34 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_stack52                                     ;
@@ -275,6 +274,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; g21_lab2.mif                     ; yes             ; User Memory Initialization File    ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2.mif           ;         ;
 ; g21_lab2_rom1.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd      ;         ;
 ; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd           ;         ;
+; lpm_mux2.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux2.vhd           ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                      ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                   ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                       ;         ;
@@ -295,7 +295,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                       ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                     ;         ;
 ; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/altsyncram_q371.tdf ;         ;
-; db/mux_boc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_boc.tdf         ;         ;
+; db/mux_p4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_p4e.tdf         ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
@@ -341,6 +341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-------------------------------------------------------------------------------+
 ; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1 ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|lpm_mux0:inst114                        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd      ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|lpm_mux2:inst116                        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux2.vhd      ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-------------------------------------------------------------------------------+
 
 
@@ -1956,23 +1957,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:NOP_EN ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; WIDTH          ; 6     ; Untyped                           ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:REG_EN ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; WIDTH          ; 52    ; Untyped                           ;
-+----------------+-------+-----------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux2:inst116|LPM_MUX:LPM_MUX_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 52         ; Signed Integer                                    ;
+; LPM_SIZE               ; 4          ; Signed Integer                                    ;
+; LPM_WIDTHS             ; 2          ; Signed Integer                                    ;
+; LPM_PIPELINE           ; 0          ; Signed Integer                                    ;
+; CBXI_PARAMETER         ; mux_p4e    ; Untyped                                           ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                           ;
++------------------------+------------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2011,7 +2011,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 24 14:47:57 2017
+    Info: Processing started: Wed Oct 25 14:29:31 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2025,6 +2025,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file g21_lab
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux0.vhd
     Info (12022): Found design unit 1: lpm_mux0-SYN
     Info (12023): Found entity 1: lpm_mux0
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux1.vhd
+    Info (12022): Found design unit 1: lpm_mux1-SYN
+    Info (12023): Found entity 1: lpm_mux1
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux2.vhd
+    Info (12022): Found design unit 1: lpm_mux2-SYN
+    Info (12023): Found entity 1: lpm_mux2
 Info (12127): Elaborating entity "g21_stack52" for the top level hierarchy
 Warning (275085): Found inconsistent dimensions for element "ENABLE"
 Warning (275085): Found inconsistent dimensions for element "RST"
@@ -2088,9 +2094,61 @@ Warning (275080): Converted elements in bus name "ENABLE" using legacy naming ru
     Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
     Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
     Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
+    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
 Warning (275080): Converted elements in bus name "RST" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "RST[0]" to "RST0"
     Warning (275081): Converted element name(s) from "RST[0]" to "RST0"
+Warning (275008): Primitive "NAND2" of instance "inst105" not used
 Info (12128): Elaborating entity "lpm_mux0" for hierarchy "lpm_mux0:inst114"
 Info (12128): Elaborating entity "LPM_MUX" for hierarchy "lpm_mux0:inst114|LPM_MUX:LPM_MUX_component"
 Info (12130): Elaborated megafunction instantiation "lpm_mux0:inst114|LPM_MUX:LPM_MUX_component"
@@ -2710,19 +2768,19 @@ Info (12133): Instantiated megafunction "g21_pop_enable:inst104|g21_lab2_rom1:R1
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_q371.tdf
     Info (12023): Found entity 1: altsyncram_q371
 Info (12128): Elaborating entity "altsyncram_q371" for hierarchy "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:NOP_EN"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:NOP_EN"
-Info (12133): Instantiated megafunction "BUSMUX:NOP_EN" with the following parameter:
-    Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:REG_EN"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:REG_EN"
-Info (12133): Instantiated megafunction "BUSMUX:REG_EN" with the following parameter:
-    Info (12134): Parameter "WIDTH" = "52"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "BUSMUX:REG_EN|LPM_MUX:$00000"
-Info (12131): Elaborated megafunction instantiation "BUSMUX:REG_EN|LPM_MUX:$00000", which is child of megafunction instantiation "BUSMUX:REG_EN"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_boc.tdf
-    Info (12023): Found entity 1: mux_boc
-Info (12128): Elaborating entity "mux_boc" for hierarchy "BUSMUX:REG_EN|LPM_MUX:$00000|mux_boc:auto_generated"
+Info (12128): Elaborating entity "lpm_mux2" for hierarchy "lpm_mux2:inst116"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "lpm_mux2:inst116|LPM_MUX:LPM_MUX_component"
+Info (12130): Elaborated megafunction instantiation "lpm_mux2:inst116|LPM_MUX:LPM_MUX_component"
+Info (12133): Instantiated megafunction "lpm_mux2:inst116|LPM_MUX:LPM_MUX_component" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "52"
+    Info (12134): Parameter "LPM_SIZE" = "4"
+    Info (12134): Parameter "LPM_WIDTHS" = "2"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_p4e.tdf
+    Info (12023): Found entity 1: mux_p4e
+Info (12128): Elaborating entity "mux_p4e" for hierarchy "lpm_mux2:inst116|LPM_MUX:LPM_MUX_component|mux_p4e:auto_generated"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[0]"
@@ -2787,6 +2845,12 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 17 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADDR[5]"
+    Warning (15610): No output dependent on input pin "ADDR[4]"
+    Warning (15610): No output dependent on input pin "ADDR[3]"
+    Warning (15610): No output dependent on input pin "ADDR[2]"
+    Warning (15610): No output dependent on input pin "ADDR[1]"
+    Warning (15610): No output dependent on input pin "ADDR[0]"
     Warning (15610): No output dependent on input pin "CLK"
     Warning (15610): No output dependent on input pin "MODE[1]"
     Warning (15610): No output dependent on input pin "MODE[0]"
@@ -2797,20 +2861,14 @@ Warning (21074): Design contains 17 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "DATA[2]"
     Warning (15610): No output dependent on input pin "DATA[1]"
     Warning (15610): No output dependent on input pin "DATA[0]"
-    Warning (15610): No output dependent on input pin "ADDR[5]"
-    Warning (15610): No output dependent on input pin "ADDR[4]"
-    Warning (15610): No output dependent on input pin "ADDR[3]"
-    Warning (15610): No output dependent on input pin "ADDR[2]"
-    Warning (15610): No output dependent on input pin "ADDR[1]"
-    Warning (15610): No output dependent on input pin "ADDR[0]"
     Warning (15610): No output dependent on input pin "ENABLE"
 Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 6 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 351 warnings
-    Info: Peak virtual memory: 565 megabytes
-    Info: Processing ended: Tue Oct 24 14:48:03 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 403 warnings
+    Info: Peak virtual memory: 557 megabytes
+    Info: Processing ended: Wed Oct 25 14:29:34 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

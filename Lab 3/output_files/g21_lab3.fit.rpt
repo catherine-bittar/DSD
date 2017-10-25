@@ -1,5 +1,5 @@
 Fitter report for g21_lab3
-Tue Oct 24 14:48:10 2017
+Wed Oct 25 14:29:38 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -54,7 +54,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Oct 24 14:48:10 2017           ;
+; Fitter Status                      ; Successful - Wed Oct 25 14:29:38 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_stack52                                     ;
@@ -294,23 +294,23 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; ADDR[0] ; H1    ; 2        ; 0            ; 19           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ADDR[1] ; F2    ; 2        ; 0            ; 20           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ADDR[2] ; H6    ; 2        ; 0            ; 21           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ADDR[3] ; D8    ; 3        ; 9            ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ADDR[4] ; H4    ; 2        ; 0            ; 21           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ADDR[5] ; G11   ; 3        ; 20           ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; CLK     ; W16   ; 7        ; 46           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[0] ; R19   ; 6        ; 50           ; 8            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[1] ; AA16  ; 7        ; 35           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[2] ; F3    ; 2        ; 0            ; 22           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[3] ; N3    ; 1        ; 0            ; 10           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[4] ; F22   ; 5        ; 50           ; 20           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; DATA[5] ; W21   ; 6        ; 50           ; 4            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[0] ; F22   ; 5        ; 50           ; 20           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[1] ; W21   ; 6        ; 50           ; 4            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[2] ; AA7   ; 8        ; 11           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[3] ; A5    ; 3        ; 3            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[4] ; E3    ; 2        ; 0            ; 24           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; ADDR[5] ; W16   ; 7        ; 46           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; CLK     ; N3    ; 1        ; 0            ; 10           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[0] ; H1    ; 2        ; 0            ; 19           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[1] ; F2    ; 2        ; 0            ; 20           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[2] ; H6    ; 2        ; 0            ; 21           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[3] ; D8    ; 3        ; 9            ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[4] ; H4    ; 2        ; 0            ; 21           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; DATA[5] ; G11   ; 3        ; 20           ; 27           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; ENABLE  ; H2    ; 2        ; 0            ; 19           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MODE[0] ; A5    ; 3        ; 3            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MODE[1] ; E3    ; 2        ; 0            ; 24           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; RST     ; AA7   ; 8        ; 11           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MODE[0] ; AA16  ; 7        ; 35           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MODE[1] ; F3    ; 2        ; 0            ; 22           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; RST     ; R19   ; 6        ; 50           ; 8            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -353,7 +353,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; A2       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A3       ; 325        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A4       ; 324        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A5       ; 322        ; 3        ; MODE[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A5       ; 322        ; 3        ; ADDR[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A6       ; 320        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ; 306        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A8       ; 304        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -377,7 +377,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; AA4      ; 85         ; 8        ; VALUE[4]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA5      ; 89         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA6      ; 97         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA7      ; 103        ; 8        ; RST                                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA7      ; 103        ; 8        ; ADDR[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA8      ; 111        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA9      ; 114        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA10     ; 120        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -386,7 +386,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; AA13     ; 130        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA14     ; 136        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA15     ; 138        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA16     ; 140        ; 7        ; DATA[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA16     ; 140        ; 7        ; MODE[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA17     ; 144        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA18     ; 153        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA19     ; 162        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -466,7 +466,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; D5       ; 4          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D6       ; 5          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D7       ; 311        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D8       ; 309        ; 3        ; ADDR[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 309        ; 3        ; DATA[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D9       ; 302        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D11      ; 289        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -483,7 +483,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; D22      ; 230        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E1       ; 20         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E2       ; 21         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; E3       ; 6          ; 2        ; MODE[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E3       ; 6          ; 2        ; ADDR[4]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E4       ; 7          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E5       ;            ;          ; VCCD_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; E6       ;            ;          ; VCCA_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -504,8 +504,8 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; E21      ; 227        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E22      ; 228        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F1       ; 22         ; 2        ; VALUE[0]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F2       ; 23         ; 2        ; ADDR[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F3       ; 13         ; 2        ; DATA[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F2       ; 23         ; 2        ; DATA[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F3       ; 13         ; 2        ; MODE[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F4       ; 10         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F5       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F6       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -524,7 +524,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; F19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F20      ; 235        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F21      ; 223        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; F22      ; 224        ; 5        ; DATA[4]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F22      ; 224        ; 5        ; ADDR[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G2       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G3       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -535,7 +535,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; G8       ; 313        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; G10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G11      ; 291        ; 3        ; ADDR[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G11      ; 291        ; 3        ; DATA[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G12      ; 277        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -547,12 +547,12 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; G20      ; 233        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; G21      ; 221        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G22      ; 222        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H1       ; 24         ; 2        ; ADDR[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H1       ; 24         ; 2        ; DATA[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H2       ; 25         ; 2        ; ENABLE                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H3       ; 27         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; H4       ; 17         ; 2        ; ADDR[4]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H4       ; 17         ; 2        ; DATA[4]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H5       ; 18         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H6       ; 19         ; 2        ; ADDR[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H6       ; 19         ; 2        ; DATA[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H7       ; 318        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H8       ; 314        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H9       ; 300        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -659,7 +659,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; M22      ; 204        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N1       ; 45         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N2       ; 46         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N3       ; 51         ; 1        ; DATA[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 51         ; 1        ; CLK                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N4       ; 52         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N5       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N6       ; 49         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -719,7 +719,7 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; R16      ; 155        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R17      ; 177        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R18      ; 184        ; 6        ; VALUE[1]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R19      ; 185        ; 6        ; DATA[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R19      ; 185        ; 6        ; RST                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R20      ; 192        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R21      ; 190        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R22      ; 191        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -804,12 +804,12 @@ The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 3
 ; W13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W14      ; 141        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W15      ; 149        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; W16      ; 160        ; 7        ; CLK                                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W16      ; 160        ; 7        ; ADDR[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; W17      ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; W18      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; W19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W20      ; 167        ; 6        ; ~LVDS91p/nCEO~                           ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; W21      ; 174        ; 6        ; DATA[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W21      ; 174        ; 6        ; ADDR[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W22      ; 175        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y1       ; 73         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ; 74         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -895,22 +895,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VALUE[2] ; Output   ; --            ; --            ; --                    ; --  ;
 ; VALUE[1] ; Output   ; --            ; --            ; --                    ; --  ;
 ; VALUE[0] ; Output   ; --            ; --            ; --                    ; --  ;
-; CLK      ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; MODE[1]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; MODE[0]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; RST      ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; DATA[5]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; DATA[4]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; DATA[3]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; DATA[2]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; DATA[1]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; DATA[0]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; ADDR[5]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; ADDR[4]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; ADDR[3]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; ADDR[2]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; ADDR[2]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; ADDR[1]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; ADDR[0]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; CLK      ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; MODE[1]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; MODE[0]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; RST      ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; DATA[5]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; DATA[4]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; DATA[3]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; DATA[2]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; DATA[1]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; DATA[0]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; ENABLE   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +----------+----------+---------------+---------------+-----------------------+-----+
 
@@ -920,6 +920,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
+; ADDR[5]             ;                   ;         ;
+; ADDR[4]             ;                   ;         ;
+; ADDR[3]             ;                   ;         ;
+; ADDR[2]             ;                   ;         ;
+; ADDR[1]             ;                   ;         ;
+; ADDR[0]             ;                   ;         ;
 ; CLK                 ;                   ;         ;
 ; MODE[1]             ;                   ;         ;
 ; MODE[0]             ;                   ;         ;
@@ -930,12 +936,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DATA[2]             ;                   ;         ;
 ; DATA[1]             ;                   ;         ;
 ; DATA[0]             ;                   ;         ;
-; ADDR[5]             ;                   ;         ;
-; ADDR[4]             ;                   ;         ;
-; ADDR[3]             ;                   ;         ;
-; ADDR[2]             ;                   ;         ;
-; ADDR[1]             ;                   ;         ;
-; ADDR[0]             ;                   ;         ;
 ; ENABLE              ;                   ;         ;
 +---------------------+-------------------+---------+
 
@@ -1008,6 +1008,12 @@ Critical Warning (169085): No exact pin location assignment(s) for 23 pins of 23
     Info (169086): Pin VALUE[2] not assigned to an exact location on the device
     Info (169086): Pin VALUE[1] not assigned to an exact location on the device
     Info (169086): Pin VALUE[0] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[5] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[4] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[3] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[2] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[1] not assigned to an exact location on the device
+    Info (169086): Pin ADDR[0] not assigned to an exact location on the device
     Info (169086): Pin CLK not assigned to an exact location on the device
     Info (169086): Pin MODE[1] not assigned to an exact location on the device
     Info (169086): Pin MODE[0] not assigned to an exact location on the device
@@ -1018,12 +1024,6 @@ Critical Warning (169085): No exact pin location assignment(s) for 23 pins of 23
     Info (169086): Pin DATA[2] not assigned to an exact location on the device
     Info (169086): Pin DATA[1] not assigned to an exact location on the device
     Info (169086): Pin DATA[0] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[5] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[4] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[3] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[2] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[1] not assigned to an exact location on the device
-    Info (169086): Pin ADDR[0] not assigned to an exact location on the device
     Info (169086): Pin ENABLE not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'g21_lab3.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1046,7 +1046,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  35 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1071,14 +1071,14 @@ Warning (306006): Found 6 output pins without output pin load capacitance assign
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 741 megabytes
-    Info: Processing ended: Tue Oct 24 14:48:10 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Wed Oct 25 14:29:38 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+
