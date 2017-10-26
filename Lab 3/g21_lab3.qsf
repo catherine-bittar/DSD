@@ -64,4 +64,8 @@ set_global_assignment -name QIP_FILE INIT_lpm_constant.qip
 set_global_assignment -name QIP_FILE POP_lpm_constant.qip
 set_global_assignment -name QIP_FILE PUSH_lpm_constant.qip
 set_global_assignment -name QIP_FILE MODE_Select_lpm_mux.qip
+set_global_assignment -name QIP_FILE StackCounter_lpm_counter.qip
+set_global_assignment -name BDF_FILE g21_comp7.bdf
+set_global_assignment -name BSF_FILE g21_comp7.bsf
+set_global_assignment -name QIP_FILE a52_lpm_constant.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
