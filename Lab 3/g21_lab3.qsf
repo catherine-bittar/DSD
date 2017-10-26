@@ -59,4 +59,9 @@ set_global_assignment -name VHDL_FILE g21_lab2_rom1.vhd
 set_global_assignment -name QIP_FILE lpm_mux0.qip
 set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE NOP_lpm_constant.qip
+set_global_assignment -name QIP_FILE INIT_lpm_constant.qip
+set_global_assignment -name QIP_FILE POP_lpm_constant.qip
+set_global_assignment -name QIP_FILE PUSH_lpm_constant.qip
+set_global_assignment -name QIP_FILE MODE_Select_lpm_mux.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
