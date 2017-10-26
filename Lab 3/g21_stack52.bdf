@@ -12469,11 +12469,6 @@ applicable agreement for further details.
 	(pt -672 408)
 )
 (connector
-	(text "data_select[0]" (rect -542 392 -473 404)(font "Arial" ))
-	(pt -544 408)
-	(pt -456 408)
-)
-(connector
 	(text "opcode[8]" (rect -670 464 -622 476)(font "Arial" ))
 	(pt -592 480)
 	(pt -672 480)
@@ -12499,11 +12494,6 @@ applicable agreement for further details.
 	(pt -544 704)
 	(pt -472 704)
 	(bus)
-)
-(connector
-	(text "sset[0]" (rect -542 464 -508 476)(font "Arial" ))
-	(pt -408 480)
-	(pt -544 480)
 )
 (connector
 	(text "updown[0]" (rect -542 608 -493 620)(font "Arial" ))
@@ -12606,11 +12596,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "sset[0]" (rect 306 96 340 108)(font "Arial" ))
-	(pt 368 104)
-	(pt 336 104)
-)
-(connector
 	(pt 456 208)
 	(pt 456 216)
 )
@@ -12666,6 +12651,142 @@ applicable agreement for further details.
 	(text "CLK" (rect 314 136 335 148)(font "Arial" ))
 	(pt 368 152)
 	(pt 304 152)
+)
+(connector
+	(text "sset" (rect 338 288 359 300)(font "Arial" ))
+	(pt 368 304)
+	(pt 328 304)
+)
+(connector
+	(text "data_select" (rect -542 392 -486 404)(font "Arial" ))
+	(pt -544 408)
+	(pt -456 408)
+)
+(connector
+	(text "sset" (rect -542 464 -521 476)(font "Arial" ))
+	(pt -408 480)
+	(pt -544 480)
+)
+(connector
+	(text "sset" (rect 306 96 327 108)(font "Arial" ))
+	(pt 368 104)
+	(pt 336 104)
+)
+(connector
+	(text "data_select" (rect 136 142 148 198)(font "Arial" )(vertical))
+	(pt 152 200)
+	(pt 152 176)
+)
+(connector
+	(text "CLK" (rect 322 336 343 348)(font "Arial" ))
+	(pt 368 352)
+	(pt 312 352)
+)
+(connector
+	(text "en[1]" (rect 330 352 354 364)(font "Arial" ))
+	(pt 368 368)
+	(pt 320 368)
+)
+(connector
+	(text "RST" (rect 336 404 348 425)(font "Arial" )(vertical))
+	(pt 456 408)
+	(pt 456 432)
+)
+(connector
+	(text "data_select" (rect 136 342 148 398)(font "Arial" )(vertical))
+	(pt 152 400)
+	(pt 152 376)
+)
+(connector
+	(pt 456 432)
+	(pt 336 432)
+)
+(connector
+	(pt 472 656)
+	(pt 472 672)
+)
+(connector
+	(text "data_select" (rect 152 598 164 654)(font "Arial" )(vertical))
+	(pt 168 624)
+	(pt 168 656)
+)
+(connector
+	(text "sset" (rect 346 536 367 548)(font "Arial" ))
+	(pt 384 552)
+	(pt 336 552)
+)
+(connector
+	(text "CLK" (rect 354 584 375 596)(font "Arial" ))
+	(pt 384 600)
+	(pt 344 600)
+)
+(connector
+	(text "en[2]" (rect 346 600 370 612)(font "Arial" ))
+	(pt 384 616)
+	(pt 336 616)
+)
+(connector
+	(text "RST" (rect 362 656 383 668)(font "Arial" ))
+	(pt 472 672)
+	(pt 352 672)
+)
+(connector
+	(pt 504 1088)
+	(pt 504 1104)
+)
+(connector
+	(text "data_select" (rect 184 1038 196 1094)(font "Arial" )(vertical))
+	(pt 200 1056)
+	(pt 200 1096)
+)
+(connector
+	(text "sset" (rect 378 968 399 980)(font "Arial" ))
+	(pt 368 984)
+	(pt 416 984)
+)
+(connector
+	(text "CLK" (rect 370 1016 391 1028)(font "Arial" ))
+	(pt 416 1032)
+	(pt 360 1032)
+)
+(connector
+	(text "en[4]" (rect 370 1032 394 1044)(font "Arial" ))
+	(pt 416 1048)
+	(pt 360 1048)
+)
+(connector
+	(text "RST" (rect 378 1088 399 1100)(font "Arial" ))
+	(pt 504 1104)
+	(pt 368 1104)
+)
+(connector
+	(pt 488 872)
+	(pt 488 888)
+)
+(connector
+	(text "data_select" (rect 168 822 180 878)(font "Arial" )(vertical))
+	(pt 184 840)
+	(pt 184 880)
+)
+(connector
+	(text "sset" (rect 346 752 367 764)(font "Arial" ))
+	(pt 400 768)
+	(pt 336 768)
+)
+(connector
+	(text "CLK" (rect 354 800 375 812)(font "Arial" ))
+	(pt 400 816)
+	(pt 344 816)
+)
+(connector
+	(text "en[3]" (rect 354 816 378 828)(font "Arial" ))
+	(pt 400 832)
+	(pt 344 832)
+)
+(connector
+	(text "RST" (rect 346 872 367 884)(font "Arial" ))
+	(pt 488 888)
+	(pt 336 888)
 )
 (junction (pt 576 352))
 (junction (pt 592 600))
