@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/27/2017 10:46:13"
+// Generated on "10/27/2017 13:12:57"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g21_stack52
 // 
@@ -139,72 +139,86 @@ end
 initial
 begin
 	EMPTY_expected = 1'bX;
+	EMPTY_expected = #999000 1'b0;
 end 
 
 // expected FULL
 initial
 begin
 	FULL_expected = 1'bX;
+	FULL_expected = #999000 1'b0;
 end 
 // expected NUM[ 5 ]
 initial
 begin
 	NUM_expected[5] = 1'bX;
+	NUM_expected[5] = #999000 1'b0;
 end 
 // expected NUM[ 4 ]
 initial
 begin
 	NUM_expected[4] = 1'bX;
+	NUM_expected[4] = #999000 1'b0;
 end 
 // expected NUM[ 3 ]
 initial
 begin
 	NUM_expected[3] = 1'bX;
+	NUM_expected[3] = #999000 1'b0;
 end 
 // expected NUM[ 2 ]
 initial
 begin
 	NUM_expected[2] = 1'bX;
+	NUM_expected[2] = #999000 1'b0;
 end 
 // expected NUM[ 1 ]
 initial
 begin
 	NUM_expected[1] = 1'bX;
+	NUM_expected[1] = #999000 1'b0;
 end 
 // expected NUM[ 0 ]
 initial
 begin
 	NUM_expected[0] = 1'bX;
+	NUM_expected[0] = #999000 1'b0;
 end 
 // expected VALUE[ 5 ]
 initial
 begin
 	VALUE_expected[5] = 1'bX;
+	VALUE_expected[5] = #999000 1'b0;
 end 
 // expected VALUE[ 4 ]
 initial
 begin
 	VALUE_expected[4] = 1'bX;
+	VALUE_expected[4] = #999000 1'b0;
 end 
 // expected VALUE[ 3 ]
 initial
 begin
 	VALUE_expected[3] = 1'bX;
+	VALUE_expected[3] = #999000 1'b0;
 end 
 // expected VALUE[ 2 ]
 initial
 begin
 	VALUE_expected[2] = 1'bX;
+	VALUE_expected[2] = #999000 1'b0;
 end 
 // expected VALUE[ 1 ]
 initial
 begin
 	VALUE_expected[1] = 1'bX;
+	VALUE_expected[1] = #999000 1'b0;
 end 
 // expected VALUE[ 0 ]
 initial
 begin
 	VALUE_expected[0] = 1'bX;
+	VALUE_expected[0] = #999000 1'b0;
 end 
 // generate trigger
 always @(EMPTY_expected or EMPTY or FULL_expected or FULL or NUM_expected or NUM or VALUE_expected or VALUE)
@@ -409,7 +423,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#2000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -483,48 +497,63 @@ end
 initial
 begin
 	DATA[5] = 1'b0;
+	DATA[5] = #640000 1'b1;
+	DATA[5] = #640000 1'b0;
+	DATA[5] = #640000 1'b1;
 end 
 // DATA[ 4 ]
 initial
 begin
+	repeat(3)
+	begin
+		DATA[4] = 1'b0;
+		DATA[4] = #320000 1'b1;
+		# 320000;
+	end
 	DATA[4] = 1'b0;
 end 
 // DATA[ 3 ]
 initial
 begin
+	repeat(6)
+	begin
+		DATA[3] = 1'b0;
+		DATA[3] = #160000 1'b1;
+		# 160000;
+	end
 	DATA[3] = 1'b0;
-	DATA[3] = #800000 1'b1;
 end 
 // DATA[ 2 ]
 initial
 begin
+	repeat(12)
+	begin
+		DATA[2] = 1'b0;
+		DATA[2] = #80000 1'b1;
+		# 80000;
+	end
 	DATA[2] = 1'b0;
-	DATA[2] = #400000 1'b1;
-	DATA[2] = #400000 1'b0;
 end 
 // DATA[ 1 ]
-initial
+always
 begin
-	repeat(2)
-	begin
-		DATA[1] = 1'b0;
-		DATA[1] = #200000 1'b1;
-		# 200000;
-	end
 	DATA[1] = 1'b0;
+	DATA[1] = #40000 1'b1;
+	#40000;
 end 
 // DATA[ 0 ]
 always
 begin
 	DATA[0] = 1'b0;
-	DATA[0] = #100000 1'b1;
-	#100000;
+	DATA[0] = #20000 1'b1;
+	#20000;
 end 
 
 // ENABLE
 initial
 begin
 	ENABLE = 1'b1;
+	ENABLE = #999000 1'b0;
 end 
 
 // RST
@@ -533,28 +562,26 @@ begin
 	RST = 1'b0;
 end 
 // MODE[ 1 ]
-initial
+always
 begin
-	MODE[1] = 1'b1;
+	MODE[1] = 1'b0;
+	MODE[1] = #1000000 1'b1;
+	#1000000;
 end 
 // MODE[ 0 ]
-initial
+always
 begin
-	MODE[0] = 1'b1;
+	MODE[0] = 1'b0;
+	MODE[0] = #500000 1'b1;
+	#500000;
 end 
 
 // CLK
-initial
+always
 begin
-	CLK = 1'b1;
-	# 50000;
-	repeat(9)
-	begin
-		CLK = 1'b0;
-		CLK = #50000 1'b1;
-		# 50000;
-	end
 	CLK = 1'b0;
+	CLK = #10000 1'b1;
+	#10000;
 end 
 
 g21_stack52_vlg_sample_tst tb_sample (

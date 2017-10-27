@@ -30,7 +30,37 @@
 # Loading cycloneii_ver.cycloneii_ena_reg
 # Loading work.g21_stack52_vlg_sample_tst
 # Loading work.g21_stack52_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from g21_lab3_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
-# ** Note: $finish    : g21_lab3.vt(417)
-#    Time: 1 us  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst/tb_out
+# Loading timing data from g21_lab3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst File: g21_lab3.vt
+# ERROR! Vector Mismatch for output port FULL :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port NUM[2] :: @time = 1000000.000 ps
+#      Expected value = 000000
+#      Real value = 110100
+# ERROR! Vector Mismatch for output port NUM[4] :: @time = 1000000.000 ps
+#      Expected value = 000000
+#      Real value = 110100
+# ERROR! Vector Mismatch for output port NUM[5] :: @time = 1000000.000 ps
+#      Expected value = 000000
+#      Real value = 110100
+# ERROR! Vector Mismatch for output port VALUE[1] :: @time = 1030000.000 ps
+#      Expected value = 000000
+#      Real value = 110010
+# ERROR! Vector Mismatch for output port VALUE[4] :: @time = 1030000.000 ps
+#      Expected value = 000000
+#      Real value = 110010
+# ERROR! Vector Mismatch for output port VALUE[5] :: @time = 1030000.000 ps
+#      Expected value = 000000
+#      Real value = 110010
+# ERROR! Vector Mismatch for output port VALUE[0] :: @time = 1050000.000 ps
+#      Expected value = 000000
+#      Real value = 110011
+#           8 mismatched vectors : Simulation failed !
+# ** Note: $finish    : g21_lab3.vt(431)
+#    Time: 2 us  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst/tb_out

@@ -96,7 +96,7 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 // synopsys translate_off
-initial $sdf_annotate("g21_lab3_v.sdo");
+initial $sdf_annotate("g21_lab3_v_fast.sdo");
 // synopsys translate_on
 
 wire \inst114|LPM_MUX_component|auto_generated|_~12_combout ;
