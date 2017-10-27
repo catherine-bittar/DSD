@@ -12788,6 +12788,1471 @@ applicable agreement for further details.
 	(pt 488 888)
 	(pt 336 888)
 )
+(connector
+	(pt 520 1304)
+	(pt 520 1320)
+)
+(connector
+	(text "data_select" (rect 200 1254 212 1310)(font "Arial" )(vertical))
+	(pt 216 1272)
+	(pt 216 1312)
+)
+(connector
+	(text "sset" (rect 394 1184 415 1196)(font "Arial" ))
+	(pt 432 1200)
+	(pt 384 1200)
+)
+(connector
+	(text "CLK" (rect 394 1232 415 1244)(font "Arial" ))
+	(pt 432 1248)
+	(pt 384 1248)
+)
+(connector
+	(text "en[5]" (rect 394 1248 418 1260)(font "Arial" ))
+	(pt 432 1264)
+	(pt 384 1264)
+)
+(connector
+	(text "RST" (rect 394 1304 415 1316)(font "Arial" ))
+	(pt 520 1320)
+	(pt 384 1320)
+)
+(connector
+	(pt 520 1512)
+	(pt 520 1520)
+)
+(connector
+	(text "data_select" (rect 200 1454 212 1510)(font "Arial" )(vertical))
+	(pt 216 1480)
+	(pt 216 1512)
+)
+(connector
+	(text "sset" (rect 378 1392 399 1404)(font "Arial" ))
+	(pt 432 1408)
+	(pt 368 1408)
+)
+(connector
+	(text "CLK" (rect 378 1440 399 1452)(font "Arial" ))
+	(pt 432 1456)
+	(pt 368 1456)
+)
+(connector
+	(text "en[6]" (rect 378 1456 402 1468)(font "Arial" ))
+	(pt 432 1472)
+	(pt 368 1472)
+)
+(connector
+	(text "RST" (rect 378 1504 399 1516)(font "Arial" ))
+	(pt 520 1520)
+	(pt 368 1520)
+)
+(connector
+	(pt 520 1712)
+	(pt 520 1720)
+)
+(connector
+	(text "data_select" (rect 200 1654 212 1710)(font "Arial" )(vertical))
+	(pt 216 1680)
+	(pt 216 1712)
+)
+(connector
+	(text "sset" (rect 362 1592 383 1604)(font "Arial" ))
+	(pt 432 1608)
+	(pt 352 1608)
+)
+(connector
+	(text "CLK" (rect 362 1640 383 1652)(font "Arial" ))
+	(pt 432 1656)
+	(pt 352 1656)
+)
+(connector
+	(text "en[7]" (rect 362 1656 386 1668)(font "Arial" ))
+	(pt 432 1672)
+	(pt 352 1672)
+)
+(connector
+	(text "RST" (rect 370 1704 391 1716)(font "Arial" ))
+	(pt 520 1720)
+	(pt 360 1720)
+)
+(connector
+	(pt 376 1904)
+	(pt 376 1912)
+)
+(connector
+	(pt 536 1960)
+	(pt 536 1976)
+)
+(connector
+	(text "data_select" (rect 216 1902 228 1958)(font "Arial" )(vertical))
+	(pt 232 1928)
+	(pt 232 1960)
+)
+(connector
+	(text "sset" (rect 386 1840 407 1852)(font "Arial" ))
+	(pt 448 1856)
+	(pt 376 1856)
+)
+(connector
+	(text "CLK" (rect 386 1888 407 1900)(font "Arial" ))
+	(pt 448 1904)
+	(pt 376 1904)
+)
+(connector
+	(text "en[8]" (rect 418 1904 442 1916)(font "Arial" ))
+	(pt 448 1920)
+	(pt 408 1920)
+)
+(connector
+	(text "RST" (rect 402 1960 423 1972)(font "Arial" ))
+	(pt 536 1976)
+	(pt 392 1976)
+)
+(connector
+	(text "data_select" (rect 232 2121 244 2177)(font "Arial" )(vertical))
+	(pt 248 2144)
+	(pt 248 2176)
+)
+(connector
+	(text "sset" (rect 402 2056 423 2068)(font "Arial" ))
+	(pt 464 2072)
+	(pt 392 2072)
+)
+(connector
+	(text "CLK" (rect 402 2104 423 2116)(font "Arial" ))
+	(pt 464 2120)
+	(pt 392 2120)
+)
+(connector
+	(text "en[9]" (rect 402 2120 426 2132)(font "Arial" ))
+	(pt 464 2136)
+	(pt 392 2136)
+)
+(connector
+	(pt 552 2176)
+	(pt 552 2192)
+)
+(connector
+	(text "RST" (rect 410 2176 431 2188)(font "Arial" ))
+	(pt 552 2192)
+	(pt 400 2192)
+)
+(connector
+	(pt 392 2288)
+	(pt 392 2296)
+)
+(connector
+	(pt 568 2392)
+	(pt 568 2400)
+)
+(connector
+	(text "data_select" (rect 248 2334 260 2390)(font "Arial" )(vertical))
+	(pt 264 2360)
+	(pt 264 2392)
+)
+(connector
+	(text "sset" (rect 402 2272 423 2284)(font "Arial" ))
+	(pt 480 2288)
+	(pt 392 2288)
+)
+(connector
+	(text "CLK" (rect 410 2320 431 2332)(font "Arial" ))
+	(pt 480 2336)
+	(pt 400 2336)
+)
+(connector
+	(pt 400 2360)
+	(pt 400 2352)
+)
+(connector
+	(text "en[10]" (rect 410 2336 440 2348)(font "Arial" ))
+	(pt 480 2352)
+	(pt 400 2352)
+)
+(connector
+	(text "RST" (rect 410 2384 431 2396)(font "Arial" ))
+	(pt 568 2400)
+	(pt 400 2400)
+)
+(connector
+	(pt 584 2608)
+	(pt 584 2616)
+)
+(connector
+	(text "data_select" (rect 264 2550 276 2606)(font "Arial" )(vertical))
+	(pt 280 2576)
+	(pt 280 2608)
+)
+(connector
+	(text "sset" (rect 418 2488 439 2500)(font "Arial" ))
+	(pt 496 2504)
+	(pt 408 2504)
+)
+(connector
+	(text "CLK" (rect 418 2536 439 2548)(font "Arial" ))
+	(pt 496 2552)
+	(pt 408 2552)
+)
+(connector
+	(text "en[11]" (rect 410 2552 440 2564)(font "Arial" ))
+	(pt 496 2568)
+	(pt 400 2568)
+)
+(connector
+	(text "RST" (rect 418 2600 439 2612)(font "Arial" ))
+	(pt 584 2616)
+	(pt 408 2616)
+)
+(connector
+	(pt 576 2824)
+	(pt 576 2832)
+)
+(connector
+	(text "data_select" (rect 256 2774 268 2830)(font "Arial" )(vertical))
+	(pt 272 2792)
+	(pt 272 2832)
+)
+(connector
+	(text "sset" (rect 410 2704 431 2716)(font "Arial" ))
+	(pt 488 2720)
+	(pt 400 2720)
+)
+(connector
+	(text "CLK" (rect 410 2752 431 2764)(font "Arial" ))
+	(pt 488 2768)
+	(pt 400 2768)
+)
+(connector
+	(text "en[12]" (rect 410 2768 440 2780)(font "Arial" ))
+	(pt 488 2784)
+	(pt 400 2784)
+)
+(connector
+	(text "RST" (rect 418 2816 439 2828)(font "Arial" ))
+	(pt 576 2832)
+	(pt 408 2832)
+)
+(connector
+	(pt 416 3168)
+	(pt 416 3176)
+)
+(connector
+	(pt 592 3272)
+	(pt 592 3280)
+)
+(connector
+	(text "data_select" (rect 272 3214 284 3270)(font "Arial" )(vertical))
+	(pt 288 3240)
+	(pt 288 3272)
+)
+(connector
+	(text "sset" (rect 426 3152 447 3164)(font "Arial" ))
+	(pt 504 3168)
+	(pt 416 3168)
+)
+(connector
+	(text "CLK" (rect 426 3200 447 3212)(font "Arial" ))
+	(pt 504 3216)
+	(pt 416 3216)
+)
+(connector
+	(text "en[14]" (rect 426 3216 456 3228)(font "Arial" ))
+	(pt 504 3232)
+	(pt 416 3232)
+)
+(connector
+	(text "RST" (rect 434 3264 455 3276)(font "Arial" ))
+	(pt 592 3280)
+	(pt 424 3280)
+)
+(connector
+	(pt 400 2984)
+	(pt 400 2976)
+)
+(connector
+	(pt 576 3024)
+	(pt 576 3032)
+)
+(connector
+	(text "data_select" (rect 256 2974 268 3030)(font "Arial" )(vertical))
+	(pt 272 2992)
+	(pt 272 3032)
+)
+(connector
+	(text "sset" (rect 410 2904 431 2916)(font "Arial" ))
+	(pt 488 2920)
+	(pt 400 2920)
+)
+(connector
+	(text "CLK" (rect 410 2952 431 2964)(font "Arial" ))
+	(pt 488 2968)
+	(pt 400 2968)
+)
+(connector
+	(text "en[13]" (rect 410 2968 440 2980)(font "Arial" ))
+	(pt 488 2984)
+	(pt 400 2984)
+)
+(connector
+	(text "RST" (rect 418 3016 439 3028)(font "Arial" ))
+	(pt 576 3032)
+	(pt 408 3032)
+)
+(connector
+	(pt 432 3384)
+	(pt 432 3392)
+)
+(connector
+	(pt 608 3488)
+	(pt 608 3504)
+)
+(connector
+	(pt 624 3704)
+	(pt 624 3720)
+)
+(connector
+	(text "data_select" (rect 288 3438 300 3494)(font "Arial" )(vertical))
+	(pt 304 3456)
+	(pt 304 3496)
+)
+(connector
+	(text "sset" (rect 442 3368 463 3380)(font "Arial" ))
+	(pt 520 3384)
+	(pt 432 3384)
+)
+(connector
+	(text "CLK" (rect 450 3416 471 3428)(font "Arial" ))
+	(pt 520 3432)
+	(pt 440 3432)
+)
+(connector
+	(text "en[15]" (rect 450 3432 480 3444)(font "Arial" ))
+	(pt 520 3448)
+	(pt 440 3448)
+)
+(connector
+	(text "RST" (rect 474 3488 495 3500)(font "Arial" ))
+	(pt 608 3504)
+	(pt 464 3504)
+)
+(connector
+	(text "data_select" (rect 304 3646 316 3702)(font "Arial" )(vertical))
+	(pt 320 3672)
+	(pt 320 3704)
+)
+(connector
+	(text "sset" (rect 458 3584 479 3596)(font "Arial" ))
+	(pt 536 3600)
+	(pt 448 3600)
+)
+(connector
+	(text "CLK" (rect 458 3632 479 3644)(font "Arial" ))
+	(pt 536 3648)
+	(pt 448 3648)
+)
+(connector
+	(text "en[16]" (rect 458 3648 488 3660)(font "Arial" ))
+	(pt 536 3664)
+	(pt 448 3664)
+)
+(connector
+	(text "RST" (rect 474 3704 495 3716)(font "Arial" ))
+	(pt 624 3720)
+	(pt 464 3720)
+)
+(connector
+	(pt 640 3920)
+	(pt 640 3928)
+)
+(connector
+	(pt 640 4128)
+	(pt 640 4136)
+)
+(connector
+	(text "data_select" (rect 320 3870 332 3926)(font "Arial" )(vertical))
+	(pt 336 3888)
+	(pt 336 3928)
+)
+(connector
+	(text "sset" (rect 450 3800 471 3812)(font "Arial" ))
+	(pt 552 3816)
+	(pt 440 3816)
+)
+(connector
+	(text "CLK" (rect 458 3848 479 3860)(font "Arial" ))
+	(pt 552 3864)
+	(pt 448 3864)
+)
+(connector
+	(text "en[17]" (rect 458 3864 488 3876)(font "Arial" ))
+	(pt 552 3880)
+	(pt 448 3880)
+)
+(connector
+	(text "RST" (rect 450 3912 471 3924)(font "Arial" ))
+	(pt 640 3928)
+	(pt 440 3928)
+)
+(connector
+	(text "data_select" (rect 320 4070 332 4126)(font "Arial" )(vertical))
+	(pt 336 4096)
+	(pt 336 4128)
+)
+(connector
+	(text "sset" (rect 474 4008 495 4020)(font "Arial" ))
+	(pt 552 4024)
+	(pt 464 4024)
+)
+(connector
+	(text "CLK" (rect 474 4056 495 4068)(font "Arial" ))
+	(pt 552 4072)
+	(pt 464 4072)
+)
+(connector
+	(text "en[18]" (rect 474 4072 504 4084)(font "Arial" ))
+	(pt 552 4088)
+	(pt 464 4088)
+)
+(connector
+	(text "RST" (rect 474 4120 495 4132)(font "Arial" ))
+	(pt 640 4136)
+	(pt 464 4136)
+)
+(connector
+	(pt 640 4328)
+	(pt 640 4336)
+)
+(connector
+	(pt 352 4576)
+	(pt 344 4576)
+)
+(connector
+	(pt 656 4576)
+	(pt 656 4592)
+)
+(connector
+	(text "sset" (rect 474 4208 495 4220)(font "Arial" ))
+	(pt 552 4224)
+	(pt 464 4224)
+)
+(connector
+	(text "CLK" (rect 474 4256 495 4268)(font "Arial" ))
+	(pt 552 4272)
+	(pt 464 4272)
+)
+(connector
+	(text "en[19]" (rect 482 4272 512 4284)(font "Arial" ))
+	(pt 552 4288)
+	(pt 472 4288)
+)
+(connector
+	(text "RST" (rect 498 4320 519 4332)(font "Arial" ))
+	(pt 640 4336)
+	(pt 488 4336)
+)
+(connector
+	(text "data_select" (rect 320 4270 332 4326)(font "Arial" )(vertical))
+	(pt 336 4296)
+	(pt 336 4328)
+)
+(connector
+	(text "data_select" (rect 336 4518 348 4574)(font "Arial" )(vertical))
+	(pt 352 4544)
+	(pt 352 4576)
+)
+(connector
+	(text "sset" (rect 522 4456 543 4468)(font "Arial" ))
+	(pt 568 4472)
+	(pt 512 4472)
+)
+(connector
+	(text "CLK" (rect 522 4504 543 4516)(font "Arial" ))
+	(pt 568 4520)
+	(pt 512 4520)
+)
+(connector
+	(text "en[20]" (rect 522 4520 552 4532)(font "Arial" ))
+	(pt 568 4536)
+	(pt 512 4536)
+)
+(connector
+	(text "RST" (rect 530 4576 551 4588)(font "Arial" ))
+	(pt 656 4592)
+	(pt 520 4592)
+)
+(connector
+	(pt 688 5008)
+	(pt 688 5016)
+)
+(connector
+	(pt 368 4800)
+	(pt 360 4800)
+)
+(connector
+	(pt 520 4736)
+	(pt 520 4728)
+)
+(connector
+	(pt 672 4792)
+	(pt 672 4808)
+)
+(connector
+	(text "data_select" (rect 352 4742 364 4798)(font "Arial" )(vertical))
+	(pt 368 4760)
+	(pt 368 4800)
+)
+(connector
+	(text "sset" (rect 530 4672 551 4684)(font "Arial" ))
+	(pt 584 4688)
+	(pt 520 4688)
+)
+(connector
+	(text "CLK" (rect 530 4720 551 4732)(font "Arial" ))
+	(pt 584 4736)
+	(pt 520 4736)
+)
+(connector
+	(text "en[21]" (rect 530 4736 560 4748)(font "Arial" ))
+	(pt 584 4752)
+	(pt 520 4752)
+)
+(connector
+	(text "RST" (rect 530 4792 551 4804)(font "Arial" ))
+	(pt 672 4808)
+	(pt 520 4808)
+)
+(connector
+	(text "data_select" (rect 368 4958 380 5014)(font "Arial" )(vertical))
+	(pt 384 4976)
+	(pt 384 5016)
+)
+(connector
+	(text "sset" (rect 538 4888 559 4900)(font "Arial" ))
+	(pt 600 4904)
+	(pt 528 4904)
+)
+(connector
+	(text "CLK" (rect 538 4936 559 4948)(font "Arial" ))
+	(pt 600 4952)
+	(pt 528 4952)
+)
+(connector
+	(text "en[22]" (rect 546 4952 576 4964)(font "Arial" ))
+	(pt 600 4968)
+	(pt 536 4968)
+)
+(connector
+	(text "RST" (rect 546 5000 567 5012)(font "Arial" ))
+	(pt 688 5016)
+	(pt 536 5016)
+)
+(connector
+	(pt 704 5224)
+	(pt 704 5240)
+)
+(connector
+	(pt 720 5496)
+	(pt 720 5504)
+)
+(connector
+	(text "data_select" (rect 384 5158 396 5214)(font "Arial" )(vertical))
+	(pt 400 5192)
+	(pt 400 5216)
+)
+(connector
+	(text "sset" (rect 546 5104 567 5116)(font "Arial" ))
+	(pt 616 5120)
+	(pt 536 5120)
+)
+(connector
+	(text "CLK" (rect 562 5152 583 5164)(font "Arial" ))
+	(pt 616 5168)
+	(pt 552 5168)
+)
+(connector
+	(text "en[23]" (rect 570 5168 600 5180)(font "Arial" ))
+	(pt 616 5184)
+	(pt 560 5184)
+)
+(connector
+	(text "RST" (rect 546 5224 567 5236)(font "Arial" ))
+	(pt 704 5240)
+	(pt 536 5240)
+)
+(connector
+	(text "data_select" (rect 400 5438 412 5494)(font "Arial" )(vertical))
+	(pt 416 5464)
+	(pt 416 5496)
+)
+(connector
+	(text "sset" (rect 578 5376 599 5388)(font "Arial" ))
+	(pt 632 5392)
+	(pt 568 5392)
+)
+(connector
+	(text "CLK" (rect 570 5424 591 5436)(font "Arial" ))
+	(pt 632 5440)
+	(pt 560 5440)
+)
+(connector
+	(text "en[24]" (rect 578 5440 608 5452)(font "Arial" ))
+	(pt 632 5456)
+	(pt 568 5456)
+)
+(connector
+	(text "RST" (rect 562 5488 583 5500)(font "Arial" ))
+	(pt 720 5504)
+	(pt 552 5504)
+)
+(connector
+	(pt 720 5696)
+	(pt 720 5712)
+)
+(connector
+	(pt 736 5944)
+	(pt 736 5960)
+)
+(connector
+	(text "data_select" (rect 400 5638 412 5694)(font "Arial" )(vertical))
+	(pt 416 5664)
+	(pt 416 5696)
+)
+(connector
+	(text "sset" (rect 562 5576 583 5588)(font "Arial" ))
+	(pt 632 5592)
+	(pt 552 5592)
+)
+(connector
+	(text "CLK" (rect 554 5624 575 5636)(font "Arial" ))
+	(pt 632 5640)
+	(pt 544 5640)
+)
+(connector
+	(text "en[25]" (rect 554 5640 584 5652)(font "Arial" ))
+	(pt 632 5656)
+	(pt 544 5656)
+)
+(connector
+	(text "RST" (rect 546 5696 567 5708)(font "Arial" ))
+	(pt 720 5712)
+	(pt 536 5712)
+)
+(connector
+	(text "data_select" (rect 416 5894 428 5950)(font "Arial" )(vertical))
+	(pt 432 5912)
+	(pt 432 5952)
+)
+(connector
+	(text "sset" (rect 586 5824 607 5836)(font "Arial" ))
+	(pt 648 5840)
+	(pt 576 5840)
+)
+(connector
+	(text "CLK" (rect 594 5872 615 5884)(font "Arial" ))
+	(pt 648 5888)
+	(pt 584 5888)
+)
+(connector
+	(text "en[26]" (rect 586 5888 616 5900)(font "Arial" ))
+	(pt 648 5904)
+	(pt 576 5904)
+)
+(connector
+	(text "RST" (rect 594 5944 615 5956)(font "Arial" ))
+	(pt 736 5960)
+	(pt 584 5960)
+)
+(connector
+	(pt 752 6160)
+	(pt 752 6168)
+)
+(connector
+	(pt 592 6272)
+	(pt 592 6280)
+)
+(connector
+	(pt 768 6376)
+	(pt 768 6392)
+)
+(connector
+	(text "data_select" (rect 432 6102 444 6158)(font "Arial" )(vertical))
+	(pt 448 6128)
+	(pt 448 6160)
+)
+(connector
+	(text "sset" (rect 578 6040 599 6052)(font "Arial" ))
+	(pt 664 6056)
+	(pt 568 6056)
+)
+(connector
+	(text "CLK" (rect 602 6088 623 6100)(font "Arial" ))
+	(pt 664 6104)
+	(pt 592 6104)
+)
+(connector
+	(text "en[27]" (rect 578 6104 608 6116)(font "Arial" ))
+	(pt 664 6120)
+	(pt 568 6120)
+)
+(connector
+	(text "RST" (rect 570 6152 591 6164)(font "Arial" ))
+	(pt 752 6168)
+	(pt 560 6168)
+)
+(connector
+	(text "data_select" (rect 448 6326 460 6382)(font "Arial" )(vertical))
+	(pt 464 6344)
+	(pt 464 6384)
+)
+(connector
+	(text "sset" (rect 602 6256 623 6268)(font "Arial" ))
+	(pt 680 6272)
+	(pt 592 6272)
+)
+(connector
+	(text "CLK" (rect 618 6304 639 6316)(font "Arial" ))
+	(pt 680 6320)
+	(pt 608 6320)
+)
+(connector
+	(text "en[28]" (rect 610 6320 640 6332)(font "Arial" ))
+	(pt 680 6336)
+	(pt 600 6336)
+)
+(connector
+	(text "RST" (rect 610 6376 631 6388)(font "Arial" ))
+	(pt 768 6392)
+	(pt 600 6392)
+)
+(connector
+	(pt 592 6552)
+	(pt 592 6544)
+)
+(connector
+	(pt 784 6592)
+	(pt 784 6600)
+)
+(connector
+	(pt 632 6696)
+	(pt 632 6704)
+)
+(connector
+	(pt 784 6800)
+	(pt 784 6808)
+)
+(connector
+	(text "data_select" (rect 464 6550 476 6606)(font "Arial" )(vertical))
+	(pt 480 6560)
+	(pt 480 6608)
+)
+(connector
+	(text "sset" (rect 586 6472 607 6484)(font "Arial" ))
+	(pt 696 6488)
+	(pt 576 6488)
+)
+(connector
+	(text "CLK" (rect 602 6520 623 6532)(font "Arial" ))
+	(pt 696 6536)
+	(pt 592 6536)
+)
+(connector
+	(text "en[29]" (rect 602 6536 632 6548)(font "Arial" ))
+	(pt 696 6552)
+	(pt 592 6552)
+)
+(connector
+	(text "RST" (rect 594 6584 615 6596)(font "Arial" ))
+	(pt 784 6600)
+	(pt 584 6600)
+)
+(connector
+	(text "data_select" (rect 464 6758 476 6814)(font "Arial" )(vertical))
+	(pt 480 6768)
+	(pt 480 6816)
+)
+(connector
+	(text "sset" (rect 642 6680 663 6692)(font "Arial" ))
+	(pt 696 6696)
+	(pt 632 6696)
+)
+(connector
+	(text "CLK" (rect 642 6728 663 6740)(font "Arial" ))
+	(pt 696 6744)
+	(pt 632 6744)
+)
+(connector
+	(text "en[30]" (rect 642 6744 672 6756)(font "Arial" ))
+	(pt 696 6760)
+	(pt 632 6760)
+)
+(connector
+	(text "RST" (rect 634 6792 655 6804)(font "Arial" ))
+	(pt 784 6808)
+	(pt 624 6808)
+)
+(connector
+	(pt 784 7000)
+	(pt 784 7016)
+)
+(connector
+	(pt 800 7248)
+	(pt 800 7264)
+)
+(connector
+	(pt 496 7248)
+	(pt 488 7248)
+)
+(connector
+	(text "data_select" (rect 464 6942 476 6998)(font "Arial" )(vertical))
+	(pt 480 6968)
+	(pt 480 7000)
+)
+(connector
+	(text "sset" (rect 626 6880 647 6892)(font "Arial" ))
+	(pt 696 6896)
+	(pt 616 6896)
+)
+(connector
+	(text "CLK" (rect 626 6928 647 6940)(font "Arial" ))
+	(pt 696 6944)
+	(pt 616 6944)
+)
+(connector
+	(text "en[31]" (rect 634 6944 664 6956)(font "Arial" ))
+	(pt 696 6960)
+	(pt 624 6960)
+)
+(connector
+	(text "RST" (rect 634 7000 655 7012)(font "Arial" ))
+	(pt 784 7016)
+	(pt 624 7016)
+)
+(connector
+	(text "data_select" (rect 480 7190 492 7246)(font "Arial" )(vertical))
+	(pt 496 7216)
+	(pt 496 7248)
+)
+(connector
+	(text "sset" (rect 634 7128 655 7140)(font "Arial" ))
+	(pt 712 7144)
+	(pt 624 7144)
+)
+(connector
+	(pt 632 7200)
+	(pt 632 7192)
+)
+(connector
+	(text "CLK" (rect 642 7176 663 7188)(font "Arial" ))
+	(pt 712 7192)
+	(pt 632 7192)
+)
+(connector
+	(text "en[32]" (rect 658 7192 688 7204)(font "Arial" ))
+	(pt 712 7208)
+	(pt 648 7208)
+)
+(connector
+	(text "RST" (rect 642 7248 663 7260)(font "Arial" ))
+	(pt 800 7264)
+	(pt 632 7264)
+)
+(connector
+	(pt 816 7464)
+	(pt 816 7480)
+)
+(connector
+	(pt 672 7576)
+	(pt 672 7584)
+)
+(connector
+	(pt 832 7680)
+	(pt 832 7688)
+)
+(connector
+	(text "data_select" (rect 496 7406 508 7462)(font "Arial" )(vertical))
+	(pt 512 7432)
+	(pt 512 7464)
+)
+(connector
+	(text "sset" (rect 658 7344 679 7356)(font "Arial" ))
+	(pt 728 7360)
+	(pt 648 7360)
+)
+(connector
+	(text "CLK" (rect 666 7392 687 7404)(font "Arial" ))
+	(pt 728 7408)
+	(pt 656 7408)
+)
+(connector
+	(text "en[33]" (rect 674 7408 704 7420)(font "Arial" ))
+	(pt 728 7424)
+	(pt 664 7424)
+)
+(connector
+	(text "RST" (rect 658 7464 679 7476)(font "Arial" ))
+	(pt 816 7480)
+	(pt 648 7480)
+)
+(connector
+	(text "data_select" (rect 512 7638 524 7694)(font "Arial" )(vertical))
+	(pt 528 7648)
+	(pt 528 7696)
+)
+(connector
+	(text "sset" (rect 682 7560 703 7572)(font "Arial" ))
+	(pt 744 7576)
+	(pt 672 7576)
+)
+(connector
+	(text "CLK" (rect 682 7608 703 7620)(font "Arial" ))
+	(pt 744 7624)
+	(pt 672 7624)
+)
+(connector
+	(text "en[34]" (rect 690 7624 720 7636)(font "Arial" ))
+	(pt 744 7640)
+	(pt 680 7640)
+)
+(connector
+	(text "RST" (rect 682 7672 703 7684)(font "Arial" ))
+	(pt 832 7688)
+	(pt 672 7688)
+)
+(connector
+	(pt 848 7896)
+	(pt 848 7912)
+)
+(connector
+	(pt 840 8112)
+	(pt 840 8120)
+)
+(connector
+	(text "data_select" (rect 528 7846 540 7902)(font "Arial" )(vertical))
+	(pt 544 7864)
+	(pt 544 7904)
+)
+(connector
+	(text "sset" (rect 690 7776 711 7788)(font "Arial" ))
+	(pt 760 7792)
+	(pt 680 7792)
+)
+(connector
+	(text "CLK" (rect 690 7824 711 7836)(font "Arial" ))
+	(pt 760 7840)
+	(pt 680 7840)
+)
+(connector
+	(text "en[35]" (rect 698 7840 728 7852)(font "Arial" ))
+	(pt 760 7856)
+	(pt 688 7856)
+)
+(connector
+	(text "RST" (rect 698 7896 719 7908)(font "Arial" ))
+	(pt 848 7912)
+	(pt 688 7912)
+)
+(connector
+	(text "data_select" (rect 520 8062 532 8118)(font "Arial" )(vertical))
+	(pt 536 8080)
+	(pt 536 8120)
+)
+(connector
+	(text "sset" (rect 698 7992 719 8004)(font "Arial" ))
+	(pt 752 8008)
+	(pt 688 8008)
+)
+(connector
+	(text "CLK" (rect 682 8040 703 8052)(font "Arial" ))
+	(pt 752 8056)
+	(pt 672 8056)
+)
+(connector
+	(text "en[36]" (rect 706 8056 736 8068)(font "Arial" ))
+	(pt 752 8072)
+	(pt 696 8072)
+)
+(connector
+	(text "RST" (rect 690 8104 711 8116)(font "Arial" ))
+	(pt 840 8120)
+	(pt 680 8120)
+)
+(connector
+	(pt 840 8312)
+	(pt 840 8320)
+)
+(connector
+	(pt 536 8320)
+	(pt 528 8320)
+)
+(connector
+	(pt 856 8560)
+	(pt 856 8568)
+)
+(connector
+	(text "data_select" (rect 520 8262 532 8318)(font "Arial" )(vertical))
+	(pt 536 8280)
+	(pt 536 8320)
+)
+(connector
+	(text "sset" (rect 698 8192 719 8204)(font "Arial" ))
+	(pt 752 8208)
+	(pt 688 8208)
+)
+(connector
+	(text "CLK" (rect 706 8240 727 8252)(font "Arial" ))
+	(pt 752 8256)
+	(pt 696 8256)
+)
+(connector
+	(text "en[37]" (rect 666 8256 696 8268)(font "Arial" ))
+	(pt 752 8272)
+	(pt 656 8272)
+)
+(connector
+	(text "RST" (rect 690 8304 711 8316)(font "Arial" ))
+	(pt 840 8320)
+	(pt 680 8320)
+)
+(connector
+	(text "data_select" (rect 536 8502 548 8558)(font "Arial" )(vertical))
+	(pt 552 8528)
+	(pt 552 8560)
+)
+(connector
+	(text "sset" (rect 706 8440 727 8452)(font "Arial" ))
+	(pt 768 8456)
+	(pt 696 8456)
+)
+(connector
+	(text "CLK" (rect 714 8488 735 8500)(font "Arial" ))
+	(pt 768 8504)
+	(pt 704 8504)
+)
+(connector
+	(text "en[38]" (rect 706 8504 736 8516)(font "Arial" ))
+	(pt 768 8520)
+	(pt 696 8520)
+)
+(connector
+	(text "RST" (rect 714 8552 735 8564)(font "Arial" ))
+	(pt 856 8568)
+	(pt 704 8568)
+)
+(connector
+	(pt 872 8776)
+	(pt 872 8784)
+)
+(connector
+	(pt 888 8992)
+	(pt 888 9008)
+)
+(connector
+	(text "data_select" (rect 552 8718 564 8774)(font "Arial" )(vertical))
+	(pt 568 8744)
+	(pt 568 8776)
+)
+(connector
+	(text "sset" (rect 714 8656 735 8668)(font "Arial" ))
+	(pt 784 8672)
+	(pt 704 8672)
+)
+(connector
+	(text "CLK" (rect 722 8704 743 8716)(font "Arial" ))
+	(pt 784 8720)
+	(pt 712 8720)
+)
+(connector
+	(text "en[39]" (rect 730 8720 760 8732)(font "Arial" ))
+	(pt 784 8736)
+	(pt 720 8736)
+)
+(connector
+	(text "RST" (rect 730 8768 751 8780)(font "Arial" ))
+	(pt 872 8784)
+	(pt 720 8784)
+)
+(connector
+	(text "data_select" (rect 568 8934 580 8990)(font "Arial" )(vertical))
+	(pt 584 8960)
+	(pt 584 8992)
+)
+(connector
+	(text "sset" (rect 754 8872 775 8884)(font "Arial" ))
+	(pt 800 8888)
+	(pt 744 8888)
+)
+(connector
+	(text "CLK" (rect 754 8920 775 8932)(font "Arial" ))
+	(pt 800 8936)
+	(pt 744 8936)
+)
+(connector
+	(text "en[40]" (rect 754 8936 784 8948)(font "Arial" ))
+	(pt 800 8952)
+	(pt 744 8952)
+)
+(connector
+	(text "RST" (rect 746 8992 767 9004)(font "Arial" ))
+	(pt 888 9008)
+	(pt 736 9008)
+)
+(connector
+	(pt 904 9208)
+	(pt 904 9216)
+)
+(connector
+	(text "data_select" (rect 584 9150 596 9206)(font "Arial" )(vertical))
+	(pt 600 9176)
+	(pt 600 9208)
+)
+(connector
+	(text "sset" (rect 746 9088 767 9100)(font "Arial" ))
+	(pt 816 9104)
+	(pt 736 9104)
+)
+(connector
+	(text "CLK" (rect 746 9136 767 9148)(font "Arial" ))
+	(pt 816 9152)
+	(pt 736 9152)
+)
+(connector
+	(text "en[41]" (rect 754 9152 784 9164)(font "Arial" ))
+	(pt 816 9168)
+	(pt 744 9168)
+)
+(connector
+	(text "RST" (rect 762 9200 783 9212)(font "Arial" ))
+	(pt 904 9216)
+	(pt 752 9216)
+)
+(connector
+	(text "data_select" (rect 584 9366 596 9422)(font "Arial" )(vertical))
+	(pt 600 9384)
+	(pt 600 9424)
+)
+(connector
+	(text "sset" (rect 738 9296 759 9308)(font "Arial" ))
+	(pt 816 9312)
+	(pt 728 9312)
+)
+(connector
+	(text "CLK" (rect 746 9344 767 9356)(font "Arial" ))
+	(pt 816 9360)
+	(pt 736 9360)
+)
+(connector
+	(text "en[42]" (rect 754 9360 784 9372)(font "Arial" ))
+	(pt 816 9376)
+	(pt 744 9376)
+)
+(connector
+	(pt 904 9416)
+	(pt 904 9424)
+)
+(connector
+	(text "RST" (rect 746 9408 767 9420)(font "Arial" ))
+	(pt 904 9424)
+	(pt 736 9424)
+)
+(connector
+	(pt 920 9864)
+	(pt 920 9880)
+)
+(connector
+	(text "data_select" (rect 584 9558 596 9614)(font "Arial" )(vertical))
+	(pt 600 9584)
+	(pt 600 9616)
+)
+(connector
+	(text "sset" (rect 738 9496 759 9508)(font "Arial" ))
+	(pt 816 9512)
+	(pt 728 9512)
+)
+(connector
+	(text "CLK" (rect 730 9544 751 9556)(font "Arial" ))
+	(pt 816 9560)
+	(pt 720 9560)
+)
+(connector
+	(text "en[43]" (rect 746 9560 776 9572)(font "Arial" ))
+	(pt 816 9576)
+	(pt 736 9576)
+)
+(connector
+	(pt 904 9616)
+	(pt 904 9632)
+)
+(connector
+	(text "RST" (rect 730 9616 751 9628)(font "Arial" ))
+	(pt 904 9632)
+	(pt 720 9632)
+)
+(connector
+	(text "data_select" (rect 600 9806 612 9862)(font "Arial" )(vertical))
+	(pt 616 9832)
+	(pt 616 9864)
+)
+(connector
+	(text "sset" (rect 770 9744 791 9756)(font "Arial" ))
+	(pt 832 9760)
+	(pt 760 9760)
+)
+(connector
+	(text "CLK" (rect 778 9792 799 9804)(font "Arial" ))
+	(pt 832 9808)
+	(pt 768 9808)
+)
+(connector
+	(text "en[44]" (rect 778 9808 808 9820)(font "Arial" ))
+	(pt 832 9824)
+	(pt 768 9824)
+)
+(connector
+	(text "RST" (rect 794 9864 815 9876)(font "Arial" ))
+	(pt 920 9880)
+	(pt 784 9880)
+)
+(connector
+	(pt 936 10080)
+	(pt 936 10088)
+)
+(connector
+	(pt 648 10304)
+	(pt 640 10304)
+)
+(connector
+	(pt 792 10240)
+	(pt 792 10248)
+)
+(connector
+	(pt 952 10296)
+	(pt 952 10304)
+)
+(connector
+	(text "data_select" (rect 616 10022 628 10078)(font "Arial" )(vertical))
+	(pt 632 10048)
+	(pt 632 10080)
+)
+(connector
+	(text "sset" (rect 762 9960 783 9972)(font "Arial" ))
+	(pt 848 9976)
+	(pt 752 9976)
+)
+(connector
+	(text "CLK" (rect 754 10008 775 10020)(font "Arial" ))
+	(pt 848 10024)
+	(pt 744 10024)
+)
+(connector
+	(text "en[45]" (rect 770 10024 800 10036)(font "Arial" ))
+	(pt 848 10040)
+	(pt 760 10040)
+)
+(connector
+	(text "RST" (rect 778 10072 799 10084)(font "Arial" ))
+	(pt 936 10088)
+	(pt 768 10088)
+)
+(connector
+	(text "data_select" (rect 632 10246 644 10302)(font "Arial" )(vertical))
+	(pt 648 10264)
+	(pt 648 10304)
+)
+(connector
+	(text "sset" (rect 810 10176 831 10188)(font "Arial" ))
+	(pt 864 10192)
+	(pt 800 10192)
+)
+(connector
+	(text "CLK" (rect 802 10224 823 10236)(font "Arial" ))
+	(pt 864 10240)
+	(pt 792 10240)
+)
+(connector
+	(text "en[46]" (rect 826 10240 856 10252)(font "Arial" ))
+	(pt 864 10256)
+	(pt 816 10256)
+)
+(connector
+	(text "RST" (rect 818 10288 839 10300)(font "Arial" ))
+	(pt 952 10304)
+	(pt 808 10304)
+)
+(connector
+	(pt 968 10512)
+	(pt 968 10528)
+)
+(connector
+	(pt 840 10656)
+	(pt 840 10664)
+)
+(connector
+	(pt 840 10704)
+	(pt 840 10712)
+)
+(connector
+	(pt 864 10720)
+	(pt 864 10728)
+)
+(connector
+	(pt 984 10760)
+	(pt 984 10776)
+)
+(connector
+	(text "data_select" (rect 648 10454 660 10510)(font "Arial" )(vertical))
+	(pt 664 10480)
+	(pt 664 10512)
+)
+(connector
+	(text "sset" (rect 802 10392 823 10404)(font "Arial" ))
+	(pt 880 10408)
+	(pt 792 10408)
+)
+(connector
+	(text "CLK" (rect 810 10440 831 10452)(font "Arial" ))
+	(pt 880 10456)
+	(pt 800 10456)
+)
+(connector
+	(text "en[47]" (rect 818 10456 848 10468)(font "Arial" ))
+	(pt 880 10472)
+	(pt 808 10472)
+)
+(connector
+	(text "RST" (rect 834 10512 855 10524)(font "Arial" ))
+	(pt 968 10528)
+	(pt 824 10528)
+)
+(connector
+	(text "data_select" (rect 664 10710 676 10766)(font "Arial" )(vertical))
+	(pt 680 10728)
+	(pt 680 10768)
+)
+(connector
+	(text "sset" (rect 850 10640 871 10652)(font "Arial" ))
+	(pt 896 10656)
+	(pt 840 10656)
+)
+(connector
+	(text "CLK" (rect 850 10688 871 10700)(font "Arial" ))
+	(pt 896 10704)
+	(pt 840 10704)
+)
+(connector
+	(text "en[48]" (rect 874 10704 904 10716)(font "Arial" ))
+	(pt 896 10720)
+	(pt 864 10720)
+)
+(connector
+	(text "RST" (rect 890 10760 911 10772)(font "Arial" ))
+	(pt 984 10776)
+	(pt 880 10776)
+)
+(connector
+	(pt 1000 10976)
+	(pt 1000 10992)
+)
+(connector
+	(pt 856 11088)
+	(pt 856 11096)
+)
+(connector
+	(pt 848 11152)
+	(pt 848 11144)
+)
+(connector
+	(pt 1016 11192)
+	(pt 1016 11208)
+)
+(connector
+	(text "data_select" (rect 680 10918 692 10974)(font "Arial" )(vertical))
+	(pt 696 10944)
+	(pt 696 10976)
+)
+(connector
+	(text "sset" (rect 882 10856 903 10868)(font "Arial" ))
+	(pt 912 10872)
+	(pt 872 10872)
+)
+(connector
+	(text "en[49]" (rect 866 10920 896 10932)(font "Arial" ))
+	(pt 912 10936)
+	(pt 856 10936)
+)
+(connector
+	(text "RST" (rect 890 10976 911 10988)(font "Arial" ))
+	(pt 1000 10992)
+	(pt 880 10992)
+)
+(connector
+	(text "CLK" (rect 858 10904 879 10916)(font "Arial" ))
+	(pt 848 10920)
+	(pt 912 10920)
+)
+(connector
+	(text "data_select" (rect 696 11150 708 11206)(font "Arial" )(vertical))
+	(pt 712 11160)
+	(pt 712 11208)
+)
+(connector
+	(text "sset" (rect 866 11072 887 11084)(font "Arial" ))
+	(pt 928 11088)
+	(pt 856 11088)
+)
+(connector
+	(text "CLK" (rect 898 11120 919 11132)(font "Arial" ))
+	(pt 928 11136)
+	(pt 888 11136)
+)
+(connector
+	(text "en[50]" (rect 858 11136 888 11148)(font "Arial" ))
+	(pt 928 11152)
+	(pt 848 11152)
+)
+(connector
+	(text "RST" (rect 922 11192 943 11204)(font "Arial" ))
+	(pt 1016 11208)
+	(pt 912 11208)
+)
+(connector
+	(pt 888 11304)
+	(pt 888 11296)
+)
+(connector
+	(pt 1032 11408)
+	(pt 1032 11424)
+)
+(connector
+	(text "data_select" (rect 712 11358 724 11414)(font "Arial" )(vertical))
+	(pt 728 11416)
+	(pt 728 11376)
+)
+(connector
+	(text "sset" (rect 898 11288 919 11300)(font "Arial" ))
+	(pt 944 11304)
+	(pt 888 11304)
+)
+(connector
+	(text "CLK" (rect 890 11336 911 11348)(font "Arial" ))
+	(pt 944 11352)
+	(pt 880 11352)
+)
+(connector
+	(text "en[51]" (rect 914 11352 944 11364)(font "Arial" ))
+	(pt 944 11368)
+	(pt 904 11368)
+)
+(connector
+	(text "RST" (rect 914 11408 935 11420)(font "Arial" ))
+	(pt 1032 11424)
+	(pt 904 11424)
+)
+(connector
+	(text "q0[5..0]" (rect 1018 1264 1055 1276)(font "Arial" ))
+	(pt 1064 1280)
+	(pt 1008 1280)
+	(bus)
+)
 (junction (pt 576 352))
 (junction (pt 592 600))
 (junction (pt 608 816))

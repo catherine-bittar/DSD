@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Thu Oct 26 15:24:55 2017
+Thu Oct 26 23:22:08 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,129 +13,130 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. General Register Statistics
- 10. Source assignments for g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
- 11. Parameter Settings for User Entity Instance: StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
- 12. Parameter Settings for User Entity Instance: BUSMUX:inst119
- 13. Parameter Settings for User Entity Instance: NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
- 14. Parameter Settings for User Entity Instance: MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
- 15. Parameter Settings for User Entity Instance: INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
- 16. Parameter Settings for User Entity Instance: BUSMUX:inst113
- 17. Parameter Settings for User Entity Instance: POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
- 18. Parameter Settings for User Entity Instance: BUSMUX:inst115
- 19. Parameter Settings for User Entity Instance: a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
- 20. Parameter Settings for User Entity Instance: PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
- 21. Parameter Settings for User Entity Instance: lpm_mux0:inst114|lpm_mux:LPM_MUX_component
- 22. Parameter Settings for User Entity Instance: LPM_FF:inst
- 23. Parameter Settings for User Entity Instance: g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
- 24. Parameter Settings for User Entity Instance: BUSMUX:inst1
- 25. Parameter Settings for User Entity Instance: LPM_FF:inst2
- 26. Parameter Settings for User Entity Instance: BUSMUX:inst3
- 27. Parameter Settings for User Entity Instance: LPM_FF:inst4
- 28. Parameter Settings for User Entity Instance: BUSMUX:inst5
- 29. Parameter Settings for User Entity Instance: LPM_FF:inst6
- 30. Parameter Settings for User Entity Instance: BUSMUX:inst7
- 31. Parameter Settings for User Entity Instance: LPM_FF:inst8
- 32. Parameter Settings for User Entity Instance: BUSMUX:inst9
- 33. Parameter Settings for User Entity Instance: LPM_FF:inst10
- 34. Parameter Settings for User Entity Instance: BUSMUX:inst11
- 35. Parameter Settings for User Entity Instance: LPM_FF:inst12
- 36. Parameter Settings for User Entity Instance: BUSMUX:inst13
- 37. Parameter Settings for User Entity Instance: LPM_FF:inst14
- 38. Parameter Settings for User Entity Instance: BUSMUX:inst15
- 39. Parameter Settings for User Entity Instance: LPM_FF:inst16
- 40. Parameter Settings for User Entity Instance: BUSMUX:inst17
- 41. Parameter Settings for User Entity Instance: LPM_FF:inst18
- 42. Parameter Settings for User Entity Instance: BUSMUX:inst19
- 43. Parameter Settings for User Entity Instance: LPM_FF:inst20
- 44. Parameter Settings for User Entity Instance: BUSMUX:inst21
- 45. Parameter Settings for User Entity Instance: LPM_FF:inst22
- 46. Parameter Settings for User Entity Instance: BUSMUX:inst23
- 47. Parameter Settings for User Entity Instance: LPM_FF:inst25
- 48. Parameter Settings for User Entity Instance: BUSMUX:inst24
- 49. Parameter Settings for User Entity Instance: LPM_FF:inst26
- 50. Parameter Settings for User Entity Instance: BUSMUX:inst27
- 51. Parameter Settings for User Entity Instance: LPM_FF:inst28
- 52. Parameter Settings for User Entity Instance: BUSMUX:inst29
- 53. Parameter Settings for User Entity Instance: LPM_FF:inst30
- 54. Parameter Settings for User Entity Instance: BUSMUX:inst31
- 55. Parameter Settings for User Entity Instance: LPM_FF:inst32
- 56. Parameter Settings for User Entity Instance: BUSMUX:inst33
- 57. Parameter Settings for User Entity Instance: LPM_FF:inst34
- 58. Parameter Settings for User Entity Instance: BUSMUX:inst35
- 59. Parameter Settings for User Entity Instance: LPM_FF:inst36
- 60. Parameter Settings for User Entity Instance: BUSMUX:inst37
- 61. Parameter Settings for User Entity Instance: LPM_FF:inst38
- 62. Parameter Settings for User Entity Instance: BUSMUX:inst39
- 63. Parameter Settings for User Entity Instance: LPM_FF:inst40
- 64. Parameter Settings for User Entity Instance: BUSMUX:inst41
- 65. Parameter Settings for User Entity Instance: LPM_FF:inst42
- 66. Parameter Settings for User Entity Instance: BUSMUX:inst43
- 67. Parameter Settings for User Entity Instance: LPM_FF:inst44
- 68. Parameter Settings for User Entity Instance: BUSMUX:inst45
- 69. Parameter Settings for User Entity Instance: LPM_FF:inst46
- 70. Parameter Settings for User Entity Instance: BUSMUX:inst47
- 71. Parameter Settings for User Entity Instance: LPM_FF:inst48
- 72. Parameter Settings for User Entity Instance: BUSMUX:inst49
- 73. Parameter Settings for User Entity Instance: LPM_FF:inst50
- 74. Parameter Settings for User Entity Instance: BUSMUX:inst51
- 75. Parameter Settings for User Entity Instance: LPM_FF:inst52
- 76. Parameter Settings for User Entity Instance: BUSMUX:inst53
- 77. Parameter Settings for User Entity Instance: LPM_FF:inst54
- 78. Parameter Settings for User Entity Instance: BUSMUX:inst55
- 79. Parameter Settings for User Entity Instance: LPM_FF:inst56
- 80. Parameter Settings for User Entity Instance: BUSMUX:inst57
- 81. Parameter Settings for User Entity Instance: LPM_FF:inst58
- 82. Parameter Settings for User Entity Instance: BUSMUX:inst59
- 83. Parameter Settings for User Entity Instance: LPM_FF:inst60
- 84. Parameter Settings for User Entity Instance: BUSMUX:inst61
- 85. Parameter Settings for User Entity Instance: LPM_FF:inst62
- 86. Parameter Settings for User Entity Instance: BUSMUX:inst63
- 87. Parameter Settings for User Entity Instance: LPM_FF:inst64
- 88. Parameter Settings for User Entity Instance: BUSMUX:inst65
- 89. Parameter Settings for User Entity Instance: LPM_FF:inst66
- 90. Parameter Settings for User Entity Instance: BUSMUX:inst67
- 91. Parameter Settings for User Entity Instance: LPM_FF:inst68
- 92. Parameter Settings for User Entity Instance: BUSMUX:inst69
- 93. Parameter Settings for User Entity Instance: LPM_FF:inst70
- 94. Parameter Settings for User Entity Instance: BUSMUX:inst71
- 95. Parameter Settings for User Entity Instance: LPM_FF:inst72
- 96. Parameter Settings for User Entity Instance: BUSMUX:inst73
- 97. Parameter Settings for User Entity Instance: LPM_FF:inst74
- 98. Parameter Settings for User Entity Instance: BUSMUX:inst75
- 99. Parameter Settings for User Entity Instance: LPM_FF:inst76
-100. Parameter Settings for User Entity Instance: BUSMUX:inst77
-101. Parameter Settings for User Entity Instance: LPM_FF:inst78
-102. Parameter Settings for User Entity Instance: BUSMUX:inst79
-103. Parameter Settings for User Entity Instance: LPM_FF:inst80
-104. Parameter Settings for User Entity Instance: BUSMUX:inst81
-105. Parameter Settings for User Entity Instance: LPM_FF:inst82
-106. Parameter Settings for User Entity Instance: BUSMUX:inst83
-107. Parameter Settings for User Entity Instance: LPM_FF:inst84
-108. Parameter Settings for User Entity Instance: BUSMUX:inst85
-109. Parameter Settings for User Entity Instance: LPM_FF:inst86
-110. Parameter Settings for User Entity Instance: BUSMUX:inst87
-111. Parameter Settings for User Entity Instance: LPM_FF:inst88
-112. Parameter Settings for User Entity Instance: BUSMUX:inst89
-113. Parameter Settings for User Entity Instance: LPM_FF:inst90
-114. Parameter Settings for User Entity Instance: BUSMUX:inst91
-115. Parameter Settings for User Entity Instance: LPM_FF:inst92
-116. Parameter Settings for User Entity Instance: BUSMUX:inst93
-117. Parameter Settings for User Entity Instance: LPM_FF:inst94
-118. Parameter Settings for User Entity Instance: BUSMUX:inst95
-119. Parameter Settings for User Entity Instance: LPM_FF:inst96
-120. Parameter Settings for User Entity Instance: BUSMUX:inst97
-121. Parameter Settings for User Entity Instance: LPM_FF:inst98
-122. Parameter Settings for User Entity Instance: BUSMUX:inst99
-123. Parameter Settings for User Entity Instance: LPM_FF:inst100
-124. Parameter Settings for User Entity Instance: BUSMUX:inst101
-125. Parameter Settings for User Entity Instance: LPM_FF:inst102
-126. Parameter Settings for User Entity Instance: BUSMUX:inst103
-127. Parameter Settings for User Entity Instance: lpm_mux2:inst116|lpm_mux:LPM_MUX_component
-128. altsyncram Parameter Settings by Entity Instance
-129. Elapsed Time Per Partition
-130. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Source assignments for g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+ 12. Parameter Settings for User Entity Instance: StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
+ 13. Parameter Settings for User Entity Instance: BUSMUX:inst119
+ 14. Parameter Settings for User Entity Instance: NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
+ 15. Parameter Settings for User Entity Instance: MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
+ 16. Parameter Settings for User Entity Instance: INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
+ 17. Parameter Settings for User Entity Instance: BUSMUX:inst113
+ 18. Parameter Settings for User Entity Instance: POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
+ 19. Parameter Settings for User Entity Instance: BUSMUX:inst115
+ 20. Parameter Settings for User Entity Instance: a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
+ 21. Parameter Settings for User Entity Instance: PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
+ 22. Parameter Settings for User Entity Instance: lpm_mux0:inst114|lpm_mux:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: LPM_FF:inst
+ 24. Parameter Settings for User Entity Instance: g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: BUSMUX:inst1
+ 26. Parameter Settings for User Entity Instance: LPM_FF:inst2
+ 27. Parameter Settings for User Entity Instance: BUSMUX:inst3
+ 28. Parameter Settings for User Entity Instance: LPM_FF:inst4
+ 29. Parameter Settings for User Entity Instance: BUSMUX:inst5
+ 30. Parameter Settings for User Entity Instance: LPM_FF:inst6
+ 31. Parameter Settings for User Entity Instance: BUSMUX:inst7
+ 32. Parameter Settings for User Entity Instance: LPM_FF:inst8
+ 33. Parameter Settings for User Entity Instance: BUSMUX:inst9
+ 34. Parameter Settings for User Entity Instance: LPM_FF:inst10
+ 35. Parameter Settings for User Entity Instance: BUSMUX:inst11
+ 36. Parameter Settings for User Entity Instance: LPM_FF:inst12
+ 37. Parameter Settings for User Entity Instance: BUSMUX:inst13
+ 38. Parameter Settings for User Entity Instance: LPM_FF:inst14
+ 39. Parameter Settings for User Entity Instance: BUSMUX:inst15
+ 40. Parameter Settings for User Entity Instance: LPM_FF:inst16
+ 41. Parameter Settings for User Entity Instance: BUSMUX:inst17
+ 42. Parameter Settings for User Entity Instance: LPM_FF:inst18
+ 43. Parameter Settings for User Entity Instance: BUSMUX:inst19
+ 44. Parameter Settings for User Entity Instance: LPM_FF:inst20
+ 45. Parameter Settings for User Entity Instance: BUSMUX:inst21
+ 46. Parameter Settings for User Entity Instance: LPM_FF:inst22
+ 47. Parameter Settings for User Entity Instance: BUSMUX:inst23
+ 48. Parameter Settings for User Entity Instance: LPM_FF:inst25
+ 49. Parameter Settings for User Entity Instance: BUSMUX:inst24
+ 50. Parameter Settings for User Entity Instance: LPM_FF:inst26
+ 51. Parameter Settings for User Entity Instance: BUSMUX:inst27
+ 52. Parameter Settings for User Entity Instance: LPM_FF:inst28
+ 53. Parameter Settings for User Entity Instance: BUSMUX:inst29
+ 54. Parameter Settings for User Entity Instance: LPM_FF:inst30
+ 55. Parameter Settings for User Entity Instance: BUSMUX:inst31
+ 56. Parameter Settings for User Entity Instance: LPM_FF:inst32
+ 57. Parameter Settings for User Entity Instance: BUSMUX:inst33
+ 58. Parameter Settings for User Entity Instance: LPM_FF:inst34
+ 59. Parameter Settings for User Entity Instance: BUSMUX:inst35
+ 60. Parameter Settings for User Entity Instance: LPM_FF:inst36
+ 61. Parameter Settings for User Entity Instance: BUSMUX:inst37
+ 62. Parameter Settings for User Entity Instance: LPM_FF:inst38
+ 63. Parameter Settings for User Entity Instance: BUSMUX:inst39
+ 64. Parameter Settings for User Entity Instance: LPM_FF:inst40
+ 65. Parameter Settings for User Entity Instance: BUSMUX:inst41
+ 66. Parameter Settings for User Entity Instance: LPM_FF:inst42
+ 67. Parameter Settings for User Entity Instance: BUSMUX:inst43
+ 68. Parameter Settings for User Entity Instance: LPM_FF:inst44
+ 69. Parameter Settings for User Entity Instance: BUSMUX:inst45
+ 70. Parameter Settings for User Entity Instance: LPM_FF:inst46
+ 71. Parameter Settings for User Entity Instance: BUSMUX:inst47
+ 72. Parameter Settings for User Entity Instance: LPM_FF:inst48
+ 73. Parameter Settings for User Entity Instance: BUSMUX:inst49
+ 74. Parameter Settings for User Entity Instance: LPM_FF:inst50
+ 75. Parameter Settings for User Entity Instance: BUSMUX:inst51
+ 76. Parameter Settings for User Entity Instance: LPM_FF:inst52
+ 77. Parameter Settings for User Entity Instance: BUSMUX:inst53
+ 78. Parameter Settings for User Entity Instance: LPM_FF:inst54
+ 79. Parameter Settings for User Entity Instance: BUSMUX:inst55
+ 80. Parameter Settings for User Entity Instance: LPM_FF:inst56
+ 81. Parameter Settings for User Entity Instance: BUSMUX:inst57
+ 82. Parameter Settings for User Entity Instance: LPM_FF:inst58
+ 83. Parameter Settings for User Entity Instance: BUSMUX:inst59
+ 84. Parameter Settings for User Entity Instance: LPM_FF:inst60
+ 85. Parameter Settings for User Entity Instance: BUSMUX:inst61
+ 86. Parameter Settings for User Entity Instance: LPM_FF:inst62
+ 87. Parameter Settings for User Entity Instance: BUSMUX:inst63
+ 88. Parameter Settings for User Entity Instance: LPM_FF:inst64
+ 89. Parameter Settings for User Entity Instance: BUSMUX:inst65
+ 90. Parameter Settings for User Entity Instance: LPM_FF:inst66
+ 91. Parameter Settings for User Entity Instance: BUSMUX:inst67
+ 92. Parameter Settings for User Entity Instance: LPM_FF:inst68
+ 93. Parameter Settings for User Entity Instance: BUSMUX:inst69
+ 94. Parameter Settings for User Entity Instance: LPM_FF:inst70
+ 95. Parameter Settings for User Entity Instance: BUSMUX:inst71
+ 96. Parameter Settings for User Entity Instance: LPM_FF:inst72
+ 97. Parameter Settings for User Entity Instance: BUSMUX:inst73
+ 98. Parameter Settings for User Entity Instance: LPM_FF:inst74
+ 99. Parameter Settings for User Entity Instance: BUSMUX:inst75
+100. Parameter Settings for User Entity Instance: LPM_FF:inst76
+101. Parameter Settings for User Entity Instance: BUSMUX:inst77
+102. Parameter Settings for User Entity Instance: LPM_FF:inst78
+103. Parameter Settings for User Entity Instance: BUSMUX:inst79
+104. Parameter Settings for User Entity Instance: LPM_FF:inst80
+105. Parameter Settings for User Entity Instance: BUSMUX:inst81
+106. Parameter Settings for User Entity Instance: LPM_FF:inst82
+107. Parameter Settings for User Entity Instance: BUSMUX:inst83
+108. Parameter Settings for User Entity Instance: LPM_FF:inst84
+109. Parameter Settings for User Entity Instance: BUSMUX:inst85
+110. Parameter Settings for User Entity Instance: LPM_FF:inst86
+111. Parameter Settings for User Entity Instance: BUSMUX:inst87
+112. Parameter Settings for User Entity Instance: LPM_FF:inst88
+113. Parameter Settings for User Entity Instance: BUSMUX:inst89
+114. Parameter Settings for User Entity Instance: LPM_FF:inst90
+115. Parameter Settings for User Entity Instance: BUSMUX:inst91
+116. Parameter Settings for User Entity Instance: LPM_FF:inst92
+117. Parameter Settings for User Entity Instance: BUSMUX:inst93
+118. Parameter Settings for User Entity Instance: LPM_FF:inst94
+119. Parameter Settings for User Entity Instance: BUSMUX:inst95
+120. Parameter Settings for User Entity Instance: LPM_FF:inst96
+121. Parameter Settings for User Entity Instance: BUSMUX:inst97
+122. Parameter Settings for User Entity Instance: LPM_FF:inst98
+123. Parameter Settings for User Entity Instance: BUSMUX:inst99
+124. Parameter Settings for User Entity Instance: LPM_FF:inst100
+125. Parameter Settings for User Entity Instance: BUSMUX:inst101
+126. Parameter Settings for User Entity Instance: LPM_FF:inst102
+127. Parameter Settings for User Entity Instance: BUSMUX:inst103
+128. Parameter Settings for User Entity Instance: lpm_mux2:inst116|lpm_mux:LPM_MUX_component
+129. altsyncram Parameter Settings by Entity Instance
+130. Elapsed Time Per Partition
+131. Analysis & Synthesis Messages
 
 
 
@@ -161,18 +162,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 26 15:24:55 2017           ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 26 23:22:08 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_stack52                                     ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 18                                              ;
-;     Total combinational functions  ; 18                                              ;
-;     Dedicated logic registers      ; 6                                               ;
-; Total registers                    ; 6                                               ;
+; Total logic elements               ; 448                                             ;
+;     Total combinational functions  ; 448                                             ;
+;     Dedicated logic registers      ; 318                                             ;
+; Total registers                    ; 318                                             ;
 ; Total pins                         ; 31                                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 3,328                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -327,52 +328,277 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                         ;
-+---------------------------------------------+-----------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                 ;
-+---------------------------------------------+-----------------------------------------------------------------------+
-; Estimated Total logic elements              ; 18                                                                    ;
-;                                             ;                                                                       ;
-; Total combinational functions               ; 18                                                                    ;
-; Logic element usage by number of LUT inputs ;                                                                       ;
-;     -- 4 input functions                    ; 4                                                                     ;
-;     -- 3 input functions                    ; 10                                                                    ;
-;     -- <=2 input functions                  ; 4                                                                     ;
-;                                             ;                                                                       ;
-; Logic elements by mode                      ;                                                                       ;
-;     -- normal mode                          ; 13                                                                    ;
-;     -- arithmetic mode                      ; 5                                                                     ;
-;                                             ;                                                                       ;
-; Total registers                             ; 6                                                                     ;
-;     -- Dedicated logic registers            ; 6                                                                     ;
-;     -- I/O registers                        ; 0                                                                     ;
-;                                             ;                                                                       ;
-; I/O pins                                    ; 31                                                                    ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                     ;
-; Maximum fan-out node                        ; busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated|result_node[8]~2 ;
-; Maximum fan-out                             ; 6                                                                     ;
-; Total fan-out                               ; 92                                                                    ;
-; Average fan-out                             ; 1.67                                                                  ;
-+---------------------------------------------+-----------------------------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 448   ;
+;                                             ;       ;
+; Total combinational functions               ; 448   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 128   ;
+;     -- 3 input functions                    ; 317   ;
+;     -- <=2 input functions                  ; 3     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 443   ;
+;     -- arithmetic mode                      ; 5     ;
+;                                             ;       ;
+; Total registers                             ; 318   ;
+;     -- Dedicated logic registers            ; 318   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 31    ;
+; Total memory bits                           ; 3328  ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 370   ;
+; Total fan-out                               ; 3609  ;
+; Average fan-out                             ; 4.25  ;
++---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Library Name ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
-; |g21_stack52                              ; 18 (1)            ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |g21_stack52                                                                                            ; work         ;
-;    |StackCounter_lpm_counter:inst124|     ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124                                                           ; work         ;
-;       |lpm_counter:LPM_COUNTER_component| ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                         ; work         ;
-;          |cntr_p5j:auto_generated|        ; 9 (9)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated ; work         ;
-;    |busmux:inst119|                       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119                                                                             ; work         ;
-;       |lpm_mux:$00000|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000                                                              ; work         ;
-;          |mux_5oc:auto_generated|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                       ; work         ;
-;    |g21_comp7:inst125|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst125                                                                          ; work         ;
-;    |g21_comp7:inst128|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst128                                                                          ; work         ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                           ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+; |g21_stack52                                 ; 448 (1)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 31   ; 0            ; |g21_stack52                                                                                                        ; work         ;
+;    |StackCounter_lpm_counter:inst124|        ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124                                                                       ; work         ;
+;       |lpm_counter:LPM_COUNTER_component|    ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                     ; work         ;
+;          |cntr_p5j:auto_generated|           ; 9 (9)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated             ; work         ;
+;    |busmux:inst101|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101                                                                                         ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101|lpm_mux:$00000                                                                          ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101|lpm_mux:$00000|mux_qmc:auto_generated                                                   ; work         ;
+;    |busmux:inst103|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103                                                                                         ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103|lpm_mux:$00000                                                                          ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103|lpm_mux:$00000|mux_qmc:auto_generated                                                   ; work         ;
+;    |busmux:inst119|                          ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119                                                                                         ; work         ;
+;       |lpm_mux:$00000|                       ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000                                                                          ; work         ;
+;          |mux_5oc:auto_generated|            ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                   ; work         ;
+;    |busmux:inst11|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst13|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst15|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst17|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst19|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst1|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst21|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst23|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst24|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst27|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst29|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst31|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst33|                           ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst35|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst37|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst37                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst37|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst37|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst39|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst3|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst41|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst43|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst43                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst43|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst43|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst45|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst45                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst45|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst45|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst47|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst47                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst47|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst47|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst49|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst49                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst49|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst49|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst51|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst51                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst51|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst51|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst53|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst53                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst53|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst53|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst55|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst55                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst55|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst55|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst57|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst57                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst57|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst57|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst59|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst5|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst61|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst63|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst63                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst63|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst63|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst65|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst65                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst65|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst65|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst67|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst67                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst67|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst67|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst69|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst69                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst69|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst69|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst71|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst71                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst71|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst71|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst73|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst73                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst73|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst73|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst75|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst75                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst75|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst75|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst77|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst77                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst77|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst77|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst79|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst7|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst81|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst83|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst83                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst83|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst83|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst85|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst85                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst85|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst85|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst87|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst87                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst87|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst87|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst89|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst89                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst89|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst89|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst91|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst91                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst91|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst91|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst93|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst93                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst93|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst93|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst95|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst95                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst95|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst95|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst97|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst97                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst97|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst97|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst99|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst9|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |g21_comp7:inst125|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst125                                                                                      ; work         ;
+;    |g21_comp7:inst128|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst128                                                                                      ; work         ;
+;    |g21_pop_enable:inst104|                  ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_pop_enable:inst104                                                                                 ; work         ;
+;       |g21_lab2_rom1:R1|                     ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1                                                                ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component                                ; work         ;
+;             |altsyncram_q371:auto_generated| ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated ; work         ;
+;    |lpm_ff:inst100|                          ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst100                                                                                         ; work         ;
+;    |lpm_ff:inst102|                          ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst102                                                                                         ; work         ;
+;    |lpm_ff:inst10|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst10                                                                                          ; work         ;
+;    |lpm_ff:inst12|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst12                                                                                          ; work         ;
+;    |lpm_ff:inst14|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst14                                                                                          ; work         ;
+;    |lpm_ff:inst16|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst16                                                                                          ; work         ;
+;    |lpm_ff:inst18|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst18                                                                                          ; work         ;
+;    |lpm_ff:inst20|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst20                                                                                          ; work         ;
+;    |lpm_ff:inst22|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst22                                                                                          ; work         ;
+;    |lpm_ff:inst25|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst25                                                                                          ; work         ;
+;    |lpm_ff:inst26|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst26                                                                                          ; work         ;
+;    |lpm_ff:inst28|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst28                                                                                          ; work         ;
+;    |lpm_ff:inst2|                            ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst2                                                                                           ; work         ;
+;    |lpm_ff:inst30|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst30                                                                                          ; work         ;
+;    |lpm_ff:inst32|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst32                                                                                          ; work         ;
+;    |lpm_ff:inst34|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst34                                                                                          ; work         ;
+;    |lpm_ff:inst36|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst36                                                                                          ; work         ;
+;    |lpm_ff:inst38|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst38                                                                                          ; work         ;
+;    |lpm_ff:inst40|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst40                                                                                          ; work         ;
+;    |lpm_ff:inst42|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst42                                                                                          ; work         ;
+;    |lpm_ff:inst44|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst44                                                                                          ; work         ;
+;    |lpm_ff:inst46|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst46                                                                                          ; work         ;
+;    |lpm_ff:inst48|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst48                                                                                          ; work         ;
+;    |lpm_ff:inst4|                            ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst4                                                                                           ; work         ;
+;    |lpm_ff:inst50|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst50                                                                                          ; work         ;
+;    |lpm_ff:inst52|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst52                                                                                          ; work         ;
+;    |lpm_ff:inst54|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst54                                                                                          ; work         ;
+;    |lpm_ff:inst56|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst56                                                                                          ; work         ;
+;    |lpm_ff:inst58|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst58                                                                                          ; work         ;
+;    |lpm_ff:inst60|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst60                                                                                          ; work         ;
+;    |lpm_ff:inst62|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst62                                                                                          ; work         ;
+;    |lpm_ff:inst64|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst64                                                                                          ; work         ;
+;    |lpm_ff:inst66|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst66                                                                                          ; work         ;
+;    |lpm_ff:inst68|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst68                                                                                          ; work         ;
+;    |lpm_ff:inst6|                            ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst6                                                                                           ; work         ;
+;    |lpm_ff:inst70|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst70                                                                                          ; work         ;
+;    |lpm_ff:inst72|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst72                                                                                          ; work         ;
+;    |lpm_ff:inst74|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst74                                                                                          ; work         ;
+;    |lpm_ff:inst76|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst76                                                                                          ; work         ;
+;    |lpm_ff:inst78|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst78                                                                                          ; work         ;
+;    |lpm_ff:inst80|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst80                                                                                          ; work         ;
+;    |lpm_ff:inst82|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst82                                                                                          ; work         ;
+;    |lpm_ff:inst84|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst84                                                                                          ; work         ;
+;    |lpm_ff:inst86|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst86                                                                                          ; work         ;
+;    |lpm_ff:inst88|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst88                                                                                          ; work         ;
+;    |lpm_ff:inst8|                            ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst8                                                                                           ; work         ;
+;    |lpm_ff:inst90|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst90                                                                                          ; work         ;
+;    |lpm_ff:inst92|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst92                                                                                          ; work         ;
+;    |lpm_ff:inst94|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst94                                                                                          ; work         ;
+;    |lpm_ff:inst96|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst96                                                                                          ; work         ;
+;    |lpm_ff:inst98|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst98                                                                                          ; work         ;
+;    |lpm_ff:inst|                             ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst                                                                                            ; work         ;
+;    |lpm_mux0:inst114|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                             ; work         ;
+;          |mux_v4e:auto_generated|            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------+
+; Name                                                                                                              ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
++-------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------+
+; g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 64           ; 52           ; --           ; --           ; 3328 ; g21_lab2.mif ;
++-------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -398,12 +624,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 318   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 6     ;
-; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Synchronous Load   ; 318   ;
+; Number of registers using Asynchronous Clear ; 318   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 318   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -2200,7 +2426,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 26 15:24:50 2017
+    Info: Processing started: Thu Oct 26 23:22:02 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2538,525 +2764,521 @@ Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst8|lpm_
 Info (12131): Elaborated megafunction instantiation "LPM_FF:inst8|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst8"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst10"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst10"
 Info (12133): Instantiated megafunction "LPM_FF:inst10" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "5"
     Info (12134): Parameter "LPM_WIDTH" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst11"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:inst11"
-Info (12133): Instantiated megafunction "BUSMUX:inst11" with the following parameter:
-    Info (12134): Parameter "WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst10|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst10|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst10"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst12"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst12"
 Info (12133): Instantiated megafunction "LPM_FF:inst12" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "6"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst12|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst12|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst12"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst14"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst14"
 Info (12133): Instantiated megafunction "LPM_FF:inst14" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "7"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst14|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst14|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst14"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst16"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst16"
 Info (12133): Instantiated megafunction "LPM_FF:inst16" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "8"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst16|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst16|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst16"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst18"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst18"
 Info (12133): Instantiated megafunction "LPM_FF:inst18" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "9"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst18|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst18|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst18"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst20"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst20"
 Info (12133): Instantiated megafunction "LPM_FF:inst20" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "10"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst20|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst20|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst20"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst22"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst22"
 Info (12133): Instantiated megafunction "LPM_FF:inst22" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "11"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst22|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst22|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst22"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst25"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst25"
 Info (12133): Instantiated megafunction "LPM_FF:inst25" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "12"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst25|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst25|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst25"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst26"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst26"
 Info (12133): Instantiated megafunction "LPM_FF:inst26" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "13"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst26|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst26|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst26"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst28"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst28"
 Info (12133): Instantiated megafunction "LPM_FF:inst28" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "14"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst28|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst28|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst28"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst30"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst30"
 Info (12133): Instantiated megafunction "LPM_FF:inst30" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "15"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst30|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst30|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst30"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst32"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst32"
 Info (12133): Instantiated megafunction "LPM_FF:inst32" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "16"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst32|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst32|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst32"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst34"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst34"
 Info (12133): Instantiated megafunction "LPM_FF:inst34" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "17"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst34|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst34|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst34"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst36"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst36"
 Info (12133): Instantiated megafunction "LPM_FF:inst36" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "18"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst36|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst36|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst36"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst38"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst38"
 Info (12133): Instantiated megafunction "LPM_FF:inst38" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "19"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst38|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst38|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst38"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst40"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst40"
 Info (12133): Instantiated megafunction "LPM_FF:inst40" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "20"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst40|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst40|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst40"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst42"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst42"
 Info (12133): Instantiated megafunction "LPM_FF:inst42" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "21"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst42|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst42|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst42"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst44"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst44"
 Info (12133): Instantiated megafunction "LPM_FF:inst44" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "22"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst44|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst44|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst44"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst46"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst46"
 Info (12133): Instantiated megafunction "LPM_FF:inst46" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "23"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst46|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst46|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst46"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst48"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst48"
 Info (12133): Instantiated megafunction "LPM_FF:inst48" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "24"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst48|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst48|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst48"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst50"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst50"
 Info (12133): Instantiated megafunction "LPM_FF:inst50" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "25"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst50|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst50|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst50"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst52"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst52"
 Info (12133): Instantiated megafunction "LPM_FF:inst52" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "26"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst52|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst52|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst52"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst54"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst54"
 Info (12133): Instantiated megafunction "LPM_FF:inst54" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "27"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst54|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst54|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst54"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst56"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst56"
 Info (12133): Instantiated megafunction "LPM_FF:inst56" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "28"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst56|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst56|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst56"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst58"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst58"
 Info (12133): Instantiated megafunction "LPM_FF:inst58" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "29"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst58|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst58|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst58"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst60"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst60"
 Info (12133): Instantiated megafunction "LPM_FF:inst60" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "30"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst60|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst60|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst60"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst62"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst62"
 Info (12133): Instantiated megafunction "LPM_FF:inst62" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "31"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst62|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst62|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst62"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst64"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst64"
 Info (12133): Instantiated megafunction "LPM_FF:inst64" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "32"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst64|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst64|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst64"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst66"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst66"
 Info (12133): Instantiated megafunction "LPM_FF:inst66" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "33"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst66|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst66|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst66"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst68"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst68"
 Info (12133): Instantiated megafunction "LPM_FF:inst68" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "34"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst68|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst68|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst68"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst70"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst70"
 Info (12133): Instantiated megafunction "LPM_FF:inst70" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "35"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst70|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst70|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst70"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst72"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst72"
 Info (12133): Instantiated megafunction "LPM_FF:inst72" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "36"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst72|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst72|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst72"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst74"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst74"
 Info (12133): Instantiated megafunction "LPM_FF:inst74" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "37"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst74|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst74|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst74"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst76"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst76"
 Info (12133): Instantiated megafunction "LPM_FF:inst76" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "38"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst76|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst76|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst76"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst78"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst78"
 Info (12133): Instantiated megafunction "LPM_FF:inst78" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "39"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst78|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst78|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst78"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst80"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst80"
 Info (12133): Instantiated megafunction "LPM_FF:inst80" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "40"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst80|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst80|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst80"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst82"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst82"
 Info (12133): Instantiated megafunction "LPM_FF:inst82" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "41"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst82|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst82|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst82"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst84"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst84"
 Info (12133): Instantiated megafunction "LPM_FF:inst84" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "42"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst84|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst84|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst84"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst86"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst86"
 Info (12133): Instantiated megafunction "LPM_FF:inst86" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "43"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst86|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst86|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst86"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst88"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst88"
 Info (12133): Instantiated megafunction "LPM_FF:inst88" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "44"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst88|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst88|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst88"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst90"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst90"
 Info (12133): Instantiated megafunction "LPM_FF:inst90" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "45"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst90|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst90|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst90"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst92"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst92"
 Info (12133): Instantiated megafunction "LPM_FF:inst92" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "46"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst92|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst92|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst92"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst94"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst94"
 Info (12133): Instantiated megafunction "LPM_FF:inst94" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "47"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst94|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst94|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst94"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst96"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst96"
 Info (12133): Instantiated megafunction "LPM_FF:inst96" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "48"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst96|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst96|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst96"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst98"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst98"
 Info (12133): Instantiated megafunction "LPM_FF:inst98" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "49"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst98|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst98|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst98"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst100"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst100"
 Info (12133): Instantiated megafunction "LPM_FF:inst100" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "50"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst100|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst100|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst100"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst102"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
 Warning (287013): Variable or input pin "ac" is defined but never used.
-Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst102"
 Info (12133): Instantiated megafunction "LPM_FF:inst102" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "51"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst102|lpm_constant:sc"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst102|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst102"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst103"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst103"
 Info (12133): Instantiated megafunction "BUSMUX:inst103" with the following parameter:
@@ -3074,90 +3296,17 @@ Info (12133): Instantiated megafunction "lpm_mux2:inst116|lpm_mux:LPM_MUX_compon
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_p4e.tdf
     Info (12023): Found entity 1: mux_p4e
 Info (12128): Elaborating entity "mux_p4e" for hierarchy "lpm_mux2:inst116|lpm_mux:LPM_MUX_component|mux_p4e:auto_generated"
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[0]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[1]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[2]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[3]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[4]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[5]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[6]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[7]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[8]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[9]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[10]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[11]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[12]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[13]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[14]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[15]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[16]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[17]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[18]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[19]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[20]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[21]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[22]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[23]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[24]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[25]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[26]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[27]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[28]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[29]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[30]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[31]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[32]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[33]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[34]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[35]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[36]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[37]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[38]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[39]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[40]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[41]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[42]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[43]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[44]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[45]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[46]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[47]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[48]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[49]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[50]"
-        Warning (14320): Synthesized away node "g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated|q_a[51]"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "VALUE[5]" is stuck at GND
-    Warning (13410): Pin "VALUE[4]" is stuck at GND
-    Warning (13410): Pin "VALUE[3]" is stuck at GND
-    Warning (13410): Pin "VALUE[2]" is stuck at GND
-    Warning (13410): Pin "VALUE[1]" is stuck at GND
-    Warning (13410): Pin "VALUE[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "DATA[5]"
-    Warning (15610): No output dependent on input pin "DATA[4]"
-    Warning (15610): No output dependent on input pin "DATA[3]"
-    Warning (15610): No output dependent on input pin "DATA[2]"
-    Warning (15610): No output dependent on input pin "DATA[1]"
-    Warning (15610): No output dependent on input pin "DATA[0]"
-    Warning (15610): No output dependent on input pin "ADDR[0]"
-    Warning (15610): No output dependent on input pin "ADDR[1]"
-    Warning (15610): No output dependent on input pin "ADDR[4]"
-    Warning (15610): No output dependent on input pin "ADDR[2]"
-    Warning (15610): No output dependent on input pin "ADDR[3]"
-    Warning (15610): No output dependent on input pin "ADDR[5]"
-Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 531 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 392 warnings
-    Info: Peak virtual memory: 561 megabytes
-    Info: Processing ended: Thu Oct 26 15:24:55 2017
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 448 logic cells
+    Info (21064): Implemented 52 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 224 warnings
+    Info: Peak virtual memory: 588 megabytes
+    Info: Processing ended: Thu Oct 26 23:22:08 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -134,12 +134,106 @@ CLK => LPM_FF:inst2.clock
 CLK => LPM_FF:inst4.clock
 CLK => LPM_FF:inst6.clock
 CLK => LPM_FF:inst8.clock
+CLK => LPM_FF:inst10.clock
+CLK => LPM_FF:inst12.clock
+CLK => LPM_FF:inst14.clock
+CLK => LPM_FF:inst16.clock
+CLK => LPM_FF:inst18.clock
+CLK => LPM_FF:inst20.clock
+CLK => LPM_FF:inst22.clock
+CLK => LPM_FF:inst25.clock
+CLK => LPM_FF:inst26.clock
+CLK => LPM_FF:inst28.clock
+CLK => LPM_FF:inst30.clock
+CLK => LPM_FF:inst32.clock
+CLK => LPM_FF:inst34.clock
+CLK => LPM_FF:inst36.clock
+CLK => LPM_FF:inst38.clock
+CLK => LPM_FF:inst40.clock
+CLK => LPM_FF:inst42.clock
+CLK => LPM_FF:inst44.clock
+CLK => LPM_FF:inst46.clock
+CLK => LPM_FF:inst48.clock
+CLK => LPM_FF:inst50.clock
+CLK => LPM_FF:inst52.clock
+CLK => LPM_FF:inst54.clock
+CLK => LPM_FF:inst56.clock
+CLK => LPM_FF:inst58.clock
+CLK => LPM_FF:inst60.clock
+CLK => LPM_FF:inst62.clock
+CLK => LPM_FF:inst64.clock
+CLK => LPM_FF:inst66.clock
+CLK => LPM_FF:inst68.clock
+CLK => LPM_FF:inst70.clock
+CLK => LPM_FF:inst72.clock
+CLK => LPM_FF:inst74.clock
+CLK => LPM_FF:inst76.clock
+CLK => LPM_FF:inst78.clock
+CLK => LPM_FF:inst80.clock
+CLK => LPM_FF:inst82.clock
+CLK => LPM_FF:inst84.clock
+CLK => LPM_FF:inst86.clock
+CLK => LPM_FF:inst88.clock
+CLK => LPM_FF:inst90.clock
+CLK => LPM_FF:inst92.clock
+CLK => LPM_FF:inst94.clock
+CLK => LPM_FF:inst96.clock
+CLK => LPM_FF:inst98.clock
+CLK => LPM_FF:inst100.clock
+CLK => LPM_FF:inst102.clock
 RST => StackCounter_lpm_counter:inst124.aclr
 RST => LPM_FF:inst.aclr
 RST => LPM_FF:inst2.aclr
 RST => LPM_FF:inst4.aclr
 RST => LPM_FF:inst6.aclr
 RST => LPM_FF:inst8.aclr
+RST => LPM_FF:inst10.aclr
+RST => LPM_FF:inst12.aclr
+RST => LPM_FF:inst14.aclr
+RST => LPM_FF:inst16.aclr
+RST => LPM_FF:inst18.aclr
+RST => LPM_FF:inst20.aclr
+RST => LPM_FF:inst22.aclr
+RST => LPM_FF:inst25.aclr
+RST => LPM_FF:inst26.aclr
+RST => LPM_FF:inst28.aclr
+RST => LPM_FF:inst30.aclr
+RST => LPM_FF:inst32.aclr
+RST => LPM_FF:inst34.aclr
+RST => LPM_FF:inst36.aclr
+RST => LPM_FF:inst38.aclr
+RST => LPM_FF:inst40.aclr
+RST => LPM_FF:inst42.aclr
+RST => LPM_FF:inst44.aclr
+RST => LPM_FF:inst46.aclr
+RST => LPM_FF:inst48.aclr
+RST => LPM_FF:inst50.aclr
+RST => LPM_FF:inst52.aclr
+RST => LPM_FF:inst54.aclr
+RST => LPM_FF:inst56.aclr
+RST => LPM_FF:inst58.aclr
+RST => LPM_FF:inst60.aclr
+RST => LPM_FF:inst62.aclr
+RST => LPM_FF:inst64.aclr
+RST => LPM_FF:inst66.aclr
+RST => LPM_FF:inst68.aclr
+RST => LPM_FF:inst70.aclr
+RST => LPM_FF:inst72.aclr
+RST => LPM_FF:inst74.aclr
+RST => LPM_FF:inst76.aclr
+RST => LPM_FF:inst78.aclr
+RST => LPM_FF:inst80.aclr
+RST => LPM_FF:inst82.aclr
+RST => LPM_FF:inst84.aclr
+RST => LPM_FF:inst86.aclr
+RST => LPM_FF:inst88.aclr
+RST => LPM_FF:inst90.aclr
+RST => LPM_FF:inst92.aclr
+RST => LPM_FF:inst94.aclr
+RST => LPM_FF:inst96.aclr
+RST => LPM_FF:inst98.aclr
+RST => LPM_FF:inst100.aclr
+RST => LPM_FF:inst102.aclr
 FULL <= FULL0.DB_MAX_OUTPUT_PORT_TYPE
 VALUE[0] <= lpm_mux0:inst114.result[0]
 VALUE[1] <= lpm_mux0:inst114.result[1]
@@ -6829,11 +6923,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -6841,6 +6946,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst10|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst11
@@ -6942,11 +7056,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -6954,6 +7079,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst12|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst13
@@ -7055,11 +7189,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7067,6 +7212,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst14|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst15
@@ -7168,11 +7322,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7180,6 +7345,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst16|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst17
@@ -7281,11 +7455,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7293,6 +7478,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst18|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst19
@@ -7394,11 +7588,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7406,6 +7611,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst20|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst21
@@ -7507,11 +7721,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7519,6 +7744,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst22|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst23
@@ -7620,11 +7854,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7632,6 +7877,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst25|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst24
@@ -7733,11 +7987,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7745,6 +8010,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst26|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst27
@@ -7846,11 +8120,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7858,6 +8143,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst28|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst29
@@ -7959,11 +8253,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -7971,6 +8276,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst30|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst31
@@ -8072,11 +8386,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8084,6 +8409,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst32|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst33
@@ -8185,11 +8519,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8197,6 +8542,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst34|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst35
@@ -8298,11 +8652,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8310,6 +8675,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst36|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst37
@@ -8411,11 +8785,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8423,6 +8808,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst38|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst39
@@ -8524,11 +8918,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8536,6 +8941,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst40|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst41
@@ -8637,11 +9051,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8649,6 +9074,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst42|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst43
@@ -8750,11 +9184,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8762,6 +9207,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst44|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst45
@@ -8863,11 +9317,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8875,6 +9340,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst46|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst47
@@ -8976,11 +9450,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8988,6 +9473,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst48|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst49
@@ -9089,11 +9583,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9101,6 +9606,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst50|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst51
@@ -9202,11 +9716,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9214,6 +9739,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst52|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst53
@@ -9315,11 +9849,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9327,6 +9872,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst54|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst55
@@ -9428,11 +9982,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9440,6 +10005,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst56|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst57
@@ -9541,11 +10115,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9553,6 +10138,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst58|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst59
@@ -9654,11 +10248,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9666,6 +10271,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst60|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst61
@@ -9767,11 +10381,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9779,6 +10404,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst62|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 
 |g21_stack52|BUSMUX:inst63
@@ -9880,11 +10514,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -9892,6 +10537,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst64|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst65
@@ -9993,11 +10647,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10005,6 +10670,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst66|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst67
@@ -10106,11 +10780,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10118,6 +10803,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst68|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst69
@@ -10219,11 +10913,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10231,6 +10936,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst70|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst71
@@ -10332,11 +11046,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10344,6 +11069,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst72|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst73
@@ -10445,11 +11179,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10457,6 +11202,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst74|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst75
@@ -10558,11 +11312,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10570,6 +11335,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst76|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst77
@@ -10671,11 +11445,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10683,6 +11468,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst78|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst79
@@ -10784,11 +11578,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10796,6 +11601,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst80|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst81
@@ -10897,11 +11711,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -10909,6 +11734,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst82|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst83
@@ -11010,11 +11844,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11022,6 +11867,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst84|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst85
@@ -11123,11 +11977,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11135,6 +12000,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst86|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst87
@@ -11236,11 +12110,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11248,6 +12133,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst88|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst89
@@ -11349,11 +12243,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11361,6 +12266,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst90|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst91
@@ -11462,11 +12376,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11474,6 +12399,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst92|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst93
@@ -11575,11 +12509,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11587,6 +12532,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst94|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst95
@@ -11688,11 +12642,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11700,6 +12665,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst96|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst97
@@ -11801,11 +12775,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11813,6 +12798,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst98|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst99
@@ -11914,11 +12908,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -11926,6 +12931,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst100|lpm_constant:sc
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst101
@@ -12027,11 +13041,22 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
+aclr => dffs[5].IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -12039,6 +13064,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst102|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g21_stack52|BUSMUX:inst103
