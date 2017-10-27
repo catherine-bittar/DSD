@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Thu Oct 26 23:22:08 2017
+Fri Oct 27 09:11:40 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -162,13 +162,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 26 23:22:08 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 27 09:11:39 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_stack52                                     ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 448                                             ;
-;     Total combinational functions  ; 448                                             ;
+; Total logic elements               ; 588                                             ;
+;     Total combinational functions  ; 588                                             ;
 ;     Dedicated logic registers      ; 318                                             ;
 ; Total registers                    ; 318                                             ;
 ; Total pins                         ; 31                                              ;
@@ -333,16 +333,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 448   ;
+; Estimated Total logic elements              ; 588   ;
 ;                                             ;       ;
-; Total combinational functions               ; 448   ;
+; Total combinational functions               ; 588   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 128   ;
-;     -- 3 input functions                    ; 317   ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- 4 input functions                    ; 247   ;
+;     -- 3 input functions                    ; 335   ;
+;     -- <=2 input functions                  ; 6     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 443   ;
+;     -- normal mode                          ; 583   ;
 ;     -- arithmetic mode                      ; 5     ;
 ;                                             ;       ;
 ; Total registers                             ; 318   ;
@@ -354,8 +354,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 370   ;
-; Total fan-out                               ; 3609  ;
-; Average fan-out                             ; 4.25  ;
+; Total fan-out                               ; 4145  ;
+; Average fan-out                             ; 4.19  ;
 +---------------------------------------------+-------+
 
 
@@ -364,58 +364,61 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_stack52                                 ; 448 (1)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 31   ; 0            ; |g21_stack52                                                                                                        ; work         ;
-;    |StackCounter_lpm_counter:inst124|        ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124                                                                       ; work         ;
-;       |lpm_counter:LPM_COUNTER_component|    ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                     ; work         ;
-;          |cntr_p5j:auto_generated|           ; 9 (9)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated             ; work         ;
+; |g21_stack52                                 ; 588 (1)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 31   ; 0            ; |g21_stack52                                                                                                        ; work         ;
+;    |MODE_Select_lpm_mux:inst118|             ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|MODE_Select_lpm_mux:inst118                                                                            ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component                                                  ; work         ;
+;          |mux_j4e:auto_generated|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated                           ; work         ;
+;    |StackCounter_lpm_counter:inst124|        ; 8 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124                                                                       ; work         ;
+;       |lpm_counter:LPM_COUNTER_component|    ; 8 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                     ; work         ;
+;          |cntr_p5j:auto_generated|           ; 8 (8)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated             ; work         ;
 ;    |busmux:inst101|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101                                                                                         ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101|lpm_mux:$00000                                                                          ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst101|lpm_mux:$00000|mux_qmc:auto_generated                                                   ; work         ;
 ;    |busmux:inst103|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103                                                                                         ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103|lpm_mux:$00000                                                                          ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst103|lpm_mux:$00000|mux_qmc:auto_generated                                                   ; work         ;
-;    |busmux:inst119|                          ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119                                                                                         ; work         ;
-;       |lpm_mux:$00000|                       ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000                                                                          ; work         ;
-;          |mux_5oc:auto_generated|            ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                   ; work         ;
-;    |busmux:inst11|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst13|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst15|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst17|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst19|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst1|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1                                                                                           ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000                                                                            ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
-;    |busmux:inst21|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst23|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst24|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst27|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst29|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst31|                           ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst33|                           ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33                                                                                          ; work         ;
-;       |lpm_mux:$00000|                       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000                                                                           ; work         ;
-;          |mux_qmc:auto_generated|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst119|                          ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119                                                                                         ; work         ;
+;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000                                                                          ; work         ;
+;          |mux_5oc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                   ; work         ;
+;    |busmux:inst11|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst11|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst13|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst13|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst15|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst15|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst17|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst17|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst19|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst19|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst1|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst1|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst21|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst21|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst23|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst23|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst24|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst24|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst27|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst27|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst29|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst29|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst31|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst31|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
+;    |busmux:inst33|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33                                                                                          ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000                                                                           ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst33|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
 ;    |busmux:inst35|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst35|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -425,9 +428,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |busmux:inst39|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst39|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst3|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3                                                                                           ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000                                                                            ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst3|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst3|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
 ;    |busmux:inst41|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst41|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -458,9 +461,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |busmux:inst59|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst59|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst5|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5                                                                                           ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000                                                                            ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst5|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst5|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
 ;    |busmux:inst61|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst61|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -491,9 +494,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |busmux:inst79|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst79|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst7|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7                                                                                           ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000                                                                            ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst7|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst7|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
 ;    |busmux:inst81|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst81|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -524,9 +527,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |busmux:inst99|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99                                                                                          ; work         ;
 ;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99|lpm_mux:$00000                                                                           ; work         ;
 ;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst99|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
-;    |busmux:inst9|                            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9                                                                                           ; work         ;
-;       |lpm_mux:$00000|                       ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000                                                                            ; work         ;
-;          |mux_qmc:auto_generated|            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
+;    |busmux:inst9|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9                                                                                           ; work         ;
+;       |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000                                                                            ; work         ;
+;          |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|busmux:inst9|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
 ;    |g21_comp7:inst125|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst125                                                                                      ; work         ;
 ;    |g21_comp7:inst128|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_comp7:inst128                                                                                      ; work         ;
 ;    |g21_pop_enable:inst104|                  ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|g21_pop_enable:inst104                                                                                 ; work         ;
@@ -585,9 +588,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |lpm_ff:inst96|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst96                                                                                          ; work         ;
 ;    |lpm_ff:inst98|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst98                                                                                          ; work         ;
 ;    |lpm_ff:inst|                             ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_ff:inst                                                                                            ; work         ;
-;    |lpm_mux0:inst114|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114                                                                                       ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                             ; work         ;
-;          |mux_v4e:auto_generated|            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ; work         ;
+;    |lpm_mux0:inst114|                        ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                             ; work         ;
+;          |mux_v4e:auto_generated|            ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2416,7 +2419,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -2426,7 +2429,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 26 23:22:02 2017
+    Info: Processing started: Fri Oct 27 09:11:32 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2470,6 +2473,58 @@ Info (12021): Found 2 design units, including 1 entities, in source file a52_lpm
     Info (12022): Found design unit 1: a52_lpm_constant-SYN
     Info (12023): Found entity 1: a52_lpm_constant
 Info (12127): Elaborating entity "g21_stack52" for the top level hierarchy
+Warning (275083): Bus "q10[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q11[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q12[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q13[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q14[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q15[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q20[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q21[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q22[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q23[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q24[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q25[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q30[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q31[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q32[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q33[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q34[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q35[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q40[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q41[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q42[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q43[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q44[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q45[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q50[5..0]" found using same base name as "q5", which might lead to a name conflict.
+Warning (275083): Bus "q51[5..0]" found using same base name as "q5", which might lead to a name conflict.
+Warning (275083): Bus "q10[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q11[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q12[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q13[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q14[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q15[5..0]" found using same base name as "q1", which might lead to a name conflict.
+Warning (275083): Bus "q20[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q21[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q22[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q23[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q24[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q25[5..0]" found using same base name as "q2", which might lead to a name conflict.
+Warning (275083): Bus "q30[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q31[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q32[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q33[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q34[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q35[5..0]" found using same base name as "q3", which might lead to a name conflict.
+Warning (275083): Bus "q40[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q41[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q42[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q43[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q44[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q45[5..0]" found using same base name as "q4", which might lead to a name conflict.
+Warning (275083): Bus "q50[5..0]" found using same base name as "q5", which might lead to a name conflict.
+Warning (275083): Bus "q51[5..0]" found using same base name as "q5", which might lead to a name conflict.
 Warning (275085): Found inconsistent dimensions for element "ENABLE"
 Warning (275085): Found inconsistent dimensions for element "EMPTY"
 Warning (275085): Found inconsistent dimensions for element "FULL"
@@ -2586,6 +2641,99 @@ Warning (275080): Converted elements in bus name "ENABLE" using legacy naming ru
 Warning (275080): Converted elements in bus name "FULL" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "FULL[0]" to "FULL0"
     Warning (275081): Converted element name(s) from "FULL[0]" to "FULL0"
+Warning (275080): Converted elements in bus name "q1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q1[5..0]" to "q15..0"
+    Warning (275081): Converted element name(s) from "q1[5..0]" to "q15..0"
+Warning (275080): Converted elements in bus name "q10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q10[5..0]" to "q105..0"
+    Warning (275081): Converted element name(s) from "q10[5..0]" to "q105..0"
+Warning (275080): Converted elements in bus name "q11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q11[5..0]" to "q115..0"
+    Warning (275081): Converted element name(s) from "q11[5..0]" to "q115..0"
+Warning (275080): Converted elements in bus name "q12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q12[5..0]" to "q125..0"
+    Warning (275081): Converted element name(s) from "q12[5..0]" to "q125..0"
+Warning (275080): Converted elements in bus name "q13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q13[5..0]" to "q135..0"
+    Warning (275081): Converted element name(s) from "q13[5..0]" to "q135..0"
+Warning (275080): Converted elements in bus name "q14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q14[5..0]" to "q145..0"
+    Warning (275081): Converted element name(s) from "q14[5..0]" to "q145..0"
+Warning (275080): Converted elements in bus name "q15" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q15[5..0]" to "q155..0"
+    Warning (275081): Converted element name(s) from "q15[5..0]" to "q155..0"
+Warning (275080): Converted elements in bus name "q2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q2[5..0]" to "q25..0"
+    Warning (275081): Converted element name(s) from "q2[5..0]" to "q25..0"
+Warning (275080): Converted elements in bus name "q20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q20[5..0]" to "q205..0"
+    Warning (275081): Converted element name(s) from "q20[5..0]" to "q205..0"
+Warning (275080): Converted elements in bus name "q21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q21[5..0]" to "q215..0"
+    Warning (275081): Converted element name(s) from "q21[5..0]" to "q215..0"
+Warning (275080): Converted elements in bus name "q22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q22[5..0]" to "q225..0"
+    Warning (275081): Converted element name(s) from "q22[5..0]" to "q225..0"
+Warning (275080): Converted elements in bus name "q23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q23[5..0]" to "q235..0"
+    Warning (275081): Converted element name(s) from "q23[5..0]" to "q235..0"
+Warning (275080): Converted elements in bus name "q24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q24[5..0]" to "q245..0"
+    Warning (275081): Converted element name(s) from "q24[5..0]" to "q245..0"
+Warning (275080): Converted elements in bus name "q25" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q25[5..0]" to "q255..0"
+    Warning (275081): Converted element name(s) from "q25[5..0]" to "q255..0"
+Warning (275080): Converted elements in bus name "q3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q3[5..0]" to "q35..0"
+    Warning (275081): Converted element name(s) from "q3[5..0]" to "q35..0"
+Warning (275080): Converted elements in bus name "q30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q30[5..0]" to "q305..0"
+    Warning (275081): Converted element name(s) from "q30[5..0]" to "q305..0"
+Warning (275080): Converted elements in bus name "q31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q31[5..0]" to "q315..0"
+    Warning (275081): Converted element name(s) from "q31[5..0]" to "q315..0"
+Warning (275080): Converted elements in bus name "q32" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q32[5..0]" to "q325..0"
+    Warning (275081): Converted element name(s) from "q32[5..0]" to "q325..0"
+Warning (275080): Converted elements in bus name "q33" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q33[5..0]" to "q335..0"
+    Warning (275081): Converted element name(s) from "q33[5..0]" to "q335..0"
+Warning (275080): Converted elements in bus name "q34" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q34[5..0]" to "q345..0"
+    Warning (275081): Converted element name(s) from "q34[5..0]" to "q345..0"
+Warning (275080): Converted elements in bus name "q35" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q35[5..0]" to "q355..0"
+    Warning (275081): Converted element name(s) from "q35[5..0]" to "q355..0"
+Warning (275080): Converted elements in bus name "q4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q4[5..0]" to "q45..0"
+    Warning (275081): Converted element name(s) from "q4[5..0]" to "q45..0"
+Warning (275080): Converted elements in bus name "q40" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q40[5..0]" to "q405..0"
+    Warning (275081): Converted element name(s) from "q40[5..0]" to "q405..0"
+Warning (275080): Converted elements in bus name "q41" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q41[5..0]" to "q415..0"
+    Warning (275081): Converted element name(s) from "q41[5..0]" to "q415..0"
+Warning (275080): Converted elements in bus name "q42" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q42[5..0]" to "q425..0"
+    Warning (275081): Converted element name(s) from "q42[5..0]" to "q425..0"
+Warning (275080): Converted elements in bus name "q43" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q43[5..0]" to "q435..0"
+    Warning (275081): Converted element name(s) from "q43[5..0]" to "q435..0"
+Warning (275080): Converted elements in bus name "q44" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q44[5..0]" to "q445..0"
+    Warning (275081): Converted element name(s) from "q44[5..0]" to "q445..0"
+Warning (275080): Converted elements in bus name "q45" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q45[5..0]" to "q455..0"
+    Warning (275081): Converted element name(s) from "q45[5..0]" to "q455..0"
+Warning (275080): Converted elements in bus name "q5" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q5[5..0]" to "q55..0"
+    Warning (275081): Converted element name(s) from "q5[5..0]" to "q55..0"
+Warning (275080): Converted elements in bus name "q50" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q50[5..0]" to "q505..0"
+    Warning (275081): Converted element name(s) from "q50[5..0]" to "q505..0"
+Warning (275080): Converted elements in bus name "q51" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "q51[5..0]" to "q515..0"
+    Warning (275081): Converted element name(s) from "q51[5..0]" to "q515..0"
 Warning (275008): Primitive "NAND2" of instance "inst105" not used
 Warning (275008): Primitive "AND2" of instance "inst110" not used
 Warning (275008): Primitive "NOT" of instance "inst111" not used
@@ -3298,15 +3446,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
 Info (12128): Elaborating entity "mux_p4e" for hierarchy "lpm_mux2:inst116|lpm_mux:LPM_MUX_component|mux_p4e:auto_generated"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 531 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 671 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 448 logic cells
+    Info (21061): Implemented 588 logic cells
     Info (21064): Implemented 52 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 224 warnings
-    Info: Peak virtual memory: 588 megabytes
-    Info: Processing ended: Thu Oct 26 23:22:08 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 369 warnings
+    Info: Peak virtual memory: 570 megabytes
+    Info: Processing ended: Fri Oct 27 09:11:40 2017
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 

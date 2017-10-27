@@ -9594,11 +9594,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 640 1248)
-	(pt 608 1248)
-	(bus)
-)
-(connector
 	(pt 272 1440)
 	(pt 432 1440)
 	(bus)
@@ -9606,11 +9601,6 @@ applicable agreement for further details.
 (connector
 	(pt 272 1640)
 	(pt 432 1640)
-	(bus)
-)
-(connector
-	(pt 608 1456)
-	(pt 656 1456)
 	(bus)
 )
 (connector
@@ -9811,11 +9801,6 @@ applicable agreement for further details.
 (connector
 	(pt 200 2640)
 	(pt 720 2640)
-	(bus)
-)
-(connector
-	(pt 704 2552)
-	(pt 672 2552)
 	(bus)
 )
 (connector
@@ -10039,11 +10024,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 3864)
-	(pt 728 3864)
-	(bus)
-)
-(connector
 	(pt 392 4056)
 	(pt 552 4056)
 	(bus)
@@ -10051,11 +10031,6 @@ applicable agreement for further details.
 (connector
 	(pt 392 4256)
 	(pt 552 4256)
-	(bus)
-)
-(connector
-	(pt 728 4072)
-	(pt 776 4072)
 	(bus)
 )
 (connector
@@ -10256,11 +10231,6 @@ applicable agreement for further details.
 (connector
 	(pt 320 5256)
 	(pt 840 5256)
-	(bus)
-)
-(connector
-	(pt 824 5168)
-	(pt 792 5168)
 	(bus)
 )
 (connector
@@ -10474,11 +10444,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 904 6536)
-	(pt 872 6536)
-	(bus)
-)
-(connector
 	(pt 536 6728)
 	(pt 696 6728)
 	(bus)
@@ -10486,11 +10451,6 @@ applicable agreement for further details.
 (connector
 	(pt 536 6928)
 	(pt 696 6928)
-	(bus)
-)
-(connector
-	(pt 872 6744)
-	(pt 920 6744)
 	(bus)
 )
 (connector
@@ -10696,11 +10656,6 @@ applicable agreement for further details.
 (connector
 	(pt 464 7928)
 	(pt 984 7928)
-	(bus)
-)
-(connector
-	(pt 968 7840)
-	(pt 936 7840)
 	(bus)
 )
 (connector
@@ -10924,11 +10879,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1024 9152)
-	(pt 992 9152)
-	(bus)
-)
-(connector
 	(pt 656 9344)
 	(pt 816 9344)
 	(bus)
@@ -10936,11 +10886,6 @@ applicable agreement for further details.
 (connector
 	(pt 656 9544)
 	(pt 816 9544)
-	(bus)
-)
-(connector
-	(pt 992 9360)
-	(pt 1040 9360)
 	(bus)
 )
 (connector
@@ -11164,11 +11109,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 576 352)
-	(pt 608 352)
-	(bus)
-)
-(connector
 	(pt 624 600)
 	(pt 624 712)
 	(bus)
@@ -11176,11 +11116,6 @@ applicable agreement for further details.
 (connector
 	(pt 560 600)
 	(pt 592 600)
-	(bus)
-)
-(connector
-	(pt 592 600)
-	(pt 624 600)
 	(bus)
 )
 (connector
@@ -11194,23 +11129,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 608 816)
-	(pt 640 816)
-	(bus)
-)
-(connector
-	(pt 656 1032)
-	(pt 656 1144)
-	(bus)
-)
-(connector
 	(pt 592 1032)
 	(pt 624 1032)
-	(bus)
-)
-(connector
-	(pt 624 1032)
-	(pt 656 1032)
 	(bus)
 )
 (connector
@@ -11249,33 +11169,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 672 1656)
-	(pt 672 1800)
-	(bus)
-)
-(connector
 	(pt 608 1656)
 	(pt 640 1656)
 	(bus)
 )
 (connector
-	(pt 640 1656)
-	(pt 672 1656)
-	(bus)
-)
-(connector
-	(pt 688 1904)
-	(pt 688 2016)
-	(bus)
-)
-(connector
 	(pt 624 1904)
 	(pt 656 1904)
-	(bus)
-)
-(connector
-	(pt 656 1904)
-	(pt 688 1904)
 	(bus)
 )
 (connector
@@ -11294,11 +11194,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 672 2120)
-	(pt 704 2120)
-	(bus)
-)
-(connector
 	(pt 720 2336)
 	(pt 720 2448)
 	(bus)
@@ -11309,11 +11204,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 688 2336)
-	(pt 720 2336)
-	(bus)
-)
-(connector
 	(pt 720 2768)
 	(pt 720 2640)
 	(bus)
@@ -11321,11 +11211,6 @@ applicable agreement for further details.
 (connector
 	(pt 664 2768)
 	(pt 712 2768)
-	(bus)
-)
-(connector
-	(pt 712 2768)
-	(pt 720 2768)
 	(bus)
 )
 (connector
@@ -11364,11 +11249,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 696 2968)
-	(pt 728 2968)
-	(bus)
-)
-(connector
 	(pt 744 3216)
 	(pt 744 3328)
 	(bus)
@@ -11376,11 +11256,6 @@ applicable agreement for further details.
 (connector
 	(pt 680 3216)
 	(pt 712 3216)
-	(bus)
-)
-(connector
-	(pt 712 3216)
-	(pt 744 3216)
 	(bus)
 )
 (connector
@@ -11394,11 +11269,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 728 3432)
-	(pt 760 3432)
-	(bus)
-)
-(connector
 	(pt 776 3648)
 	(pt 776 3760)
 	(bus)
@@ -11406,11 +11276,6 @@ applicable agreement for further details.
 (connector
 	(pt 712 3648)
 	(pt 744 3648)
-	(bus)
-)
-(connector
-	(pt 744 3648)
-	(pt 776 3648)
 	(bus)
 )
 (connector
@@ -11464,11 +11329,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 4272)
-	(pt 792 4272)
-	(bus)
-)
-(connector
 	(pt 808 4520)
 	(pt 808 4632)
 	(bus)
@@ -11476,11 +11336,6 @@ applicable agreement for further details.
 (connector
 	(pt 744 4520)
 	(pt 776 4520)
-	(bus)
-)
-(connector
-	(pt 776 4520)
-	(pt 808 4520)
 	(bus)
 )
 (connector
@@ -11494,11 +11349,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 792 4736)
-	(pt 824 4736)
-	(bus)
-)
-(connector
 	(pt 840 4952)
 	(pt 840 5064)
 	(bus)
@@ -11509,11 +11359,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 808 4952)
-	(pt 840 4952)
-	(bus)
-)
-(connector
 	(pt 840 5440)
 	(pt 840 5256)
 	(bus)
@@ -11521,11 +11366,6 @@ applicable agreement for further details.
 (connector
 	(pt 808 5440)
 	(pt 840 5440)
-	(bus)
-)
-(connector
-	(pt 840 5440)
-	(pt 856 5440)
 	(bus)
 )
 (connector
@@ -11564,11 +11404,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 840 5640)
-	(pt 872 5640)
-	(bus)
-)
-(connector
 	(pt 888 5888)
 	(pt 888 6000)
 	(bus)
@@ -11576,11 +11411,6 @@ applicable agreement for further details.
 (connector
 	(pt 824 5888)
 	(pt 856 5888)
-	(bus)
-)
-(connector
-	(pt 856 5888)
-	(pt 888 5888)
 	(bus)
 )
 (connector
@@ -11604,11 +11434,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 872 6104)
-	(pt 904 6104)
-	(bus)
-)
-(connector
 	(pt 920 6320)
 	(pt 920 6432)
 	(bus)
@@ -11616,11 +11441,6 @@ applicable agreement for further details.
 (connector
 	(pt 856 6320)
 	(pt 888 6320)
-	(bus)
-)
-(connector
-	(pt 888 6320)
-	(pt 920 6320)
 	(bus)
 )
 (connector
@@ -11669,11 +11489,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 904 6944)
-	(pt 936 6944)
-	(bus)
-)
-(connector
 	(pt 952 7192)
 	(pt 952 7304)
 	(bus)
@@ -11681,11 +11496,6 @@ applicable agreement for further details.
 (connector
 	(pt 888 7192)
 	(pt 920 7192)
-	(bus)
-)
-(connector
-	(pt 920 7192)
-	(pt 952 7192)
 	(bus)
 )
 (connector
@@ -11699,11 +11509,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 936 7408)
-	(pt 968 7408)
-	(bus)
-)
-(connector
 	(pt 984 7624)
 	(pt 984 7736)
 	(bus)
@@ -11714,11 +11519,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 952 7624)
-	(pt 984 7624)
-	(bus)
-)
-(connector
 	(pt 984 8056)
 	(pt 984 7928)
 	(bus)
@@ -11726,11 +11526,6 @@ applicable agreement for further details.
 (connector
 	(pt 928 8056)
 	(pt 976 8056)
-	(bus)
-)
-(connector
-	(pt 976 8056)
-	(pt 984 8056)
 	(bus)
 )
 (connector
@@ -11769,11 +11564,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 960 8256)
-	(pt 992 8256)
-	(bus)
-)
-(connector
 	(pt 1008 8504)
 	(pt 1008 8616)
 	(bus)
@@ -11781,11 +11571,6 @@ applicable agreement for further details.
 (connector
 	(pt 944 8504)
 	(pt 976 8504)
-	(bus)
-)
-(connector
-	(pt 976 8504)
-	(pt 1008 8504)
 	(bus)
 )
 (connector
@@ -11799,11 +11584,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 992 8720)
-	(pt 1024 8720)
-	(bus)
-)
-(connector
 	(pt 1040 8936)
 	(pt 1040 9048)
 	(bus)
@@ -11811,11 +11591,6 @@ applicable agreement for further details.
 (connector
 	(pt 976 8936)
 	(pt 1008 8936)
-	(bus)
-)
-(connector
-	(pt 1008 8936)
-	(pt 1040 8936)
 	(bus)
 )
 (connector
@@ -11864,11 +11639,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1024 9560)
-	(pt 1056 9560)
-	(bus)
-)
-(connector
 	(pt 1072 9808)
 	(pt 1072 9920)
 	(bus)
@@ -11876,11 +11646,6 @@ applicable agreement for further details.
 (connector
 	(pt 1008 9808)
 	(pt 1040 9808)
-	(bus)
-)
-(connector
-	(pt 1040 9808)
-	(pt 1072 9808)
 	(bus)
 )
 (connector
@@ -11894,11 +11659,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1056 10024)
-	(pt 1088 10024)
-	(bus)
-)
-(connector
 	(pt 1104 10240)
 	(pt 1104 10352)
 	(bus)
@@ -11906,11 +11666,6 @@ applicable agreement for further details.
 (connector
 	(pt 1040 10240)
 	(pt 1072 10240)
-	(bus)
-)
-(connector
-	(pt 1072 10240)
-	(pt 1104 10240)
 	(bus)
 )
 (connector
@@ -12059,11 +11814,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1152 11352)
-	(pt 1120 11352)
-	(bus)
-)
-(connector
 	(pt 1168 11440)
 	(pt 1168 11456)
 	(bus)
@@ -12071,11 +11821,6 @@ applicable agreement for further details.
 (connector
 	(pt 1152 11224)
 	(pt 1152 11352)
-	(bus)
-)
-(connector
-	(pt 1136 10704)
-	(pt 1136 10816)
 	(bus)
 )
 (connector
@@ -12099,28 +11844,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1120 10920)
-	(pt 1152 10920)
-	(bus)
-)
-(connector
 	(pt 1104 11136)
 	(pt 1136 11136)
 	(bus)
 )
 (connector
-	(pt 1136 11136)
-	(pt 1168 11136)
-	(bus)
-)
-(connector
 	(pt 1072 10704)
 	(pt 1104 10704)
-	(bus)
-)
-(connector
-	(pt 1104 10704)
-	(pt 1136 10704)
 	(bus)
 )
 (connector
@@ -12131,11 +11861,6 @@ applicable agreement for further details.
 (connector
 	(pt 1056 10456)
 	(pt 1088 10456)
-	(bus)
-)
-(connector
-	(pt 1088 10456)
-	(pt 1120 10456)
 	(bus)
 )
 (connector
@@ -14253,6 +13978,948 @@ applicable agreement for further details.
 	(pt 1008 1280)
 	(bus)
 )
+(connector
+	(pt 576 352)
+	(pt 608 352)
+	(bus)
+)
+(connector
+	(pt 592 600)
+	(pt 624 600)
+	(bus)
+)
+(connector
+	(pt 608 816)
+	(pt 640 816)
+	(bus)
+)
+(connector
+	(text "q1[5..0]" (rect 618 336 655 348)(font "Arial" ))
+	(pt 608 352)
+	(pt 656 352)
+	(bus)
+)
+(connector
+	(text "q2[5..0]" (rect 634 584 671 596)(font "Arial" ))
+	(pt 624 600)
+	(pt 664 600)
+	(bus)
+)
+(connector
+	(text "q3[5..0]" (rect 650 800 687 812)(font "Arial" ))
+	(pt 640 816)
+	(pt 680 816)
+	(bus)
+)
+(connector
+	(pt 624 1032)
+	(pt 656 1032)
+	(bus)
+)
+(connector
+	(pt 608 1248)
+	(pt 640 1248)
+	(bus)
+)
+(connector
+	(pt 608 1456)
+	(pt 656 1456)
+	(bus)
+)
+(connector
+	(pt 672 1656)
+	(pt 672 1800)
+	(bus)
+)
+(connector
+	(pt 728 1656)
+	(pt 728 1664)
+	(bus)
+)
+(connector
+	(pt 640 1656)
+	(pt 672 1656)
+	(bus)
+)
+(connector
+	(pt 704 1040)
+	(pt 704 1016)
+	(bus)
+)
+(connector
+	(pt 656 1016)
+	(pt 656 1032)
+	(bus)
+)
+(connector
+	(pt 656 1032)
+	(pt 656 1144)
+	(bus)
+)
+(connector
+	(text "q4[5..0]" (rect 666 1000 703 1012)(font "Arial" ))
+	(pt 656 1016)
+	(pt 704 1016)
+	(bus)
+)
+(connector
+	(text "q5[5..0]" (rect 650 1232 687 1244)(font "Arial" ))
+	(pt 640 1248)
+	(pt 688 1248)
+	(bus)
+)
+(connector
+	(text "q6[5..0]" (rect 666 1440 703 1452)(font "Arial" ))
+	(pt 656 1456)
+	(pt 712 1456)
+	(bus)
+)
+(connector
+	(text "q7[5..0]" (rect 682 1640 719 1652)(font "Arial" ))
+	(pt 672 1656)
+	(pt 728 1656)
+	(bus)
+)
+(connector
+	(pt 656 1904)
+	(pt 688 1904)
+	(bus)
+)
+(connector
+	(pt 672 2120)
+	(pt 704 2120)
+	(bus)
+)
+(connector
+	(pt 688 2336)
+	(pt 720 2336)
+	(bus)
+)
+(connector
+	(pt 672 2552)
+	(pt 704 2552)
+	(bus)
+)
+(connector
+	(pt 688 1888)
+	(pt 688 1904)
+	(bus)
+)
+(connector
+	(pt 688 1904)
+	(pt 688 2016)
+	(bus)
+)
+(connector
+	(text "q8[5..0]" (rect 698 1872 735 1884)(font "Arial" ))
+	(pt 688 1888)
+	(pt 728 1888)
+	(bus)
+)
+(connector
+	(text "q9[5..0]" (rect 714 2104 751 2116)(font "Arial" ))
+	(pt 704 2120)
+	(pt 744 2120)
+	(bus)
+)
+(connector
+	(text "q10[5..0]" (rect 730 2320 773 2332)(font "Arial" ))
+	(pt 720 2336)
+	(pt 776 2336)
+	(bus)
+)
+(connector
+	(text "q11[5..0]" (rect 714 2536 757 2548)(font "Arial" ))
+	(pt 704 2552)
+	(pt 752 2552)
+	(bus)
+)
+(connector
+	(pt 712 2768)
+	(pt 720 2768)
+	(bus)
+)
+(connector
+	(pt 696 2968)
+	(pt 728 2968)
+	(bus)
+)
+(connector
+	(pt 712 3216)
+	(pt 744 3216)
+	(bus)
+)
+(connector
+	(text "q12[5..0]" (rect 720 2752 763 2764)(font "Arial" ))
+	(pt 720 2768)
+	(pt 752 2768)
+	(bus)
+)
+(connector
+	(text "q13[5..0]" (rect 728 2952 771 2964)(font "Arial" ))
+	(pt 728 2968)
+	(pt 760 2968)
+	(bus)
+)
+(connector
+	(text "q14[5..0]" (rect 754 3200 797 3212)(font "Arial" ))
+	(pt 744 3216)
+	(pt 784 3216)
+	(bus)
+)
+(connector
+	(pt 728 3432)
+	(pt 760 3432)
+	(bus)
+)
+(connector
+	(pt 744 3648)
+	(pt 776 3648)
+	(bus)
+)
+(connector
+	(pt 728 3864)
+	(pt 760 3864)
+	(bus)
+)
+(connector
+	(text "q15[5..0]" (rect 760 3416 803 3428)(font "Arial" ))
+	(pt 760 3432)
+	(pt 792 3432)
+	(bus)
+)
+(connector
+	(text "q16[5..0]" (rect 786 3632 829 3644)(font "Arial" ))
+	(pt 776 3648)
+	(pt 816 3648)
+	(bus)
+)
+(connector
+	(text "q17[5..0]" (rect 770 3848 813 3860)(font "Arial" ))
+	(pt 760 3864)
+	(pt 808 3864)
+	(bus)
+)
+(connector
+	(pt 728 4072)
+	(pt 776 4072)
+	(bus)
+)
+(connector
+	(pt 760 4272)
+	(pt 792 4272)
+	(bus)
+)
+(connector
+	(pt 776 4520)
+	(pt 808 4520)
+	(bus)
+)
+(connector
+	(text "q18[5..0]" (rect 786 4056 829 4068)(font "Arial" ))
+	(pt 776 4072)
+	(pt 824 4072)
+	(bus)
+)
+(connector
+	(text "q19[5..0]" (rect 802 4256 845 4268)(font "Arial" ))
+	(pt 792 4272)
+	(pt 832 4272)
+	(bus)
+)
+(connector
+	(text "q20[5..0]" (rect 818 4504 861 4516)(font "Arial" ))
+	(pt 808 4520)
+	(pt 848 4520)
+	(bus)
+)
+(connector
+	(pt 792 4736)
+	(pt 824 4736)
+	(bus)
+)
+(connector
+	(pt 808 4952)
+	(pt 840 4952)
+	(bus)
+)
+(connector
+	(pt 792 5168)
+	(pt 824 5168)
+	(bus)
+)
+(connector
+	(text "q21[5..0]" (rect 834 4720 877 4732)(font "Arial" ))
+	(pt 824 4736)
+	(pt 872 4736)
+	(bus)
+)
+(connector
+	(text "q22[5..0]" (rect 850 4936 893 4948)(font "Arial" ))
+	(pt 840 4952)
+	(pt 880 4952)
+	(bus)
+)
+(connector
+	(text "q23[5..0]" (rect 834 5152 877 5164)(font "Arial" ))
+	(pt 824 5168)
+	(pt 872 5168)
+	(bus)
+)
+(connector
+	(pt 840 5440)
+	(pt 856 5440)
+	(bus)
+)
+(connector
+	(pt 840 5640)
+	(pt 872 5640)
+	(bus)
+)
+(connector
+	(pt 944 5888)
+	(pt 944 5896)
+	(bus)
+)
+(connector
+	(pt 856 5888)
+	(pt 888 5888)
+	(bus)
+)
+(connector
+	(text "q24[5..0]" (rect 866 5424 909 5436)(font "Arial" ))
+	(pt 856 5440)
+	(pt 912 5440)
+	(bus)
+)
+(connector
+	(text "q25[5..0]" (rect 882 5624 925 5636)(font "Arial" ))
+	(pt 872 5640)
+	(pt 920 5640)
+	(bus)
+)
+(connector
+	(text "q26[5..0]" (rect 898 5872 941 5884)(font "Arial" ))
+	(pt 888 5888)
+	(pt 944 5888)
+	(bus)
+)
+(connector
+	(pt 872 6104)
+	(pt 904 6104)
+	(bus)
+)
+(connector
+	(pt 888 6320)
+	(pt 920 6320)
+	(bus)
+)
+(connector
+	(pt 872 6536)
+	(pt 904 6536)
+	(bus)
+)
+(connector
+	(text "q27[5..0]" (rect 914 6088 957 6100)(font "Arial" ))
+	(pt 904 6104)
+	(pt 960 6104)
+	(bus)
+)
+(connector
+	(text "q28[5..0]" (rect 930 6304 973 6316)(font "Arial" ))
+	(pt 920 6320)
+	(pt 984 6320)
+	(bus)
+)
+(connector
+	(text "q29[5..0]" (rect 914 6520 957 6532)(font "Arial" ))
+	(pt 904 6536)
+	(pt 976 6536)
+	(bus)
+)
+(connector
+	(pt 1000 6744)
+	(pt 1000 6752)
+	(bus)
+)
+(connector
+	(pt 872 6744)
+	(pt 920 6744)
+	(bus)
+)
+(connector
+	(pt 904 6944)
+	(pt 936 6944)
+	(bus)
+)
+(connector
+	(pt 920 7192)
+	(pt 952 7192)
+	(bus)
+)
+(connector
+	(text "q30[5..0]" (rect 930 6728 973 6740)(font "Arial" ))
+	(pt 920 6744)
+	(pt 1000 6744)
+	(bus)
+)
+(connector
+	(text "q31[5..0]" (rect 946 6928 989 6940)(font "Arial" ))
+	(pt 936 6944)
+	(pt 1000 6944)
+	(bus)
+)
+(connector
+	(text "q32[5..0]" (rect 962 7176 1005 7188)(font "Arial" ))
+	(pt 952 7192)
+	(pt 1024 7192)
+	(bus)
+)
+(connector
+	(pt 936 7408)
+	(pt 968 7408)
+	(bus)
+)
+(connector
+	(pt 952 7624)
+	(pt 984 7624)
+	(bus)
+)
+(connector
+	(pt 936 7840)
+	(pt 968 7840)
+	(bus)
+)
+(connector
+	(text "q33[5..0]" (rect 978 7392 1021 7404)(font "Arial" ))
+	(pt 968 7408)
+	(pt 1032 7408)
+	(bus)
+)
+(connector
+	(text "q34[5..0]" (rect 994 7608 1037 7620)(font "Arial" ))
+	(pt 984 7624)
+	(pt 1040 7624)
+	(bus)
+)
+(connector
+	(text "q35[5..0]" (rect 978 7824 1021 7836)(font "Arial" ))
+	(pt 968 7840)
+	(pt 1032 7840)
+	(bus)
+)
+(connector
+	(pt 976 8056)
+	(pt 984 8056)
+	(bus)
+)
+(connector
+	(pt 1056 8256)
+	(pt 1056 8264)
+	(bus)
+)
+(connector
+	(pt 960 8256)
+	(pt 992 8256)
+	(bus)
+)
+(connector
+	(pt 976 8504)
+	(pt 1008 8504)
+	(bus)
+)
+(connector
+	(text "q36[5..0]" (rect 994 8040 1037 8052)(font "Arial" ))
+	(pt 984 8056)
+	(pt 1032 8056)
+	(bus)
+)
+(connector
+	(text "q37[5..0]" (rect 1002 8240 1045 8252)(font "Arial" ))
+	(pt 992 8256)
+	(pt 1056 8256)
+	(bus)
+)
+(connector
+	(text "q38[5..0]" (rect 1018 8488 1061 8500)(font "Arial" ))
+	(pt 1008 8504)
+	(pt 1048 8504)
+	(bus)
+)
+(connector
+	(pt 992 8720)
+	(pt 1024 8720)
+	(bus)
+)
+(connector
+	(pt 1104 8936)
+	(pt 1104 8944)
+	(bus)
+)
+(connector
+	(pt 1008 8936)
+	(pt 1040 8936)
+	(bus)
+)
+(connector
+	(pt 992 9152)
+	(pt 1024 9152)
+	(bus)
+)
+(connector
+	(text "q39[5..0]" (rect 1034 8704 1077 8716)(font "Arial" ))
+	(pt 1024 8720)
+	(pt 1112 8720)
+	(bus)
+)
+(connector
+	(text "q40[5..0]" (rect 1050 8920 1093 8932)(font "Arial" ))
+	(pt 1040 8936)
+	(pt 1104 8936)
+	(bus)
+)
+(connector
+	(text "q41[5..0]" (rect 1034 9136 1077 9148)(font "Arial" ))
+	(pt 1024 9152)
+	(pt 1080 9152)
+	(bus)
+)
+(connector
+	(pt 1096 9360)
+	(pt 1096 9352)
+	(bus)
+)
+(connector
+	(pt 992 9360)
+	(pt 1040 9360)
+	(bus)
+)
+(connector
+	(pt 1024 9560)
+	(pt 1056 9560)
+	(bus)
+)
+(connector
+	(pt 1128 9808)
+	(pt 1128 9800)
+	(bus)
+)
+(connector
+	(pt 1040 9808)
+	(pt 1072 9808)
+	(bus)
+)
+(connector
+	(text "q42[5..0]" (rect 1050 9344 1093 9356)(font "Arial" ))
+	(pt 1040 9360)
+	(pt 1096 9360)
+	(bus)
+)
+(connector
+	(text "q43[5..0]" (rect 1066 9544 1109 9556)(font "Arial" ))
+	(pt 1056 9560)
+	(pt 1104 9560)
+	(bus)
+)
+(connector
+	(text "q44[5..0]" (rect 1082 9792 1125 9804)(font "Arial" ))
+	(pt 1072 9808)
+	(pt 1128 9808)
+	(bus)
+)
+(connector
+	(pt 1056 10024)
+	(pt 1088 10024)
+	(bus)
+)
+(connector
+	(pt 1072 10240)
+	(pt 1104 10240)
+	(bus)
+)
+(connector
+	(pt 1088 10456)
+	(pt 1120 10456)
+	(bus)
+)
+(connector
+	(text "q45[5..0]" (rect 1098 10008 1141 10020)(font "Arial" ))
+	(pt 1088 10024)
+	(pt 1144 10024)
+	(bus)
+)
+(connector
+	(text "q46[5..0]" (rect 1114 10224 1157 10236)(font "Arial" ))
+	(pt 1104 10240)
+	(pt 1144 10240)
+	(bus)
+)
+(connector
+	(text "q47[5..0]" (rect 1130 10440 1173 10452)(font "Arial" ))
+	(pt 1120 10456)
+	(pt 1176 10456)
+	(bus)
+)
+(connector
+	(pt 1104 10704)
+	(pt 1136 10704)
+	(bus)
+)
+(connector
+	(pt 1120 10920)
+	(pt 1152 10920)
+	(bus)
+)
+(connector
+	(pt 1136 11136)
+	(pt 1168 11136)
+	(bus)
+)
+(connector
+	(pt 1136 10664)
+	(pt 1136 10704)
+	(bus)
+)
+(connector
+	(pt 1136 10704)
+	(pt 1136 10816)
+	(bus)
+)
+(connector
+	(text "q48[5..0]" (rect 1146 10648 1189 10660)(font "Arial" ))
+	(pt 1136 10664)
+	(pt 1192 10664)
+	(bus)
+)
+(connector
+	(text "q49[5..0]" (rect 1162 10904 1205 10916)(font "Arial" ))
+	(pt 1152 10920)
+	(pt 1200 10920)
+	(bus)
+)
+(connector
+	(text "q50[5..0]" (rect 1178 11120 1221 11132)(font "Arial" ))
+	(pt 1168 11136)
+	(pt 1216 11136)
+	(bus)
+)
+(connector
+	(pt 1120 11352)
+	(pt 1152 11352)
+	(bus)
+)
+(connector
+	(text "q51[5..0]" (rect 1162 11336 1205 11348)(font "Arial" ))
+	(pt 1152 11352)
+	(pt 1192 11352)
+	(bus)
+)
+(connector
+	(text "q1[5..0]" (rect 1026 1248 1063 1260)(font "Arial" ))
+	(pt 1016 1264)
+	(pt 1064 1264)
+	(bus)
+)
+(connector
+	(text "q2[5..0]" (rect 1034 1232 1071 1244)(font "Arial" ))
+	(pt 1064 1248)
+	(pt 1024 1248)
+	(bus)
+)
+(connector
+	(text "q3[5..0]" (rect 1026 1216 1063 1228)(font "Arial" ))
+	(pt 1064 1232)
+	(pt 1016 1232)
+	(bus)
+)
+(connector
+	(text "q4[5..0]" (rect 1018 1200 1055 1212)(font "Arial" ))
+	(pt 1064 1216)
+	(pt 1008 1216)
+	(bus)
+)
+(connector
+	(text "q5[5..0]" (rect 1026 1184 1063 1196)(font "Arial" ))
+	(pt 1064 1200)
+	(pt 1016 1200)
+	(bus)
+)
+(connector
+	(text "q6[5..0]" (rect 1026 1168 1063 1180)(font "Arial" ))
+	(pt 1064 1184)
+	(pt 1016 1184)
+	(bus)
+)
+(connector
+	(text "q7[5..0]" (rect 1018 1152 1055 1164)(font "Arial" ))
+	(pt 1064 1168)
+	(pt 1008 1168)
+	(bus)
+)
+(connector
+	(text "q8[5..0]" (rect 1010 1136 1047 1148)(font "Arial" ))
+	(pt 1064 1152)
+	(pt 1000 1152)
+	(bus)
+)
+(connector
+	(text "q9[5..0]" (rect 1034 1120 1071 1132)(font "Arial" ))
+	(pt 1064 1136)
+	(pt 1024 1136)
+	(bus)
+)
+(connector
+	(text "q10[5..0]" (rect 1034 1104 1077 1116)(font "Arial" ))
+	(pt 1064 1120)
+	(pt 1024 1120)
+	(bus)
+)
+(connector
+	(text "q11[5..0]" (rect 1018 1088 1061 1100)(font "Arial" ))
+	(pt 1064 1104)
+	(pt 1008 1104)
+	(bus)
+)
+(connector
+	(text "q12[5..0]" (rect 1018 1072 1061 1084)(font "Arial" ))
+	(pt 1064 1088)
+	(pt 1008 1088)
+	(bus)
+)
+(connector
+	(text "q13[5..0]" (rect 1034 1056 1077 1068)(font "Arial" ))
+	(pt 1064 1072)
+	(pt 1024 1072)
+	(bus)
+)
+(connector
+	(text "q14[5..0]" (rect 1034 1040 1077 1052)(font "Arial" ))
+	(pt 1064 1056)
+	(pt 1024 1056)
+	(bus)
+)
+(connector
+	(text "q15[5..0]" (rect 1026 1024 1069 1036)(font "Arial" ))
+	(pt 1064 1040)
+	(pt 1016 1040)
+	(bus)
+)
+(connector
+	(text "q16[5..0]" (rect 1026 1008 1069 1020)(font "Arial" ))
+	(pt 1064 1024)
+	(pt 1016 1024)
+	(bus)
+)
+(connector
+	(text "q17[5..0]" (rect 1026 992 1069 1004)(font "Arial" ))
+	(pt 1064 1008)
+	(pt 1016 1008)
+	(bus)
+)
+(connector
+	(text "q18[5..0]" (rect 1026 976 1069 988)(font "Arial" ))
+	(pt 1064 992)
+	(pt 1016 992)
+	(bus)
+)
+(connector
+	(text "q19[5..0]" (rect 1026 960 1069 972)(font "Arial" ))
+	(pt 1064 976)
+	(pt 1016 976)
+	(bus)
+)
+(connector
+	(text "q20[5..0]" (rect 1026 944 1069 956)(font "Arial" ))
+	(pt 1064 960)
+	(pt 1016 960)
+	(bus)
+)
+(connector
+	(text "q21[5..0]" (rect 1026 928 1069 940)(font "Arial" ))
+	(pt 1064 944)
+	(pt 1016 944)
+	(bus)
+)
+(connector
+	(text "q22[5..0]" (rect 1034 912 1077 924)(font "Arial" ))
+	(pt 1064 928)
+	(pt 1024 928)
+	(bus)
+)
+(connector
+	(text "q23[5..0]" (rect 1032 896 1075 908)(font "Arial" ))
+	(pt 1064 912)
+	(pt 1032 912)
+	(bus)
+)
+(connector
+	(text "q24[5..0]" (rect 1034 880 1077 892)(font "Arial" ))
+	(pt 1064 896)
+	(pt 1024 896)
+	(bus)
+)
+(connector
+	(text "q25[5..0]" (rect 1034 864 1077 876)(font "Arial" ))
+	(pt 1064 880)
+	(pt 1024 880)
+	(bus)
+)
+(connector
+	(text "q26[5..0]" (rect 1026 848 1069 860)(font "Arial" ))
+	(pt 1064 864)
+	(pt 1016 864)
+	(bus)
+)
+(connector
+	(text "q27[5..0]" (rect 1032 832 1075 844)(font "Arial" ))
+	(pt 1064 848)
+	(pt 1032 848)
+	(bus)
+)
+(connector
+	(text "q28[5..0]" (rect 1034 816 1077 828)(font "Arial" ))
+	(pt 1064 832)
+	(pt 1024 832)
+	(bus)
+)
+(connector
+	(text "q29[5..0]" (rect 1032 800 1075 812)(font "Arial" ))
+	(pt 1064 816)
+	(pt 1032 816)
+	(bus)
+)
+(connector
+	(text "q30[5..0]" (rect 1026 784 1069 796)(font "Arial" ))
+	(pt 1064 800)
+	(pt 1016 800)
+	(bus)
+)
+(connector
+	(text "q31[5..0]" (rect 1034 768 1077 780)(font "Arial" ))
+	(pt 1064 784)
+	(pt 1024 784)
+	(bus)
+)
+(connector
+	(text "q32[5..0]" (rect 1032 752 1075 764)(font "Arial" ))
+	(pt 1064 768)
+	(pt 1032 768)
+	(bus)
+)
+(connector
+	(text "q33[5..0]" (rect 1032 736 1075 748)(font "Arial" ))
+	(pt 1064 752)
+	(pt 1032 752)
+	(bus)
+)
+(connector
+	(text "q34[5..0]" (rect 1032 720 1075 732)(font "Arial" ))
+	(pt 1064 736)
+	(pt 1032 736)
+	(bus)
+)
+(connector
+	(text "q35[5..0]" (rect 1032 704 1075 716)(font "Arial" ))
+	(pt 1064 720)
+	(pt 1032 720)
+	(bus)
+)
+(connector
+	(text "q36[5..0]" (rect 1040 688 1083 700)(font "Arial" ))
+	(pt 1064 704)
+	(pt 1040 704)
+	(bus)
+)
+(connector
+	(text "q37[5..0]" (rect 1034 672 1077 684)(font "Arial" ))
+	(pt 1064 688)
+	(pt 1024 688)
+	(bus)
+)
+(connector
+	(text "q38[5..0]" (rect 1018 656 1061 668)(font "Arial" ))
+	(pt 1064 672)
+	(pt 1008 672)
+	(bus)
+)
+(connector
+	(text "q39[5..0]" (rect 1010 640 1053 652)(font "Arial" ))
+	(pt 1064 656)
+	(pt 1000 656)
+	(bus)
+)
+(connector
+	(text "q40[5..0]" (rect 1010 624 1053 636)(font "Arial" ))
+	(pt 1064 640)
+	(pt 1000 640)
+	(bus)
+)
+(connector
+	(text "q41[5..0]" (rect 1010 608 1053 620)(font "Arial" ))
+	(pt 1064 624)
+	(pt 1000 624)
+	(bus)
+)
+(connector
+	(text "q42[5..0]" (rect 1032 592 1075 604)(font "Arial" ))
+	(pt 1064 608)
+	(pt 1032 608)
+	(bus)
+)
+(connector
+	(text "q43[5..0]" (rect 1034 576 1077 588)(font "Arial" ))
+	(pt 1064 592)
+	(pt 1024 592)
+	(bus)
+)
+(connector
+	(text "q44[5..0]" (rect 1034 560 1077 572)(font "Arial" ))
+	(pt 1064 576)
+	(pt 1024 576)
+	(bus)
+)
+(connector
+	(text "q45[5..0]" (rect 1034 544 1077 556)(font "Arial" ))
+	(pt 1064 560)
+	(pt 1024 560)
+	(bus)
+)
+(connector
+	(text "q46[5..0]" (rect 1026 528 1069 540)(font "Arial" ))
+	(pt 1064 544)
+	(pt 1016 544)
+	(bus)
+)
+(connector
+	(text "q47[5..0]" (rect 1034 512 1077 524)(font "Arial" ))
+	(pt 1064 528)
+	(pt 1024 528)
+	(bus)
+)
+(connector
+	(text "q48[5..0]" (rect 1032 496 1075 508)(font "Arial" ))
+	(pt 1064 512)
+	(pt 1032 512)
+	(bus)
+)
+(connector
+	(text "q49[5..0]" (rect 1026 480 1069 492)(font "Arial" ))
+	(pt 1064 496)
+	(pt 1016 496)
+	(bus)
+)
+(connector
+	(text "q50[5..0]" (rect 1032 464 1075 476)(font "Arial" ))
+	(pt 1064 480)
+	(pt 1032 480)
+	(bus)
+)
+(connector
+	(text "q51[5..0]" (rect 1018 448 1061 460)(font "Arial" ))
+	(pt 1064 464)
+	(pt 1008 464)
+	(bus)
+)
 (junction (pt 576 352))
 (junction (pt 592 600))
 (junction (pt 608 816))
@@ -14307,6 +14974,46 @@ applicable agreement for further details.
 (junction (pt -1264 144))
 (junction (pt -1104 144))
 (junction (pt -864 144))
+(junction (pt 608 352))
+(junction (pt 624 600))
+(junction (pt 640 816))
+(junction (pt 656 1032))
+(junction (pt 672 1656))
+(junction (pt 688 1904))
+(junction (pt 704 2120))
+(junction (pt 720 2336))
+(junction (pt 720 2768))
+(junction (pt 728 2968))
+(junction (pt 744 3216))
+(junction (pt 760 3432))
+(junction (pt 776 3648))
+(junction (pt 792 4272))
+(junction (pt 808 4520))
+(junction (pt 824 4736))
+(junction (pt 840 4952))
+(junction (pt 856 5440))
+(junction (pt 872 5640))
+(junction (pt 888 5888))
+(junction (pt 904 6104))
+(junction (pt 920 6320))
+(junction (pt 936 6944))
+(junction (pt 952 7192))
+(junction (pt 968 7408))
+(junction (pt 984 7624))
+(junction (pt 984 8056))
+(junction (pt 992 8256))
+(junction (pt 1008 8504))
+(junction (pt 1024 8720))
+(junction (pt 1040 8936))
+(junction (pt 1056 9560))
+(junction (pt 1072 9808))
+(junction (pt 1088 10024))
+(junction (pt 1104 10240))
+(junction (pt 1120 10456))
+(junction (pt 1136 10704))
+(junction (pt 1152 10920))
+(junction (pt 1168 11136))
+(junction (pt 1152 11352))
 (text "Let NOP=00, INIT=01, POP=10, PUSH=11 " (rect -1112 56 -658 78)(font "Arial" (font_size 14)))
 (text "Register sel bit" (rect 888 128 971 142)(font "Arial" (font_size 8)))
 (text "POP EN signal " (rect 1216 168 1298 182)(font "Arial" (font_size 8)))
