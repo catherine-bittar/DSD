@@ -397,7 +397,14 @@ TRANSITION_LIST("ADDR[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 640.0;
+			LEVEL 1 FOR 640.0;
+		}
+		LEVEL 0 FOR 640.0;
+		LEVEL 1 FOR 80.0;
 	}
 }
 
@@ -406,7 +413,13 @@ TRANSITION_LIST("ADDR[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 320.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -415,7 +428,13 @@ TRANSITION_LIST("ADDR[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -424,7 +443,13 @@ TRANSITION_LIST("ADDR[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 12;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -433,7 +458,12 @@ TRANSITION_LIST("ADDR[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+		}
 	}
 }
 
@@ -442,7 +472,12 @@ TRANSITION_LIST("ADDR[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 50;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
 	}
 }
 
@@ -564,8 +599,7 @@ TRANSITION_LIST("ENABLE")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 999.0;
-		LEVEL 0 FOR 1001.0;
+		LEVEL 1 FOR 2000.0;
 	}
 }
 
@@ -584,12 +618,7 @@ TRANSITION_LIST("MODE[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 1000.0;
-			LEVEL 1 FOR 1000.0;
-		}
+		LEVEL 0 FOR 2000.0;
 	}
 }
 
@@ -598,12 +627,7 @@ TRANSITION_LIST("MODE[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 0 FOR 500.0;
-			LEVEL 1 FOR 500.0;
-		}
+		LEVEL 1 FOR 2000.0;
 	}
 }
 
@@ -672,7 +696,12 @@ TRANSITION_LIST("RST")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+			LEVEL 1 FOR 1000.0;
+		}
 	}
 }
 

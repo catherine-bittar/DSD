@@ -49,18 +49,18 @@
 # ERROR! Vector Mismatch for output port NUM[5] :: @time = 1000000.000 ps
 #      Expected value = 000000
 #      Real value = 110100
-# ERROR! Vector Mismatch for output port VALUE[1] :: @time = 1030000.000 ps
+# ERROR! Vector Mismatch for output port VALUE[0] :: @time = 1000000.000 ps
 #      Expected value = 000000
-#      Real value = 110010
-# ERROR! Vector Mismatch for output port VALUE[4] :: @time = 1030000.000 ps
+#      Real value = 110001
+# ERROR! Vector Mismatch for output port VALUE[4] :: @time = 1000000.000 ps
 #      Expected value = 000000
-#      Real value = 110010
-# ERROR! Vector Mismatch for output port VALUE[5] :: @time = 1030000.000 ps
+#      Real value = 110001
+# ERROR! Vector Mismatch for output port VALUE[5] :: @time = 1000000.000 ps
 #      Expected value = 000000
-#      Real value = 110010
-# ERROR! Vector Mismatch for output port VALUE[0] :: @time = 1050000.000 ps
-#      Expected value = 000000
-#      Real value = 110011
+#      Real value = 110001
+# ERROR! Vector Mismatch for output port EMPTY :: @time = 1010000.000 ps
+#      Expected value = 0
+#      Real value = 1
 #           8 mismatched vectors : Simulation failed !
 # ** Note: $finish    : g21_lab3.vt(431)
 #    Time: 2 us  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst/tb_out

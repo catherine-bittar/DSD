@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/27/2017 13:12:57"
+// Generated on "10/27/2017 14:47:08"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g21_stack52
 // 
@@ -467,31 +467,56 @@ g21_stack52 i1 (
 initial
 begin
 	ADDR[5] = 1'b0;
+	ADDR[5] = #640000 1'b1;
+	ADDR[5] = #640000 1'b0;
+	ADDR[5] = #640000 1'b1;
 end 
 // ADDR[ 4 ]
 initial
 begin
+	repeat(3)
+	begin
+		ADDR[4] = 1'b0;
+		ADDR[4] = #320000 1'b1;
+		# 320000;
+	end
 	ADDR[4] = 1'b0;
 end 
 // ADDR[ 3 ]
 initial
 begin
+	repeat(6)
+	begin
+		ADDR[3] = 1'b0;
+		ADDR[3] = #160000 1'b1;
+		# 160000;
+	end
 	ADDR[3] = 1'b0;
 end 
 // ADDR[ 2 ]
 initial
 begin
+	repeat(12)
+	begin
+		ADDR[2] = 1'b0;
+		ADDR[2] = #80000 1'b1;
+		# 80000;
+	end
 	ADDR[2] = 1'b0;
 end 
 // ADDR[ 1 ]
-initial
+always
 begin
 	ADDR[1] = 1'b0;
+	ADDR[1] = #40000 1'b1;
+	#40000;
 end 
 // ADDR[ 0 ]
-initial
+always
 begin
 	ADDR[0] = 1'b0;
+	ADDR[0] = #20000 1'b1;
+	#20000;
 end 
 // DATA[ 5 ]
 initial
@@ -553,27 +578,24 @@ end
 initial
 begin
 	ENABLE = 1'b1;
-	ENABLE = #999000 1'b0;
 end 
 
 // RST
-initial
+always
 begin
 	RST = 1'b0;
-end 
-// MODE[ 1 ]
-always
-begin
-	MODE[1] = 1'b0;
-	MODE[1] = #1000000 1'b1;
+	RST = #1000000 1'b1;
 	#1000000;
 end 
-// MODE[ 0 ]
-always
+// MODE[ 1 ]
+initial
 begin
-	MODE[0] = 1'b0;
-	MODE[0] = #500000 1'b1;
-	#500000;
+	MODE[1] = 1'b0;
+end 
+// MODE[ 0 ]
+initial
+begin
+	MODE[0] = 1'b1;
 end 
 
 // CLK
