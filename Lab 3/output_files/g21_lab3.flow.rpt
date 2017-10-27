@@ -1,5 +1,5 @@
 Flow report for g21_lab3
-Fri Oct 27 14:47:09 2017
+Fri Oct 27 15:11:28 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 27 14:47:09 2017           ;
+; Flow Status                        ; Successful - Fri Oct 27 15:11:28 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
-; Top-level Entity Name              ; g21_stack52                                     ;
+; Top-level Entity Name              ; g21_SPG                                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 594 / 18,752 ( 3 % )                            ;
-;     Total combinational functions  ; 588 / 18,752 ( 3 % )                            ;
-;     Dedicated logic registers      ; 318 / 18,752 ( 2 % )                            ;
-; Total registers                    ; 318                                             ;
-; Total pins                         ; 31 / 315 ( 10 % )                               ;
+; Total logic elements               ; 31 / 18,752 ( < 1 % )                           ;
+;     Total combinational functions  ; 29 / 18,752 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 22 / 18,752 ( < 1 % )                           ;
+; Total registers                    ; 22                                              ;
+; Total pins                         ; 3 / 315 ( < 1 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 3,328 / 239,616 ( 1 % )                         ;
+; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2017 14:08:04 ;
+; Start date & time ; 10/27/2017 15:11:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g21_lab3            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 150461128418019.150912768406364 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 150461128418019.150913147510340 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
@@ -91,6 +91,10 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_COUNTER                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COMPARE                     ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --             ;
@@ -125,11 +129,15 @@ applicable agreement for further details.
 ; MISC_FILE                           ; StackCounter_lpm_counter.cmp    ; --            ; --          ; --             ;
 ; MISC_FILE                           ; a52_lpm_constant.bsf            ; --            ; --          ; --             ;
 ; MISC_FILE                           ; a52_lpm_constant.cmp            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; g21_stack52 ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; g21_stack52 ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; g21_stack52 ; Top            ;
+; MISC_FILE                           ; SPG_lpm_counter.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; SPG_lpm_counter.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; SPG_lpm_compare.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; SPG_lpm_compare.cmp             ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; g21_SPG     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; g21_SPG     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; g21_SPG     ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; g21_stack52                     ; g21_lab3      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; g21_SPG                         ; g21_lab3      ; --          ; --             ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -138,42 +146,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 566 MB              ; 00:00:07                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 740 MB              ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 449 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 411 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 434 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 430 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 430 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 430 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 430 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:43     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 538 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 734 MB              ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 435 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 428 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 401 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -187,36 +165,6 @@ applicable agreement for further details.
 ; Assembler                 ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -228,36 +176,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off g21_lab3 -c g21
 quartus_asm --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 quartus_sta g21_lab3 -c g21_lab3
 quartus_eda --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
 
 
 

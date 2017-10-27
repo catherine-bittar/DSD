@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g21_stack52
+set_global_assignment -name TOP_LEVEL_ENTITY "g21_test-bed"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:10:43  OCTOBER 19, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -51,9 +51,6 @@ set_global_assignment -name BSF_FILE g21_pop_enable.bsf
 set_global_assignment -name TEXT_FILE g21_pop_enable.mif.txt
 set_global_assignment -name VHDL_FILE g21_pop_enable.vhd
 set_global_assignment -name MIF_FILE g21_lab2.mif
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE g21_lab2_rom1.qip
 set_global_assignment -name VHDL_FILE g21_lab2_rom1.vhd
 set_global_assignment -name QIP_FILE lpm_mux0.qip
@@ -74,7 +71,13 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.vwf"
 set_global_assignment -name BDF_FILE g21_SPG.bdf
 set_global_assignment -name QIP_FILE SPG_lpm_counter.qip
+set_global_assignment -name QIP_FILE SPG_lpm_compare.qip
+set_global_assignment -name BDF_FILE "g21_test-bed.bdf"
+set_global_assignment -name VHDL_FILE g21_7_segment_decoder.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
