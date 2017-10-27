@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Fri Oct 27 09:11:40 2017
+Fri Oct 27 10:19:27 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -133,10 +133,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 125. Parameter Settings for User Entity Instance: BUSMUX:inst101
 126. Parameter Settings for User Entity Instance: LPM_FF:inst102
 127. Parameter Settings for User Entity Instance: BUSMUX:inst103
-128. Parameter Settings for User Entity Instance: lpm_mux2:inst116|lpm_mux:LPM_MUX_component
-129. altsyncram Parameter Settings by Entity Instance
-130. Elapsed Time Per Partition
-131. Analysis & Synthesis Messages
+128. altsyncram Parameter Settings by Entity Instance
+129. Elapsed Time Per Partition
+130. Analysis & Synthesis Messages
 
 
 
@@ -162,7 +161,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 27 09:11:39 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 27 10:19:27 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_stack52                                     ;
@@ -270,62 +269,60 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; g21_stack52.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_stack52.bdf                 ;         ;
-; g21_pop_enable.vhd               ; yes             ; User VHDL File                     ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_pop_enable.vhd              ;         ;
-; g21_lab2.mif                     ; yes             ; User Memory Initialization File    ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_lab2.mif                    ;         ;
-; g21_lab2_rom1.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_lab2_rom1.vhd               ;         ;
-; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/lpm_mux0.vhd                    ;         ;
-; lpm_mux2.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/lpm_mux2.vhd                    ;         ;
-; NOP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/NOP_lpm_constant.vhd            ;         ;
-; INIT_lpm_constant.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/INIT_lpm_constant.vhd           ;         ;
-; POP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/POP_lpm_constant.vhd            ;         ;
-; PUSH_lpm_constant.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/PUSH_lpm_constant.vhd           ;         ;
-; MODE_Select_lpm_mux.vhd          ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/MODE_Select_lpm_mux.vhd         ;         ;
-; StackCounter_lpm_counter.vhd     ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/StackCounter_lpm_counter.vhd    ;         ;
-; g21_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_comp7.bdf                   ;         ;
-; a52_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/a52_lpm_constant.vhd            ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
-; db/cntr_p5j.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/cntr_p5j.tdf                 ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf              ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
-; db/mux_5oc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/mux_5oc.tdf                  ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
-; db/mux_j4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/mux_j4e.tdf                  ;         ;
-; db/mux_v4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/mux_v4e.tdf                  ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc              ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc              ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/altsyncram_q371.tdf          ;         ;
-; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/mux_qmc.tdf                  ;         ;
-; db/mux_p4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/db/mux_p4e.tdf                  ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
+; g21_stack52.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_stack52.bdf              ;         ;
+; g21_pop_enable.vhd               ; yes             ; User VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd           ;         ;
+; g21_lab2.mif                     ; yes             ; User Memory Initialization File    ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2.mif                 ;         ;
+; g21_lab2_rom1.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd            ;         ;
+; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd                 ;         ;
+; NOP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd         ;         ;
+; INIT_lpm_constant.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd        ;         ;
+; POP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd         ;         ;
+; PUSH_lpm_constant.vhd            ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd        ;         ;
+; MODE_Select_lpm_mux.vhd          ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd      ;         ;
+; StackCounter_lpm_counter.vhd     ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd ;         ;
+; g21_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_comp7.bdf                ;         ;
+; a52_lpm_constant.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd         ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf                        ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc                       ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                         ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                        ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc                           ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc                        ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc                        ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                             ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc                ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                         ;         ;
+; db/cntr_p5j.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/cntr_p5j.tdf              ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                             ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                            ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                             ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                           ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                           ;         ;
+; db/mux_5oc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_5oc.tdf               ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                       ;         ;
+; db/mux_j4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_j4e.tdf               ;         ;
+; db/mux_v4e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_v4e.tdf               ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                             ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                         ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                          ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                             ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                             ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                           ;         ;
+; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/altsyncram_q371.tdf       ;         ;
+; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_qmc.tdf               ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -604,22 +601,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                         ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                      ; IP Include File                                                        ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------+
-; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1 ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_lab2_rom1.vhd            ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|NOP_lpm_constant:inst106                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/NOP_lpm_constant.vhd         ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|INIT_lpm_constant:inst107               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/INIT_lpm_constant.vhd        ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|POP_lpm_constant:inst108                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/POP_lpm_constant.vhd         ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|PUSH_lpm_constant:inst109               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/PUSH_lpm_constant.vhd        ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|lpm_mux0:inst114                        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/lpm_mux0.vhd                 ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|lpm_mux2:inst116                        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/lpm_mux2.vhd                 ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|MODE_Select_lpm_mux:inst118             ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/MODE_Select_lpm_mux.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_stack52|StackCounter_lpm_counter:inst124        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/StackCounter_lpm_counter.vhd ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|a52_lpm_constant:inst127                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/a52_lpm_constant.vhd         ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                           ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                      ; IP Include File                                                                          ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1 ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd            ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|NOP_lpm_constant:inst106                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|INIT_lpm_constant:inst107               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd        ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|POP_lpm_constant:inst108                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|PUSH_lpm_constant:inst109               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd        ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|lpm_mux0:inst114                        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd                 ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_stack52|MODE_Select_lpm_mux:inst118             ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_stack52|StackCounter_lpm_counter:inst124        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_stack52|a52_lpm_constant:inst127                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd         ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------+------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -2375,25 +2371,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_mux2:inst116|lpm_mux:LPM_MUX_component ;
-+------------------------+------------+---------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                              ;
-+------------------------+------------+---------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
-; LPM_WIDTH              ; 52         ; Signed Integer                                    ;
-; LPM_SIZE               ; 4          ; Signed Integer                                    ;
-; LPM_WIDTHS             ; 2          ; Signed Integer                                    ;
-; LPM_PIPELINE           ; 0          ; Signed Integer                                    ;
-; CBXI_PARAMETER         ; mux_p4e    ; Untyped                                           ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                           ;
-+------------------------+------------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                    ;
 +-------------------------------------------+-------------------------------------------------------------------------+
@@ -2419,7 +2396,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -2429,7 +2406,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 27 09:11:32 2017
+    Info: Processing started: Fri Oct 27 10:19:12 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2534,110 +2511,6 @@ Warning (275080): Converted elements in bus name "EMPTY" using legacy naming rul
 Warning (275080): Converted elements in bus name "ENABLE" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
     Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
-    Warning (275081): Converted element name(s) from "ENABLE[0]" to "ENABLE0"
 Warning (275080): Converted elements in bus name "FULL" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "FULL[0]" to "FULL0"
     Warning (275081): Converted element name(s) from "FULL[0]" to "FULL0"
@@ -2734,9 +2607,6 @@ Warning (275080): Converted elements in bus name "q50" using legacy naming rules
 Warning (275080): Converted elements in bus name "q51" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "q51[5..0]" to "q515..0"
     Warning (275081): Converted element name(s) from "q51[5..0]" to "q515..0"
-Warning (275008): Primitive "NAND2" of instance "inst105" not used
-Warning (275008): Primitive "AND2" of instance "inst110" not used
-Warning (275008): Primitive "NOT" of instance "inst111" not used
 Info (12128): Elaborating entity "g21_comp7" for hierarchy "g21_comp7:inst125"
 Info (12128): Elaborating entity "StackCounter_lpm_counter" for hierarchy "StackCounter_lpm_counter:inst124"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component"
@@ -3431,19 +3301,6 @@ Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst103"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst103"
 Info (12133): Instantiated megafunction "BUSMUX:inst103" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "lpm_mux2" for hierarchy "lpm_mux2:inst116"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux2:inst116|lpm_mux:LPM_MUX_component"
-Info (12130): Elaborated megafunction instantiation "lpm_mux2:inst116|lpm_mux:LPM_MUX_component"
-Info (12133): Instantiated megafunction "lpm_mux2:inst116|lpm_mux:LPM_MUX_component" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "52"
-    Info (12134): Parameter "LPM_SIZE" = "4"
-    Info (12134): Parameter "LPM_WIDTHS" = "2"
-    Info (12134): Parameter "LPM_PIPELINE" = "0"
-    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
-    Info (12134): Parameter "LPM_HINT" = "UNUSED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_p4e.tdf
-    Info (12023): Found entity 1: mux_p4e
-Info (12128): Elaborating entity "mux_p4e" for hierarchy "lpm_mux2:inst116|lpm_mux:LPM_MUX_component|mux_p4e:auto_generated"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 671 device resources after synthesis - the final resource count might be different
@@ -3451,10 +3308,10 @@ Info (21057): Implemented 671 device resources after synthesis - the final resou
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 588 logic cells
     Info (21064): Implemented 52 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 369 warnings
-    Info: Peak virtual memory: 570 megabytes
-    Info: Processing ended: Fri Oct 27 09:11:40 2017
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 262 warnings
+    Info: Peak virtual memory: 571 megabytes
+    Info: Processing ended: Fri Oct 27 10:19:27 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:12
 
 
