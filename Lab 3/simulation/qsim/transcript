@@ -2,24 +2,21 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_stack52
+# -- Compiling module g21_SPG
 # 
 # Top level modules:
-# 	g21_stack52
+# 	g21_SPG
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_stack52_vlg_sample_tst
-# -- Compiling module g21_stack52_vlg_check_tst
-# -- Compiling module g21_stack52_vlg_vec_tst
+# -- Compiling module g21_SPG_vlg_sample_tst
+# -- Compiling module g21_SPG_vlg_check_tst
+# -- Compiling module g21_SPG_vlg_vec_tst
 # 
 # Top level modules:
-# 	g21_stack52_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_stack52_vlg_vec_tst 
-# Loading work.g21_stack52_vlg_vec_tst
-# Loading work.g21_stack52
+# 	g21_SPG_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_SPG_vlg_vec_tst 
+# Loading work.g21_SPG_vlg_vec_tst
+# Loading work.g21_SPG
 # Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
@@ -28,39 +25,15 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading work.g21_stack52_vlg_sample_tst
-# Loading work.g21_stack52_vlg_check_tst
+# Loading work.g21_SPG_vlg_sample_tst
+# Loading work.g21_SPG_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from g21_lab3_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Loading timing data from g21_lab3_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst File: g21_lab3.vt
-# ERROR! Vector Mismatch for output port FULL :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port NUM[2] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port NUM[4] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port NUM[5] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port VALUE[0] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port VALUE[4] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port VALUE[5] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port EMPTY :: @time = 1010000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#           8 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab3.vt(431)
-#    Time: 2 us  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst/tb_out
+#    Time: 0 ps  Iteration: 0  Instance: /g21_SPG_vlg_vec_tst File: g21_lab3.vt
+# Simulation passed !
+# ** Note: $finish    : g21_lab3.vt(150)
+#    Time: 1 us  Iteration: 0  Instance: /g21_SPG_vlg_vec_tst/tb_out

@@ -3,79 +3,255 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 3\simulation\qsim
-vg21_stack52
-Z1 !s100 6=M@9@JigSm3F?e7GPiOZ3
-Z2 I6Ba1b5DdM;[;o[[9zJ<>m3
-Z3 VI3@b@iQ8DS5e5dJ`i@1`A1
-Z4 dC:\Users\bitta\Documents\GitHub\DSD\Lab 3\simulation\qsim
-Z5 w1509130029
-Z6 8g21_lab3.vo
-Z7 Fg21_lab3.vo
+v\g21_test-bed 
+Z1 Iecz`KRSPPc:e=IUbi_J4c1
+Z2 VE^FeBzMC>c8:cP3@lNOP;0
+Z3 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 3\simulation\qsim
+Z4 w1509216909
+Z5 8g21_lab3.vo
+Z6 Fg21_lab3.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|g21_lab3.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|g21_lab3.vo|
+Z9 o-work work -O0
+Z10 n@134g21_test-bed@040
+Z11 !s100 :97]XCJ2Z_UAdR]P=<9@G0
+Z12 !s108 1509216910.033000
+Z13 !s107 g21_lab3.vo|
 !i10b 1
 !s85 0
-Z11 !s108 1509130030.606000
-Z12 !s107 g21_lab3.vo|
+!s101 -O0
+vg21_SPG
+Z14 ID`i@gL7o[D_jZbzQ8Q;=_2
+Z15 V@S<dYJXJe1ZHU]>g4@W_O3
+R3
+Z16 w1509220038
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z17 ng21_@s@p@g
+!i10b 1
+Z18 !s100 Hm56^cR=^g^jaTzUL7:og0
+!s85 0
+Z19 !s108 1509220038.875000
+R13
+!s101 -O0
+vg21_SPG_vlg_check_tst
+!i10b 1
+!s100 <bjT7FNzfgJa<OFVQCk1J0
+IQI=_da8caHZSmeUbg:H@X1
+VAamV^V4nWfQ6L1d`fIJzE3
+R3
+Z20 w1509220037
+Z21 8g21_lab3.vt
+Z22 Fg21_lab3.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z23 !s108 1509220038.943000
+Z24 !s107 g21_lab3.vt|
+Z25 !s90 -work|work|g21_lab3.vt|
+!s101 -O0
+R9
+ng21_@s@p@g_vlg_check_tst
+vg21_SPG_vlg_sample_tst
+!i10b 1
+!s100 NLD7i1Xc;NLh_2P:m8<Hm1
+I5ocGk9:b<]z9mZNYEB_YI3
+VB5]5m58;d@FT1OG@Uz<Ph0
+R3
+R20
+R21
+R22
+L0 29
+R7
+r1
+!s85 0
+31
+R23
+R24
+R25
+!s101 -O0
+R9
+ng21_@s@p@g_vlg_sample_tst
+vg21_SPG_vlg_vec_tst
+!i10b 1
+!s100 5PI:Oo0iJl:d6_Kk]i:nA3
+I7k=KJjRKLiZTH@?K3<BIf2
+VmG[hBBkQ8KgMzNe`Xom@D3
+R3
+R20
+R21
+R22
+L0 154
+R7
+r1
+!s85 0
+31
+R23
+R24
+R25
+!s101 -O0
+R9
+ng21_@s@p@g_vlg_vec_tst
+vg21_stack52
+Z26 !s100 6=M@9@JigSm3F?e7GPiOZ3
+Z27 I6Ba1b5DdM;[;o[[9zJ<>m3
+Z28 VI3@b@iQ8DS5e5dJ`i@1`A1
+Z29 dC:\Users\bitta\Documents\GitHub\DSD\Lab 3\simulation\qsim
+Z30 w1509130029
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z31 !s108 1509130030.606000
+R13
+!i10b 1
+!s85 0
 !s101 -O0
 vg21_stack52_vlg_check_tst
-!i10b 1
-Z13 !s100 LV^gH4F1gL:Z<?K15c<VU0
-Z14 I2c=cNRL;UhZP:a_ej>L0F3
-Z15 VN950Q?WTgibUjHc:3Y^OE3
-R4
-Z16 w1509130028
-Z17 8g21_lab3.vt
-Z18 Fg21_lab3.vt
+Z32 !s100 LV^gH4F1gL:Z<?K15c<VU0
+Z33 I2c=cNRL;UhZP:a_ej>L0F3
+Z34 VN950Q?WTgibUjHc:3Y^OE3
+R29
+Z35 w1509130028
+R21
+R22
 L0 67
-R8
+R7
 r1
-!s85 0
 31
-Z19 !s108 1509130030.786000
-Z20 !s107 g21_lab3.vt|
-Z21 !s90 -work|work|g21_lab3.vt|
+Z36 !s108 1509130030.786000
+Z37 !s107 g21_lab3.vt|
+R25
+R9
+!i10b 1
+!s85 0
 !s101 -O0
-R10
 vg21_stack52_vlg_sample_tst
-!i10b 1
-Z22 !s100 NAz?7?iGXU`V<Eeel@P5]1
-Z23 IdBHU7efJY2]el?C?N>jPV3
-Z24 VNanSC9<FeN]caeZK:B]]:1
-R4
-R16
-R17
-R18
+Z38 !s100 NAz?7?iGXU`V<Eeel@P5]1
+Z39 IdBHU7efJY2]el?C?N>jPV3
+Z40 VNanSC9<FeN]caeZK:B]]:1
+R29
+R35
+R21
+R22
 L0 29
-R8
+R7
 r1
-!s85 0
 31
-R19
-R20
-R21
-!s101 -O0
-R10
-vg21_stack52_vlg_vec_tst
+R36
+R37
+R25
+R9
 !i10b 1
-!s100 NIYd=QEfjeLlJ6VTN4ZdB0
-IN294U1WCWac;Z6JJiWX_h3
-Z25 VBkZk52DaDn]=4TF5J^jZi1
-R4
-R16
-R17
-R18
-Z26 L0 435
-R8
-r1
 !s85 0
-31
-R19
-R20
-R21
 !s101 -O0
-R10
+vg21_stack52_vlg_vec_tst
+Z41 IN294U1WCWac;Z6JJiWX_h3
+Z42 VBkZk52DaDn]=4TF5J^jZi1
+R29
+R35
+R21
+R22
+Z43 L0 435
+R7
+r1
+31
+R36
+R37
+R25
+R9
+Z44 !s100 NIYd=QEfjeLlJ6VTN4ZdB0
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed
+Z45 I[KL035<J5b9Pz6<dacRIa0
+Z46 V`Wo5FdAl80nDnD4F=<KgD3
+R3
+Z47 w1509219881
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z48 !s100 Vn8^RzUQEDVn4RalI=KzK3
+Z49 !s108 1509219882.346000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed_vlg_check_tst
+Z50 I44EJ6BCL3zKk]RoGS_]4R2
+Z51 VD38jP@49QjUfI5cUfh^AC3
+R3
+Z52 w1509219880
+R21
+R22
+L0 63
+R7
+r1
+31
+Z53 !s108 1509219882.424000
+R37
+R25
+R9
+Z54 !s100 kPB>FFlRA_[bh_;<VX0DX3
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed_vlg_sample_tst
+Z55 !s100 cDI`b5:D<F=bFI^2hM>2Y0
+Z56 IACA]Fc6N:a7GT^Hj4dmN?2
+Z57 VJ_]c@WHjeYbJ0RI6eXoA@0
+R3
+R52
+R21
+R22
+L0 29
+R7
+r1
+31
+R53
+R37
+R25
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed_vlg_vec_tst
+Z58 Ik:BNA9K_e0;X>A_:[k8N<1
+Z59 Vk]@[WkPP2DCP^[fR1X`F=3
+R3
+R52
+R21
+R22
+Z60 L0 556
+R7
+r1
+31
+R53
+R37
+R25
+R9
+Z61 !s100 2W4Gg[H:HVj296?j8l:e53
+!i10b 1
+!s85 0
+!s101 -O0

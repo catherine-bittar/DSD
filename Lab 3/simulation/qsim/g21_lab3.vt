@@ -18,34 +18,26 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/27/2017 14:47:08"
+// Generated on "10/28/2017 15:47:17"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    g21_stack52
+// Verilog Self-Checking Test Bench (with test vectors) for design :    g21_SPG
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module g21_stack52_vlg_sample_tst(
-	ADDR,
+module g21_SPG_vlg_sample_tst(
 	CLK,
-	DATA,
-	ENABLE,
-	MODE,
-	RST,
+	SwitchEnable,
 	sampler_tx
 );
-input [5:0] ADDR;
 input  CLK;
-input [5:0] DATA;
-input  ENABLE;
-input [1:0] MODE;
-input  RST;
+input  SwitchEnable;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(ADDR or CLK or DATA or ENABLE or MODE or RST)
+always @(CLK or SwitchEnable)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -64,45 +56,27 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module g21_stack52_vlg_check_tst (
-	EMPTY,
-	FULL,
-	NUM,
-	VALUE,
+module g21_SPG_vlg_check_tst (
+	SPG_ENABLE,
 	sampler_rx
 );
-input  EMPTY;
-input  FULL;
-input [5:0] NUM;
-input [5:0] VALUE;
+input  SPG_ENABLE;
 input sampler_rx;
 
-reg  EMPTY_expected;
-reg  FULL_expected;
-reg [5:0] NUM_expected;
-reg [5:0] VALUE_expected;
+reg  SPG_ENABLE_expected;
 
-reg  EMPTY_prev;
-reg  FULL_prev;
-reg [5:0] NUM_prev;
-reg [5:0] VALUE_prev;
+reg  SPG_ENABLE_prev;
 
-reg  EMPTY_expected_prev;
-reg  FULL_expected_prev;
-reg [5:0] NUM_expected_prev;
-reg [5:0] VALUE_expected_prev;
+reg  SPG_ENABLE_expected_prev;
 
-reg  last_EMPTY_exp;
-reg  last_FULL_exp;
-reg [5:0] last_NUM_exp;
-reg [5:0] last_VALUE_exp;
+reg  last_SPG_ENABLE_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:4] on_first_change ;
+reg [1:1] on_first_change ;
 
 
 initial
@@ -110,118 +84,32 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 4'b1;
+on_first_change = 1'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	EMPTY_prev = EMPTY;
-	FULL_prev = FULL;
-	NUM_prev = NUM;
-	VALUE_prev = VALUE;
+	SPG_ENABLE_prev = SPG_ENABLE;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	EMPTY_expected_prev = EMPTY_expected;
-	FULL_expected_prev = FULL_expected;
-	NUM_expected_prev = NUM_expected;
-	VALUE_expected_prev = VALUE_expected;
+	SPG_ENABLE_expected_prev = SPG_ENABLE_expected;
 end
 
 
 
-// expected EMPTY
+// expected SPG_ENABLE
 initial
 begin
-	EMPTY_expected = 1'bX;
-	EMPTY_expected = #999000 1'b0;
-end 
-
-// expected FULL
-initial
-begin
-	FULL_expected = 1'bX;
-	FULL_expected = #999000 1'b0;
-end 
-// expected NUM[ 5 ]
-initial
-begin
-	NUM_expected[5] = 1'bX;
-	NUM_expected[5] = #999000 1'b0;
-end 
-// expected NUM[ 4 ]
-initial
-begin
-	NUM_expected[4] = 1'bX;
-	NUM_expected[4] = #999000 1'b0;
-end 
-// expected NUM[ 3 ]
-initial
-begin
-	NUM_expected[3] = 1'bX;
-	NUM_expected[3] = #999000 1'b0;
-end 
-// expected NUM[ 2 ]
-initial
-begin
-	NUM_expected[2] = 1'bX;
-	NUM_expected[2] = #999000 1'b0;
-end 
-// expected NUM[ 1 ]
-initial
-begin
-	NUM_expected[1] = 1'bX;
-	NUM_expected[1] = #999000 1'b0;
-end 
-// expected NUM[ 0 ]
-initial
-begin
-	NUM_expected[0] = 1'bX;
-	NUM_expected[0] = #999000 1'b0;
-end 
-// expected VALUE[ 5 ]
-initial
-begin
-	VALUE_expected[5] = 1'bX;
-	VALUE_expected[5] = #999000 1'b0;
-end 
-// expected VALUE[ 4 ]
-initial
-begin
-	VALUE_expected[4] = 1'bX;
-	VALUE_expected[4] = #999000 1'b0;
-end 
-// expected VALUE[ 3 ]
-initial
-begin
-	VALUE_expected[3] = 1'bX;
-	VALUE_expected[3] = #999000 1'b0;
-end 
-// expected VALUE[ 2 ]
-initial
-begin
-	VALUE_expected[2] = 1'bX;
-	VALUE_expected[2] = #999000 1'b0;
-end 
-// expected VALUE[ 1 ]
-initial
-begin
-	VALUE_expected[1] = 1'bX;
-	VALUE_expected[1] = #999000 1'b0;
-end 
-// expected VALUE[ 0 ]
-initial
-begin
-	VALUE_expected[0] = 1'bX;
-	VALUE_expected[0] = #999000 1'b0;
+	SPG_ENABLE_expected = 1'bX;
 end 
 // generate trigger
-always @(EMPTY_expected or EMPTY or FULL_expected or FULL or NUM_expected or NUM or VALUE_expected or VALUE)
+always @(SPG_ENABLE_expected or SPG_ENABLE)
 begin
 	trigger <= ~trigger;
 end
@@ -231,190 +119,21 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected EMPTY = %b | expected FULL = %b | expected NUM = %b | expected VALUE = %b | ",EMPTY_expected_prev,FULL_expected_prev,NUM_expected_prev,VALUE_expected_prev);
-	$display("| real EMPTY = %b | real FULL = %b | real NUM = %b | real VALUE = %b | ",EMPTY_prev,FULL_prev,NUM_prev,VALUE_prev);
+	$display("| expected SPG_ENABLE = %b | ",SPG_ENABLE_expected_prev);
+	$display("| real SPG_ENABLE = %b | ",SPG_ENABLE_prev);
 `endif
 	if (
-		( EMPTY_expected_prev !== 1'bx ) && ( EMPTY_prev !== EMPTY_expected_prev )
-		&& ((EMPTY_expected_prev !== last_EMPTY_exp) ||
+		( SPG_ENABLE_expected_prev !== 1'bx ) && ( SPG_ENABLE_prev !== SPG_ENABLE_expected_prev )
+		&& ((SPG_ENABLE_expected_prev !== last_SPG_ENABLE_exp) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port EMPTY :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", EMPTY_expected_prev);
-		$display ("     Real value = %b", EMPTY_prev);
+		$display ("ERROR! Vector Mismatch for output port SPG_ENABLE :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SPG_ENABLE_expected_prev);
+		$display ("     Real value = %b", SPG_ENABLE_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_EMPTY_exp = EMPTY_expected_prev;
-	end
-	if (
-		( FULL_expected_prev !== 1'bx ) && ( FULL_prev !== FULL_expected_prev )
-		&& ((FULL_expected_prev !== last_FULL_exp) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port FULL :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", FULL_expected_prev);
-		$display ("     Real value = %b", FULL_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_FULL_exp = FULL_expected_prev;
-	end
-	if (
-		( NUM_expected_prev[0] !== 1'bx ) && ( NUM_prev[0] !== NUM_expected_prev[0] )
-		&& ((NUM_expected_prev[0] !== last_NUM_exp[0]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[0] = NUM_expected_prev[0];
-	end
-	if (
-		( NUM_expected_prev[1] !== 1'bx ) && ( NUM_prev[1] !== NUM_expected_prev[1] )
-		&& ((NUM_expected_prev[1] !== last_NUM_exp[1]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[1] = NUM_expected_prev[1];
-	end
-	if (
-		( NUM_expected_prev[2] !== 1'bx ) && ( NUM_prev[2] !== NUM_expected_prev[2] )
-		&& ((NUM_expected_prev[2] !== last_NUM_exp[2]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[2] = NUM_expected_prev[2];
-	end
-	if (
-		( NUM_expected_prev[3] !== 1'bx ) && ( NUM_prev[3] !== NUM_expected_prev[3] )
-		&& ((NUM_expected_prev[3] !== last_NUM_exp[3]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[3] = NUM_expected_prev[3];
-	end
-	if (
-		( NUM_expected_prev[4] !== 1'bx ) && ( NUM_prev[4] !== NUM_expected_prev[4] )
-		&& ((NUM_expected_prev[4] !== last_NUM_exp[4]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[4] = NUM_expected_prev[4];
-	end
-	if (
-		( NUM_expected_prev[5] !== 1'bx ) && ( NUM_prev[5] !== NUM_expected_prev[5] )
-		&& ((NUM_expected_prev[5] !== last_NUM_exp[5]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port NUM[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", NUM_expected_prev);
-		$display ("     Real value = %b", NUM_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_NUM_exp[5] = NUM_expected_prev[5];
-	end
-	if (
-		( VALUE_expected_prev[0] !== 1'bx ) && ( VALUE_prev[0] !== VALUE_expected_prev[0] )
-		&& ((VALUE_expected_prev[0] !== last_VALUE_exp[0]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[0] = VALUE_expected_prev[0];
-	end
-	if (
-		( VALUE_expected_prev[1] !== 1'bx ) && ( VALUE_prev[1] !== VALUE_expected_prev[1] )
-		&& ((VALUE_expected_prev[1] !== last_VALUE_exp[1]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[1] = VALUE_expected_prev[1];
-	end
-	if (
-		( VALUE_expected_prev[2] !== 1'bx ) && ( VALUE_prev[2] !== VALUE_expected_prev[2] )
-		&& ((VALUE_expected_prev[2] !== last_VALUE_exp[2]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[2] = VALUE_expected_prev[2];
-	end
-	if (
-		( VALUE_expected_prev[3] !== 1'bx ) && ( VALUE_prev[3] !== VALUE_expected_prev[3] )
-		&& ((VALUE_expected_prev[3] !== last_VALUE_exp[3]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[3] = VALUE_expected_prev[3];
-	end
-	if (
-		( VALUE_expected_prev[4] !== 1'bx ) && ( VALUE_prev[4] !== VALUE_expected_prev[4] )
-		&& ((VALUE_expected_prev[4] !== last_VALUE_exp[4]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[4] = VALUE_expected_prev[4];
-	end
-	if (
-		( VALUE_expected_prev[5] !== 1'bx ) && ( VALUE_prev[5] !== VALUE_expected_prev[5] )
-		&& ((VALUE_expected_prev[5] !== last_VALUE_exp[5]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port VALUE[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", VALUE_expected_prev);
-		$display ("     Real value = %b", VALUE_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_VALUE_exp[5] = VALUE_expected_prev[5];
+		last_SPG_ENABLE_exp = SPG_ENABLE_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -423,7 +142,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#2000000;
+#1000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -432,171 +151,23 @@ $finish;
 end 
 endmodule
 
-module g21_stack52_vlg_vec_tst();
+module g21_SPG_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [5:0] ADDR;
 reg CLK;
-reg [5:0] DATA;
-reg ENABLE;
-reg [1:0] MODE;
-reg RST;
+reg SwitchEnable;
 // wires                                               
-wire EMPTY;
-wire FULL;
-wire [5:0] NUM;
-wire [5:0] VALUE;
+wire SPG_ENABLE;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-g21_stack52 i1 (
+g21_SPG i1 (
 // port map - connection between master ports and signals/registers   
-	.ADDR(ADDR),
 	.CLK(CLK),
-	.DATA(DATA),
-	.EMPTY(EMPTY),
-	.ENABLE(ENABLE),
-	.FULL(FULL),
-	.MODE(MODE),
-	.NUM(NUM),
-	.RST(RST),
-	.VALUE(VALUE)
+	.SPG_ENABLE(SPG_ENABLE),
+	.SwitchEnable(SwitchEnable)
 );
-// ADDR[ 5 ]
-initial
-begin
-	ADDR[5] = 1'b0;
-	ADDR[5] = #640000 1'b1;
-	ADDR[5] = #640000 1'b0;
-	ADDR[5] = #640000 1'b1;
-end 
-// ADDR[ 4 ]
-initial
-begin
-	repeat(3)
-	begin
-		ADDR[4] = 1'b0;
-		ADDR[4] = #320000 1'b1;
-		# 320000;
-	end
-	ADDR[4] = 1'b0;
-end 
-// ADDR[ 3 ]
-initial
-begin
-	repeat(6)
-	begin
-		ADDR[3] = 1'b0;
-		ADDR[3] = #160000 1'b1;
-		# 160000;
-	end
-	ADDR[3] = 1'b0;
-end 
-// ADDR[ 2 ]
-initial
-begin
-	repeat(12)
-	begin
-		ADDR[2] = 1'b0;
-		ADDR[2] = #80000 1'b1;
-		# 80000;
-	end
-	ADDR[2] = 1'b0;
-end 
-// ADDR[ 1 ]
-always
-begin
-	ADDR[1] = 1'b0;
-	ADDR[1] = #40000 1'b1;
-	#40000;
-end 
-// ADDR[ 0 ]
-always
-begin
-	ADDR[0] = 1'b0;
-	ADDR[0] = #20000 1'b1;
-	#20000;
-end 
-// DATA[ 5 ]
-initial
-begin
-	DATA[5] = 1'b0;
-	DATA[5] = #640000 1'b1;
-	DATA[5] = #640000 1'b0;
-	DATA[5] = #640000 1'b1;
-end 
-// DATA[ 4 ]
-initial
-begin
-	repeat(3)
-	begin
-		DATA[4] = 1'b0;
-		DATA[4] = #320000 1'b1;
-		# 320000;
-	end
-	DATA[4] = 1'b0;
-end 
-// DATA[ 3 ]
-initial
-begin
-	repeat(6)
-	begin
-		DATA[3] = 1'b0;
-		DATA[3] = #160000 1'b1;
-		# 160000;
-	end
-	DATA[3] = 1'b0;
-end 
-// DATA[ 2 ]
-initial
-begin
-	repeat(12)
-	begin
-		DATA[2] = 1'b0;
-		DATA[2] = #80000 1'b1;
-		# 80000;
-	end
-	DATA[2] = 1'b0;
-end 
-// DATA[ 1 ]
-always
-begin
-	DATA[1] = 1'b0;
-	DATA[1] = #40000 1'b1;
-	#40000;
-end 
-// DATA[ 0 ]
-always
-begin
-	DATA[0] = 1'b0;
-	DATA[0] = #20000 1'b1;
-	#20000;
-end 
-
-// ENABLE
-initial
-begin
-	ENABLE = 1'b1;
-end 
-
-// RST
-always
-begin
-	RST = 1'b0;
-	RST = #1000000 1'b1;
-	#1000000;
-end 
-// MODE[ 1 ]
-initial
-begin
-	MODE[1] = 1'b0;
-end 
-// MODE[ 0 ]
-initial
-begin
-	MODE[0] = 1'b1;
-end 
 
 // CLK
 always
@@ -606,21 +177,26 @@ begin
 	#10000;
 end 
 
-g21_stack52_vlg_sample_tst tb_sample (
-	.ADDR(ADDR),
+// SwitchEnable
+initial
+begin
+	repeat(12)
+	begin
+		SwitchEnable = 1'b0;
+		SwitchEnable = #40000 1'b1;
+		# 40000;
+	end
+	SwitchEnable = 1'b0;
+end 
+
+g21_SPG_vlg_sample_tst tb_sample (
 	.CLK(CLK),
-	.DATA(DATA),
-	.ENABLE(ENABLE),
-	.MODE(MODE),
-	.RST(RST),
+	.SwitchEnable(SwitchEnable),
 	.sampler_tx(sampler)
 );
 
-g21_stack52_vlg_check_tst tb_out(
-	.EMPTY(EMPTY),
-	.FULL(FULL),
-	.NUM(NUM),
-	.VALUE(VALUE),
+g21_SPG_vlg_check_tst tb_out(
+	.SPG_ENABLE(SPG_ENABLE),
 	.sampler_rx(sampler)
 );
 endmodule

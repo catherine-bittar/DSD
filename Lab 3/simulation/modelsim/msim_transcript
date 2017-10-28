@@ -1,0 +1,114 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do g21_lab3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity g21_pop_enable
+# -- Compiling architecture g21_pop_enable_arch of g21_pop_enable
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity g21_lab2_rom1
+# -- Compiling architecture SYN of g21_lab2_rom1
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity NOP_lpm_constant
+# -- Compiling architecture SYN of nop_lpm_constant
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity INIT_lpm_constant
+# -- Compiling architecture SYN of init_lpm_constant
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity POP_lpm_constant
+# -- Compiling architecture SYN of pop_lpm_constant
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PUSH_lpm_constant
+# -- Compiling architecture SYN of push_lpm_constant
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity MODE_Select_lpm_mux
+# -- Compiling architecture SYN of mode_select_lpm_mux
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StackCounter_lpm_counter
+# -- Compiling architecture SYN of stackcounter_lpm_counter
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a52_lpm_constant
+# -- Compiling architecture SYN of a52_lpm_constant
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SPG_lpm_counter
+# -- Compiling architecture SYN of spg_lpm_counter
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SPG_lpm_compare
+# -- Compiling architecture SYN of spg_lpm_compare
+# vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity g21_7_segment_decoder
+# -- Compiling architecture g21_7_segment_decoder_arch of g21_7_segment_decoder
+# ** Error: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd(28): (vcom-1339) Selected signal assignment choices cover only 32 out of 59049 cases.
+# 
+# ** Error: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd(63): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./g21_lab3_run_msim_rtl_vhdl.do line 20
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd}"

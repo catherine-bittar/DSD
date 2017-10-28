@@ -1,0 +1,450 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 3\simulation\modelsim
+Ea52_lpm_constant
+Z1 w1509044917
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 3\simulation\modelsim
+Z5 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd
+Z6 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd
+l0
+L42
+VndEWTT_aK>T9[GC4Lie6M1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1509216789.330000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd|
+Z10 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/a52_lpm_constant.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 ;7^NTBWacMB9RK[Bl3YJk1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 16 a52_lpm_constant 0 22 ndEWTT_aK>T9[GC4Lie6M1
+l68
+L50
+VY7?78X7MWgfQ<?610iiW61
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 J?m07[nh<TKh<[NLc_ANI3
+!i10b 1
+Eg21_7_segment_decoder
+Z13 w1509132236
+R2
+R3
+R4
+8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd
+FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd
+l0
+L13
+VHS4<K=efJS9_1Ll?79QQX1
+!s100 a<Nj^V7FiEN`7o1mZgONZ3
+R7
+31
+!i10b 1
+!s108 1509216789.584000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd|
+!s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_7_segment_decoder.vhd|
+R11
+R12
+Eg21_lab2_rom1
+Z14 w1507730843
+R2
+R3
+R4
+Z15 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd
+Z16 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd
+l0
+L42
+V[LG1hI3]kV?G?`6YZC;zV0
+R7
+31
+Z17 !s108 1509216788.615000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd|
+Z19 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab2_rom1.vhd|
+R11
+R12
+!s100 ^l@L4RL]zaIKhCD3CH21k2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 13 g21_lab2_rom1 0 22 [LG1hI3]kV?G?`6YZC;zV0
+l81
+L52
+VMZ@S]]8F=gDzEZ=dCR<SC1
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 NKmPjGA^b87J4MRdAZL:j0
+!i10b 1
+Eg21_pop_enable
+Z20 w1507737553
+Z21 DPx3 lpm 14 lpm_components 0 22 aHRA3clF>2DcWDhgFTAbM3
+R2
+R3
+R4
+Z22 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd
+Z23 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd
+l0
+L15
+V0H]Ajk?_]F0acFfH1JM3W2
+R7
+31
+Z24 !s108 1509216788.469000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd|
+Z26 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.vhd|
+R11
+R12
+!s100 <am<BO[fHH0jPe[gZ^Qf80
+!i10b 1
+Ag21_pop_enable_arch
+R21
+R2
+R3
+DEx4 work 14 g21_pop_enable 0 22 0H]Ajk?_]F0acFfH1JM3W2
+l29
+L21
+VZ:K[f2>oGJBXhl80DnC@T0
+R7
+31
+R24
+R25
+R26
+R11
+R12
+!s100 9ZHh9h8[ljeHJ8__f[^f90
+!i10b 1
+Einit_lpm_constant
+Z27 w1509040251
+R2
+R3
+R4
+Z28 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd
+Z29 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd
+l0
+L42
+VPJgT4a[TBOEkfkV;cS=Oe3
+R7
+31
+Z30 !s108 1509216788.900000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd|
+Z32 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/INIT_lpm_constant.vhd|
+R11
+R12
+!s100 hYcReO4Uz[<=6048gQTd>1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 17 init_lpm_constant 0 22 PJgT4a[TBOEkfkV;cS=Oe3
+l68
+L50
+Van=MT=IVFcRFm?E?JbJ^^3
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 PPFznK[0UTAX490`LK_VT0
+!i10b 1
+Elpm_mux0
+Z33 w1508870591
+R21
+R2
+R3
+R4
+Z34 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd
+Z35 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd
+l0
+L42
+V1X<`9?<L3J9:_?1cFC_K@3
+R7
+31
+Z36 !s108 1509216788.724000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd|
+Z38 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_mux0.vhd|
+R11
+R12
+!s100 F4J]<L_Ngk<lm<z^1ka[R1
+!i10b 1
+Asyn
+R21
+R2
+R3
+DEx4 work 8 lpm_mux0 0 22 1X<`9?<L3J9:_?1cFC_K@3
+l162
+L103
+Vb7=LFi95b6zOAfk_j>ff:1
+R7
+31
+R36
+R37
+R38
+R11
+R12
+!s100 OV;8?bN<:OEIaGS7JmSPN2
+!i10b 1
+Emode_select_lpm_mux
+R27
+R21
+R2
+R3
+R4
+Z39 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd
+Z40 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd
+l0
+L42
+V>8_81[2EoAn9doaeJO^TC2
+R7
+31
+Z41 !s108 1509216789.147000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd|
+Z43 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/MODE_Select_lpm_mux.vhd|
+R11
+R12
+!s100 GSKzV]Qndg_FLQBd<@W8R0
+!i10b 1
+Asyn
+R21
+R2
+R3
+DEx4 work 19 mode_select_lpm_mux 0 22 >8_81[2EoAn9doaeJO^TC2
+l66
+L55
+Vn:lh>6EnN]YbaD[SgSKzo2
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 [eR^BboIMKEGhkigi801b2
+!i10b 1
+Enop_lpm_constant
+R27
+R2
+R3
+R4
+Z44 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd
+Z45 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd
+l0
+L42
+VFoSM[EFDCaW:[Zlmlh6^h0
+R7
+31
+Z46 !s108 1509216788.817000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd|
+Z48 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/NOP_lpm_constant.vhd|
+R11
+R12
+!s100 jRZ;<z1>X`80>[SFdW>jE1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 16 nop_lpm_constant 0 22 FoSM[EFDCaW:[Zlmlh6^h0
+l68
+L50
+VH<9WYn1:AJ_Fz4l]HWPcR0
+R7
+31
+R46
+R47
+R48
+R11
+R12
+!s100 4D5gUVQS^k@RhZ:HPdVEg3
+!i10b 1
+Epop_lpm_constant
+R27
+R2
+R3
+R4
+Z49 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd
+Z50 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd
+l0
+L42
+VA>Rdl9W1N5MI]aik7ll1e3
+R7
+31
+Z51 !s108 1509216788.982000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd|
+Z53 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/POP_lpm_constant.vhd|
+R11
+R12
+!s100 jM3l^lD^7]^[C6N4cjVnI3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 16 pop_lpm_constant 0 22 A>Rdl9W1N5MI]aik7ll1e3
+l68
+L50
+V7<_P`fJfV?X<S;QND_=aF2
+R7
+31
+R51
+R52
+R53
+R11
+R12
+!s100 bDRl803PRGRbAzCC_nAAc1
+!i10b 1
+Epush_lpm_constant
+R27
+R2
+R3
+R4
+Z54 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd
+Z55 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd
+l0
+L42
+V30D_h;=ncY@HZMP`K<hKP3
+R7
+31
+Z56 !s108 1509216789.064000
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd|
+Z58 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/PUSH_lpm_constant.vhd|
+R11
+R12
+!s100 =G=[>=iX2Q6A:Xk:43gV>1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 17 push_lpm_constant 0 22 30D_h;=ncY@HZMP`K<hKP3
+l68
+L50
+V=o9FLhAXGNDf>e:0zCJ=g3
+R7
+31
+R56
+R57
+R58
+R11
+R12
+!s100 ho0FZz[KV];R=1KK6zcQl1
+!i10b 1
+Espg_lpm_compare
+R13
+R2
+R3
+R4
+Z59 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd
+Z60 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd
+l0
+L42
+V>LU4gTTOI??O=Z<gjMWQ<3
+R7
+31
+Z61 !s108 1509216789.498000
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd|
+Z63 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd|
+R11
+R12
+!s100 ad_cjKMFzdkl`U3lkIIin2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 15 spg_lpm_compare 0 22 >LU4gTTOI??O=Z<gjMWQ<3
+l73
+L51
+VdR@HbBC[m>g2iY=cSTc?j1
+R7
+31
+R61
+R62
+R63
+R11
+R12
+!s100 SlzBKZd^JejHgMWG9a8fT2
+!i10b 1
+Espg_lpm_counter
+Z64 w1509130894
+R2
+R3
+R4
+Z65 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd
+Z66 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd
+l0
+L42
+VkN[L89=8K=ME51mbhL:CQ1
+R7
+31
+Z67 !s108 1509216789.416000
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd|
+Z69 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd|
+R11
+R12
+!s100 DGzaAVhhkSeDJFh]e_N2h2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 15 spg_lpm_counter 0 22 kN[L89=8K=ME51mbhL:CQ1
+l75
+L53
+Vn?3QYSkab=;4dNEhYYOim1
+R7
+31
+R67
+R68
+R69
+R11
+R12
+!s100 Va[79HPBJS`@[6<Y_D26I0
+!i10b 1
+Estackcounter_lpm_counter
+R1
+R2
+R3
+R4
+Z70 8C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd
+Z71 FC:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd
+l0
+L42
+VD[KbR1BB>4oEOfW0DlT`E1
+R7
+31
+Z72 !s108 1509216789.235000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd|
+Z74 !s107 C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/StackCounter_lpm_counter.vhd|
+R11
+R12
+!s100 FnUF^5TWY?hc?F[n<j2h21
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 24 stackcounter_lpm_counter 0 22 D[KbR1BB>4oEOfW0DlT`E1
+l79
+L55
+V1oAXE1S5FT2_?noEj;gOG0
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 SBWMzDMnEI<4nh5OS;2nd2
+!i10b 1

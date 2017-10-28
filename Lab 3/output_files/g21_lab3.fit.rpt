@@ -1,5 +1,5 @@
 Fitter report for g21_lab3
-Fri Oct 27 15:11:22 2017
+Sat Oct 28 15:45:41 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 27 15:11:22 2017           ;
+; Fitter Status                      ; Successful - Sat Oct 28 15:45:41 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_SPG                                         ;
@@ -137,7 +137,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -180,7 +180,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.pin.
+The pin-out file can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1211,7 +1211,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 1 output pins without output pin load capacitance assignment
     Info (306007): Pin "SPG_ENABLE" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1220,17 +1220,17 @@ Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 734 megabytes
-    Info: Processing ended: Fri Oct 27 15:11:22 2017
+    Info: Peak virtual memory: 743 megabytes
+    Info: Processing ended: Sat Oct 28 15:45:42 2017
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.fit.smsg.
+The suppressed messages can be found in C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.fit.smsg.
 
 
