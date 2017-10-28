@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "g21_SPG")
-  (DATE "10/28/2017 15:47:18")
+  (DATE "10/28/2017 15:55:14")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -33,14 +33,14 @@
 
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[11\])
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[15\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (501:501:501) (501:501:501))
-        (PORT sload (574:574:574) (574:574:574))
-        (PORT ena (558:558:558) (558:558:558))
+        (PORT sdata (425:425:425) (425:425:425))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -56,11 +56,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[6\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (569:569:569) (569:569:569))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (573:573:573) (573:573:573))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -76,11 +76,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[4\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (570:570:570) (570:570:570))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (574:574:574) (574:574:574))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -96,11 +96,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[2\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (571:571:571) (571:571:571))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (574:574:574) (574:574:574))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -116,11 +116,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[0\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (443:443:443) (443:443:443))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (452:452:452) (452:452:452))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -187,25 +187,15 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita11)
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita15)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (318:318:318) (318:318:318))
+        (PORT dataa (167:167:167) (167:167:167))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH dataa cout (150:150:150) (150:150:150))
         (IOPATH datad combout (59:59:59) (59:59:59))
         (IOPATH cin combout (170:170:170) (170:170:170))
         (IOPATH cin cout (35:35:35) (35:35:35))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|safe_q\[11\]\~feeder)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (400:400:400) (400:400:400))
-        (IOPATH datad combout (59:59:59) (59:59:59))
       )
     )
   )
@@ -253,11 +243,11 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst\~0)
+    (INSTANCE inst\~feeder)
     (DELAY
       (ABSOLUTE
-        (PORT datad (2707:2707:2707) (2707:2707:2707))
-        (IOPATH datad combout (79:79:79) (79:79:79))
+        (PORT datad (2708:2708:2708) (2708:2708:2708))
+        (IOPATH datad combout (59:59:59) (59:59:59))
       )
     )
   )
@@ -277,13 +267,57 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita10)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (364:364:364) (364:364:364))
+        (IOPATH dataa combout (180:180:180) (180:180:180))
+        (IOPATH dataa cout (150:150:150) (150:150:150))
+        (IOPATH datad combout (59:59:59) (59:59:59))
+        (IOPATH cin combout (170:170:170) (170:170:170))
+        (IOPATH cin cout (35:35:35) (35:35:35))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|safe_q\[10\]\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (312:312:312) (312:312:312))
+        (IOPATH datad combout (59:59:59) (59:59:59))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[10\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
+        (PORT datain (42:42:42) (42:42:42))
+        (PORT sdata (562:562:562) (562:562:562))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
+        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD sload (posedge clk) (152:152:152))
+      (HOLD sdata (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_comb")
     (INSTANCE inst3\|LPM_COMPARE_component\|auto_generated\|ageb\~1)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (226:226:226) (226:226:226))
-        (PORT datab (163:163:163) (163:163:163))
-        (PORT datac (156:156:156) (156:156:156))
-        (PORT datad (161:161:161) (161:161:161))
+        (PORT dataa (230:230:230) (230:230:230))
+        (PORT datab (162:162:162) (162:162:162))
+        (PORT datac (155:155:155) (155:155:155))
+        (PORT datad (160:160:160) (160:160:160))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datac combout (107:107:107) (107:107:107))
@@ -310,11 +344,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[13\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (427:427:427) (427:427:427))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (426:426:426) (426:426:426))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -330,10 +364,10 @@
     (INSTANCE inst3\|LPM_COMPARE_component\|auto_generated\|ageb\~2)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (171:171:171) (171:171:171))
+        (PORT dataa (172:172:172) (172:172:172))
         (PORT datab (162:162:162) (162:162:162))
         (PORT datac (163:163:163) (163:163:163))
-        (PORT datad (163:163:163) (163:163:163))
+        (PORT datad (164:164:164) (164:164:164))
         (IOPATH dataa combout (187:187:187) (187:187:187))
         (IOPATH datab combout (180:180:180) (180:180:180))
         (IOPATH datac combout (110:110:110) (110:110:110))
@@ -360,7 +394,7 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita19)
     (DELAY
       (ABSOLUTE
-        (PORT datab (151:151:151) (151:151:151))
+        (PORT datab (152:152:152) (152:152:152))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datab cout (143:143:143) (143:143:143))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -374,11 +408,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[19\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (422:422:422) (422:422:422))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (420:420:420) (420:420:420))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -405,45 +439,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[20\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (422:422:422) (422:422:422))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
-      (HOLD sload (posedge clk) (152:152:152))
-      (HOLD sdata (posedge clk) (152:152:152))
-      (HOLD ena (posedge clk) (152:152:152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita15)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (167:167:167) (167:167:167))
-        (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH dataa cout (150:150:150) (150:150:150))
-        (IOPATH datad combout (59:59:59) (59:59:59))
-        (IOPATH cin combout (170:170:170) (170:170:170))
-        (IOPATH cin cout (35:35:35) (35:35:35))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[15\])
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (426:426:426) (426:426:426))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (419:419:419) (419:419:419))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -460,9 +460,9 @@
     (DELAY
       (ABSOLUTE
         (PORT dataa (171:171:171) (171:171:171))
-        (PORT datab (154:154:154) (154:154:154))
-        (PORT datac (157:157:157) (157:157:157))
-        (PORT datad (162:162:162) (162:162:162))
+        (PORT datab (153:153:153) (153:153:153))
+        (PORT datac (155:155:155) (155:155:155))
+        (PORT datad (165:165:165) (165:165:165))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datac combout (107:107:107) (107:107:107))
@@ -475,10 +475,10 @@
     (INSTANCE inst3\|LPM_COMPARE_component\|auto_generated\|ageb\~3)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (257:257:257) (257:257:257))
-        (PORT datab (107:107:107) (107:107:107))
-        (PORT datac (316:316:316) (316:316:316))
-        (PORT datad (320:320:320) (320:320:320))
+        (PORT dataa (331:331:331) (331:331:331))
+        (PORT datab (108:108:108) (108:108:108))
+        (PORT datac (309:309:309) (309:309:309))
+        (PORT datad (313:313:313) (313:313:313))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datac combout (107:107:107) (107:107:107))
@@ -491,9 +491,9 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|_\~0)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (372:372:372) (372:372:372))
-        (PORT datab (156:156:156) (156:156:156))
-        (PORT datac (377:377:377) (377:377:377))
+        (PORT dataa (374:374:374) (374:374:374))
+        (PORT datab (157:157:157) (157:157:157))
+        (PORT datac (370:370:370) (370:370:370))
         (PORT datad (111:111:111) (111:111:111))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH datab combout (175:175:175) (175:175:175))
@@ -507,11 +507,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[1\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (562:562:562) (562:562:562))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (565:565:565) (565:565:565))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -527,7 +527,7 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita3)
     (DELAY
       (ABSOLUTE
-        (PORT datab (152:152:152) (152:152:152))
+        (PORT datab (155:155:155) (155:155:155))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datab cout (143:143:143) (143:143:143))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -541,11 +541,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[3\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (570:570:570) (570:570:570))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (574:574:574) (574:574:574))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -561,7 +561,7 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita5)
     (DELAY
       (ABSOLUTE
-        (PORT datab (152:152:152) (152:152:152))
+        (PORT datab (155:155:155) (155:155:155))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datab cout (143:143:143) (143:143:143))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -575,11 +575,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[5\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (569:569:569) (569:569:569))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (573:573:573) (573:573:573))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -609,11 +609,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[7\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (568:568:568) (568:568:568))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (571:571:571) (571:571:571))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -643,11 +643,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[8\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (568:568:568) (568:568:568))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (571:571:571) (571:571:571))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -677,11 +677,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[9\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (566:566:566) (566:566:566))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (568:568:568) (568:568:568))
+        (PORT sload (497:497:497) (497:497:497))
+        (PORT ena (476:476:476) (476:476:476))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -694,10 +694,10 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita10)
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita11)
     (DELAY
       (ABSOLUTE
-        (PORT datab (356:356:356) (356:356:356))
+        (PORT datab (317:317:317) (317:317:317))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datab cout (143:143:143) (143:143:143))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -708,24 +708,24 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|safe_q\[10\]\~feeder)
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|safe_q\[11\]\~feeder)
     (DELAY
       (ABSOLUTE
-        (PORT datad (186:186:186) (186:186:186))
+        (PORT datad (305:305:305) (305:305:305))
         (IOPATH datad combout (59:59:59) (59:59:59))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[10\])
+    (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[11\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (559:559:559) (559:559:559))
-        (PORT sload (593:593:593) (593:593:593))
-        (PORT ena (485:485:485) (485:485:485))
+        (PORT sdata (518:518:518) (518:518:518))
+        (PORT sload (576:576:576) (576:576:576))
+        (PORT ena (564:564:564) (564:564:564))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -755,11 +755,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[12\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (427:427:427) (427:427:427))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (426:426:426) (426:426:426))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -789,11 +789,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[14\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
         (PORT sdata (426:426:426) (426:426:426))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -809,7 +809,7 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita16)
     (DELAY
       (ABSOLUTE
-        (PORT datab (232:232:232) (232:232:232))
+        (PORT datab (235:235:235) (235:235:235))
         (IOPATH datab combout (175:175:175) (175:175:175))
         (IOPATH datab cout (143:143:143) (143:143:143))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -823,11 +823,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[16\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (425:425:425) (425:425:425))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (424:424:424) (424:424:424))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -857,11 +857,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[17\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (425:425:425) (425:425:425))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (423:423:423) (423:423:423))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -877,11 +877,11 @@
     (INSTANCE inst2\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit1a\[18\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1023:1023:1023) (1023:1023:1023))
+        (PORT clk (1033:1033:1033) (1033:1033:1033))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT sdata (422:422:422) (422:422:422))
-        (PORT sload (697:697:697) (697:697:697))
-        (PORT ena (712:712:712) (712:712:712))
+        (PORT sdata (420:420:420) (420:420:420))
+        (PORT sload (705:705:705) (705:705:705))
+        (PORT ena (684:684:684) (684:684:684))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
       )
     )
@@ -897,9 +897,9 @@
     (INSTANCE inst3\|LPM_COMPARE_component\|auto_generated\|ageb\~4)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (371:371:371) (371:371:371))
-        (PORT datac (377:377:377) (377:377:377))
-        (PORT datad (110:110:110) (110:110:110))
+        (PORT dataa (374:374:374) (374:374:374))
+        (PORT datac (370:370:370) (370:370:370))
+        (PORT datad (111:111:111) (111:111:111))
         (IOPATH dataa combout (180:180:180) (180:180:180))
         (IOPATH datac combout (107:107:107) (107:107:107))
         (IOPATH datad combout (59:59:59) (59:59:59))
@@ -911,9 +911,9 @@
     (INSTANCE inst)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1029:1029:1029) (1029:1029:1029))
+        (PORT clk (1038:1038:1038) (1038:1038:1038))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (418:418:418) (418:418:418))
+        (PORT aclr (419:419:419) (419:419:419))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
       )
@@ -927,8 +927,8 @@
     (INSTANCE SPG_ENABLE\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (269:269:269) (269:269:269))
-        (IOPATH datain padio (1408:1408:1408) (1408:1408:1408))
+        (PORT datain (489:489:489) (489:489:489))
+        (IOPATH datain padio (1388:1388:1388) (1388:1388:1388))
       )
     )
   )

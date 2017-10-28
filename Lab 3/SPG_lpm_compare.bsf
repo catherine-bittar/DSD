@@ -33,8 +33,8 @@ applicable agreement for further details.
 	(port
 		(pt 128 56)
 		(output)
-		(text "ageb" (rect 0 0 28 14)(font "Arial" (font_size 8)))
-		(text "ageb" (rect 81 48 107 63)(font "Arial" (font_size 8)))
+		(text "alb" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "alb" (rect 92 48 107 63)(font "Arial" (font_size 8)))
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing

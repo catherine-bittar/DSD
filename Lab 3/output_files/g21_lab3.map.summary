@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Oct 28 15:45:37 2017
+Analysis & Synthesis Status : Successful - Sat Oct 28 16:29:44 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : g21_lab3
 Top-level Entity Name : g21_SPG
 Family : Cyclone II
-Total logic elements : 29
-    Total combinational functions : 29
+Total logic elements : 35
+    Total combinational functions : 34
     Dedicated logic registers : 22
 Total registers : 22
-Total pins : 3
+Total pins : 24
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

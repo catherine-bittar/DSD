@@ -52,6 +52,216 @@ SIGNAL("g21_SPG_vlg_vec_tst|SwitchEnable")
 	PARENT = "";
 }
 
+SIGNAL("g21_SPG_vlg_vec_tst|counter[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|counter[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("g21_SPG_vlg_vec_tst|SPG_ENABLE")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -132,57 +342,7 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[11]~feeder_combout")
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -202,27 +362,7 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|CLK~combout")
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|CLK~clkctrl_outclk")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("g21_SPG_vlg_vec_tst|i1|SwitchEnable~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,7 +382,17 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout")
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -262,106 +412,6 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|~GND~combout")
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|_~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -372,7 +422,27 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|_~0_co
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT")
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~4_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -383,16 +453,6 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 }
 
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,6 +482,26 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -432,7 +512,17 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT")
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~3_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,27 +542,7 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -502,27 +572,37 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita9~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[10]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -552,16 +632,6 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~COUT")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -573,16 +643,6 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 }
 
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -612,27 +672,7 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~COUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -662,7 +702,137 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counte
 	PARENT = "";
 }
 
-SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~4_combout")
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst6~5_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -673,6 +843,66 @@ SIGNAL("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~4
 }
 
 SIGNAL("g21_SPG_vlg_vec_tst|i1|inst~regout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1005,7 +1235,242 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|SwitchEnable")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 670.0;
+		LEVEL 1 FOR 330.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 350.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
@@ -1029,7 +1494,64 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|SwitchEnable")
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|counter[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -1038,8 +1560,9 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|SPG_ENABLE")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 3.691;
-		LEVEL 0 FOR 996.309;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 950.0;
 	}
 }
 
@@ -1205,152 +1728,12 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout")
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.928;
-		LEVEL 1 FOR 13.127;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.945;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.415;
-		LEVEL 0 FOR 53.244;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.388;
-		LEVEL 0 FOR 0.495;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.388;
-		LEVEL 1 FOR 0.495;
-		LEVEL 0 FOR 45.458;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.313;
-		LEVEL 0 FOR 293.506;
-		LEVEL 1 FOR 320.0;
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 65.181;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.314;
-		LEVEL 0 FOR 998.686;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.873;
-		LEVEL 0 FOR 998.127;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[11]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3.162;
-		LEVEL 0 FOR 996.838;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1359,116 +1742,11 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|CLK~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 11.026;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 8.974;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|CLK~clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.238;
-		LEVEL 0 FOR 11.026;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -1564,10 +1842,6 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 8.736;
 	}
 }
 
@@ -1576,65 +1850,40 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|SwitchEnable~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.844;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 39.156;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 5.019;
-		LEVEL 1 FOR 40.844;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 34.137;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -1643,8 +1892,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.9;
-		LEVEL 0 FOR 13.127;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -1692,94 +1940,61 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.973;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout")
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.358;
-		LEVEL 0 FOR 13.127;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 90.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 19.524;
-		LEVEL 1 FOR 0.476;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 19.524;
-		LEVEL 0 FOR 0.476;
-		LEVEL 1 FOR 5.515;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 30.0;
 	}
 }
 
@@ -1792,147 +2007,118 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|~GND~combout")
 	}
 }
 
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.695;
-		LEVEL 1 FOR 999.305;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.325;
-		LEVEL 0 FOR 998.675;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.859;
-		LEVEL 1 FOR 999.141;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.903;
-		LEVEL 0 FOR 999.097;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.361;
-		LEVEL 0 FOR 998.639;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.854;
-		LEVEL 1 FOR 999.146;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.312;
-		LEVEL 0 FOR 998.688;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.325;
-		LEVEL 0 FOR 998.675;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.883;
-		LEVEL 1 FOR 999.117;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 2.039;
-		LEVEL 1 FOR 997.961;
-	}
-}
-
 TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|_~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.272;
-		LEVEL 1 FOR 998.728;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 970.0;
 	}
 }
 
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT")
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.957;
-		LEVEL 1 FOR 53.244;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.883;
-		LEVEL 1 FOR 45.916;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -1941,60 +2127,19 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.895;
-		LEVEL 0 FOR 73.127;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.741;
-		LEVEL 0 FOR 45.978;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.353;
-		LEVEL 0 FOR 133.386;
-		LEVEL 1 FOR 19.269;
-		LEVEL 0 FOR 0.472;
-		LEVEL 1 FOR 140.259;
-		LEVEL 0 FOR 19.269;
-		LEVEL 1 FOR 0.472;
-		LEVEL 0 FOR 140.259;
-		LEVEL 1 FOR 19.269;
-		LEVEL 0 FOR 0.472;
-		LEVEL 1 FOR 140.259;
-		LEVEL 0 FOR 19.269;
-		LEVEL 1 FOR 0.472;
-		LEVEL 0 FOR 140.259;
-		LEVEL 1 FOR 19.269;
-		LEVEL 0 FOR 0.472;
-		LEVEL 1 FOR 140.259;
-		LEVEL 0 FOR 19.269;
-		LEVEL 1 FOR 0.472;
-		LEVEL 0 FOR 45.52;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -2003,26 +2148,13 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.855;
-		LEVEL 1 FOR 153.127;
-		LEVEL 0 FOR 0.12;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 0.142;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.621;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 0.12;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 0.142;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.621;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 0.12;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 0.142;
-		LEVEL 1 FOR 60.117;
-		LEVEL 0 FOR 19.621;
-		LEVEL 1 FOR 46.018;
+		LEVEL 1 FOR 330.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -2031,27 +2163,9 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.896;
-		LEVEL 0 FOR 473.166;
-		LEVEL 1 FOR 0.12;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 0.142;
-		LEVEL 0 FOR 60.117;
-		LEVEL 1 FOR 19.582;
-		LEVEL 0 FOR 365.977;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.354;
-		LEVEL 0 FOR 613.545;
-		LEVEL 1 FOR 19.11;
-		LEVEL 0 FOR 0.472;
-		LEVEL 1 FOR 365.519;
+		LEVEL 0 FOR 650.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 330.0;
 	}
 }
 
@@ -2060,10 +2174,48 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.856;
-		LEVEL 1 FOR 633.127;
-		LEVEL 0 FOR 0.12;
-		LEVEL 1 FOR 365.897;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 650.0;
+		LEVEL 1 FOR 350.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 30.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 350.0;
+		LEVEL 1 FOR 650.0;
 	}
 }
 
@@ -2072,18 +2224,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.896;
-		LEVEL 0 FOR 999.104;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.354;
-		LEVEL 0 FOR 998.646;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2092,18 +2233,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.867;
-		LEVEL 1 FOR 999.133;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.325;
-		LEVEL 0 FOR 998.675;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2112,8 +2242,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.867;
-		LEVEL 0 FOR 999.133;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2122,8 +2251,34 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.325;
-		LEVEL 0 FOR 998.675;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2132,28 +2287,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.972;
-		LEVEL 1 FOR 999.028;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.43;
-		LEVEL 0 FOR 998.57;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[10]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 2.125;
-		LEVEL 0 FOR 997.875;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2162,8 +2296,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.415;
-		LEVEL 0 FOR 998.585;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2172,18 +2305,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.357;
-		LEVEL 1 FOR 998.643;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.815;
-		LEVEL 0 FOR 998.185;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2192,8 +2314,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.867;
-		LEVEL 0 FOR 999.133;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2202,18 +2323,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.91;
-		LEVEL 1 FOR 999.09;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.368;
-		LEVEL 0 FOR 998.632;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2222,8 +2332,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.867;
-		LEVEL 0 FOR 999.133;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2232,18 +2341,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.911;
-		LEVEL 1 FOR 999.089;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.369;
-		LEVEL 0 FOR 998.631;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2252,18 +2350,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.082;
-		LEVEL 0 FOR 998.918;
-	}
-}
-
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1.54;
-		LEVEL 0 FOR 998.46;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -2272,8 +2359,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.973;
-		LEVEL 1 FOR 999.027;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -2282,18 +2368,135 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.431;
-		LEVEL 0 FOR 998.569;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~4_combout")
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1.272;
-		LEVEL 1 FOR 998.728;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 950.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst6~5_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 950.0;
 	}
 }
 
@@ -2302,8 +2505,69 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 999.757;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 950.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 30.0;
 	}
 }
 
@@ -2447,8 +2711,8 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 633.127;
-		LEVEL 1 FOR 366.873;
+		LEVEL 0 FOR 670.0;
+		LEVEL 1 FOR 330.0;
 	}
 }
 
@@ -2457,10 +2721,10 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 313.127;
+		LEVEL 0 FOR 350.0;
 		LEVEL 1 FOR 320.0;
 		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 46.873;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -2469,13 +2733,13 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 153.127;
+		LEVEL 0 FOR 190.0;
 		LEVEL 1 FOR 160.0;
 		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 160.0;
 		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 46.873;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -2484,7 +2748,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 73.127;
+		LEVEL 0 FOR 110.0;
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 80.0;
@@ -2496,7 +2760,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 46.873;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -2505,7 +2769,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 33.127;
+		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
@@ -2529,8 +2793,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 6.873;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -2539,7 +2802,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 13.127;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
@@ -2587,9 +2850,7 @@ TRANSITION_LIST("g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generat
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 6.873;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -2613,7 +2874,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|SPG_ENABLE";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -2622,7 +2883,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|sampler";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -2631,7 +2892,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|gnd";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -2640,7 +2901,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|vcc";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -2649,7 +2910,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|unknown";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -2658,7 +2919,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -2667,7 +2928,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devpor";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -2676,7 +2937,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devoe";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -2685,7 +2946,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -2694,7 +2955,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -2703,7 +2964,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -2712,7 +2973,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -2721,7 +2982,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -2730,7 +2991,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[11]~feeder_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -2739,7 +3000,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|CLK~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -2748,7 +3009,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|CLK~clkctrl_outclk";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -2757,7 +3018,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|SwitchEnable~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -2766,7 +3027,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst~0_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -2775,7 +3036,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -2784,7 +3045,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -2793,7 +3054,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|~GND~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|counter[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -2802,7 +3063,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~1_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|SPG_ENABLE";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -2811,7 +3072,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -2820,7 +3081,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~2_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -2829,7 +3090,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -2838,7 +3099,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -2847,7 +3108,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -2856,7 +3117,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -2865,7 +3126,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -2874,7 +3135,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~0_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -2883,7 +3144,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~3_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|CLK~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -2892,7 +3153,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|_~0_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|SwitchEnable~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -2901,7 +3162,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -2910,7 +3171,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -2919,7 +3180,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -2928,7 +3189,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|~GND~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -2937,7 +3198,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|_~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -2946,7 +3207,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -2955,7 +3216,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -2964,7 +3225,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -2973,7 +3234,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -2982,7 +3243,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -2991,7 +3252,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -3000,7 +3261,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -3009,7 +3270,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita9~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -3018,7 +3279,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita9~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita5~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -3027,7 +3288,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita4~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -3036,7 +3297,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[10]~feeder_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -3045,7 +3306,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -3054,7 +3315,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -3063,7 +3324,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -3072,7 +3333,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita9~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -3081,7 +3342,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -3090,7 +3351,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita7~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -3099,7 +3360,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -3108,7 +3369,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita9~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -3117,7 +3378,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -3126,7 +3387,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -3135,7 +3396,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -3144,7 +3405,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~COUT";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -3153,7 +3414,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -3162,7 +3423,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst3|LPM_COMPARE_component|auto_generated|ageb~4_combout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -3171,7 +3432,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst~regout";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -3180,7 +3441,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[20]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -3189,7 +3450,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[19]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -3198,7 +3459,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[18]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita17~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -3207,7 +3468,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[17]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -3216,7 +3477,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[16]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -3225,7 +3486,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[15]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita14~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -3234,7 +3495,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[14]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita13~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -3243,7 +3504,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[13]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita12~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -3252,7 +3513,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[12]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -3261,7 +3522,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[11]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst5|LPM_COMPARE_component|auto_generated|ageb~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -3270,7 +3531,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[10]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -3279,7 +3540,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[9]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita10~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -3288,7 +3549,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[8]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -3297,7 +3558,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[7]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita11~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -3306,7 +3567,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[6]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -3315,7 +3576,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[5]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst6~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -3324,7 +3585,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[4]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -3333,7 +3594,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[3]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita18~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -3342,7 +3603,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[2]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -3351,7 +3612,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[1]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita20~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -3360,10 +3621,217 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[0]";
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita19~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita16~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 86;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita3~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 87;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 88;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 89;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 90;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 91;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 92;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 93;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 94;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 95;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 96;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 97;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 98;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 99;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 100;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 103;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 104;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 105;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 106;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 107;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_SPG_vlg_vec_tst|i1|inst2|LPM_COUNTER_component|auto_generated|safe_q[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 108;
 	TREE_LEVEL = 0;
 }
 ;
