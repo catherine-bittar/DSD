@@ -1,5 +1,5 @@
 Assembler report for g21_lab3
-Sat Oct 28 15:55:10 2017
+Sat Oct 28 18:48:53 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.sof
-  6. Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.pof
+  5. Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.sof
+  6. Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Oct 28 15:55:10 2017 ;
+; Assembler Status      ; Successful - Sat Oct 28 18:48:53 2017 ;
 ; Revision Name         ; g21_lab3                              ;
-; Top-level Entity Name ; g21_SPG                               ;
+; Top-level Entity Name ; g21_test_bed                          ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Generated Files                                           ;
-+---------------------------------------------------------------------+
-; File Name                                                           ;
-+---------------------------------------------------------------------+
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.sof ;
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.pof ;
-+---------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                             ;
++---------------------------------------------------------------------------------------+
+; File Name                                                                             ;
++---------------------------------------------------------------------------------------+
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.sof ;
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.pof ;
++---------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.sof ;
-+----------------+------------------------------------------------------------------------------+
-; Option         ; Setting                                                                      ;
-+----------------+------------------------------------------------------------------------------+
-; Device         ; EP2C20F484C7                                                                 ;
-; JTAG usercode  ; 0x001B3D2B                                                                   ;
-; Checksum       ; 0x001B3D2B                                                                   ;
-+----------------+------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.sof ;
++----------------+------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------+
+; Device         ; EP2C20F484C7                                                                                   ;
+; JTAG usercode  ; 0x00236D22                                                                                     ;
+; Checksum       ; 0x00236D22                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/bitta/Documents/GitHub/DSD/Lab 3/output_files/g21_lab3.pof ;
-+--------------------+--------------------------------------------------------------------------+
-; Option             ; Setting                                                                  ;
-+--------------------+--------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                   ;
-; JTAG usercode      ; 0x00000000                                                               ;
-; Checksum           ; 0x1DD96BB8                                                               ;
-; Compression Ratio  ; 3                                                                        ;
-+--------------------+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/output_files/g21_lab3.pof ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                    ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                                     ;
+; JTAG usercode      ; 0x00000000                                                                                 ;
+; Checksum           ; 0x1DCCFB3B                                                                                 ;
+; Compression Ratio  ; 3                                                                                          ;
++--------------------+--------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 28 15:55:09 2017
+    Info: Processing started: Sat Oct 28 18:48:52 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 436 megabytes
-    Info: Processing ended: Sat Oct 28 15:55:10 2017
+    Info: Peak virtual memory: 451 megabytes
+    Info: Processing ended: Sat Oct 28 18:48:53 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

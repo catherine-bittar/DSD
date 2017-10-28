@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g21_SPG
+set_global_assignment -name TOP_LEVEL_ENTITY g21_test_bed
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:10:43  OCTOBER 19, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -66,10 +66,10 @@ set_global_assignment -name BDF_FILE g21_comp7.bdf
 set_global_assignment -name BSF_FILE g21_comp7.bsf
 set_global_assignment -name QIP_FILE a52_lpm_constant.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE g21_stack52.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name BDF_FILE g21_SPG.bdf
 set_global_assignment -name QIP_FILE SPG_lpm_counter.qip
@@ -84,10 +84,36 @@ set_global_assignment -name QIP_FILE lpm_constantdata.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE "g21_test-bed_sim.vwf"
 set_global_assignment -name BDF_FILE g21_test_bed.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE g21_test_bed_sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE g21_spg_sim.vwf
+set_global_assignment -name QIP_FILE Equal1_lpm_compare0.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE g21_spg_sim.vwf
-set_global_assignment -name QIP_FILE Equal1_lpm_compare0.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_sim.vwf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_F4 -to LEDmod[0]
+set_location_assignment PIN_D4 -to LEDmod[6]
+set_location_assignment PIN_F3 -to LEDmod[5]
+set_location_assignment PIN_L8 -to LEDmod[4]
+set_location_assignment PIN_J4 -to LEDmod[3]
+set_location_assignment PIN_D6 -to LEDmod[2]
+set_location_assignment PIN_D5 -to LEDmod[1]
+set_location_assignment PIN_E2 -to LEDfloor[6]
+set_location_assignment PIN_F1 -to LEDfloor[5]
+set_location_assignment PIN_F2 -to LEDfloor[4]
+set_location_assignment PIN_H1 -to LEDfloor[3]
+set_location_assignment PIN_H2 -to LEDfloor[2]
+set_location_assignment PIN_J1 -to LEDfloor[1]
+set_location_assignment PIN_J2 -to LEDfloor[0]
+set_location_assignment PIN_L1 -to CLK
+set_location_assignment PIN_T21 -to pushButton
+set_location_assignment PIN_R22 -to RSTButton
+set_location_assignment PIN_M1 -to dipswitch1[0]
+set_location_assignment PIN_L2 -to dipswitch1[1]
+set_location_assignment PIN_M2 -to dipswitch2[5]
+set_location_assignment PIN_U11 -to dipswitch2[4]
+set_location_assignment PIN_U12 -to dipswitch2[3]
+set_location_assignment PIN_W12 -to dipswitch2[2]
+set_location_assignment PIN_V12 -to dipswitch2[1]
+set_location_assignment PIN_M22 -to dipswitch2[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_spg_sim.vwf"

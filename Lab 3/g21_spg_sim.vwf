@@ -314,14 +314,13 @@ TRANSITION_LIST("SwitchEnable")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
 		NODE
 		{
-			REPEAT = 16;
-			LEVEL 1 FOR 30.0;
-			LEVEL 0 FOR 30.0;
+			REPEAT = 12;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
 		}
-		LEVEL 1 FOR 10.0;
 	}
 }
 

@@ -2,29 +2,59 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_SPG
+# -- Compiling module g21_test_bed
 # 
 # Top level modules:
-# 	g21_SPG
+# 	g21_test_bed
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_SPG_vlg_sample_tst
-# -- Compiling module g21_SPG_vlg_check_tst
-# -- Compiling module g21_SPG_vlg_vec_tst
+# -- Compiling module g21_test_bed_vlg_sample_tst
+# -- Compiling module g21_test_bed_vlg_check_tst
+# -- Compiling module g21_test_bed_vlg_vec_tst
 # 
 # Top level modules:
-# 	g21_SPG_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_SPG_vlg_vec_tst 
-# Loading work.g21_SPG_vlg_vec_tst
-# Loading work.g21_SPG
+# 	g21_test_bed_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_test_bed_vlg_vec_tst 
+# Loading work.g21_test_bed_vlg_vec_tst
+# Loading work.g21_test_bed
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading work.g21_SPG_vlg_sample_tst
-# Loading work.g21_SPG_vlg_check_tst
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading work.g21_test_bed_vlg_sample_tst
+# Loading work.g21_test_bed_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from g21_lab3_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Simulation passed !
-# ** Note: $finish    : g21_lab3.vt(536)
-#    Time: 1 us  Iteration: 0  Instance: /g21_SPG_vlg_vec_tst/tb_out
+# Loading timing data from g21_lab3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst File: g21_lab3.vt
+# ERROR! Vector Mismatch for output port LEDfloor[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port LEDmod[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port LEDfloor[0] :: @time = 1090000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000011
+# ERROR! Vector Mismatch for output port LEDfloor[1] :: @time = 1090000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000011
+# ERROR! Vector Mismatch for output port LEDmod[2] :: @time = 1090000.000 ps
+#      Expected value = 0000000
+#      Real value = 0100100
+# ERROR! Vector Mismatch for output port LEDmod[5] :: @time = 1090000.000 ps
+#      Expected value = 0000000
+#      Real value = 0100100
+#           6 mismatched vectors : Simulation failed !
+# ** Note: $finish    : g21_lab3.vt(668)
+#    Time: 2 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out
