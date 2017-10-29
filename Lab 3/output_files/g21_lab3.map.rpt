@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Sat Oct 28 18:48:44 2017
+Sun Oct 29 12:13:44 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -165,16 +165,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 28 18:48:44 2017           ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 29 12:13:44 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 647                                             ;
-;     Total combinational functions  ; 647                                             ;
+; Total logic elements               ; 646                                             ;
+;     Total combinational functions  ; 646                                             ;
 ;     Dedicated logic registers      ; 340                                             ;
 ; Total registers                    ; 340                                             ;
-; Total pins                         ; 38                                              ;
+; Total pins                         ; 40                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 3,328                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -321,7 +321,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; alt_counter_stratix.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc                ;         ;
 ; db/cntr_30k.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/cntr_30k.tdf              ;         ;
 ; db/cmpr_6cj.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/cmpr_6cj.tdf              ;         ;
-; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_modulo_13.bdf            ;         ;
 ; db/cntr_p5j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/cntr_p5j.tdf              ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                             ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                            ;         ;
@@ -341,6 +340,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                           ;         ;
 ; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/altsyncram_q371.tdf       ;         ;
 ; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_qmc.tdf               ;         ;
+; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_modulo_13.bdf            ;         ;
 +----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
@@ -349,29 +349,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 647   ;
+; Estimated Total logic elements              ; 646   ;
 ;                                             ;       ;
-; Total combinational functions               ; 647   ;
+; Total combinational functions               ; 646   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 288   ;
-;     -- 3 input functions                    ; 329   ;
-;     -- <=2 input functions                  ; 30    ;
+;     -- 4 input functions                    ; 274   ;
+;     -- 3 input functions                    ; 343   ;
+;     -- <=2 input functions                  ; 29    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 622   ;
+;     -- normal mode                          ; 621   ;
 ;     -- arithmetic mode                      ; 25    ;
 ;                                             ;       ;
 ; Total registers                             ; 340   ;
 ;     -- Dedicated logic registers            ; 340   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 38    ;
+; I/O pins                                    ; 40    ;
 ; Total memory bits                           ; 3328  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 392   ;
-; Total fan-out                               ; 4457  ;
-; Average fan-out                             ; 4.14  ;
+; Total fan-out                               ; 4443  ;
+; Average fan-out                             ; 4.12  ;
 +---------------------------------------------+-------+
 
 
@@ -380,32 +380,31 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_test_bed                                   ; 647 (1)           ; 340 (0)      ; 3328        ; 0            ; 0       ; 0         ; 38   ; 0            ; |g21_test_bed                                                                                                                          ; work         ;
+; |g21_test_bed                                   ; 646 (1)           ; 340 (0)      ; 3328        ; 0            ; 0       ; 0         ; 40   ; 0            ; |g21_test_bed                                                                                                                          ; work         ;
 ;    |g21_7_segment_decoder:inst3|                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_7_segment_decoder:inst3                                                                                              ; work         ;
 ;    |g21_7_segment_decoder:inst4|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_7_segment_decoder:inst4                                                                                              ; work         ;
-;    |g21_Modulo_13:inst2|                        ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2                                                                                                      ; work         ;
-;       |g21_adder:inst1|                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1                                                                                      ; work         ;
-;          |g21_1bitAdder:inst28|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28                                                                 ; work         ;
+;    |g21_Modulo_13:inst2|                        ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2                                                                                                      ; work         ;
+;       |g21_adder:inst1|                         ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1                                                                                      ; work         ;
+;          |g21_1bitAdder:inst26|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26                                                                 ; work         ;
+;          |g21_1bitAdder:inst27|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27                                                                 ; work         ;
+;          |g21_1bitAdder:inst28|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28                                                                 ; work         ;
 ;          |g21_1bitAdder:inst29|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29                                                                 ; work         ;
 ;          |g21_1bitAdder:inst30|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30                                                                 ; work         ;
 ;       |g21_adder:inst4|                         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4                                                                                      ; work         ;
-;          |g21_1bitAdder:inst25|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25                                                                 ; work         ;
-;       |g21_adder:inst5|                         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5                                                                                      ; work         ;
+;          |g21_1bitAdder:inst24|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24                                                                 ; work         ;
+;       |g21_adder:inst5|                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5                                                                                      ; work         ;
 ;          |g21_1bitAdder:inst24|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24                                                                 ; work         ;
 ;          |g21_1bitAdder:inst25|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25                                                                 ; work         ;
-;          |g21_1bitAdder:inst26|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26                                                                 ; work         ;
+;          |g21_1bitAdder:inst26|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26                                                                 ; work         ;
 ;          |g21_1bitAdder:inst|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst                                                                   ; work         ;
-;    |g21_SPG:inst|                               ; 34 (6)            ; 22 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst                                                                                                             ; work         ;
-;       |Equal1_lpm_compare0:inst5|               ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5                                                                                   ; work         ;
-;          |lpm_compare:LPM_COMPARE_component|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                 ; work         ;
-;             |cmpr_6cj:auto_generated|           ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_6cj:auto_generated                         ; work         ;
+;    |g21_SPG:inst|                               ; 30 (8)            ; 22 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst                                                                                                             ; work         ;
 ;       |SPG_lpm_counter:inst2|                   ; 22 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2                                                                                       ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|    ; 22 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component                                                     ; work         ;
 ;             |cntr_30k:auto_generated|           ; 22 (22)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_30k:auto_generated                             ; work         ;
-;    |g21_stack52:inst1|                          ; 584 (0)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1                                                                                                        ; work         ;
-;       |MODE_Select_lpm_mux:inst118|             ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118                                                                            ; work         ;
-;          |lpm_mux:LPM_MUX_component|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component                                                  ; work         ;
-;             |mux_j4e:auto_generated|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated                           ; work         ;
+;    |g21_stack52:inst1|                          ; 585 (0)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1                                                                                                        ; work         ;
+;       |MODE_Select_lpm_mux:inst118|             ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118                                                                            ; work         ;
+;          |lpm_mux:LPM_MUX_component|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component                                                  ; work         ;
+;             |mux_j4e:auto_generated|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated                           ; work         ;
 ;       |StackCounter_lpm_counter:inst124|        ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124                                                                       ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|    ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                     ; work         ;
 ;             |cntr_p5j:auto_generated|           ; 9 (9)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated             ; work         ;
@@ -415,9 +414,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |busmux:inst103|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst103                                                                                         ; work         ;
 ;          |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst103|lpm_mux:$00000                                                                          ; work         ;
 ;             |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst103|lpm_mux:$00000|mux_qmc:auto_generated                                                   ; work         ;
-;       |busmux:inst119|                          ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119                                                                                         ; work         ;
-;          |lpm_mux:$00000|                       ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119|lpm_mux:$00000                                                                          ; work         ;
-;             |mux_5oc:auto_generated|            ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                   ; work         ;
+;       |busmux:inst119|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119                                                                                         ; work         ;
+;          |lpm_mux:$00000|                       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119|lpm_mux:$00000                                                                          ; work         ;
+;             |mux_5oc:auto_generated|            ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                   ; work         ;
 ;       |busmux:inst11|                           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst11                                                                                          ; work         ;
 ;          |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst11|lpm_mux:$00000                                                                           ; work         ;
 ;             |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst11|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -568,7 +567,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |busmux:inst9|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst9                                                                                           ; work         ;
 ;          |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst9|lpm_mux:$00000                                                                            ; work         ;
 ;             |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|busmux:inst9|lpm_mux:$00000|mux_qmc:auto_generated                                                     ; work         ;
-;       |g21_comp7:inst125|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_comp7:inst125                                                                                      ; work         ;
+;       |g21_comp7:inst125|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_comp7:inst125                                                                                      ; work         ;
+;       |g21_comp7:inst128|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_comp7:inst128                                                                                      ; work         ;
 ;       |g21_pop_enable:inst104|                  ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104                                                                                 ; work         ;
 ;          |g21_lab2_rom1:R1|                     ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104|g21_lab2_rom1:R1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component                                ; work         ;
@@ -625,9 +625,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_ff:inst96|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_ff:inst96                                                                                          ; work         ;
 ;       |lpm_ff:inst98|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_ff:inst98                                                                                          ; work         ;
 ;       |lpm_ff:inst|                             ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_ff:inst                                                                                            ; work         ;
-;       |lpm_mux0:inst114|                        ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114                                                                                       ; work         ;
-;          |lpm_mux:LPM_MUX_component|            ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                             ; work         ;
-;             |mux_v4e:auto_generated|            ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ; work         ;
+;       |lpm_mux0:inst114|                        ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114                                                                                       ; work         ;
+;          |lpm_mux:LPM_MUX_component|            ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                             ; work         ;
+;             |mux_v4e:auto_generated|            ; 247 (247)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2496,9 +2496,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name     ; Value            ; Type                                                             ;
 +--------------------+------------------+------------------------------------------------------------------+
 ; LPM_WIDTH          ; 6                ; Signed Integer                                                   ;
-; LPM_CVALUE         ; 15               ; Signed Integer                                                   ;
+; LPM_CVALUE         ; 31               ; Signed Integer                                                   ;
 ; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                          ;
-; CBXI_PARAMETER     ; lpm_constant_eh6 ; Untyped                                                          ;
+; CBXI_PARAMETER     ; lpm_constant_fh6 ; Untyped                                                          ;
 +--------------------+------------------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2538,7 +2538,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 28 18:48:36 2017
+    Info: Processing started: Sun Oct 29 12:13:36 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2641,12 +2641,6 @@ Info (12133): Instantiated megafunction "g21_SPG:inst|Equal1_lpm_compare0:inst5|
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_6cj.tdf
     Info (12023): Found entity 1: cmpr_6cj
 Info (12128): Elaborating entity "cmpr_6cj" for hierarchy "g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_6cj:auto_generated"
-Info (12128): Elaborating entity "g21_7_segment_decoder" for hierarchy "g21_7_segment_decoder:inst3"
-Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: g21_Modulo_13
-Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst2"
-Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_Modulo_13:inst2|g21_adder:inst1"
-Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30"
 Info (12128): Elaborating entity "g21_stack52" for hierarchy "g21_stack52:inst1"
 Warning (275083): Bus "q10[5..0]" found using same base name as "q1", which might lead to a name conflict.
 Warning (275083): Bus "q11[5..0]" found using same base name as "q1", which might lead to a name conflict.
@@ -3499,24 +3493,30 @@ Info (12128): Elaborating entity "BUSMUX" for hierarchy "g21_stack52:inst1|BUSMU
 Info (12130): Elaborated megafunction instantiation "g21_stack52:inst1|BUSMUX:inst103"
 Info (12133): Instantiated megafunction "g21_stack52:inst1|BUSMUX:inst103" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
+Info (12128): Elaborating entity "g21_7_segment_decoder" for hierarchy "g21_7_segment_decoder:inst3"
+Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: g21_Modulo_13
+Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:inst2"
+Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_Modulo_13:inst2|g21_adder:inst1"
+Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30"
 Info (12128): Elaborating entity "lpm_constantdata" for hierarchy "lpm_constantdata:inst99"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component"
 Info (12130): Elaborated megafunction instantiation "lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component"
 Info (12133): Instantiated megafunction "lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component" with the following parameter:
-    Info (12134): Parameter "lpm_cvalue" = "15"
+    Info (12134): Parameter "lpm_cvalue" = "31"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "6"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 737 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 738 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 647 logic cells
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 646 logic cells
     Info (21064): Implemented 52 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 264 warnings
-    Info: Peak virtual memory: 591 megabytes
-    Info: Processing ended: Sat Oct 28 18:48:44 2017
+    Info: Peak virtual memory: 583 megabytes
+    Info: Processing ended: Sun Oct 29 12:13:44 2017
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 

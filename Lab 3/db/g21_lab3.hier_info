@@ -3,13 +3,7 @@ enable <= g21_SPG:inst.SPG_ENABLE
 pushButton => g21_SPG:inst.SwitchEnable
 CLK => g21_SPG:inst.CLK
 CLK => g21_stack52:inst1.CLK
-LEDfloor[0] <= g21_7_segment_decoder:inst3.segments_out[0]
-LEDfloor[1] <= g21_7_segment_decoder:inst3.segments_out[1]
-LEDfloor[2] <= g21_7_segment_decoder:inst3.segments_out[2]
-LEDfloor[3] <= g21_7_segment_decoder:inst3.segments_out[3]
-LEDfloor[4] <= g21_7_segment_decoder:inst3.segments_out[4]
-LEDfloor[5] <= g21_7_segment_decoder:inst3.segments_out[5]
-LEDfloor[6] <= g21_7_segment_decoder:inst3.segments_out[6]
+EMPTY <= g21_stack52:inst1.EMPTY
 RSTButton => inst6.IN0
 dipswitch2[0] => g21_stack52:inst1.ADDR[0]
 dipswitch2[1] => g21_stack52:inst1.ADDR[1]
@@ -19,6 +13,14 @@ dipswitch2[4] => g21_stack52:inst1.ADDR[4]
 dipswitch2[5] => g21_stack52:inst1.ADDR[5]
 dipswitch1[0] => g21_stack52:inst1.MODE[0]
 dipswitch1[1] => g21_stack52:inst1.MODE[1]
+FULL <= g21_stack52:inst1.FULL
+LEDfloor[0] <= g21_7_segment_decoder:inst3.segments_out[0]
+LEDfloor[1] <= g21_7_segment_decoder:inst3.segments_out[1]
+LEDfloor[2] <= g21_7_segment_decoder:inst3.segments_out[2]
+LEDfloor[3] <= g21_7_segment_decoder:inst3.segments_out[3]
+LEDfloor[4] <= g21_7_segment_decoder:inst3.segments_out[4]
+LEDfloor[5] <= g21_7_segment_decoder:inst3.segments_out[5]
+LEDfloor[6] <= g21_7_segment_decoder:inst3.segments_out[6]
 LEDmod[0] <= g21_7_segment_decoder:inst4.segments_out[0]
 LEDmod[1] <= g21_7_segment_decoder:inst4.segments_out[1]
 LEDmod[2] <= g21_7_segment_decoder:inst4.segments_out[2]
@@ -531,659 +533,6 @@ datab[19] => _.IN1
 datab[19] => op_1.IN3
 datab[20] => _.IN1
 datab[20] => op_1.IN1
-
-
-|g21_test_bed|g21_7_segment_decoder:inst3
-code[0] => Mux0.IN35
-code[0] => Mux1.IN35
-code[0] => Mux2.IN35
-code[0] => Mux3.IN35
-code[0] => Mux4.IN35
-code[0] => Mux5.IN35
-code[0] => Mux6.IN35
-code[1] => Mux0.IN34
-code[1] => Mux1.IN34
-code[1] => Mux2.IN34
-code[1] => Mux3.IN34
-code[1] => Mux4.IN34
-code[1] => Mux5.IN34
-code[1] => Mux6.IN34
-code[2] => Mux0.IN33
-code[2] => Mux1.IN33
-code[2] => Mux2.IN33
-code[2] => Mux3.IN33
-code[2] => Mux4.IN33
-code[2] => Mux5.IN33
-code[2] => Mux6.IN33
-code[3] => Mux0.IN32
-code[3] => Mux1.IN32
-code[3] => Mux2.IN32
-code[3] => Mux3.IN32
-code[3] => Mux4.IN32
-code[3] => Mux5.IN32
-code[3] => Mux6.IN32
-mode => Mux0.IN36
-mode => Mux1.IN36
-mode => Mux2.IN36
-mode => Mux3.IN36
-mode => Mux4.IN36
-mode => Mux5.IN36
-mode => Mux6.IN36
-segments_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2
-floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
-floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
-floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => g21_adder:inst1.in_1[2]
-A[0] => g21_adder:inst1.in_2[0]
-A[0] => g21_adder:inst5.in_1[0]
-A[1] => g21_adder:inst1.in_1[3]
-A[1] => g21_adder:inst1.in_2[1]
-A[1] => g21_adder:inst5.in_1[1]
-A[2] => g21_adder:inst1.in_1[4]
-A[2] => g21_adder:inst1.in_2[2]
-A[2] => g21_adder:inst5.in_1[2]
-A[3] => g21_adder:inst1.in_1[5]
-A[3] => g21_adder:inst1.in_2[3]
-A[3] => g21_adder:inst5.in_1[3]
-A[4] => g21_adder:inst1.in_1[6]
-A[4] => g21_adder:inst1.in_2[4]
-A[4] => g21_adder:inst5.in_1[4]
-A[5] => g21_adder:inst1.in_1[7]
-A[5] => g21_adder:inst1.in_2[5]
-A[5] => g21_adder:inst5.in_1[5]
-modout[0] <= modA[0].DB_MAX_OUTPUT_PORT_TYPE
-modout[1] <= modA[1].DB_MAX_OUTPUT_PORT_TYPE
-modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
-modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_test_bed|g21_stack52:inst1
@@ -14237,22 +13586,657 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|lpm_constantdata:inst99
-result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
-result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
-result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
-result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
-result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
-result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
+|g21_test_bed|g21_7_segment_decoder:inst3
+code[0] => Mux0.IN35
+code[0] => Mux1.IN35
+code[0] => Mux2.IN35
+code[0] => Mux3.IN35
+code[0] => Mux4.IN35
+code[0] => Mux5.IN35
+code[0] => Mux6.IN35
+code[1] => Mux0.IN34
+code[1] => Mux1.IN34
+code[1] => Mux2.IN34
+code[1] => Mux3.IN34
+code[1] => Mux4.IN34
+code[1] => Mux5.IN34
+code[1] => Mux6.IN34
+code[2] => Mux0.IN33
+code[2] => Mux1.IN33
+code[2] => Mux2.IN33
+code[2] => Mux3.IN33
+code[2] => Mux4.IN33
+code[2] => Mux5.IN33
+code[2] => Mux6.IN33
+code[3] => Mux0.IN32
+code[3] => Mux1.IN32
+code[3] => Mux2.IN32
+code[3] => Mux3.IN32
+code[3] => Mux4.IN32
+code[3] => Mux5.IN32
+code[3] => Mux6.IN32
+mode => Mux0.IN36
+mode => Mux1.IN36
+mode => Mux2.IN36
+mode => Mux3.IN36
+mode => Mux4.IN36
+mode => Mux5.IN36
+mode => Mux6.IN36
+segments_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
-result[0] <= <VCC>
-result[1] <= <VCC>
-result[2] <= <VCC>
-result[3] <= <VCC>
-result[4] <= <GND>
-result[5] <= <GND>
+|g21_test_bed|g21_Modulo_13:inst2
+floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
+floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
+floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => g21_adder:inst1.in_1[2]
+A[0] => g21_adder:inst1.in_2[0]
+A[0] => g21_adder:inst5.in_1[0]
+A[1] => g21_adder:inst1.in_1[3]
+A[1] => g21_adder:inst1.in_2[1]
+A[1] => g21_adder:inst5.in_1[1]
+A[2] => g21_adder:inst1.in_1[4]
+A[2] => g21_adder:inst1.in_2[2]
+A[2] => g21_adder:inst5.in_1[2]
+A[3] => g21_adder:inst1.in_1[5]
+A[3] => g21_adder:inst1.in_2[3]
+A[3] => g21_adder:inst5.in_1[3]
+A[4] => g21_adder:inst1.in_1[6]
+A[4] => g21_adder:inst1.in_2[4]
+A[4] => g21_adder:inst5.in_1[4]
+A[5] => g21_adder:inst1.in_1[7]
+A[5] => g21_adder:inst1.in_2[5]
+A[5] => g21_adder:inst5.in_1[5]
+modout[0] <= modA[0].DB_MAX_OUTPUT_PORT_TYPE
+modout[1] <= modA[1].DB_MAX_OUTPUT_PORT_TYPE
+modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
+modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_test_bed|g21_7_segment_decoder:inst4
@@ -14298,5 +14282,23 @@ segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_test_bed|lpm_constantdata:inst99
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
+
+
+|g21_test_bed|lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
 
 

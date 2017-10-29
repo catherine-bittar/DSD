@@ -31,7 +31,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|LPM_FF:inst48|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_394.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|LPM_FF:inst66|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_694.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|LPM_FF:inst84|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ea4.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_eh6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_fh6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|BUSMUX:inst79|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|BUSMUX:inst97|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst1|LPM_FF:inst68|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_794.tdf"/>

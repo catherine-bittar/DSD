@@ -43,18 +43,18 @@
 # ERROR! Vector Mismatch for output port LEDmod[6] :: @time = 1000000.000 ps
 #      Expected value = 0000000
 #      Real value = 1000000
-# ERROR! Vector Mismatch for output port LEDfloor[0] :: @time = 1090000.000 ps
+# ERROR! Vector Mismatch for output port LEDfloor[0] :: @time = 1270000.000 ps
 #      Expected value = 0000000
 #      Real value = 0000011
-# ERROR! Vector Mismatch for output port LEDfloor[1] :: @time = 1090000.000 ps
+# ERROR! Vector Mismatch for output port LEDfloor[1] :: @time = 1270000.000 ps
 #      Expected value = 0000000
 #      Real value = 0000011
-# ERROR! Vector Mismatch for output port LEDmod[2] :: @time = 1090000.000 ps
+# ERROR! Vector Mismatch for output port LEDmod[2] :: @time = 1270000.000 ps
 #      Expected value = 0000000
 #      Real value = 0100100
-# ERROR! Vector Mismatch for output port LEDmod[5] :: @time = 1090000.000 ps
+# ERROR! Vector Mismatch for output port LEDmod[5] :: @time = 1270000.000 ps
 #      Expected value = 0000000
 #      Real value = 0100100
 #           6 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab3.vt(668)
+# ** Note: $finish    : g21_lab3.vt(680)
 #    Time: 2 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out

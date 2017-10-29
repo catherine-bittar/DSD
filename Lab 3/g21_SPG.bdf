@@ -328,7 +328,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=2000000" (rect 20 57 115 71)(font "Arial" (font_size 8)))
+		(text "datab[]=2" (rect 20 57 73 71)(font "Arial" (font_size 8)))
 		(text "unsigned compare" (rect 36 26 125 38)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))

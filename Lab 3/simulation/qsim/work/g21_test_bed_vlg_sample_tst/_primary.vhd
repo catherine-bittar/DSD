@@ -6,6 +6,7 @@ entity g21_test_bed_vlg_sample_tst is
         dipswitch1      : in     vl_logic_vector(1 downto 0);
         dipswitch2      : in     vl_logic_vector(5 downto 0);
         pushButton      : in     vl_logic;
+        RSTButton       : in     vl_logic;
         sampler_tx      : out    vl_logic
     );
 end g21_test_bed_vlg_sample_tst;
