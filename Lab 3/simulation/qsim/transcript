@@ -17,9 +17,6 @@
 # Loading work.g21_test_bed_vlg_vec_tst
 # Loading work.g21_test_bed
 # Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
@@ -28,6 +25,9 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.g21_test_bed_vlg_sample_tst
 # Loading work.g21_test_bed_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
@@ -43,12 +43,6 @@
 # ERROR! Vector Mismatch for output port LEDmod[6] :: @time = 1000000.000 ps
 #      Expected value = 0000000
 #      Real value = 1000000
-# ERROR! Vector Mismatch for output port LEDfloor[2] :: @time = 1090000.000 ps
-#      Expected value = 0000000
-#      Real value = 0100100
-# ERROR! Vector Mismatch for output port LEDfloor[5] :: @time = 1090000.000 ps
-#      Expected value = 0000000
-#      Real value = 0100100
-#           4 mismatched vectors : Simulation failed !
+#           2 mismatched vectors : Simulation failed !
 # ** Note: $finish    : g21_lab3.vt(680)
 #    Time: 2 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out

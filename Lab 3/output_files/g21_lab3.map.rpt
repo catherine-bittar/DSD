@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Mon Oct 30 14:50:31 2017
+Mon Oct 30 16:53:21 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -165,13 +165,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 30 14:50:31 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 30 16:53:21 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 651                                             ;
-;     Total combinational functions  ; 651                                             ;
+; Total logic elements               ; 650                                             ;
+;     Total combinational functions  ; 650                                             ;
 ;     Dedicated logic registers      ; 340                                             ;
 ; Total registers                    ; 340                                             ;
 ; Total pins                         ; 40                                              ;
@@ -349,16 +349,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 651   ;
+; Estimated Total logic elements              ; 650   ;
 ;                                             ;       ;
-; Total combinational functions               ; 651   ;
+; Total combinational functions               ; 650   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 278   ;
-;     -- 3 input functions                    ; 344   ;
-;     -- <=2 input functions                  ; 29    ;
+;     -- 4 input functions                    ; 277   ;
+;     -- 3 input functions                    ; 342   ;
+;     -- <=2 input functions                  ; 31    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 626   ;
+;     -- normal mode                          ; 625   ;
 ;     -- arithmetic mode                      ; 25    ;
 ;                                             ;       ;
 ; Total registers                             ; 340   ;
@@ -370,7 +370,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 392   ;
-; Total fan-out                               ; 4462  ;
+; Total fan-out                               ; 4456  ;
 ; Average fan-out                             ; 4.12  ;
 +---------------------------------------------+-------+
 
@@ -380,7 +380,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_test_bed                                   ; 651 (1)           ; 340 (0)      ; 3328        ; 0            ; 0       ; 0         ; 40   ; 0            ; |g21_test_bed                                                                                                                          ; work         ;
+; |g21_test_bed                                   ; 650 (1)           ; 340 (0)      ; 3328        ; 0            ; 0       ; 0         ; 40   ; 0            ; |g21_test_bed                                                                                                                          ; work         ;
 ;    |g21_7_segment_decoder:inst3|                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_7_segment_decoder:inst3                                                                                              ; work         ;
 ;    |g21_7_segment_decoder:inst4|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_7_segment_decoder:inst4                                                                                              ; work         ;
 ;    |g21_Modulo_13:inst2|                        ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2                                                                                                      ; work         ;
@@ -397,13 +397,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |g21_1bitAdder:inst25|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25                                                                 ; work         ;
 ;          |g21_1bitAdder:inst26|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26                                                                 ; work         ;
 ;          |g21_1bitAdder:inst|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst                                                                   ; work         ;
-;    |g21_SPG:inst|                               ; 35 (5)            ; 22 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst                                                                                                             ; work         ;
-;       |Equal1_lpm_compare0:inst5|               ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5                                                                                   ; work         ;
-;          |lpm_compare:LPM_COMPARE_component|    ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                 ; work         ;
-;             |cmpr_6cj:auto_generated|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_6cj:auto_generated                         ; work         ;
-;       |SPG_lpm_compare:inst3|                   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3                                                                                       ; work         ;
-;          |lpm_compare:LPM_COMPARE_component|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component                                                     ; work         ;
-;             |cmpr_69j:auto_generated|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_69j:auto_generated                             ; work         ;
+;    |g21_SPG:inst|                               ; 34 (6)            ; 22 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst                                                                                                             ; work         ;
+;       |Equal1_lpm_compare0:inst5|               ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5                                                                                   ; work         ;
+;          |lpm_compare:LPM_COMPARE_component|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                 ; work         ;
+;             |cmpr_6cj:auto_generated|           ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_6cj:auto_generated                         ; work         ;
 ;       |SPG_lpm_counter:inst2|                   ; 22 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2                                                                                       ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|    ; 22 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component                                                     ; work         ;
 ;             |cntr_30k:auto_generated|           ; 22 (22)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_30k:auto_generated                             ; work         ;
@@ -2534,7 +2531,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -2544,7 +2541,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 30 14:50:23 2017
+    Info: Processing started: Mon Oct 30 16:53:11 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -2614,6 +2611,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file equal1_
 Info (12021): Found 2 design units, including 1 entities, in source file test_lpm_mux3.vhd
     Info (12022): Found design unit 1: test_lpm_mux3-SYN
     Info (12023): Found entity 1: TEST_lpm_mux3
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_compare1.vhd
+    Info (12022): Found design unit 1: lpm_compare1-SYN
+    Info (12023): Found entity 1: lpm_compare1
 Info (12127): Elaborating entity "g21_test_bed" for the top level hierarchy
 Warning (275008): Primitive "VCC" of instance "inst7" not used
 Info (12128): Elaborating entity "g21_SPG" for hierarchy "g21_SPG:inst"
@@ -3513,15 +3513,15 @@ Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_Modulo_13:inst2|
 Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 743 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 742 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 651 logic cells
+    Info (21061): Implemented 650 logic cells
     Info (21064): Implemented 52 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 259 warnings
-    Info: Peak virtual memory: 575 megabytes
-    Info: Processing ended: Mon Oct 30 14:50:31 2017
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 579 megabytes
+    Info: Processing ended: Mon Oct 30 16:53:21 2017
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:07
 
 

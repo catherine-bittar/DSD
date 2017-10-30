@@ -703,8 +703,14 @@ TRANSITION_LIST("pushButton")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 100.0;
+		NODE
+		{
+			REPEAT = 9;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+		}
+		LEVEL 0 FOR 100.0;
 	}
 }
 

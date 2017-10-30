@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/30/2017 14:49:30"
+// Generated on "10/30/2017 16:53:46"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g21_test_bed
 // 
@@ -721,7 +721,14 @@ g21_test_bed i1 (
 initial
 begin
 	pushButton = 1'b1;
-	pushButton = #1000000 1'b0;
+	# 100000;
+	repeat(9)
+	begin
+		pushButton = 1'b0;
+		pushButton = #100000 1'b1;
+		# 100000;
+	end
+	pushButton = 1'b0;
 end 
 
 // RSTButton
