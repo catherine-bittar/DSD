@@ -219,7 +219,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 192 72 400 168)
+	(rect 192 80 400 176)
 	(text "g21_SPG" (rect 5 0 58 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -498,16 +498,8 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 104 120)
-	(pt 104 224)
-)
-(connector
 	(pt 32 120)
 	(pt 104 120)
-)
-(connector
-	(pt 104 120)
-	(pt 192 120)
 )
 (connector
 	(pt 1160 152)
@@ -593,19 +585,6 @@ applicable agreement for further details.
 	(pt 160 88)
 )
 (connector
-	(pt 160 88)
-	(pt 160 104)
-)
-(connector
-	(pt 160 104)
-	(pt 192 104)
-)
-(connector
-	(pt 496 104)
-	(pt 496 32)
-	(bus)
-)
-(connector
 	(pt 496 32)
 	(pt 584 32)
 	(bus)
@@ -669,11 +648,6 @@ applicable agreement for further details.
 (connector
 	(pt 456 440)
 	(pt 456 168)
-)
-(connector
-	(pt 400 104)
-	(pt 496 104)
-	(bus)
 )
 (connector
 	(pt 496 104)
@@ -746,6 +720,41 @@ applicable agreement for further details.
 	(pt 784 136)
 	(bus)
 )
-(junction (pt 104 120))
+(connector
+	(pt 104 128)
+	(pt 192 128)
+)
+(connector
+	(pt 160 88)
+	(pt 160 112)
+)
+(connector
+	(pt 160 112)
+	(pt 192 112)
+)
+(connector
+	(pt 496 112)
+	(pt 400 112)
+	(bus)
+)
+(connector
+	(pt 104 120)
+	(pt 104 128)
+)
+(connector
+	(pt 104 128)
+	(pt 104 224)
+)
+(connector
+	(pt 496 32)
+	(pt 496 104)
+	(bus)
+)
+(connector
+	(pt 496 104)
+	(pt 496 112)
+	(bus)
+)
 (junction (pt 496 104))
 (junction (pt 784 136))
+(junction (pt 104 128))
