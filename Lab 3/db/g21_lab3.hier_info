@@ -1,541 +1,4 @@
-|g21_test_bed
-enable <= g21_SPG:inst.SPG_ENABLE
-pushButton => g21_SPG:inst.SwitchEnable
-CLK => g21_SPG:inst.CLK
-CLK => g21_stack52:inst1.CLK
-EMPTY <= g21_stack52:inst1.EMPTY
-RSTButton => inst6.IN0
-dipswitch2[0] => g21_stack52:inst1.ADDR[0]
-dipswitch2[1] => g21_stack52:inst1.ADDR[1]
-dipswitch2[2] => g21_stack52:inst1.ADDR[2]
-dipswitch2[3] => g21_stack52:inst1.ADDR[3]
-dipswitch2[4] => g21_stack52:inst1.ADDR[4]
-dipswitch2[5] => g21_stack52:inst1.ADDR[5]
-dipswitch1[0] => g21_stack52:inst1.MODE[0]
-dipswitch1[1] => g21_stack52:inst1.MODE[1]
-FULL <= g21_stack52:inst1.FULL
-LEDfloor[0] <= g21_7_segment_decoder:inst3.segments_out[0]
-LEDfloor[1] <= g21_7_segment_decoder:inst3.segments_out[1]
-LEDfloor[2] <= g21_7_segment_decoder:inst3.segments_out[2]
-LEDfloor[3] <= g21_7_segment_decoder:inst3.segments_out[3]
-LEDfloor[4] <= g21_7_segment_decoder:inst3.segments_out[4]
-LEDfloor[5] <= g21_7_segment_decoder:inst3.segments_out[5]
-LEDfloor[6] <= g21_7_segment_decoder:inst3.segments_out[6]
-LEDmod[0] <= g21_7_segment_decoder:inst4.segments_out[0]
-LEDmod[1] <= g21_7_segment_decoder:inst4.segments_out[1]
-LEDmod[2] <= g21_7_segment_decoder:inst4.segments_out[2]
-LEDmod[3] <= g21_7_segment_decoder:inst4.segments_out[3]
-LEDmod[4] <= g21_7_segment_decoder:inst4.segments_out[4]
-LEDmod[5] <= g21_7_segment_decoder:inst4.segments_out[5]
-LEDmod[6] <= g21_7_segment_decoder:inst4.segments_out[6]
-NUM[0] <= g21_stack52:inst1.NUM[0]
-NUM[1] <= g21_stack52:inst1.NUM[1]
-NUM[2] <= g21_stack52:inst1.NUM[2]
-NUM[3] <= g21_stack52:inst1.NUM[3]
-NUM[4] <= g21_stack52:inst1.NUM[4]
-NUM[5] <= g21_stack52:inst1.NUM[5]
-VALUE[0] <= g21_stack52:inst1.VALUE[0]
-VALUE[1] <= g21_stack52:inst1.VALUE[1]
-VALUE[2] <= g21_stack52:inst1.VALUE[2]
-VALUE[3] <= g21_stack52:inst1.VALUE[3]
-VALUE[4] <= g21_stack52:inst1.VALUE[4]
-VALUE[5] <= g21_stack52:inst1.VALUE[5]
-
-
-|g21_test_bed|g21_SPG:inst
-SPG_ENABLE <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK => SPG_lpm_counter:inst2.clock
-CLK => inst.CLK
-SwitchEnable => inst1.IN0
-SwitchEnable => inst.IN0
-counter[0] <= SPG_lpm_counter:inst2.q[0]
-counter[1] <= SPG_lpm_counter:inst2.q[1]
-counter[2] <= SPG_lpm_counter:inst2.q[2]
-counter[3] <= SPG_lpm_counter:inst2.q[3]
-counter[4] <= SPG_lpm_counter:inst2.q[4]
-counter[5] <= SPG_lpm_counter:inst2.q[5]
-counter[6] <= SPG_lpm_counter:inst2.q[6]
-counter[7] <= SPG_lpm_counter:inst2.q[7]
-counter[8] <= SPG_lpm_counter:inst2.q[8]
-counter[9] <= SPG_lpm_counter:inst2.q[9]
-counter[10] <= SPG_lpm_counter:inst2.q[10]
-counter[11] <= SPG_lpm_counter:inst2.q[11]
-counter[12] <= SPG_lpm_counter:inst2.q[12]
-counter[13] <= SPG_lpm_counter:inst2.q[13]
-counter[14] <= SPG_lpm_counter:inst2.q[14]
-counter[15] <= SPG_lpm_counter:inst2.q[15]
-counter[16] <= SPG_lpm_counter:inst2.q[16]
-counter[17] <= SPG_lpm_counter:inst2.q[17]
-counter[18] <= SPG_lpm_counter:inst2.q[18]
-counter[19] <= SPG_lpm_counter:inst2.q[19]
-counter[20] <= SPG_lpm_counter:inst2.q[20]
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-dataa[5] => lpm_compare:LPM_COMPARE_component.dataa[5]
-dataa[6] => lpm_compare:LPM_COMPARE_component.dataa[6]
-dataa[7] => lpm_compare:LPM_COMPARE_component.dataa[7]
-dataa[8] => lpm_compare:LPM_COMPARE_component.dataa[8]
-dataa[9] => lpm_compare:LPM_COMPARE_component.dataa[9]
-dataa[10] => lpm_compare:LPM_COMPARE_component.dataa[10]
-dataa[11] => lpm_compare:LPM_COMPARE_component.dataa[11]
-dataa[12] => lpm_compare:LPM_COMPARE_component.dataa[12]
-dataa[13] => lpm_compare:LPM_COMPARE_component.dataa[13]
-dataa[14] => lpm_compare:LPM_COMPARE_component.dataa[14]
-dataa[15] => lpm_compare:LPM_COMPARE_component.dataa[15]
-dataa[16] => lpm_compare:LPM_COMPARE_component.dataa[16]
-dataa[17] => lpm_compare:LPM_COMPARE_component.dataa[17]
-dataa[18] => lpm_compare:LPM_COMPARE_component.dataa[18]
-dataa[19] => lpm_compare:LPM_COMPARE_component.dataa[19]
-dataa[20] => lpm_compare:LPM_COMPARE_component.dataa[20]
-alb <= lpm_compare:LPM_COMPARE_component.alb
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_69j:auto_generated.dataa[0]
-dataa[1] => cmpr_69j:auto_generated.dataa[1]
-dataa[2] => cmpr_69j:auto_generated.dataa[2]
-dataa[3] => cmpr_69j:auto_generated.dataa[3]
-dataa[4] => cmpr_69j:auto_generated.dataa[4]
-dataa[5] => cmpr_69j:auto_generated.dataa[5]
-dataa[6] => cmpr_69j:auto_generated.dataa[6]
-dataa[7] => cmpr_69j:auto_generated.dataa[7]
-dataa[8] => cmpr_69j:auto_generated.dataa[8]
-dataa[9] => cmpr_69j:auto_generated.dataa[9]
-dataa[10] => cmpr_69j:auto_generated.dataa[10]
-dataa[11] => cmpr_69j:auto_generated.dataa[11]
-dataa[12] => cmpr_69j:auto_generated.dataa[12]
-dataa[13] => cmpr_69j:auto_generated.dataa[13]
-dataa[14] => cmpr_69j:auto_generated.dataa[14]
-dataa[15] => cmpr_69j:auto_generated.dataa[15]
-dataa[16] => cmpr_69j:auto_generated.dataa[16]
-dataa[17] => cmpr_69j:auto_generated.dataa[17]
-dataa[18] => cmpr_69j:auto_generated.dataa[18]
-dataa[19] => cmpr_69j:auto_generated.dataa[19]
-dataa[20] => cmpr_69j:auto_generated.dataa[20]
-datab[0] => cmpr_69j:auto_generated.datab[0]
-datab[1] => cmpr_69j:auto_generated.datab[1]
-datab[2] => cmpr_69j:auto_generated.datab[2]
-datab[3] => cmpr_69j:auto_generated.datab[3]
-datab[4] => cmpr_69j:auto_generated.datab[4]
-datab[5] => cmpr_69j:auto_generated.datab[5]
-datab[6] => cmpr_69j:auto_generated.datab[6]
-datab[7] => cmpr_69j:auto_generated.datab[7]
-datab[8] => cmpr_69j:auto_generated.datab[8]
-datab[9] => cmpr_69j:auto_generated.datab[9]
-datab[10] => cmpr_69j:auto_generated.datab[10]
-datab[11] => cmpr_69j:auto_generated.datab[11]
-datab[12] => cmpr_69j:auto_generated.datab[12]
-datab[13] => cmpr_69j:auto_generated.datab[13]
-datab[14] => cmpr_69j:auto_generated.datab[14]
-datab[15] => cmpr_69j:auto_generated.datab[15]
-datab[16] => cmpr_69j:auto_generated.datab[16]
-datab[17] => cmpr_69j:auto_generated.datab[17]
-datab[18] => cmpr_69j:auto_generated.datab[18]
-datab[19] => cmpr_69j:auto_generated.datab[19]
-datab[20] => cmpr_69j:auto_generated.datab[20]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= cmpr_69j:auto_generated.alb
-aeb <= <GND>
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_69j:auto_generated
-alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => op_1.IN41
-dataa[1] => op_1.IN39
-dataa[2] => op_1.IN37
-dataa[3] => op_1.IN35
-dataa[4] => op_1.IN33
-dataa[5] => op_1.IN31
-dataa[6] => op_1.IN29
-dataa[7] => op_1.IN27
-dataa[8] => op_1.IN25
-dataa[9] => op_1.IN23
-dataa[10] => op_1.IN21
-dataa[11] => op_1.IN19
-dataa[12] => op_1.IN17
-dataa[13] => op_1.IN15
-dataa[14] => op_1.IN13
-dataa[15] => op_1.IN11
-dataa[16] => op_1.IN9
-dataa[17] => op_1.IN7
-dataa[18] => op_1.IN5
-dataa[19] => op_1.IN3
-dataa[20] => op_1.IN1
-datab[0] => op_1.IN42
-datab[1] => op_1.IN40
-datab[2] => op_1.IN38
-datab[3] => op_1.IN36
-datab[4] => op_1.IN34
-datab[5] => op_1.IN32
-datab[6] => op_1.IN30
-datab[7] => op_1.IN28
-datab[8] => op_1.IN26
-datab[9] => op_1.IN24
-datab[10] => op_1.IN22
-datab[11] => op_1.IN20
-datab[12] => op_1.IN18
-datab[13] => op_1.IN16
-datab[14] => op_1.IN14
-datab[15] => op_1.IN12
-datab[16] => op_1.IN10
-datab[17] => op_1.IN8
-datab[18] => op_1.IN6
-datab[19] => op_1.IN4
-datab[20] => op_1.IN2
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2
-clock => lpm_counter:LPM_COUNTER_component.clock
-cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
-sset => lpm_counter:LPM_COUNTER_component.sset
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
-q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
-q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
-q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
-q[6] <= lpm_counter:LPM_COUNTER_component.q[6]
-q[7] <= lpm_counter:LPM_COUNTER_component.q[7]
-q[8] <= lpm_counter:LPM_COUNTER_component.q[8]
-q[9] <= lpm_counter:LPM_COUNTER_component.q[9]
-q[10] <= lpm_counter:LPM_COUNTER_component.q[10]
-q[11] <= lpm_counter:LPM_COUNTER_component.q[11]
-q[12] <= lpm_counter:LPM_COUNTER_component.q[12]
-q[13] <= lpm_counter:LPM_COUNTER_component.q[13]
-q[14] <= lpm_counter:LPM_COUNTER_component.q[14]
-q[15] <= lpm_counter:LPM_COUNTER_component.q[15]
-q[16] <= lpm_counter:LPM_COUNTER_component.q[16]
-q[17] <= lpm_counter:LPM_COUNTER_component.q[17]
-q[18] <= lpm_counter:LPM_COUNTER_component.q[18]
-q[19] <= lpm_counter:LPM_COUNTER_component.q[19]
-q[20] <= lpm_counter:LPM_COUNTER_component.q[20]
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
-clock => cntr_30k:auto_generated.clock
-clk_en => ~NO_FANOUT~
-cnt_en => cntr_30k:auto_generated.cnt_en
-updown => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => cntr_30k:auto_generated.sset
-sconst => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-data[0] => ~NO_FANOUT~
-data[1] => ~NO_FANOUT~
-data[2] => ~NO_FANOUT~
-data[3] => ~NO_FANOUT~
-data[4] => ~NO_FANOUT~
-data[5] => ~NO_FANOUT~
-data[6] => ~NO_FANOUT~
-data[7] => ~NO_FANOUT~
-data[8] => ~NO_FANOUT~
-data[9] => ~NO_FANOUT~
-data[10] => ~NO_FANOUT~
-data[11] => ~NO_FANOUT~
-data[12] => ~NO_FANOUT~
-data[13] => ~NO_FANOUT~
-data[14] => ~NO_FANOUT~
-data[15] => ~NO_FANOUT~
-data[16] => ~NO_FANOUT~
-data[17] => ~NO_FANOUT~
-data[18] => ~NO_FANOUT~
-data[19] => ~NO_FANOUT~
-data[20] => ~NO_FANOUT~
-cin => ~NO_FANOUT~
-q[0] <= cntr_30k:auto_generated.q[0]
-q[1] <= cntr_30k:auto_generated.q[1]
-q[2] <= cntr_30k:auto_generated.q[2]
-q[3] <= cntr_30k:auto_generated.q[3]
-q[4] <= cntr_30k:auto_generated.q[4]
-q[5] <= cntr_30k:auto_generated.q[5]
-q[6] <= cntr_30k:auto_generated.q[6]
-q[7] <= cntr_30k:auto_generated.q[7]
-q[8] <= cntr_30k:auto_generated.q[8]
-q[9] <= cntr_30k:auto_generated.q[9]
-q[10] <= cntr_30k:auto_generated.q[10]
-q[11] <= cntr_30k:auto_generated.q[11]
-q[12] <= cntr_30k:auto_generated.q[12]
-q[13] <= cntr_30k:auto_generated.q[13]
-q[14] <= cntr_30k:auto_generated.q[14]
-q[15] <= cntr_30k:auto_generated.q[15]
-q[16] <= cntr_30k:auto_generated.q[16]
-q[17] <= cntr_30k:auto_generated.q[17]
-q[18] <= cntr_30k:auto_generated.q[18]
-q[19] <= cntr_30k:auto_generated.q[19]
-q[20] <= cntr_30k:auto_generated.q[20]
-cout <= <GND>
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
-
-
-|g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_30k:auto_generated
-clock => counter_reg_bit1a[20].CLK
-clock => counter_reg_bit1a[19].CLK
-clock => counter_reg_bit1a[18].CLK
-clock => counter_reg_bit1a[17].CLK
-clock => counter_reg_bit1a[16].CLK
-clock => counter_reg_bit1a[15].CLK
-clock => counter_reg_bit1a[14].CLK
-clock => counter_reg_bit1a[13].CLK
-clock => counter_reg_bit1a[12].CLK
-clock => counter_reg_bit1a[11].CLK
-clock => counter_reg_bit1a[10].CLK
-clock => counter_reg_bit1a[9].CLK
-clock => counter_reg_bit1a[8].CLK
-clock => counter_reg_bit1a[7].CLK
-clock => counter_reg_bit1a[6].CLK
-clock => counter_reg_bit1a[5].CLK
-clock => counter_reg_bit1a[4].CLK
-clock => counter_reg_bit1a[3].CLK
-clock => counter_reg_bit1a[2].CLK
-clock => counter_reg_bit1a[1].CLK
-clock => counter_reg_bit1a[0].CLK
-cnt_en => _.IN1
-q[0] <= counter_reg_bit1a[0].REGOUT
-q[1] <= counter_reg_bit1a[1].REGOUT
-q[2] <= counter_reg_bit1a[2].REGOUT
-q[3] <= counter_reg_bit1a[3].REGOUT
-q[4] <= counter_reg_bit1a[4].REGOUT
-q[5] <= counter_reg_bit1a[5].REGOUT
-q[6] <= counter_reg_bit1a[6].REGOUT
-q[7] <= counter_reg_bit1a[7].REGOUT
-q[8] <= counter_reg_bit1a[8].REGOUT
-q[9] <= counter_reg_bit1a[9].REGOUT
-q[10] <= counter_reg_bit1a[10].REGOUT
-q[11] <= counter_reg_bit1a[11].REGOUT
-q[12] <= counter_reg_bit1a[12].REGOUT
-q[13] <= counter_reg_bit1a[13].REGOUT
-q[14] <= counter_reg_bit1a[14].REGOUT
-q[15] <= counter_reg_bit1a[15].REGOUT
-q[16] <= counter_reg_bit1a[16].REGOUT
-q[17] <= counter_reg_bit1a[17].REGOUT
-q[18] <= counter_reg_bit1a[18].REGOUT
-q[19] <= counter_reg_bit1a[19].REGOUT
-q[20] <= counter_reg_bit1a[20].REGOUT
-sset => _.IN1
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN1
-
-
-|g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-dataa[5] => lpm_compare:LPM_COMPARE_component.dataa[5]
-dataa[6] => lpm_compare:LPM_COMPARE_component.dataa[6]
-dataa[7] => lpm_compare:LPM_COMPARE_component.dataa[7]
-dataa[8] => lpm_compare:LPM_COMPARE_component.dataa[8]
-dataa[9] => lpm_compare:LPM_COMPARE_component.dataa[9]
-dataa[10] => lpm_compare:LPM_COMPARE_component.dataa[10]
-dataa[11] => lpm_compare:LPM_COMPARE_component.dataa[11]
-dataa[12] => lpm_compare:LPM_COMPARE_component.dataa[12]
-dataa[13] => lpm_compare:LPM_COMPARE_component.dataa[13]
-dataa[14] => lpm_compare:LPM_COMPARE_component.dataa[14]
-dataa[15] => lpm_compare:LPM_COMPARE_component.dataa[15]
-dataa[16] => lpm_compare:LPM_COMPARE_component.dataa[16]
-dataa[17] => lpm_compare:LPM_COMPARE_component.dataa[17]
-dataa[18] => lpm_compare:LPM_COMPARE_component.dataa[18]
-dataa[19] => lpm_compare:LPM_COMPARE_component.dataa[19]
-dataa[20] => lpm_compare:LPM_COMPARE_component.dataa[20]
-ageb <= lpm_compare:LPM_COMPARE_component.ageb
-
-
-|g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_6cj:auto_generated.dataa[0]
-dataa[1] => cmpr_6cj:auto_generated.dataa[1]
-dataa[2] => cmpr_6cj:auto_generated.dataa[2]
-dataa[3] => cmpr_6cj:auto_generated.dataa[3]
-dataa[4] => cmpr_6cj:auto_generated.dataa[4]
-dataa[5] => cmpr_6cj:auto_generated.dataa[5]
-dataa[6] => cmpr_6cj:auto_generated.dataa[6]
-dataa[7] => cmpr_6cj:auto_generated.dataa[7]
-dataa[8] => cmpr_6cj:auto_generated.dataa[8]
-dataa[9] => cmpr_6cj:auto_generated.dataa[9]
-dataa[10] => cmpr_6cj:auto_generated.dataa[10]
-dataa[11] => cmpr_6cj:auto_generated.dataa[11]
-dataa[12] => cmpr_6cj:auto_generated.dataa[12]
-dataa[13] => cmpr_6cj:auto_generated.dataa[13]
-dataa[14] => cmpr_6cj:auto_generated.dataa[14]
-dataa[15] => cmpr_6cj:auto_generated.dataa[15]
-dataa[16] => cmpr_6cj:auto_generated.dataa[16]
-dataa[17] => cmpr_6cj:auto_generated.dataa[17]
-dataa[18] => cmpr_6cj:auto_generated.dataa[18]
-dataa[19] => cmpr_6cj:auto_generated.dataa[19]
-dataa[20] => cmpr_6cj:auto_generated.dataa[20]
-datab[0] => cmpr_6cj:auto_generated.datab[0]
-datab[1] => cmpr_6cj:auto_generated.datab[1]
-datab[2] => cmpr_6cj:auto_generated.datab[2]
-datab[3] => cmpr_6cj:auto_generated.datab[3]
-datab[4] => cmpr_6cj:auto_generated.datab[4]
-datab[5] => cmpr_6cj:auto_generated.datab[5]
-datab[6] => cmpr_6cj:auto_generated.datab[6]
-datab[7] => cmpr_6cj:auto_generated.datab[7]
-datab[8] => cmpr_6cj:auto_generated.datab[8]
-datab[9] => cmpr_6cj:auto_generated.datab[9]
-datab[10] => cmpr_6cj:auto_generated.datab[10]
-datab[11] => cmpr_6cj:auto_generated.datab[11]
-datab[12] => cmpr_6cj:auto_generated.datab[12]
-datab[13] => cmpr_6cj:auto_generated.datab[13]
-datab[14] => cmpr_6cj:auto_generated.datab[14]
-datab[15] => cmpr_6cj:auto_generated.datab[15]
-datab[16] => cmpr_6cj:auto_generated.datab[16]
-datab[17] => cmpr_6cj:auto_generated.datab[17]
-datab[18] => cmpr_6cj:auto_generated.datab[18]
-datab[19] => cmpr_6cj:auto_generated.datab[19]
-datab[20] => cmpr_6cj:auto_generated.datab[20]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= <GND>
-aeb <= <GND>
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= cmpr_6cj:auto_generated.ageb
-
-
-|g21_test_bed|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_6cj:auto_generated
-ageb <= ageb.DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => _.IN0
-dataa[0] => op_1.IN42
-dataa[1] => _.IN0
-dataa[1] => op_1.IN40
-dataa[2] => _.IN0
-dataa[2] => op_1.IN38
-dataa[3] => _.IN0
-dataa[3] => op_1.IN36
-dataa[4] => _.IN0
-dataa[4] => op_1.IN34
-dataa[5] => _.IN0
-dataa[5] => op_1.IN32
-dataa[6] => _.IN0
-dataa[6] => op_1.IN30
-dataa[7] => _.IN0
-dataa[7] => op_1.IN28
-dataa[8] => _.IN0
-dataa[8] => op_1.IN26
-dataa[9] => _.IN0
-dataa[9] => op_1.IN24
-dataa[10] => _.IN0
-dataa[10] => op_1.IN22
-dataa[11] => _.IN0
-dataa[11] => op_1.IN20
-dataa[12] => _.IN0
-dataa[12] => op_1.IN18
-dataa[13] => _.IN0
-dataa[13] => op_1.IN16
-dataa[14] => _.IN0
-dataa[14] => op_1.IN14
-dataa[15] => _.IN0
-dataa[15] => op_1.IN12
-dataa[16] => _.IN0
-dataa[16] => op_1.IN10
-dataa[17] => _.IN0
-dataa[17] => op_1.IN8
-dataa[18] => _.IN0
-dataa[18] => op_1.IN6
-dataa[19] => _.IN0
-dataa[19] => op_1.IN4
-dataa[20] => _.IN0
-dataa[20] => op_1.IN2
-datab[0] => _.IN1
-datab[0] => op_1.IN41
-datab[1] => _.IN1
-datab[1] => op_1.IN39
-datab[2] => _.IN1
-datab[2] => op_1.IN37
-datab[3] => _.IN1
-datab[3] => op_1.IN35
-datab[4] => _.IN1
-datab[4] => op_1.IN33
-datab[5] => _.IN1
-datab[5] => op_1.IN31
-datab[6] => _.IN1
-datab[6] => op_1.IN29
-datab[7] => _.IN1
-datab[7] => op_1.IN27
-datab[8] => _.IN1
-datab[8] => op_1.IN25
-datab[9] => _.IN1
-datab[9] => op_1.IN23
-datab[10] => _.IN1
-datab[10] => op_1.IN21
-datab[11] => _.IN1
-datab[11] => op_1.IN19
-datab[12] => _.IN1
-datab[12] => op_1.IN17
-datab[13] => _.IN1
-datab[13] => op_1.IN15
-datab[14] => _.IN1
-datab[14] => op_1.IN13
-datab[15] => _.IN1
-datab[15] => op_1.IN11
-datab[16] => _.IN1
-datab[16] => op_1.IN9
-datab[17] => _.IN1
-datab[17] => op_1.IN7
-datab[18] => _.IN1
-datab[18] => op_1.IN5
-datab[19] => _.IN1
-datab[19] => op_1.IN3
-datab[20] => _.IN1
-datab[20] => op_1.IN1
-
-
-|g21_test_bed|g21_stack52:inst1
+|g21_stack52
 EMPTY <= EMPTY0.DB_MAX_OUTPUT_PORT_TYPE
 NUM[0] <= StackCounter_lpm_counter:inst124.q[0]
 NUM[1] <= StackCounter_lpm_counter:inst124.q[1]
@@ -680,7 +143,7 @@ DATA[4] => BUSMUX:inst1.dataa[4]
 DATA[5] => BUSMUX:inst1.dataa[5]
 
 
-|g21_test_bed|g21_stack52:inst1|g21_comp7:inst125
+|g21_stack52|g21_comp7:inst125
 AeqB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => inst6.IN0
 A[1] => inst5.IN0
@@ -698,7 +161,7 @@ B[5] => inst1.IN1
 B[6] => inst.IN1
 
 
-|g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124
+|g21_stack52|StackCounter_lpm_counter:inst124
 aclr => lpm_counter:LPM_COUNTER_component.aclr
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
@@ -712,7 +175,7 @@ q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
 q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
 
 
-|g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
+|g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
 clock => cntr_p5j:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => cntr_p5j:auto_generated.cnt_en
@@ -757,7 +220,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated
+|g21_stack52|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated
 aclr => counter_reg_bit1a[5].ACLR
 aclr => counter_reg_bit1a[4].ACLR
 aclr => counter_reg_bit1a[3].ACLR
@@ -794,7 +257,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst119
+|g21_stack52|BUSMUX:inst119
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -828,7 +291,7 @@ result[8] <= lpm_mux:$00000.result[8]
 result[9] <= lpm_mux:$00000.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst119|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst119|lpm_mux:$00000
 data[0][0] => mux_5oc:auto_generated.data[0]
 data[0][1] => mux_5oc:auto_generated.data[1]
 data[0][2] => mux_5oc:auto_generated.data[2]
@@ -865,7 +328,7 @@ result[8] <= mux_5oc:auto_generated.result[8]
 result[9] <= mux_5oc:auto_generated.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst119|lpm_mux:$00000|mux_5oc:auto_generated
+|g21_stack52|BUSMUX:inst119|lpm_mux:$00000|mux_5oc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -918,7 +381,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|NOP_lpm_constant:inst106
+|g21_stack52|NOP_lpm_constant:inst106
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
@@ -931,7 +394,7 @@ result[8] <= lpm_constant:LPM_CONSTANT_component.result[8]
 result[9] <= lpm_constant:LPM_CONSTANT_component.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
+|g21_stack52|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -944,7 +407,7 @@ result[8] <= <GND>
 result[9] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118
+|g21_stack52|MODE_Select_lpm_mux:inst118
 data0x[0] => LPM_MUX:LPM_MUX_component.DATA[0][0]
 data0x[1] => LPM_MUX:LPM_MUX_component.DATA[0][1]
 data0x[2] => LPM_MUX:LPM_MUX_component.DATA[0][2]
@@ -999,7 +462,7 @@ result[8] <= LPM_MUX:LPM_MUX_component.RESULT[8]
 result[9] <= LPM_MUX:LPM_MUX_component.RESULT[9]
 
 
-|g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
+|g21_stack52|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
 data[0][0] => mux_j4e:auto_generated.data[0]
 data[0][1] => mux_j4e:auto_generated.data[1]
 data[0][2] => mux_j4e:auto_generated.data[2]
@@ -1057,7 +520,7 @@ result[8] <= mux_j4e:auto_generated.result[8]
 result[9] <= mux_j4e:auto_generated.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated
+|g21_stack52|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated
 data[0] => _.IN0
 data[0] => _.IN0
 data[1] => _.IN0
@@ -1230,7 +693,7 @@ sel[1] => _.IN0
 sel[1] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|INIT_lpm_constant:inst107
+|g21_stack52|INIT_lpm_constant:inst107
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
@@ -1243,7 +706,7 @@ result[8] <= lpm_constant:LPM_CONSTANT_component.result[8]
 result[9] <= lpm_constant:LPM_CONSTANT_component.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
+|g21_stack52|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -1256,7 +719,7 @@ result[8] <= <VCC>
 result[9] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst113
+|g21_stack52|BUSMUX:inst113
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1290,7 +753,7 @@ result[8] <= lpm_mux:$00000.result[8]
 result[9] <= lpm_mux:$00000.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst113|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst113|lpm_mux:$00000
 data[0][0] => mux_5oc:auto_generated.data[0]
 data[0][1] => mux_5oc:auto_generated.data[1]
 data[0][2] => mux_5oc:auto_generated.data[2]
@@ -1327,7 +790,7 @@ result[8] <= mux_5oc:auto_generated.result[8]
 result[9] <= mux_5oc:auto_generated.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst113|lpm_mux:$00000|mux_5oc:auto_generated
+|g21_stack52|BUSMUX:inst113|lpm_mux:$00000|mux_5oc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1380,7 +843,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|POP_lpm_constant:inst108
+|g21_stack52|POP_lpm_constant:inst108
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
@@ -1393,7 +856,7 @@ result[8] <= lpm_constant:LPM_CONSTANT_component.result[8]
 result[9] <= lpm_constant:LPM_CONSTANT_component.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
+|g21_stack52|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -1406,7 +869,7 @@ result[8] <= <GND>
 result[9] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst115
+|g21_stack52|BUSMUX:inst115
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1440,7 +903,7 @@ result[8] <= lpm_mux:$00000.result[8]
 result[9] <= lpm_mux:$00000.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst115|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst115|lpm_mux:$00000
 data[0][0] => mux_5oc:auto_generated.data[0]
 data[0][1] => mux_5oc:auto_generated.data[1]
 data[0][2] => mux_5oc:auto_generated.data[2]
@@ -1477,7 +940,7 @@ result[8] <= mux_5oc:auto_generated.result[8]
 result[9] <= mux_5oc:auto_generated.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst115|lpm_mux:$00000|mux_5oc:auto_generated
+|g21_stack52|BUSMUX:inst115|lpm_mux:$00000|mux_5oc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1530,7 +993,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|g21_comp7:inst128
+|g21_stack52|g21_comp7:inst128
 AeqB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => inst6.IN0
 A[1] => inst5.IN0
@@ -1548,7 +1011,7 @@ B[5] => inst1.IN1
 B[6] => inst.IN1
 
 
-|g21_test_bed|g21_stack52:inst1|a52_lpm_constant:inst127
+|g21_stack52|a52_lpm_constant:inst127
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
@@ -1558,7 +1021,7 @@ result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
 result[6] <= lpm_constant:LPM_CONSTANT_component.result[6]
 
 
-|g21_test_bed|g21_stack52:inst1|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
+|g21_stack52|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -1568,7 +1031,7 @@ result[5] <= <VCC>
 result[6] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|PUSH_lpm_constant:inst109
+|g21_stack52|PUSH_lpm_constant:inst109
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
@@ -1581,7 +1044,7 @@ result[8] <= lpm_constant:LPM_CONSTANT_component.result[8]
 result[9] <= lpm_constant:LPM_CONSTANT_component.result[9]
 
 
-|g21_test_bed|g21_stack52:inst1|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
+|g21_stack52|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -1594,7 +1057,7 @@ result[8] <= <GND>
 result[9] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114
+|g21_stack52|lpm_mux0:inst114
 data0x[0] => LPM_MUX:LPM_MUX_component.DATA[0][0]
 data0x[1] => LPM_MUX:LPM_MUX_component.DATA[0][1]
 data0x[2] => LPM_MUX:LPM_MUX_component.DATA[0][2]
@@ -1921,7 +1384,7 @@ result[4] <= LPM_MUX:LPM_MUX_component.RESULT[4]
 result[5] <= LPM_MUX:LPM_MUX_component.RESULT[5]
 
 
-|g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
+|g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
 data[0][0] => mux_v4e:auto_generated.data[0]
 data[0][1] => mux_v4e:auto_generated.data[1]
 data[0][2] => mux_v4e:auto_generated.data[2]
@@ -2251,7 +1714,7 @@ result[4] <= mux_v4e:auto_generated.result[4]
 result[5] <= mux_v4e:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated
+|g21_stack52|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated
 data[0] => _.IN0
 data[0] => _.IN0
 data[0] => _.IN0
@@ -5992,7 +5455,7 @@ sel[5] => _.IN0
 sel[5] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst
+|g21_stack52|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -6036,7 +5499,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst|lpm_constant:sc
+|g21_stack52|LPM_FF:inst|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -6045,7 +5508,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104
+|g21_stack52|g21_pop_enable:inst104
 N[0] => g21_lab2_rom1:R1.address[0]
 N[1] => g21_lab2_rom1:R1.address[1]
 N[2] => g21_lab2_rom1:R1.address[2]
@@ -6107,7 +5570,7 @@ P_EN[51] <= g21_lab2_rom1:R1.q[51]
 clk => g21_lab2_rom1:R1.clock
 
 
-|g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104|g21_lab2_rom1:R1
+|g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -6169,7 +5632,7 @@ q[50] <= altsyncram:altsyncram_component.q_a[50]
 q[51] <= altsyncram:altsyncram_component.q_a[51]
 
 
-|g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+|g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -6304,7 +5767,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+|g21_stack52|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6723,7 +6186,7 @@ q_a[50] <= ram_block1a50.PORTADATAOUT
 q_a[51] <= ram_block1a51.PORTADATAOUT
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst1
+|g21_stack52|BUSMUX:inst1
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -6745,7 +6208,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst1|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst1|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -6770,7 +6233,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst1|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst1|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -6803,7 +6266,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst2
+|g21_stack52|LPM_FF:inst2
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -6847,7 +6310,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst2|lpm_constant:sc
+|g21_stack52|LPM_FF:inst2|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -6856,7 +6319,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst3
+|g21_stack52|BUSMUX:inst3
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -6878,7 +6341,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst3|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst3|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -6903,7 +6366,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst3|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst3|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -6936,7 +6399,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst4
+|g21_stack52|LPM_FF:inst4
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -6980,7 +6443,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst4|lpm_constant:sc
+|g21_stack52|LPM_FF:inst4|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -6989,7 +6452,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst5
+|g21_stack52|BUSMUX:inst5
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7011,7 +6474,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst5|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst5|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7036,7 +6499,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst5|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst5|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7069,7 +6532,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst6
+|g21_stack52|LPM_FF:inst6
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7113,7 +6576,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst6|lpm_constant:sc
+|g21_stack52|LPM_FF:inst6|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -7122,7 +6585,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst7
+|g21_stack52|BUSMUX:inst7
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7144,7 +6607,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst7|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst7|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7169,7 +6632,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst7|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst7|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7202,7 +6665,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst8
+|g21_stack52|LPM_FF:inst8
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7246,7 +6709,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst8|lpm_constant:sc
+|g21_stack52|LPM_FF:inst8|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -7255,7 +6718,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst9
+|g21_stack52|BUSMUX:inst9
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7277,7 +6740,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst9|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst9|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7302,7 +6765,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst9|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst9|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7335,7 +6798,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst10
+|g21_stack52|LPM_FF:inst10
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7379,7 +6842,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst10|lpm_constant:sc
+|g21_stack52|LPM_FF:inst10|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -7388,7 +6851,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst11
+|g21_stack52|BUSMUX:inst11
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7410,7 +6873,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst11|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst11|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7435,7 +6898,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst11|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst11|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7468,7 +6931,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst12
+|g21_stack52|LPM_FF:inst12
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7512,7 +6975,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst12|lpm_constant:sc
+|g21_stack52|LPM_FF:inst12|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -7521,7 +6984,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst13
+|g21_stack52|BUSMUX:inst13
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7543,7 +7006,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst13|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst13|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7568,7 +7031,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst13|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst13|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7601,7 +7064,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst14
+|g21_stack52|LPM_FF:inst14
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7645,7 +7108,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst14|lpm_constant:sc
+|g21_stack52|LPM_FF:inst14|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -7654,7 +7117,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst15
+|g21_stack52|BUSMUX:inst15
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7676,7 +7139,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst15|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst15|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7701,7 +7164,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst15|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst15|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7734,7 +7197,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst16
+|g21_stack52|LPM_FF:inst16
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7778,7 +7241,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst16|lpm_constant:sc
+|g21_stack52|LPM_FF:inst16|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -7787,7 +7250,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst17
+|g21_stack52|BUSMUX:inst17
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7809,7 +7272,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst17|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst17|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7834,7 +7297,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst17|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst17|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -7867,7 +7330,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst18
+|g21_stack52|LPM_FF:inst18
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -7911,7 +7374,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst18|lpm_constant:sc
+|g21_stack52|LPM_FF:inst18|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -7920,7 +7383,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst19
+|g21_stack52|BUSMUX:inst19
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -7942,7 +7405,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst19|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst19|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -7967,7 +7430,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst19|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst19|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8000,7 +7463,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst20
+|g21_stack52|LPM_FF:inst20
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8044,7 +7507,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst20|lpm_constant:sc
+|g21_stack52|LPM_FF:inst20|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -8053,7 +7516,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst21
+|g21_stack52|BUSMUX:inst21
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8075,7 +7538,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst21|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst21|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8100,7 +7563,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst21|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst21|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8133,7 +7596,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst22
+|g21_stack52|LPM_FF:inst22
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8177,7 +7640,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst22|lpm_constant:sc
+|g21_stack52|LPM_FF:inst22|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -8186,7 +7649,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst23
+|g21_stack52|BUSMUX:inst23
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8208,7 +7671,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst23|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst23|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8233,7 +7696,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst23|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst23|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8266,7 +7729,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst25
+|g21_stack52|LPM_FF:inst25
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8310,7 +7773,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst25|lpm_constant:sc
+|g21_stack52|LPM_FF:inst25|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -8319,7 +7782,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst24
+|g21_stack52|BUSMUX:inst24
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8341,7 +7804,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst24|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst24|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8366,7 +7829,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst24|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst24|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8399,7 +7862,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst26
+|g21_stack52|LPM_FF:inst26
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8443,7 +7906,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst26|lpm_constant:sc
+|g21_stack52|LPM_FF:inst26|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -8452,7 +7915,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst27
+|g21_stack52|BUSMUX:inst27
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8474,7 +7937,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst27|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst27|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8499,7 +7962,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst27|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst27|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8532,7 +7995,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst28
+|g21_stack52|LPM_FF:inst28
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8576,7 +8039,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst28|lpm_constant:sc
+|g21_stack52|LPM_FF:inst28|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -8585,7 +8048,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst29
+|g21_stack52|BUSMUX:inst29
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8607,7 +8070,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst29|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst29|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8632,7 +8095,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst29|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst29|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8665,7 +8128,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst30
+|g21_stack52|LPM_FF:inst30
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8709,7 +8172,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst30|lpm_constant:sc
+|g21_stack52|LPM_FF:inst30|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -8718,7 +8181,7 @@ result[4] <= <GND>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst31
+|g21_stack52|BUSMUX:inst31
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8740,7 +8203,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst31|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst31|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8765,7 +8228,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst31|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst31|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8798,7 +8261,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst32
+|g21_stack52|LPM_FF:inst32
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8842,7 +8305,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst32|lpm_constant:sc
+|g21_stack52|LPM_FF:inst32|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -8851,7 +8314,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst33
+|g21_stack52|BUSMUX:inst33
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -8873,7 +8336,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst33|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst33|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -8898,7 +8361,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst33|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst33|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -8931,7 +8394,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst34
+|g21_stack52|LPM_FF:inst34
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -8975,7 +8438,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst34|lpm_constant:sc
+|g21_stack52|LPM_FF:inst34|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -8984,7 +8447,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst35
+|g21_stack52|BUSMUX:inst35
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9006,7 +8469,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst35|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst35|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9031,7 +8494,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst35|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst35|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9064,7 +8527,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst36
+|g21_stack52|LPM_FF:inst36
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9108,7 +8571,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst36|lpm_constant:sc
+|g21_stack52|LPM_FF:inst36|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -9117,7 +8580,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst37
+|g21_stack52|BUSMUX:inst37
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9139,7 +8602,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst37|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst37|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9164,7 +8627,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst37|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst37|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9197,7 +8660,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst38
+|g21_stack52|LPM_FF:inst38
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9241,7 +8704,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst38|lpm_constant:sc
+|g21_stack52|LPM_FF:inst38|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -9250,7 +8713,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst39
+|g21_stack52|BUSMUX:inst39
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9272,7 +8735,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst39|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst39|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9297,7 +8760,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst39|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst39|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9330,7 +8793,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst40
+|g21_stack52|LPM_FF:inst40
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9374,7 +8837,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst40|lpm_constant:sc
+|g21_stack52|LPM_FF:inst40|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -9383,7 +8846,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst41
+|g21_stack52|BUSMUX:inst41
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9405,7 +8868,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst41|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst41|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9430,7 +8893,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst41|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst41|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9463,7 +8926,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst42
+|g21_stack52|LPM_FF:inst42
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9507,7 +8970,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst42|lpm_constant:sc
+|g21_stack52|LPM_FF:inst42|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -9516,7 +8979,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst43
+|g21_stack52|BUSMUX:inst43
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9538,7 +9001,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst43|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst43|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9563,7 +9026,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst43|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst43|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9596,7 +9059,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst44
+|g21_stack52|LPM_FF:inst44
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9640,7 +9103,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst44|lpm_constant:sc
+|g21_stack52|LPM_FF:inst44|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -9649,7 +9112,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst45
+|g21_stack52|BUSMUX:inst45
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9671,7 +9134,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst45|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst45|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9696,7 +9159,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst45|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst45|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9729,7 +9192,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst46
+|g21_stack52|LPM_FF:inst46
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9773,7 +9236,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst46|lpm_constant:sc
+|g21_stack52|LPM_FF:inst46|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -9782,7 +9245,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst47
+|g21_stack52|BUSMUX:inst47
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9804,7 +9267,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst47|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst47|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9829,7 +9292,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst47|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst47|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9862,7 +9325,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst48
+|g21_stack52|LPM_FF:inst48
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -9906,7 +9369,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst48|lpm_constant:sc
+|g21_stack52|LPM_FF:inst48|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -9915,7 +9378,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst49
+|g21_stack52|BUSMUX:inst49
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -9937,7 +9400,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst49|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst49|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -9962,7 +9425,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst49|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst49|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -9995,7 +9458,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst50
+|g21_stack52|LPM_FF:inst50
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10039,7 +9502,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst50|lpm_constant:sc
+|g21_stack52|LPM_FF:inst50|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -10048,7 +9511,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst51
+|g21_stack52|BUSMUX:inst51
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10070,7 +9533,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst51|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst51|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10095,7 +9558,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst51|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst51|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10128,7 +9591,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst52
+|g21_stack52|LPM_FF:inst52
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10172,7 +9635,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst52|lpm_constant:sc
+|g21_stack52|LPM_FF:inst52|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -10181,7 +9644,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst53
+|g21_stack52|BUSMUX:inst53
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10203,7 +9666,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst53|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst53|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10228,7 +9691,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst53|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst53|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10261,7 +9724,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst54
+|g21_stack52|LPM_FF:inst54
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10305,7 +9768,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst54|lpm_constant:sc
+|g21_stack52|LPM_FF:inst54|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -10314,7 +9777,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst55
+|g21_stack52|BUSMUX:inst55
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10336,7 +9799,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst55|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst55|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10361,7 +9824,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst55|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst55|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10394,7 +9857,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst56
+|g21_stack52|LPM_FF:inst56
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10438,7 +9901,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst56|lpm_constant:sc
+|g21_stack52|LPM_FF:inst56|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -10447,7 +9910,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst57
+|g21_stack52|BUSMUX:inst57
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10469,7 +9932,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst57|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst57|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10494,7 +9957,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst57|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst57|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10527,7 +9990,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst58
+|g21_stack52|LPM_FF:inst58
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10571,7 +10034,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst58|lpm_constant:sc
+|g21_stack52|LPM_FF:inst58|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -10580,7 +10043,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst59
+|g21_stack52|BUSMUX:inst59
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10602,7 +10065,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst59|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst59|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10627,7 +10090,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst59|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst59|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10660,7 +10123,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst60
+|g21_stack52|LPM_FF:inst60
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10704,7 +10167,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst60|lpm_constant:sc
+|g21_stack52|LPM_FF:inst60|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -10713,7 +10176,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst61
+|g21_stack52|BUSMUX:inst61
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10735,7 +10198,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst61|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst61|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10760,7 +10223,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst61|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst61|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10793,7 +10256,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst62
+|g21_stack52|LPM_FF:inst62
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10837,7 +10300,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst62|lpm_constant:sc
+|g21_stack52|LPM_FF:inst62|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -10846,7 +10309,7 @@ result[4] <= <VCC>
 result[5] <= <GND>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst63
+|g21_stack52|BUSMUX:inst63
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -10868,7 +10331,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst63|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst63|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -10893,7 +10356,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst63|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst63|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -10926,7 +10389,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst64
+|g21_stack52|LPM_FF:inst64
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -10970,7 +10433,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst64|lpm_constant:sc
+|g21_stack52|LPM_FF:inst64|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -10979,7 +10442,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst65
+|g21_stack52|BUSMUX:inst65
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11001,7 +10464,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst65|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst65|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11026,7 +10489,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst65|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst65|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11059,7 +10522,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst66
+|g21_stack52|LPM_FF:inst66
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11103,7 +10566,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst66|lpm_constant:sc
+|g21_stack52|LPM_FF:inst66|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -11112,7 +10575,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst67
+|g21_stack52|BUSMUX:inst67
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11134,7 +10597,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst67|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst67|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11159,7 +10622,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst67|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst67|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11192,7 +10655,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst68
+|g21_stack52|LPM_FF:inst68
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11236,7 +10699,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst68|lpm_constant:sc
+|g21_stack52|LPM_FF:inst68|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -11245,7 +10708,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst69
+|g21_stack52|BUSMUX:inst69
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11267,7 +10730,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst69|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst69|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11292,7 +10755,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst69|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst69|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11325,7 +10788,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst70
+|g21_stack52|LPM_FF:inst70
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11369,7 +10832,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst70|lpm_constant:sc
+|g21_stack52|LPM_FF:inst70|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -11378,7 +10841,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst71
+|g21_stack52|BUSMUX:inst71
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11400,7 +10863,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst71|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst71|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11425,7 +10888,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst71|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst71|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11458,7 +10921,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst72
+|g21_stack52|LPM_FF:inst72
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11502,7 +10965,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst72|lpm_constant:sc
+|g21_stack52|LPM_FF:inst72|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -11511,7 +10974,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst73
+|g21_stack52|BUSMUX:inst73
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11533,7 +10996,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst73|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst73|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11558,7 +11021,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst73|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst73|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11591,7 +11054,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst74
+|g21_stack52|LPM_FF:inst74
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11635,7 +11098,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst74|lpm_constant:sc
+|g21_stack52|LPM_FF:inst74|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -11644,7 +11107,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst75
+|g21_stack52|BUSMUX:inst75
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11666,7 +11129,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst75|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst75|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11691,7 +11154,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst75|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst75|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11724,7 +11187,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst76
+|g21_stack52|LPM_FF:inst76
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11768,7 +11231,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst76|lpm_constant:sc
+|g21_stack52|LPM_FF:inst76|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -11777,7 +11240,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst77
+|g21_stack52|BUSMUX:inst77
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11799,7 +11262,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst77|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst77|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11824,7 +11287,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst77|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst77|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11857,7 +11320,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst78
+|g21_stack52|LPM_FF:inst78
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -11901,7 +11364,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst78|lpm_constant:sc
+|g21_stack52|LPM_FF:inst78|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -11910,7 +11373,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst79
+|g21_stack52|BUSMUX:inst79
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -11932,7 +11395,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst79|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst79|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -11957,7 +11420,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst79|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst79|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -11990,7 +11453,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst80
+|g21_stack52|LPM_FF:inst80
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12034,7 +11497,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst80|lpm_constant:sc
+|g21_stack52|LPM_FF:inst80|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -12043,7 +11506,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst81
+|g21_stack52|BUSMUX:inst81
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12065,7 +11528,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst81|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst81|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12090,7 +11553,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst81|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst81|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12123,7 +11586,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst82
+|g21_stack52|LPM_FF:inst82
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12167,7 +11630,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst82|lpm_constant:sc
+|g21_stack52|LPM_FF:inst82|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
@@ -12176,7 +11639,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst83
+|g21_stack52|BUSMUX:inst83
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12198,7 +11661,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst83|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst83|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12223,7 +11686,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst83|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst83|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12256,7 +11719,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst84
+|g21_stack52|LPM_FF:inst84
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12300,7 +11763,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst84|lpm_constant:sc
+|g21_stack52|LPM_FF:inst84|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -12309,7 +11772,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst85
+|g21_stack52|BUSMUX:inst85
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12331,7 +11794,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst85|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst85|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12356,7 +11819,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst85|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst85|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12389,7 +11852,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst86
+|g21_stack52|LPM_FF:inst86
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12433,7 +11896,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst86|lpm_constant:sc
+|g21_stack52|LPM_FF:inst86|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -12442,7 +11905,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst87
+|g21_stack52|BUSMUX:inst87
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12464,7 +11927,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst87|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst87|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12489,7 +11952,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst87|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst87|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12522,7 +11985,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst88
+|g21_stack52|LPM_FF:inst88
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12566,7 +12029,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst88|lpm_constant:sc
+|g21_stack52|LPM_FF:inst88|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -12575,7 +12038,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst89
+|g21_stack52|BUSMUX:inst89
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12597,7 +12060,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst89|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst89|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12622,7 +12085,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst89|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst89|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12655,7 +12118,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst90
+|g21_stack52|LPM_FF:inst90
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12699,7 +12162,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst90|lpm_constant:sc
+|g21_stack52|LPM_FF:inst90|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <VCC>
@@ -12708,7 +12171,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst91
+|g21_stack52|BUSMUX:inst91
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12730,7 +12193,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst91|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst91|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12755,7 +12218,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst91|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst91|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12788,7 +12251,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst92
+|g21_stack52|LPM_FF:inst92
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12832,7 +12295,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst92|lpm_constant:sc
+|g21_stack52|LPM_FF:inst92|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -12841,7 +12304,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst93
+|g21_stack52|BUSMUX:inst93
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12863,7 +12326,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst93|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst93|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -12888,7 +12351,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst93|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst93|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -12921,7 +12384,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst94
+|g21_stack52|LPM_FF:inst94
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -12965,7 +12428,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst94|lpm_constant:sc
+|g21_stack52|LPM_FF:inst94|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
@@ -12974,7 +12437,7 @@ result[4] <= <GND>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst95
+|g21_stack52|BUSMUX:inst95
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -12996,7 +12459,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst95|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst95|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -13021,7 +12484,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst95|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst95|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -13054,7 +12517,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst96
+|g21_stack52|LPM_FF:inst96
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -13098,141 +12561,8 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst96|lpm_constant:sc
+|g21_stack52|LPM_FF:inst96|lpm_constant:sc
 result[0] <= <GND>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <VCC>
-result[5] <= <VCC>
-
-
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst97
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-dataa[4] => lpm_mux:$00000.data[0][4]
-dataa[5] => lpm_mux:$00000.data[0][5]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-datab[4] => lpm_mux:$00000.data[1][4]
-datab[5] => lpm_mux:$00000.data[1][5]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-result[4] <= lpm_mux:$00000.result[4]
-result[5] <= lpm_mux:$00000.result[5]
-
-
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst97|lpm_mux:$00000
-data[0][0] => mux_qmc:auto_generated.data[0]
-data[0][1] => mux_qmc:auto_generated.data[1]
-data[0][2] => mux_qmc:auto_generated.data[2]
-data[0][3] => mux_qmc:auto_generated.data[3]
-data[0][4] => mux_qmc:auto_generated.data[4]
-data[0][5] => mux_qmc:auto_generated.data[5]
-data[1][0] => mux_qmc:auto_generated.data[6]
-data[1][1] => mux_qmc:auto_generated.data[7]
-data[1][2] => mux_qmc:auto_generated.data[8]
-data[1][3] => mux_qmc:auto_generated.data[9]
-data[1][4] => mux_qmc:auto_generated.data[10]
-data[1][5] => mux_qmc:auto_generated.data[11]
-sel[0] => mux_qmc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_qmc:auto_generated.result[0]
-result[1] <= mux_qmc:auto_generated.result[1]
-result[2] <= mux_qmc:auto_generated.result[2]
-result[3] <= mux_qmc:auto_generated.result[3]
-result[4] <= mux_qmc:auto_generated.result[4]
-result[5] <= mux_qmc:auto_generated.result[5]
-
-
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst97|lpm_mux:$00000|mux_qmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[4].IN1
-data[5] => result_node[5].IN1
-data[6] => result_node[0].IN1
-data[7] => result_node[1].IN1
-data[8] => result_node[2].IN1
-data[9] => result_node[3].IN1
-data[10] => result_node[4].IN1
-data[11] => result_node[5].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[5].IN0
-sel[0] => _.IN0
-sel[0] => result_node[4].IN0
-sel[0] => _.IN0
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst98
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => dffs[5].IN0
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => asdata[5].IN0
-sset => asdata[4].IN0
-sset => asdata[3].IN0
-sset => asdata[2].IN0
-sset => asdata[1].IN0
-sset => asdata[0].IN0
-sset => dffs[5].SLOAD
-sset => dffs[4].SLOAD
-sset => dffs[3].SLOAD
-sset => dffs[2].SLOAD
-sset => dffs[1].SLOAD
-sset => dffs[0].SLOAD
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst98|lpm_constant:sc
-result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
@@ -13240,7 +12570,7 @@ result[4] <= <VCC>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst99
+|g21_stack52|BUSMUX:inst97
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -13262,7 +12592,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst99|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst97|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -13287,7 +12617,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst99|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst97|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -13320,7 +12650,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst100
+|g21_stack52|LPM_FF:inst98
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -13364,7 +12694,140 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst100|lpm_constant:sc
+|g21_stack52|LPM_FF:inst98|lpm_constant:sc
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
+
+
+|g21_stack52|BUSMUX:inst99
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+
+
+|g21_stack52|BUSMUX:inst99|lpm_mux:$00000
+data[0][0] => mux_qmc:auto_generated.data[0]
+data[0][1] => mux_qmc:auto_generated.data[1]
+data[0][2] => mux_qmc:auto_generated.data[2]
+data[0][3] => mux_qmc:auto_generated.data[3]
+data[0][4] => mux_qmc:auto_generated.data[4]
+data[0][5] => mux_qmc:auto_generated.data[5]
+data[1][0] => mux_qmc:auto_generated.data[6]
+data[1][1] => mux_qmc:auto_generated.data[7]
+data[1][2] => mux_qmc:auto_generated.data[8]
+data[1][3] => mux_qmc:auto_generated.data[9]
+data[1][4] => mux_qmc:auto_generated.data[10]
+data[1][5] => mux_qmc:auto_generated.data[11]
+sel[0] => mux_qmc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_qmc:auto_generated.result[0]
+result[1] <= mux_qmc:auto_generated.result[1]
+result[2] <= mux_qmc:auto_generated.result[2]
+result[3] <= mux_qmc:auto_generated.result[3]
+result[4] <= mux_qmc:auto_generated.result[4]
+result[5] <= mux_qmc:auto_generated.result[5]
+
+
+|g21_stack52|BUSMUX:inst99|lpm_mux:$00000|mux_qmc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[0].IN1
+data[7] => result_node[1].IN1
+data[8] => result_node[2].IN1
+data[9] => result_node[3].IN1
+data[10] => result_node[4].IN1
+data[11] => result_node[5].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|g21_stack52|LPM_FF:inst100
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[5].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => asdata[5].IN0
+sset => asdata[4].IN0
+sset => asdata[3].IN0
+sset => asdata[2].IN0
+sset => asdata[1].IN0
+sset => asdata[0].IN0
+sset => dffs[5].SLOAD
+sset => dffs[4].SLOAD
+sset => dffs[3].SLOAD
+sset => dffs[2].SLOAD
+sset => dffs[1].SLOAD
+sset => dffs[0].SLOAD
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_stack52|LPM_FF:inst100|lpm_constant:sc
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -13373,7 +12836,7 @@ result[4] <= <VCC>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst101
+|g21_stack52|BUSMUX:inst101
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -13395,7 +12858,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst101|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst101|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -13420,7 +12883,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst101|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst101|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -13453,7 +12916,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst102
+|g21_stack52|LPM_FF:inst102
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -13497,7 +12960,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_test_bed|g21_stack52:inst1|LPM_FF:inst102|lpm_constant:sc
+|g21_stack52|LPM_FF:inst102|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -13506,7 +12969,7 @@ result[4] <= <VCC>
 result[5] <= <VCC>
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst103
+|g21_stack52|BUSMUX:inst103
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -13528,7 +12991,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst103|lpm_mux:$00000
+|g21_stack52|BUSMUX:inst103|lpm_mux:$00000
 data[0][0] => mux_qmc:auto_generated.data[0]
 data[0][1] => mux_qmc:auto_generated.data[1]
 data[0][2] => mux_qmc:auto_generated.data[2]
@@ -13553,7 +13016,7 @@ result[4] <= mux_qmc:auto_generated.result[4]
 result[5] <= mux_qmc:auto_generated.result[5]
 
 
-|g21_test_bed|g21_stack52:inst1|BUSMUX:inst103|lpm_mux:$00000|mux_qmc:auto_generated
+|g21_stack52|BUSMUX:inst103|lpm_mux:$00000|mux_qmc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -13584,721 +13047,5 @@ sel[0] => result_node[1].IN0
 sel[0] => _.IN0
 sel[0] => result_node[0].IN0
 sel[0] => _.IN0
-
-
-|g21_test_bed|g21_7_segment_decoder:inst3
-code[0] => Mux0.IN35
-code[0] => Mux1.IN35
-code[0] => Mux2.IN35
-code[0] => Mux3.IN35
-code[0] => Mux4.IN35
-code[0] => Mux5.IN35
-code[0] => Mux6.IN35
-code[1] => Mux0.IN34
-code[1] => Mux1.IN34
-code[1] => Mux2.IN34
-code[1] => Mux3.IN34
-code[1] => Mux4.IN34
-code[1] => Mux5.IN34
-code[1] => Mux6.IN34
-code[2] => Mux0.IN33
-code[2] => Mux1.IN33
-code[2] => Mux2.IN33
-code[2] => Mux3.IN33
-code[2] => Mux4.IN33
-code[2] => Mux5.IN33
-code[2] => Mux6.IN33
-code[3] => Mux0.IN32
-code[3] => Mux1.IN32
-code[3] => Mux2.IN32
-code[3] => Mux3.IN32
-code[3] => Mux4.IN32
-code[3] => Mux5.IN32
-code[3] => Mux6.IN32
-mode => Mux0.IN36
-mode => Mux1.IN36
-mode => Mux2.IN36
-mode => Mux3.IN36
-mode => Mux4.IN36
-mode => Mux5.IN36
-mode => Mux6.IN36
-segments_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2
-floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
-floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
-floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => g21_adder:inst1.in_1[2]
-A[0] => g21_adder:inst1.in_2[0]
-A[0] => g21_adder:inst5.in_1[0]
-A[1] => g21_adder:inst1.in_1[3]
-A[1] => g21_adder:inst1.in_2[1]
-A[1] => g21_adder:inst5.in_1[1]
-A[2] => g21_adder:inst1.in_1[4]
-A[2] => g21_adder:inst1.in_2[2]
-A[2] => g21_adder:inst5.in_1[2]
-A[3] => g21_adder:inst1.in_1[5]
-A[3] => g21_adder:inst1.in_2[3]
-A[3] => g21_adder:inst5.in_1[3]
-A[4] => g21_adder:inst1.in_1[6]
-A[4] => g21_adder:inst1.in_2[4]
-A[4] => g21_adder:inst5.in_1[4]
-A[5] => g21_adder:inst1.in_1[7]
-A[5] => g21_adder:inst1.in_2[5]
-A[5] => g21_adder:inst5.in_1[5]
-modout[0] <= modA[0].DB_MAX_OUTPUT_PORT_TYPE
-modout[1] <= modA[1].DB_MAX_OUTPUT_PORT_TYPE
-modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
-modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2
-Cout <= g21_1bitAdder:inst30.Cout
-in_1[0] => g21_1bitAdder:inst.IN_1
-in_1[1] => g21_1bitAdder:inst24.IN_1
-in_1[2] => g21_1bitAdder:inst25.IN_1
-in_1[3] => g21_1bitAdder:inst26.IN_1
-in_1[4] => g21_1bitAdder:inst27.IN_1
-in_1[5] => g21_1bitAdder:inst28.IN_1
-in_1[6] => g21_1bitAdder:inst29.IN_1
-in_1[7] => g21_1bitAdder:inst30.IN_1
-in_2[0] => g21_1bitAdder:inst.IN_2
-in_2[1] => g21_1bitAdder:inst24.IN_2
-in_2[2] => g21_1bitAdder:inst25.IN_2
-in_2[3] => g21_1bitAdder:inst26.IN_2
-in_2[4] => g21_1bitAdder:inst27.IN_2
-in_2[5] => g21_1bitAdder:inst28.IN_2
-in_2[6] => g21_1bitAdder:inst29.IN_2
-in_2[7] => g21_1bitAdder:inst30.IN_2
-out[0] <= g21_1bitAdder:inst.S
-out[1] <= g21_1bitAdder:inst24.S
-out[2] <= g21_1bitAdder:inst25.S
-out[3] <= g21_1bitAdder:inst26.S
-out[4] <= g21_1bitAdder:inst27.S
-out[5] <= g21_1bitAdder:inst28.S
-out[6] <= g21_1bitAdder:inst29.S
-out[7] <= g21_1bitAdder:inst30.S
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst30
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst29
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst28
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst27
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst26
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst25
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst24
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst
-S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Cin => inst13.IN0
-Cin => inst15.IN0
-IN_1 => inst23.IN0
-IN_1 => inst14.IN0
-IN_2 => inst23.IN1
-IN_2 => inst14.IN1
-Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|g21_7_segment_decoder:inst4
-code[0] => Mux0.IN35
-code[0] => Mux1.IN35
-code[0] => Mux2.IN35
-code[0] => Mux3.IN35
-code[0] => Mux4.IN35
-code[0] => Mux5.IN35
-code[0] => Mux6.IN35
-code[1] => Mux0.IN34
-code[1] => Mux1.IN34
-code[1] => Mux2.IN34
-code[1] => Mux3.IN34
-code[1] => Mux4.IN34
-code[1] => Mux5.IN34
-code[1] => Mux6.IN34
-code[2] => Mux0.IN33
-code[2] => Mux1.IN33
-code[2] => Mux2.IN33
-code[2] => Mux3.IN33
-code[2] => Mux4.IN33
-code[2] => Mux5.IN33
-code[2] => Mux6.IN33
-code[3] => Mux0.IN32
-code[3] => Mux1.IN32
-code[3] => Mux2.IN32
-code[3] => Mux3.IN32
-code[3] => Mux4.IN32
-code[3] => Mux5.IN32
-code[3] => Mux6.IN32
-mode => Mux0.IN36
-mode => Mux1.IN36
-mode => Mux2.IN36
-mode => Mux3.IN36
-mode => Mux4.IN36
-mode => Mux5.IN36
-mode => Mux6.IN36
-segments_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_test_bed|lpm_constantdata:inst99
-result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
-result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
-result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
-result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
-result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
-result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
-
-
-|g21_test_bed|lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
-result[0] <= <VCC>
-result[1] <= <VCC>
-result[2] <= <VCC>
-result[3] <= <VCC>
-result[4] <= <VCC>
-result[5] <= <GND>
 
 

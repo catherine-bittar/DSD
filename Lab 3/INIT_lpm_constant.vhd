@@ -89,7 +89,7 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
--- Retrieval info: PRIVATE: Radix NUMERIC "2"
+-- Retrieval info: PRIVATE: Radix NUMERIC "10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: Value NUMERIC "256"
 -- Retrieval info: PRIVATE: nBit NUMERIC "10"
@@ -104,6 +104,6 @@ END SYN;
 -- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL INIT_lpm_constant_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm
