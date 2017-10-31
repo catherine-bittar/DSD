@@ -1,5 +1,5 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab3.out.sdc
+source_file = 1, g21_lab3.out.sdc
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_stack52.bdf
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_pop_enable.bsf
 source_file = 1, g21_pop_enable.mif.txt
