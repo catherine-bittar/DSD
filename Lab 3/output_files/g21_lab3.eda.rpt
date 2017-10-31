@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g21_lab3
-Tue Oct 31 10:17:32 2017
+Tue Oct 31 13:08:49 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 31 10:17:32 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 31 13:08:49 2017 ;
 ; Revision Name             ; g21_lab3                              ;
 ; Top-level Entity Name     ; g21_test_bed                          ;
 ; Family                    ; Cyclone II                            ;
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 31 10:17:30 2017
+    Info: Processing started: Tue Oct 31 13:08:47 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 Info (204026): Generated files "g21_lab3.vo", "g21_lab3_fast.vo", "g21_lab3_v.sdo" and "g21_lab3_v_fast.sdo" in directory "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 443 megabytes
-    Info: Processing ended: Tue Oct 31 10:17:32 2017
+    Info: Peak virtual memory: 459 megabytes
+    Info: Processing ended: Tue Oct 31 13:08:49 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
