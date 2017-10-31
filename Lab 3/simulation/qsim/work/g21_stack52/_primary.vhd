@@ -10,6 +10,8 @@ entity g21_stack52 is
         CLK             : in     vl_logic;
         RST             : in     vl_logic;
         FULL            : out    vl_logic;
+        sset            : out    vl_logic;
+        en              : out    vl_logic_vector(51 downto 0);
         VALUE           : out    vl_logic_vector(5 downto 0);
         DATA            : in     vl_logic_vector(5 downto 0)
     );

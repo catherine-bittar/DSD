@@ -1,5 +1,5 @@
 Flow report for g21_lab3
-Mon Oct 30 16:53:48 2017
+Mon Oct 30 20:04:44 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 30 16:53:48 2017           ;
+; Flow Status                        ; Successful - Mon Oct 30 20:04:44 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 663 / 18,752 ( 4 % )                            ;
-;     Total combinational functions  ; 650 / 18,752 ( 3 % )                            ;
-;     Dedicated logic registers      ; 340 / 18,752 ( 2 % )                            ;
-; Total registers                    ; 340                                             ;
+; Total logic elements               ; 659 / 18,752 ( 4 % )                            ;
+;     Total combinational functions  ; 651 / 18,752 ( 3 % )                            ;
+;     Dedicated logic registers      ; 345 / 18,752 ( 2 % )                            ;
+; Total registers                    ; 345                                             ;
 ; Total pins                         ; 40 / 315 ( 13 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 3,328 / 239,616 ( 1 % )                         ;
@@ -64,97 +64,97 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/30/2017 16:53:12 ;
+; Start date & time ; 10/30/2017 20:01:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g21_lab3            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+-------------------------------------+-------------------------------+---------------+--------------+----------------+
-; Assignment Name                     ; Value                         ; Default Value ; Entity Name  ; Section Id     ;
-+-------------------------------------+-------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1098086005435.150939679206372 ; --            ; --           ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                           ; --            ; --           ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                   ; --            ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)     ; <None>        ; --           ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                          ; --            ; --           ; eda_simulation ;
-; IP_TOOL_NAME                        ; ROM: 1-PORT                   ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_MUX                       ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_MUX                       ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_MUX                       ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_MUX                       ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                   ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                   ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_COMPARE                   ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                  ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_COMPARE                   ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_MUX                       ; --            ; --           ; --             ;
-; IP_TOOL_NAME                        ; LPM_COMPARE                   ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                          ; --            ; --           ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                            ; --            ; --           ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                             ; --            ; --           ; --             ;
-; MISC_FILE                           ; g21_lab2_rom1.cmp             ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux0.bsf                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux0.cmp                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux1.bsf                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux1.cmp                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux2.bsf                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_mux2.cmp                  ; --            ; --           ; --             ;
-; MISC_FILE                           ; NOP_lpm_constant.bsf          ; --            ; --           ; --             ;
-; MISC_FILE                           ; NOP_lpm_constant.cmp          ; --            ; --           ; --             ;
-; MISC_FILE                           ; INIT_lpm_constant.bsf         ; --            ; --           ; --             ;
-; MISC_FILE                           ; INIT_lpm_constant.cmp         ; --            ; --           ; --             ;
-; MISC_FILE                           ; POP_lpm_constant.bsf          ; --            ; --           ; --             ;
-; MISC_FILE                           ; POP_lpm_constant.cmp          ; --            ; --           ; --             ;
-; MISC_FILE                           ; PUSH_lpm_constant.bsf         ; --            ; --           ; --             ;
-; MISC_FILE                           ; PUSH_lpm_constant.cmp         ; --            ; --           ; --             ;
-; MISC_FILE                           ; MODE_Select_lpm_mux.bsf       ; --            ; --           ; --             ;
-; MISC_FILE                           ; MODE_Select_lpm_mux.cmp       ; --            ; --           ; --             ;
-; MISC_FILE                           ; StackCounter_lpm_counter.bsf  ; --            ; --           ; --             ;
-; MISC_FILE                           ; StackCounter_lpm_counter.cmp  ; --            ; --           ; --             ;
-; MISC_FILE                           ; a52_lpm_constant.bsf          ; --            ; --           ; --             ;
-; MISC_FILE                           ; a52_lpm_constant.cmp          ; --            ; --           ; --             ;
-; MISC_FILE                           ; SPG_lpm_counter.bsf           ; --            ; --           ; --             ;
-; MISC_FILE                           ; SPG_lpm_counter.cmp           ; --            ; --           ; --             ;
-; MISC_FILE                           ; SPG_lpm_compare.bsf           ; --            ; --           ; --             ;
-; MISC_FILE                           ; SPG_lpm_compare.cmp           ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_constantdata.bsf          ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_constantdata.cmp          ; --            ; --           ; --             ;
-; MISC_FILE                           ; Equal1_lpm_compare0.bsf       ; --            ; --           ; --             ;
-; MISC_FILE                           ; Equal1_lpm_compare0.cmp       ; --            ; --           ; --             ;
-; MISC_FILE                           ; TEST_lpm_mux3.bsf             ; --            ; --           ; --             ;
-; MISC_FILE                           ; TEST_lpm_mux3.cmp             ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_compare1.bsf              ; --            ; --           ; --             ;
-; MISC_FILE                           ; lpm_compare1.cmp              ; --            ; --           ; --             ;
-; PARTITION_COLOR                     ; 16764057                      ; --            ; g21_test_bed ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; g21_test_bed ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; g21_test_bed ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; g21_test_bed                  ; g21_lab3      ; --           ; --             ;
-+-------------------------------------+-------------------------------+---------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                      ;
++-------------------------------------+---------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 150461128418019.150940810509944 ; --            ; --           ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                             ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --           ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --           ; eda_simulation ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                     ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                     ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                     ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_COMPARE                     ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                    ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_COMPARE                     ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --           ; --             ;
+; IP_TOOL_NAME                        ; LPM_COMPARE                     ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --           ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --           ; --             ;
+; MISC_FILE                           ; g21_lab2_rom1.cmp               ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux0.bsf                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux0.cmp                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux1.bsf                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux1.cmp                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux2.bsf                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_mux2.cmp                    ; --            ; --           ; --             ;
+; MISC_FILE                           ; NOP_lpm_constant.bsf            ; --            ; --           ; --             ;
+; MISC_FILE                           ; NOP_lpm_constant.cmp            ; --            ; --           ; --             ;
+; MISC_FILE                           ; INIT_lpm_constant.bsf           ; --            ; --           ; --             ;
+; MISC_FILE                           ; INIT_lpm_constant.cmp           ; --            ; --           ; --             ;
+; MISC_FILE                           ; POP_lpm_constant.bsf            ; --            ; --           ; --             ;
+; MISC_FILE                           ; POP_lpm_constant.cmp            ; --            ; --           ; --             ;
+; MISC_FILE                           ; PUSH_lpm_constant.bsf           ; --            ; --           ; --             ;
+; MISC_FILE                           ; PUSH_lpm_constant.cmp           ; --            ; --           ; --             ;
+; MISC_FILE                           ; MODE_Select_lpm_mux.bsf         ; --            ; --           ; --             ;
+; MISC_FILE                           ; MODE_Select_lpm_mux.cmp         ; --            ; --           ; --             ;
+; MISC_FILE                           ; StackCounter_lpm_counter.bsf    ; --            ; --           ; --             ;
+; MISC_FILE                           ; StackCounter_lpm_counter.cmp    ; --            ; --           ; --             ;
+; MISC_FILE                           ; a52_lpm_constant.bsf            ; --            ; --           ; --             ;
+; MISC_FILE                           ; a52_lpm_constant.cmp            ; --            ; --           ; --             ;
+; MISC_FILE                           ; SPG_lpm_counter.bsf             ; --            ; --           ; --             ;
+; MISC_FILE                           ; SPG_lpm_counter.cmp             ; --            ; --           ; --             ;
+; MISC_FILE                           ; SPG_lpm_compare.bsf             ; --            ; --           ; --             ;
+; MISC_FILE                           ; SPG_lpm_compare.cmp             ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_constantdata.bsf            ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_constantdata.cmp            ; --            ; --           ; --             ;
+; MISC_FILE                           ; Equal1_lpm_compare0.bsf         ; --            ; --           ; --             ;
+; MISC_FILE                           ; Equal1_lpm_compare0.cmp         ; --            ; --           ; --             ;
+; MISC_FILE                           ; TEST_lpm_mux3.bsf               ; --            ; --           ; --             ;
+; MISC_FILE                           ; TEST_lpm_mux3.cmp               ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_compare1.bsf                ; --            ; --           ; --             ;
+; MISC_FILE                           ; lpm_compare1.cmp                ; --            ; --           ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; g21_test_bed ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; g21_test_bed ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; g21_test_bed ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; g21_test_bed                    ; g21_lab3      ; --           ; --             ;
++-------------------------------------+---------------------------------+---------------+--------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -162,14 +162,18 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 579 MB              ; 00:00:07                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 753 MB              ; 00:00:06                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 450 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 464 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 432 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 424 MB              ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 429 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 577 MB              ; 00:00:08                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 742 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 442 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 454 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 422 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 414 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 414 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 414 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:25                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -178,13 +182,17 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -196,7 +204,11 @@ quartus_fit --read_settings_files=off --write_settings_files=off g21_lab3 -c g21
 quartus_asm --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 quartus_sta g21_lab3 -c g21_lab3
 quartus_eda --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_sim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_test_bed_sim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_test_bed_sim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_test_bed_sim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
 quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
 
 

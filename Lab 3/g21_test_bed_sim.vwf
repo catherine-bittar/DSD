@@ -491,7 +491,7 @@ TRANSITION_LIST("dipswitch1[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		LEVEL 1 FOR 2000.0;
 	}
 }
 
@@ -509,7 +509,13 @@ TRANSITION_LIST("dipswitch2[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 320.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -518,7 +524,13 @@ TRANSITION_LIST("dipswitch2[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -527,7 +539,13 @@ TRANSITION_LIST("dipswitch2[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 12;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+		}
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -536,7 +554,12 @@ TRANSITION_LIST("dipswitch2[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+		}
 	}
 }
 
@@ -545,7 +568,12 @@ TRANSITION_LIST("dipswitch2[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 50;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
 	}
 }
 
@@ -554,7 +582,12 @@ TRANSITION_LIST("dipswitch2[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		NODE
+		{
+			REPEAT = 100;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
 	}
 }
 
@@ -703,14 +736,9 @@ TRANSITION_LIST("pushButton")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-		NODE
-		{
-			REPEAT = 9;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
-		}
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 1910.0;
 	}
 }
 
