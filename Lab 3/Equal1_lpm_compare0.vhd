@@ -42,7 +42,7 @@ USE lpm.all;
 ENTITY Equal1_lpm_compare0 IS
 	PORT
 	(
-		dataa		: IN STD_LOGIC_VECTOR (20 DOWNTO 0);
+		dataa		: IN STD_LOGIC_VECTOR (24 DOWNTO 0);
 		ageb		: OUT STD_LOGIC 
 	);
 END Equal1_lpm_compare0;
@@ -51,8 +51,8 @@ END Equal1_lpm_compare0;
 ARCHITECTURE SYN OF equal1_lpm_compare0 IS
 
 	SIGNAL sub_wire0	: STD_LOGIC ;
-	SIGNAL sub_wire1_bv	: BIT_VECTOR (20 DOWNTO 0);
-	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (20 DOWNTO 0);
+	SIGNAL sub_wire1_bv	: BIT_VECTOR (24 DOWNTO 0);
+	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (24 DOWNTO 0);
 
 
 
@@ -65,13 +65,13 @@ ARCHITECTURE SYN OF equal1_lpm_compare0 IS
 	);
 	PORT (
 			ageb	: OUT STD_LOGIC ;
-			dataa	: IN STD_LOGIC_VECTOR (20 DOWNTO 0);
-			datab	: IN STD_LOGIC_VECTOR (20 DOWNTO 0)
+			dataa	: IN STD_LOGIC_VECTOR (24 DOWNTO 0);
+			datab	: IN STD_LOGIC_VECTOR (24 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(20 DOWNTO 0) <= "000000000000000000001";
+	sub_wire1_bv(24 DOWNTO 0) <= "0000000000000000000000001";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	ageb    <= sub_wire0;
 
@@ -80,7 +80,7 @@ BEGIN
 		lpm_hint => "ONE_INPUT_IS_CONSTANT=YES",
 		lpm_representation => "UNSIGNED",
 		lpm_type => "LPM_COMPARE",
-		lpm_width => 21
+		lpm_width => 25
 	)
 	PORT MAP (
 		dataa => dataa,
@@ -111,17 +111,17 @@ END SYN;
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
 -- Retrieval info: PRIVATE: isPortBConstant NUMERIC "1"
--- Retrieval info: PRIVATE: nBit NUMERIC "21"
+-- Retrieval info: PRIVATE: nBit NUMERIC "25"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ONE_INPUT_IS_CONSTANT=YES"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "21"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "25"
 -- Retrieval info: USED_PORT: ageb 0 0 0 0 OUTPUT NODEFVAL "ageb"
--- Retrieval info: USED_PORT: dataa 0 0 21 0 INPUT NODEFVAL "dataa[20..0]"
--- Retrieval info: CONNECT: @dataa 0 0 21 0 dataa 0 0 21 0
--- Retrieval info: CONNECT: @datab 0 0 21 0 1 0 0 21 0
+-- Retrieval info: USED_PORT: dataa 0 0 25 0 INPUT NODEFVAL "dataa[24..0]"
+-- Retrieval info: CONNECT: @dataa 0 0 25 0 dataa 0 0 25 0
+-- Retrieval info: CONNECT: @datab 0 0 25 0 1 0 0 25 0
 -- Retrieval info: CONNECT: ageb 0 0 0 0 @ageb 0 0 0 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL Equal1_lpm_compare0.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL Equal1_lpm_compare0.inc FALSE

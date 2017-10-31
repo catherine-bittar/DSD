@@ -188,7 +188,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 768 336 944 352)
+	(rect 944 336 1120 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EMPTY" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
@@ -204,9 +204,41 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 832 224 1008 240)
+	(rect 944 224 1120 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "FULL" (rect 90 0 117 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 784 400 960 416)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LED2[6..0]  " (rect 90 0 150 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 784 464 960 480)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LED3[6..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -660,16 +692,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "VCC[3..0]" (rect 618 376 667 388)(font "Arial" ))
-	(pt 608 392)
-	(pt 680 392)
-	(bus)
-)
-(connector
-	(pt 808 232)
-	(pt 832 232)
-)
-(connector
 	(pt 432 272)
 	(pt 232 272)
 	(bus)
@@ -695,25 +717,12 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "FULL" (rect 792 199 804 226)(font "Arial" )(vertical))
-	(pt 808 232)
-	(pt 808 152)
-)
-(connector
 	(pt 808 152)
 	(pt 696 152)
 )
 (connector
 	(pt 696 120)
 	(pt 744 120)
-)
-(connector
-	(pt 744 120)
-	(pt 744 344)
-)
-(connector
-	(pt 744 344)
-	(pt 768 344)
 )
 (connector
 	(pt 696 136)
@@ -755,6 +764,49 @@ applicable agreement for further details.
 	(pt 496 112)
 	(bus)
 )
+(connector
+	(pt 768 408)
+	(pt 784 408)
+	(bus)
+)
+(connector
+	(text "VCC[6..0]" (rect 618 376 667 388)(font "Arial" ))
+	(pt 608 392)
+	(pt 768 392)
+	(bus)
+)
+(connector
+	(pt 768 392)
+	(pt 768 408)
+	(bus)
+)
+(connector
+	(pt 768 408)
+	(pt 768 472)
+	(bus)
+)
+(connector
+	(pt 768 472)
+	(pt 784 472)
+	(bus)
+)
+(connector
+	(pt 744 120)
+	(pt 744 344)
+)
+(connector
+	(pt 808 152)
+	(pt 808 232)
+)
+(connector
+	(pt 744 344)
+	(pt 944 344)
+)
+(connector
+	(pt 808 232)
+	(pt 944 232)
+)
 (junction (pt 496 104))
 (junction (pt 784 136))
 (junction (pt 104 128))
+(junction (pt 768 408))

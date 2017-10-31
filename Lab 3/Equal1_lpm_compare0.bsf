@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "dataa[20..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[20..0]" (rect 20 41 75 54)(font "Arial" (font_size 8)))
+		(text "dataa[24..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[24..0]" (rect 20 41 75 54)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
