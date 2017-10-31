@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g21_lab3
-Tue Oct 31 14:11:38 2017
+Tue Oct 31 15:02:07 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -9,32 +9,33 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   1. Legal Notice
   2. TimeQuest Timing Analyzer Summary
   3. Parallel Compilation
-  4. Clocks
-  5. Slow Model Fmax Summary
-  6. Slow Model Setup Summary
-  7. Slow Model Hold Summary
-  8. Slow Model Recovery Summary
-  9. Slow Model Removal Summary
- 10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Minimum Pulse Width: 'altera_reserved_tck'
- 12. Propagation Delay
- 13. Minimum Propagation Delay
- 14. Fast Model Setup Summary
- 15. Fast Model Hold Summary
- 16. Fast Model Recovery Summary
- 17. Fast Model Removal Summary
- 18. Fast Model Minimum Pulse Width Summary
- 19. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
- 20. Propagation Delay
- 21. Minimum Propagation Delay
- 22. Multicorner Timing Analysis Summary
- 23. Progagation Delay
- 24. Minimum Progagation Delay
- 25. Clock Transfers
- 26. Report TCCS
- 27. Report RSKM
- 28. Unconstrained Paths
- 29. TimeQuest Timing Analyzer Messages
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Minimum Pulse Width: 'altera_reserved_tck'
+ 13. Propagation Delay
+ 14. Minimum Propagation Delay
+ 15. Fast Model Setup Summary
+ 16. Fast Model Hold Summary
+ 17. Fast Model Recovery Summary
+ 18. Fast Model Removal Summary
+ 19. Fast Model Minimum Pulse Width Summary
+ 20. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Multicorner Timing Analysis Summary
+ 24. Progagation Delay
+ 25. Minimum Progagation Delay
+ 26. Clock Transfers
+ 27. Report TCCS
+ 28. Report RSKM
+ 29. Unconstrained Paths
+ 30. TimeQuest Timing Analyzer Messages
 
 
 
@@ -87,13 +88,23 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                    ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
-; Clock Name          ; Type ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
-; altera_reserved_tck ; Base ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
++------------------------------------------------------+
+; SDC File List                                        ;
++------------------+--------+--------------------------+
+; SDC File Path    ; Status ; Read at                  ;
++------------------+--------+--------------------------+
+; g21_lab3.out.sdc ; OK     ; Tue Oct 31 15:02:07 2017 ;
++------------------+--------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++---------------------+---------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; Clock Name          ; Type    ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
++---------------------+---------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; altera_reserved_tck ; Base    ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
+; CLK                 ; Virtual ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { }                     ;
++---------------------+---------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
 
 
 ---------------------------
@@ -149,120 +160,120 @@ No paths to report.
 +---------------+-------------+--------+--------+--------+--------+
 ; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +---------------+-------------+--------+--------+--------+--------+
-; dipswitch2[0] ; LEDfloor[0] ; 18.936 ; 18.936 ; 18.936 ; 18.936 ;
-; dipswitch2[0] ; LEDfloor[2] ; 18.641 ; 18.641 ; 18.641 ; 18.641 ;
-; dipswitch2[0] ; LEDfloor[3] ; 18.654 ; 18.654 ; 18.654 ; 18.654 ;
-; dipswitch2[0] ; LEDfloor[4] ; 19.002 ; 19.002 ; 19.002 ; 19.002 ;
-; dipswitch2[0] ; LEDfloor[5] ; 19.002 ; 19.002 ; 19.002 ; 19.002 ;
-; dipswitch2[0] ; LEDfloor[6] ; 19.000 ; 19.000 ; 19.000 ; 19.000 ;
-; dipswitch2[0] ; LEDmod[0]   ; 22.798 ; 22.798 ; 22.798 ; 22.798 ;
-; dipswitch2[0] ; LEDmod[1]   ; 23.032 ; 23.032 ; 23.032 ; 23.032 ;
-; dipswitch2[0] ; LEDmod[2]   ; 23.022 ; 23.022 ; 23.022 ; 23.022 ;
-; dipswitch2[0] ; LEDmod[3]   ; 22.840 ; 22.840 ; 22.840 ; 22.840 ;
-; dipswitch2[0] ; LEDmod[4]   ; 22.784 ; 22.784 ; 22.784 ; 22.784 ;
-; dipswitch2[0] ; LEDmod[5]   ; 22.788 ; 22.788 ; 22.788 ; 22.788 ;
-; dipswitch2[0] ; LEDmod[6]   ; 22.856 ; 22.856 ; 22.856 ; 22.856 ;
-; dipswitch2[0] ; VALUE[0]    ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
-; dipswitch2[0] ; VALUE[1]    ; 12.409 ; 12.409 ; 12.409 ; 12.409 ;
-; dipswitch2[0] ; VALUE[2]    ; 13.858 ; 13.858 ; 13.858 ; 13.858 ;
-; dipswitch2[0] ; VALUE[3]    ; 14.430 ; 14.430 ; 14.430 ; 14.430 ;
-; dipswitch2[0] ; VALUE[4]    ; 14.939 ; 14.939 ; 14.939 ; 14.939 ;
-; dipswitch2[0] ; VALUE[5]    ; 13.869 ; 13.869 ; 13.869 ; 13.869 ;
-; dipswitch2[1] ; LEDfloor[0] ; 20.354 ; 20.354 ; 20.354 ; 20.354 ;
-; dipswitch2[1] ; LEDfloor[2] ; 20.059 ; 20.059 ; 20.059 ; 20.059 ;
-; dipswitch2[1] ; LEDfloor[3] ; 20.072 ; 20.072 ; 20.072 ; 20.072 ;
-; dipswitch2[1] ; LEDfloor[4] ; 20.420 ; 20.420 ; 20.420 ; 20.420 ;
-; dipswitch2[1] ; LEDfloor[5] ; 20.420 ; 20.420 ; 20.420 ; 20.420 ;
-; dipswitch2[1] ; LEDfloor[6] ; 20.418 ; 20.418 ; 20.418 ; 20.418 ;
-; dipswitch2[1] ; LEDmod[0]   ; 24.216 ; 24.216 ; 24.216 ; 24.216 ;
-; dipswitch2[1] ; LEDmod[1]   ; 24.450 ; 24.450 ; 24.450 ; 24.450 ;
-; dipswitch2[1] ; LEDmod[2]   ; 24.440 ; 24.440 ; 24.440 ; 24.440 ;
-; dipswitch2[1] ; LEDmod[3]   ; 24.258 ; 24.258 ; 24.258 ; 24.258 ;
-; dipswitch2[1] ; LEDmod[4]   ; 24.202 ; 24.202 ; 24.202 ; 24.202 ;
-; dipswitch2[1] ; LEDmod[5]   ; 24.206 ; 24.206 ; 24.206 ; 24.206 ;
-; dipswitch2[1] ; LEDmod[6]   ; 24.274 ; 24.274 ; 24.274 ; 24.274 ;
-; dipswitch2[1] ; VALUE[0]    ; 13.902 ; 13.902 ; 13.902 ; 13.902 ;
-; dipswitch2[1] ; VALUE[1]    ; 13.048 ; 13.048 ; 13.048 ; 13.048 ;
-; dipswitch2[1] ; VALUE[2]    ; 15.022 ; 15.022 ; 15.022 ; 15.022 ;
-; dipswitch2[1] ; VALUE[3]    ; 15.328 ; 15.328 ; 15.328 ; 15.328 ;
-; dipswitch2[1] ; VALUE[4]    ; 16.357 ; 16.357 ; 16.357 ; 16.357 ;
-; dipswitch2[1] ; VALUE[5]    ; 13.640 ; 14.011 ; 14.011 ; 13.640 ;
-; dipswitch2[2] ; LEDfloor[0] ; 19.152 ; 19.152 ; 19.152 ; 19.152 ;
-; dipswitch2[2] ; LEDfloor[2] ; 18.857 ; 18.857 ; 18.857 ; 18.857 ;
-; dipswitch2[2] ; LEDfloor[3] ; 18.870 ; 18.870 ; 18.870 ; 18.870 ;
-; dipswitch2[2] ; LEDfloor[4] ; 19.218 ; 19.218 ; 19.218 ; 19.218 ;
-; dipswitch2[2] ; LEDfloor[5] ; 19.218 ; 19.218 ; 19.218 ; 19.218 ;
-; dipswitch2[2] ; LEDfloor[6] ; 19.216 ; 18.940 ; 18.940 ; 19.216 ;
-; dipswitch2[2] ; LEDmod[0]   ; 23.014 ; 23.014 ; 23.014 ; 23.014 ;
-; dipswitch2[2] ; LEDmod[1]   ; 23.248 ; 23.248 ; 23.248 ; 23.248 ;
-; dipswitch2[2] ; LEDmod[2]   ; 23.238 ; 23.238 ; 23.238 ; 23.238 ;
-; dipswitch2[2] ; LEDmod[3]   ; 23.056 ; 23.056 ; 23.056 ; 23.056 ;
-; dipswitch2[2] ; LEDmod[4]   ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
-; dipswitch2[2] ; LEDmod[5]   ; 23.004 ; 23.004 ; 23.004 ; 23.004 ;
-; dipswitch2[2] ; LEDmod[6]   ; 23.072 ; 23.072 ; 23.072 ; 23.072 ;
-; dipswitch2[2] ; VALUE[0]    ; 13.303 ; 13.303 ; 13.303 ; 13.303 ;
-; dipswitch2[2] ; VALUE[1]    ; 12.352 ; 11.887 ; 11.887 ; 12.352 ;
-; dipswitch2[2] ; VALUE[2]    ; 13.090 ; 13.436 ; 13.436 ; 13.090 ;
-; dipswitch2[2] ; VALUE[3]    ; 14.645 ; 14.921 ; 14.921 ; 14.645 ;
-; dipswitch2[2] ; VALUE[4]    ; 14.126 ; 14.126 ; 14.126 ; 14.126 ;
-; dipswitch2[2] ; VALUE[5]    ; 13.488 ; 13.488 ; 13.488 ; 13.488 ;
-; dipswitch2[3] ; LEDfloor[0] ; 17.489 ; 17.489 ; 17.489 ; 17.489 ;
-; dipswitch2[3] ; LEDfloor[2] ; 17.194 ; 17.194 ; 17.194 ; 17.194 ;
-; dipswitch2[3] ; LEDfloor[3] ; 17.207 ; 17.207 ; 17.207 ; 17.207 ;
-; dipswitch2[3] ; LEDfloor[4] ; 17.555 ; 17.555 ; 17.555 ; 17.555 ;
-; dipswitch2[3] ; LEDfloor[5] ; 17.555 ; 17.555 ; 17.555 ; 17.555 ;
-; dipswitch2[3] ; LEDfloor[6] ; 17.553 ; 17.441 ; 17.441 ; 17.553 ;
-; dipswitch2[3] ; LEDmod[0]   ; 21.351 ; 21.351 ; 21.351 ; 21.351 ;
-; dipswitch2[3] ; LEDmod[1]   ; 21.585 ; 21.585 ; 21.585 ; 21.585 ;
-; dipswitch2[3] ; LEDmod[2]   ; 21.575 ; 21.575 ; 21.575 ; 21.575 ;
-; dipswitch2[3] ; LEDmod[3]   ; 21.393 ; 21.393 ; 21.393 ; 21.393 ;
-; dipswitch2[3] ; LEDmod[4]   ; 21.337 ; 21.337 ; 21.337 ; 21.337 ;
-; dipswitch2[3] ; LEDmod[5]   ; 21.341 ; 21.341 ; 21.341 ; 21.341 ;
-; dipswitch2[3] ; LEDmod[6]   ; 21.409 ; 21.409 ; 21.409 ; 21.409 ;
-; dipswitch2[3] ; VALUE[0]    ; 12.320 ; 12.320 ; 12.320 ; 12.320 ;
-; dipswitch2[3] ; VALUE[1]    ; 11.718 ; 11.718 ; 11.718 ; 11.718 ;
-; dipswitch2[3] ; VALUE[2]    ; 11.291 ; 11.291 ; 11.291 ; 11.291 ;
-; dipswitch2[3] ; VALUE[3]    ; 11.711 ; 11.711 ; 11.711 ; 11.711 ;
-; dipswitch2[3] ; VALUE[4]    ; 13.380 ; 13.492 ; 13.492 ; 13.380 ;
-; dipswitch2[3] ; VALUE[5]    ; 10.683 ; 10.683 ; 10.683 ; 10.683 ;
-; dipswitch2[4] ; LEDfloor[0] ; 17.437 ; 17.437 ; 17.437 ; 17.437 ;
-; dipswitch2[4] ; LEDfloor[2] ; 17.142 ; 17.142 ; 17.142 ; 17.142 ;
-; dipswitch2[4] ; LEDfloor[3] ; 17.155 ; 17.155 ; 17.155 ; 17.155 ;
-; dipswitch2[4] ; LEDfloor[4] ; 17.503 ; 17.503 ; 17.503 ; 17.503 ;
-; dipswitch2[4] ; LEDfloor[5] ; 17.503 ; 17.503 ; 17.503 ; 17.503 ;
-; dipswitch2[4] ; LEDfloor[6] ; 17.501 ; 17.501 ; 17.501 ; 17.501 ;
-; dipswitch2[4] ; LEDmod[0]   ; 21.299 ; 21.299 ; 21.299 ; 21.299 ;
-; dipswitch2[4] ; LEDmod[1]   ; 21.533 ; 21.533 ; 21.533 ; 21.533 ;
-; dipswitch2[4] ; LEDmod[2]   ; 21.523 ; 21.523 ; 21.523 ; 21.523 ;
-; dipswitch2[4] ; LEDmod[3]   ; 21.341 ; 21.341 ; 21.341 ; 21.341 ;
-; dipswitch2[4] ; LEDmod[4]   ; 21.285 ; 21.285 ; 21.285 ; 21.285 ;
-; dipswitch2[4] ; LEDmod[5]   ; 21.289 ; 21.289 ; 21.289 ; 21.289 ;
-; dipswitch2[4] ; LEDmod[6]   ; 21.357 ; 21.357 ; 21.357 ; 21.357 ;
-; dipswitch2[4] ; VALUE[0]    ; 12.322 ; 12.322 ; 12.322 ; 12.322 ;
-; dipswitch2[4] ; VALUE[1]    ; 11.722 ; 11.722 ; 11.722 ; 11.722 ;
-; dipswitch2[4] ; VALUE[2]    ; 11.350 ; 11.601 ; 11.601 ; 11.350 ;
-; dipswitch2[4] ; VALUE[3]    ; 11.832 ; 12.887 ; 12.887 ; 11.832 ;
-; dipswitch2[4] ; VALUE[4]    ; 13.440 ; 13.440 ; 13.440 ; 13.440 ;
-; dipswitch2[4] ; VALUE[5]    ; 11.310 ; 12.845 ; 12.845 ; 11.310 ;
-; dipswitch2[5] ; LEDfloor[0] ; 16.941 ; 16.941 ; 16.941 ; 16.941 ;
-; dipswitch2[5] ; LEDfloor[2] ; 16.646 ; 16.646 ; 16.646 ; 16.646 ;
-; dipswitch2[5] ; LEDfloor[3] ; 16.659 ; 16.659 ; 16.659 ; 16.659 ;
-; dipswitch2[5] ; LEDfloor[4] ; 17.007 ; 17.007 ; 17.007 ; 17.007 ;
-; dipswitch2[5] ; LEDfloor[5] ; 17.007 ; 17.007 ; 17.007 ; 17.007 ;
-; dipswitch2[5] ; LEDfloor[6] ; 17.005 ; 17.005 ; 17.005 ; 17.005 ;
-; dipswitch2[5] ; LEDmod[0]   ; 20.803 ; 20.803 ; 20.803 ; 20.803 ;
-; dipswitch2[5] ; LEDmod[1]   ; 21.037 ; 21.037 ; 21.037 ; 21.037 ;
-; dipswitch2[5] ; LEDmod[2]   ; 21.027 ; 21.027 ; 21.027 ; 21.027 ;
-; dipswitch2[5] ; LEDmod[3]   ; 20.845 ; 20.845 ; 20.845 ; 20.845 ;
-; dipswitch2[5] ; LEDmod[4]   ; 20.789 ; 20.789 ; 20.789 ; 20.789 ;
-; dipswitch2[5] ; LEDmod[5]   ; 20.793 ; 20.793 ; 20.793 ; 20.793 ;
-; dipswitch2[5] ; LEDmod[6]   ; 20.861 ; 20.861 ; 20.861 ; 20.861 ;
-; dipswitch2[5] ; VALUE[0]    ; 10.919 ; 10.919 ; 10.919 ; 10.919 ;
-; dipswitch2[5] ; VALUE[1]    ; 10.315 ; 10.315 ; 10.315 ; 10.315 ;
-; dipswitch2[5] ; VALUE[2]    ; 10.603 ; 10.603 ; 10.603 ; 10.603 ;
-; dipswitch2[5] ; VALUE[3]    ; 10.996 ; 11.033 ; 11.033 ; 10.996 ;
-; dipswitch2[5] ; VALUE[4]    ; 12.944 ; 12.944 ; 12.944 ; 12.944 ;
-; dipswitch2[5] ; VALUE[5]    ; 9.660  ; 10.991 ; 10.991 ; 9.660  ;
+; dipswitch2[0] ; LEDfloor[0] ; 21.303 ; 21.303 ; 21.303 ; 21.303 ;
+; dipswitch2[0] ; LEDfloor[2] ; 21.329 ; 21.329 ; 21.329 ; 21.329 ;
+; dipswitch2[0] ; LEDfloor[3] ; 21.676 ; 21.676 ; 21.676 ; 21.676 ;
+; dipswitch2[0] ; LEDfloor[4] ; 21.004 ; 21.004 ; 21.004 ; 21.004 ;
+; dipswitch2[0] ; LEDfloor[5] ; 21.000 ; 21.000 ; 21.000 ; 21.000 ;
+; dipswitch2[0] ; LEDfloor[6] ; 21.001 ; 21.001 ; 21.001 ; 21.001 ;
+; dipswitch2[0] ; LEDmod[0]   ; 24.717 ; 24.717 ; 24.717 ; 24.717 ;
+; dipswitch2[0] ; LEDmod[1]   ; 24.907 ; 24.907 ; 24.907 ; 24.907 ;
+; dipswitch2[0] ; LEDmod[2]   ; 24.903 ; 24.903 ; 24.903 ; 24.903 ;
+; dipswitch2[0] ; LEDmod[3]   ; 24.708 ; 24.708 ; 24.708 ; 24.708 ;
+; dipswitch2[0] ; LEDmod[4]   ; 24.680 ; 24.680 ; 24.680 ; 24.680 ;
+; dipswitch2[0] ; LEDmod[5]   ; 24.717 ; 24.717 ; 24.717 ; 24.717 ;
+; dipswitch2[0] ; LEDmod[6]   ; 25.052 ; 25.052 ; 25.052 ; 25.052 ;
+; dipswitch2[0] ; VALUE[0]    ; 12.591 ; 12.591 ; 12.591 ; 12.591 ;
+; dipswitch2[0] ; VALUE[1]    ; 13.067 ; 13.067 ; 13.067 ; 13.067 ;
+; dipswitch2[0] ; VALUE[2]    ; 13.652 ; 13.652 ; 13.652 ; 13.652 ;
+; dipswitch2[0] ; VALUE[3]    ; 13.496 ; 13.496 ; 13.496 ; 13.496 ;
+; dipswitch2[0] ; VALUE[4]    ; 15.405 ; 15.405 ; 15.405 ; 15.405 ;
+; dipswitch2[0] ; VALUE[5]    ; 13.328 ; 13.328 ; 13.328 ; 13.328 ;
+; dipswitch2[1] ; LEDfloor[0] ; 22.090 ; 22.090 ; 22.090 ; 22.090 ;
+; dipswitch2[1] ; LEDfloor[2] ; 22.116 ; 22.116 ; 22.116 ; 22.116 ;
+; dipswitch2[1] ; LEDfloor[3] ; 22.463 ; 22.463 ; 22.463 ; 22.463 ;
+; dipswitch2[1] ; LEDfloor[4] ; 21.791 ; 21.791 ; 21.791 ; 21.791 ;
+; dipswitch2[1] ; LEDfloor[5] ; 21.787 ; 21.787 ; 21.787 ; 21.787 ;
+; dipswitch2[1] ; LEDfloor[6] ; 21.788 ; 21.788 ; 21.788 ; 21.788 ;
+; dipswitch2[1] ; LEDmod[0]   ; 25.504 ; 25.504 ; 25.504 ; 25.504 ;
+; dipswitch2[1] ; LEDmod[1]   ; 25.694 ; 25.694 ; 25.694 ; 25.694 ;
+; dipswitch2[1] ; LEDmod[2]   ; 25.690 ; 25.690 ; 25.690 ; 25.690 ;
+; dipswitch2[1] ; LEDmod[3]   ; 25.495 ; 25.495 ; 25.495 ; 25.495 ;
+; dipswitch2[1] ; LEDmod[4]   ; 25.467 ; 25.467 ; 25.467 ; 25.467 ;
+; dipswitch2[1] ; LEDmod[5]   ; 25.504 ; 25.504 ; 25.504 ; 25.504 ;
+; dipswitch2[1] ; LEDmod[6]   ; 25.839 ; 25.839 ; 25.839 ; 25.839 ;
+; dipswitch2[1] ; VALUE[0]    ; 13.058 ; 13.058 ; 13.058 ; 13.058 ;
+; dipswitch2[1] ; VALUE[1]    ; 14.003 ; 14.003 ; 14.003 ; 14.003 ;
+; dipswitch2[1] ; VALUE[2]    ; 14.458 ; 14.458 ; 14.458 ; 14.458 ;
+; dipswitch2[1] ; VALUE[3]    ; 14.283 ; 14.283 ; 14.283 ; 14.283 ;
+; dipswitch2[1] ; VALUE[4]    ; 16.089 ; 16.089 ; 16.089 ; 16.089 ;
+; dipswitch2[1] ; VALUE[5]    ; 13.585 ; 13.585 ; 13.585 ; 13.585 ;
+; dipswitch2[2] ; LEDfloor[0] ; 20.380 ; 20.380 ; 20.380 ; 20.380 ;
+; dipswitch2[2] ; LEDfloor[2] ; 20.406 ; 20.406 ; 20.406 ; 20.406 ;
+; dipswitch2[2] ; LEDfloor[3] ; 20.753 ; 20.753 ; 20.753 ; 20.753 ;
+; dipswitch2[2] ; LEDfloor[4] ; 20.081 ; 20.081 ; 20.081 ; 20.081 ;
+; dipswitch2[2] ; LEDfloor[5] ; 20.077 ; 20.077 ; 20.077 ; 20.077 ;
+; dipswitch2[2] ; LEDfloor[6] ; 20.078 ; 20.078 ; 20.078 ; 20.078 ;
+; dipswitch2[2] ; LEDmod[0]   ; 23.794 ; 23.794 ; 23.794 ; 23.794 ;
+; dipswitch2[2] ; LEDmod[1]   ; 23.984 ; 23.984 ; 23.984 ; 23.984 ;
+; dipswitch2[2] ; LEDmod[2]   ; 23.980 ; 23.980 ; 23.980 ; 23.980 ;
+; dipswitch2[2] ; LEDmod[3]   ; 23.785 ; 23.785 ; 23.785 ; 23.785 ;
+; dipswitch2[2] ; LEDmod[4]   ; 23.757 ; 23.757 ; 23.757 ; 23.757 ;
+; dipswitch2[2] ; LEDmod[5]   ; 23.794 ; 23.794 ; 23.794 ; 23.794 ;
+; dipswitch2[2] ; LEDmod[6]   ; 24.129 ; 24.129 ; 24.129 ; 24.129 ;
+; dipswitch2[2] ; VALUE[0]    ; 11.769 ; 11.253 ; 11.253 ; 11.769 ;
+; dipswitch2[2] ; VALUE[1]    ; 12.345 ; 12.345 ; 12.345 ; 12.345 ;
+; dipswitch2[2] ; VALUE[2]    ; 13.020 ; 12.980 ; 12.980 ; 13.020 ;
+; dipswitch2[2] ; VALUE[3]    ; 12.573 ; 12.573 ; 12.573 ; 12.573 ;
+; dipswitch2[2] ; VALUE[4]    ; 14.784 ; 14.784 ; 14.784 ; 14.784 ;
+; dipswitch2[2] ; VALUE[5]    ; 12.993 ; 12.993 ; 12.993 ; 12.993 ;
+; dipswitch2[3] ; LEDfloor[0] ; 18.882 ; 18.882 ; 18.882 ; 18.882 ;
+; dipswitch2[3] ; LEDfloor[2] ; 18.908 ; 18.908 ; 18.908 ; 18.908 ;
+; dipswitch2[3] ; LEDfloor[3] ; 19.255 ; 19.255 ; 19.255 ; 19.255 ;
+; dipswitch2[3] ; LEDfloor[4] ; 18.583 ; 18.583 ; 18.583 ; 18.583 ;
+; dipswitch2[3] ; LEDfloor[5] ; 18.579 ; 18.579 ; 18.579 ; 18.579 ;
+; dipswitch2[3] ; LEDfloor[6] ; 18.580 ; 18.580 ; 18.580 ; 18.580 ;
+; dipswitch2[3] ; LEDmod[0]   ; 22.296 ; 22.296 ; 22.296 ; 22.296 ;
+; dipswitch2[3] ; LEDmod[1]   ; 22.486 ; 22.486 ; 22.486 ; 22.486 ;
+; dipswitch2[3] ; LEDmod[2]   ; 22.482 ; 22.482 ; 22.482 ; 22.482 ;
+; dipswitch2[3] ; LEDmod[3]   ; 22.287 ; 22.287 ; 22.287 ; 22.287 ;
+; dipswitch2[3] ; LEDmod[4]   ; 22.259 ; 22.259 ; 22.259 ; 22.259 ;
+; dipswitch2[3] ; LEDmod[5]   ; 22.296 ; 22.296 ; 22.296 ; 22.296 ;
+; dipswitch2[3] ; LEDmod[6]   ; 22.631 ; 22.631 ; 22.631 ; 22.631 ;
+; dipswitch2[3] ; VALUE[0]    ; 10.849 ; 10.849 ; 10.849 ; 10.849 ;
+; dipswitch2[3] ; VALUE[1]    ; 11.232 ; 11.423 ; 11.423 ; 11.232 ;
+; dipswitch2[3] ; VALUE[2]    ; 11.626 ; 11.626 ; 11.626 ; 11.626 ;
+; dipswitch2[3] ; VALUE[3]    ; 9.244  ; 9.425  ; 9.425  ; 9.244  ;
+; dipswitch2[3] ; VALUE[4]    ; 13.008 ; 13.008 ; 13.008 ; 13.008 ;
+; dipswitch2[3] ; VALUE[5]    ; 11.255 ; 11.255 ; 11.255 ; 11.255 ;
+; dipswitch2[4] ; LEDfloor[0] ; 17.807 ; 17.807 ; 17.807 ; 17.807 ;
+; dipswitch2[4] ; LEDfloor[2] ; 17.833 ; 17.833 ; 17.833 ; 17.833 ;
+; dipswitch2[4] ; LEDfloor[3] ; 18.180 ; 18.180 ; 18.180 ; 18.180 ;
+; dipswitch2[4] ; LEDfloor[4] ; 17.508 ; 17.508 ; 17.508 ; 17.508 ;
+; dipswitch2[4] ; LEDfloor[5] ; 17.504 ; 17.504 ; 17.504 ; 17.504 ;
+; dipswitch2[4] ; LEDfloor[6] ; 17.505 ; 17.241 ; 17.241 ; 17.505 ;
+; dipswitch2[4] ; LEDmod[0]   ; 21.221 ; 21.221 ; 21.221 ; 21.221 ;
+; dipswitch2[4] ; LEDmod[1]   ; 21.411 ; 21.411 ; 21.411 ; 21.411 ;
+; dipswitch2[4] ; LEDmod[2]   ; 21.407 ; 21.407 ; 21.407 ; 21.407 ;
+; dipswitch2[4] ; LEDmod[3]   ; 21.212 ; 21.212 ; 21.212 ; 21.212 ;
+; dipswitch2[4] ; LEDmod[4]   ; 21.184 ; 21.184 ; 21.184 ; 21.184 ;
+; dipswitch2[4] ; LEDmod[5]   ; 21.221 ; 21.221 ; 21.221 ; 21.221 ;
+; dipswitch2[4] ; LEDmod[6]   ; 21.556 ; 21.556 ; 21.556 ; 21.556 ;
+; dipswitch2[4] ; VALUE[0]    ; 8.938  ; 9.897  ; 9.897  ; 8.938  ;
+; dipswitch2[4] ; VALUE[1]    ; 9.316  ; 10.770 ; 10.770 ; 9.316  ;
+; dipswitch2[4] ; VALUE[2]    ; 10.287 ; 10.063 ; 10.063 ; 10.287 ;
+; dipswitch2[4] ; VALUE[3]    ; 8.451  ; 9.508  ; 9.508  ; 8.451  ;
+; dipswitch2[4] ; VALUE[4]    ; 11.084 ; 11.084 ; 11.084 ; 11.084 ;
+; dipswitch2[4] ; VALUE[5]    ; 8.463  ; 9.476  ; 9.476  ; 8.463  ;
+; dipswitch2[5] ; LEDfloor[0] ; 18.202 ; 18.202 ; 18.202 ; 18.202 ;
+; dipswitch2[5] ; LEDfloor[2] ; 18.228 ; 18.228 ; 18.228 ; 18.228 ;
+; dipswitch2[5] ; LEDfloor[3] ; 18.575 ; 18.575 ; 18.575 ; 18.575 ;
+; dipswitch2[5] ; LEDfloor[4] ; 17.903 ; 17.903 ; 17.903 ; 17.903 ;
+; dipswitch2[5] ; LEDfloor[5] ; 17.899 ; 17.899 ; 17.899 ; 17.899 ;
+; dipswitch2[5] ; LEDfloor[6] ; 17.900 ; 17.524 ; 17.524 ; 17.900 ;
+; dipswitch2[5] ; LEDmod[0]   ; 21.616 ; 21.616 ; 21.616 ; 21.616 ;
+; dipswitch2[5] ; LEDmod[1]   ; 21.806 ; 21.806 ; 21.806 ; 21.806 ;
+; dipswitch2[5] ; LEDmod[2]   ; 21.802 ; 21.802 ; 21.802 ; 21.802 ;
+; dipswitch2[5] ; LEDmod[3]   ; 21.607 ; 21.607 ; 21.607 ; 21.607 ;
+; dipswitch2[5] ; LEDmod[4]   ; 21.579 ; 21.579 ; 21.579 ; 21.579 ;
+; dipswitch2[5] ; LEDmod[5]   ; 21.616 ; 21.616 ; 21.616 ; 21.616 ;
+; dipswitch2[5] ; LEDmod[6]   ; 21.951 ; 21.951 ; 21.951 ; 21.951 ;
+; dipswitch2[5] ; VALUE[0]    ; 10.128 ; 10.292 ; 10.292 ; 10.128 ;
+; dipswitch2[5] ; VALUE[1]    ; 9.912  ; 11.165 ; 11.165 ; 9.912  ;
+; dipswitch2[5] ; VALUE[2]    ; 10.315 ; 10.315 ; 10.315 ; 10.315 ;
+; dipswitch2[5] ; VALUE[3]    ; 9.483  ; 9.903  ; 9.903  ; 9.483  ;
+; dipswitch2[5] ; VALUE[4]    ; 11.679 ; 11.679 ; 11.679 ; 11.679 ;
+; dipswitch2[5] ; VALUE[5]    ; 8.917  ; 9.871  ; 9.871  ; 8.917  ;
 +---------------+-------------+--------+--------+--------+--------+
 
 
@@ -271,120 +282,120 @@ No paths to report.
 +---------------+-------------+--------+--------+--------+--------+
 ; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +---------------+-------------+--------+--------+--------+--------+
-; dipswitch2[0] ; LEDfloor[0] ; 11.550 ; 11.550 ; 11.550 ; 11.550 ;
-; dipswitch2[0] ; LEDfloor[2] ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
-; dipswitch2[0] ; LEDfloor[3] ; 11.268 ; 11.268 ; 11.268 ; 11.268 ;
-; dipswitch2[0] ; LEDfloor[4] ; 11.643 ; 11.643 ; 11.643 ; 11.643 ;
-; dipswitch2[0] ; LEDfloor[5] ; 11.646 ; 11.646 ; 11.646 ; 11.646 ;
-; dipswitch2[0] ; LEDfloor[6] ; 11.647 ; 11.647 ; 11.647 ; 11.647 ;
-; dipswitch2[0] ; LEDmod[0]   ; 13.018 ; 13.018 ; 13.018 ; 13.018 ;
-; dipswitch2[0] ; LEDmod[1]   ; 13.211 ; 13.211 ; 13.211 ; 13.211 ;
-; dipswitch2[0] ; LEDmod[2]   ; 13.211 ; 13.211 ; 13.211 ; 13.211 ;
-; dipswitch2[0] ; LEDmod[3]   ; 13.021 ; 13.021 ; 13.021 ; 13.021 ;
-; dipswitch2[0] ; LEDmod[4]   ; 13.007 ; 13.007 ; 13.007 ; 13.007 ;
-; dipswitch2[0] ; LEDmod[5]   ; 13.017 ; 13.017 ; 13.017 ; 13.017 ;
-; dipswitch2[0] ; LEDmod[6]   ; 13.037 ; 13.037 ; 13.037 ; 13.037 ;
-; dipswitch2[0] ; VALUE[0]    ; 10.908 ; 10.908 ; 10.908 ; 10.908 ;
-; dipswitch2[0] ; VALUE[1]    ; 10.549 ; 10.549 ; 10.549 ; 10.549 ;
-; dipswitch2[0] ; VALUE[2]    ; 10.766 ; 10.766 ; 10.766 ; 10.766 ;
-; dipswitch2[0] ; VALUE[3]    ; 10.495 ; 11.056 ; 11.056 ; 10.495 ;
-; dipswitch2[0] ; VALUE[4]    ; 12.606 ; 12.809 ; 12.809 ; 12.606 ;
-; dipswitch2[0] ; VALUE[5]    ; 10.875 ; 10.875 ; 10.875 ; 10.875 ;
-; dipswitch2[1] ; LEDfloor[0] ; 12.024 ; 12.024 ; 12.024 ; 12.024 ;
-; dipswitch2[1] ; LEDfloor[2] ; 11.754 ; 11.754 ; 11.754 ; 11.754 ;
-; dipswitch2[1] ; LEDfloor[3] ; 11.742 ; 11.742 ; 11.742 ; 11.742 ;
-; dipswitch2[1] ; LEDfloor[4] ; 12.117 ; 12.196 ; 12.196 ; 12.117 ;
-; dipswitch2[1] ; LEDfloor[5] ; 12.120 ; 12.120 ; 12.120 ; 12.120 ;
-; dipswitch2[1] ; LEDfloor[6] ; 12.200 ; 12.121 ; 12.121 ; 12.200 ;
-; dipswitch2[1] ; LEDmod[0]   ; 12.846 ; 12.846 ; 12.846 ; 12.846 ;
-; dipswitch2[1] ; LEDmod[1]   ; 13.042 ; 13.042 ; 13.042 ; 13.042 ;
-; dipswitch2[1] ; LEDmod[2]   ; 13.044 ; 13.044 ; 13.044 ; 13.044 ;
-; dipswitch2[1] ; LEDmod[3]   ; 12.847 ; 12.847 ; 12.847 ; 12.847 ;
-; dipswitch2[1] ; LEDmod[4]   ; 12.835 ; 12.835 ; 12.835 ; 12.835 ;
-; dipswitch2[1] ; LEDmod[5]   ; 12.814 ; 12.814 ; 12.814 ; 12.814 ;
-; dipswitch2[1] ; LEDmod[6]   ; 12.868 ; 12.868 ; 12.868 ; 12.868 ;
-; dipswitch2[1] ; VALUE[0]    ; 10.753 ; 10.753 ; 10.753 ; 10.753 ;
-; dipswitch2[1] ; VALUE[1]    ; 10.549 ; 10.549 ; 10.549 ; 10.549 ;
-; dipswitch2[1] ; VALUE[2]    ; 10.344 ; 10.344 ; 10.344 ; 10.344 ;
-; dipswitch2[1] ; VALUE[3]    ; 10.403 ; 10.403 ; 10.403 ; 10.403 ;
-; dipswitch2[1] ; VALUE[4]    ; 12.762 ; 12.762 ; 12.762 ; 12.762 ;
-; dipswitch2[1] ; VALUE[5]    ; 11.349 ; 11.428 ; 11.428 ; 11.349 ;
-; dipswitch2[2] ; LEDfloor[0] ; 10.866 ; 10.866 ; 10.866 ; 10.866 ;
-; dipswitch2[2] ; LEDfloor[2] ; 10.596 ; 10.596 ; 10.596 ; 10.596 ;
-; dipswitch2[2] ; LEDfloor[3] ; 10.584 ; 10.584 ; 10.584 ; 10.584 ;
-; dipswitch2[2] ; LEDfloor[4] ; 11.248 ; 10.959 ; 10.959 ; 11.248 ;
-; dipswitch2[2] ; LEDfloor[5] ; 10.962 ; 10.962 ; 10.962 ; 10.962 ;
-; dipswitch2[2] ; LEDfloor[6] ; 10.963 ; 12.037 ; 12.037 ; 10.963 ;
-; dipswitch2[2] ; LEDmod[0]   ; 12.334 ; 12.334 ; 12.334 ; 12.334 ;
-; dipswitch2[2] ; LEDmod[1]   ; 12.527 ; 12.527 ; 12.527 ; 12.527 ;
-; dipswitch2[2] ; LEDmod[2]   ; 12.527 ; 12.527 ; 12.527 ; 12.527 ;
-; dipswitch2[2] ; LEDmod[3]   ; 12.337 ; 12.337 ; 12.337 ; 12.337 ;
-; dipswitch2[2] ; LEDmod[4]   ; 12.323 ; 12.323 ; 12.323 ; 12.323 ;
-; dipswitch2[2] ; LEDmod[5]   ; 12.333 ; 12.333 ; 12.333 ; 12.333 ;
-; dipswitch2[2] ; LEDmod[6]   ; 12.353 ; 12.353 ; 12.353 ; 12.353 ;
-; dipswitch2[2] ; VALUE[0]    ; 11.050 ; 10.654 ; 10.654 ; 11.050 ;
-; dipswitch2[2] ; VALUE[1]    ; 10.857 ; 10.057 ; 10.057 ; 10.857 ;
-; dipswitch2[2] ; VALUE[2]    ; 10.612 ; 9.884  ; 9.884  ; 10.612 ;
-; dipswitch2[2] ; VALUE[3]    ; 10.261 ; 10.167 ; 10.167 ; 10.261 ;
-; dipswitch2[2] ; VALUE[4]    ; 13.138 ; 12.154 ; 12.154 ; 13.138 ;
-; dipswitch2[2] ; VALUE[5]    ; 11.265 ; 10.191 ; 10.191 ; 11.265 ;
-; dipswitch2[3] ; LEDfloor[0] ; 10.419 ; 10.419 ; 10.419 ; 10.419 ;
-; dipswitch2[3] ; LEDfloor[2] ; 10.149 ; 10.149 ; 10.149 ; 10.149 ;
-; dipswitch2[3] ; LEDfloor[3] ; 10.137 ; 10.137 ; 10.137 ; 10.137 ;
-; dipswitch2[3] ; LEDfloor[4] ; 10.591 ; 10.512 ; 10.512 ; 10.591 ;
-; dipswitch2[3] ; LEDfloor[5] ; 10.515 ; 10.515 ; 10.515 ; 10.515 ;
-; dipswitch2[3] ; LEDfloor[6] ; 10.516 ; 10.595 ; 10.595 ; 10.516 ;
-; dipswitch2[3] ; LEDmod[0]   ; 11.398 ; 11.398 ; 11.398 ; 11.398 ;
-; dipswitch2[3] ; LEDmod[1]   ; 11.593 ; 11.593 ; 11.593 ; 11.593 ;
-; dipswitch2[3] ; LEDmod[2]   ; 11.592 ; 11.592 ; 11.592 ; 11.592 ;
-; dipswitch2[3] ; LEDmod[3]   ; 11.403 ; 11.403 ; 11.403 ; 11.403 ;
-; dipswitch2[3] ; LEDmod[4]   ; 11.387 ; 11.387 ; 11.387 ; 11.387 ;
-; dipswitch2[3] ; LEDmod[5]   ; 11.385 ; 11.385 ; 11.385 ; 11.385 ;
-; dipswitch2[3] ; LEDmod[6]   ; 11.419 ; 11.419 ; 11.419 ; 11.419 ;
-; dipswitch2[3] ; VALUE[0]    ; 8.855  ; 9.207  ; 9.207  ; 8.855  ;
-; dipswitch2[3] ; VALUE[1]    ; 8.600  ; 8.603  ; 8.603  ; 8.600  ;
-; dipswitch2[3] ; VALUE[2]    ; 8.967  ; 8.915  ; 8.915  ; 8.967  ;
-; dipswitch2[3] ; VALUE[3]    ; 9.438  ; 10.095 ; 10.095 ; 9.438  ;
-; dipswitch2[3] ; VALUE[4]    ; 11.948 ; 11.948 ; 11.948 ; 11.948 ;
-; dipswitch2[3] ; VALUE[5]    ; 9.823  ; 9.744  ; 9.744  ; 9.823  ;
-; dipswitch2[4] ; LEDfloor[0] ; 11.595 ; 11.595 ; 11.595 ; 11.595 ;
-; dipswitch2[4] ; LEDfloor[2] ; 11.325 ; 11.325 ; 11.325 ; 11.325 ;
-; dipswitch2[4] ; LEDfloor[3] ; 11.313 ; 11.313 ; 11.313 ; 11.313 ;
-; dipswitch2[4] ; LEDfloor[4] ; 11.730 ; 11.688 ; 11.688 ; 11.730 ;
-; dipswitch2[4] ; LEDfloor[5] ; 11.691 ; 11.691 ; 11.691 ; 11.691 ;
-; dipswitch2[4] ; LEDfloor[6] ; 11.692 ; 11.734 ; 11.734 ; 11.692 ;
-; dipswitch2[4] ; LEDmod[0]   ; 13.063 ; 13.063 ; 13.063 ; 13.063 ;
-; dipswitch2[4] ; LEDmod[1]   ; 13.256 ; 13.256 ; 13.256 ; 13.256 ;
-; dipswitch2[4] ; LEDmod[2]   ; 13.256 ; 13.256 ; 13.256 ; 13.256 ;
-; dipswitch2[4] ; LEDmod[3]   ; 13.066 ; 13.066 ; 13.066 ; 13.066 ;
-; dipswitch2[4] ; LEDmod[4]   ; 13.052 ; 13.052 ; 13.052 ; 13.052 ;
-; dipswitch2[4] ; LEDmod[5]   ; 13.062 ; 13.062 ; 13.062 ; 13.062 ;
-; dipswitch2[4] ; LEDmod[6]   ; 13.082 ; 13.082 ; 13.082 ; 13.082 ;
-; dipswitch2[4] ; VALUE[0]    ; 11.543 ; 11.111 ; 11.111 ; 11.543 ;
-; dipswitch2[4] ; VALUE[1]    ; 11.207 ; 10.507 ; 10.507 ; 11.207 ;
-; dipswitch2[4] ; VALUE[2]    ; 11.167 ; 11.077 ; 11.077 ; 11.167 ;
-; dipswitch2[4] ; VALUE[3]    ; 10.698 ; 10.833 ; 10.833 ; 10.698 ;
-; dipswitch2[4] ; VALUE[4]    ; 12.059 ; 11.566 ; 11.566 ; 12.059 ;
-; dipswitch2[4] ; VALUE[5]    ; 10.962 ; 10.920 ; 10.920 ; 10.962 ;
-; dipswitch2[5] ; LEDfloor[0] ; 10.335 ; 10.335 ; 10.335 ; 10.335 ;
-; dipswitch2[5] ; LEDfloor[2] ; 10.065 ; 10.065 ; 10.065 ; 10.065 ;
-; dipswitch2[5] ; LEDfloor[3] ; 10.053 ; 10.053 ; 10.053 ; 10.053 ;
-; dipswitch2[5] ; LEDfloor[4] ; 10.428 ; 10.428 ; 10.428 ; 10.428 ;
-; dipswitch2[5] ; LEDfloor[5] ; 10.431 ; 10.431 ; 10.431 ; 10.431 ;
-; dipswitch2[5] ; LEDfloor[6] ; 10.432 ; 10.432 ; 10.432 ; 10.432 ;
-; dipswitch2[5] ; LEDmod[0]   ; 11.803 ; 11.803 ; 11.803 ; 11.803 ;
-; dipswitch2[5] ; LEDmod[1]   ; 11.996 ; 11.996 ; 11.996 ; 11.996 ;
-; dipswitch2[5] ; LEDmod[2]   ; 11.996 ; 11.996 ; 11.996 ; 11.996 ;
-; dipswitch2[5] ; LEDmod[3]   ; 11.806 ; 11.806 ; 11.806 ; 11.806 ;
-; dipswitch2[5] ; LEDmod[4]   ; 11.792 ; 11.792 ; 11.792 ; 11.792 ;
-; dipswitch2[5] ; LEDmod[5]   ; 11.802 ; 11.802 ; 11.802 ; 11.802 ;
-; dipswitch2[5] ; LEDmod[6]   ; 11.822 ; 11.822 ; 11.822 ; 11.822 ;
-; dipswitch2[5] ; VALUE[0]    ; 10.166 ; 9.722  ; 9.722  ; 10.166 ;
-; dipswitch2[5] ; VALUE[1]    ; 9.843  ; 9.770  ; 9.770  ; 9.843  ;
-; dipswitch2[5] ; VALUE[2]    ; 10.092 ; 9.747  ; 9.747  ; 10.092 ;
-; dipswitch2[5] ; VALUE[3]    ; 10.469 ; 10.469 ; 10.469 ; 10.469 ;
-; dipswitch2[5] ; VALUE[4]    ; 12.272 ; 10.422 ; 10.422 ; 12.272 ;
-; dipswitch2[5] ; VALUE[5]    ; 9.660  ; 9.660  ; 9.660  ; 9.660  ;
+; dipswitch2[0] ; LEDfloor[0] ; 12.410 ; 12.410 ; 12.410 ; 12.410 ;
+; dipswitch2[0] ; LEDfloor[2] ; 12.437 ; 12.437 ; 12.437 ; 12.437 ;
+; dipswitch2[0] ; LEDfloor[3] ; 12.783 ; 12.783 ; 12.783 ; 12.783 ;
+; dipswitch2[0] ; LEDfloor[4] ; 12.105 ; 12.105 ; 12.105 ; 12.105 ;
+; dipswitch2[0] ; LEDfloor[5] ; 12.107 ; 12.107 ; 12.107 ; 12.107 ;
+; dipswitch2[0] ; LEDfloor[6] ; 12.106 ; 12.106 ; 12.106 ; 12.106 ;
+; dipswitch2[0] ; LEDmod[0]   ; 12.754 ; 12.754 ; 12.754 ; 12.754 ;
+; dipswitch2[0] ; LEDmod[1]   ; 12.944 ; 12.944 ; 12.944 ; 12.944 ;
+; dipswitch2[0] ; LEDmod[2]   ; 12.940 ; 12.940 ; 12.940 ; 12.940 ;
+; dipswitch2[0] ; LEDmod[3]   ; 12.745 ; 12.745 ; 12.745 ; 12.745 ;
+; dipswitch2[0] ; LEDmod[4]   ; 12.717 ; 12.717 ; 12.717 ; 12.717 ;
+; dipswitch2[0] ; LEDmod[5]   ; 12.754 ; 12.754 ; 12.754 ; 12.754 ;
+; dipswitch2[0] ; LEDmod[6]   ; 13.089 ; 13.089 ; 13.089 ; 13.089 ;
+; dipswitch2[0] ; VALUE[0]    ; 10.379 ; 10.379 ; 10.379 ; 10.379 ;
+; dipswitch2[0] ; VALUE[1]    ; 10.362 ; 10.362 ; 10.362 ; 10.362 ;
+; dipswitch2[0] ; VALUE[2]    ; 11.034 ; 11.034 ; 11.034 ; 11.034 ;
+; dipswitch2[0] ; VALUE[3]    ; 9.811  ; 9.572  ; 9.572  ; 9.811  ;
+; dipswitch2[0] ; VALUE[4]    ; 11.105 ; 11.105 ; 11.105 ; 11.105 ;
+; dipswitch2[0] ; VALUE[5]    ; 10.473 ; 10.473 ; 10.473 ; 10.473 ;
+; dipswitch2[1] ; LEDfloor[0] ; 12.116 ; 12.116 ; 12.116 ; 12.116 ;
+; dipswitch2[1] ; LEDfloor[2] ; 12.142 ; 12.142 ; 12.142 ; 12.142 ;
+; dipswitch2[1] ; LEDfloor[3] ; 12.489 ; 12.489 ; 12.489 ; 12.489 ;
+; dipswitch2[1] ; LEDfloor[4] ; 11.817 ; 11.817 ; 11.817 ; 11.817 ;
+; dipswitch2[1] ; LEDfloor[5] ; 11.813 ; 11.813 ; 11.813 ; 11.813 ;
+; dipswitch2[1] ; LEDfloor[6] ; 11.869 ; 11.814 ; 11.814 ; 11.869 ;
+; dipswitch2[1] ; LEDmod[0]   ; 12.682 ; 12.682 ; 12.682 ; 12.682 ;
+; dipswitch2[1] ; LEDmod[1]   ; 12.872 ; 12.872 ; 12.872 ; 12.872 ;
+; dipswitch2[1] ; LEDmod[2]   ; 12.868 ; 12.868 ; 12.868 ; 12.868 ;
+; dipswitch2[1] ; LEDmod[3]   ; 12.673 ; 12.673 ; 12.673 ; 12.673 ;
+; dipswitch2[1] ; LEDmod[4]   ; 12.645 ; 12.645 ; 12.645 ; 12.645 ;
+; dipswitch2[1] ; LEDmod[5]   ; 12.682 ; 12.682 ; 12.682 ; 12.682 ;
+; dipswitch2[1] ; LEDmod[6]   ; 13.017 ; 13.017 ; 13.017 ; 13.017 ;
+; dipswitch2[1] ; VALUE[0]    ; 10.064 ; 10.064 ; 10.064 ; 10.064 ;
+; dipswitch2[1] ; VALUE[1]    ; 10.246 ; 10.894 ; 10.894 ; 10.246 ;
+; dipswitch2[1] ; VALUE[2]    ; 10.514 ; 11.030 ; 11.030 ; 10.514 ;
+; dipswitch2[1] ; VALUE[3]    ; 9.500  ; 9.500  ; 9.500  ; 9.500  ;
+; dipswitch2[1] ; VALUE[4]    ; 11.398 ; 11.398 ; 11.398 ; 11.398 ;
+; dipswitch2[1] ; VALUE[5]    ; 10.236 ; 10.236 ; 10.236 ; 10.236 ;
+; dipswitch2[2] ; LEDfloor[0] ; 10.740 ; 10.740 ; 10.740 ; 10.740 ;
+; dipswitch2[2] ; LEDfloor[2] ; 10.767 ; 10.767 ; 10.767 ; 10.767 ;
+; dipswitch2[2] ; LEDfloor[3] ; 11.113 ; 11.113 ; 11.113 ; 11.113 ;
+; dipswitch2[2] ; LEDfloor[4] ; 11.367 ; 10.435 ; 10.435 ; 11.367 ;
+; dipswitch2[2] ; LEDfloor[5] ; 10.437 ; 10.437 ; 10.437 ; 10.437 ;
+; dipswitch2[2] ; LEDfloor[6] ; 10.436 ; 11.368 ; 11.368 ; 10.436 ;
+; dipswitch2[2] ; LEDmod[0]   ; 11.996 ; 11.996 ; 11.996 ; 11.996 ;
+; dipswitch2[2] ; LEDmod[1]   ; 12.186 ; 12.186 ; 12.186 ; 12.186 ;
+; dipswitch2[2] ; LEDmod[2]   ; 12.182 ; 12.182 ; 12.182 ; 12.182 ;
+; dipswitch2[2] ; LEDmod[3]   ; 11.987 ; 11.987 ; 11.987 ; 11.987 ;
+; dipswitch2[2] ; LEDmod[4]   ; 11.959 ; 11.959 ; 11.959 ; 11.959 ;
+; dipswitch2[2] ; LEDmod[5]   ; 11.996 ; 11.996 ; 11.996 ; 11.996 ;
+; dipswitch2[2] ; LEDmod[6]   ; 12.331 ; 12.331 ; 12.331 ; 12.331 ;
+; dipswitch2[2] ; VALUE[0]    ; 10.124 ; 9.894  ; 9.894  ; 10.124 ;
+; dipswitch2[2] ; VALUE[1]    ; 10.445 ; 10.445 ; 10.445 ; 10.445 ;
+; dipswitch2[2] ; VALUE[2]    ; 10.349 ; 9.254  ; 9.254  ; 10.349 ;
+; dipswitch2[2] ; VALUE[3]    ; 9.474  ; 8.814  ; 8.814  ; 9.474  ;
+; dipswitch2[2] ; VALUE[4]    ; 11.225 ; 10.685 ; 10.685 ; 11.225 ;
+; dipswitch2[2] ; VALUE[5]    ; 9.735  ; 8.803  ; 8.803  ; 9.735  ;
+; dipswitch2[3] ; LEDfloor[0] ; 10.099 ; 10.099 ; 10.099 ; 10.099 ;
+; dipswitch2[3] ; LEDfloor[2] ; 10.126 ; 10.126 ; 10.126 ; 10.126 ;
+; dipswitch2[3] ; LEDfloor[3] ; 10.472 ; 10.472 ; 10.472 ; 10.472 ;
+; dipswitch2[3] ; LEDfloor[4] ; 10.147 ; 9.794  ; 9.794  ; 10.147 ;
+; dipswitch2[3] ; LEDfloor[5] ; 9.796  ; 9.796  ; 9.796  ; 9.796  ;
+; dipswitch2[3] ; LEDfloor[6] ; 9.795  ; 10.148 ; 10.148 ; 9.795  ;
+; dipswitch2[3] ; LEDmod[0]   ; 10.998 ; 10.998 ; 10.998 ; 10.998 ;
+; dipswitch2[3] ; LEDmod[1]   ; 11.185 ; 11.185 ; 11.185 ; 11.185 ;
+; dipswitch2[3] ; LEDmod[2]   ; 11.187 ; 11.187 ; 11.187 ; 11.187 ;
+; dipswitch2[3] ; LEDmod[3]   ; 10.977 ; 10.977 ; 10.977 ; 10.977 ;
+; dipswitch2[3] ; LEDmod[4]   ; 10.952 ; 10.952 ; 10.952 ; 10.952 ;
+; dipswitch2[3] ; LEDmod[5]   ; 10.999 ; 10.999 ; 10.999 ; 10.999 ;
+; dipswitch2[3] ; LEDmod[6]   ; 11.325 ; 11.325 ; 11.325 ; 11.325 ;
+; dipswitch2[3] ; VALUE[0]    ; 8.089  ; 8.481  ; 8.481  ; 8.089  ;
+; dipswitch2[3] ; VALUE[1]    ; 8.508  ; 9.221  ; 9.221  ; 8.508  ;
+; dipswitch2[3] ; VALUE[2]    ; 9.427  ; 9.193  ; 9.193  ; 9.427  ;
+; dipswitch2[3] ; VALUE[3]    ; 8.124  ; 8.519  ; 8.519  ; 8.124  ;
+; dipswitch2[3] ; VALUE[4]    ; 9.436  ; 9.436  ; 9.436  ; 9.436  ;
+; dipswitch2[3] ; VALUE[5]    ; 8.515  ; 8.162  ; 8.162  ; 8.515  ;
+; dipswitch2[4] ; LEDfloor[0] ; 10.158 ; 10.158 ; 10.158 ; 10.158 ;
+; dipswitch2[4] ; LEDfloor[2] ; 10.185 ; 10.185 ; 10.185 ; 10.185 ;
+; dipswitch2[4] ; LEDfloor[3] ; 10.531 ; 10.531 ; 10.531 ; 10.531 ;
+; dipswitch2[4] ; LEDfloor[4] ; 9.853  ; 10.048 ; 10.048 ; 9.853  ;
+; dipswitch2[4] ; LEDfloor[5] ; 9.855  ; 9.855  ; 9.855  ; 9.855  ;
+; dipswitch2[4] ; LEDfloor[6] ; 10.049 ; 9.854  ; 9.854  ; 10.049 ;
+; dipswitch2[4] ; LEDmod[0]   ; 11.182 ; 11.182 ; 11.182 ; 11.182 ;
+; dipswitch2[4] ; LEDmod[1]   ; 11.369 ; 11.369 ; 11.369 ; 11.369 ;
+; dipswitch2[4] ; LEDmod[2]   ; 11.371 ; 11.371 ; 11.371 ; 11.371 ;
+; dipswitch2[4] ; LEDmod[3]   ; 11.161 ; 11.161 ; 11.161 ; 11.161 ;
+; dipswitch2[4] ; LEDmod[4]   ; 11.136 ; 11.136 ; 11.136 ; 11.136 ;
+; dipswitch2[4] ; LEDmod[5]   ; 11.183 ; 11.183 ; 11.183 ; 11.183 ;
+; dipswitch2[4] ; LEDmod[6]   ; 11.509 ; 11.509 ; 11.509 ; 11.509 ;
+; dipswitch2[4] ; VALUE[0]    ; 8.524  ; 8.570  ; 8.570  ; 8.524  ;
+; dipswitch2[4] ; VALUE[1]    ; 8.692  ; 9.316  ; 9.316  ; 8.692  ;
+; dipswitch2[4] ; VALUE[2]    ; 10.063 ; 8.768  ; 8.768  ; 10.063 ;
+; dipswitch2[4] ; VALUE[3]    ; 8.241  ; 8.090  ; 8.090  ; 8.241  ;
+; dipswitch2[4] ; VALUE[4]    ; 9.665  ; 8.805  ; 8.805  ; 9.665  ;
+; dipswitch2[4] ; VALUE[5]    ; 8.221  ; 8.416  ; 8.416  ; 8.221  ;
+; dipswitch2[5] ; LEDfloor[0] ; 10.854 ; 10.854 ; 10.854 ; 10.854 ;
+; dipswitch2[5] ; LEDfloor[2] ; 10.881 ; 10.881 ; 10.881 ; 10.881 ;
+; dipswitch2[5] ; LEDfloor[3] ; 11.227 ; 11.227 ; 11.227 ; 11.227 ;
+; dipswitch2[5] ; LEDfloor[4] ; 10.549 ; 10.549 ; 10.549 ; 10.549 ;
+; dipswitch2[5] ; LEDfloor[5] ; 10.551 ; 10.551 ; 10.551 ; 10.551 ;
+; dipswitch2[5] ; LEDfloor[6] ; 10.550 ; 10.550 ; 10.550 ; 10.550 ;
+; dipswitch2[5] ; LEDmod[0]   ; 12.077 ; 12.077 ; 12.077 ; 12.077 ;
+; dipswitch2[5] ; LEDmod[1]   ; 12.264 ; 12.264 ; 12.264 ; 12.264 ;
+; dipswitch2[5] ; LEDmod[2]   ; 12.263 ; 12.263 ; 12.263 ; 12.263 ;
+; dipswitch2[5] ; LEDmod[3]   ; 12.056 ; 12.056 ; 12.056 ; 12.056 ;
+; dipswitch2[5] ; LEDmod[4]   ; 12.031 ; 12.031 ; 12.031 ; 12.031 ;
+; dipswitch2[5] ; LEDmod[5]   ; 12.078 ; 12.078 ; 12.078 ; 12.078 ;
+; dipswitch2[5] ; LEDmod[6]   ; 12.404 ; 12.404 ; 12.404 ; 12.404 ;
+; dipswitch2[5] ; VALUE[0]    ; 9.535  ; 9.535  ; 9.535  ; 9.535  ;
+; dipswitch2[5] ; VALUE[1]    ; 9.587  ; 9.587  ; 9.587  ; 9.587  ;
+; dipswitch2[5] ; VALUE[2]    ; 10.004 ; 10.004 ; 10.004 ; 10.004 ;
+; dipswitch2[5] ; VALUE[3]    ; 8.905  ; 8.905  ; 8.905  ; 8.905  ;
+; dipswitch2[5] ; VALUE[4]    ; 11.381 ; 9.089  ; 9.089  ; 11.381 ;
+; dipswitch2[5] ; VALUE[5]    ; 8.917  ; 8.917  ; 8.917  ; 8.917  ;
 +---------------+-------------+--------+--------+--------+--------+
 
 
@@ -435,120 +446,120 @@ No paths to report.
 +---------------+-------------+--------+--------+--------+--------+
 ; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +---------------+-------------+--------+--------+--------+--------+
-; dipswitch2[0] ; LEDfloor[0] ; 7.896  ; 7.896  ; 7.896  ; 7.896  ;
-; dipswitch2[0] ; LEDfloor[2] ; 7.805  ; 7.805  ; 7.805  ; 7.805  ;
-; dipswitch2[0] ; LEDfloor[3] ; 7.811  ; 7.811  ; 7.811  ; 7.811  ;
-; dipswitch2[0] ; LEDfloor[4] ; 7.948  ; 7.948  ; 7.948  ; 7.948  ;
-; dipswitch2[0] ; LEDfloor[5] ; 7.945  ; 7.945  ; 7.945  ; 7.945  ;
-; dipswitch2[0] ; LEDfloor[6] ; 7.950  ; 7.950  ; 7.950  ; 7.950  ;
-; dipswitch2[0] ; LEDmod[0]   ; 9.284  ; 9.284  ; 9.284  ; 9.284  ;
-; dipswitch2[0] ; LEDmod[1]   ; 9.442  ; 9.442  ; 9.442  ; 9.442  ;
-; dipswitch2[0] ; LEDmod[2]   ; 9.440  ; 9.440  ; 9.440  ; 9.440  ;
-; dipswitch2[0] ; LEDmod[3]   ; 9.299  ; 9.299  ; 9.299  ; 9.299  ;
-; dipswitch2[0] ; LEDmod[4]   ; 9.278  ; 9.278  ; 9.278  ; 9.278  ;
-; dipswitch2[0] ; LEDmod[5]   ; 9.283  ; 9.283  ; 9.283  ; 9.283  ;
-; dipswitch2[0] ; LEDmod[6]   ; 9.313  ; 9.313  ; 9.313  ; 9.313  ;
-; dipswitch2[0] ; VALUE[0]    ; 5.639  ; 5.639  ; 5.639  ; 5.639  ;
-; dipswitch2[0] ; VALUE[1]    ; 5.322  ; 5.322  ; 5.322  ; 5.322  ;
-; dipswitch2[0] ; VALUE[2]    ; 5.805  ; 5.805  ; 5.805  ; 5.805  ;
-; dipswitch2[0] ; VALUE[3]    ; 6.214  ; 6.214  ; 6.214  ; 6.214  ;
-; dipswitch2[0] ; VALUE[4]    ; 6.469  ; 6.469  ; 6.469  ; 6.469  ;
-; dipswitch2[0] ; VALUE[5]    ; 5.948  ; 5.948  ; 5.948  ; 5.948  ;
-; dipswitch2[1] ; LEDfloor[0] ; 8.470  ; 8.470  ; 8.470  ; 8.470  ;
-; dipswitch2[1] ; LEDfloor[2] ; 8.379  ; 8.379  ; 8.379  ; 8.379  ;
-; dipswitch2[1] ; LEDfloor[3] ; 8.385  ; 8.385  ; 8.385  ; 8.385  ;
-; dipswitch2[1] ; LEDfloor[4] ; 8.522  ; 8.522  ; 8.522  ; 8.522  ;
-; dipswitch2[1] ; LEDfloor[5] ; 8.519  ; 8.519  ; 8.519  ; 8.519  ;
-; dipswitch2[1] ; LEDfloor[6] ; 8.524  ; 8.524  ; 8.524  ; 8.524  ;
-; dipswitch2[1] ; LEDmod[0]   ; 9.858  ; 9.858  ; 9.858  ; 9.858  ;
-; dipswitch2[1] ; LEDmod[1]   ; 10.016 ; 10.016 ; 10.016 ; 10.016 ;
-; dipswitch2[1] ; LEDmod[2]   ; 10.014 ; 10.014 ; 10.014 ; 10.014 ;
-; dipswitch2[1] ; LEDmod[3]   ; 9.873  ; 9.873  ; 9.873  ; 9.873  ;
-; dipswitch2[1] ; LEDmod[4]   ; 9.852  ; 9.852  ; 9.852  ; 9.852  ;
-; dipswitch2[1] ; LEDmod[5]   ; 9.857  ; 9.857  ; 9.857  ; 9.857  ;
-; dipswitch2[1] ; LEDmod[6]   ; 9.887  ; 9.887  ; 9.887  ; 9.887  ;
-; dipswitch2[1] ; VALUE[0]    ; 5.945  ; 5.945  ; 5.945  ; 5.945  ;
-; dipswitch2[1] ; VALUE[1]    ; 5.610  ; 5.610  ; 5.610  ; 5.610  ;
-; dipswitch2[1] ; VALUE[2]    ; 6.359  ; 6.359  ; 6.359  ; 6.359  ;
-; dipswitch2[1] ; VALUE[3]    ; 6.531  ; 6.531  ; 6.531  ; 6.531  ;
-; dipswitch2[1] ; VALUE[4]    ; 7.043  ; 7.043  ; 7.043  ; 7.043  ;
-; dipswitch2[1] ; VALUE[5]    ; 5.843  ; 6.049  ; 6.049  ; 5.843  ;
-; dipswitch2[2] ; LEDfloor[0] ; 7.765  ; 7.765  ; 7.765  ; 7.765  ;
-; dipswitch2[2] ; LEDfloor[2] ; 7.674  ; 7.674  ; 7.674  ; 7.674  ;
-; dipswitch2[2] ; LEDfloor[3] ; 7.680  ; 7.680  ; 7.680  ; 7.680  ;
-; dipswitch2[2] ; LEDfloor[4] ; 7.817  ; 7.817  ; 7.817  ; 7.817  ;
-; dipswitch2[2] ; LEDfloor[5] ; 7.814  ; 7.814  ; 7.814  ; 7.814  ;
-; dipswitch2[2] ; LEDfloor[6] ; 7.819  ; 7.731  ; 7.731  ; 7.819  ;
-; dipswitch2[2] ; LEDmod[0]   ; 9.153  ; 9.153  ; 9.153  ; 9.153  ;
-; dipswitch2[2] ; LEDmod[1]   ; 9.311  ; 9.311  ; 9.311  ; 9.311  ;
-; dipswitch2[2] ; LEDmod[2]   ; 9.309  ; 9.309  ; 9.309  ; 9.309  ;
-; dipswitch2[2] ; LEDmod[3]   ; 9.168  ; 9.168  ; 9.168  ; 9.168  ;
-; dipswitch2[2] ; LEDmod[4]   ; 9.147  ; 9.147  ; 9.147  ; 9.147  ;
-; dipswitch2[2] ; LEDmod[5]   ; 9.152  ; 9.152  ; 9.152  ; 9.152  ;
-; dipswitch2[2] ; LEDmod[6]   ; 9.182  ; 9.182  ; 9.182  ; 9.182  ;
-; dipswitch2[2] ; VALUE[0]    ; 5.620  ; 5.620  ; 5.620  ; 5.620  ;
-; dipswitch2[2] ; VALUE[1]    ; 5.316  ; 5.116  ; 5.116  ; 5.316  ;
-; dipswitch2[2] ; VALUE[2]    ; 5.630  ; 5.724  ; 5.724  ; 5.630  ;
-; dipswitch2[2] ; VALUE[3]    ; 6.241  ; 6.329  ; 6.329  ; 6.241  ;
-; dipswitch2[2] ; VALUE[4]    ; 6.138  ; 6.138  ; 6.138  ; 6.138  ;
-; dipswitch2[2] ; VALUE[5]    ; 5.717  ; 5.717  ; 5.717  ; 5.717  ;
-; dipswitch2[3] ; LEDfloor[0] ; 7.321  ; 7.321  ; 7.321  ; 7.321  ;
-; dipswitch2[3] ; LEDfloor[2] ; 7.230  ; 7.230  ; 7.230  ; 7.230  ;
-; dipswitch2[3] ; LEDfloor[3] ; 7.236  ; 7.236  ; 7.236  ; 7.236  ;
-; dipswitch2[3] ; LEDfloor[4] ; 7.373  ; 7.373  ; 7.373  ; 7.373  ;
-; dipswitch2[3] ; LEDfloor[5] ; 7.370  ; 7.370  ; 7.370  ; 7.370  ;
-; dipswitch2[3] ; LEDfloor[6] ; 7.375  ; 7.375  ; 7.375  ; 7.375  ;
-; dipswitch2[3] ; LEDmod[0]   ; 8.709  ; 8.709  ; 8.709  ; 8.709  ;
-; dipswitch2[3] ; LEDmod[1]   ; 8.867  ; 8.867  ; 8.867  ; 8.867  ;
-; dipswitch2[3] ; LEDmod[2]   ; 8.865  ; 8.865  ; 8.865  ; 8.865  ;
-; dipswitch2[3] ; LEDmod[3]   ; 8.724  ; 8.724  ; 8.724  ; 8.724  ;
-; dipswitch2[3] ; LEDmod[4]   ; 8.703  ; 8.703  ; 8.703  ; 8.703  ;
-; dipswitch2[3] ; LEDmod[5]   ; 8.708  ; 8.708  ; 8.708  ; 8.708  ;
-; dipswitch2[3] ; LEDmod[6]   ; 8.738  ; 8.738  ; 8.738  ; 8.738  ;
-; dipswitch2[3] ; VALUE[0]    ; 5.300  ; 5.300  ; 5.300  ; 5.300  ;
-; dipswitch2[3] ; VALUE[1]    ; 5.060  ; 5.060  ; 5.060  ; 5.060  ;
-; dipswitch2[3] ; VALUE[2]    ; 4.930  ; 4.930  ; 4.930  ; 4.930  ;
-; dipswitch2[3] ; VALUE[3]    ; 5.122  ; 5.122  ; 5.122  ; 5.122  ;
-; dipswitch2[3] ; VALUE[4]    ; 5.894  ; 5.894  ; 5.894  ; 5.894  ;
-; dipswitch2[3] ; VALUE[5]    ; 4.683  ; 4.683  ; 4.683  ; 4.683  ;
-; dipswitch2[4] ; LEDfloor[0] ; 7.336  ; 7.336  ; 7.336  ; 7.336  ;
-; dipswitch2[4] ; LEDfloor[2] ; 7.245  ; 7.245  ; 7.245  ; 7.245  ;
-; dipswitch2[4] ; LEDfloor[3] ; 7.251  ; 7.251  ; 7.251  ; 7.251  ;
-; dipswitch2[4] ; LEDfloor[4] ; 7.388  ; 7.388  ; 7.388  ; 7.388  ;
-; dipswitch2[4] ; LEDfloor[5] ; 7.385  ; 7.385  ; 7.385  ; 7.385  ;
-; dipswitch2[4] ; LEDfloor[6] ; 7.390  ; 7.390  ; 7.390  ; 7.390  ;
-; dipswitch2[4] ; LEDmod[0]   ; 8.724  ; 8.724  ; 8.724  ; 8.724  ;
-; dipswitch2[4] ; LEDmod[1]   ; 8.882  ; 8.882  ; 8.882  ; 8.882  ;
-; dipswitch2[4] ; LEDmod[2]   ; 8.880  ; 8.880  ; 8.880  ; 8.880  ;
-; dipswitch2[4] ; LEDmod[3]   ; 8.739  ; 8.739  ; 8.739  ; 8.739  ;
-; dipswitch2[4] ; LEDmod[4]   ; 8.718  ; 8.718  ; 8.718  ; 8.718  ;
-; dipswitch2[4] ; LEDmod[5]   ; 8.723  ; 8.723  ; 8.723  ; 8.723  ;
-; dipswitch2[4] ; LEDmod[6]   ; 8.753  ; 8.753  ; 8.753  ; 8.753  ;
-; dipswitch2[4] ; VALUE[0]    ; 5.333  ; 5.333  ; 5.333  ; 5.333  ;
-; dipswitch2[4] ; VALUE[1]    ; 5.095  ; 5.122  ; 5.122  ; 5.095  ;
-; dipswitch2[4] ; VALUE[2]    ; 4.944  ; 5.089  ; 5.089  ; 4.944  ;
-; dipswitch2[4] ; VALUE[3]    ; 5.196  ; 5.598  ; 5.598  ; 5.196  ;
-; dipswitch2[4] ; VALUE[4]    ; 5.909  ; 5.909  ; 5.909  ; 5.909  ;
-; dipswitch2[4] ; VALUE[5]    ; 4.982  ; 5.605  ; 5.605  ; 4.982  ;
-; dipswitch2[5] ; LEDfloor[0] ; 7.110  ; 7.110  ; 7.110  ; 7.110  ;
-; dipswitch2[5] ; LEDfloor[2] ; 7.019  ; 7.019  ; 7.019  ; 7.019  ;
-; dipswitch2[5] ; LEDfloor[3] ; 7.025  ; 7.025  ; 7.025  ; 7.025  ;
-; dipswitch2[5] ; LEDfloor[4] ; 7.162  ; 7.162  ; 7.162  ; 7.162  ;
-; dipswitch2[5] ; LEDfloor[5] ; 7.159  ; 7.159  ; 7.159  ; 7.159  ;
-; dipswitch2[5] ; LEDfloor[6] ; 7.164  ; 7.164  ; 7.164  ; 7.164  ;
-; dipswitch2[5] ; LEDmod[0]   ; 8.498  ; 8.498  ; 8.498  ; 8.498  ;
-; dipswitch2[5] ; LEDmod[1]   ; 8.656  ; 8.656  ; 8.656  ; 8.656  ;
-; dipswitch2[5] ; LEDmod[2]   ; 8.654  ; 8.654  ; 8.654  ; 8.654  ;
-; dipswitch2[5] ; LEDmod[3]   ; 8.513  ; 8.513  ; 8.513  ; 8.513  ;
-; dipswitch2[5] ; LEDmod[4]   ; 8.492  ; 8.492  ; 8.492  ; 8.492  ;
-; dipswitch2[5] ; LEDmod[5]   ; 8.497  ; 8.497  ; 8.497  ; 8.497  ;
-; dipswitch2[5] ; LEDmod[6]   ; 8.527  ; 8.527  ; 8.527  ; 8.527  ;
-; dipswitch2[5] ; VALUE[0]    ; 4.777  ; 4.777  ; 4.777  ; 4.777  ;
-; dipswitch2[5] ; VALUE[1]    ; 4.539  ; 4.539  ; 4.539  ; 4.539  ;
-; dipswitch2[5] ; VALUE[2]    ; 4.616  ; 4.616  ; 4.616  ; 4.616  ;
-; dipswitch2[5] ; VALUE[3]    ; 4.842  ; 4.842  ; 4.842  ; 4.842  ;
-; dipswitch2[5] ; VALUE[4]    ; 5.683  ; 5.683  ; 5.683  ; 5.683  ;
-; dipswitch2[5] ; VALUE[5]    ; 4.343  ; 4.833  ; 4.833  ; 4.343  ;
+; dipswitch2[0] ; LEDfloor[0] ; 8.618  ; 8.618  ; 8.618  ; 8.618  ;
+; dipswitch2[0] ; LEDfloor[2] ; 8.635  ; 8.635  ; 8.635  ; 8.635  ;
+; dipswitch2[0] ; LEDfloor[3] ; 8.776  ; 8.776  ; 8.776  ; 8.776  ;
+; dipswitch2[0] ; LEDfloor[4] ; 8.513  ; 8.513  ; 8.513  ; 8.513  ;
+; dipswitch2[0] ; LEDfloor[5] ; 8.514  ; 8.514  ; 8.514  ; 8.514  ;
+; dipswitch2[0] ; LEDfloor[6] ; 8.514  ; 8.514  ; 8.514  ; 8.514  ;
+; dipswitch2[0] ; LEDmod[0]   ; 9.832  ; 9.832  ; 9.832  ; 9.832  ;
+; dipswitch2[0] ; LEDmod[1]   ; 9.974  ; 9.974  ; 9.974  ; 9.974  ;
+; dipswitch2[0] ; LEDmod[2]   ; 9.969  ; 9.969  ; 9.969  ; 9.969  ;
+; dipswitch2[0] ; LEDmod[3]   ; 9.823  ; 9.823  ; 9.823  ; 9.823  ;
+; dipswitch2[0] ; LEDmod[4]   ; 9.799  ; 9.799  ; 9.799  ; 9.799  ;
+; dipswitch2[0] ; LEDmod[5]   ; 9.828  ; 9.828  ; 9.828  ; 9.828  ;
+; dipswitch2[0] ; LEDmod[6]   ; 9.967  ; 9.967  ; 9.967  ; 9.967  ;
+; dipswitch2[0] ; VALUE[0]    ; 5.386  ; 5.386  ; 5.386  ; 5.386  ;
+; dipswitch2[0] ; VALUE[1]    ; 5.570  ; 5.570  ; 5.570  ; 5.570  ;
+; dipswitch2[0] ; VALUE[2]    ; 5.804  ; 5.804  ; 5.804  ; 5.804  ;
+; dipswitch2[0] ; VALUE[3]    ; 5.758  ; 5.758  ; 5.758  ; 5.758  ;
+; dipswitch2[0] ; VALUE[4]    ; 6.479  ; 6.479  ; 6.479  ; 6.479  ;
+; dipswitch2[0] ; VALUE[5]    ; 5.626  ; 5.626  ; 5.626  ; 5.626  ;
+; dipswitch2[1] ; LEDfloor[0] ; 8.926  ; 8.926  ; 8.926  ; 8.926  ;
+; dipswitch2[1] ; LEDfloor[2] ; 8.943  ; 8.943  ; 8.943  ; 8.943  ;
+; dipswitch2[1] ; LEDfloor[3] ; 9.084  ; 9.084  ; 9.084  ; 9.084  ;
+; dipswitch2[1] ; LEDfloor[4] ; 8.821  ; 8.821  ; 8.821  ; 8.821  ;
+; dipswitch2[1] ; LEDfloor[5] ; 8.822  ; 8.822  ; 8.822  ; 8.822  ;
+; dipswitch2[1] ; LEDfloor[6] ; 8.822  ; 8.822  ; 8.822  ; 8.822  ;
+; dipswitch2[1] ; LEDmod[0]   ; 10.140 ; 10.140 ; 10.140 ; 10.140 ;
+; dipswitch2[1] ; LEDmod[1]   ; 10.282 ; 10.282 ; 10.282 ; 10.282 ;
+; dipswitch2[1] ; LEDmod[2]   ; 10.277 ; 10.277 ; 10.277 ; 10.277 ;
+; dipswitch2[1] ; LEDmod[3]   ; 10.131 ; 10.131 ; 10.131 ; 10.131 ;
+; dipswitch2[1] ; LEDmod[4]   ; 10.107 ; 10.107 ; 10.107 ; 10.107 ;
+; dipswitch2[1] ; LEDmod[5]   ; 10.136 ; 10.136 ; 10.136 ; 10.136 ;
+; dipswitch2[1] ; LEDmod[6]   ; 10.275 ; 10.275 ; 10.275 ; 10.275 ;
+; dipswitch2[1] ; VALUE[0]    ; 5.591  ; 5.591  ; 5.591  ; 5.591  ;
+; dipswitch2[1] ; VALUE[1]    ; 5.936  ; 5.936  ; 5.936  ; 5.936  ;
+; dipswitch2[1] ; VALUE[2]    ; 6.080  ; 6.080  ; 6.080  ; 6.080  ;
+; dipswitch2[1] ; VALUE[3]    ; 6.066  ; 6.066  ; 6.066  ; 6.066  ;
+; dipswitch2[1] ; VALUE[4]    ; 6.751  ; 6.751  ; 6.751  ; 6.751  ;
+; dipswitch2[1] ; VALUE[5]    ; 5.694  ; 5.694  ; 5.694  ; 5.694  ;
+; dipswitch2[2] ; LEDfloor[0] ; 8.356  ; 8.356  ; 8.356  ; 8.356  ;
+; dipswitch2[2] ; LEDfloor[2] ; 8.373  ; 8.373  ; 8.373  ; 8.373  ;
+; dipswitch2[2] ; LEDfloor[3] ; 8.514  ; 8.514  ; 8.514  ; 8.514  ;
+; dipswitch2[2] ; LEDfloor[4] ; 8.251  ; 8.251  ; 8.251  ; 8.251  ;
+; dipswitch2[2] ; LEDfloor[5] ; 8.252  ; 8.252  ; 8.252  ; 8.252  ;
+; dipswitch2[2] ; LEDfloor[6] ; 8.252  ; 8.252  ; 8.252  ; 8.252  ;
+; dipswitch2[2] ; LEDmod[0]   ; 9.570  ; 9.570  ; 9.570  ; 9.570  ;
+; dipswitch2[2] ; LEDmod[1]   ; 9.712  ; 9.712  ; 9.712  ; 9.712  ;
+; dipswitch2[2] ; LEDmod[2]   ; 9.707  ; 9.707  ; 9.707  ; 9.707  ;
+; dipswitch2[2] ; LEDmod[3]   ; 9.561  ; 9.561  ; 9.561  ; 9.561  ;
+; dipswitch2[2] ; LEDmod[4]   ; 9.537  ; 9.537  ; 9.537  ; 9.537  ;
+; dipswitch2[2] ; LEDmod[5]   ; 9.566  ; 9.566  ; 9.566  ; 9.566  ;
+; dipswitch2[2] ; LEDmod[6]   ; 9.705  ; 9.705  ; 9.705  ; 9.705  ;
+; dipswitch2[2] ; VALUE[0]    ; 5.196  ; 5.006  ; 5.006  ; 5.196  ;
+; dipswitch2[2] ; VALUE[1]    ; 5.357  ; 5.357  ; 5.357  ; 5.357  ;
+; dipswitch2[2] ; VALUE[2]    ; 5.629  ; 5.607  ; 5.607  ; 5.629  ;
+; dipswitch2[2] ; VALUE[3]    ; 5.496  ; 5.496  ; 5.496  ; 5.496  ;
+; dipswitch2[2] ; VALUE[4]    ; 6.331  ; 6.331  ; 6.331  ; 6.331  ;
+; dipswitch2[2] ; VALUE[5]    ; 5.574  ; 5.574  ; 5.574  ; 5.574  ;
+; dipswitch2[3] ; LEDfloor[0] ; 7.673  ; 7.673  ; 7.673  ; 7.673  ;
+; dipswitch2[3] ; LEDfloor[2] ; 7.690  ; 7.690  ; 7.690  ; 7.690  ;
+; dipswitch2[3] ; LEDfloor[3] ; 7.831  ; 7.831  ; 7.831  ; 7.831  ;
+; dipswitch2[3] ; LEDfloor[4] ; 7.568  ; 7.568  ; 7.568  ; 7.568  ;
+; dipswitch2[3] ; LEDfloor[5] ; 7.569  ; 7.569  ; 7.569  ; 7.569  ;
+; dipswitch2[3] ; LEDfloor[6] ; 7.569  ; 7.569  ; 7.569  ; 7.569  ;
+; dipswitch2[3] ; LEDmod[0]   ; 8.887  ; 8.887  ; 8.887  ; 8.887  ;
+; dipswitch2[3] ; LEDmod[1]   ; 9.029  ; 9.029  ; 9.029  ; 9.029  ;
+; dipswitch2[3] ; LEDmod[2]   ; 9.024  ; 9.024  ; 9.024  ; 9.024  ;
+; dipswitch2[3] ; LEDmod[3]   ; 8.878  ; 8.878  ; 8.878  ; 8.878  ;
+; dipswitch2[3] ; LEDmod[4]   ; 8.854  ; 8.854  ; 8.854  ; 8.854  ;
+; dipswitch2[3] ; LEDmod[5]   ; 8.883  ; 8.883  ; 8.883  ; 8.883  ;
+; dipswitch2[3] ; LEDmod[6]   ; 9.022  ; 9.022  ; 9.022  ; 9.022  ;
+; dipswitch2[3] ; VALUE[0]    ; 4.750  ; 4.750  ; 4.750  ; 4.750  ;
+; dipswitch2[3] ; VALUE[1]    ; 4.901  ; 4.989  ; 4.989  ; 4.901  ;
+; dipswitch2[3] ; VALUE[2]    ; 5.007  ; 5.007  ; 5.007  ; 5.007  ;
+; dipswitch2[3] ; VALUE[3]    ; 4.106  ; 4.159  ; 4.159  ; 4.106  ;
+; dipswitch2[3] ; VALUE[4]    ; 5.563  ; 5.563  ; 5.563  ; 5.563  ;
+; dipswitch2[3] ; VALUE[5]    ; 4.858  ; 4.858  ; 4.858  ; 4.858  ;
+; dipswitch2[4] ; LEDfloor[0] ; 7.249  ; 7.249  ; 7.249  ; 7.249  ;
+; dipswitch2[4] ; LEDfloor[2] ; 7.266  ; 7.266  ; 7.266  ; 7.266  ;
+; dipswitch2[4] ; LEDfloor[3] ; 7.407  ; 7.407  ; 7.407  ; 7.407  ;
+; dipswitch2[4] ; LEDfloor[4] ; 7.144  ; 7.144  ; 7.144  ; 7.144  ;
+; dipswitch2[4] ; LEDfloor[5] ; 7.145  ; 7.145  ; 7.145  ; 7.145  ;
+; dipswitch2[4] ; LEDfloor[6] ; 7.145  ; 7.084  ; 7.084  ; 7.145  ;
+; dipswitch2[4] ; LEDmod[0]   ; 8.463  ; 8.463  ; 8.463  ; 8.463  ;
+; dipswitch2[4] ; LEDmod[1]   ; 8.605  ; 8.605  ; 8.605  ; 8.605  ;
+; dipswitch2[4] ; LEDmod[2]   ; 8.600  ; 8.600  ; 8.600  ; 8.600  ;
+; dipswitch2[4] ; LEDmod[3]   ; 8.454  ; 8.454  ; 8.454  ; 8.454  ;
+; dipswitch2[4] ; LEDmod[4]   ; 8.430  ; 8.430  ; 8.430  ; 8.430  ;
+; dipswitch2[4] ; LEDmod[5]   ; 8.459  ; 8.459  ; 8.459  ; 8.459  ;
+; dipswitch2[4] ; LEDmod[6]   ; 8.598  ; 8.598  ; 8.598  ; 8.598  ;
+; dipswitch2[4] ; VALUE[0]    ; 4.019  ; 4.399  ; 4.399  ; 4.019  ;
+; dipswitch2[4] ; VALUE[1]    ; 4.166  ; 4.728  ; 4.728  ; 4.166  ;
+; dipswitch2[4] ; VALUE[2]    ; 4.522  ; 4.402  ; 4.402  ; 4.522  ;
+; dipswitch2[4] ; VALUE[3]    ; 3.801  ; 4.180  ; 4.180  ; 3.801  ;
+; dipswitch2[4] ; VALUE[4]    ; 4.825  ; 4.825  ; 4.825  ; 4.825  ;
+; dipswitch2[4] ; VALUE[5]    ; 3.819  ; 4.180  ; 4.180  ; 3.819  ;
+; dipswitch2[5] ; LEDfloor[0] ; 7.428  ; 7.428  ; 7.428  ; 7.428  ;
+; dipswitch2[5] ; LEDfloor[2] ; 7.445  ; 7.445  ; 7.445  ; 7.445  ;
+; dipswitch2[5] ; LEDfloor[3] ; 7.586  ; 7.586  ; 7.586  ; 7.586  ;
+; dipswitch2[5] ; LEDfloor[4] ; 7.323  ; 7.323  ; 7.323  ; 7.323  ;
+; dipswitch2[5] ; LEDfloor[5] ; 7.324  ; 7.324  ; 7.324  ; 7.324  ;
+; dipswitch2[5] ; LEDfloor[6] ; 7.324  ; 7.117  ; 7.117  ; 7.324  ;
+; dipswitch2[5] ; LEDmod[0]   ; 8.642  ; 8.642  ; 8.642  ; 8.642  ;
+; dipswitch2[5] ; LEDmod[1]   ; 8.784  ; 8.784  ; 8.784  ; 8.784  ;
+; dipswitch2[5] ; LEDmod[2]   ; 8.779  ; 8.779  ; 8.779  ; 8.779  ;
+; dipswitch2[5] ; LEDmod[3]   ; 8.633  ; 8.633  ; 8.633  ; 8.633  ;
+; dipswitch2[5] ; LEDmod[4]   ; 8.609  ; 8.609  ; 8.609  ; 8.609  ;
+; dipswitch2[5] ; LEDmod[5]   ; 8.638  ; 8.638  ; 8.638  ; 8.638  ;
+; dipswitch2[5] ; LEDmod[6]   ; 8.777  ; 8.777  ; 8.777  ; 8.777  ;
+; dipswitch2[5] ; VALUE[0]    ; 4.472  ; 4.578  ; 4.578  ; 4.472  ;
+; dipswitch2[5] ; VALUE[1]    ; 4.428  ; 4.907  ; 4.907  ; 4.428  ;
+; dipswitch2[5] ; VALUE[2]    ; 4.544  ; 4.544  ; 4.544  ; 4.544  ;
+; dipswitch2[5] ; VALUE[3]    ; 4.225  ; 4.359  ; 4.359  ; 4.225  ;
+; dipswitch2[5] ; VALUE[4]    ; 5.085  ; 5.085  ; 5.085  ; 5.085  ;
+; dipswitch2[5] ; VALUE[5]    ; 3.995  ; 4.359  ; 4.359  ; 3.995  ;
 +---------------+-------------+--------+--------+--------+--------+
 
 
@@ -557,120 +568,120 @@ No paths to report.
 +---------------+-------------+-------+-------+-------+-------+
 ; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +---------------+-------------+-------+-------+-------+-------+
-; dipswitch2[0] ; LEDfloor[0] ; 4.882 ; 4.882 ; 4.882 ; 4.882 ;
-; dipswitch2[0] ; LEDfloor[2] ; 4.786 ; 4.786 ; 4.786 ; 4.786 ;
-; dipswitch2[0] ; LEDfloor[3] ; 4.797 ; 4.797 ; 4.797 ; 4.797 ;
-; dipswitch2[0] ; LEDfloor[4] ; 4.930 ; 4.930 ; 4.930 ; 4.930 ;
-; dipswitch2[0] ; LEDfloor[5] ; 4.931 ; 4.931 ; 4.931 ; 4.931 ;
-; dipswitch2[0] ; LEDfloor[6] ; 4.935 ; 4.935 ; 4.935 ; 4.935 ;
-; dipswitch2[0] ; LEDmod[0]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[0] ; LEDmod[1]   ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
-; dipswitch2[0] ; LEDmod[2]   ; 5.598 ; 5.598 ; 5.598 ; 5.598 ;
-; dipswitch2[0] ; LEDmod[3]   ; 5.453 ; 5.453 ; 5.453 ; 5.453 ;
-; dipswitch2[0] ; LEDmod[4]   ; 5.437 ; 5.437 ; 5.437 ; 5.437 ;
-; dipswitch2[0] ; LEDmod[5]   ; 5.447 ; 5.447 ; 5.447 ; 5.447 ;
-; dipswitch2[0] ; LEDmod[6]   ; 5.467 ; 5.467 ; 5.467 ; 5.467 ;
-; dipswitch2[0] ; VALUE[0]    ; 4.703 ; 4.703 ; 4.703 ; 4.703 ;
-; dipswitch2[0] ; VALUE[1]    ; 4.556 ; 4.556 ; 4.556 ; 4.556 ;
-; dipswitch2[0] ; VALUE[2]    ; 4.646 ; 4.646 ; 4.646 ; 4.646 ;
-; dipswitch2[0] ; VALUE[3]    ; 4.583 ; 4.782 ; 4.782 ; 4.583 ;
-; dipswitch2[0] ; VALUE[4]    ; 5.511 ; 5.585 ; 5.585 ; 5.511 ;
-; dipswitch2[0] ; VALUE[5]    ; 4.709 ; 4.709 ; 4.709 ; 4.709 ;
-; dipswitch2[1] ; LEDfloor[0] ; 5.160 ; 5.160 ; 5.160 ; 5.160 ;
-; dipswitch2[1] ; LEDfloor[2] ; 5.064 ; 5.064 ; 5.064 ; 5.064 ;
-; dipswitch2[1] ; LEDfloor[3] ; 5.075 ; 5.075 ; 5.075 ; 5.075 ;
-; dipswitch2[1] ; LEDfloor[4] ; 5.208 ; 5.234 ; 5.234 ; 5.208 ;
-; dipswitch2[1] ; LEDfloor[5] ; 5.209 ; 5.209 ; 5.209 ; 5.209 ;
-; dipswitch2[1] ; LEDfloor[6] ; 5.236 ; 5.213 ; 5.213 ; 5.236 ;
-; dipswitch2[1] ; LEDmod[0]   ; 5.461 ; 5.461 ; 5.461 ; 5.461 ;
-; dipswitch2[1] ; LEDmod[1]   ; 5.607 ; 5.607 ; 5.607 ; 5.607 ;
-; dipswitch2[1] ; LEDmod[2]   ; 5.615 ; 5.615 ; 5.615 ; 5.615 ;
-; dipswitch2[1] ; LEDmod[3]   ; 5.462 ; 5.462 ; 5.462 ; 5.462 ;
-; dipswitch2[1] ; LEDmod[4]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[1] ; LEDmod[5]   ; 5.459 ; 5.459 ; 5.459 ; 5.459 ;
-; dipswitch2[1] ; LEDmod[6]   ; 5.477 ; 5.477 ; 5.477 ; 5.477 ;
-; dipswitch2[1] ; VALUE[0]    ; 4.736 ; 4.736 ; 4.736 ; 4.736 ;
-; dipswitch2[1] ; VALUE[1]    ; 4.641 ; 4.641 ; 4.641 ; 4.641 ;
-; dipswitch2[1] ; VALUE[2]    ; 4.548 ; 4.548 ; 4.548 ; 4.548 ;
-; dipswitch2[1] ; VALUE[3]    ; 4.608 ; 4.608 ; 4.608 ; 4.608 ;
-; dipswitch2[1] ; VALUE[4]    ; 5.647 ; 5.647 ; 5.647 ; 5.647 ;
-; dipswitch2[1] ; VALUE[5]    ; 4.987 ; 5.058 ; 5.058 ; 4.987 ;
-; dipswitch2[2] ; LEDfloor[0] ; 4.735 ; 4.735 ; 4.735 ; 4.735 ;
-; dipswitch2[2] ; LEDfloor[2] ; 4.639 ; 4.639 ; 4.639 ; 4.639 ;
-; dipswitch2[2] ; LEDfloor[3] ; 4.650 ; 4.650 ; 4.650 ; 4.650 ;
-; dipswitch2[2] ; LEDfloor[4] ; 4.906 ; 4.783 ; 4.783 ; 4.906 ;
-; dipswitch2[2] ; LEDfloor[5] ; 4.784 ; 4.784 ; 4.784 ; 4.784 ;
-; dipswitch2[2] ; LEDfloor[6] ; 4.788 ; 5.163 ; 5.163 ; 4.788 ;
-; dipswitch2[2] ; LEDmod[0]   ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; dipswitch2[2] ; LEDmod[1]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[2] ; LEDmod[2]   ; 5.451 ; 5.451 ; 5.451 ; 5.451 ;
-; dipswitch2[2] ; LEDmod[3]   ; 5.306 ; 5.306 ; 5.306 ; 5.306 ;
-; dipswitch2[2] ; LEDmod[4]   ; 5.290 ; 5.290 ; 5.290 ; 5.290 ;
-; dipswitch2[2] ; LEDmod[5]   ; 5.300 ; 5.300 ; 5.300 ; 5.300 ;
-; dipswitch2[2] ; LEDmod[6]   ; 5.320 ; 5.320 ; 5.320 ; 5.320 ;
-; dipswitch2[2] ; VALUE[0]    ; 4.840 ; 4.689 ; 4.689 ; 4.840 ;
-; dipswitch2[2] ; VALUE[1]    ; 4.735 ; 4.456 ; 4.456 ; 4.735 ;
-; dipswitch2[2] ; VALUE[2]    ; 4.653 ; 4.396 ; 4.396 ; 4.653 ;
-; dipswitch2[2] ; VALUE[3]    ; 4.581 ; 4.545 ; 4.545 ; 4.581 ;
-; dipswitch2[2] ; VALUE[4]    ; 5.784 ; 5.430 ; 5.430 ; 5.784 ;
-; dipswitch2[2] ; VALUE[5]    ; 4.937 ; 4.562 ; 4.562 ; 4.937 ;
-; dipswitch2[3] ; LEDfloor[0] ; 4.523 ; 4.523 ; 4.523 ; 4.523 ;
-; dipswitch2[3] ; LEDfloor[2] ; 4.427 ; 4.427 ; 4.427 ; 4.427 ;
-; dipswitch2[3] ; LEDfloor[3] ; 4.438 ; 4.438 ; 4.438 ; 4.438 ;
-; dipswitch2[3] ; LEDfloor[4] ; 4.603 ; 4.571 ; 4.571 ; 4.603 ;
-; dipswitch2[3] ; LEDfloor[5] ; 4.572 ; 4.572 ; 4.572 ; 4.572 ;
-; dipswitch2[3] ; LEDfloor[6] ; 4.576 ; 4.608 ; 4.608 ; 4.576 ;
-; dipswitch2[3] ; LEDmod[0]   ; 4.863 ; 4.863 ; 4.863 ; 4.863 ;
-; dipswitch2[3] ; LEDmod[1]   ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
-; dipswitch2[3] ; LEDmod[2]   ; 5.013 ; 5.013 ; 5.013 ; 5.013 ;
-; dipswitch2[3] ; LEDmod[3]   ; 4.867 ; 4.867 ; 4.867 ; 4.867 ;
-; dipswitch2[3] ; LEDmod[4]   ; 4.850 ; 4.850 ; 4.850 ; 4.850 ;
-; dipswitch2[3] ; LEDmod[5]   ; 4.860 ; 4.860 ; 4.860 ; 4.860 ;
-; dipswitch2[3] ; LEDmod[6]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
-; dipswitch2[3] ; VALUE[0]    ; 3.998 ; 4.121 ; 4.121 ; 3.998 ;
-; dipswitch2[3] ; VALUE[1]    ; 3.883 ; 3.881 ; 3.881 ; 3.883 ;
-; dipswitch2[3] ; VALUE[2]    ; 3.981 ; 3.982 ; 3.982 ; 3.981 ;
-; dipswitch2[3] ; VALUE[3]    ; 4.243 ; 4.496 ; 4.496 ; 4.243 ;
-; dipswitch2[3] ; VALUE[4]    ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
-; dipswitch2[3] ; VALUE[5]    ; 4.382 ; 4.350 ; 4.350 ; 4.382 ;
-; dipswitch2[4] ; LEDfloor[0] ; 5.018 ; 5.018 ; 5.018 ; 5.018 ;
-; dipswitch2[4] ; LEDfloor[2] ; 4.922 ; 4.922 ; 4.922 ; 4.922 ;
-; dipswitch2[4] ; LEDfloor[3] ; 4.933 ; 4.933 ; 4.933 ; 4.933 ;
-; dipswitch2[4] ; LEDfloor[4] ; 5.084 ; 5.066 ; 5.066 ; 5.084 ;
-; dipswitch2[4] ; LEDfloor[5] ; 5.067 ; 5.067 ; 5.067 ; 5.067 ;
-; dipswitch2[4] ; LEDfloor[6] ; 5.071 ; 5.089 ; 5.089 ; 5.071 ;
-; dipswitch2[4] ; LEDmod[0]   ; 5.585 ; 5.585 ; 5.585 ; 5.585 ;
-; dipswitch2[4] ; LEDmod[1]   ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
-; dipswitch2[4] ; LEDmod[2]   ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
-; dipswitch2[4] ; LEDmod[3]   ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
-; dipswitch2[4] ; LEDmod[4]   ; 5.573 ; 5.573 ; 5.573 ; 5.573 ;
-; dipswitch2[4] ; LEDmod[5]   ; 5.583 ; 5.583 ; 5.583 ; 5.583 ;
-; dipswitch2[4] ; LEDmod[6]   ; 5.603 ; 5.603 ; 5.603 ; 5.603 ;
-; dipswitch2[4] ; VALUE[0]    ; 5.060 ; 4.911 ; 4.911 ; 5.060 ;
-; dipswitch2[4] ; VALUE[1]    ; 4.926 ; 4.670 ; 4.670 ; 4.926 ;
-; dipswitch2[4] ; VALUE[2]    ; 4.916 ; 4.884 ; 4.884 ; 4.916 ;
-; dipswitch2[4] ; VALUE[3]    ; 4.808 ; 4.824 ; 4.824 ; 4.808 ;
-; dipswitch2[4] ; VALUE[4]    ; 5.378 ; 5.233 ; 5.233 ; 5.378 ;
-; dipswitch2[4] ; VALUE[5]    ; 4.863 ; 4.845 ; 4.845 ; 4.863 ;
-; dipswitch2[5] ; LEDfloor[0] ; 4.516 ; 4.516 ; 4.516 ; 4.516 ;
-; dipswitch2[5] ; LEDfloor[2] ; 4.420 ; 4.420 ; 4.420 ; 4.420 ;
-; dipswitch2[5] ; LEDfloor[3] ; 4.431 ; 4.431 ; 4.431 ; 4.431 ;
-; dipswitch2[5] ; LEDfloor[4] ; 4.564 ; 4.564 ; 4.564 ; 4.564 ;
-; dipswitch2[5] ; LEDfloor[5] ; 4.565 ; 4.565 ; 4.565 ; 4.565 ;
-; dipswitch2[5] ; LEDfloor[6] ; 4.569 ; 4.569 ; 4.569 ; 4.569 ;
-; dipswitch2[5] ; LEDmod[0]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
-; dipswitch2[5] ; LEDmod[1]   ; 5.230 ; 5.230 ; 5.230 ; 5.230 ;
-; dipswitch2[5] ; LEDmod[2]   ; 5.232 ; 5.232 ; 5.232 ; 5.232 ;
-; dipswitch2[5] ; LEDmod[3]   ; 5.087 ; 5.087 ; 5.087 ; 5.087 ;
-; dipswitch2[5] ; LEDmod[4]   ; 5.071 ; 5.071 ; 5.071 ; 5.071 ;
-; dipswitch2[5] ; LEDmod[5]   ; 5.081 ; 5.081 ; 5.081 ; 5.081 ;
-; dipswitch2[5] ; LEDmod[6]   ; 5.101 ; 5.101 ; 5.101 ; 5.101 ;
-; dipswitch2[5] ; VALUE[0]    ; 4.515 ; 4.324 ; 4.324 ; 4.515 ;
-; dipswitch2[5] ; VALUE[1]    ; 4.354 ; 4.350 ; 4.350 ; 4.354 ;
-; dipswitch2[5] ; VALUE[2]    ; 4.464 ; 4.317 ; 4.317 ; 4.464 ;
-; dipswitch2[5] ; VALUE[3]    ; 4.637 ; 4.637 ; 4.637 ; 4.637 ;
-; dipswitch2[5] ; VALUE[4]    ; 5.471 ; 4.769 ; 4.769 ; 5.471 ;
-; dipswitch2[5] ; VALUE[5]    ; 4.343 ; 4.343 ; 4.343 ; 4.343 ;
+; dipswitch2[0] ; LEDfloor[0] ; 5.260 ; 5.260 ; 5.260 ; 5.260 ;
+; dipswitch2[0] ; LEDfloor[2] ; 5.284 ; 5.284 ; 5.284 ; 5.284 ;
+; dipswitch2[0] ; LEDfloor[3] ; 5.418 ; 5.418 ; 5.418 ; 5.418 ;
+; dipswitch2[0] ; LEDfloor[4] ; 5.158 ; 5.158 ; 5.158 ; 5.158 ;
+; dipswitch2[0] ; LEDfloor[5] ; 5.162 ; 5.162 ; 5.162 ; 5.162 ;
+; dipswitch2[0] ; LEDfloor[6] ; 5.161 ; 5.161 ; 5.161 ; 5.161 ;
+; dipswitch2[0] ; LEDmod[0]   ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
+; dipswitch2[0] ; LEDmod[1]   ; 5.513 ; 5.513 ; 5.513 ; 5.513 ;
+; dipswitch2[0] ; LEDmod[2]   ; 5.508 ; 5.508 ; 5.508 ; 5.508 ;
+; dipswitch2[0] ; LEDmod[3]   ; 5.362 ; 5.362 ; 5.362 ; 5.362 ;
+; dipswitch2[0] ; LEDmod[4]   ; 5.338 ; 5.338 ; 5.338 ; 5.338 ;
+; dipswitch2[0] ; LEDmod[5]   ; 5.367 ; 5.367 ; 5.367 ; 5.367 ;
+; dipswitch2[0] ; LEDmod[6]   ; 5.506 ; 5.506 ; 5.506 ; 5.506 ;
+; dipswitch2[0] ; VALUE[0]    ; 4.538 ; 4.538 ; 4.538 ; 4.538 ;
+; dipswitch2[0] ; VALUE[1]    ; 4.581 ; 4.581 ; 4.581 ; 4.581 ;
+; dipswitch2[0] ; VALUE[2]    ; 4.770 ; 4.770 ; 4.770 ; 4.770 ;
+; dipswitch2[0] ; VALUE[3]    ; 4.351 ; 4.233 ; 4.233 ; 4.351 ;
+; dipswitch2[0] ; VALUE[4]    ; 4.844 ; 4.844 ; 4.844 ; 4.844 ;
+; dipswitch2[0] ; VALUE[5]    ; 4.583 ; 4.583 ; 4.583 ; 4.583 ;
+; dipswitch2[1] ; LEDfloor[0] ; 5.137 ; 5.137 ; 5.137 ; 5.137 ;
+; dipswitch2[1] ; LEDfloor[2] ; 5.154 ; 5.154 ; 5.154 ; 5.154 ;
+; dipswitch2[1] ; LEDfloor[3] ; 5.295 ; 5.295 ; 5.295 ; 5.295 ;
+; dipswitch2[1] ; LEDfloor[4] ; 5.032 ; 5.032 ; 5.032 ; 5.032 ;
+; dipswitch2[1] ; LEDfloor[5] ; 5.033 ; 5.033 ; 5.033 ; 5.033 ;
+; dipswitch2[1] ; LEDfloor[6] ; 5.048 ; 5.033 ; 5.033 ; 5.048 ;
+; dipswitch2[1] ; LEDmod[0]   ; 5.308 ; 5.308 ; 5.308 ; 5.308 ;
+; dipswitch2[1] ; LEDmod[1]   ; 5.450 ; 5.450 ; 5.450 ; 5.450 ;
+; dipswitch2[1] ; LEDmod[2]   ; 5.445 ; 5.445 ; 5.445 ; 5.445 ;
+; dipswitch2[1] ; LEDmod[3]   ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
+; dipswitch2[1] ; LEDmod[4]   ; 5.275 ; 5.275 ; 5.275 ; 5.275 ;
+; dipswitch2[1] ; LEDmod[5]   ; 5.304 ; 5.304 ; 5.304 ; 5.304 ;
+; dipswitch2[1] ; LEDmod[6]   ; 5.443 ; 5.443 ; 5.443 ; 5.443 ;
+; dipswitch2[1] ; VALUE[0]    ; 4.458 ; 4.458 ; 4.458 ; 4.458 ;
+; dipswitch2[1] ; VALUE[1]    ; 4.559 ; 4.794 ; 4.794 ; 4.559 ;
+; dipswitch2[1] ; VALUE[2]    ; 4.599 ; 4.778 ; 4.778 ; 4.599 ;
+; dipswitch2[1] ; VALUE[3]    ; 4.170 ; 4.170 ; 4.170 ; 4.170 ;
+; dipswitch2[1] ; VALUE[4]    ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
+; dipswitch2[1] ; VALUE[5]    ; 4.470 ; 4.470 ; 4.470 ; 4.470 ;
+; dipswitch2[2] ; LEDfloor[0] ; 4.727 ; 4.727 ; 4.727 ; 4.727 ;
+; dipswitch2[2] ; LEDfloor[2] ; 4.751 ; 4.751 ; 4.751 ; 4.751 ;
+; dipswitch2[2] ; LEDfloor[3] ; 4.885 ; 4.885 ; 4.885 ; 4.885 ;
+; dipswitch2[2] ; LEDfloor[4] ; 4.964 ; 4.625 ; 4.625 ; 4.964 ;
+; dipswitch2[2] ; LEDfloor[5] ; 4.629 ; 4.629 ; 4.629 ; 4.629 ;
+; dipswitch2[2] ; LEDfloor[6] ; 4.628 ; 4.967 ; 4.967 ; 4.628 ;
+; dipswitch2[2] ; LEDmod[0]   ; 5.169 ; 5.169 ; 5.169 ; 5.169 ;
+; dipswitch2[2] ; LEDmod[1]   ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; dipswitch2[2] ; LEDmod[2]   ; 5.306 ; 5.306 ; 5.306 ; 5.306 ;
+; dipswitch2[2] ; LEDmod[3]   ; 5.160 ; 5.160 ; 5.160 ; 5.160 ;
+; dipswitch2[2] ; LEDmod[4]   ; 5.136 ; 5.136 ; 5.136 ; 5.136 ;
+; dipswitch2[2] ; LEDmod[5]   ; 5.165 ; 5.165 ; 5.165 ; 5.165 ;
+; dipswitch2[2] ; LEDmod[6]   ; 5.304 ; 5.304 ; 5.304 ; 5.304 ;
+; dipswitch2[2] ; VALUE[0]    ; 4.580 ; 4.490 ; 4.490 ; 4.580 ;
+; dipswitch2[2] ; VALUE[1]    ; 4.749 ; 4.749 ; 4.749 ; 4.749 ;
+; dipswitch2[2] ; VALUE[2]    ; 4.590 ; 4.223 ; 4.223 ; 4.590 ;
+; dipswitch2[2] ; VALUE[3]    ; 4.257 ; 4.031 ; 4.031 ; 4.257 ;
+; dipswitch2[2] ; VALUE[4]    ; 5.026 ; 4.795 ; 4.795 ; 5.026 ;
+; dipswitch2[2] ; VALUE[5]    ; 4.389 ; 4.050 ; 4.050 ; 4.389 ;
+; dipswitch2[3] ; LEDfloor[0] ; 4.419 ; 4.419 ; 4.419 ; 4.419 ;
+; dipswitch2[3] ; LEDfloor[2] ; 4.443 ; 4.443 ; 4.443 ; 4.443 ;
+; dipswitch2[3] ; LEDfloor[3] ; 4.577 ; 4.577 ; 4.577 ; 4.577 ;
+; dipswitch2[3] ; LEDfloor[4] ; 4.438 ; 4.317 ; 4.317 ; 4.438 ;
+; dipswitch2[3] ; LEDfloor[5] ; 4.321 ; 4.321 ; 4.321 ; 4.321 ;
+; dipswitch2[3] ; LEDfloor[6] ; 4.320 ; 4.441 ; 4.441 ; 4.320 ;
+; dipswitch2[3] ; LEDmod[0]   ; 4.738 ; 4.738 ; 4.738 ; 4.738 ;
+; dipswitch2[3] ; LEDmod[1]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
+; dipswitch2[3] ; LEDmod[2]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
+; dipswitch2[3] ; LEDmod[3]   ; 4.719 ; 4.719 ; 4.719 ; 4.719 ;
+; dipswitch2[3] ; LEDmod[4]   ; 4.699 ; 4.699 ; 4.699 ; 4.699 ;
+; dipswitch2[3] ; LEDmod[5]   ; 4.739 ; 4.739 ; 4.739 ; 4.739 ;
+; dipswitch2[3] ; LEDmod[6]   ; 4.864 ; 4.864 ; 4.864 ; 4.864 ;
+; dipswitch2[3] ; VALUE[0]    ; 3.728 ; 3.858 ; 3.858 ; 3.728 ;
+; dipswitch2[3] ; VALUE[1]    ; 3.901 ; 4.156 ; 4.156 ; 3.901 ;
+; dipswitch2[3] ; VALUE[2]    ; 4.191 ; 4.115 ; 4.115 ; 4.191 ;
+; dipswitch2[3] ; VALUE[3]    ; 3.705 ; 3.843 ; 3.843 ; 3.705 ;
+; dipswitch2[3] ; VALUE[4]    ; 4.285 ; 4.285 ; 4.285 ; 4.285 ;
+; dipswitch2[3] ; VALUE[5]    ; 3.863 ; 3.742 ; 3.742 ; 3.863 ;
+; dipswitch2[4] ; LEDfloor[0] ; 4.415 ; 4.415 ; 4.415 ; 4.415 ;
+; dipswitch2[4] ; LEDfloor[2] ; 4.439 ; 4.439 ; 4.439 ; 4.439 ;
+; dipswitch2[4] ; LEDfloor[3] ; 4.573 ; 4.573 ; 4.573 ; 4.573 ;
+; dipswitch2[4] ; LEDfloor[4] ; 4.313 ; 4.384 ; 4.384 ; 4.313 ;
+; dipswitch2[4] ; LEDfloor[5] ; 4.317 ; 4.317 ; 4.317 ; 4.317 ;
+; dipswitch2[4] ; LEDfloor[6] ; 4.387 ; 4.316 ; 4.316 ; 4.387 ;
+; dipswitch2[4] ; LEDmod[0]   ; 4.791 ; 4.791 ; 4.791 ; 4.791 ;
+; dipswitch2[4] ; LEDmod[1]   ; 4.934 ; 4.934 ; 4.934 ; 4.934 ;
+; dipswitch2[4] ; LEDmod[2]   ; 4.934 ; 4.934 ; 4.934 ; 4.934 ;
+; dipswitch2[4] ; LEDmod[3]   ; 4.772 ; 4.772 ; 4.772 ; 4.772 ;
+; dipswitch2[4] ; LEDmod[4]   ; 4.752 ; 4.752 ; 4.752 ; 4.752 ;
+; dipswitch2[4] ; LEDmod[5]   ; 4.792 ; 4.792 ; 4.792 ; 4.792 ;
+; dipswitch2[4] ; LEDmod[6]   ; 4.917 ; 4.917 ; 4.917 ; 4.917 ;
+; dipswitch2[4] ; VALUE[0]    ; 3.884 ; 3.870 ; 3.870 ; 3.884 ;
+; dipswitch2[4] ; VALUE[1]    ; 3.954 ; 4.166 ; 4.166 ; 3.954 ;
+; dipswitch2[4] ; VALUE[2]    ; 4.402 ; 3.964 ; 3.964 ; 4.402 ;
+; dipswitch2[4] ; VALUE[3]    ; 3.726 ; 3.693 ; 3.693 ; 3.726 ;
+; dipswitch2[4] ; VALUE[4]    ; 4.322 ; 4.029 ; 4.029 ; 4.322 ;
+; dipswitch2[4] ; VALUE[5]    ; 3.738 ; 3.809 ; 3.809 ; 3.738 ;
+; dipswitch2[5] ; LEDfloor[0] ; 4.672 ; 4.672 ; 4.672 ; 4.672 ;
+; dipswitch2[5] ; LEDfloor[2] ; 4.696 ; 4.696 ; 4.696 ; 4.696 ;
+; dipswitch2[5] ; LEDfloor[3] ; 4.830 ; 4.830 ; 4.830 ; 4.830 ;
+; dipswitch2[5] ; LEDfloor[4] ; 4.570 ; 4.570 ; 4.570 ; 4.570 ;
+; dipswitch2[5] ; LEDfloor[5] ; 4.574 ; 4.574 ; 4.574 ; 4.574 ;
+; dipswitch2[5] ; LEDfloor[6] ; 4.573 ; 4.573 ; 4.573 ; 4.573 ;
+; dipswitch2[5] ; LEDmod[0]   ; 5.116 ; 5.116 ; 5.116 ; 5.116 ;
+; dipswitch2[5] ; LEDmod[1]   ; 5.258 ; 5.258 ; 5.258 ; 5.258 ;
+; dipswitch2[5] ; LEDmod[2]   ; 5.253 ; 5.253 ; 5.253 ; 5.253 ;
+; dipswitch2[5] ; LEDmod[3]   ; 5.107 ; 5.107 ; 5.107 ; 5.107 ;
+; dipswitch2[5] ; LEDmod[4]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
+; dipswitch2[5] ; LEDmod[5]   ; 5.112 ; 5.112 ; 5.112 ; 5.112 ;
+; dipswitch2[5] ; LEDmod[6]   ; 5.251 ; 5.251 ; 5.251 ; 5.251 ;
+; dipswitch2[5] ; VALUE[0]    ; 4.283 ; 4.283 ; 4.283 ; 4.283 ;
+; dipswitch2[5] ; VALUE[1]    ; 4.319 ; 4.319 ; 4.319 ; 4.319 ;
+; dipswitch2[5] ; VALUE[2]    ; 4.444 ; 4.444 ; 4.444 ; 4.444 ;
+; dipswitch2[5] ; VALUE[3]    ; 3.978 ; 3.978 ; 3.978 ; 3.978 ;
+; dipswitch2[5] ; VALUE[4]    ; 4.991 ; 4.142 ; 4.142 ; 4.991 ;
+; dipswitch2[5] ; VALUE[5]    ; 3.995 ; 3.995 ; 3.995 ; 3.995 ;
 +---------------+-------------+-------+-------+-------+-------+
 
 
@@ -691,120 +702,120 @@ No paths to report.
 +---------------+-------------+--------+--------+--------+--------+
 ; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +---------------+-------------+--------+--------+--------+--------+
-; dipswitch2[0] ; LEDfloor[0] ; 18.936 ; 18.936 ; 18.936 ; 18.936 ;
-; dipswitch2[0] ; LEDfloor[2] ; 18.641 ; 18.641 ; 18.641 ; 18.641 ;
-; dipswitch2[0] ; LEDfloor[3] ; 18.654 ; 18.654 ; 18.654 ; 18.654 ;
-; dipswitch2[0] ; LEDfloor[4] ; 19.002 ; 19.002 ; 19.002 ; 19.002 ;
-; dipswitch2[0] ; LEDfloor[5] ; 19.002 ; 19.002 ; 19.002 ; 19.002 ;
-; dipswitch2[0] ; LEDfloor[6] ; 19.000 ; 19.000 ; 19.000 ; 19.000 ;
-; dipswitch2[0] ; LEDmod[0]   ; 22.798 ; 22.798 ; 22.798 ; 22.798 ;
-; dipswitch2[0] ; LEDmod[1]   ; 23.032 ; 23.032 ; 23.032 ; 23.032 ;
-; dipswitch2[0] ; LEDmod[2]   ; 23.022 ; 23.022 ; 23.022 ; 23.022 ;
-; dipswitch2[0] ; LEDmod[3]   ; 22.840 ; 22.840 ; 22.840 ; 22.840 ;
-; dipswitch2[0] ; LEDmod[4]   ; 22.784 ; 22.784 ; 22.784 ; 22.784 ;
-; dipswitch2[0] ; LEDmod[5]   ; 22.788 ; 22.788 ; 22.788 ; 22.788 ;
-; dipswitch2[0] ; LEDmod[6]   ; 22.856 ; 22.856 ; 22.856 ; 22.856 ;
-; dipswitch2[0] ; VALUE[0]    ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
-; dipswitch2[0] ; VALUE[1]    ; 12.409 ; 12.409 ; 12.409 ; 12.409 ;
-; dipswitch2[0] ; VALUE[2]    ; 13.858 ; 13.858 ; 13.858 ; 13.858 ;
-; dipswitch2[0] ; VALUE[3]    ; 14.430 ; 14.430 ; 14.430 ; 14.430 ;
-; dipswitch2[0] ; VALUE[4]    ; 14.939 ; 14.939 ; 14.939 ; 14.939 ;
-; dipswitch2[0] ; VALUE[5]    ; 13.869 ; 13.869 ; 13.869 ; 13.869 ;
-; dipswitch2[1] ; LEDfloor[0] ; 20.354 ; 20.354 ; 20.354 ; 20.354 ;
-; dipswitch2[1] ; LEDfloor[2] ; 20.059 ; 20.059 ; 20.059 ; 20.059 ;
-; dipswitch2[1] ; LEDfloor[3] ; 20.072 ; 20.072 ; 20.072 ; 20.072 ;
-; dipswitch2[1] ; LEDfloor[4] ; 20.420 ; 20.420 ; 20.420 ; 20.420 ;
-; dipswitch2[1] ; LEDfloor[5] ; 20.420 ; 20.420 ; 20.420 ; 20.420 ;
-; dipswitch2[1] ; LEDfloor[6] ; 20.418 ; 20.418 ; 20.418 ; 20.418 ;
-; dipswitch2[1] ; LEDmod[0]   ; 24.216 ; 24.216 ; 24.216 ; 24.216 ;
-; dipswitch2[1] ; LEDmod[1]   ; 24.450 ; 24.450 ; 24.450 ; 24.450 ;
-; dipswitch2[1] ; LEDmod[2]   ; 24.440 ; 24.440 ; 24.440 ; 24.440 ;
-; dipswitch2[1] ; LEDmod[3]   ; 24.258 ; 24.258 ; 24.258 ; 24.258 ;
-; dipswitch2[1] ; LEDmod[4]   ; 24.202 ; 24.202 ; 24.202 ; 24.202 ;
-; dipswitch2[1] ; LEDmod[5]   ; 24.206 ; 24.206 ; 24.206 ; 24.206 ;
-; dipswitch2[1] ; LEDmod[6]   ; 24.274 ; 24.274 ; 24.274 ; 24.274 ;
-; dipswitch2[1] ; VALUE[0]    ; 13.902 ; 13.902 ; 13.902 ; 13.902 ;
-; dipswitch2[1] ; VALUE[1]    ; 13.048 ; 13.048 ; 13.048 ; 13.048 ;
-; dipswitch2[1] ; VALUE[2]    ; 15.022 ; 15.022 ; 15.022 ; 15.022 ;
-; dipswitch2[1] ; VALUE[3]    ; 15.328 ; 15.328 ; 15.328 ; 15.328 ;
-; dipswitch2[1] ; VALUE[4]    ; 16.357 ; 16.357 ; 16.357 ; 16.357 ;
-; dipswitch2[1] ; VALUE[5]    ; 13.640 ; 14.011 ; 14.011 ; 13.640 ;
-; dipswitch2[2] ; LEDfloor[0] ; 19.152 ; 19.152 ; 19.152 ; 19.152 ;
-; dipswitch2[2] ; LEDfloor[2] ; 18.857 ; 18.857 ; 18.857 ; 18.857 ;
-; dipswitch2[2] ; LEDfloor[3] ; 18.870 ; 18.870 ; 18.870 ; 18.870 ;
-; dipswitch2[2] ; LEDfloor[4] ; 19.218 ; 19.218 ; 19.218 ; 19.218 ;
-; dipswitch2[2] ; LEDfloor[5] ; 19.218 ; 19.218 ; 19.218 ; 19.218 ;
-; dipswitch2[2] ; LEDfloor[6] ; 19.216 ; 18.940 ; 18.940 ; 19.216 ;
-; dipswitch2[2] ; LEDmod[0]   ; 23.014 ; 23.014 ; 23.014 ; 23.014 ;
-; dipswitch2[2] ; LEDmod[1]   ; 23.248 ; 23.248 ; 23.248 ; 23.248 ;
-; dipswitch2[2] ; LEDmod[2]   ; 23.238 ; 23.238 ; 23.238 ; 23.238 ;
-; dipswitch2[2] ; LEDmod[3]   ; 23.056 ; 23.056 ; 23.056 ; 23.056 ;
-; dipswitch2[2] ; LEDmod[4]   ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
-; dipswitch2[2] ; LEDmod[5]   ; 23.004 ; 23.004 ; 23.004 ; 23.004 ;
-; dipswitch2[2] ; LEDmod[6]   ; 23.072 ; 23.072 ; 23.072 ; 23.072 ;
-; dipswitch2[2] ; VALUE[0]    ; 13.303 ; 13.303 ; 13.303 ; 13.303 ;
-; dipswitch2[2] ; VALUE[1]    ; 12.352 ; 11.887 ; 11.887 ; 12.352 ;
-; dipswitch2[2] ; VALUE[2]    ; 13.090 ; 13.436 ; 13.436 ; 13.090 ;
-; dipswitch2[2] ; VALUE[3]    ; 14.645 ; 14.921 ; 14.921 ; 14.645 ;
-; dipswitch2[2] ; VALUE[4]    ; 14.126 ; 14.126 ; 14.126 ; 14.126 ;
-; dipswitch2[2] ; VALUE[5]    ; 13.488 ; 13.488 ; 13.488 ; 13.488 ;
-; dipswitch2[3] ; LEDfloor[0] ; 17.489 ; 17.489 ; 17.489 ; 17.489 ;
-; dipswitch2[3] ; LEDfloor[2] ; 17.194 ; 17.194 ; 17.194 ; 17.194 ;
-; dipswitch2[3] ; LEDfloor[3] ; 17.207 ; 17.207 ; 17.207 ; 17.207 ;
-; dipswitch2[3] ; LEDfloor[4] ; 17.555 ; 17.555 ; 17.555 ; 17.555 ;
-; dipswitch2[3] ; LEDfloor[5] ; 17.555 ; 17.555 ; 17.555 ; 17.555 ;
-; dipswitch2[3] ; LEDfloor[6] ; 17.553 ; 17.441 ; 17.441 ; 17.553 ;
-; dipswitch2[3] ; LEDmod[0]   ; 21.351 ; 21.351 ; 21.351 ; 21.351 ;
-; dipswitch2[3] ; LEDmod[1]   ; 21.585 ; 21.585 ; 21.585 ; 21.585 ;
-; dipswitch2[3] ; LEDmod[2]   ; 21.575 ; 21.575 ; 21.575 ; 21.575 ;
-; dipswitch2[3] ; LEDmod[3]   ; 21.393 ; 21.393 ; 21.393 ; 21.393 ;
-; dipswitch2[3] ; LEDmod[4]   ; 21.337 ; 21.337 ; 21.337 ; 21.337 ;
-; dipswitch2[3] ; LEDmod[5]   ; 21.341 ; 21.341 ; 21.341 ; 21.341 ;
-; dipswitch2[3] ; LEDmod[6]   ; 21.409 ; 21.409 ; 21.409 ; 21.409 ;
-; dipswitch2[3] ; VALUE[0]    ; 12.320 ; 12.320 ; 12.320 ; 12.320 ;
-; dipswitch2[3] ; VALUE[1]    ; 11.718 ; 11.718 ; 11.718 ; 11.718 ;
-; dipswitch2[3] ; VALUE[2]    ; 11.291 ; 11.291 ; 11.291 ; 11.291 ;
-; dipswitch2[3] ; VALUE[3]    ; 11.711 ; 11.711 ; 11.711 ; 11.711 ;
-; dipswitch2[3] ; VALUE[4]    ; 13.380 ; 13.492 ; 13.492 ; 13.380 ;
-; dipswitch2[3] ; VALUE[5]    ; 10.683 ; 10.683 ; 10.683 ; 10.683 ;
-; dipswitch2[4] ; LEDfloor[0] ; 17.437 ; 17.437 ; 17.437 ; 17.437 ;
-; dipswitch2[4] ; LEDfloor[2] ; 17.142 ; 17.142 ; 17.142 ; 17.142 ;
-; dipswitch2[4] ; LEDfloor[3] ; 17.155 ; 17.155 ; 17.155 ; 17.155 ;
-; dipswitch2[4] ; LEDfloor[4] ; 17.503 ; 17.503 ; 17.503 ; 17.503 ;
-; dipswitch2[4] ; LEDfloor[5] ; 17.503 ; 17.503 ; 17.503 ; 17.503 ;
-; dipswitch2[4] ; LEDfloor[6] ; 17.501 ; 17.501 ; 17.501 ; 17.501 ;
-; dipswitch2[4] ; LEDmod[0]   ; 21.299 ; 21.299 ; 21.299 ; 21.299 ;
-; dipswitch2[4] ; LEDmod[1]   ; 21.533 ; 21.533 ; 21.533 ; 21.533 ;
-; dipswitch2[4] ; LEDmod[2]   ; 21.523 ; 21.523 ; 21.523 ; 21.523 ;
-; dipswitch2[4] ; LEDmod[3]   ; 21.341 ; 21.341 ; 21.341 ; 21.341 ;
-; dipswitch2[4] ; LEDmod[4]   ; 21.285 ; 21.285 ; 21.285 ; 21.285 ;
-; dipswitch2[4] ; LEDmod[5]   ; 21.289 ; 21.289 ; 21.289 ; 21.289 ;
-; dipswitch2[4] ; LEDmod[6]   ; 21.357 ; 21.357 ; 21.357 ; 21.357 ;
-; dipswitch2[4] ; VALUE[0]    ; 12.322 ; 12.322 ; 12.322 ; 12.322 ;
-; dipswitch2[4] ; VALUE[1]    ; 11.722 ; 11.722 ; 11.722 ; 11.722 ;
-; dipswitch2[4] ; VALUE[2]    ; 11.350 ; 11.601 ; 11.601 ; 11.350 ;
-; dipswitch2[4] ; VALUE[3]    ; 11.832 ; 12.887 ; 12.887 ; 11.832 ;
-; dipswitch2[4] ; VALUE[4]    ; 13.440 ; 13.440 ; 13.440 ; 13.440 ;
-; dipswitch2[4] ; VALUE[5]    ; 11.310 ; 12.845 ; 12.845 ; 11.310 ;
-; dipswitch2[5] ; LEDfloor[0] ; 16.941 ; 16.941 ; 16.941 ; 16.941 ;
-; dipswitch2[5] ; LEDfloor[2] ; 16.646 ; 16.646 ; 16.646 ; 16.646 ;
-; dipswitch2[5] ; LEDfloor[3] ; 16.659 ; 16.659 ; 16.659 ; 16.659 ;
-; dipswitch2[5] ; LEDfloor[4] ; 17.007 ; 17.007 ; 17.007 ; 17.007 ;
-; dipswitch2[5] ; LEDfloor[5] ; 17.007 ; 17.007 ; 17.007 ; 17.007 ;
-; dipswitch2[5] ; LEDfloor[6] ; 17.005 ; 17.005 ; 17.005 ; 17.005 ;
-; dipswitch2[5] ; LEDmod[0]   ; 20.803 ; 20.803 ; 20.803 ; 20.803 ;
-; dipswitch2[5] ; LEDmod[1]   ; 21.037 ; 21.037 ; 21.037 ; 21.037 ;
-; dipswitch2[5] ; LEDmod[2]   ; 21.027 ; 21.027 ; 21.027 ; 21.027 ;
-; dipswitch2[5] ; LEDmod[3]   ; 20.845 ; 20.845 ; 20.845 ; 20.845 ;
-; dipswitch2[5] ; LEDmod[4]   ; 20.789 ; 20.789 ; 20.789 ; 20.789 ;
-; dipswitch2[5] ; LEDmod[5]   ; 20.793 ; 20.793 ; 20.793 ; 20.793 ;
-; dipswitch2[5] ; LEDmod[6]   ; 20.861 ; 20.861 ; 20.861 ; 20.861 ;
-; dipswitch2[5] ; VALUE[0]    ; 10.919 ; 10.919 ; 10.919 ; 10.919 ;
-; dipswitch2[5] ; VALUE[1]    ; 10.315 ; 10.315 ; 10.315 ; 10.315 ;
-; dipswitch2[5] ; VALUE[2]    ; 10.603 ; 10.603 ; 10.603 ; 10.603 ;
-; dipswitch2[5] ; VALUE[3]    ; 10.996 ; 11.033 ; 11.033 ; 10.996 ;
-; dipswitch2[5] ; VALUE[4]    ; 12.944 ; 12.944 ; 12.944 ; 12.944 ;
-; dipswitch2[5] ; VALUE[5]    ; 9.660  ; 10.991 ; 10.991 ; 9.660  ;
+; dipswitch2[0] ; LEDfloor[0] ; 21.303 ; 21.303 ; 21.303 ; 21.303 ;
+; dipswitch2[0] ; LEDfloor[2] ; 21.329 ; 21.329 ; 21.329 ; 21.329 ;
+; dipswitch2[0] ; LEDfloor[3] ; 21.676 ; 21.676 ; 21.676 ; 21.676 ;
+; dipswitch2[0] ; LEDfloor[4] ; 21.004 ; 21.004 ; 21.004 ; 21.004 ;
+; dipswitch2[0] ; LEDfloor[5] ; 21.000 ; 21.000 ; 21.000 ; 21.000 ;
+; dipswitch2[0] ; LEDfloor[6] ; 21.001 ; 21.001 ; 21.001 ; 21.001 ;
+; dipswitch2[0] ; LEDmod[0]   ; 24.717 ; 24.717 ; 24.717 ; 24.717 ;
+; dipswitch2[0] ; LEDmod[1]   ; 24.907 ; 24.907 ; 24.907 ; 24.907 ;
+; dipswitch2[0] ; LEDmod[2]   ; 24.903 ; 24.903 ; 24.903 ; 24.903 ;
+; dipswitch2[0] ; LEDmod[3]   ; 24.708 ; 24.708 ; 24.708 ; 24.708 ;
+; dipswitch2[0] ; LEDmod[4]   ; 24.680 ; 24.680 ; 24.680 ; 24.680 ;
+; dipswitch2[0] ; LEDmod[5]   ; 24.717 ; 24.717 ; 24.717 ; 24.717 ;
+; dipswitch2[0] ; LEDmod[6]   ; 25.052 ; 25.052 ; 25.052 ; 25.052 ;
+; dipswitch2[0] ; VALUE[0]    ; 12.591 ; 12.591 ; 12.591 ; 12.591 ;
+; dipswitch2[0] ; VALUE[1]    ; 13.067 ; 13.067 ; 13.067 ; 13.067 ;
+; dipswitch2[0] ; VALUE[2]    ; 13.652 ; 13.652 ; 13.652 ; 13.652 ;
+; dipswitch2[0] ; VALUE[3]    ; 13.496 ; 13.496 ; 13.496 ; 13.496 ;
+; dipswitch2[0] ; VALUE[4]    ; 15.405 ; 15.405 ; 15.405 ; 15.405 ;
+; dipswitch2[0] ; VALUE[5]    ; 13.328 ; 13.328 ; 13.328 ; 13.328 ;
+; dipswitch2[1] ; LEDfloor[0] ; 22.090 ; 22.090 ; 22.090 ; 22.090 ;
+; dipswitch2[1] ; LEDfloor[2] ; 22.116 ; 22.116 ; 22.116 ; 22.116 ;
+; dipswitch2[1] ; LEDfloor[3] ; 22.463 ; 22.463 ; 22.463 ; 22.463 ;
+; dipswitch2[1] ; LEDfloor[4] ; 21.791 ; 21.791 ; 21.791 ; 21.791 ;
+; dipswitch2[1] ; LEDfloor[5] ; 21.787 ; 21.787 ; 21.787 ; 21.787 ;
+; dipswitch2[1] ; LEDfloor[6] ; 21.788 ; 21.788 ; 21.788 ; 21.788 ;
+; dipswitch2[1] ; LEDmod[0]   ; 25.504 ; 25.504 ; 25.504 ; 25.504 ;
+; dipswitch2[1] ; LEDmod[1]   ; 25.694 ; 25.694 ; 25.694 ; 25.694 ;
+; dipswitch2[1] ; LEDmod[2]   ; 25.690 ; 25.690 ; 25.690 ; 25.690 ;
+; dipswitch2[1] ; LEDmod[3]   ; 25.495 ; 25.495 ; 25.495 ; 25.495 ;
+; dipswitch2[1] ; LEDmod[4]   ; 25.467 ; 25.467 ; 25.467 ; 25.467 ;
+; dipswitch2[1] ; LEDmod[5]   ; 25.504 ; 25.504 ; 25.504 ; 25.504 ;
+; dipswitch2[1] ; LEDmod[6]   ; 25.839 ; 25.839 ; 25.839 ; 25.839 ;
+; dipswitch2[1] ; VALUE[0]    ; 13.058 ; 13.058 ; 13.058 ; 13.058 ;
+; dipswitch2[1] ; VALUE[1]    ; 14.003 ; 14.003 ; 14.003 ; 14.003 ;
+; dipswitch2[1] ; VALUE[2]    ; 14.458 ; 14.458 ; 14.458 ; 14.458 ;
+; dipswitch2[1] ; VALUE[3]    ; 14.283 ; 14.283 ; 14.283 ; 14.283 ;
+; dipswitch2[1] ; VALUE[4]    ; 16.089 ; 16.089 ; 16.089 ; 16.089 ;
+; dipswitch2[1] ; VALUE[5]    ; 13.585 ; 13.585 ; 13.585 ; 13.585 ;
+; dipswitch2[2] ; LEDfloor[0] ; 20.380 ; 20.380 ; 20.380 ; 20.380 ;
+; dipswitch2[2] ; LEDfloor[2] ; 20.406 ; 20.406 ; 20.406 ; 20.406 ;
+; dipswitch2[2] ; LEDfloor[3] ; 20.753 ; 20.753 ; 20.753 ; 20.753 ;
+; dipswitch2[2] ; LEDfloor[4] ; 20.081 ; 20.081 ; 20.081 ; 20.081 ;
+; dipswitch2[2] ; LEDfloor[5] ; 20.077 ; 20.077 ; 20.077 ; 20.077 ;
+; dipswitch2[2] ; LEDfloor[6] ; 20.078 ; 20.078 ; 20.078 ; 20.078 ;
+; dipswitch2[2] ; LEDmod[0]   ; 23.794 ; 23.794 ; 23.794 ; 23.794 ;
+; dipswitch2[2] ; LEDmod[1]   ; 23.984 ; 23.984 ; 23.984 ; 23.984 ;
+; dipswitch2[2] ; LEDmod[2]   ; 23.980 ; 23.980 ; 23.980 ; 23.980 ;
+; dipswitch2[2] ; LEDmod[3]   ; 23.785 ; 23.785 ; 23.785 ; 23.785 ;
+; dipswitch2[2] ; LEDmod[4]   ; 23.757 ; 23.757 ; 23.757 ; 23.757 ;
+; dipswitch2[2] ; LEDmod[5]   ; 23.794 ; 23.794 ; 23.794 ; 23.794 ;
+; dipswitch2[2] ; LEDmod[6]   ; 24.129 ; 24.129 ; 24.129 ; 24.129 ;
+; dipswitch2[2] ; VALUE[0]    ; 11.769 ; 11.253 ; 11.253 ; 11.769 ;
+; dipswitch2[2] ; VALUE[1]    ; 12.345 ; 12.345 ; 12.345 ; 12.345 ;
+; dipswitch2[2] ; VALUE[2]    ; 13.020 ; 12.980 ; 12.980 ; 13.020 ;
+; dipswitch2[2] ; VALUE[3]    ; 12.573 ; 12.573 ; 12.573 ; 12.573 ;
+; dipswitch2[2] ; VALUE[4]    ; 14.784 ; 14.784 ; 14.784 ; 14.784 ;
+; dipswitch2[2] ; VALUE[5]    ; 12.993 ; 12.993 ; 12.993 ; 12.993 ;
+; dipswitch2[3] ; LEDfloor[0] ; 18.882 ; 18.882 ; 18.882 ; 18.882 ;
+; dipswitch2[3] ; LEDfloor[2] ; 18.908 ; 18.908 ; 18.908 ; 18.908 ;
+; dipswitch2[3] ; LEDfloor[3] ; 19.255 ; 19.255 ; 19.255 ; 19.255 ;
+; dipswitch2[3] ; LEDfloor[4] ; 18.583 ; 18.583 ; 18.583 ; 18.583 ;
+; dipswitch2[3] ; LEDfloor[5] ; 18.579 ; 18.579 ; 18.579 ; 18.579 ;
+; dipswitch2[3] ; LEDfloor[6] ; 18.580 ; 18.580 ; 18.580 ; 18.580 ;
+; dipswitch2[3] ; LEDmod[0]   ; 22.296 ; 22.296 ; 22.296 ; 22.296 ;
+; dipswitch2[3] ; LEDmod[1]   ; 22.486 ; 22.486 ; 22.486 ; 22.486 ;
+; dipswitch2[3] ; LEDmod[2]   ; 22.482 ; 22.482 ; 22.482 ; 22.482 ;
+; dipswitch2[3] ; LEDmod[3]   ; 22.287 ; 22.287 ; 22.287 ; 22.287 ;
+; dipswitch2[3] ; LEDmod[4]   ; 22.259 ; 22.259 ; 22.259 ; 22.259 ;
+; dipswitch2[3] ; LEDmod[5]   ; 22.296 ; 22.296 ; 22.296 ; 22.296 ;
+; dipswitch2[3] ; LEDmod[6]   ; 22.631 ; 22.631 ; 22.631 ; 22.631 ;
+; dipswitch2[3] ; VALUE[0]    ; 10.849 ; 10.849 ; 10.849 ; 10.849 ;
+; dipswitch2[3] ; VALUE[1]    ; 11.232 ; 11.423 ; 11.423 ; 11.232 ;
+; dipswitch2[3] ; VALUE[2]    ; 11.626 ; 11.626 ; 11.626 ; 11.626 ;
+; dipswitch2[3] ; VALUE[3]    ; 9.244  ; 9.425  ; 9.425  ; 9.244  ;
+; dipswitch2[3] ; VALUE[4]    ; 13.008 ; 13.008 ; 13.008 ; 13.008 ;
+; dipswitch2[3] ; VALUE[5]    ; 11.255 ; 11.255 ; 11.255 ; 11.255 ;
+; dipswitch2[4] ; LEDfloor[0] ; 17.807 ; 17.807 ; 17.807 ; 17.807 ;
+; dipswitch2[4] ; LEDfloor[2] ; 17.833 ; 17.833 ; 17.833 ; 17.833 ;
+; dipswitch2[4] ; LEDfloor[3] ; 18.180 ; 18.180 ; 18.180 ; 18.180 ;
+; dipswitch2[4] ; LEDfloor[4] ; 17.508 ; 17.508 ; 17.508 ; 17.508 ;
+; dipswitch2[4] ; LEDfloor[5] ; 17.504 ; 17.504 ; 17.504 ; 17.504 ;
+; dipswitch2[4] ; LEDfloor[6] ; 17.505 ; 17.241 ; 17.241 ; 17.505 ;
+; dipswitch2[4] ; LEDmod[0]   ; 21.221 ; 21.221 ; 21.221 ; 21.221 ;
+; dipswitch2[4] ; LEDmod[1]   ; 21.411 ; 21.411 ; 21.411 ; 21.411 ;
+; dipswitch2[4] ; LEDmod[2]   ; 21.407 ; 21.407 ; 21.407 ; 21.407 ;
+; dipswitch2[4] ; LEDmod[3]   ; 21.212 ; 21.212 ; 21.212 ; 21.212 ;
+; dipswitch2[4] ; LEDmod[4]   ; 21.184 ; 21.184 ; 21.184 ; 21.184 ;
+; dipswitch2[4] ; LEDmod[5]   ; 21.221 ; 21.221 ; 21.221 ; 21.221 ;
+; dipswitch2[4] ; LEDmod[6]   ; 21.556 ; 21.556 ; 21.556 ; 21.556 ;
+; dipswitch2[4] ; VALUE[0]    ; 8.938  ; 9.897  ; 9.897  ; 8.938  ;
+; dipswitch2[4] ; VALUE[1]    ; 9.316  ; 10.770 ; 10.770 ; 9.316  ;
+; dipswitch2[4] ; VALUE[2]    ; 10.287 ; 10.063 ; 10.063 ; 10.287 ;
+; dipswitch2[4] ; VALUE[3]    ; 8.451  ; 9.508  ; 9.508  ; 8.451  ;
+; dipswitch2[4] ; VALUE[4]    ; 11.084 ; 11.084 ; 11.084 ; 11.084 ;
+; dipswitch2[4] ; VALUE[5]    ; 8.463  ; 9.476  ; 9.476  ; 8.463  ;
+; dipswitch2[5] ; LEDfloor[0] ; 18.202 ; 18.202 ; 18.202 ; 18.202 ;
+; dipswitch2[5] ; LEDfloor[2] ; 18.228 ; 18.228 ; 18.228 ; 18.228 ;
+; dipswitch2[5] ; LEDfloor[3] ; 18.575 ; 18.575 ; 18.575 ; 18.575 ;
+; dipswitch2[5] ; LEDfloor[4] ; 17.903 ; 17.903 ; 17.903 ; 17.903 ;
+; dipswitch2[5] ; LEDfloor[5] ; 17.899 ; 17.899 ; 17.899 ; 17.899 ;
+; dipswitch2[5] ; LEDfloor[6] ; 17.900 ; 17.524 ; 17.524 ; 17.900 ;
+; dipswitch2[5] ; LEDmod[0]   ; 21.616 ; 21.616 ; 21.616 ; 21.616 ;
+; dipswitch2[5] ; LEDmod[1]   ; 21.806 ; 21.806 ; 21.806 ; 21.806 ;
+; dipswitch2[5] ; LEDmod[2]   ; 21.802 ; 21.802 ; 21.802 ; 21.802 ;
+; dipswitch2[5] ; LEDmod[3]   ; 21.607 ; 21.607 ; 21.607 ; 21.607 ;
+; dipswitch2[5] ; LEDmod[4]   ; 21.579 ; 21.579 ; 21.579 ; 21.579 ;
+; dipswitch2[5] ; LEDmod[5]   ; 21.616 ; 21.616 ; 21.616 ; 21.616 ;
+; dipswitch2[5] ; LEDmod[6]   ; 21.951 ; 21.951 ; 21.951 ; 21.951 ;
+; dipswitch2[5] ; VALUE[0]    ; 10.128 ; 10.292 ; 10.292 ; 10.128 ;
+; dipswitch2[5] ; VALUE[1]    ; 9.912  ; 11.165 ; 11.165 ; 9.912  ;
+; dipswitch2[5] ; VALUE[2]    ; 10.315 ; 10.315 ; 10.315 ; 10.315 ;
+; dipswitch2[5] ; VALUE[3]    ; 9.483  ; 9.903  ; 9.903  ; 9.483  ;
+; dipswitch2[5] ; VALUE[4]    ; 11.679 ; 11.679 ; 11.679 ; 11.679 ;
+; dipswitch2[5] ; VALUE[5]    ; 8.917  ; 9.871  ; 9.871  ; 8.917  ;
 +---------------+-------------+--------+--------+--------+--------+
 
 
@@ -813,120 +824,120 @@ No paths to report.
 +---------------+-------------+-------+-------+-------+-------+
 ; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +---------------+-------------+-------+-------+-------+-------+
-; dipswitch2[0] ; LEDfloor[0] ; 4.882 ; 4.882 ; 4.882 ; 4.882 ;
-; dipswitch2[0] ; LEDfloor[2] ; 4.786 ; 4.786 ; 4.786 ; 4.786 ;
-; dipswitch2[0] ; LEDfloor[3] ; 4.797 ; 4.797 ; 4.797 ; 4.797 ;
-; dipswitch2[0] ; LEDfloor[4] ; 4.930 ; 4.930 ; 4.930 ; 4.930 ;
-; dipswitch2[0] ; LEDfloor[5] ; 4.931 ; 4.931 ; 4.931 ; 4.931 ;
-; dipswitch2[0] ; LEDfloor[6] ; 4.935 ; 4.935 ; 4.935 ; 4.935 ;
-; dipswitch2[0] ; LEDmod[0]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[0] ; LEDmod[1]   ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
-; dipswitch2[0] ; LEDmod[2]   ; 5.598 ; 5.598 ; 5.598 ; 5.598 ;
-; dipswitch2[0] ; LEDmod[3]   ; 5.453 ; 5.453 ; 5.453 ; 5.453 ;
-; dipswitch2[0] ; LEDmod[4]   ; 5.437 ; 5.437 ; 5.437 ; 5.437 ;
-; dipswitch2[0] ; LEDmod[5]   ; 5.447 ; 5.447 ; 5.447 ; 5.447 ;
-; dipswitch2[0] ; LEDmod[6]   ; 5.467 ; 5.467 ; 5.467 ; 5.467 ;
-; dipswitch2[0] ; VALUE[0]    ; 4.703 ; 4.703 ; 4.703 ; 4.703 ;
-; dipswitch2[0] ; VALUE[1]    ; 4.556 ; 4.556 ; 4.556 ; 4.556 ;
-; dipswitch2[0] ; VALUE[2]    ; 4.646 ; 4.646 ; 4.646 ; 4.646 ;
-; dipswitch2[0] ; VALUE[3]    ; 4.583 ; 4.782 ; 4.782 ; 4.583 ;
-; dipswitch2[0] ; VALUE[4]    ; 5.511 ; 5.585 ; 5.585 ; 5.511 ;
-; dipswitch2[0] ; VALUE[5]    ; 4.709 ; 4.709 ; 4.709 ; 4.709 ;
-; dipswitch2[1] ; LEDfloor[0] ; 5.160 ; 5.160 ; 5.160 ; 5.160 ;
-; dipswitch2[1] ; LEDfloor[2] ; 5.064 ; 5.064 ; 5.064 ; 5.064 ;
-; dipswitch2[1] ; LEDfloor[3] ; 5.075 ; 5.075 ; 5.075 ; 5.075 ;
-; dipswitch2[1] ; LEDfloor[4] ; 5.208 ; 5.234 ; 5.234 ; 5.208 ;
-; dipswitch2[1] ; LEDfloor[5] ; 5.209 ; 5.209 ; 5.209 ; 5.209 ;
-; dipswitch2[1] ; LEDfloor[6] ; 5.236 ; 5.213 ; 5.213 ; 5.236 ;
-; dipswitch2[1] ; LEDmod[0]   ; 5.461 ; 5.461 ; 5.461 ; 5.461 ;
-; dipswitch2[1] ; LEDmod[1]   ; 5.607 ; 5.607 ; 5.607 ; 5.607 ;
-; dipswitch2[1] ; LEDmod[2]   ; 5.615 ; 5.615 ; 5.615 ; 5.615 ;
-; dipswitch2[1] ; LEDmod[3]   ; 5.462 ; 5.462 ; 5.462 ; 5.462 ;
-; dipswitch2[1] ; LEDmod[4]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[1] ; LEDmod[5]   ; 5.459 ; 5.459 ; 5.459 ; 5.459 ;
-; dipswitch2[1] ; LEDmod[6]   ; 5.477 ; 5.477 ; 5.477 ; 5.477 ;
-; dipswitch2[1] ; VALUE[0]    ; 4.736 ; 4.736 ; 4.736 ; 4.736 ;
-; dipswitch2[1] ; VALUE[1]    ; 4.641 ; 4.641 ; 4.641 ; 4.641 ;
-; dipswitch2[1] ; VALUE[2]    ; 4.548 ; 4.548 ; 4.548 ; 4.548 ;
-; dipswitch2[1] ; VALUE[3]    ; 4.608 ; 4.608 ; 4.608 ; 4.608 ;
-; dipswitch2[1] ; VALUE[4]    ; 5.647 ; 5.647 ; 5.647 ; 5.647 ;
-; dipswitch2[1] ; VALUE[5]    ; 4.987 ; 5.058 ; 5.058 ; 4.987 ;
-; dipswitch2[2] ; LEDfloor[0] ; 4.735 ; 4.735 ; 4.735 ; 4.735 ;
-; dipswitch2[2] ; LEDfloor[2] ; 4.639 ; 4.639 ; 4.639 ; 4.639 ;
-; dipswitch2[2] ; LEDfloor[3] ; 4.650 ; 4.650 ; 4.650 ; 4.650 ;
-; dipswitch2[2] ; LEDfloor[4] ; 4.906 ; 4.783 ; 4.783 ; 4.906 ;
-; dipswitch2[2] ; LEDfloor[5] ; 4.784 ; 4.784 ; 4.784 ; 4.784 ;
-; dipswitch2[2] ; LEDfloor[6] ; 4.788 ; 5.163 ; 5.163 ; 4.788 ;
-; dipswitch2[2] ; LEDmod[0]   ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; dipswitch2[2] ; LEDmod[1]   ; 5.449 ; 5.449 ; 5.449 ; 5.449 ;
-; dipswitch2[2] ; LEDmod[2]   ; 5.451 ; 5.451 ; 5.451 ; 5.451 ;
-; dipswitch2[2] ; LEDmod[3]   ; 5.306 ; 5.306 ; 5.306 ; 5.306 ;
-; dipswitch2[2] ; LEDmod[4]   ; 5.290 ; 5.290 ; 5.290 ; 5.290 ;
-; dipswitch2[2] ; LEDmod[5]   ; 5.300 ; 5.300 ; 5.300 ; 5.300 ;
-; dipswitch2[2] ; LEDmod[6]   ; 5.320 ; 5.320 ; 5.320 ; 5.320 ;
-; dipswitch2[2] ; VALUE[0]    ; 4.840 ; 4.689 ; 4.689 ; 4.840 ;
-; dipswitch2[2] ; VALUE[1]    ; 4.735 ; 4.456 ; 4.456 ; 4.735 ;
-; dipswitch2[2] ; VALUE[2]    ; 4.653 ; 4.396 ; 4.396 ; 4.653 ;
-; dipswitch2[2] ; VALUE[3]    ; 4.581 ; 4.545 ; 4.545 ; 4.581 ;
-; dipswitch2[2] ; VALUE[4]    ; 5.784 ; 5.430 ; 5.430 ; 5.784 ;
-; dipswitch2[2] ; VALUE[5]    ; 4.937 ; 4.562 ; 4.562 ; 4.937 ;
-; dipswitch2[3] ; LEDfloor[0] ; 4.523 ; 4.523 ; 4.523 ; 4.523 ;
-; dipswitch2[3] ; LEDfloor[2] ; 4.427 ; 4.427 ; 4.427 ; 4.427 ;
-; dipswitch2[3] ; LEDfloor[3] ; 4.438 ; 4.438 ; 4.438 ; 4.438 ;
-; dipswitch2[3] ; LEDfloor[4] ; 4.603 ; 4.571 ; 4.571 ; 4.603 ;
-; dipswitch2[3] ; LEDfloor[5] ; 4.572 ; 4.572 ; 4.572 ; 4.572 ;
-; dipswitch2[3] ; LEDfloor[6] ; 4.576 ; 4.608 ; 4.608 ; 4.576 ;
-; dipswitch2[3] ; LEDmod[0]   ; 4.863 ; 4.863 ; 4.863 ; 4.863 ;
-; dipswitch2[3] ; LEDmod[1]   ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
-; dipswitch2[3] ; LEDmod[2]   ; 5.013 ; 5.013 ; 5.013 ; 5.013 ;
-; dipswitch2[3] ; LEDmod[3]   ; 4.867 ; 4.867 ; 4.867 ; 4.867 ;
-; dipswitch2[3] ; LEDmod[4]   ; 4.850 ; 4.850 ; 4.850 ; 4.850 ;
-; dipswitch2[3] ; LEDmod[5]   ; 4.860 ; 4.860 ; 4.860 ; 4.860 ;
-; dipswitch2[3] ; LEDmod[6]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
-; dipswitch2[3] ; VALUE[0]    ; 3.998 ; 4.121 ; 4.121 ; 3.998 ;
-; dipswitch2[3] ; VALUE[1]    ; 3.883 ; 3.881 ; 3.881 ; 3.883 ;
-; dipswitch2[3] ; VALUE[2]    ; 3.981 ; 3.982 ; 3.982 ; 3.981 ;
-; dipswitch2[3] ; VALUE[3]    ; 4.243 ; 4.496 ; 4.496 ; 4.243 ;
-; dipswitch2[3] ; VALUE[4]    ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
-; dipswitch2[3] ; VALUE[5]    ; 4.382 ; 4.350 ; 4.350 ; 4.382 ;
-; dipswitch2[4] ; LEDfloor[0] ; 5.018 ; 5.018 ; 5.018 ; 5.018 ;
-; dipswitch2[4] ; LEDfloor[2] ; 4.922 ; 4.922 ; 4.922 ; 4.922 ;
-; dipswitch2[4] ; LEDfloor[3] ; 4.933 ; 4.933 ; 4.933 ; 4.933 ;
-; dipswitch2[4] ; LEDfloor[4] ; 5.084 ; 5.066 ; 5.066 ; 5.084 ;
-; dipswitch2[4] ; LEDfloor[5] ; 5.067 ; 5.067 ; 5.067 ; 5.067 ;
-; dipswitch2[4] ; LEDfloor[6] ; 5.071 ; 5.089 ; 5.089 ; 5.071 ;
-; dipswitch2[4] ; LEDmod[0]   ; 5.585 ; 5.585 ; 5.585 ; 5.585 ;
-; dipswitch2[4] ; LEDmod[1]   ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
-; dipswitch2[4] ; LEDmod[2]   ; 5.734 ; 5.734 ; 5.734 ; 5.734 ;
-; dipswitch2[4] ; LEDmod[3]   ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
-; dipswitch2[4] ; LEDmod[4]   ; 5.573 ; 5.573 ; 5.573 ; 5.573 ;
-; dipswitch2[4] ; LEDmod[5]   ; 5.583 ; 5.583 ; 5.583 ; 5.583 ;
-; dipswitch2[4] ; LEDmod[6]   ; 5.603 ; 5.603 ; 5.603 ; 5.603 ;
-; dipswitch2[4] ; VALUE[0]    ; 5.060 ; 4.911 ; 4.911 ; 5.060 ;
-; dipswitch2[4] ; VALUE[1]    ; 4.926 ; 4.670 ; 4.670 ; 4.926 ;
-; dipswitch2[4] ; VALUE[2]    ; 4.916 ; 4.884 ; 4.884 ; 4.916 ;
-; dipswitch2[4] ; VALUE[3]    ; 4.808 ; 4.824 ; 4.824 ; 4.808 ;
-; dipswitch2[4] ; VALUE[4]    ; 5.378 ; 5.233 ; 5.233 ; 5.378 ;
-; dipswitch2[4] ; VALUE[5]    ; 4.863 ; 4.845 ; 4.845 ; 4.863 ;
-; dipswitch2[5] ; LEDfloor[0] ; 4.516 ; 4.516 ; 4.516 ; 4.516 ;
-; dipswitch2[5] ; LEDfloor[2] ; 4.420 ; 4.420 ; 4.420 ; 4.420 ;
-; dipswitch2[5] ; LEDfloor[3] ; 4.431 ; 4.431 ; 4.431 ; 4.431 ;
-; dipswitch2[5] ; LEDfloor[4] ; 4.564 ; 4.564 ; 4.564 ; 4.564 ;
-; dipswitch2[5] ; LEDfloor[5] ; 4.565 ; 4.565 ; 4.565 ; 4.565 ;
-; dipswitch2[5] ; LEDfloor[6] ; 4.569 ; 4.569 ; 4.569 ; 4.569 ;
-; dipswitch2[5] ; LEDmod[0]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
-; dipswitch2[5] ; LEDmod[1]   ; 5.230 ; 5.230 ; 5.230 ; 5.230 ;
-; dipswitch2[5] ; LEDmod[2]   ; 5.232 ; 5.232 ; 5.232 ; 5.232 ;
-; dipswitch2[5] ; LEDmod[3]   ; 5.087 ; 5.087 ; 5.087 ; 5.087 ;
-; dipswitch2[5] ; LEDmod[4]   ; 5.071 ; 5.071 ; 5.071 ; 5.071 ;
-; dipswitch2[5] ; LEDmod[5]   ; 5.081 ; 5.081 ; 5.081 ; 5.081 ;
-; dipswitch2[5] ; LEDmod[6]   ; 5.101 ; 5.101 ; 5.101 ; 5.101 ;
-; dipswitch2[5] ; VALUE[0]    ; 4.515 ; 4.324 ; 4.324 ; 4.515 ;
-; dipswitch2[5] ; VALUE[1]    ; 4.354 ; 4.350 ; 4.350 ; 4.354 ;
-; dipswitch2[5] ; VALUE[2]    ; 4.464 ; 4.317 ; 4.317 ; 4.464 ;
-; dipswitch2[5] ; VALUE[3]    ; 4.637 ; 4.637 ; 4.637 ; 4.637 ;
-; dipswitch2[5] ; VALUE[4]    ; 5.471 ; 4.769 ; 4.769 ; 5.471 ;
-; dipswitch2[5] ; VALUE[5]    ; 4.343 ; 4.343 ; 4.343 ; 4.343 ;
+; dipswitch2[0] ; LEDfloor[0] ; 5.260 ; 5.260 ; 5.260 ; 5.260 ;
+; dipswitch2[0] ; LEDfloor[2] ; 5.284 ; 5.284 ; 5.284 ; 5.284 ;
+; dipswitch2[0] ; LEDfloor[3] ; 5.418 ; 5.418 ; 5.418 ; 5.418 ;
+; dipswitch2[0] ; LEDfloor[4] ; 5.158 ; 5.158 ; 5.158 ; 5.158 ;
+; dipswitch2[0] ; LEDfloor[5] ; 5.162 ; 5.162 ; 5.162 ; 5.162 ;
+; dipswitch2[0] ; LEDfloor[6] ; 5.161 ; 5.161 ; 5.161 ; 5.161 ;
+; dipswitch2[0] ; LEDmod[0]   ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
+; dipswitch2[0] ; LEDmod[1]   ; 5.513 ; 5.513 ; 5.513 ; 5.513 ;
+; dipswitch2[0] ; LEDmod[2]   ; 5.508 ; 5.508 ; 5.508 ; 5.508 ;
+; dipswitch2[0] ; LEDmod[3]   ; 5.362 ; 5.362 ; 5.362 ; 5.362 ;
+; dipswitch2[0] ; LEDmod[4]   ; 5.338 ; 5.338 ; 5.338 ; 5.338 ;
+; dipswitch2[0] ; LEDmod[5]   ; 5.367 ; 5.367 ; 5.367 ; 5.367 ;
+; dipswitch2[0] ; LEDmod[6]   ; 5.506 ; 5.506 ; 5.506 ; 5.506 ;
+; dipswitch2[0] ; VALUE[0]    ; 4.538 ; 4.538 ; 4.538 ; 4.538 ;
+; dipswitch2[0] ; VALUE[1]    ; 4.581 ; 4.581 ; 4.581 ; 4.581 ;
+; dipswitch2[0] ; VALUE[2]    ; 4.770 ; 4.770 ; 4.770 ; 4.770 ;
+; dipswitch2[0] ; VALUE[3]    ; 4.351 ; 4.233 ; 4.233 ; 4.351 ;
+; dipswitch2[0] ; VALUE[4]    ; 4.844 ; 4.844 ; 4.844 ; 4.844 ;
+; dipswitch2[0] ; VALUE[5]    ; 4.583 ; 4.583 ; 4.583 ; 4.583 ;
+; dipswitch2[1] ; LEDfloor[0] ; 5.137 ; 5.137 ; 5.137 ; 5.137 ;
+; dipswitch2[1] ; LEDfloor[2] ; 5.154 ; 5.154 ; 5.154 ; 5.154 ;
+; dipswitch2[1] ; LEDfloor[3] ; 5.295 ; 5.295 ; 5.295 ; 5.295 ;
+; dipswitch2[1] ; LEDfloor[4] ; 5.032 ; 5.032 ; 5.032 ; 5.032 ;
+; dipswitch2[1] ; LEDfloor[5] ; 5.033 ; 5.033 ; 5.033 ; 5.033 ;
+; dipswitch2[1] ; LEDfloor[6] ; 5.048 ; 5.033 ; 5.033 ; 5.048 ;
+; dipswitch2[1] ; LEDmod[0]   ; 5.308 ; 5.308 ; 5.308 ; 5.308 ;
+; dipswitch2[1] ; LEDmod[1]   ; 5.450 ; 5.450 ; 5.450 ; 5.450 ;
+; dipswitch2[1] ; LEDmod[2]   ; 5.445 ; 5.445 ; 5.445 ; 5.445 ;
+; dipswitch2[1] ; LEDmod[3]   ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
+; dipswitch2[1] ; LEDmod[4]   ; 5.275 ; 5.275 ; 5.275 ; 5.275 ;
+; dipswitch2[1] ; LEDmod[5]   ; 5.304 ; 5.304 ; 5.304 ; 5.304 ;
+; dipswitch2[1] ; LEDmod[6]   ; 5.443 ; 5.443 ; 5.443 ; 5.443 ;
+; dipswitch2[1] ; VALUE[0]    ; 4.458 ; 4.458 ; 4.458 ; 4.458 ;
+; dipswitch2[1] ; VALUE[1]    ; 4.559 ; 4.794 ; 4.794 ; 4.559 ;
+; dipswitch2[1] ; VALUE[2]    ; 4.599 ; 4.778 ; 4.778 ; 4.599 ;
+; dipswitch2[1] ; VALUE[3]    ; 4.170 ; 4.170 ; 4.170 ; 4.170 ;
+; dipswitch2[1] ; VALUE[4]    ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
+; dipswitch2[1] ; VALUE[5]    ; 4.470 ; 4.470 ; 4.470 ; 4.470 ;
+; dipswitch2[2] ; LEDfloor[0] ; 4.727 ; 4.727 ; 4.727 ; 4.727 ;
+; dipswitch2[2] ; LEDfloor[2] ; 4.751 ; 4.751 ; 4.751 ; 4.751 ;
+; dipswitch2[2] ; LEDfloor[3] ; 4.885 ; 4.885 ; 4.885 ; 4.885 ;
+; dipswitch2[2] ; LEDfloor[4] ; 4.964 ; 4.625 ; 4.625 ; 4.964 ;
+; dipswitch2[2] ; LEDfloor[5] ; 4.629 ; 4.629 ; 4.629 ; 4.629 ;
+; dipswitch2[2] ; LEDfloor[6] ; 4.628 ; 4.967 ; 4.967 ; 4.628 ;
+; dipswitch2[2] ; LEDmod[0]   ; 5.169 ; 5.169 ; 5.169 ; 5.169 ;
+; dipswitch2[2] ; LEDmod[1]   ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; dipswitch2[2] ; LEDmod[2]   ; 5.306 ; 5.306 ; 5.306 ; 5.306 ;
+; dipswitch2[2] ; LEDmod[3]   ; 5.160 ; 5.160 ; 5.160 ; 5.160 ;
+; dipswitch2[2] ; LEDmod[4]   ; 5.136 ; 5.136 ; 5.136 ; 5.136 ;
+; dipswitch2[2] ; LEDmod[5]   ; 5.165 ; 5.165 ; 5.165 ; 5.165 ;
+; dipswitch2[2] ; LEDmod[6]   ; 5.304 ; 5.304 ; 5.304 ; 5.304 ;
+; dipswitch2[2] ; VALUE[0]    ; 4.580 ; 4.490 ; 4.490 ; 4.580 ;
+; dipswitch2[2] ; VALUE[1]    ; 4.749 ; 4.749 ; 4.749 ; 4.749 ;
+; dipswitch2[2] ; VALUE[2]    ; 4.590 ; 4.223 ; 4.223 ; 4.590 ;
+; dipswitch2[2] ; VALUE[3]    ; 4.257 ; 4.031 ; 4.031 ; 4.257 ;
+; dipswitch2[2] ; VALUE[4]    ; 5.026 ; 4.795 ; 4.795 ; 5.026 ;
+; dipswitch2[2] ; VALUE[5]    ; 4.389 ; 4.050 ; 4.050 ; 4.389 ;
+; dipswitch2[3] ; LEDfloor[0] ; 4.419 ; 4.419 ; 4.419 ; 4.419 ;
+; dipswitch2[3] ; LEDfloor[2] ; 4.443 ; 4.443 ; 4.443 ; 4.443 ;
+; dipswitch2[3] ; LEDfloor[3] ; 4.577 ; 4.577 ; 4.577 ; 4.577 ;
+; dipswitch2[3] ; LEDfloor[4] ; 4.438 ; 4.317 ; 4.317 ; 4.438 ;
+; dipswitch2[3] ; LEDfloor[5] ; 4.321 ; 4.321 ; 4.321 ; 4.321 ;
+; dipswitch2[3] ; LEDfloor[6] ; 4.320 ; 4.441 ; 4.441 ; 4.320 ;
+; dipswitch2[3] ; LEDmod[0]   ; 4.738 ; 4.738 ; 4.738 ; 4.738 ;
+; dipswitch2[3] ; LEDmod[1]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
+; dipswitch2[3] ; LEDmod[2]   ; 4.881 ; 4.881 ; 4.881 ; 4.881 ;
+; dipswitch2[3] ; LEDmod[3]   ; 4.719 ; 4.719 ; 4.719 ; 4.719 ;
+; dipswitch2[3] ; LEDmod[4]   ; 4.699 ; 4.699 ; 4.699 ; 4.699 ;
+; dipswitch2[3] ; LEDmod[5]   ; 4.739 ; 4.739 ; 4.739 ; 4.739 ;
+; dipswitch2[3] ; LEDmod[6]   ; 4.864 ; 4.864 ; 4.864 ; 4.864 ;
+; dipswitch2[3] ; VALUE[0]    ; 3.728 ; 3.858 ; 3.858 ; 3.728 ;
+; dipswitch2[3] ; VALUE[1]    ; 3.901 ; 4.156 ; 4.156 ; 3.901 ;
+; dipswitch2[3] ; VALUE[2]    ; 4.191 ; 4.115 ; 4.115 ; 4.191 ;
+; dipswitch2[3] ; VALUE[3]    ; 3.705 ; 3.843 ; 3.843 ; 3.705 ;
+; dipswitch2[3] ; VALUE[4]    ; 4.285 ; 4.285 ; 4.285 ; 4.285 ;
+; dipswitch2[3] ; VALUE[5]    ; 3.863 ; 3.742 ; 3.742 ; 3.863 ;
+; dipswitch2[4] ; LEDfloor[0] ; 4.415 ; 4.415 ; 4.415 ; 4.415 ;
+; dipswitch2[4] ; LEDfloor[2] ; 4.439 ; 4.439 ; 4.439 ; 4.439 ;
+; dipswitch2[4] ; LEDfloor[3] ; 4.573 ; 4.573 ; 4.573 ; 4.573 ;
+; dipswitch2[4] ; LEDfloor[4] ; 4.313 ; 4.384 ; 4.384 ; 4.313 ;
+; dipswitch2[4] ; LEDfloor[5] ; 4.317 ; 4.317 ; 4.317 ; 4.317 ;
+; dipswitch2[4] ; LEDfloor[6] ; 4.387 ; 4.316 ; 4.316 ; 4.387 ;
+; dipswitch2[4] ; LEDmod[0]   ; 4.791 ; 4.791 ; 4.791 ; 4.791 ;
+; dipswitch2[4] ; LEDmod[1]   ; 4.934 ; 4.934 ; 4.934 ; 4.934 ;
+; dipswitch2[4] ; LEDmod[2]   ; 4.934 ; 4.934 ; 4.934 ; 4.934 ;
+; dipswitch2[4] ; LEDmod[3]   ; 4.772 ; 4.772 ; 4.772 ; 4.772 ;
+; dipswitch2[4] ; LEDmod[4]   ; 4.752 ; 4.752 ; 4.752 ; 4.752 ;
+; dipswitch2[4] ; LEDmod[5]   ; 4.792 ; 4.792 ; 4.792 ; 4.792 ;
+; dipswitch2[4] ; LEDmod[6]   ; 4.917 ; 4.917 ; 4.917 ; 4.917 ;
+; dipswitch2[4] ; VALUE[0]    ; 3.884 ; 3.870 ; 3.870 ; 3.884 ;
+; dipswitch2[4] ; VALUE[1]    ; 3.954 ; 4.166 ; 4.166 ; 3.954 ;
+; dipswitch2[4] ; VALUE[2]    ; 4.402 ; 3.964 ; 3.964 ; 4.402 ;
+; dipswitch2[4] ; VALUE[3]    ; 3.726 ; 3.693 ; 3.693 ; 3.726 ;
+; dipswitch2[4] ; VALUE[4]    ; 4.322 ; 4.029 ; 4.029 ; 4.322 ;
+; dipswitch2[4] ; VALUE[5]    ; 3.738 ; 3.809 ; 3.809 ; 3.738 ;
+; dipswitch2[5] ; LEDfloor[0] ; 4.672 ; 4.672 ; 4.672 ; 4.672 ;
+; dipswitch2[5] ; LEDfloor[2] ; 4.696 ; 4.696 ; 4.696 ; 4.696 ;
+; dipswitch2[5] ; LEDfloor[3] ; 4.830 ; 4.830 ; 4.830 ; 4.830 ;
+; dipswitch2[5] ; LEDfloor[4] ; 4.570 ; 4.570 ; 4.570 ; 4.570 ;
+; dipswitch2[5] ; LEDfloor[5] ; 4.574 ; 4.574 ; 4.574 ; 4.574 ;
+; dipswitch2[5] ; LEDfloor[6] ; 4.573 ; 4.573 ; 4.573 ; 4.573 ;
+; dipswitch2[5] ; LEDmod[0]   ; 5.116 ; 5.116 ; 5.116 ; 5.116 ;
+; dipswitch2[5] ; LEDmod[1]   ; 5.258 ; 5.258 ; 5.258 ; 5.258 ;
+; dipswitch2[5] ; LEDmod[2]   ; 5.253 ; 5.253 ; 5.253 ; 5.253 ;
+; dipswitch2[5] ; LEDmod[3]   ; 5.107 ; 5.107 ; 5.107 ; 5.107 ;
+; dipswitch2[5] ; LEDmod[4]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
+; dipswitch2[5] ; LEDmod[5]   ; 5.112 ; 5.112 ; 5.112 ; 5.112 ;
+; dipswitch2[5] ; LEDmod[6]   ; 5.251 ; 5.251 ; 5.251 ; 5.251 ;
+; dipswitch2[5] ; VALUE[0]    ; 4.283 ; 4.283 ; 4.283 ; 4.283 ;
+; dipswitch2[5] ; VALUE[1]    ; 4.319 ; 4.319 ; 4.319 ; 4.319 ;
+; dipswitch2[5] ; VALUE[2]    ; 4.444 ; 4.444 ; 4.444 ; 4.444 ;
+; dipswitch2[5] ; VALUE[3]    ; 3.978 ; 3.978 ; 3.978 ; 3.978 ;
+; dipswitch2[5] ; VALUE[4]    ; 4.991 ; 4.142 ; 4.142 ; 4.991 ;
+; dipswitch2[5] ; VALUE[5]    ; 3.995 ; 3.995 ; 3.995 ; 3.995 ;
 +---------------+-------------+-------+-------+-------+-------+
 
 
@@ -956,7 +967,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
 ; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 507   ; 507  ;
+; Unconstrained Input Port Paths  ; 579   ; 579  ;
 ; Unconstrained Output Ports      ; 28    ; 28   ;
 ; Unconstrained Output Port Paths ; 4501  ; 4501 ;
 +---------------------------------+-------+------+
@@ -968,7 +979,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 31 14:11:36 2017
+    Info: Processing started: Tue Oct 31 15:02:06 2017
 Info: Command: quartus_sta g21_lab3 -c g21_lab3
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -978,8 +989,9 @@ Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'g21_lab3.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332104): Reading SDC File: 'g21_lab3.out.sdc'
 Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332061): Virtual clock CLK is never referenced in any input or output delay assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -994,6 +1006,7 @@ Info (332146): Worst-case minimum pulse width slack is 97.531
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332061): Virtual clock CLK is never referenced in any input or output delay assignment.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -1005,10 +1018,10 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 503 megabytes
-    Info: Processing ended: Tue Oct 31 14:11:38 2017
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 510 megabytes
+    Info: Processing ended: Tue Oct 31 15:02:07 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

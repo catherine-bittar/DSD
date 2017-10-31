@@ -13,12 +13,12 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst56|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_aa4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst74|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_a94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst92|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ia4.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_gp14.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_mp14.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst58|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ba4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst76|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_b94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst94|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ja4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_nbi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_rbi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed|g21_stack52:inst8|LPM_FF:inst78|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_c94.tdf"/>

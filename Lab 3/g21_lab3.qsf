@@ -46,46 +46,11 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name BDF_FILE g21_stack52.bdf
-set_global_assignment -name BSF_FILE g21_pop_enable.bsf
-set_global_assignment -name TEXT_FILE g21_pop_enable.mif.txt
-set_global_assignment -name VHDL_FILE g21_pop_enable.vhd
-set_global_assignment -name MIF_FILE g21_lab2.mif
-set_global_assignment -name QIP_FILE g21_lab2_rom1.qip
-set_global_assignment -name VHDL_FILE g21_lab2_rom1.vhd
-set_global_assignment -name QIP_FILE lpm_mux0.qip
-set_global_assignment -name QIP_FILE lpm_mux1.qip
-set_global_assignment -name QIP_FILE lpm_mux2.qip
-set_global_assignment -name QIP_FILE NOP_lpm_constant.qip
-set_global_assignment -name QIP_FILE INIT_lpm_constant.qip
-set_global_assignment -name QIP_FILE POP_lpm_constant.qip
-set_global_assignment -name QIP_FILE PUSH_lpm_constant.qip
-set_global_assignment -name QIP_FILE MODE_Select_lpm_mux.qip
-set_global_assignment -name QIP_FILE StackCounter_lpm_counter.qip
-set_global_assignment -name BDF_FILE g21_comp7.bdf
-set_global_assignment -name BSF_FILE g21_comp7.bsf
-set_global_assignment -name QIP_FILE a52_lpm_constant.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE g21_stack52.vwf
 set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name BDF_FILE g21_SPG.bdf
-set_global_assignment -name QIP_FILE SPG_lpm_counter.qip
-set_global_assignment -name QIP_FILE SPG_lpm_compare.qip
-set_global_assignment -name BDF_FILE "g21_test-bed.bdf"
-set_global_assignment -name VHDL_FILE g21_7_segment_decoder.vhd
-set_global_assignment -name BDF_FILE g21_1bitAdder.bdf
-set_global_assignment -name BSF_FILE g21_1bitAdder.bsf
-set_global_assignment -name BDF_FILE g21_adder.bdf
-set_global_assignment -name BSF_FILE g21_adder.bsf
-set_global_assignment -name QIP_FILE lpm_constantdata.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE "g21_test-bed_sim.vwf"
-set_global_assignment -name BDF_FILE g21_test_bed.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE g21_test_bed_sim.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE g21_spg_sim.vwf
-set_global_assignment -name QIP_FILE Equal1_lpm_compare0.qip
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_F4 -to LEDmod[0]
 set_location_assignment PIN_D4 -to LEDmod[6]
@@ -112,8 +77,6 @@ set_location_assignment PIN_U12 -to dipswitch2[3]
 set_location_assignment PIN_W12 -to dipswitch2[2]
 set_location_assignment PIN_V12 -to dipswitch2[1]
 set_location_assignment PIN_M22 -to dipswitch2[0]
-set_global_assignment -name QIP_FILE TEST_lpm_mux3.qip
-set_global_assignment -name QIP_FILE lpm_compare1.qip
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_test_bed_sim.vwf"
 set_location_assignment PIN_R20 -to EMPTY
 set_location_assignment PIN_U22 -to FULL
@@ -133,16 +96,11 @@ set_location_assignment PIN_D3 -to LED3[1]
 set_location_assignment PIN_E1 -to LED3[0]
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE g21_test_bed.stp
-set_global_assignment -name SIGNALTAP_FILE g21_test_bed.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLK -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=10" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=10" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=51" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
@@ -150,7 +108,6 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GE
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=34953" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
@@ -160,26 +117,94 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_T
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to RSTButton -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to dipswitch1[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to dipswitch1[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to dipswitch2[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to dipswitch2[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to dipswitch2[2] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to dipswitch2[3] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to dipswitch2[4] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to dipswitch2[5] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to enable -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to RSTButton -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to dipswitch1[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to dipswitch1[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to dipswitch2[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to dipswitch2[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to dipswitch2[2] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to dipswitch2[3] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to dipswitch2[4] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to dipswitch2[5] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to enable -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=17998" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to NUM[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to NUM[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to NUM[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to NUM[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to NUM[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to NUM[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to RSTButton -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to VALUE[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to VALUE[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to VALUE[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to VALUE[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to VALUE[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to VALUE[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to dipswitch1[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to dipswitch1[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to dipswitch2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to dipswitch2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to dipswitch2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to dipswitch2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to dipswitch2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to dipswitch2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to enable -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to NUM[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to NUM[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to NUM[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to NUM[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to NUM[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to NUM[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to RSTButton -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to VALUE[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to VALUE[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to VALUE[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to VALUE[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to VALUE[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to VALUE[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to dipswitch1[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to dipswitch1[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to dipswitch2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to dipswitch2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to dipswitch2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to dipswitch2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to dipswitch2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to dipswitch2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to enable -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=22" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=22" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=87" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=5967" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=22780" -section_id auto_signaltap_0
+set_global_assignment -name SDC_FILE g21_lab3.out.sdc
+set_global_assignment -name BDF_FILE g21_stack52.bdf
+set_global_assignment -name BSF_FILE g21_pop_enable.bsf
+set_global_assignment -name TEXT_FILE g21_pop_enable.mif.txt
+set_global_assignment -name VHDL_FILE g21_pop_enable.vhd
+set_global_assignment -name MIF_FILE g21_lab2.mif
+set_global_assignment -name QIP_FILE g21_lab2_rom1.qip
+set_global_assignment -name VHDL_FILE g21_lab2_rom1.vhd
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE NOP_lpm_constant.qip
+set_global_assignment -name QIP_FILE INIT_lpm_constant.qip
+set_global_assignment -name QIP_FILE POP_lpm_constant.qip
+set_global_assignment -name QIP_FILE PUSH_lpm_constant.qip
+set_global_assignment -name QIP_FILE MODE_Select_lpm_mux.qip
+set_global_assignment -name QIP_FILE StackCounter_lpm_counter.qip
+set_global_assignment -name BDF_FILE g21_comp7.bdf
+set_global_assignment -name BSF_FILE g21_comp7.bsf
+set_global_assignment -name QIP_FILE a52_lpm_constant.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE g21_stack52.vwf
+set_global_assignment -name BDF_FILE g21_SPG.bdf
+set_global_assignment -name QIP_FILE SPG_lpm_counter.qip
+set_global_assignment -name QIP_FILE SPG_lpm_compare.qip
+set_global_assignment -name BDF_FILE "g21_test-bed.bdf"
+set_global_assignment -name VHDL_FILE g21_7_segment_decoder.vhd
+set_global_assignment -name BDF_FILE g21_1bitAdder.bdf
+set_global_assignment -name BSF_FILE g21_1bitAdder.bsf
+set_global_assignment -name BDF_FILE g21_adder.bdf
+set_global_assignment -name BSF_FILE g21_adder.bsf
+set_global_assignment -name QIP_FILE lpm_constantdata.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE "g21_test-bed_sim.vwf"
+set_global_assignment -name BDF_FILE g21_test_bed.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE g21_test_bed_sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE g21_spg_sim.vwf
+set_global_assignment -name QIP_FILE Equal1_lpm_compare0.qip
+set_global_assignment -name QIP_FILE TEST_lpm_mux3.qip
+set_global_assignment -name QIP_FILE lpm_compare1.qip
+set_global_assignment -name SIGNALTAP_FILE g21_test_bed.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_auto_stripped.stp"
