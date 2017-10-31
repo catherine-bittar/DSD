@@ -655,6 +655,7 @@ CLK => inst129.CLK
 CLK => inst110.CLK
 CLK => g21_pop_enable:inst104.clk
 CLK => LPM_FF:inst.clock
+CLK => inst105.CLK
 CLK => inst111.CLK
 CLK => LPM_FF:inst2.clock
 CLK => LPM_FF:inst4.clock
