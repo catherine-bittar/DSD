@@ -77,7 +77,6 @@ set_location_assignment PIN_U12 -to dipswitch2[3]
 set_location_assignment PIN_W12 -to dipswitch2[2]
 set_location_assignment PIN_V12 -to dipswitch2[1]
 set_location_assignment PIN_M22 -to dipswitch2[0]
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 3/g21_test_bed_sim.vwf"
 set_location_assignment PIN_R20 -to EMPTY
 set_location_assignment PIN_U22 -to FULL
 set_location_assignment PIN_H6 -to LED2[6]
@@ -207,4 +206,6 @@ set_global_assignment -name QIP_FILE TEST_lpm_mux3.qip
 set_global_assignment -name QIP_FILE lpm_compare1.qip
 set_global_assignment -name SIGNALTAP_FILE g21_test_bed.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE g21_test_bed_tim.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_tim.vwf"
 set_global_assignment -name SLD_FILE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_auto_stripped.stp"

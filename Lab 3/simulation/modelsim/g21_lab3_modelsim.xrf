@@ -54,6 +54,7 @@ source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/TES
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_compare1.qip
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_compare1.vhd
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed.stp
+source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_tim.vwf
 source_file = 1, C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/g21_lab3.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

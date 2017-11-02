@@ -5,6 +5,8 @@ entity g21_test_bed_vlg_check_tst is
         EMPTY           : in     vl_logic;
         enable          : in     vl_logic;
         FULL            : in     vl_logic;
+        LED2            : in     vl_logic_vector(6 downto 0);
+        LED3            : in     vl_logic_vector(6 downto 0);
         LEDfloor        : in     vl_logic_vector(6 downto 0);
         LEDmod          : in     vl_logic_vector(6 downto 0);
         NUM             : in     vl_logic_vector(5 downto 0);

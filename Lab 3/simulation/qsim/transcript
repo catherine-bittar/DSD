@@ -18,34 +18,37 @@
 # Loading work.g21_test_bed
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_jtag
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_clkctrl
-# Loading cycloneii_ver.cycloneii_mux41
-# Loading cycloneii_ver.cycloneii_ena_reg
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.g21_test_bed_vlg_sample_tst
 # Loading work.g21_test_bed_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from g21_lab3_v.sdo
+# ** Warning: (vsim-3017) g21_lab3.vt(718): [TFMPC] - Too few port connections. Expected 18, found 14.
+# 
+#         Region: /g21_test_bed_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# 
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# 
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Loading timing data from g21_lab3_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst File: g21_lab3.vt
-# ERROR! Vector Mismatch for output port LEDfloor[6] :: @time = 1000000.000 ps
-#      Expected value = 0000000
-#      Real value = 1000000
-# ERROR! Vector Mismatch for output port LEDmod[6] :: @time = 1000000.000 ps
-#      Expected value = 0000000
-#      Real value = 1000000
-# ERROR! Vector Mismatch for output port LEDmod[3] :: @time = 1300000.000 ps
-#      Expected value = 0000000
-#      Real value = 0001000
-#           3 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab3.vt(680)
-#    Time: 2 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : g21_lab3.vt(676)
+#    Time: 1 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out
