@@ -1,5 +1,5 @@
 Flow report for g21_lab3
-Thu Nov 02 14:32:25 2017
+Fri Nov 03 12:59:08 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 02 14:32:25 2017           ;
+; Flow Status                        ; Successful - Fri Nov 03 12:59:08 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed                                    ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2017 14:27:19 ;
+; Start date & time ; 11/03/2017 12:58:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g21_lab3            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+--------------+------------------+
 ; Assignment Name                     ; Value                                                                                                      ; Default Value ; Entity Name  ; Section Id       ;
 +-------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+--------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 1098086005435.150964723814096                                                                              ; --            ; --           ; --               ;
+; COMPILER_SIGNATURE_ID               ; 1098086005435.150972829616008                                                                              ; --            ; --           ; --               ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                                                                        ; --            ; --           ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                                                ; --            ; --           ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                                  ; <None>        ; --           ; --               ;
@@ -188,16 +188,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 613 MB              ; 00:00:09                           ;
-; Fitter                    ; 00:00:05     ; 1.8                     ; 1171 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 467 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 510 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 449 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 457 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 457 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 613 MB              ; 00:00:18                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 1175 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 467 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 510 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 449 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:44     ; --                      ; --                  ; 00:00:40                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -211,10 +207,6 @@ applicable agreement for further details.
 ; Assembler                 ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -226,10 +218,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off g21_lab3 -c g21
 quartus_asm --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 quartus_sta g21_lab3 -c g21_lab3
 quartus_eda --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_sim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3 --vector_source="C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_test_bed_tim.vwf" --testbench_file=./simulation/qsim/g21_lab3.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
 
 
 

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/02/2017 14:32:25"
+// DATE "11/03/2017 12:59:07"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -1730,10 +1730,6 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~5_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~regout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~_wirecell_combout ;
 wire \altera_internal_jtag~TDO ;
-wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|modified_post_count ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
-wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs ;
 wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
 wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
 wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
@@ -1746,6 +1742,19 @@ wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
 wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
 wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
 wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
+wire [21:0] \auto_signaltap_0|acq_trigger_in_reg ;
+wire [21:0] \auto_signaltap_0|acq_data_in_reg ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
+wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
+wire [65:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
+wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
+wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|modified_post_count ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
+wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs ;
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xraddr ;
 wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xq ;
 wire [4:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|safe_q ;
@@ -1817,15 +1826,6 @@ wire [5:0] \inst8|inst100|dffs ;
 wire [5:0] \inst8|inst102|dffs ;
 wire [5:0] \dipswitch2~combout ;
 wire [1:0] \dipswitch1~combout ;
-wire [21:0] \auto_signaltap_0|acq_trigger_in_reg ;
-wire [21:0] \auto_signaltap_0|acq_data_in_reg ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
-wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
-wire [65:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
-wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
 
 wire [35:0] \inst8|inst104|R1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
 wire [15:0] \inst8|inst104|R1|altsyncram_component|auto_generated|ram_block1a32_PORTADATAOUT_bus ;
