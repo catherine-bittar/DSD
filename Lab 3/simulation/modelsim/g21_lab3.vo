@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/03/2017 12:59:06"
+// DATE "11/07/2017 12:40:16"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -138,10 +138,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-// synopsys translate_off
-initial $sdf_annotate("g21_lab3_v.sdo");
-// synopsys translate_on
-
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout ;
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout ;
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout ;

@@ -2,6 +2,10 @@ library verilog;
 use verilog.vl_types.all;
 entity g21_stack52 is
     port(
+        altera_reserved_tms: in     vl_logic;
+        altera_reserved_tck: in     vl_logic;
+        altera_reserved_tdi: in     vl_logic;
+        altera_reserved_tdo: out    vl_logic;
         EMPTY           : out    vl_logic;
         NUM             : out    vl_logic_vector(5 downto 0);
         ENABLE          : in     vl_logic;
