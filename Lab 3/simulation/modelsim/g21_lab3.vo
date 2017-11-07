@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/07/2017 12:40:16"
+// DATE "11/07/2017 14:32:10"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -138,6 +138,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("g21_lab3_v.sdo");
+// synopsys translate_on
+
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout ;
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita8~combout ;
 wire \inst|inst2|LPM_COUNTER_component|auto_generated|counter_comb_bita15~combout ;
@@ -1726,18 +1730,6 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~5_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~regout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~_wirecell_combout ;
 wire \altera_internal_jtag~TDO ;
-wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
-wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
-wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg ;
-wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
-wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
-wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
-wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 wire [21:0] \auto_signaltap_0|acq_trigger_in_reg ;
 wire [21:0] \auto_signaltap_0|acq_data_in_reg ;
 wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
@@ -1751,6 +1743,18 @@ wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_ma
 wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
 wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
 wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs ;
+wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
+wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
+wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg ;
+wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
+wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
+wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
+wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xraddr ;
 wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xq ;
 wire [4:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|safe_q ;

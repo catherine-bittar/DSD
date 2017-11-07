@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Tue Nov 07 12:39:53 2017
+Tue Nov 07 14:21:27 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,134 +17,133 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Analysis & Synthesis IP Cores Summary
  10. General Register Statistics
  11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
- 14. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
- 15. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
- 16. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
- 17. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
- 18. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
- 19. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
- 20. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
- 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
- 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
- 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
- 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
- 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
- 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
- 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
- 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
- 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
- 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
- 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
- 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
- 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
- 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
- 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
- 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
- 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
- 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
- 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
- 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
- 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
- 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
- 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
- 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
- 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
- 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
- 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
- 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
- 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
- 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
- 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
- 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
- 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
- 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
- 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
- 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
- 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
- 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
- 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
- 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
- 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
- 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
- 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
- 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
- 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
- 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
- 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
- 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
- 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
- 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
- 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
- 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
- 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
- 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
- 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
- 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
- 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
- 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
- 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
- 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
- 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
- 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
- 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
- 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
- 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
- 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
- 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
- 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
- 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
- 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
- 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
- 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
- 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
- 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
- 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
- 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
- 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
- 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
- 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
-100. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
-101. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
-102. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
-103. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
-104. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
-105. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
-106. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
-107. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
-108. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
-109. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
-110. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
-111. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
-112. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
-113. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
-114. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
-115. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
-116. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
-117. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
-118. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
-119. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
-120. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
-121. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
-122. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
-123. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
-124. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
-125. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
-126. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
-127. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
-128. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
-129. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
-130. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
-131. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
-132. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
-133. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
-134. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
-135. altsyncram Parameter Settings by Entity Instance
-136. SignalTap II Logic Analyzer Settings
-137. Elapsed Time Per Partition
-138. Connections to In-System Debugging Instance "auto_signaltap_0"
-139. Analysis & Synthesis Messages
+ 12. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+ 13. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+ 14. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+ 15. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+ 16. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
+ 17. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
+ 18. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
+ 19. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
+ 20. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
+ 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
+ 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
+ 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
+ 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
+ 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
+ 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
+ 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
+ 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
+ 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
+ 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
+ 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
+ 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
+ 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
+ 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
+ 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
+ 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
+ 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
+ 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
+ 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
+ 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
+ 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
+ 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
+ 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
+ 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
+ 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
+ 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
+ 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
+ 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
+ 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
+ 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
+ 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
+ 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
+ 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
+ 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
+ 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
+ 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
+ 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
+ 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
+ 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
+ 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
+ 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
+ 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
+ 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
+ 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
+ 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
+ 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
+ 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
+ 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
+ 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
+ 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
+ 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
+ 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
+ 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
+ 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
+ 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
+ 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
+ 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
+ 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
+ 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
+ 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
+ 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
+ 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
+ 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
+ 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
+ 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
+ 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
+ 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
+ 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
+ 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
+ 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
+ 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
+ 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
+ 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
+ 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
+ 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
+ 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
+ 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
+ 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
+100. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
+101. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
+102. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
+103. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
+104. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
+105. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
+106. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
+107. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
+108. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
+109. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
+110. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
+111. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
+112. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
+113. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
+114. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
+115. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
+116. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
+117. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
+118. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
+119. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
+120. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
+121. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
+122. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
+123. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
+124. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
+125. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
+126. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
+127. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
+128. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
+129. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
+130. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
+131. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
+132. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
+133. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+134. altsyncram Parameter Settings by Entity Instance
+135. SignalTap II Logic Analyzer Settings
+136. Elapsed Time Per Partition
+137. Connections to In-System Debugging Instance "auto_signaltap_0"
+138. Analysis & Synthesis Messages
 
 
 
@@ -170,7 +169,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 07 12:39:53 2017           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 07 14:21:27 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed                                    ;
@@ -795,20 +794,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0] ; 1       ;
 ; Total number of inverted registers = 12                                                                                                                                       ;         ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                       ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 52 LEs               ; 36 LEs                 ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |g21_test_bed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2726,14 +2711,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:05     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2795,7 +2779,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 07 12:39:31 2017
+    Info: Processing started: Tue Nov 07 14:21:13 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -3801,10 +3785,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED3[1]" is stuck at VCC
     Warning (13410): Pin "LED3[0]" is stuck at VCC
     Warning (13410): Pin "LEDfloor[1]" is stuck at GND
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -3813,10 +3793,10 @@ Info (21057): Implemented 1532 device resources after synthesis - the final reso
     Info (21059): Implemented 44 output pins
     Info (21061): Implemented 1399 logic cells
     Info (21064): Implemented 74 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 275 warnings
-    Info: Peak virtual memory: 604 megabytes
-    Info: Processing ended: Tue Nov 07 12:39:53 2017
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:20
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 273 warnings
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Tue Nov 07 14:21:27 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:11
 
 

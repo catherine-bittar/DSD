@@ -2,71 +2,53 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_stack52
+# -- Compiling module g21_test_bed
 # 
 # Top level modules:
-# 	g21_stack52
+# 	g21_test_bed
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g21_stack52_vlg_sample_tst
-# -- Compiling module g21_stack52_vlg_check_tst
-# -- Compiling module g21_stack52_vlg_vec_tst
+# -- Compiling module g21_test_bed_vlg_sample_tst
+# -- Compiling module g21_test_bed_vlg_check_tst
+# -- Compiling module g21_test_bed_vlg_vec_tst
 # 
 # Top level modules:
-# 	g21_stack52_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_stack52_vlg_vec_tst 
-# Loading work.g21_stack52_vlg_vec_tst
-# Loading work.g21_stack52
+# 	g21_test_bed_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g21_test_bed_vlg_vec_tst 
+# Loading work.g21_test_bed_vlg_vec_tst
+# Loading work.g21_test_bed
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_jtag
 # Loading cycloneii_ver.cycloneii_ram_block
 # Loading cycloneii_ver.cycloneii_ram_register
 # Loading cycloneii_ver.cycloneii_ram_pulse_generator
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_clkctrl
-# Loading cycloneii_ver.cycloneii_mux41
-# Loading cycloneii_ver.cycloneii_ena_reg
-# Loading work.g21_stack52_vlg_sample_tst
-# Loading work.g21_stack52_vlg_check_tst
-# ** Warning: (vsim-3017) g21_lab3.vt(479): [TFMPC] - Too few port connections. Expected 16, found 12.
+# Loading work.g21_test_bed_vlg_sample_tst
+# Loading work.g21_test_bed_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
-#         Region: /g21_stack52_vlg_vec_tst/i1
-# ** Warning: (vsim-3722) g21_lab3.vt(479): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# Loading instances from g21_lab3_v.sdo
+# ** Warning: (vsim-3017) g21_lab3.vt(718): [TFMPC] - Too few port connections. Expected 18, found 14.
 # 
-# ** Warning: (vsim-3722) g21_lab3.vt(479): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+#         Region: /g21_test_bed_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
 # 
-# ** Warning: (vsim-3722) g21_lab3.vt(479): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
 # 
-# ** Warning: (vsim-3722) g21_lab3.vt(479): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) g21_lab3.vt(718): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
 # 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port FULL :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port NUM[2] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port NUM[4] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port NUM[5] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110100
-# ERROR! Vector Mismatch for output port VALUE[0] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port VALUE[4] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port VALUE[5] :: @time = 1000000.000 ps
-#      Expected value = 000000
-#      Real value = 110001
-# ERROR! Vector Mismatch for output port EMPTY :: @time = 1010000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#           8 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g21_lab3.vt(441)
-#    Time: 2 us  Iteration: 0  Instance: /g21_stack52_vlg_vec_tst/tb_out
+# Loading timing data from g21_lab3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst File: g21_lab3.vt
+# Simulation passed !
+# ** Note: $finish    : g21_lab3.vt(676)
+#    Time: 1 us  Iteration: 0  Instance: /g21_test_bed_vlg_vec_tst/tb_out
