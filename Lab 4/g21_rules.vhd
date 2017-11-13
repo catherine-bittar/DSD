@@ -20,9 +20,9 @@ end g21_rules;
 
 architecture game_rules of g21_rules is
 		signal face_top: std_logic_vector(3 downto 0);
-		signal suit_top: std_logic_vector(2 downto 0); -- useless?
+		signal suit_top: std_logic_vector(2 downto 0); 
 		signal face_card: std_logic_vector(3 downto 0);
-		signal suit_card: std_logic_vector(2 downto 0); -- useless?
+		signal suit_card: std_logic_vector(2 downto 0); 
 		signal top_val: std_logic_vector(3 downto 0); 
 		signal card_val: std_logic_vector(3 downto 0);
 		signal tot_val: std_logic_vector(3 downto 0);
@@ -41,9 +41,9 @@ begin-- use g21_Modulo_13 component to assign signal values
 	card_val_assign: process(face_top, face_card, top_val, card_val, tot_val)
 	begin
 	
-	if (face_top >= '0010' & face_top <= '1010') then
+	if (face_top >= "0010" and face_top <= "1010") then
 		top_val <= face_top;
-	elsif (face_top >= '1011') then
-		top_val <= '1010';
+	elsif (face_top >= "1011") then
+		top_val <= "1010";
 	end if;
 		

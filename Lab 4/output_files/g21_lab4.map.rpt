@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab4
-Mon Nov 13 09:14:27 2017
+Mon Nov 13 10:56:49 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Nov 13 09:14:27 2017               ;
+; Analysis & Synthesis Status        ; Failed - Mon Nov 13 10:56:49 2017               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab4                                        ;
 ; Top-level Entity Name              ; g21_lab4                                        ;
@@ -161,19 +161,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 13 09:14:25 2017
+    Info: Processing started: Mon Nov 13 10:56:47 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab4 -c g21_lab4
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Error (10500): VHDL syntax error at g21_rules.vhd(44) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 44
-Error (10500): VHDL syntax error at g21_rules.vhd(46) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 46
-Error (10500): VHDL syntax error at g21_rules.vhd(47) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 47
-Error (10522): VHDL Syntax error at g21_rules.vhd(49): experienced unexpected end-of-file ;  expecting "end", or "(", or an identifier, or a sequential statement File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 49
+Error (10500): VHDL syntax error at g21_rules.vhd(44) near text "if";  expecting "end", or "(", or an identifier ("if" is a reserved keyword), or a concurrent statement File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 44
+Error (10500): VHDL syntax error at g21_rules.vhd(44) near text "then";  expecting "<=" File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 44
+Error (10500): VHDL syntax error at g21_rules.vhd(46) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a concurrent statement File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 46
+Error (10500): VHDL syntax error at g21_rules.vhd(46) near text "then";  expecting "<=" File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 46
+Error (10500): VHDL syntax error at g21_rules.vhd(48) near text "if";  expecting ";", or an identifier ("if" is a reserved keyword), or "architecture" File: C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd Line: 48
 Info (12021): Found 0 design units, including 0 entities, in source file g21_rules.vhd
 Info (12021): Found 1 design units, including 1 entities, in source file g21_modulo_13.bdf
     Info (12023): Found entity 1: g21_Modulo_13
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 0 warnings
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 5 errors, 0 warnings
     Error: Peak virtual memory: 531 megabytes
-    Error: Processing ended: Mon Nov 13 09:14:27 2017
+    Error: Processing ended: Mon Nov 13 10:56:49 2017
     Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:02
 
