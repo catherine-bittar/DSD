@@ -1,0 +1,1833 @@
+TimeQuest Timing Analyzer report for g21_lab4
+Thu Nov 16 15:14:03 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'play_pile_top_card[0]'
+ 12. Slow Model Hold: 'play_pile_top_card[0]'
+ 13. Slow Model Recovery: 'play_pile_top_card[0]'
+ 14. Slow Model Removal: 'play_pile_top_card[0]'
+ 15. Slow Model Minimum Pulse Width: 'play_pile_top_card[0]'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Propagation Delay
+ 21. Minimum Propagation Delay
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Setup: 'play_pile_top_card[0]'
+ 28. Fast Model Hold: 'play_pile_top_card[0]'
+ 29. Fast Model Recovery: 'play_pile_top_card[0]'
+ 30. Fast Model Removal: 'play_pile_top_card[0]'
+ 31. Fast Model Minimum Pulse Width: 'play_pile_top_card[0]'
+ 32. Setup Times
+ 33. Hold Times
+ 34. Clock to Output Times
+ 35. Minimum Clock to Output Times
+ 36. Propagation Delay
+ 37. Minimum Propagation Delay
+ 38. Multicorner Timing Analysis Summary
+ 39. Setup Times
+ 40. Hold Times
+ 41. Clock to Output Times
+ 42. Minimum Clock to Output Times
+ 43. Progagation Delay
+ 44. Minimum Progagation Delay
+ 45. Setup Transfers
+ 46. Hold Transfers
+ 47. Recovery Transfers
+ 48. Removal Transfers
+ 49. Report TCCS
+ 50. Report RSKM
+ 51. Unconstrained Paths
+ 52. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; g21_lab4                                                          ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C20F484C7                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; Clock Name            ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                   ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; play_pile_top_card[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { play_pile_top_card[0] } ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+
+
++------------------------------------------------------------+
+; Slow Model Fmax Summary                                    ;
++-----------+-----------------+-----------------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name            ; Note ;
++-----------+-----------------+-----------------------+------+
+; 69.19 MHz ; 69.19 MHz       ; play_pile_top_card[0] ;      ;
++-----------+-----------------+-----------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------+
+; Slow Model Setup Summary                       ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -6.727 ; -34.965       ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -4.113 ; -20.001       ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Recovery Summary                    ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -1.112 ; -1.112        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Removal Summary                     ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -5.596 ; -5.596        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -2.513 ; -203.571      ;
++-----------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'play_pile_top_card[0]'                                                                                            ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node    ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; -6.727 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.396     ; 3.806      ;
+; -6.657 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.397     ; 3.566      ;
+; -6.551 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.541     ; 3.514      ;
+; -6.520 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.186     ; 3.842      ;
+; -6.490 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.396     ; 3.569      ;
+; -6.436 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.389     ; 3.522      ;
+; -6.420 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.397     ; 3.329      ;
+; -6.366 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.390     ; 3.282      ;
+; -6.321 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.397     ; 3.399      ;
+; -6.314 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.541     ; 3.277      ;
+; -6.283 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.186     ; 3.605      ;
+; -6.260 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.534     ; 3.230      ;
+; -6.251 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.398     ; 3.159      ;
+; -6.245 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.965     ; 2.404      ;
+; -6.229 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.179     ; 3.558      ;
+; -6.145 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.542     ; 3.107      ;
+; -6.114 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.187     ; 3.435      ;
+; -6.008 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.965     ; 2.167      ;
+; -5.954 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.958     ; 2.120      ;
+; -5.928 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.097     ; 3.806      ;
+; -5.858 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.098     ; 3.566      ;
+; -5.839 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -2.966     ; 1.997      ;
+; -5.752 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.242     ; 3.514      ;
+; -5.721 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.887     ; 3.842      ;
+; -5.691 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.097     ; 3.569      ;
+; -5.637 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.090     ; 3.522      ;
+; -5.621 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.098     ; 3.329      ;
+; -5.567 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.091     ; 3.282      ;
+; -5.522 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.098     ; 3.399      ;
+; -5.515 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.242     ; 3.277      ;
+; -5.484 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.887     ; 3.605      ;
+; -5.472 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.141     ; 3.806      ;
+; -5.461 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.235     ; 3.230      ;
+; -5.452 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.099     ; 3.159      ;
+; -5.446 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.666     ; 2.404      ;
+; -5.430 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.880     ; 3.558      ;
+; -5.402 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.142     ; 3.566      ;
+; -5.346 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.243     ; 3.107      ;
+; -5.315 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.888     ; 3.435      ;
+; -5.296 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.286     ; 3.514      ;
+; -5.271 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.440     ; 3.806      ;
+; -5.265 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.931     ; 3.842      ;
+; -5.235 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.141     ; 3.569      ;
+; -5.209 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.666     ; 2.167      ;
+; -5.201 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.441     ; 3.566      ;
+; -5.181 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.134     ; 3.522      ;
+; -5.165 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.142     ; 3.329      ;
+; -5.155 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.659     ; 2.120      ;
+; -5.111 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.135     ; 3.282      ;
+; -5.095 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.585     ; 3.514      ;
+; -5.066 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.142     ; 3.399      ;
+; -5.064 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.230     ; 3.842      ;
+; -5.059 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.286     ; 3.277      ;
+; -5.040 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -2.667     ; 1.997      ;
+; -5.034 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.440     ; 3.569      ;
+; -5.028 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.931     ; 3.605      ;
+; -5.005 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.279     ; 3.230      ;
+; -4.996 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.143     ; 3.159      ;
+; -4.980 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.433     ; 3.522      ;
+; -4.974 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.924     ; 3.558      ;
+; -4.964 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.441     ; 3.329      ;
+; -4.910 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.434     ; 3.282      ;
+; -4.890 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.287     ; 3.107      ;
+; -4.865 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.441     ; 3.399      ;
+; -4.859 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.932     ; 3.435      ;
+; -4.858 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.585     ; 3.277      ;
+; -4.827 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.230     ; 3.605      ;
+; -4.804 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.578     ; 3.230      ;
+; -4.795 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.442     ; 3.159      ;
+; -4.773 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.223     ; 3.558      ;
+; -4.689 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.586     ; 3.107      ;
+; -4.658 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.231     ; 3.435      ;
+; -4.316 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.036     ; 2.404      ;
+; -4.115 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.335     ; 2.404      ;
+; -4.079 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.036     ; 2.167      ;
+; -4.025 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.029     ; 2.120      ;
+; -3.910 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.037     ; 1.997      ;
+; -3.878 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.335     ; 2.167      ;
+; -3.824 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.328     ; 2.120      ;
+; -3.709 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -1.336     ; 1.997      ;
+; -2.785 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.710      ; 8.970      ;
+; -2.715 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.709      ; 8.730      ;
+; -2.609 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.565      ; 8.678      ;
+; -2.377 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.920      ; 8.805      ;
+; -2.285 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.710      ; 8.970      ;
+; -2.265 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.563      ; 8.295      ;
+; -2.215 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.709      ; 8.730      ;
+; -2.109 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.565      ; 8.678      ;
+; -1.877 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.920      ; 8.805      ;
+; -1.829 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.666      ; 8.970      ;
+; -1.765 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.563      ; 8.295      ;
+; -1.759 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.665      ; 8.730      ;
+; -1.653 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.521      ; 8.678      ;
+; -1.421 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.876      ; 8.805      ;
+; -1.329 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.666      ; 8.970      ;
+; -1.309 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.519      ; 8.295      ;
+; -1.259 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.665      ; 8.730      ;
+; -1.153 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.521      ; 8.678      ;
+; -0.921 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.876      ; 8.805      ;
+; -0.809 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.519      ; 8.295      ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'play_pile_top_card[0]'                                                                                             ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node    ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; -4.113 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.440      ; 5.327      ;
+; -4.095 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.230      ; 5.135      ;
+; -3.814 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.141      ; 5.327      ;
+; -3.811 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.229      ; 5.418      ;
+; -3.796 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 8.931      ; 5.135      ;
+; -3.719 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.085      ; 5.366      ;
+; -3.613 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.440      ; 5.327      ;
+; -3.595 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.230      ; 5.135      ;
+; -3.512 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 8.930      ; 5.418      ;
+; -3.420 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 8.786      ; 5.366      ;
+; -3.314 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.141      ; 5.327      ;
+; -3.311 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.229      ; 5.418      ;
+; -3.296 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 8.931      ; 5.135      ;
+; -3.219 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.085      ; 5.366      ;
+; -3.012 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 8.930      ; 5.418      ;
+; -2.920 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 8.786      ; 5.366      ;
+; -2.901 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.083      ; 6.182      ;
+; -2.602 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 8.784      ; 6.182      ;
+; -2.401 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.083      ; 6.182      ;
+; -2.102 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 8.784      ; 6.182      ;
+; -1.362 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.359      ; 1.997      ;
+; -1.247 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.367      ; 2.120      ;
+; -1.193 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.360      ; 2.167      ;
+; -1.161 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.658      ; 1.997      ;
+; -1.046 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.666      ; 2.120      ;
+; -0.992 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.659      ; 2.167      ;
+; -0.956 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.360      ; 2.404      ;
+; -0.755 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.659      ; 2.404      ;
+; -0.411 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.645      ; 3.234      ;
+; -0.296 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.653      ; 3.357      ;
+; -0.275 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.434      ; 3.159      ;
+; -0.242 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.646      ; 3.404      ;
+; -0.192 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.435      ; 3.243      ;
+; -0.183 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.290      ; 3.107      ;
+; -0.160 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.442      ; 3.282      ;
+; -0.106 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.435      ; 3.329      ;
+; -0.077 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.443      ; 3.366      ;
+; -0.068 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.298      ; 3.230      ;
+; -0.031 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 2.028      ; 1.997      ;
+; -0.023 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.436      ; 3.413      ;
+; -0.014 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.291      ; 3.277      ;
+; -0.005 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.646      ; 3.641      ;
+; 0.084  ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 2.036      ; 2.120      ;
+; 0.131  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.435      ; 3.566      ;
+; 0.138  ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 2.029      ; 2.167      ;
+; 0.214  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.436      ; 3.650      ;
+; 0.223  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.291      ; 3.514      ;
+; 0.375  ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 2.029      ; 2.404      ;
+; 0.388  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.346      ; 3.234      ;
+; 0.503  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.354      ; 3.357      ;
+; 0.524  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.135      ; 3.159      ;
+; 0.557  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.347      ; 3.404      ;
+; 0.607  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.136      ; 3.243      ;
+; 0.616  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.991      ; 3.107      ;
+; 0.639  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.143      ; 3.282      ;
+; 0.693  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.136      ; 3.329      ;
+; 0.722  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.144      ; 3.366      ;
+; 0.731  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.999      ; 3.230      ;
+; 0.768  ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.729      ; 1.997      ;
+; 0.776  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.137      ; 3.413      ;
+; 0.785  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.992      ; 3.277      ;
+; 0.794  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.347      ; 3.641      ;
+; 0.883  ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.737      ; 2.120      ;
+; 0.930  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.136      ; 3.566      ;
+; 0.937  ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.730      ; 2.167      ;
+; 1.013  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.137      ; 3.650      ;
+; 1.022  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.992      ; 3.514      ;
+; 1.174  ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.730      ; 2.404      ;
+; 1.518  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.716      ; 3.234      ;
+; 1.633  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.724      ; 3.357      ;
+; 1.654  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.505      ; 3.159      ;
+; 1.687  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.717      ; 3.404      ;
+; 1.719  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.015      ; 3.234      ;
+; 1.737  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.506      ; 3.243      ;
+; 1.746  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.361      ; 3.107      ;
+; 1.769  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.513      ; 3.282      ;
+; 1.823  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.506      ; 3.329      ;
+; 1.834  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.023      ; 3.357      ;
+; 1.852  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.514      ; 3.366      ;
+; 1.855  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.804      ; 3.159      ;
+; 1.861  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.369      ; 3.230      ;
+; 1.888  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.016      ; 3.404      ;
+; 1.906  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.507      ; 3.413      ;
+; 1.915  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.362      ; 3.277      ;
+; 1.924  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.717      ; 3.641      ;
+; 1.938  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.805      ; 3.243      ;
+; 1.947  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.660      ; 3.107      ;
+; 1.970  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.812      ; 3.282      ;
+; 2.024  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.805      ; 3.329      ;
+; 2.053  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.813      ; 3.366      ;
+; 2.060  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.506      ; 3.566      ;
+; 2.062  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.668      ; 3.230      ;
+; 2.107  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.806      ; 3.413      ;
+; 2.116  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.661      ; 3.277      ;
+; 2.125  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 2.016      ; 3.641      ;
+; 2.143  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.507      ; 3.650      ;
+; 2.152  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.362      ; 3.514      ;
+; 2.261  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.805      ; 3.566      ;
+; 2.344  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.806      ; 3.650      ;
+; 2.353  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.661      ; 3.514      ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'play_pile_top_card[0]'                                                                                      ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.112 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 6.141      ; 6.377      ;
+; -0.612 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 6.141      ; 6.377      ;
+; 0.518  ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 7.771      ; 6.377      ;
+; 1.018  ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 7.771      ; 6.377      ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'play_pile_top_card[0]'                                                                                       ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; -5.596 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.453      ; 3.857      ;
+; -5.297 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 9.154      ; 3.857      ;
+; -5.096 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.453      ; 3.857      ;
+; -4.797 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 9.154      ; 3.857      ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'play_pile_top_card[0]'                                                                                 ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                                 ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|inclk[0]               ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|inclk[0]               ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|outclk                 ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|outclk                 ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|combout                       ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1|combout                       ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[1]                            ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[1]                            ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[1]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[1]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[2]                            ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[2]                            ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[2]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[2]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[3]                            ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[3]                            ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[3]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[3]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[4]                            ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[4]                            ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[4]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[4]|datad                      ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; new_ace                                ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; new_ace                                ;
+; -2.513 ; -2.513       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; new_ace|dataa                          ;
+; -2.513 ; -2.513       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; new_ace|dataa                          ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|inclk[0] ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|inclk[0] ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|outclk   ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|outclk   ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|combout         ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|combout         ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[0]                             ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[0]                             ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[0]|datad                       ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[0]|datad                       ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[1]                             ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[1]                             ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[1]|datad                       ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[1]|datad                       ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[2]                             ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[2]                             ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[2]|datac                       ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[2]|datac                       ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[3]                             ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[3]                             ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[3]|datac                       ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[3]|datac                       ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[4]                             ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[4]                             ;
+; -2.020 ; -2.020       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[4]|dataa                       ;
+; -2.020 ; -2.020       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[4]|dataa                       ;
+; -1.469 ; 1.000        ; 2.469          ; Port Rate        ; play_pile_top_card[0] ; Rise       ; play_pile_top_card[0]                  ;
+; -1.243 ; -1.243       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst|inst23|combout   ;
+; -1.243 ; -1.243       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst|inst23|combout   ;
+; -1.243 ; -1.243       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; total_value_temp[0]~11|dataa           ;
+; -1.243 ; -1.243       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; total_value_temp[0]~11|dataa           ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~0|combout                       ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~0|combout                       ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|datac                         ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|datac                         ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|inclk[0]               ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|inclk[0]               ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|outclk                 ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|outclk                 ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1|combout                       ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1|combout                       ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1|datad                         ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1|datad                         ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[1]                            ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[1]                            ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[1]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[1]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[2]                            ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[2]                            ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[2]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[2]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[3]                            ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[3]                            ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[3]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[3]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[4]                            ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[4]                            ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[4]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[4]|datad                      ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst24|inst13|combout ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst24|inst13|combout ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; new_ace                                ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; new_ace                                ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; new_ace|dataa                          ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; new_ace|dataa                          ;
+; -1.182 ; -1.182       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|datad           ;
+; -1.182 ; -1.182       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|datad           ;
+; -0.765 ; -0.765       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|combout                       ;
+; -0.765 ; -0.765       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|combout                       ;
+; -0.765 ; -0.765       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|datab                         ;
+; -0.765 ; -0.765       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|datab                         ;
+; -0.765 ; -0.765       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|datab                         ;
+; -0.765 ; -0.765       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1|datab                         ;
+; -0.765 ; -0.765       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|datad                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                         ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.161 ; 2.161 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 2.161 ; 2.161 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.656 ; 1.656 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.722 ; 1.722 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.277 ; 1.277 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 0.498 ; 0.498 ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 7.429 ; 7.429 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 2.329 ; 2.329 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 6.587 ; 6.587 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 7.047 ; 7.047 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 7.429 ; 7.429 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 6.665 ; 6.665 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 5.633 ; 5.633 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 3.791 ; 3.791 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 3.791 ; 3.791 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 3.286 ; 3.286 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 3.352 ; 3.352 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 2.907 ; 2.907 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.128 ; 2.128 ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 8.385 ; 8.385 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 3.285 ; 3.285 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 7.543 ; 7.543 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 8.003 ; 8.003 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 8.385 ; 8.385 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 7.621 ; 7.621 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 6.589 ; 6.589 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                            ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.251  ; 2.251  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 0.923  ; 0.923  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.407  ; 1.407  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.627  ; 1.627  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.681  ; 1.681  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.251  ; 2.251  ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 3.814  ; 3.814  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 3.814  ; 3.814  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -1.169 ; -1.169 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -1.401 ; -1.401 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -1.416 ; -1.416 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -1.477 ; -1.477 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.953 ; -0.953 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.550  ; 2.550  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 1.222  ; 1.222  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.548  ; 1.548  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.585  ; 1.585  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.737  ; 1.737  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.550  ; 2.550  ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 4.113  ; 4.113  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 4.113  ; 4.113  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -0.870 ; -0.870 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -1.102 ; -1.102 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -1.117 ; -1.117 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -1.178 ; -1.178 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.654 ; -0.654 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 19.625 ; 19.625 ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 17.693 ; 17.693 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 12.931 ; 12.931 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 17.693 ; 17.693 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 17.440 ; 17.440 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 17.593 ; 17.593 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 17.684 ; 17.684 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 13.146 ; 13.146 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 19.924 ; 19.924 ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 17.992 ; 17.992 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 13.230 ; 13.230 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 17.992 ; 17.992 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 17.739 ; 17.739 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 17.892 ; 17.892 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 17.983 ; 17.983 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 12.847 ; 12.847 ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                  ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 9.752  ; 9.752  ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 8.649  ; 8.649  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 8.649  ; 8.649  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 9.117  ; 9.117  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 9.489  ; 9.489  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 8.922  ; 8.922  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 9.650  ; 9.650  ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 11.464 ; 11.464 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 9.752  ; 9.752  ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 8.649  ; 8.649  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 8.649  ; 8.649  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 9.117  ; 9.117  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 9.489  ; 9.489  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 8.922  ; 8.922  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 9.650  ; 9.650  ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 9.834  ; 9.834  ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------+
+; Propagation Delay                                                          ;
++-----------------------+----------------+--------+--------+--------+--------+
+; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+----------------+--------+--------+--------+--------+
+; card_to_play[0]       ; legal_play     ; 14.535 ; 14.535 ; 14.535 ; 14.535 ;
+; card_to_play[0]       ; total_value[0] ; 11.926 ; 11.926 ; 11.926 ; 11.926 ;
+; card_to_play[0]       ; total_value[1] ; 12.430 ; 12.430 ; 12.430 ; 12.430 ;
+; card_to_play[0]       ; total_value[2] ; 12.214 ; 12.214 ; 12.214 ; 12.214 ;
+; card_to_play[0]       ; total_value[3] ; 12.170 ; 12.170 ; 12.170 ; 12.170 ;
+; card_to_play[0]       ; total_value[4] ; 12.594 ; 12.594 ; 12.594 ; 12.594 ;
+; card_to_play[1]       ; legal_play     ; 14.209 ; 14.209 ; 14.209 ; 14.209 ;
+; card_to_play[1]       ; total_value[1] ; 11.751 ; 11.751 ; 11.751 ; 11.751 ;
+; card_to_play[1]       ; total_value[2] ; 11.888 ; 11.888 ; 11.888 ; 11.888 ;
+; card_to_play[1]       ; total_value[3] ; 11.844 ; 11.844 ; 11.844 ; 11.844 ;
+; card_to_play[1]       ; total_value[4] ; 12.268 ; 12.268 ; 12.268 ; 12.268 ;
+; card_to_play[2]       ; legal_play     ; 14.387 ; 14.387 ; 14.387 ; 14.387 ;
+; card_to_play[2]       ; total_value[2] ; 11.715 ; 11.715 ; 11.715 ; 11.715 ;
+; card_to_play[2]       ; total_value[3] ; 12.022 ; 12.022 ; 12.022 ; 12.022 ;
+; card_to_play[2]       ; total_value[4] ; 12.446 ; 12.446 ; 12.446 ; 12.446 ;
+; card_to_play[3]       ; legal_play     ; 14.020 ; 14.020 ; 14.020 ; 14.020 ;
+; card_to_play[3]       ; total_value[3] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; card_to_play[3]       ; total_value[4] ; 12.079 ; 12.079 ; 12.079 ; 12.079 ;
+; card_to_play[4]       ; legal_play     ; 13.207 ; 13.207 ; 13.207 ; 13.207 ;
+; card_to_play[4]       ; total_value[4] ; 11.266 ; 11.266 ; 11.266 ; 11.266 ;
+; card_to_play[5]       ; legal_play     ; 14.637 ; 14.637 ; 14.637 ; 14.637 ;
+; card_to_play[5]       ; total_value[1] ; 12.709 ; 12.709 ; 12.709 ; 12.709 ;
+; card_to_play[5]       ; total_value[2] ; 12.456 ; 12.456 ; 12.456 ; 12.456 ;
+; card_to_play[5]       ; total_value[3] ; 12.609 ; 12.609 ; 12.609 ; 12.609 ;
+; card_to_play[5]       ; total_value[4] ; 12.696 ; 12.696 ; 12.696 ; 12.696 ;
+; play_pile_top_card[1] ; legal_play     ; 20.412 ; 20.412 ; 20.412 ; 20.412 ;
+; play_pile_top_card[1] ; total_value[0] ; 16.765 ; 16.765 ; 16.765 ; 16.765 ;
+; play_pile_top_card[1] ; total_value[1] ; 18.439 ; 18.439 ; 18.439 ; 18.439 ;
+; play_pile_top_card[1] ; total_value[2] ; 18.186 ; 18.186 ; 18.186 ; 18.186 ;
+; play_pile_top_card[1] ; total_value[3] ; 18.340 ; 18.340 ; 18.340 ; 18.340 ;
+; play_pile_top_card[1] ; total_value[4] ; 18.471 ; 18.471 ; 18.471 ; 18.471 ;
+; play_pile_top_card[2] ; legal_play     ; 20.872 ; 20.872 ; 20.872 ; 20.872 ;
+; play_pile_top_card[2] ; total_value[0] ; 17.225 ; 17.225 ; 17.225 ; 17.225 ;
+; play_pile_top_card[2] ; total_value[1] ; 18.899 ; 18.899 ; 18.899 ; 18.899 ;
+; play_pile_top_card[2] ; total_value[2] ; 18.646 ; 18.646 ; 18.646 ; 18.646 ;
+; play_pile_top_card[2] ; total_value[3] ; 18.800 ; 18.800 ; 18.800 ; 18.800 ;
+; play_pile_top_card[2] ; total_value[4] ; 18.931 ; 18.931 ; 18.931 ; 18.931 ;
+; play_pile_top_card[3] ; legal_play     ; 21.254 ; 21.254 ; 21.254 ; 21.254 ;
+; play_pile_top_card[3] ; total_value[0] ; 17.607 ; 17.607 ; 17.607 ; 17.607 ;
+; play_pile_top_card[3] ; total_value[1] ; 19.281 ; 19.281 ; 19.281 ; 19.281 ;
+; play_pile_top_card[3] ; total_value[2] ; 19.028 ; 19.028 ; 19.028 ; 19.028 ;
+; play_pile_top_card[3] ; total_value[3] ; 19.182 ; 19.182 ; 19.182 ; 19.182 ;
+; play_pile_top_card[3] ; total_value[4] ; 19.313 ; 19.313 ; 19.313 ; 19.313 ;
+; play_pile_top_card[4] ; legal_play     ; 20.490 ; 20.490 ; 20.490 ; 20.490 ;
+; play_pile_top_card[4] ; total_value[0] ; 16.843 ; 16.843 ; 16.843 ; 16.843 ;
+; play_pile_top_card[4] ; total_value[1] ; 18.517 ; 18.517 ; 18.517 ; 18.517 ;
+; play_pile_top_card[4] ; total_value[2] ; 18.264 ; 18.264 ; 18.264 ; 18.264 ;
+; play_pile_top_card[4] ; total_value[3] ; 18.418 ; 18.418 ; 18.418 ; 18.418 ;
+; play_pile_top_card[4] ; total_value[4] ; 18.549 ; 18.549 ; 18.549 ; 18.549 ;
+; play_pile_top_card[5] ; legal_play     ; 19.458 ; 19.458 ; 19.458 ; 19.458 ;
+; play_pile_top_card[5] ; total_value[0] ; 15.811 ; 15.811 ; 15.811 ; 15.811 ;
+; play_pile_top_card[5] ; total_value[1] ; 17.485 ; 17.485 ; 17.485 ; 17.485 ;
+; play_pile_top_card[5] ; total_value[2] ; 17.232 ; 17.232 ; 17.232 ; 17.232 ;
+; play_pile_top_card[5] ; total_value[3] ; 17.386 ; 17.386 ; 17.386 ; 17.386 ;
+; play_pile_top_card[5] ; total_value[4] ; 17.517 ; 17.517 ; 17.517 ; 17.517 ;
++-----------------------+----------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                  ;
++-----------------------+----------------+--------+--------+--------+--------+
+; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+----------------+--------+--------+--------+--------+
+; card_to_play[0]       ; legal_play     ; 12.972 ; 12.972 ; 12.972 ; 12.972 ;
+; card_to_play[0]       ; total_value[0] ; 11.926 ; 11.926 ; 11.926 ; 11.926 ;
+; card_to_play[0]       ; total_value[1] ; 12.430 ; 12.430 ; 12.430 ; 12.430 ;
+; card_to_play[0]       ; total_value[2] ; 12.214 ; 12.214 ; 12.214 ; 12.214 ;
+; card_to_play[0]       ; total_value[3] ; 12.170 ; 12.170 ; 12.170 ; 12.170 ;
+; card_to_play[0]       ; total_value[4] ; 12.594 ; 12.594 ; 12.594 ; 12.594 ;
+; card_to_play[1]       ; legal_play     ; 12.386 ; 12.386 ; 12.386 ; 12.386 ;
+; card_to_play[1]       ; total_value[1] ; 11.751 ; 11.751 ; 11.751 ; 11.751 ;
+; card_to_play[1]       ; total_value[2] ; 11.888 ; 11.888 ; 11.888 ; 11.888 ;
+; card_to_play[1]       ; total_value[3] ; 11.844 ; 11.844 ; 11.844 ; 11.844 ;
+; card_to_play[1]       ; total_value[4] ; 12.268 ; 12.268 ; 12.268 ; 12.268 ;
+; card_to_play[2]       ; legal_play     ; 12.473 ; 12.473 ; 12.473 ; 12.473 ;
+; card_to_play[2]       ; total_value[2] ; 11.715 ; 11.715 ; 11.715 ; 11.715 ;
+; card_to_play[2]       ; total_value[3] ; 12.022 ; 12.022 ; 12.022 ; 12.022 ;
+; card_to_play[2]       ; total_value[4] ; 12.446 ; 12.446 ; 12.446 ; 12.446 ;
+; card_to_play[3]       ; legal_play     ; 12.685 ; 12.685 ; 12.685 ; 12.685 ;
+; card_to_play[3]       ; total_value[3] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; card_to_play[3]       ; total_value[4] ; 12.079 ; 12.079 ; 12.079 ; 12.079 ;
+; card_to_play[4]       ; legal_play     ; 13.207 ; 13.207 ; 13.207 ; 13.207 ;
+; card_to_play[4]       ; total_value[4] ; 11.266 ; 11.266 ; 11.266 ; 11.266 ;
+; card_to_play[5]       ; legal_play     ; 12.435 ; 12.435 ; 12.435 ; 12.435 ;
+; card_to_play[5]       ; total_value[1] ; 12.444 ; 12.444 ; 12.444 ; 12.444 ;
+; card_to_play[5]       ; total_value[2] ; 11.677 ; 11.677 ; 11.677 ; 11.677 ;
+; card_to_play[5]       ; total_value[3] ; 11.519 ; 11.519 ; 11.519 ; 11.519 ;
+; card_to_play[5]       ; total_value[4] ; 11.765 ; 11.765 ; 11.765 ; 11.765 ;
+; play_pile_top_card[1] ; legal_play     ; 14.014 ; 14.014 ; 14.014 ; 14.014 ;
+; play_pile_top_card[1] ; total_value[0] ; 12.911 ; 12.911 ; 12.911 ; 12.911 ;
+; play_pile_top_card[1] ; total_value[1] ; 13.379 ; 13.379 ; 13.379 ; 13.379 ;
+; play_pile_top_card[1] ; total_value[2] ; 13.824 ; 13.824 ; 13.824 ; 13.824 ;
+; play_pile_top_card[1] ; total_value[3] ; 13.659 ; 13.659 ; 13.659 ; 13.659 ;
+; play_pile_top_card[1] ; total_value[4] ; 13.912 ; 13.912 ; 13.912 ; 13.912 ;
+; play_pile_top_card[2] ; legal_play     ; 14.127 ; 14.127 ; 14.127 ; 14.127 ;
+; play_pile_top_card[2] ; total_value[0] ; 13.024 ; 13.024 ; 13.024 ; 13.024 ;
+; play_pile_top_card[2] ; total_value[1] ; 13.492 ; 13.492 ; 13.492 ; 13.492 ;
+; play_pile_top_card[2] ; total_value[2] ; 13.937 ; 13.937 ; 13.937 ; 13.937 ;
+; play_pile_top_card[2] ; total_value[3] ; 13.772 ; 13.772 ; 13.772 ; 13.772 ;
+; play_pile_top_card[2] ; total_value[4] ; 14.025 ; 14.025 ; 14.025 ; 14.025 ;
+; play_pile_top_card[3] ; legal_play     ; 14.409 ; 14.409 ; 14.409 ; 14.409 ;
+; play_pile_top_card[3] ; total_value[0] ; 13.306 ; 13.306 ; 13.306 ; 13.306 ;
+; play_pile_top_card[3] ; total_value[1] ; 13.774 ; 13.774 ; 13.774 ; 13.774 ;
+; play_pile_top_card[3] ; total_value[2] ; 14.219 ; 14.219 ; 14.219 ; 14.219 ;
+; play_pile_top_card[3] ; total_value[3] ; 14.054 ; 14.054 ; 14.054 ; 14.054 ;
+; play_pile_top_card[3] ; total_value[4] ; 14.307 ; 14.307 ; 14.307 ; 14.307 ;
+; play_pile_top_card[4] ; legal_play     ; 14.102 ; 14.102 ; 14.102 ; 14.102 ;
+; play_pile_top_card[4] ; total_value[0] ; 12.999 ; 12.999 ; 12.999 ; 12.999 ;
+; play_pile_top_card[4] ; total_value[1] ; 13.467 ; 13.467 ; 13.467 ; 13.467 ;
+; play_pile_top_card[4] ; total_value[2] ; 13.912 ; 13.912 ; 13.912 ; 13.912 ;
+; play_pile_top_card[4] ; total_value[3] ; 13.747 ; 13.747 ; 13.747 ; 13.747 ;
+; play_pile_top_card[4] ; total_value[4] ; 14.000 ; 14.000 ; 14.000 ; 14.000 ;
+; play_pile_top_card[5] ; legal_play     ; 13.616 ; 13.616 ; 13.616 ; 13.616 ;
+; play_pile_top_card[5] ; total_value[0] ; 12.513 ; 12.513 ; 12.513 ; 12.513 ;
+; play_pile_top_card[5] ; total_value[1] ; 12.981 ; 12.981 ; 12.981 ; 12.981 ;
+; play_pile_top_card[5] ; total_value[2] ; 13.426 ; 13.426 ; 13.426 ; 13.426 ;
+; play_pile_top_card[5] ; total_value[3] ; 13.261 ; 13.261 ; 13.261 ; 13.261 ;
+; play_pile_top_card[5] ; total_value[4] ; 13.514 ; 13.514 ; 13.514 ; 13.514 ;
++-----------------------+----------------+--------+--------+--------+--------+
+
+
++------------------------------------------------+
+; Fast Model Setup Summary                       ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -1.988 ; -9.634        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -2.071 ; -10.063       ;
++-----------------------+--------+---------------+
+
+
++-----------------------------------------------+
+; Fast Model Recovery Summary                   ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; play_pile_top_card[0] ; 0.571 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Removal Summary                     ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -2.550 ; -2.550        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; play_pile_top_card[0] ; -1.222 ; -28.258       ;
++-----------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'play_pile_top_card[0]'                                                                                            ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node    ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.988 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.817     ; 1.315      ;
+; -1.955 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.819     ; 1.232      ;
+; -1.930 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.866     ; 1.221      ;
+; -1.906 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.738     ; 1.321      ;
+; -1.906 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.816     ; 1.234      ;
+; -1.885 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.812     ; 1.217      ;
+; -1.873 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.818     ; 1.151      ;
+; -1.855 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.023     ; 0.848      ;
+; -1.852 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.814     ; 1.134      ;
+; -1.848 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.865     ; 1.140      ;
+; -1.847 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.817     ; 1.174      ;
+; -1.827 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.861     ; 1.123      ;
+; -1.824 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.737     ; 1.240      ;
+; -1.814 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.819     ; 1.091      ;
+; -1.803 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.733     ; 1.223      ;
+; -1.789 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.866     ; 1.080      ;
+; -1.773 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.022     ; 0.767      ;
+; -1.765 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.738     ; 1.180      ;
+; -1.752 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.018     ; 0.750      ;
+; -1.714 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -1.023     ; 0.707      ;
+; -1.580 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.409     ; 1.315      ;
+; -1.547 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.411     ; 1.232      ;
+; -1.522 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.458     ; 1.221      ;
+; -1.498 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.330     ; 1.321      ;
+; -1.498 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.408     ; 1.234      ;
+; -1.477 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.404     ; 1.217      ;
+; -1.465 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.410     ; 1.151      ;
+; -1.444 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.406     ; 1.134      ;
+; -1.440 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.457     ; 1.140      ;
+; -1.439 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.409     ; 1.174      ;
+; -1.419 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.453     ; 1.123      ;
+; -1.416 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.329     ; 1.240      ;
+; -1.406 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.411     ; 1.091      ;
+; -1.401 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.730     ; 1.315      ;
+; -1.395 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.325     ; 1.223      ;
+; -1.381 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.458     ; 1.080      ;
+; -1.368 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.732     ; 1.232      ;
+; -1.357 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.330     ; 1.180      ;
+; -1.343 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.779     ; 1.221      ;
+; -1.319 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.651     ; 1.321      ;
+; -1.319 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.729     ; 1.234      ;
+; -1.298 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.725     ; 1.217      ;
+; -1.286 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.731     ; 1.151      ;
+; -1.268 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.936     ; 0.848      ;
+; -1.265 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.727     ; 1.134      ;
+; -1.261 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.778     ; 1.140      ;
+; -1.260 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.730     ; 1.174      ;
+; -1.240 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.774     ; 1.123      ;
+; -1.237 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.650     ; 1.240      ;
+; -1.227 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.732     ; 1.091      ;
+; -1.216 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.646     ; 1.223      ;
+; -1.205 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.373     ; 0.848      ;
+; -1.202 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.779     ; 1.080      ;
+; -1.186 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.935     ; 0.767      ;
+; -1.178 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.651     ; 1.180      ;
+; -1.167 ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.496     ; 1.315      ;
+; -1.165 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.931     ; 0.750      ;
+; -1.134 ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.498     ; 1.232      ;
+; -1.127 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.936     ; 0.707      ;
+; -1.123 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.372     ; 0.767      ;
+; -1.109 ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.545     ; 1.221      ;
+; -1.102 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.368     ; 0.750      ;
+; -1.085 ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.417     ; 1.321      ;
+; -1.085 ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.495     ; 1.234      ;
+; -1.064 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.491     ; 1.217      ;
+; -1.064 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; -0.373     ; 0.707      ;
+; -1.052 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.497     ; 1.151      ;
+; -1.031 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.493     ; 1.134      ;
+; -1.027 ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.544     ; 1.140      ;
+; -1.026 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.496     ; 1.174      ;
+; -1.006 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.540     ; 1.123      ;
+; -1.003 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.416     ; 1.240      ;
+; -0.993 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.498     ; 1.091      ;
+; -0.982 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.412     ; 1.223      ;
+; -0.968 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.545     ; 1.080      ;
+; -0.944 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.417     ; 1.180      ;
+; -0.792 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.460     ; 0.848      ;
+; -0.710 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.459     ; 0.767      ;
+; -0.689 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.455     ; 0.750      ;
+; -0.651 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; -0.460     ; 0.707      ;
+; 0.018  ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.241      ; 3.367      ;
+; 0.051  ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.239      ; 3.284      ;
+; 0.076  ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.192      ; 3.273      ;
+; 0.154  ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.320      ; 3.319      ;
+; 0.165  ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.191      ; 3.164      ;
+; 0.339  ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.562      ; 3.367      ;
+; 0.372  ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.560      ; 3.284      ;
+; 0.397  ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.513      ; 3.273      ;
+; 0.475  ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.641      ; 3.319      ;
+; 0.486  ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.512      ; 3.164      ;
+; 0.518  ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.241      ; 3.367      ;
+; 0.551  ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.239      ; 3.284      ;
+; 0.576  ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.192      ; 3.273      ;
+; 0.654  ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.320      ; 3.319      ;
+; 0.665  ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.191      ; 3.164      ;
+; 0.839  ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.562      ; 3.367      ;
+; 0.872  ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.560      ; 3.284      ;
+; 0.897  ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.513      ; 3.273      ;
+; 0.975  ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.641      ; 3.319      ;
+; 0.986  ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.512      ; 3.164      ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'play_pile_top_card[0]'                                                                                             ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node    ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+; -2.071 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.169      ; 2.098      ;
+; -2.047 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.090      ; 2.043      ;
+; -1.984 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.082      ; 2.098      ;
+; -1.960 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.003      ; 2.043      ;
+; -1.950 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.088      ; 2.138      ;
+; -1.914 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.041      ; 2.127      ;
+; -1.863 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.001      ; 2.138      ;
+; -1.827 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.954      ; 2.127      ;
+; -1.606 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.040      ; 2.434      ;
+; -1.571 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.169      ; 2.098      ;
+; -1.547 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.090      ; 2.043      ;
+; -1.519 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 3.953      ; 2.434      ;
+; -1.484 ; play_pile_top_card[0] ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.082      ; 2.098      ;
+; -1.460 ; play_pile_top_card[0] ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.003      ; 2.043      ;
+; -1.450 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.088      ; 2.138      ;
+; -1.414 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.041      ; 2.127      ;
+; -1.363 ; play_pile_top_card[0] ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.001      ; 2.138      ;
+; -1.327 ; play_pile_top_card[0] ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.954      ; 2.127      ;
+; -1.106 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.040      ; 2.434      ;
+; -1.019 ; play_pile_top_card[0] ; try_add[0] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 3.953      ; 2.434      ;
+; -0.475 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.182      ; 0.707      ;
+; -0.437 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.187      ; 0.750      ;
+; -0.416 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.183      ; 0.767      ;
+; -0.334 ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.182      ; 0.848      ;
+; -0.131 ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.257      ; 1.126      ;
+; -0.093 ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.262      ; 1.169      ;
+; -0.085 ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.176      ; 1.091      ;
+; -0.072 ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.258      ; 1.186      ;
+; -0.062 ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.269      ; 0.707      ;
+; -0.053 ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.178      ; 1.125      ;
+; -0.049 ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.129      ; 1.080      ;
+; -0.047 ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.181      ; 1.134      ;
+; -0.026 ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.177      ; 1.151      ;
+; -0.024 ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.274      ; 0.750      ;
+; -0.015 ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.183      ; 1.168      ;
+; -0.011 ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.134      ; 1.123      ;
+; -0.003 ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.270      ; 0.767      ;
+; 0.001  ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.706      ; 0.707      ;
+; 0.006  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.179      ; 1.185      ;
+; 0.010  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.257      ; 1.267      ;
+; 0.010  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.130      ; 1.140      ;
+; 0.039  ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.711      ; 0.750      ;
+; 0.056  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.176      ; 1.232      ;
+; 0.060  ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.707      ; 0.767      ;
+; 0.079  ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.269      ; 0.848      ;
+; 0.088  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.178      ; 1.266      ;
+; 0.092  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 1.129      ; 1.221      ;
+; 0.142  ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.706      ; 0.848      ;
+; 0.456  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.170      ; 1.126      ;
+; 0.494  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.175      ; 1.169      ;
+; 0.502  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.089      ; 1.091      ;
+; 0.515  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.171      ; 1.186      ;
+; 0.519  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.607      ; 1.126      ;
+; 0.534  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.091      ; 1.125      ;
+; 0.538  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.042      ; 1.080      ;
+; 0.540  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.094      ; 1.134      ;
+; 0.557  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.612      ; 1.169      ;
+; 0.561  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.090      ; 1.151      ;
+; 0.565  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.526      ; 1.091      ;
+; 0.572  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.096      ; 1.168      ;
+; 0.576  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.047      ; 1.123      ;
+; 0.578  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.608      ; 1.186      ;
+; 0.588  ; fake_add[2]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.619      ; 0.707      ;
+; 0.593  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.092      ; 1.185      ;
+; 0.597  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.528      ; 1.125      ;
+; 0.597  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.170      ; 1.267      ;
+; 0.597  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.043      ; 1.140      ;
+; 0.601  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.479      ; 1.080      ;
+; 0.603  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.531      ; 1.134      ;
+; 0.624  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.527      ; 1.151      ;
+; 0.626  ; fake_add[1]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.624      ; 0.750      ;
+; 0.635  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.533      ; 1.168      ;
+; 0.639  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.484      ; 1.123      ;
+; 0.643  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.089      ; 1.232      ;
+; 0.647  ; fake_add[4]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.620      ; 0.767      ;
+; 0.656  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.529      ; 1.185      ;
+; 0.660  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.607      ; 1.267      ;
+; 0.660  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.480      ; 1.140      ;
+; 0.675  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.091      ; 1.266      ;
+; 0.679  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 1.042      ; 1.221      ;
+; 0.706  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.526      ; 1.232      ;
+; 0.729  ; fake_add[3]           ; new_ace    ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.619      ; 0.848      ;
+; 0.738  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.528      ; 1.266      ;
+; 0.742  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 0.479      ; 1.221      ;
+; 0.932  ; fake_add[2]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.694      ; 1.126      ;
+; 0.970  ; fake_add[1]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.699      ; 1.169      ;
+; 0.978  ; fake_add[2]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.613      ; 1.091      ;
+; 0.991  ; fake_add[4]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.695      ; 1.186      ;
+; 1.010  ; fake_add[2]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.615      ; 1.125      ;
+; 1.014  ; fake_add[2]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.566      ; 1.080      ;
+; 1.016  ; fake_add[1]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.618      ; 1.134      ;
+; 1.037  ; fake_add[4]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.614      ; 1.151      ;
+; 1.048  ; fake_add[1]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.620      ; 1.168      ;
+; 1.052  ; fake_add[1]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.571      ; 1.123      ;
+; 1.069  ; fake_add[4]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.616      ; 1.185      ;
+; 1.073  ; fake_add[3]           ; try_add[4] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.694      ; 1.267      ;
+; 1.073  ; fake_add[4]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.567      ; 1.140      ;
+; 1.119  ; fake_add[3]           ; try_add[2] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.613      ; 1.232      ;
+; 1.151  ; fake_add[3]           ; try_add[3] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.615      ; 1.266      ;
+; 1.155  ; fake_add[3]           ; try_add[1] ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 0.566      ; 1.221      ;
++--------+-----------------------+------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'play_pile_top_card[0]'                                                                                     ;
++-------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.571 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.035      ; 2.480      ;
+; 1.071 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.035      ; 2.480      ;
+; 1.134 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.500        ; 3.598      ; 2.480      ;
+; 1.634 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 1.000        ; 3.598      ; 2.480      ;
++-------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'play_pile_top_card[0]'                                                                                       ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+; -2.550 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.181      ; 1.631      ;
+; -2.463 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; 0.000        ; 4.094      ; 1.631      ;
+; -2.050 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.181      ; 1.631      ;
+; -1.963 ; play_pile_top_card[0] ; new_ace ; play_pile_top_card[0] ; play_pile_top_card[0] ; -0.500       ; 4.094      ; 1.631      ;
++--------+-----------------------+---------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'play_pile_top_card[0]'                                                                                 ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                                 ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; play_pile_top_card[0] ; Rise       ; play_pile_top_card[0]                  ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|inclk[0]               ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|inclk[0]               ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|outclk                 ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1clkctrl|outclk                 ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|combout                       ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1|combout                       ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[1]                            ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[1]                            ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[1]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[1]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[2]                            ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[2]                            ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[2]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[2]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[3]                            ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[3]                            ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[3]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[3]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[4]                            ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[4]                            ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[4]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[4]|datad                      ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; new_ace                                ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; new_ace                                ;
+; -0.559 ; -0.559       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; new_ace|dataa                          ;
+; -0.559 ; -0.559       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; new_ace|dataa                          ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|inclk[0] ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|inclk[0] ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|outclk   ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11clkctrl|outclk   ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|combout         ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|combout         ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[0]                             ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[0]                             ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[0]|datad                       ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[0]|datad                       ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[1]                             ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[1]                             ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[1]|datad                       ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[1]|datad                       ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[2]                             ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[2]                             ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[2]|datac                       ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[2]|datac                       ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[3]                             ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[3]                             ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[3]|datac                       ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[3]|datac                       ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[4]                             ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[4]                             ;
+; -0.349 ; -0.349       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; try_add[4]|dataa                       ;
+; -0.349 ; -0.349       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; try_add[4]|dataa                       ;
+; -0.110 ; -0.110       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst|inst23|combout   ;
+; -0.110 ; -0.110       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst|inst23|combout   ;
+; -0.110 ; -0.110       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; total_value_temp[0]~11|dataa           ;
+; -0.110 ; -0.110       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; total_value_temp[0]~11|dataa           ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~0|combout                       ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~0|combout                       ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|datac                         ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|datac                         ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|inclk[0]               ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|inclk[0]               ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|outclk                 ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1clkctrl|outclk                 ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1|combout                       ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1|combout                       ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; Equal0~1|datad                         ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; Equal0~1|datad                         ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[1]                            ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[1]                            ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[1]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[1]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[2]                            ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[2]                            ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[2]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[2]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[3]                            ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[3]                            ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[3]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[3]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; fake_add[4]                            ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; fake_add[4]                            ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; fake_add[4]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; fake_add[4]|datad                      ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst24|inst13|combout ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; modulo_top|inst5|inst24|inst13|combout ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; new_ace                                ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; new_ace                                ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; new_ace|dataa                          ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; new_ace|dataa                          ;
+; -0.083 ; -0.083       ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|datad           ;
+; -0.083 ; -0.083       ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Fall       ; total_value_temp[0]~11|datad           ;
+; 0.059  ; 0.059        ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|combout                       ;
+; 0.059  ; 0.059        ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|combout                       ;
+; 0.059  ; 0.059        ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~0|datab                         ;
+; 0.059  ; 0.059        ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~0|datab                         ;
+; 0.059  ; 0.059        ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|datab                         ;
+; 0.059  ; 0.059        ; 0.000          ; Low Pulse Width  ; play_pile_top_card[0] ; Rise       ; Equal0~1|datab                         ;
+; 0.059  ; 0.059        ; 0.000          ; High Pulse Width ; play_pile_top_card[0] ; Rise       ; Equal0~1|datad                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                         ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 1.089 ; 1.089 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 1.089 ; 1.089 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 0.871 ; 0.871 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 0.858 ; 0.858 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 0.694 ; 0.694 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 0.440 ; 0.440 ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 2.881 ; 2.881 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 0.161 ; 0.161 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 2.561 ; 2.561 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 2.727 ; 2.727 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 2.881 ; 2.881 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 2.602 ; 2.602 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 2.233 ; 2.233 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 1.652 ; 1.652 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 1.652 ; 1.652 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.434 ; 1.434 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.421 ; 1.421 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.257 ; 1.257 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 1.003 ; 1.003 ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 3.202 ; 3.202 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 0.482 ; 0.482 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 2.882 ; 2.882 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 3.048 ; 3.048 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 3.202 ; 3.202 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 2.923 ; 2.923 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 2.554 ; 2.554 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                            ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 0.523  ; 0.523  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 0.048  ; 0.048  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 0.188  ; 0.188  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 0.291  ; 0.291  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 0.300  ; 0.300  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 0.523  ; 0.523  ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 1.984  ; 1.984  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 1.984  ; 1.984  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -0.688 ; -0.688 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -0.798 ; -0.798 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -0.760 ; -0.760 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -0.783 ; -0.783 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.592 ; -0.592 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 0.610  ; 0.610  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 0.135  ; 0.135  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 0.248  ; 0.248  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 0.261  ; 0.261  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 0.348  ; 0.348  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 0.610  ; 0.610  ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 2.071  ; 2.071  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 2.071  ; 2.071  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -0.601 ; -0.601 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -0.711 ; -0.711 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -0.673 ; -0.673 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -0.696 ; -0.696 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.505 ; -0.505 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                        ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 8.324 ; 8.324 ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 7.628 ; 7.628 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 5.892 ; 5.892 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 7.612 ; 7.612 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 7.517 ; 7.517 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 7.568 ; 7.568 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 7.628 ; 7.628 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 5.974 ; 5.974 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 8.411 ; 8.411 ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 7.715 ; 7.715 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 5.979 ; 5.979 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 7.699 ; 7.699 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 7.604 ; 7.604 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 7.655 ; 7.655 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 7.715 ; 7.715 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 5.887 ; 5.887 ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 4.182 ; 4.182 ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 3.956 ; 3.956 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 4.043 ; 4.043 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 3.866 ; 3.866 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 4.127 ; 4.127 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 5.391 ; 5.391 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 4.182 ; 4.182 ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 3.956 ; 3.956 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 4.043 ; 4.043 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 3.866 ; 3.866 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 4.127 ; 4.127 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 4.828 ; 4.828 ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++------------------------------------------------------------------------+
+; Propagation Delay                                                      ;
++-----------------------+----------------+-------+-------+-------+-------+
+; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+----------------+-------+-------+-------+-------+
+; card_to_play[0]       ; legal_play     ; 6.759 ; 6.759 ; 6.759 ; 6.759 ;
+; card_to_play[0]       ; total_value[0] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; card_to_play[0]       ; total_value[1] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; card_to_play[0]       ; total_value[2] ; 5.904 ; 5.904 ; 5.904 ; 5.904 ;
+; card_to_play[0]       ; total_value[3] ; 5.905 ; 5.905 ; 5.905 ; 5.905 ;
+; card_to_play[0]       ; total_value[4] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; card_to_play[1]       ; legal_play     ; 6.646 ; 6.646 ; 6.646 ; 6.646 ;
+; card_to_play[1]       ; total_value[1] ; 5.771 ; 5.771 ; 5.771 ; 5.771 ;
+; card_to_play[1]       ; total_value[2] ; 5.791 ; 5.791 ; 5.791 ; 5.791 ;
+; card_to_play[1]       ; total_value[3] ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; card_to_play[1]       ; total_value[4] ; 5.950 ; 5.950 ; 5.950 ; 5.950 ;
+; card_to_play[2]       ; legal_play     ; 6.692 ; 6.692 ; 6.692 ; 6.692 ;
+; card_to_play[2]       ; total_value[2] ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
+; card_to_play[2]       ; total_value[3] ; 5.838 ; 5.838 ; 5.838 ; 5.838 ;
+; card_to_play[2]       ; total_value[4] ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; card_to_play[3]       ; legal_play     ; 6.546 ; 6.546 ; 6.546 ; 6.546 ;
+; card_to_play[3]       ; total_value[3] ; 5.587 ; 5.587 ; 5.587 ; 5.587 ;
+; card_to_play[3]       ; total_value[4] ; 5.850 ; 5.850 ; 5.850 ; 5.850 ;
+; card_to_play[4]       ; legal_play     ; 6.284 ; 6.284 ; 6.284 ; 6.284 ;
+; card_to_play[4]       ; total_value[4] ; 5.588 ; 5.588 ; 5.588 ; 5.588 ;
+; card_to_play[5]       ; legal_play     ; 6.826 ; 6.826 ; 6.826 ; 6.826 ;
+; card_to_play[5]       ; total_value[1] ; 6.118 ; 6.118 ; 6.118 ; 6.118 ;
+; card_to_play[5]       ; total_value[2] ; 6.023 ; 6.023 ; 6.023 ; 6.023 ;
+; card_to_play[5]       ; total_value[3] ; 6.074 ; 6.074 ; 6.074 ; 6.074 ;
+; card_to_play[5]       ; total_value[4] ; 6.130 ; 6.130 ; 6.130 ; 6.130 ;
+; play_pile_top_card[1] ; legal_play     ; 8.927 ; 8.927 ; 8.927 ; 8.927 ;
+; play_pile_top_card[1] ; total_value[0] ; 7.636 ; 7.636 ; 7.636 ; 7.636 ;
+; play_pile_top_card[1] ; total_value[1] ; 8.221 ; 8.221 ; 8.221 ; 8.221 ;
+; play_pile_top_card[1] ; total_value[2] ; 8.126 ; 8.126 ; 8.126 ; 8.126 ;
+; play_pile_top_card[1] ; total_value[3] ; 8.177 ; 8.177 ; 8.177 ; 8.177 ;
+; play_pile_top_card[1] ; total_value[4] ; 8.231 ; 8.231 ; 8.231 ; 8.231 ;
+; play_pile_top_card[2] ; legal_play     ; 9.093 ; 9.093 ; 9.093 ; 9.093 ;
+; play_pile_top_card[2] ; total_value[0] ; 7.802 ; 7.802 ; 7.802 ; 7.802 ;
+; play_pile_top_card[2] ; total_value[1] ; 8.387 ; 8.387 ; 8.387 ; 8.387 ;
+; play_pile_top_card[2] ; total_value[2] ; 8.292 ; 8.292 ; 8.292 ; 8.292 ;
+; play_pile_top_card[2] ; total_value[3] ; 8.343 ; 8.343 ; 8.343 ; 8.343 ;
+; play_pile_top_card[2] ; total_value[4] ; 8.397 ; 8.397 ; 8.397 ; 8.397 ;
+; play_pile_top_card[3] ; legal_play     ; 9.247 ; 9.247 ; 9.247 ; 9.247 ;
+; play_pile_top_card[3] ; total_value[0] ; 7.956 ; 7.956 ; 7.956 ; 7.956 ;
+; play_pile_top_card[3] ; total_value[1] ; 8.541 ; 8.541 ; 8.541 ; 8.541 ;
+; play_pile_top_card[3] ; total_value[2] ; 8.446 ; 8.446 ; 8.446 ; 8.446 ;
+; play_pile_top_card[3] ; total_value[3] ; 8.497 ; 8.497 ; 8.497 ; 8.497 ;
+; play_pile_top_card[3] ; total_value[4] ; 8.551 ; 8.551 ; 8.551 ; 8.551 ;
+; play_pile_top_card[4] ; legal_play     ; 8.968 ; 8.968 ; 8.968 ; 8.968 ;
+; play_pile_top_card[4] ; total_value[0] ; 7.677 ; 7.677 ; 7.677 ; 7.677 ;
+; play_pile_top_card[4] ; total_value[1] ; 8.262 ; 8.262 ; 8.262 ; 8.262 ;
+; play_pile_top_card[4] ; total_value[2] ; 8.167 ; 8.167 ; 8.167 ; 8.167 ;
+; play_pile_top_card[4] ; total_value[3] ; 8.218 ; 8.218 ; 8.218 ; 8.218 ;
+; play_pile_top_card[4] ; total_value[4] ; 8.272 ; 8.272 ; 8.272 ; 8.272 ;
+; play_pile_top_card[5] ; legal_play     ; 8.599 ; 8.599 ; 8.599 ; 8.599 ;
+; play_pile_top_card[5] ; total_value[0] ; 7.308 ; 7.308 ; 7.308 ; 7.308 ;
+; play_pile_top_card[5] ; total_value[1] ; 7.893 ; 7.893 ; 7.893 ; 7.893 ;
+; play_pile_top_card[5] ; total_value[2] ; 7.798 ; 7.798 ; 7.798 ; 7.798 ;
+; play_pile_top_card[5] ; total_value[3] ; 7.849 ; 7.849 ; 7.849 ; 7.849 ;
+; play_pile_top_card[5] ; total_value[4] ; 7.903 ; 7.903 ; 7.903 ; 7.903 ;
++-----------------------+----------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------+
+; Minimum Propagation Delay                                              ;
++-----------------------+----------------+-------+-------+-------+-------+
+; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+----------------+-------+-------+-------+-------+
+; card_to_play[0]       ; legal_play     ; 6.186 ; 6.186 ; 6.186 ; 6.186 ;
+; card_to_play[0]       ; total_value[0] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; card_to_play[0]       ; total_value[1] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; card_to_play[0]       ; total_value[2] ; 5.904 ; 5.904 ; 5.904 ; 5.904 ;
+; card_to_play[0]       ; total_value[3] ; 5.905 ; 5.905 ; 5.905 ; 5.905 ;
+; card_to_play[0]       ; total_value[4] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; card_to_play[1]       ; legal_play     ; 5.997 ; 5.997 ; 5.997 ; 5.997 ;
+; card_to_play[1]       ; total_value[1] ; 5.771 ; 5.771 ; 5.771 ; 5.771 ;
+; card_to_play[1]       ; total_value[2] ; 5.791 ; 5.791 ; 5.791 ; 5.791 ;
+; card_to_play[1]       ; total_value[3] ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; card_to_play[1]       ; total_value[4] ; 5.950 ; 5.950 ; 5.950 ; 5.950 ;
+; card_to_play[2]       ; legal_play     ; 6.014 ; 6.014 ; 6.014 ; 6.014 ;
+; card_to_play[2]       ; total_value[2] ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
+; card_to_play[2]       ; total_value[3] ; 5.838 ; 5.838 ; 5.838 ; 5.838 ;
+; card_to_play[2]       ; total_value[4] ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; card_to_play[3]       ; legal_play     ; 6.079 ; 6.079 ; 6.079 ; 6.079 ;
+; card_to_play[3]       ; total_value[3] ; 5.587 ; 5.587 ; 5.587 ; 5.587 ;
+; card_to_play[3]       ; total_value[4] ; 5.850 ; 5.850 ; 5.850 ; 5.850 ;
+; card_to_play[4]       ; legal_play     ; 6.284 ; 6.284 ; 6.284 ; 6.284 ;
+; card_to_play[4]       ; total_value[4] ; 5.588 ; 5.588 ; 5.588 ; 5.588 ;
+; card_to_play[5]       ; legal_play     ; 6.028 ; 6.028 ; 6.028 ; 6.028 ;
+; card_to_play[5]       ; total_value[1] ; 6.024 ; 6.024 ; 6.024 ; 6.024 ;
+; card_to_play[5]       ; total_value[2] ; 5.746 ; 5.746 ; 5.746 ; 5.746 ;
+; card_to_play[5]       ; total_value[3] ; 5.705 ; 5.705 ; 5.705 ; 5.705 ;
+; card_to_play[5]       ; total_value[4] ; 5.796 ; 5.796 ; 5.796 ; 5.796 ;
+; play_pile_top_card[1] ; legal_play     ; 6.572 ; 6.572 ; 6.572 ; 6.572 ;
+; play_pile_top_card[1] ; total_value[0] ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; play_pile_top_card[1] ; total_value[1] ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
+; play_pile_top_card[1] ; total_value[2] ; 6.494 ; 6.494 ; 6.494 ; 6.494 ;
+; play_pile_top_card[1] ; total_value[3] ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; play_pile_top_card[1] ; total_value[4] ; 6.544 ; 6.544 ; 6.544 ; 6.544 ;
+; play_pile_top_card[2] ; legal_play     ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; play_pile_top_card[2] ; total_value[0] ; 6.238 ; 6.238 ; 6.238 ; 6.238 ;
+; play_pile_top_card[2] ; total_value[1] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
+; play_pile_top_card[2] ; total_value[2] ; 6.554 ; 6.554 ; 6.554 ; 6.554 ;
+; play_pile_top_card[2] ; total_value[3] ; 6.511 ; 6.511 ; 6.511 ; 6.511 ;
+; play_pile_top_card[2] ; total_value[4] ; 6.604 ; 6.604 ; 6.604 ; 6.604 ;
+; play_pile_top_card[3] ; legal_play     ; 6.736 ; 6.736 ; 6.736 ; 6.736 ;
+; play_pile_top_card[3] ; total_value[0] ; 6.342 ; 6.342 ; 6.342 ; 6.342 ;
+; play_pile_top_card[3] ; total_value[1] ; 6.510 ; 6.510 ; 6.510 ; 6.510 ;
+; play_pile_top_card[3] ; total_value[2] ; 6.658 ; 6.658 ; 6.658 ; 6.658 ;
+; play_pile_top_card[3] ; total_value[3] ; 6.610 ; 6.610 ; 6.610 ; 6.610 ;
+; play_pile_top_card[3] ; total_value[4] ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
+; play_pile_top_card[4] ; legal_play     ; 6.636 ; 6.636 ; 6.636 ; 6.636 ;
+; play_pile_top_card[4] ; total_value[0] ; 6.242 ; 6.242 ; 6.242 ; 6.242 ;
+; play_pile_top_card[4] ; total_value[1] ; 6.410 ; 6.410 ; 6.410 ; 6.410 ;
+; play_pile_top_card[4] ; total_value[2] ; 6.558 ; 6.558 ; 6.558 ; 6.558 ;
+; play_pile_top_card[4] ; total_value[3] ; 6.515 ; 6.515 ; 6.515 ; 6.515 ;
+; play_pile_top_card[4] ; total_value[4] ; 6.608 ; 6.608 ; 6.608 ; 6.608 ;
+; play_pile_top_card[5] ; legal_play     ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; play_pile_top_card[5] ; total_value[0] ; 6.057 ; 6.057 ; 6.057 ; 6.057 ;
+; play_pile_top_card[5] ; total_value[1] ; 6.225 ; 6.225 ; 6.225 ; 6.225 ;
+; play_pile_top_card[5] ; total_value[2] ; 6.373 ; 6.373 ; 6.373 ; 6.373 ;
+; play_pile_top_card[5] ; total_value[3] ; 6.330 ; 6.330 ; 6.330 ; 6.330 ;
+; play_pile_top_card[5] ; total_value[4] ; 6.423 ; 6.423 ; 6.423 ; 6.423 ;
++-----------------------+----------------+-------+-------+-------+-------+
+
+
++---------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                   ;
++------------------------+---------+---------+----------+---------+---------------------+
+; Clock                  ; Setup   ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------+---------+---------+----------+---------+---------------------+
+; Worst-case Slack       ; -6.727  ; -4.113  ; -1.112   ; -5.596  ; -2.513              ;
+;  play_pile_top_card[0] ; -6.727  ; -4.113  ; -1.112   ; -5.596  ; -2.513              ;
+; Design-wide TNS        ; -34.965 ; -20.001 ; -1.112   ; -5.596  ; -203.571            ;
+;  play_pile_top_card[0] ; -34.965 ; -20.001 ; -1.112   ; -5.596  ; -203.571            ;
++------------------------+---------+---------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                         ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.161 ; 2.161 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 2.161 ; 2.161 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.656 ; 1.656 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.722 ; 1.722 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.277 ; 1.277 ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 0.498 ; 0.498 ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 7.429 ; 7.429 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 2.329 ; 2.329 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 6.587 ; 6.587 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 7.047 ; 7.047 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 7.429 ; 7.429 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 6.665 ; 6.665 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 5.633 ; 5.633 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 3.791 ; 3.791 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 3.791 ; 3.791 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 3.286 ; 3.286 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 3.352 ; 3.352 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 2.907 ; 2.907 ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.128 ; 2.128 ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 8.385 ; 8.385 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 3.285 ; 3.285 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; 7.543 ; 7.543 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; 8.003 ; 8.003 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; 8.385 ; 8.385 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; 7.621 ; 7.621 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; 6.589 ; 6.589 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                            ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port              ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.251  ; 2.251  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 0.923  ; 0.923  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.407  ; 1.407  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.627  ; 1.627  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.681  ; 1.681  ; Rise       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.251  ; 2.251  ; Rise       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 3.814  ; 3.814  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 3.814  ; 3.814  ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -0.688 ; -0.688 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -0.798 ; -0.798 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -0.760 ; -0.760 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -0.783 ; -0.783 ; Rise       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.592 ; -0.592 ; Rise       ; play_pile_top_card[0] ;
+; card_to_play[*]        ; play_pile_top_card[0] ; 2.550  ; 2.550  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[0]       ; play_pile_top_card[0] ; 1.222  ; 1.222  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[1]       ; play_pile_top_card[0] ; 1.548  ; 1.548  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[2]       ; play_pile_top_card[0] ; 1.585  ; 1.585  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[3]       ; play_pile_top_card[0] ; 1.737  ; 1.737  ; Fall       ; play_pile_top_card[0] ;
+;  card_to_play[4]       ; play_pile_top_card[0] ; 2.550  ; 2.550  ; Fall       ; play_pile_top_card[0] ;
+; play_pile_top_card[*]  ; play_pile_top_card[0] ; 4.113  ; 4.113  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[0] ; play_pile_top_card[0] ; 4.113  ; 4.113  ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[1] ; play_pile_top_card[0] ; -0.601 ; -0.601 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[2] ; play_pile_top_card[0] ; -0.711 ; -0.711 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[3] ; play_pile_top_card[0] ; -0.673 ; -0.673 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[4] ; play_pile_top_card[0] ; -0.696 ; -0.696 ; Fall       ; play_pile_top_card[0] ;
+;  play_pile_top_card[5] ; play_pile_top_card[0] ; -0.505 ; -0.505 ; Fall       ; play_pile_top_card[0] ;
++------------------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 19.625 ; 19.625 ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 17.693 ; 17.693 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 12.931 ; 12.931 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 17.693 ; 17.693 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 17.440 ; 17.440 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 17.593 ; 17.593 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 17.684 ; 17.684 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 13.146 ; 13.146 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 19.924 ; 19.924 ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 17.992 ; 17.992 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 13.230 ; 13.230 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 17.992 ; 17.992 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 17.739 ; 17.739 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 17.892 ; 17.892 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 17.983 ; 17.983 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 12.847 ; 12.847 ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port       ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+; legal_play      ; play_pile_top_card[0] ; 4.182 ; 4.182 ; Rise       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 3.956 ; 3.956 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 4.043 ; 4.043 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 3.866 ; 3.866 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 4.127 ; 4.127 ; Rise       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 5.391 ; 5.391 ; Rise       ; play_pile_top_card[0] ;
+; legal_play      ; play_pile_top_card[0] ; 4.182 ; 4.182 ; Fall       ; play_pile_top_card[0] ;
+; total_value[*]  ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[0] ; play_pile_top_card[0] ; 3.788 ; 3.788 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[1] ; play_pile_top_card[0] ; 3.956 ; 3.956 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[2] ; play_pile_top_card[0] ; 4.043 ; 4.043 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[3] ; play_pile_top_card[0] ; 3.866 ; 3.866 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[4] ; play_pile_top_card[0] ; 4.127 ; 4.127 ; Fall       ; play_pile_top_card[0] ;
+;  total_value[5] ; play_pile_top_card[0] ; 4.828 ; 4.828 ; Fall       ; play_pile_top_card[0] ;
++-----------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------+
+; Progagation Delay                                                          ;
++-----------------------+----------------+--------+--------+--------+--------+
+; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+----------------+--------+--------+--------+--------+
+; card_to_play[0]       ; legal_play     ; 14.535 ; 14.535 ; 14.535 ; 14.535 ;
+; card_to_play[0]       ; total_value[0] ; 11.926 ; 11.926 ; 11.926 ; 11.926 ;
+; card_to_play[0]       ; total_value[1] ; 12.430 ; 12.430 ; 12.430 ; 12.430 ;
+; card_to_play[0]       ; total_value[2] ; 12.214 ; 12.214 ; 12.214 ; 12.214 ;
+; card_to_play[0]       ; total_value[3] ; 12.170 ; 12.170 ; 12.170 ; 12.170 ;
+; card_to_play[0]       ; total_value[4] ; 12.594 ; 12.594 ; 12.594 ; 12.594 ;
+; card_to_play[1]       ; legal_play     ; 14.209 ; 14.209 ; 14.209 ; 14.209 ;
+; card_to_play[1]       ; total_value[1] ; 11.751 ; 11.751 ; 11.751 ; 11.751 ;
+; card_to_play[1]       ; total_value[2] ; 11.888 ; 11.888 ; 11.888 ; 11.888 ;
+; card_to_play[1]       ; total_value[3] ; 11.844 ; 11.844 ; 11.844 ; 11.844 ;
+; card_to_play[1]       ; total_value[4] ; 12.268 ; 12.268 ; 12.268 ; 12.268 ;
+; card_to_play[2]       ; legal_play     ; 14.387 ; 14.387 ; 14.387 ; 14.387 ;
+; card_to_play[2]       ; total_value[2] ; 11.715 ; 11.715 ; 11.715 ; 11.715 ;
+; card_to_play[2]       ; total_value[3] ; 12.022 ; 12.022 ; 12.022 ; 12.022 ;
+; card_to_play[2]       ; total_value[4] ; 12.446 ; 12.446 ; 12.446 ; 12.446 ;
+; card_to_play[3]       ; legal_play     ; 14.020 ; 14.020 ; 14.020 ; 14.020 ;
+; card_to_play[3]       ; total_value[3] ; 11.302 ; 11.302 ; 11.302 ; 11.302 ;
+; card_to_play[3]       ; total_value[4] ; 12.079 ; 12.079 ; 12.079 ; 12.079 ;
+; card_to_play[4]       ; legal_play     ; 13.207 ; 13.207 ; 13.207 ; 13.207 ;
+; card_to_play[4]       ; total_value[4] ; 11.266 ; 11.266 ; 11.266 ; 11.266 ;
+; card_to_play[5]       ; legal_play     ; 14.637 ; 14.637 ; 14.637 ; 14.637 ;
+; card_to_play[5]       ; total_value[1] ; 12.709 ; 12.709 ; 12.709 ; 12.709 ;
+; card_to_play[5]       ; total_value[2] ; 12.456 ; 12.456 ; 12.456 ; 12.456 ;
+; card_to_play[5]       ; total_value[3] ; 12.609 ; 12.609 ; 12.609 ; 12.609 ;
+; card_to_play[5]       ; total_value[4] ; 12.696 ; 12.696 ; 12.696 ; 12.696 ;
+; play_pile_top_card[1] ; legal_play     ; 20.412 ; 20.412 ; 20.412 ; 20.412 ;
+; play_pile_top_card[1] ; total_value[0] ; 16.765 ; 16.765 ; 16.765 ; 16.765 ;
+; play_pile_top_card[1] ; total_value[1] ; 18.439 ; 18.439 ; 18.439 ; 18.439 ;
+; play_pile_top_card[1] ; total_value[2] ; 18.186 ; 18.186 ; 18.186 ; 18.186 ;
+; play_pile_top_card[1] ; total_value[3] ; 18.340 ; 18.340 ; 18.340 ; 18.340 ;
+; play_pile_top_card[1] ; total_value[4] ; 18.471 ; 18.471 ; 18.471 ; 18.471 ;
+; play_pile_top_card[2] ; legal_play     ; 20.872 ; 20.872 ; 20.872 ; 20.872 ;
+; play_pile_top_card[2] ; total_value[0] ; 17.225 ; 17.225 ; 17.225 ; 17.225 ;
+; play_pile_top_card[2] ; total_value[1] ; 18.899 ; 18.899 ; 18.899 ; 18.899 ;
+; play_pile_top_card[2] ; total_value[2] ; 18.646 ; 18.646 ; 18.646 ; 18.646 ;
+; play_pile_top_card[2] ; total_value[3] ; 18.800 ; 18.800 ; 18.800 ; 18.800 ;
+; play_pile_top_card[2] ; total_value[4] ; 18.931 ; 18.931 ; 18.931 ; 18.931 ;
+; play_pile_top_card[3] ; legal_play     ; 21.254 ; 21.254 ; 21.254 ; 21.254 ;
+; play_pile_top_card[3] ; total_value[0] ; 17.607 ; 17.607 ; 17.607 ; 17.607 ;
+; play_pile_top_card[3] ; total_value[1] ; 19.281 ; 19.281 ; 19.281 ; 19.281 ;
+; play_pile_top_card[3] ; total_value[2] ; 19.028 ; 19.028 ; 19.028 ; 19.028 ;
+; play_pile_top_card[3] ; total_value[3] ; 19.182 ; 19.182 ; 19.182 ; 19.182 ;
+; play_pile_top_card[3] ; total_value[4] ; 19.313 ; 19.313 ; 19.313 ; 19.313 ;
+; play_pile_top_card[4] ; legal_play     ; 20.490 ; 20.490 ; 20.490 ; 20.490 ;
+; play_pile_top_card[4] ; total_value[0] ; 16.843 ; 16.843 ; 16.843 ; 16.843 ;
+; play_pile_top_card[4] ; total_value[1] ; 18.517 ; 18.517 ; 18.517 ; 18.517 ;
+; play_pile_top_card[4] ; total_value[2] ; 18.264 ; 18.264 ; 18.264 ; 18.264 ;
+; play_pile_top_card[4] ; total_value[3] ; 18.418 ; 18.418 ; 18.418 ; 18.418 ;
+; play_pile_top_card[4] ; total_value[4] ; 18.549 ; 18.549 ; 18.549 ; 18.549 ;
+; play_pile_top_card[5] ; legal_play     ; 19.458 ; 19.458 ; 19.458 ; 19.458 ;
+; play_pile_top_card[5] ; total_value[0] ; 15.811 ; 15.811 ; 15.811 ; 15.811 ;
+; play_pile_top_card[5] ; total_value[1] ; 17.485 ; 17.485 ; 17.485 ; 17.485 ;
+; play_pile_top_card[5] ; total_value[2] ; 17.232 ; 17.232 ; 17.232 ; 17.232 ;
+; play_pile_top_card[5] ; total_value[3] ; 17.386 ; 17.386 ; 17.386 ; 17.386 ;
+; play_pile_top_card[5] ; total_value[4] ; 17.517 ; 17.517 ; 17.517 ; 17.517 ;
++-----------------------+----------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------------+
+; Minimum Progagation Delay                                              ;
++-----------------------+----------------+-------+-------+-------+-------+
+; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+----------------+-------+-------+-------+-------+
+; card_to_play[0]       ; legal_play     ; 6.186 ; 6.186 ; 6.186 ; 6.186 ;
+; card_to_play[0]       ; total_value[0] ; 5.817 ; 5.817 ; 5.817 ; 5.817 ;
+; card_to_play[0]       ; total_value[1] ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; card_to_play[0]       ; total_value[2] ; 5.904 ; 5.904 ; 5.904 ; 5.904 ;
+; card_to_play[0]       ; total_value[3] ; 5.905 ; 5.905 ; 5.905 ; 5.905 ;
+; card_to_play[0]       ; total_value[4] ; 6.063 ; 6.063 ; 6.063 ; 6.063 ;
+; card_to_play[1]       ; legal_play     ; 5.997 ; 5.997 ; 5.997 ; 5.997 ;
+; card_to_play[1]       ; total_value[1] ; 5.771 ; 5.771 ; 5.771 ; 5.771 ;
+; card_to_play[1]       ; total_value[2] ; 5.791 ; 5.791 ; 5.791 ; 5.791 ;
+; card_to_play[1]       ; total_value[3] ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; card_to_play[1]       ; total_value[4] ; 5.950 ; 5.950 ; 5.950 ; 5.950 ;
+; card_to_play[2]       ; legal_play     ; 6.014 ; 6.014 ; 6.014 ; 6.014 ;
+; card_to_play[2]       ; total_value[2] ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
+; card_to_play[2]       ; total_value[3] ; 5.838 ; 5.838 ; 5.838 ; 5.838 ;
+; card_to_play[2]       ; total_value[4] ; 5.996 ; 5.996 ; 5.996 ; 5.996 ;
+; card_to_play[3]       ; legal_play     ; 6.079 ; 6.079 ; 6.079 ; 6.079 ;
+; card_to_play[3]       ; total_value[3] ; 5.587 ; 5.587 ; 5.587 ; 5.587 ;
+; card_to_play[3]       ; total_value[4] ; 5.850 ; 5.850 ; 5.850 ; 5.850 ;
+; card_to_play[4]       ; legal_play     ; 6.284 ; 6.284 ; 6.284 ; 6.284 ;
+; card_to_play[4]       ; total_value[4] ; 5.588 ; 5.588 ; 5.588 ; 5.588 ;
+; card_to_play[5]       ; legal_play     ; 6.028 ; 6.028 ; 6.028 ; 6.028 ;
+; card_to_play[5]       ; total_value[1] ; 6.024 ; 6.024 ; 6.024 ; 6.024 ;
+; card_to_play[5]       ; total_value[2] ; 5.746 ; 5.746 ; 5.746 ; 5.746 ;
+; card_to_play[5]       ; total_value[3] ; 5.705 ; 5.705 ; 5.705 ; 5.705 ;
+; card_to_play[5]       ; total_value[4] ; 5.796 ; 5.796 ; 5.796 ; 5.796 ;
+; play_pile_top_card[1] ; legal_play     ; 6.572 ; 6.572 ; 6.572 ; 6.572 ;
+; play_pile_top_card[1] ; total_value[0] ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; play_pile_top_card[1] ; total_value[1] ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
+; play_pile_top_card[1] ; total_value[2] ; 6.494 ; 6.494 ; 6.494 ; 6.494 ;
+; play_pile_top_card[1] ; total_value[3] ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; play_pile_top_card[1] ; total_value[4] ; 6.544 ; 6.544 ; 6.544 ; 6.544 ;
+; play_pile_top_card[2] ; legal_play     ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; play_pile_top_card[2] ; total_value[0] ; 6.238 ; 6.238 ; 6.238 ; 6.238 ;
+; play_pile_top_card[2] ; total_value[1] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
+; play_pile_top_card[2] ; total_value[2] ; 6.554 ; 6.554 ; 6.554 ; 6.554 ;
+; play_pile_top_card[2] ; total_value[3] ; 6.511 ; 6.511 ; 6.511 ; 6.511 ;
+; play_pile_top_card[2] ; total_value[4] ; 6.604 ; 6.604 ; 6.604 ; 6.604 ;
+; play_pile_top_card[3] ; legal_play     ; 6.736 ; 6.736 ; 6.736 ; 6.736 ;
+; play_pile_top_card[3] ; total_value[0] ; 6.342 ; 6.342 ; 6.342 ; 6.342 ;
+; play_pile_top_card[3] ; total_value[1] ; 6.510 ; 6.510 ; 6.510 ; 6.510 ;
+; play_pile_top_card[3] ; total_value[2] ; 6.658 ; 6.658 ; 6.658 ; 6.658 ;
+; play_pile_top_card[3] ; total_value[3] ; 6.610 ; 6.610 ; 6.610 ; 6.610 ;
+; play_pile_top_card[3] ; total_value[4] ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
+; play_pile_top_card[4] ; legal_play     ; 6.636 ; 6.636 ; 6.636 ; 6.636 ;
+; play_pile_top_card[4] ; total_value[0] ; 6.242 ; 6.242 ; 6.242 ; 6.242 ;
+; play_pile_top_card[4] ; total_value[1] ; 6.410 ; 6.410 ; 6.410 ; 6.410 ;
+; play_pile_top_card[4] ; total_value[2] ; 6.558 ; 6.558 ; 6.558 ; 6.558 ;
+; play_pile_top_card[4] ; total_value[3] ; 6.515 ; 6.515 ; 6.515 ; 6.515 ;
+; play_pile_top_card[4] ; total_value[4] ; 6.608 ; 6.608 ; 6.608 ; 6.608 ;
+; play_pile_top_card[5] ; legal_play     ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; play_pile_top_card[5] ; total_value[0] ; 6.057 ; 6.057 ; 6.057 ; 6.057 ;
+; play_pile_top_card[5] ; total_value[1] ; 6.225 ; 6.225 ; 6.225 ; 6.225 ;
+; play_pile_top_card[5] ; total_value[2] ; 6.373 ; 6.373 ; 6.373 ; 6.373 ;
+; play_pile_top_card[5] ; total_value[3] ; 6.330 ; 6.330 ; 6.330 ; 6.330 ;
+; play_pile_top_card[5] ; total_value[4] ; 6.423 ; 6.423 ; 6.423 ; 6.423 ;
++-----------------------+----------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                           ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; play_pile_top_card[0] ; play_pile_top_card[0] ; 716      ; 716      ; 716      ; 716      ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                            ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; play_pile_top_card[0] ; play_pile_top_card[0] ; 716      ; 716      ; 716      ; 716      ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; play_pile_top_card[0] ; play_pile_top_card[0] ; 30       ; 30       ; 30       ; 30       ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                         ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; play_pile_top_card[0] ; play_pile_top_card[0] ; 30       ; 30       ; 30       ; 30       ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 120   ; 120  ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 103   ; 103  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 16 15:14:01 2017
+Info: Command: quartus_sta g21_lab4 -c g21_lab4
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 10 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'g21_lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name play_pile_top_card[0] play_pile_top_card[0]
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: Equal0~0  from: datab  to: combout
+    Info (332098): Cell: Equal0~0  from: datad  to: combout
+    Info (332098): Cell: Equal0~1  from: dataa  to: combout
+    Info (332098): Cell: Equal0~1  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst1|inst29|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst1|inst30|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: dataa  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst16~0  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst16~0  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst25|inst13~0  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst25|inst16~3  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datab  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst|inst23  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst|inst23  from: datad  to: combout
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -6.727
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -6.727       -34.965 play_pile_top_card[0] 
+Info (332146): Worst-case hold slack is -4.113
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -4.113       -20.001 play_pile_top_card[0] 
+Info (332146): Worst-case recovery slack is -1.112
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.112        -1.112 play_pile_top_card[0] 
+Info (332146): Worst-case removal slack is -5.596
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -5.596        -5.596 play_pile_top_card[0] 
+Info (332146): Worst-case minimum pulse width slack is -2.513
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.513      -203.571 play_pile_top_card[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: Equal0~0  from: datab  to: combout
+    Info (332098): Cell: Equal0~0  from: datad  to: combout
+    Info (332098): Cell: Equal0~1  from: dataa  to: combout
+    Info (332098): Cell: Equal0~1  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst1|inst29|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst1|inst30|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: dataa  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst13  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst16~0  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst24|inst16~0  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst25|inst13~0  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst25|inst16~3  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datab  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst26|inst13~2  from: datad  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst|inst23  from: datac  to: combout
+    Info (332098): Cell: modulo_top|inst5|inst|inst23  from: datad  to: combout
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.988
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.988        -9.634 play_pile_top_card[0] 
+Info (332146): Worst-case hold slack is -2.071
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.071       -10.063 play_pile_top_card[0] 
+Info (332146): Worst-case recovery slack is 0.571
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.571         0.000 play_pile_top_card[0] 
+Info (332146): Worst-case removal slack is -2.550
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.550        -2.550 play_pile_top_card[0] 
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222       -28.258 play_pile_top_card[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 514 megabytes
+    Info: Processing ended: Thu Nov 16 15:14:03 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

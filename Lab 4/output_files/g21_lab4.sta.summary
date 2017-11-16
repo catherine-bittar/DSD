@@ -1,0 +1,45 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'play_pile_top_card[0]'
+Slack : -6.727
+TNS   : -34.965
+
+Type  : Slow Model Hold 'play_pile_top_card[0]'
+Slack : -4.113
+TNS   : -20.001
+
+Type  : Slow Model Recovery 'play_pile_top_card[0]'
+Slack : -1.112
+TNS   : -1.112
+
+Type  : Slow Model Removal 'play_pile_top_card[0]'
+Slack : -5.596
+TNS   : -5.596
+
+Type  : Slow Model Minimum Pulse Width 'play_pile_top_card[0]'
+Slack : -2.513
+TNS   : -203.571
+
+Type  : Fast Model Setup 'play_pile_top_card[0]'
+Slack : -1.988
+TNS   : -9.634
+
+Type  : Fast Model Hold 'play_pile_top_card[0]'
+Slack : -2.071
+TNS   : -10.063
+
+Type  : Fast Model Recovery 'play_pile_top_card[0]'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Fast Model Removal 'play_pile_top_card[0]'
+Slack : -2.550
+TNS   : -2.550
+
+Type  : Fast Model Minimum Pulse Width 'play_pile_top_card[0]'
+Slack : -1.222
+TNS   : -28.258
+
+------------------------------------------------------------
