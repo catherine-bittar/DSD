@@ -59,7 +59,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 	card_val <= card_to_play(4 downto 0);
 	card_val_int <= unsigned(card_val);
 	eleven_int <= "1011";
-	ten_int <= "0110";
+	ten_int <= "1010";
 	
 	card_val_assign: process(face_top, top_val, card_val_int, face_top_int, eleven_int, one_int, fake_add, try_add, total_value_temp)
 	begin
@@ -68,8 +68,11 @@ begin-- use g21_Modulo_13 component to assign signal values
 			top_val <= face_top_int + one_int;
 			try_add <= top_val + card_val_int;
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
-				total_value_temp <= try_add + ten_int;
+				total_value_temp <= try_add - ten_int;
 				new_ace <= '0';
+			elsif (ace_in_hand = '1' and try_add <= "10101") then
+				new_ace <= '1';
+				total_value_temp <= try_add;
 			else
 				total_value_temp <= try_add;
 				new_ace <= '0';
@@ -81,6 +84,9 @@ begin-- use g21_Modulo_13 component to assign signal values
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
 				total_value_temp <= try_add - ten_int;
 				new_ace <= '0';
+			elsif (ace_in_hand = '1' and try_add <= "10101") then
+				new_ace <= '1';
+				total_value_temp <= try_add;
 			else
 				total_value_temp <= try_add;
 				new_ace <= '0';

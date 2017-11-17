@@ -257,7 +257,7 @@ TRANSITION_LIST("card_to_play[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10000.0;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 
@@ -275,7 +275,7 @@ TRANSITION_LIST("card_to_play[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10000.0;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 
@@ -302,7 +302,7 @@ TRANSITION_LIST("card_to_play[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10000.0;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 

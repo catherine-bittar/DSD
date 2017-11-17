@@ -4,22 +4,22 @@ K3
 cModel Technology
 Z0 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
 vg21_rules
-Z1 !s100 OGlaFeEQc>C_o[5YN^<iP3
-Z2 IMeMNNH:fPHB1Cc5gSk8L:1
-Z3 VNWGOeQC2H^BMM6WKaWUh?3
-Z4 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
-Z5 w1510863733
-Z6 8g21_lab4.vo
-Z7 Fg21_lab4.vo
+Z1 IXF<gRTM2bdE:e<kN[RmbJ2
+Z2 VNWGOeQC2H^BMM6WKaWUh?3
+Z3 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4\simulation\qsim
+Z4 w1510895634
+Z5 8g21_lab4.vo
+Z6 Fg21_lab4.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|g21_lab4.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|g21_lab4.vo|
+Z9 o-work work -O0
 !i10b 1
+Z10 !s100 deM@Yk5e=m97fhWYNL=Lc3
 !s85 0
-Z11 !s108 1510863734.174000
+Z11 !s108 1510895635.902000
 Z12 !s107 g21_lab4.vo|
 !s101 -O0
 vg21_rules_vlg_check_tst
@@ -27,55 +27,55 @@ vg21_rules_vlg_check_tst
 Z13 !s100 B7aPlBXVhieGiz[4d:7zW2
 Z14 IEVIkNQHT8O58aClPYiDoh0
 Z15 V7=^6khf4N9koD<RW[SeaJ1
+R3
 R4
-Z16 w1510863732
-Z17 8g21_lab4.vt
-Z18 Fg21_lab4.vt
+Z16 8g21_lab4.vt
+Z17 Fg21_lab4.vt
 L0 59
-R8
+R7
 r1
 !s85 0
 31
-Z19 !s108 1510863734.283000
-Z20 !s107 g21_lab4.vt|
-Z21 !s90 -work|work|g21_lab4.vt|
+Z18 !s108 1510895636.011000
+Z19 !s107 g21_lab4.vt|
+Z20 !s90 -work|work|g21_lab4.vt|
 !s101 -O0
-R10
+R9
 vg21_rules_vlg_sample_tst
 !i10b 1
-Z22 !s100 [g<1GTT^HA5I>i[daI8Qo0
-Z23 IZo<iWZNVH?;k]1?5f]d3]1
-Z24 Vi95XkZ@4IMb0R=WU<9e]o2
+Z21 !s100 [g<1GTT^HA5I>i[daI8Qo0
+Z22 IZo<iWZNVH?;k]1?5f]d3]1
+Z23 Vi95XkZ@4IMb0R=WU<9e]o2
+R3
 R4
 R16
 R17
-R18
 L0 29
-R8
+R7
 r1
 !s85 0
 31
+R18
 R19
 R20
-R21
 !s101 -O0
-R10
+R9
 vg21_rules_vlg_vec_tst
 !i10b 1
-!s100 cBmoifhzHB5G<mJK5c8WX3
-IJGgGz26CfHb3?4M2z^_nT0
-Z25 V@WmFG5_;Ubo;OX3T8TOU51
+Z24 !s100 a3L1n]4]@N>=n`3HOco:11
+Z25 IJzVZZ3SAGc9BZB4nc;>Nn3
+Z26 V@WmFG5_;Ubo;OX3T8TOU51
+R3
 R4
 R16
 R17
-R18
-Z26 L0 277
-R8
+Z27 L0 277
+R7
 r1
 !s85 0
 31
+R18
 R19
 R20
-R21
 !s101 -O0
-R10
+R9

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab4
-Thu Nov 16 15:13:52 2017
+Fri Nov 17 00:13:33 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 16 15:13:52 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 17 00:13:33 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab4                                        ;
 ; Top-level Entity Name              ; g21_rules                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 67                                              ;
-;     Total combinational functions  ; 67                                              ;
+; Total logic elements               ; 61                                              ;
+;     Total combinational functions  ; 61                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 19                                              ;
@@ -145,63 +145,57 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; g21_rules.vhd                    ; yes             ; User VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_rules.vhd     ;         ;
-; g21_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_Modulo_13.bdf ;         ;
-; g21_1bitAdder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_1bitAdder.bdf ;         ;
-; g21_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/g21_adder.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; g21_rules.vhd                    ; yes             ; User VHDL File                     ; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/g21_rules.vhd     ;         ;
+; g21_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/g21_Modulo_13.bdf ;         ;
+; g21_1bitAdder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/g21_1bitAdder.bdf ;         ;
+; g21_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/g21_adder.bdf     ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 67       ;
-;                                             ;          ;
-; Total combinational functions               ; 67       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 32       ;
-;     -- 3 input functions                    ; 23       ;
-;     -- <=2 input functions                  ; 12       ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 56       ;
-;     -- arithmetic mode                      ; 11       ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 19       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; Equal0~1 ;
-; Maximum fan-out                             ; 11       ;
-; Total fan-out                               ; 225      ;
-; Average fan-out                             ; 2.62     ;
-+---------------------------------------------+----------+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 61                    ;
+;                                             ;                       ;
+; Total combinational functions               ; 61                    ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 27                    ;
+;     -- 3 input functions                    ; 26                    ;
+;     -- <=2 input functions                  ; 8                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 53                    ;
+;     -- arithmetic mode                      ; 8                     ;
+;                                             ;                       ;
+; Total registers                             ; 0                     ;
+;     -- Dedicated logic registers            ; 0                     ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 19                    ;
+; Embedded Multiplier 9-bit elements          ; 0                     ;
+; Maximum fan-out node                        ; total_value_temp[4]~2 ;
+; Maximum fan-out                             ; 11                    ;
+; Total fan-out                               ; 207                   ;
+; Average fan-out                             ; 2.59                  ;
++---------------------------------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +203,7 @@ applicable agreement for further details.
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
-; |g21_rules                      ; 67 (51)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |g21_rules                                                               ; work         ;
+; |g21_rules                      ; 61 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |g21_rules                                                               ; work         ;
 ;    |g21_Modulo_13:modulo_top|   ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_rules|g21_Modulo_13:modulo_top                                      ; work         ;
 ;       |g21_adder:inst1|         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_rules|g21_Modulo_13:modulo_top|g21_adder:inst1                      ; work         ;
 ;          |g21_1bitAdder:inst26| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26 ; work         ;
@@ -228,23 +222,22 @@ applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; try_add[2]                                          ; new_ace             ; yes                    ;
-; try_add[4]                                          ; new_ace             ; yes                    ;
-; try_add[3]                                          ; new_ace             ; yes                    ;
-; try_add[1]                                          ; new_ace             ; yes                    ;
-; fake_add[4]                                         ; Equal0              ; yes                    ;
-; fake_add[3]                                         ; Equal0              ; yes                    ;
-; fake_add[1]                                         ; Equal0              ; yes                    ;
-; fake_add[2]                                         ; Equal0              ; yes                    ;
-; try_add[0]                                          ; new_ace             ; yes                    ;
-; new_ace                                             ; Equal0              ; yes                    ;
-; Number of user-specified and inferred latches = 10  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; fake_add[4]                                        ; Equal0              ; yes                    ;
+; fake_add[3]                                        ; Equal0              ; yes                    ;
+; fake_add[1]                                        ; Equal0              ; yes                    ;
+; fake_add[2]                                        ; Equal0              ; yes                    ;
+; try_add[4]                                         ; total_value_temp[4] ; yes                    ;
+; try_add[3]                                         ; total_value_temp[4] ; yes                    ;
+; try_add[1]                                         ; total_value_temp[4] ; yes                    ;
+; try_add[2]                                         ; total_value_temp[4] ; yes                    ;
+; try_add[0]                                         ; total_value_temp[4] ; yes                    ;
+; Number of user-specified and inferred latches = 9  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -268,7 +261,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |g21_rules|total_value_temp[4] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_rules|total_value_temp[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -287,9 +280,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 16 15:13:50 2017
+    Info: Processing started: Fri Nov 17 00:13:31 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab4 -c g21_lab4
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file g21_rules.vhd
     Info (12022): Found design unit 1: g21_rules-game_rules
     Info (12023): Found entity 1: g21_rules
@@ -309,10 +302,12 @@ Info (12127): Elaborating entity "g21_rules" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at g21_rules.vhd(25): object "suit_top" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at g21_rules.vhd(70): signal "ace_in_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at g21_rules.vhd(71): signal "ten_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_rules.vhd(81): signal "ace_in_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_rules.vhd(82): signal "ten_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_rules.vhd(104): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_rules.vhd(107): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(73): signal "ace_in_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(84): signal "ace_in_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(85): signal "ten_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(87): signal "ace_in_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(110): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_rules.vhd(113): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at g21_rules.vhd(64): inferring latch(es) for signal or variable "top_val", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at g21_rules.vhd(64): inferring latch(es) for signal or variable "try_add", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at g21_rules.vhd(64): inferring latch(es) for signal or variable "total_value_temp", which holds its previous value in one or more paths through the process
@@ -346,21 +341,20 @@ Warning (14026): LATCH primitive "total_value_temp[3]" is permanently enabled
 Warning (14026): LATCH primitive "total_value_temp[1]" is permanently enabled
 Warning (14026): LATCH primitive "total_value_temp[2]" is permanently enabled
 Warning (14026): LATCH primitive "total_value_temp[0]" is permanently enabled
+Warning (14026): LATCH primitive "new_ace" is permanently enabled
 Warning (14026): LATCH primitive "top_val[3]" is permanently enabled
 Warning (14026): LATCH primitive "top_val[2]" is permanently enabled
 Warning (14026): LATCH primitive "top_val[1]" is permanently enabled
 Warning (14026): LATCH primitive "top_val[0]" is permanently enabled
-Warning (13012): Latch new_ace has unsafe behavior
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26|inst13
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 67 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 535 megabytes
-    Info: Processing ended: Thu Nov 16 15:13:52 2017
+    Info (21061): Implemented 61 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 567 megabytes
+    Info: Processing ended: Fri Nov 17 00:13:33 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
