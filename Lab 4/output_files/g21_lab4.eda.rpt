@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g21_lab4
-Fri Nov 17 00:13:55 2017
+Fri Nov 17 14:04:40 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 17 00:13:55 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 17 14:04:40 2017 ;
 ; Revision Name             ; g21_lab4                              ;
-; Top-level Entity Name     ; g21_rules                             ;
+; Top-level Entity Name     ; g21_test_bed                          ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                        ;
-+-----------------------------------------------------------------------------------+
-; Generated Files                                                                   ;
-+-----------------------------------------------------------------------------------+
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/simulation/modelsim/g21_lab4.vo         ;
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/simulation/modelsim/g21_lab4_fast.vo    ;
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/simulation/modelsim/g21_lab4_v.sdo      ;
-; C:/Users/bitta/Documents/GitHub/DSD/Lab 4/simulation/modelsim/g21_lab4_v_fast.sdo ;
-+-----------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                          ;
++-----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                     ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/simulation/modelsim/g21_lab4.vo         ;
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/simulation/modelsim/g21_lab4_fast.vo    ;
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/simulation/modelsim/g21_lab4_v.sdo      ;
+; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/simulation/modelsim/g21_lab4_v_fast.sdo ;
++-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,41 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 17 00:13:54 2017
+    Info: Processing started: Fri Nov 17 14:04:37 2017
 Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab4 -c g21_lab4
-Info (204026): Generated files "g21_lab4.vo", "g21_lab4_fast.vo", "g21_lab4_v.sdo" and "g21_lab4_v_fast.sdo" in directory "C:/Users/bitta/Documents/GitHub/DSD/Lab 4/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 439 megabytes
-    Info: Processing ended: Fri Nov 17 00:13:55 2017
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Warning (125092): Tcl Script File INIT_lpm_constant.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE INIT_lpm_constant.qip
+Warning (125092): Tcl Script File lpm_compare0.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_compare0.qip
+Warning (125092): Tcl Script File lpm_compare1.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_compare1.qip
+Warning (125092): Tcl Script File lpm_constantdata.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_constantdata.qip
+Warning (125092): Tcl Script File lpm_mux0.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_mux0.qip
+Warning (125092): Tcl Script File lpm_mux1.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_mux1.qip
+Warning (125092): Tcl Script File lpm_mux2.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE lpm_mux2.qip
+Warning (125092): Tcl Script File MODE_Select_lpm_mux.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE MODE_Select_lpm_mux.qip
+Warning (125092): Tcl Script File NOP_lpm_constant.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE NOP_lpm_constant.qip
+Warning (125092): Tcl Script File POP_lpm_constant.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE POP_lpm_constant.qip
+Warning (125092): Tcl Script File PUSH_lpm_constant.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE PUSH_lpm_constant.qip
+Warning (125092): Tcl Script File SPG_lpm_compare.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SPG_lpm_compare.qip
+Warning (125092): Tcl Script File SPG_lpm_counter.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SPG_lpm_counter.qip
+Warning (125092): Tcl Script File StackCounter_lpm_counter.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE StackCounter_lpm_counter.qip
+Info (204026): Generated files "g21_lab4.vo", "g21_lab4_fast.vo", "g21_lab4_v.sdo" and "g21_lab4_v_fast.sdo" in directory "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 4/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 443 megabytes
+    Info: Processing ended: Fri Nov 17 14:04:40 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

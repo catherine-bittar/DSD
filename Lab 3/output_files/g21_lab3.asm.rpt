@@ -1,5 +1,5 @@
 Assembler report for g21_lab3
-Fri Nov 10 13:42:28 2017
+Fri Nov 17 15:05:25 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -39,9 +39,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 10 13:42:28 2017 ;
+; Assembler Status      ; Successful - Fri Nov 17 15:05:25 2017 ;
 ; Revision Name         ; g21_lab3                              ;
-; Top-level Entity Name ; g21_test_bed                          ;
+; Top-level Entity Name ; g21_test_bed_lab4                     ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -105,8 +105,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                        ;
 +----------------+------------------------------------------------------------------------------------------------+
 ; Device         ; EP2C20F484C7                                                                                   ;
-; JTAG usercode  ; 0x0028EC57                                                                                     ;
-; Checksum       ; 0x0028EC57                                                                                     ;
+; JTAG usercode  ; 0x002A789A                                                                                     ;
+; Checksum       ; 0x002A789A                                                                                     ;
 +----------------+------------------------------------------------------------------------------------------------+
 
 
@@ -117,7 +117,7 @@ applicable agreement for further details.
 +--------------------+--------------------------------------------------------------------------------------------+
 ; Device             ; EPCS16                                                                                     ;
 ; JTAG usercode      ; 0x00000000                                                                                 ;
-; Checksum           ; 0x1DC4280B                                                                                 ;
+; Checksum           ; 0x1DBFDD43                                                                                 ;
 ; Compression Ratio  ; 2                                                                                          ;
 +--------------------+--------------------------------------------------------------------------------------------+
 
@@ -128,14 +128,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 10 13:42:25 2017
+    Info: Processing started: Fri Nov 17 15:05:21 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 475 megabytes
-    Info: Processing ended: Fri Nov 10 13:42:28 2017
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 478 megabytes
+    Info: Processing ended: Fri Nov 17 15:05:25 2017
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

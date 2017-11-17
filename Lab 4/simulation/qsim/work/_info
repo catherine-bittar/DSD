@@ -3,79 +3,235 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
-vg21_rules
-Z1 IXF<gRTM2bdE:e<kN[RmbJ2
-Z2 VNWGOeQC2H^BMM6WKaWUh?3
-Z3 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4\simulation\qsim
-Z4 w1510895634
-Z5 8g21_lab4.vo
-Z6 Fg21_lab4.vo
+vg21_dealer_FSM
+Z1 !s100 GOLFD=ho[KjL>JUjE9b2I0
+Z2 I;NO]iY6FhD4zMThc]K22]3
+Z3 V__iL@ADXkXZg5Q:bTC>ma3
+Z4 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
+Z5 w1510943236
+Z6 8g21_lab4.vo
+Z7 Fg21_lab4.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|g21_lab4.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|g21_lab4.vo|
+Z10 o-work work -O0
+Z11 ng21_dealer_@f@s@m
+Z12 !s108 1510943237.973000
+Z13 !s107 g21_lab4.vo|
 !i10b 1
-Z10 !s100 deM@Yk5e=m97fhWYNL=Lc3
 !s85 0
-Z11 !s108 1510895635.902000
-Z12 !s107 g21_lab4.vo|
+!s101 -O0
+vg21_dealer_FSM_vlg_check_tst
+Z14 !s100 I@R5TmW<zWDm3bDB`SHFO3
+Z15 I8e^J4c@AiE1bRXU4:eWM]1
+Z16 V]AJz]A:Ccjf8^RK13I^YU1
+R4
+Z17 w1510943235
+Z18 8g21_lab4.vt
+Z19 Fg21_lab4.vt
+L0 61
+R8
+r1
+31
+Z20 !s108 1510943238.113000
+Z21 !s107 g21_lab4.vt|
+Z22 !s90 -work|work|g21_lab4.vt|
+R10
+Z23 ng21_dealer_@f@s@m_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_dealer_FSM_vlg_sample_tst
+Z24 !s100 _=QZEPbPE0R>l]lkBUlji2
+Z25 I=GVO^3IKE@[gK]DobXbf83
+Z26 V<;1b7@a=KHN5kmanN@LL30
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 ng21_dealer_@f@s@m_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_dealer_FSM_vlg_vec_tst
+Z28 !s100 YUHfaHoO?em5e<a1gj@?F2
+Z29 IdOO^Sd^FGaJZBL3moEdC70
+Z30 V=U`H]Og8czmRiEn`kR0_P2
+R4
+R17
+R18
+R19
+Z31 L0 156
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z32 ng21_dealer_@f@s@m_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_rules
+Z33 IXF<gRTM2bdE:e<kN[RmbJ2
+Z34 VNWGOeQC2H^BMM6WKaWUh?3
+Z35 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4\simulation\qsim
+Z36 w1510895634
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z37 !s100 deM@Yk5e=m97fhWYNL=Lc3
+Z38 !s108 1510895635.902000
+R13
+!i10b 1
+!s85 0
 !s101 -O0
 vg21_rules_vlg_check_tst
-!i10b 1
-Z13 !s100 B7aPlBXVhieGiz[4d:7zW2
-Z14 IEVIkNQHT8O58aClPYiDoh0
-Z15 V7=^6khf4N9koD<RW[SeaJ1
-R3
-R4
-Z16 8g21_lab4.vt
-Z17 Fg21_lab4.vt
+Z39 !s100 B7aPlBXVhieGiz[4d:7zW2
+Z40 IEVIkNQHT8O58aClPYiDoh0
+Z41 V7=^6khf4N9koD<RW[SeaJ1
+R35
+R36
+R18
+R19
 L0 59
-R7
+R8
 r1
-!s85 0
 31
-Z18 !s108 1510895636.011000
-Z19 !s107 g21_lab4.vt|
-Z20 !s90 -work|work|g21_lab4.vt|
+Z42 !s108 1510895636.011000
+R21
+R22
+R10
+!i10b 1
+!s85 0
 !s101 -O0
-R9
 vg21_rules_vlg_sample_tst
-!i10b 1
-Z21 !s100 [g<1GTT^HA5I>i[daI8Qo0
-Z22 IZo<iWZNVH?;k]1?5f]d3]1
-Z23 Vi95XkZ@4IMb0R=WU<9e]o2
-R3
-R4
-R16
-R17
+Z43 !s100 [g<1GTT^HA5I>i[daI8Qo0
+Z44 IZo<iWZNVH?;k]1?5f]d3]1
+Z45 Vi95XkZ@4IMb0R=WU<9e]o2
+R35
+R36
+R18
+R19
 L0 29
-R7
+R8
 r1
-!s85 0
 31
-R18
-R19
-R20
-!s101 -O0
-R9
-vg21_rules_vlg_vec_tst
+R42
+R21
+R22
+R10
 !i10b 1
-Z24 !s100 a3L1n]4]@N>=n`3HOco:11
-Z25 IJzVZZ3SAGc9BZB4nc;>Nn3
-Z26 V@WmFG5_;Ubo;OX3T8TOU51
-R3
+!s85 0
+!s101 -O0
+vg21_rules_vlg_vec_tst
+Z46 !s100 a3L1n]4]@N>=n`3HOco:11
+Z47 IJzVZZ3SAGc9BZB4nc;>Nn3
+Z48 V@WmFG5_;Ubo;OX3T8TOU51
+R35
+R36
+R18
+R19
+Z49 L0 277
+R8
+r1
+31
+R42
+R21
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed
+Z50 IPP41gm72=K5>H8=f?d2G13
+Z51 V8hcl:^j?=O=?Ge49]^:X`0
 R4
-R16
-R17
-Z27 L0 277
+Z52 w1510945479
+R6
 R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z53 !s100 <1:jPlW>n=NI;?Q0FB3PU2
+!s85 0
+Z54 !s108 1510945481.491000
+R13
+!s101 -O0
+vg21_test_bed_vlg_check_tst
+!i10b 1
+!s100 28ZBPAha4RAk54Q<:HY=N3
+Io15ENG_jXneaHl7n2DWk@0
+ViN0lB[]0A]zBEZc]cN9_O2
+R4
+Z55 w1510945477
+R18
+R19
+L0 65
+R8
 r1
 !s85 0
 31
+Z56 !s108 1510945481.853000
+Z57 !s107 g21_lab4.vt|
+R22
+!s101 -O0
+R10
+vg21_test_bed_vlg_sample_tst
+!i10b 1
+!s100 XhLIjYnQH9d6eVMn:QgSO0
+IEDon[d4cBAzVR7fZ0A:cV1
+V^YJ`EiRRPT6AjcQA7WjiZ2
+R4
+R55
 R18
 R19
-R20
+L0 29
+R8
+r1
+!s85 0
+31
+R56
+R57
+R22
 !s101 -O0
-R9
+R10
+vg21_test_bed_vlg_vec_tst
+!i10b 1
+!s100 CUg^3@^1fg6F79:N=Un0B3
+ILH037LAe3Df?e@zUi004_1
+Vk]@[WkPP2DCP^[fR1X`F=3
+R4
+R55
+R18
+R19
+L0 333
+R8
+r1
+!s85 0
+31
+R56
+R57
+R22
+!s101 -O0
+R10

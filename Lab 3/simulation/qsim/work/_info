@@ -192,38 +192,57 @@ r1
 31
 R8
 R9
-!i10b 1
 Z59 !s100 :`oL:i0f1]Gno9mKWkd=k3
-!s85 0
 Z60 !s108 1510083132.428000
 R13
-!s101 -O0
-vg21_test_bed_vlg_check_tst
 !i10b 1
-Z61 !s100 ABmj6@R[oH9jCRRUVL>f70
-Z62 IXTRV4Cem1^XUa^l<ogBVU0
-Z63 ViN0lB[]0A]zBEZc]cN9_O2
+!s85 0
+!s101 -O0
+vg21_test_bed_lab4
+Z61 !s100 DM?m=_EEf_YF8izLF9>Em0
+Z62 Il2oCM67Q[jeb2^e@N]zgN1
+Z63 VmF?<]0Q;4cAOfD?E]K1k70
 R3
-Z64 w1510083129
+Z64 w1510949833
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+!s85 0
+Z65 !s108 1510949835.645000
+R13
+!s101 -O0
+vg21_test_bed_lab4_vlg_check_tst
+!i10b 1
+Z66 !s100 HQRY;o^Q<4iJhO`<1E@G92
+Z67 I04ZB8Pol^zj5EGc2f]1=n3
+Z68 Vl7hMAV34SMZ30e2nnh8gF3
+R3
+Z69 w1510949830
 R24
 R25
-L0 65
+L0 67
 R7
 r1
 !s85 0
 31
-Z65 !s108 1510083132.875000
-Z66 !s107 g21_lab3.vt|
+Z70 !s108 1510949836.345000
+Z71 !s107 g21_lab3.vt|
 R28
 !s101 -O0
 R9
-vg21_test_bed_vlg_sample_tst
+vg21_test_bed_lab4_vlg_sample_tst
 !i10b 1
-Z67 !s100 7KM4]89dH2Li59>fZWYa10
-Z68 IC_oCo74_KmCdEV9:^WdGU1
-Z69 V^YJ`EiRRPT6AjcQA7WjiZ2
+Z72 !s100 NXidJfmfB30oBWhT?PCok0
+Z73 I4bDNCPHgTM0ic`9_a3Z;j2
+Z74 VXl^j@6d89n2dIIkb?[Dhf1
 R3
-R64
+R69
 R24
 R25
 L0 29
@@ -231,27 +250,84 @@ R7
 r1
 !s85 0
 31
-R65
-R66
+R70
+R71
 R28
 !s101 -O0
 R9
-vg21_test_bed_vlg_vec_tst
+vg21_test_bed_lab4_vlg_vec_tst
 !i10b 1
-Z70 !s100 =4PHzgV6lFN>SUT`21@Jf1
-Z71 Iz^?fbTo3b8D`7`GQhalBg2
-Z72 Vk]@[WkPP2DCP^[fR1X`F=3
+!s100 9WOAcjag[Ai[I4jNichGF0
+I>W71hbo@iLUE_;GmleA^A2
+Z75 VfP`=Q^ZC<mjHJM`VUJ9DP0
 R3
-R64
+R69
 R24
 R25
-Z73 L0 680
+Z76 L0 566
 R7
 r1
 !s85 0
 31
-R65
-R66
+R70
+R71
 R28
 !s101 -O0
 R9
+vg21_test_bed_vlg_check_tst
+Z77 !s100 ABmj6@R[oH9jCRRUVL>f70
+Z78 IXTRV4Cem1^XUa^l<ogBVU0
+Z79 ViN0lB[]0A]zBEZc]cN9_O2
+R3
+Z80 w1510083129
+R24
+R25
+L0 65
+R7
+r1
+31
+Z81 !s108 1510083132.875000
+R27
+R28
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed_vlg_sample_tst
+Z82 !s100 7KM4]89dH2Li59>fZWYa10
+Z83 IC_oCo74_KmCdEV9:^WdGU1
+Z84 V^YJ`EiRRPT6AjcQA7WjiZ2
+R3
+R80
+R24
+R25
+L0 29
+R7
+r1
+31
+R81
+R27
+R28
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_test_bed_vlg_vec_tst
+Z85 !s100 =4PHzgV6lFN>SUT`21@Jf1
+Z86 Iz^?fbTo3b8D`7`GQhalBg2
+Z87 Vk]@[WkPP2DCP^[fR1X`F=3
+R3
+R80
+R24
+R25
+Z88 L0 680
+R7
+r1
+31
+R81
+R27
+R28
+R9
+!i10b 1
+!s85 0
+!s101 -O0

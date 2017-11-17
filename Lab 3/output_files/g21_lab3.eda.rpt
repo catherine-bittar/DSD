@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g21_lab3
-Fri Nov 10 13:42:36 2017
+Fri Nov 17 15:17:13 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 10 13:42:36 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 17 15:17:13 2017 ;
 ; Revision Name             ; g21_lab3                              ;
-; Top-level Entity Name     ; g21_test_bed                          ;
+; Top-level Entity Name     ; g21_test_bed_lab4                     ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 10 13:42:33 2017
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off g21_lab3 -c g21_lab3
+    Info: Processing started: Fri Nov 17 15:17:11 2017
+Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g21_lab3 -c g21_lab3
 Info (204026): Generated files "g21_lab3.vo", "g21_lab3_fast.vo", "g21_lab3_v.sdo" and "g21_lab3_v_fast.sdo" in directory "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 460 megabytes
-    Info: Processing ended: Fri Nov 10 13:42:36 2017
+    Info: Peak virtual memory: 455 megabytes
+    Info: Processing ended: Fri Nov 17 15:17:14 2017
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

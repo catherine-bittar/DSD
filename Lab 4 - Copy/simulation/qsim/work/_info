@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
+vg21_dealer_FSM
+Z1 !s100 GOLFD=ho[KjL>JUjE9b2I0
+Z2 I;NO]iY6FhD4zMThc]K22]3
+Z3 V__iL@ADXkXZg5Q:bTC>ma3
+Z4 dC:\Users\kevin\Desktop\McGill Work\F2017\ECSE 323\DSD\Lab 4\simulation\qsim
+Z5 w1510943236
+Z6 8g21_lab4.vo
+Z7 Fg21_lab4.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|g21_lab4.vo|
+Z10 o-work work -O0
+Z11 ng21_dealer_@f@s@m
+!i10b 1
+!s85 0
+Z12 !s108 1510943237.973000
+Z13 !s107 g21_lab4.vo|
+!s101 -O0
+vg21_dealer_FSM_vlg_check_tst
+!i10b 1
+Z14 !s100 I@R5TmW<zWDm3bDB`SHFO3
+Z15 I8e^J4c@AiE1bRXU4:eWM]1
+Z16 V]AJz]A:Ccjf8^RK13I^YU1
+R4
+Z17 w1510943235
+Z18 8g21_lab4.vt
+Z19 Fg21_lab4.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1510943238.113000
+Z21 !s107 g21_lab4.vt|
+Z22 !s90 -work|work|g21_lab4.vt|
+!s101 -O0
+R10
+Z23 ng21_dealer_@f@s@m_vlg_check_tst
+vg21_dealer_FSM_vlg_sample_tst
+!i10b 1
+Z24 !s100 _=QZEPbPE0R>l]lkBUlji2
+Z25 I=GVO^3IKE@[gK]DobXbf83
+Z26 V<;1b7@a=KHN5kmanN@LL30
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 ng21_dealer_@f@s@m_vlg_sample_tst
+vg21_dealer_FSM_vlg_vec_tst
+!i10b 1
+Z28 !s100 YUHfaHoO?em5e<a1gj@?F2
+Z29 IdOO^Sd^FGaJZBL3moEdC70
+Z30 V=U`H]Og8czmRiEn`kR0_P2
+R4
+R17
+R18
+R19
+Z31 L0 156
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 ng21_dealer_@f@s@m_vlg_vec_tst
+vg21_rules
+Z33 IXF<gRTM2bdE:e<kN[RmbJ2
+Z34 VNWGOeQC2H^BMM6WKaWUh?3
+Z35 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4\simulation\qsim
+Z36 w1510895634
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z37 !s100 deM@Yk5e=m97fhWYNL=Lc3
+Z38 !s108 1510895635.902000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_rules_vlg_check_tst
+Z39 !s100 B7aPlBXVhieGiz[4d:7zW2
+Z40 IEVIkNQHT8O58aClPYiDoh0
+Z41 V7=^6khf4N9koD<RW[SeaJ1
+R35
+R36
+R18
+R19
+L0 59
+R8
+r1
+31
+Z42 !s108 1510895636.011000
+Z43 !s107 g21_lab4.vt|
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_rules_vlg_sample_tst
+Z44 !s100 [g<1GTT^HA5I>i[daI8Qo0
+Z45 IZo<iWZNVH?;k]1?5f]d3]1
+Z46 Vi95XkZ@4IMb0R=WU<9e]o2
+R35
+R36
+R18
+R19
+L0 29
+R8
+r1
+31
+R42
+R43
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vg21_rules_vlg_vec_tst
+Z47 !s100 a3L1n]4]@N>=n`3HOco:11
+Z48 IJzVZZ3SAGc9BZB4nc;>Nn3
+Z49 V@WmFG5_;Ubo;OX3T8TOU51
+R35
+R36
+R18
+R19
+Z50 L0 277
+R8
+r1
+31
+R42
+R43
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
