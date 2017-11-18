@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Fri Nov 17 15:05:07 2017
+Sat Nov 18 12:15:11 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -18,136 +18,136 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
- 15. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
- 16. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
- 17. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
- 18. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
- 19. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
- 20. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
- 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
- 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
- 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
- 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
- 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
- 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
- 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
- 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
- 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
- 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
- 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
- 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
- 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
- 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
- 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
- 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
- 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
- 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
- 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
- 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
- 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
- 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
- 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
- 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
- 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
- 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
- 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
- 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
- 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
- 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
- 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
- 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
- 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
- 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
- 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
- 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
- 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
- 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
- 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
- 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
- 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
- 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
- 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
- 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
- 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
- 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
- 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
- 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
- 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
- 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
- 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
- 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
- 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
- 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
- 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
- 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
- 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
- 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
- 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
- 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
- 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
- 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
- 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
- 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
- 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
- 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
- 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
- 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
- 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
- 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
- 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
- 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
- 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
- 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
- 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
- 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
- 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
- 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
-100. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
-101. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
-102. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
-103. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
-104. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
-105. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
-106. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
-107. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
-108. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
-109. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
-110. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
-111. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
-112. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
-113. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
-114. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
-115. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
-116. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
-117. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
-118. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
-119. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
-120. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
-121. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
-122. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
-123. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
-124. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
-125. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
-126. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
-127. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
-128. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
-129. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
-130. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
-131. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
-132. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
-133. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
-134. Parameter Settings for User Entity Instance: BUSMUX:inst12
-135. Parameter Settings for User Entity Instance: g21_SPG:inst16|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
-136. Parameter Settings for User Entity Instance: g21_SPG:inst16|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
-137. Parameter Settings for User Entity Instance: g21_SPG:inst16|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
-138. Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
-139. Parameter Settings for User Entity Instance: LPM_FF:inst11
-140. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
-141. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
-142. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
+ 13. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+ 14. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+ 15. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+ 16. Parameter Settings for User Entity Instance: g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+ 17. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+ 18. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+ 19. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+ 20. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
+ 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
+ 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
+ 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
+ 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
+ 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
+ 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
+ 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
+ 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
+ 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
+ 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
+ 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
+ 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
+ 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
+ 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
+ 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
+ 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
+ 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
+ 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
+ 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
+ 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
+ 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
+ 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
+ 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
+ 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
+ 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
+ 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
+ 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
+ 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
+ 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
+ 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
+ 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
+ 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
+ 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
+ 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
+ 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
+ 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
+ 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
+ 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
+ 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
+ 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
+ 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
+ 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
+ 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
+ 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
+ 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
+ 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
+ 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
+ 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
+ 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
+ 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
+ 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
+ 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
+ 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
+ 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
+ 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
+ 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
+ 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
+ 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
+ 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
+ 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
+ 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
+ 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
+ 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
+ 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
+ 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
+ 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
+ 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
+ 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
+ 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
+ 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
+ 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
+ 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
+ 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
+ 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
+ 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
+ 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
+ 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
+ 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
+100. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
+101. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
+102. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
+103. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
+104. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
+105. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
+106. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
+107. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
+108. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
+109. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
+110. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
+111. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
+112. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
+113. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
+114. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
+115. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
+116. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
+117. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
+118. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
+119. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
+120. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
+121. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
+122. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
+123. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
+124. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
+125. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
+126. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
+127. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
+128. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
+129. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
+130. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
+131. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
+132. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
+133. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
+134. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
+135. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
+136. Parameter Settings for User Entity Instance: BUSMUX:inst12
+137. Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
+138. Parameter Settings for User Entity Instance: LPM_FF:inst11
+139. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
+140. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
+141. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
+142. Parameter Settings for User Entity Instance: BUSMUX:inst17
 143. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
 144. altsyncram Parameter Settings by Entity Instance
 145. Port Connectivity Checks: "g21_RANDU:inst9|add_sub:A2"
@@ -181,15 +181,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 17 15:05:07 2017           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 18 12:15:10 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed_lab4                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,520                                           ;
-;     Total combinational functions  ; 1,189                                           ;
-;     Dedicated logic registers      ; 969                                             ;
-; Total registers                    ; 969                                             ;
+; Total logic elements               ; 1,528                                           ;
+;     Total combinational functions  ; 1,199                                           ;
+;     Dedicated logic registers      ; 968                                             ;
+; Total registers                    ; 968                                             ;
 ; Total pins                         ; 49                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 6,144                                           ;
@@ -363,7 +363,6 @@ applicable agreement for further details.
 ; db/mux_v4e.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_v4e.tdf               ;         ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                             ;         ;
 ; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_qmc.tdf               ;         ;
-; g21_dealer_fsm.vhd               ; yes             ; Auto-Found VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_dealer_fsm.vhd           ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                         ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                        ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                    ;         ;
@@ -373,6 +372,7 @@ applicable agreement for further details.
 ; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/add_sub_lkc.tdf           ;         ;
 ; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/add_sub_mkc.tdf           ;         ;
 ; db/lpm_constant_hk4.tdf          ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/lpm_constant_hk4.tdf      ;         ;
+; g21_dealer_fsm.vhd               ; yes             ; Auto-Found VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_dealer_fsm.vhd           ;         ;
 ; g21_randu.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_randu.vhd                ;         ;
 ; add_sub.vhd                      ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/add_sub.vhd                  ;         ;
 ; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                        ;         ;
@@ -380,6 +380,7 @@ applicable agreement for further details.
 ; look_add.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                           ;         ;
 ; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                ;         ;
 ; db/add_sub_plh.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/add_sub_plh.tdf           ;         ;
+; db/mux_mmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_mmc.tdf               ;         ;
 ; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_modulo_13.bdf            ;         ;
 ; sld_signaltap.vhd                ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap.vhd                      ;         ;
 ; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                 ;         ;
@@ -416,29 +417,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,520 ;
+; Estimated Total logic elements              ; 1,528 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1189  ;
+; Total combinational functions               ; 1199  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 483   ;
-;     -- 3 input functions                    ; 525   ;
-;     -- <=2 input functions                  ; 181   ;
+;     -- 4 input functions                    ; 477   ;
+;     -- 3 input functions                    ; 542   ;
+;     -- <=2 input functions                  ; 180   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1032  ;
-;     -- arithmetic mode                      ; 157   ;
+;     -- normal mode                          ; 1044  ;
+;     -- arithmetic mode                      ; 155   ;
 ;                                             ;       ;
-; Total registers                             ; 969   ;
-;     -- Dedicated logic registers            ; 969   ;
+; Total registers                             ; 968   ;
+;     -- Dedicated logic registers            ; 968   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 49    ;
 ; Total memory bits                           ; 6144  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 758   ;
-; Total fan-out                               ; 8484  ;
-; Average fan-out                             ; 3.71  ;
+; Maximum fan-out                             ; 757   ;
+; Total fan-out                               ; 8476  ;
+; Average fan-out                             ; 3.69  ;
 +---------------------------------------------+-------+
 
 
@@ -447,41 +448,41 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_test_bed_lab4                                                                                      ; 1189 (1)          ; 969 (0)      ; 6144        ; 0            ; 0       ; 0         ; 49   ; 0            ; |g21_test_bed_lab4                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |busmux:inst12|                                                                                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst12                                                                                                                                                                                                                                                                                                                        ; work         ;
-;       |lpm_mux:$00000|                                                                                  ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst12|lpm_mux:$00000                                                                                                                                                                                                                                                                                                         ; work         ;
-;          |mux_qmc:auto_generated|                                                                       ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst12|lpm_mux:$00000|mux_qmc:auto_generated                                                                                                                                                                                                                                                                                  ; work         ;
+; |g21_test_bed_lab4                                                                                      ; 1199 (2)          ; 968 (0)      ; 6144        ; 0            ; 0       ; 0         ; 49   ; 0            ; |g21_test_bed_lab4                                                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |busmux:inst17|                                                                                      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17                                                                                                                                                                                                                                                                                                                        ; work         ;
+;       |lpm_mux:$00000|                                                                                  ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17|lpm_mux:$00000                                                                                                                                                                                                                                                                                                         ; work         ;
+;          |mux_mmc:auto_generated|                                                                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17|lpm_mux:$00000|mux_mmc:auto_generated                                                                                                                                                                                                                                                                                  ; work         ;
 ;    |g21_7_segment_decoder:inst3|                                                                        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_7_segment_decoder:inst3                                                                                                                                                                                                                                                                                                          ; work         ;
 ;    |g21_7_segment_decoder:inst4|                                                                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_7_segment_decoder:inst4                                                                                                                                                                                                                                                                                                          ; work         ;
-;    |g21_Modulo_13:inst2|                                                                                ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2                                                                                                                                                                                                                                                                                                                  ; work         ;
-;       |g21_adder:inst1|                                                                                 ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1                                                                                                                                                                                                                                                                                                  ; work         ;
+;    |g21_Modulo_13:inst2|                                                                                ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2                                                                                                                                                                                                                                                                                                                  ; work         ;
+;       |g21_adder:inst1|                                                                                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1                                                                                                                                                                                                                                                                                                  ; work         ;
 ;          |g21_1bitAdder:inst26|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst27|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst28|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst29|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29                                                                                                                                                                                                                                                                             ; work         ;
-;          |g21_1bitAdder:inst30|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30                                                                                                                                                                                                                                                                             ; work         ;
+;          |g21_1bitAdder:inst30|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30                                                                                                                                                                                                                                                                             ; work         ;
 ;       |g21_adder:inst5|                                                                                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst5                                                                                                                                                                                                                                                                                                  ; work         ;
 ;          |g21_1bitAdder:inst24|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst25|                                                                         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst26|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst|                                                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst                                                                                                                                                                                                                                                                               ; work         ;
-;    |g21_RANDU:inst9|                                                                                    ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9                                                                                                                                                                                                                                                                                                                      ; work         ;
-;       |add_sub:A1|                                                                                      ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1                                                                                                                                                                                                                                                                                                           ; work         ;
-;          |lpm_add_sub:LPM_ADD_SUB_component|                                                            ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                         ; work         ;
-;             |add_sub_plh:auto_generated|                                                                ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                                                                                                                                                                                                                              ; work         ;
-;       |add_sub:A2|                                                                                      ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2                                                                                                                                                                                                                                                                                                           ; work         ;
-;          |lpm_add_sub:LPM_ADD_SUB_component|                                                            ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                         ; work         ;
-;             |add_sub_plh:auto_generated|                                                                ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                                                                                                                                                                                                                              ; work         ;
-;    |g21_SPG:inst16|                                                                                     ; 43 (6)            ; 26 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16                                                                                                                                                                                                                                                                                                                       ; work         ;
-;       |Equal1_lpm_compare0:inst5|                                                                       ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|Equal1_lpm_compare0:inst5                                                                                                                                                                                                                                                                                             ; work         ;
-;          |lpm_compare:LPM_COMPARE_component|                                                            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                           ; work         ;
-;             |cmpr_acj:auto_generated|                                                                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated                                                                                                                                                                                                                                   ; work         ;
-;       |SPG_lpm_compare:inst3|                                                                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_compare:inst3                                                                                                                                                                                                                                                                                                 ; work         ;
-;          |lpm_compare:LPM_COMPARE_component|                                                            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                               ; work         ;
-;             |cmpr_a9j:auto_generated|                                                                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_a9j:auto_generated                                                                                                                                                                                                                                       ; work         ;
-;       |SPG_lpm_counter:inst2|                                                                           ; 26 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_counter:inst2                                                                                                                                                                                                                                                                                                 ; work         ;
-;          |lpm_counter:LPM_COUNTER_component|                                                            ; 26 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                               ; work         ;
-;             |cntr_70k:auto_generated|                                                                   ; 26 (26)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated                                                                                                                                                                                                                                       ; work         ;
+;    |g21_RANDU:inst9|                                                                                    ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9                                                                                                                                                                                                                                                                                                                      ; work         ;
+;       |add_sub:A1|                                                                                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1                                                                                                                                                                                                                                                                                                           ; work         ;
+;          |lpm_add_sub:LPM_ADD_SUB_component|                                                            ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                         ; work         ;
+;             |add_sub_plh:auto_generated|                                                                ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                                                                                                                                                                                                                              ; work         ;
+;       |add_sub:A2|                                                                                      ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2                                                                                                                                                                                                                                                                                                           ; work         ;
+;          |lpm_add_sub:LPM_ADD_SUB_component|                                                            ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                                         ; work         ;
+;             |add_sub_plh:auto_generated|                                                                ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                                                                                                                                                                                                                              ; work         ;
+;    |g21_SPG:inst15|                                                                                     ; 43 (6)            ; 26 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15                                                                                                                                                                                                                                                                                                                       ; work         ;
+;       |Equal1_lpm_compare0:inst5|                                                                       ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|Equal1_lpm_compare0:inst5                                                                                                                                                                                                                                                                                             ; work         ;
+;          |lpm_compare:LPM_COMPARE_component|                                                            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                           ; work         ;
+;             |cmpr_acj:auto_generated|                                                                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated                                                                                                                                                                                                                                   ; work         ;
+;       |SPG_lpm_compare:inst3|                                                                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_compare:inst3                                                                                                                                                                                                                                                                                                 ; work         ;
+;          |lpm_compare:LPM_COMPARE_component|                                                            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                               ; work         ;
+;             |cmpr_a9j:auto_generated|                                                                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_a9j:auto_generated                                                                                                                                                                                                                                       ; work         ;
+;       |SPG_lpm_counter:inst2|                                                                           ; 26 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_counter:inst2                                                                                                                                                                                                                                                                                                 ; work         ;
+;          |lpm_counter:LPM_COUNTER_component|                                                            ; 26 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                               ; work         ;
+;             |cntr_70k:auto_generated|                                                                   ; 26 (26)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated                                                                                                                                                                                                                                       ; work         ;
 ;    |g21_SPG:inst|                                                                                       ; 43 (6)            ; 26 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst                                                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |Equal1_lpm_compare0:inst5|                                                                       ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst|Equal1_lpm_compare0:inst5                                                                                                                                                                                                                                                                                               ; work         ;
 ;          |lpm_compare:LPM_COMPARE_component|                                                            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component                                                                                                                                                                                                                                                             ; work         ;
@@ -493,10 +494,7 @@ applicable agreement for further details.
 ;          |lpm_counter:LPM_COUNTER_component|                                                            ; 26 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                                 ; work         ;
 ;             |cntr_70k:auto_generated|                                                                   ; 26 (26)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated                                                                                                                                                                                                                                         ; work         ;
 ;    |g21_dealer_FSM:inst1|                                                                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_dealer_FSM:inst1                                                                                                                                                                                                                                                                                                                 ; work         ;
-;    |g21_stack52:inst8|                                                                                  ; 588 (0)           ; 324 (6)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8                                                                                                                                                                                                                                                                                                                    ; work         ;
-;       |MODE_Select_lpm_mux:inst118|                                                                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|MODE_Select_lpm_mux:inst118                                                                                                                                                                                                                                                                                        ; work         ;
-;          |lpm_mux:LPM_MUX_component|                                                                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                              ; work         ;
-;             |mux_j4e:auto_generated|                                                                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated                                                                                                                                                                                                                                       ; work         ;
+;    |g21_stack52:inst8|                                                                                  ; 593 (0)           ; 324 (6)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8                                                                                                                                                                                                                                                                                                                    ; work         ;
 ;       |StackCounter_lpm_counter:inst124|                                                                ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|StackCounter_lpm_counter:inst124                                                                                                                                                                                                                                                                                   ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|                                                            ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                 ; work         ;
 ;             |cntr_p5j:auto_generated|                                                                   ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated                                                                                                                                                                                                                         ; work         ;
@@ -506,9 +504,9 @@ applicable agreement for further details.
 ;       |busmux:inst103|                                                                                  ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst103                                                                                                                                                                                                                                                                                                     ; work         ;
 ;          |lpm_mux:$00000|                                                                               ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst103|lpm_mux:$00000                                                                                                                                                                                                                                                                                      ; work         ;
 ;             |mux_qmc:auto_generated|                                                                    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst103|lpm_mux:$00000|mux_qmc:auto_generated                                                                                                                                                                                                                                                               ; work         ;
-;       |busmux:inst119|                                                                                  ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119                                                                                                                                                                                                                                                                                                     ; work         ;
-;          |lpm_mux:$00000|                                                                               ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119|lpm_mux:$00000                                                                                                                                                                                                                                                                                      ; work         ;
-;             |mux_5oc:auto_generated|                                                                    ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                                                                                                                                                                                                                               ; work         ;
+;       |busmux:inst119|                                                                                  ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119                                                                                                                                                                                                                                                                                                     ; work         ;
+;          |lpm_mux:$00000|                                                                               ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119|lpm_mux:$00000                                                                                                                                                                                                                                                                                      ; work         ;
+;             |mux_5oc:auto_generated|                                                                    ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst119|lpm_mux:$00000|mux_5oc:auto_generated                                                                                                                                                                                                                                                               ; work         ;
 ;       |busmux:inst11|                                                                                   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst11                                                                                                                                                                                                                                                                                                      ; work         ;
 ;          |lpm_mux:$00000|                                                                               ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst11|lpm_mux:$00000                                                                                                                                                                                                                                                                                       ; work         ;
 ;             |mux_qmc:auto_generated|                                                                    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|busmux:inst11|lpm_mux:$00000|mux_qmc:auto_generated                                                                                                                                                                                                                                                                ; work         ;
@@ -717,18 +715,18 @@ applicable agreement for further details.
 ;       |lpm_ff:inst96|                                                                                   ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_ff:inst96                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_ff:inst98|                                                                                   ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_ff:inst98                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_ff:inst|                                                                                     ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_ff:inst                                                                                                                                                                                                                                                                                                        ; work         ;
-;       |lpm_mux0:inst114|                                                                                ; 251 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114                                                                                                                                                                                                                                                                                                   ; work         ;
-;          |lpm_mux:LPM_MUX_component|                                                                    ; 251 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                         ; work         ;
-;             |mux_v4e:auto_generated|                                                                    ; 251 (251)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                  ; work         ;
-;    |lpm_divide0:inst10|                                                                                 ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10                                                                                                                                                                                                                                                                                                                   ; work         ;
-;       |lpm_divide:LPM_DIVIDE_component|                                                                 ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                                                                                                                   ; work         ;
-;          |lpm_divide_grp:auto_generated|                                                                ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated                                                                                                                                                                                                                                                     ; work         ;
-;             |sign_div_unsign_bkh:divider|                                                               ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                                         ; work         ;
-;                |alt_u_div_ove:divider|                                                                  ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                                                   ; work         ;
-;    |lpm_ff:inst11|                                                                                      ; 0 (0)             ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_ff:inst11                                                                                                                                                                                                                                                                                                                        ; work         ;
-;    |sld_hub:auto_hub|                                                                                   ; 118 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 117 (79)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
-;          |sld_rom_sr:hub_info_reg|                                                                      ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
+;       |lpm_mux0:inst114|                                                                                ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114                                                                                                                                                                                                                                                                                                   ; work         ;
+;          |lpm_mux:LPM_MUX_component|                                                                    ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                         ; work         ;
+;             |mux_v4e:auto_generated|                                                                    ; 256 (256)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                  ; work         ;
+;    |lpm_divide0:inst10|                                                                                 ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10                                                                                                                                                                                                                                                                                                                   ; work         ;
+;       |lpm_divide:LPM_DIVIDE_component|                                                                 ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                                                                                                                   ; work         ;
+;          |lpm_divide_grp:auto_generated|                                                                ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated                                                                                                                                                                                                                                                     ; work         ;
+;             |sign_div_unsign_bkh:divider|                                                               ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                                         ; work         ;
+;                |alt_u_div_ove:divider|                                                                  ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                                                   ; work         ;
+;    |lpm_ff:inst11|                                                                                      ; 8 (8)             ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|lpm_ff:inst11                                                                                                                                                                                                                                                                                                                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                   ; 121 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 120 (81)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
+;          |sld_rom_sr:hub_info_reg|                                                                      ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 274 (1)           ; 475 (44)     ; 2816        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ; work         ;
 ;       |sld_signaltap_impl:sld_signaltap_body|                                                           ; 273 (0)           ; 431 (0)      ; 2816        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body                                                                                                                                                                                                                                                                 ; work         ;
@@ -819,9 +817,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1                                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/add_sub.vhd                  ;
 ; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2                                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/add_sub.vhd                  ;
 ; Altera ; LPM_DIVIDE   ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|lpm_divide0:inst10                                        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_divide0.vhd              ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_counter:inst2                      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_compare:inst3                      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst16|Equal1_lpm_compare0:inst5                  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/Equal1_lpm_compare0.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_counter:inst2                      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_counter.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_compare:inst3                      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/SPG_lpm_compare.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|g21_SPG:inst15|Equal1_lpm_compare0:inst5                  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/Equal1_lpm_compare0.vhd      ;
 ; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_test_bed_lab4|lpm_constantdata:inst99                                   ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/lpm_constantdata.vhd         ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
 
@@ -831,8 +829,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
-; lpm_ff:inst11|dffs[31]                ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
+; lpm_ff:inst11|dffs[0,31]              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -841,12 +839,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 969   ;
+; Total registers                              ; 968   ;
 ; Number of registers using Synchronous Clear  ; 12    ;
-; Number of registers using Synchronous Load   ; 426   ;
-; Number of registers using Asynchronous Clear ; 541   ;
+; Number of registers using Synchronous Load   ; 395   ;
+; Number of registers using Asynchronous Clear ; 571   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 667   ;
+; Number of registers using Clock Enable       ; 666   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -872,21 +870,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g21_test_bed_lab4|busmux:inst12|lpm_mux:$00000|mux_qmc:auto_generated|result_node[5]                                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                       ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
@@ -894,6 +877,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                 ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component ;
++------------------------+------------+-------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                          ;
++------------------------+------------+-------------------------------------------------------------------------------+
+; lpm_width              ; 25         ; Signed Integer                                                                ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                       ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                       ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                       ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                       ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                       ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                       ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                            ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                          ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                                                       ;
+; CBXI_PARAMETER         ; cmpr_a9j   ; Untyped                                                                       ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                ;
++------------------------+------------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                         ;
++------------------------+-------------+------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
+; LPM_WIDTH              ; 25          ; Signed Integer                                                               ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                      ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
+; LPM_SVALUE             ; 1           ; Untyped                                                                      ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
+; CBXI_PARAMETER         ; cntr_70k    ; Untyped                                                                      ;
++------------------------+-------------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component ;
++------------------------+------------+-----------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                              ;
++------------------------+------------+-----------------------------------------------------------------------------------+
+; lpm_width              ; 25         ; Signed Integer                                                                    ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                           ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                           ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                           ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                           ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                           ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                           ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                              ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                                                           ;
+; CBXI_PARAMETER         ; cmpr_acj   ; Untyped                                                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                    ;
++------------------------+------------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -2710,81 +2768,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g21_SPG:inst16|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component ;
-+------------------------+------------+-------------------------------------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                                                          ;
-+------------------------+------------+-------------------------------------------------------------------------------+
-; lpm_width              ; 25         ; Signed Integer                                                                ;
-; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                       ;
-; LPM_PIPELINE           ; 0          ; Untyped                                                                       ;
-; CHAIN_SIZE             ; 8          ; Untyped                                                                       ;
-; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                       ;
-; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                       ;
-; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                       ;
-; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                            ;
-; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                          ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                                                       ;
-; CBXI_PARAMETER         ; cmpr_a9j   ; Untyped                                                                       ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                  ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                ;
-+------------------------+------------+-------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g21_SPG:inst16|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                                         ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                               ;
-; LPM_WIDTH              ; 25          ; Signed Integer                                                               ;
-; LPM_DIRECTION          ; UP          ; Untyped                                                                      ;
-; LPM_MODULUS            ; 0           ; Untyped                                                                      ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                                      ;
-; LPM_SVALUE             ; 1           ; Untyped                                                                      ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                      ;
-; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                                                      ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                      ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                           ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                           ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                                      ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                                      ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                      ;
-; CBXI_PARAMETER         ; cntr_70k    ; Untyped                                                                      ;
-+------------------------+-------------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g21_SPG:inst16|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component ;
-+------------------------+------------+-----------------------------------------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                                                              ;
-+------------------------+------------+-----------------------------------------------------------------------------------+
-; lpm_width              ; 25         ; Signed Integer                                                                    ;
-; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                           ;
-; LPM_PIPELINE           ; 0          ; Untyped                                                                           ;
-; CHAIN_SIZE             ; 8          ; Untyped                                                                           ;
-; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                           ;
-; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                           ;
-; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                           ;
-; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                ;
-; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                              ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                                                           ;
-; CBXI_PARAMETER         ; cmpr_acj   ; Untyped                                                                           ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                      ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                    ;
-+------------------------+------------+-----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component ;
 +------------------------+----------------+-------------------------------------------------------+
@@ -2814,7 +2797,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name         ; Value      ; Type                 ;
 +------------------------+------------+----------------------+
 ; LPM_WIDTH              ; 32         ; Untyped              ;
-; LPM_AVALUE             ; 0          ; Untyped              ;
+; LPM_AVALUE             ; 10         ; Signed Integer       ;
 ; LPM_SVALUE             ; 10         ; Signed Integer       ;
 ; LPM_FFTYPE             ; DFF        ; Untyped              ;
 ; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
@@ -2893,6 +2876,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                          ;
 ; CBXI_PARAMETER     ; lpm_constant_9h6 ; Untyped                                                          ;
 +--------------------+------------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst17 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 2     ; Untyped                           ;
++----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3004,14 +2997,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:06     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3034,18 +3026,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; NUM[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[5] ; N/A     ;
 ; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A     ;
 ; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A     ;
-; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~58                  ; N/A     ;
-; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~58                  ; N/A     ;
-; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~83                  ; N/A     ;
-; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~83                  ; N/A     ;
+; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A     ;
+; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A     ;
+; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A     ;
+; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A     ;
 ; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A     ;
 ; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A     ;
 ; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A     ;
 ; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A     ;
-; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~15                  ; N/A     ;
-; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~15                  ; N/A     ;
-; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~10                  ; N/A     ;
-; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~10                  ; N/A     ;
+; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A     ;
+; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A     ;
+; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A     ;
+; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A     ;
 ; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A     ;
 ; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A     ;
 ; dipswitch1[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[1]                                                                                                          ; N/A     ;
@@ -3062,8 +3054,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; dipswitch2[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[4]                                                                                                          ; N/A     ;
 ; dipswitch2[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[5]                                                                                                          ; N/A     ;
 ; dipswitch2[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[5]                                                                                                          ; N/A     ;
-; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_SPG:inst|inst                                                                                                      ; N/A     ;
-; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_SPG:inst|inst                                                                                                      ; N/A     ;
+; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A     ;
+; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A     ;
 +---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -3073,7 +3065,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 17 15:04:42 2017
+    Info: Processing started: Sat Nov 18 12:14:57 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -3152,22 +3144,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file lpm_div
     Info (12022): Found design unit 1: lpm_divide0-SYN
     Info (12023): Found entity 1: lpm_divide0
 Info (12127): Elaborating entity "g21_test_bed_lab4" for the top level hierarchy
-Info (12128): Elaborating entity "g21_SPG" for hierarchy "g21_SPG:inst"
-Info (12128): Elaborating entity "SPG_lpm_compare" for hierarchy "g21_SPG:inst|SPG_lpm_compare:inst3"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component"
-Info (12130): Elaborated megafunction instantiation "g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component"
-Info (12133): Instantiated megafunction "g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component" with the following parameter:
+Info (12128): Elaborating entity "g21_SPG" for hierarchy "g21_SPG:inst15"
+Info (12128): Elaborating entity "SPG_lpm_compare" for hierarchy "g21_SPG:inst15|SPG_lpm_compare:inst3"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component"
+Info (12130): Elaborated megafunction instantiation "g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component"
+Info (12133): Instantiated megafunction "g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component" with the following parameter:
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_a9j.tdf
     Info (12023): Found entity 1: cmpr_a9j
-Info (12128): Elaborating entity "cmpr_a9j" for hierarchy "g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_a9j:auto_generated"
-Info (12128): Elaborating entity "SPG_lpm_counter" for hierarchy "g21_SPG:inst|SPG_lpm_counter:inst2"
-Info (12128): Elaborating entity "lpm_counter" for hierarchy "g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component"
-Info (12130): Elaborated megafunction instantiation "g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component"
-Info (12133): Instantiated megafunction "g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" with the following parameter:
+Info (12128): Elaborating entity "cmpr_a9j" for hierarchy "g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_a9j:auto_generated"
+Info (12128): Elaborating entity "SPG_lpm_counter" for hierarchy "g21_SPG:inst15|SPG_lpm_counter:inst2"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12130): Elaborated megafunction instantiation "g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12133): Instantiated megafunction "g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" with the following parameter:
     Info (12134): Parameter "lpm_direction" = "UP"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_svalue" = "1"
@@ -3175,18 +3167,18 @@ Info (12133): Instantiated megafunction "g21_SPG:inst|SPG_lpm_counter:inst2|lpm_
     Info (12134): Parameter "lpm_width" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_70k.tdf
     Info (12023): Found entity 1: cntr_70k
-Info (12128): Elaborating entity "cntr_70k" for hierarchy "g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated"
-Info (12128): Elaborating entity "Equal1_lpm_compare0" for hierarchy "g21_SPG:inst|Equal1_lpm_compare0:inst5"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component"
-Info (12130): Elaborated megafunction instantiation "g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component"
-Info (12133): Instantiated megafunction "g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component" with the following parameter:
+Info (12128): Elaborating entity "cntr_70k" for hierarchy "g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated"
+Info (12128): Elaborating entity "Equal1_lpm_compare0" for hierarchy "g21_SPG:inst15|Equal1_lpm_compare0:inst5"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component"
+Info (12130): Elaborated megafunction instantiation "g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component"
+Info (12133): Instantiated megafunction "g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component" with the following parameter:
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_acj.tdf
     Info (12023): Found entity 1: cmpr_acj
-Info (12128): Elaborating entity "cmpr_acj" for hierarchy "g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated"
+Info (12128): Elaborating entity "cmpr_acj" for hierarchy "g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated"
 Info (12128): Elaborating entity "g21_stack52" for hierarchy "g21_stack52:inst8"
 Warning (275083): Bus "q20[5..0]" found using same base name as "q2", which might lead to a name conflict.
 Warning (275083): Bus "q21[5..0]" found using same base name as "q2", which might lead to a name conflict.
@@ -4033,10 +4025,10 @@ Info (12128): Elaborating entity "BUSMUX" for hierarchy "g21_stack52:inst8|BUSMU
 Info (12130): Elaborated megafunction instantiation "g21_stack52:inst8|BUSMUX:inst103"
 Info (12133): Instantiated megafunction "g21_stack52:inst8|BUSMUX:inst103" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Warning (12125): Using design file g21_dealer_fsm.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: g21_dealer_FSM-deal_machine
-    Info (12023): Found entity 1: g21_dealer_FSM
-Info (12128): Elaborating entity "g21_dealer_FSM" for hierarchy "g21_dealer_FSM:inst1"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst12"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst12"
+Info (12133): Instantiated megafunction "BUSMUX:inst12" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "6"
 Info (12128): Elaborating entity "lpm_divide0" for hierarchy "lpm_divide0:inst10"
 Info (12128): Elaborating entity "lpm_divide" for hierarchy "lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component"
 Info (12130): Elaborated megafunction instantiation "lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component"
@@ -4063,19 +4055,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_mkc
 Info (12128): Elaborating entity "add_sub_mkc" for hierarchy "lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_mkc:add_sub_1"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst11"
-Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used
-Warning (287013): Variable or input pin "ac" is defined but never used.
+Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
+Warning (287013): Variable or input pin "sc" is defined but never used.
 Info (12130): Elaborated megafunction instantiation "LPM_FF:inst11"
 Info (12133): Instantiated megafunction "LPM_FF:inst11" with the following parameter:
-    Info (12134): Parameter "LPM_AVALUE" = "0"
+    Info (12134): Parameter "LPM_AVALUE" = "10"
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_SVALUE" = "10"
     Info (12134): Parameter "LPM_WIDTH" = "32"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst11|lpm_constant:sc"
-Info (12131): Elaborated megafunction instantiation "LPM_FF:inst11|lpm_constant:sc", which is child of megafunction instantiation "LPM_FF:inst11"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_FF:inst11|lpm_constant:ac"
+Info (12131): Elaborated megafunction instantiation "LPM_FF:inst11|lpm_constant:ac", which is child of megafunction instantiation "LPM_FF:inst11"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_hk4.tdf
     Info (12023): Found entity 1: lpm_constant_hk4
-Info (12128): Elaborating entity "lpm_constant_hk4" for hierarchy "LPM_FF:inst11|lpm_constant:sc|lpm_constant_hk4:ag"
+Info (12128): Elaborating entity "lpm_constant_hk4" for hierarchy "LPM_FF:inst11|lpm_constant:ac|lpm_constant_hk4:ag"
+Warning (12125): Using design file g21_dealer_fsm.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: g21_dealer_FSM-deal_machine
+    Info (12023): Found entity 1: g21_dealer_FSM
+Info (12128): Elaborating entity "g21_dealer_FSM" for hierarchy "g21_dealer_FSM:inst1"
 Warning (12125): Using design file g21_randu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: g21_RANDU-RANDU
     Info (12023): Found entity 1: g21_RANDU
@@ -4103,6 +4099,15 @@ Info (12133): Instantiated megafunction "lpm_constantdata:inst99|lpm_constant:LP
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "6"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst17"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst17"
+Info (12133): Instantiated megafunction "BUSMUX:inst17" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "2"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst17|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst17|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst17"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mmc.tdf
+    Info (12023): Found entity 1: mux_mmc
+Info (12128): Elaborating entity "mux_mmc" for hierarchy "BUSMUX:inst17|lpm_mux:$00000|mux_mmc:auto_generated"
 Info (12128): Elaborating entity "g21_7_segment_decoder" for hierarchy "g21_7_segment_decoder:inst3"
 Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: g21_Modulo_13
@@ -4130,6 +4135,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_5cc.tdf
     Info (12023): Found entity 1: cmpr_5cc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "lpm_ff:inst11|dffs[3]" is converted into an equivalent circuit using register "lpm_ff:inst11|dffs[3]~_emulated" and latch "lpm_ff:inst11|dffs[3]~1"
+    Warning (13310): Register "lpm_ff:inst11|dffs[1]" is converted into an equivalent circuit using register "lpm_ff:inst11|dffs[1]~_emulated" and latch "lpm_ff:inst11|dffs[3]~1"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED2[6]" is stuck at VCC
     Warning (13410): Pin "LED2[5]" is stuck at VCC
@@ -4146,22 +4154,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED3[1]" is stuck at VCC
     Warning (13410): Pin "LED3[0]" is stuck at VCC
     Warning (13410): Pin "LEDfloor[1]" is stuck at GND
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1666 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1674 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 1538 logic cells
+    Info (21061): Implemented 1546 logic cells
     Info (21064): Implemented 74 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 280 warnings
-    Info: Peak virtual memory: 615 megabytes
-    Info: Processing ended: Fri Nov 17 15:05:07 2017
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 281 warnings
+    Info: Peak virtual memory: 676 megabytes
+    Info: Processing ended: Sat Nov 18 12:15:11 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:12
 
 

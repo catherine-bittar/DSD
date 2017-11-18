@@ -43,7 +43,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst86|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_fa4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|BUSMUX:inst12|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst89|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|LPM_FF:inst11|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_hk4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst101|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst99|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst88|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ga4.tdf"/>
@@ -53,8 +52,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst113|lpm_mux:$00000" CBX_FILE_NAME="mux_5oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst12|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_n84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst30|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_7a4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst24|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst115|lpm_mux:$00000" CBX_FILE_NAME="mux_5oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst14|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_o84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst32|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_r84.tdf"/>
@@ -72,13 +71,13 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst72|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_994.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst90|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ha4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_j4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_a9j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_p5j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst16|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_a9j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_acj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst38|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_u84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst56|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_aa4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst74|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_a94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst92|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ia4.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst16|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_acj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_grp.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_mp14.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst58|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ba4.tdf"/>
@@ -86,6 +85,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst94|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ja4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_rbi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|LPM_FF:inst11|lpm_constant:ac" CBX_FILE_NAME="lpm_constant_hk4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_plh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_70k.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_plh.tdf"/>
@@ -109,6 +109,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|LPM_FF:inst102|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_i94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_ti6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|BUSMUX:inst17|lpm_mux:$00000" CBX_FILE_NAME="mux_mmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_a9j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst15|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g21_test_bed_lab4|g21_stack52:inst8|BUSMUX:inst33|lpm_mux:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
