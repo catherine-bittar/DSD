@@ -71,12 +71,6 @@ set_location_assignment PIN_T21 -to pushButton
 set_location_assignment PIN_R22 -to RSTButton
 set_location_assignment PIN_M1 -to dipswitch1[0]
 set_location_assignment PIN_L2 -to dipswitch1[1]
-set_location_assignment PIN_M2 -to dipswitch2[5]
-set_location_assignment PIN_U11 -to dipswitch2[4]
-set_location_assignment PIN_U12 -to dipswitch2[3]
-set_location_assignment PIN_W12 -to dipswitch2[2]
-set_location_assignment PIN_V12 -to dipswitch2[1]
-set_location_assignment PIN_M22 -to dipswitch2[0]
 set_location_assignment PIN_R20 -to EMPTY
 set_location_assignment PIN_U22 -to FULL
 set_location_assignment PIN_H6 -to LED2[6]

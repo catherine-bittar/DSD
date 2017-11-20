@@ -9,16 +9,10 @@ CLK => LPM_FF:inst11.clock
 pushButton => g21_SPG:inst.SwitchEnable
 EMPTY <= g21_stack52:inst8.EMPTY
 RSTButton => inst6.IN0
-dipswitch2[0] => BUSMUX:inst12.dataa[0]
-dipswitch2[1] => BUSMUX:inst12.dataa[1]
-dipswitch2[2] => BUSMUX:inst12.dataa[2]
-dipswitch2[3] => BUSMUX:inst12.dataa[3]
-dipswitch2[4] => BUSMUX:inst12.dataa[4]
-dipswitch2[5] => BUSMUX:inst12.dataa[5]
 dipswitch1[0] => inst13.IN1
-dipswitch1[0] => BUSMUX:inst17.dataa[0]
+dipswitch1[0] => g21_stack52:inst8.MODE[0]
 dipswitch1[1] => inst14.IN0
-dipswitch1[1] => BUSMUX:inst17.dataa[1]
+dipswitch1[1] => g21_stack52:inst8.MODE[1]
 FULL <= g21_stack52:inst8.FULL
 LED2[0] <= <VCC>
 LED2[1] <= <VCC>
@@ -14304,86 +14298,6 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_test_bed_lab4|BUSMUX:inst12
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-dataa[4] => lpm_mux:$00000.data[0][4]
-dataa[5] => lpm_mux:$00000.data[0][5]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-datab[4] => lpm_mux:$00000.data[1][4]
-datab[5] => lpm_mux:$00000.data[1][5]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-result[4] <= lpm_mux:$00000.result[4]
-result[5] <= lpm_mux:$00000.result[5]
-
-
-|g21_test_bed_lab4|BUSMUX:inst12|lpm_mux:$00000
-data[0][0] => mux_qmc:auto_generated.data[0]
-data[0][1] => mux_qmc:auto_generated.data[1]
-data[0][2] => mux_qmc:auto_generated.data[2]
-data[0][3] => mux_qmc:auto_generated.data[3]
-data[0][4] => mux_qmc:auto_generated.data[4]
-data[0][5] => mux_qmc:auto_generated.data[5]
-data[1][0] => mux_qmc:auto_generated.data[6]
-data[1][1] => mux_qmc:auto_generated.data[7]
-data[1][2] => mux_qmc:auto_generated.data[8]
-data[1][3] => mux_qmc:auto_generated.data[9]
-data[1][4] => mux_qmc:auto_generated.data[10]
-data[1][5] => mux_qmc:auto_generated.data[11]
-sel[0] => mux_qmc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_qmc:auto_generated.result[0]
-result[1] <= mux_qmc:auto_generated.result[1]
-result[2] <= mux_qmc:auto_generated.result[2]
-result[3] <= mux_qmc:auto_generated.result[3]
-result[4] <= mux_qmc:auto_generated.result[4]
-result[5] <= mux_qmc:auto_generated.result[5]
-
-
-|g21_test_bed_lab4|BUSMUX:inst12|lpm_mux:$00000|mux_qmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[4].IN1
-data[5] => result_node[5].IN1
-data[6] => result_node[0].IN1
-data[7] => result_node[1].IN1
-data[8] => result_node[2].IN1
-data[9] => result_node[3].IN1
-data[10] => result_node[4].IN1
-data[11] => result_node[5].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[5].IN0
-sel[0] => _.IN0
-sel[0] => result_node[4].IN0
-sel[0] => _.IN0
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
 |g21_test_bed_lab4|lpm_divide0:inst10
 denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
 denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
@@ -15586,42 +15500,6 @@ result[2] <= <GND>
 result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
-
-
-|g21_test_bed_lab4|BUSMUX:inst17
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-
-
-|g21_test_bed_lab4|BUSMUX:inst17|lpm_mux:$00000
-data[0][0] => mux_mmc:auto_generated.data[0]
-data[0][1] => mux_mmc:auto_generated.data[1]
-data[1][0] => mux_mmc:auto_generated.data[2]
-data[1][1] => mux_mmc:auto_generated.data[3]
-sel[0] => mux_mmc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_mmc:auto_generated.result[0]
-result[1] <= mux_mmc:auto_generated.result[1]
-
-
-|g21_test_bed_lab4|BUSMUX:inst17|lpm_mux:$00000|mux_mmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[0].IN1
-data[3] => result_node[1].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
 
 
 |g21_test_bed_lab4|g21_7_segment_decoder:inst3

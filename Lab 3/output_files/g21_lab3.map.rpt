@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Sun Nov 19 18:18:26 2017
+Mon Nov 20 08:28:16 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -18,145 +18,142 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
- 15. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
- 16. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
- 17. Parameter Settings for User Entity Instance: g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
- 18. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
- 19. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
- 20. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
- 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
- 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
- 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
- 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
- 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
- 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
- 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
- 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
- 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
- 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
- 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
- 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
- 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
- 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
- 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
- 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
- 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
- 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
- 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
- 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
- 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
- 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
- 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
- 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
- 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
- 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
- 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
- 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
- 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
- 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
- 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
- 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
- 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
- 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
- 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
- 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
- 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
- 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
- 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
- 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
- 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
- 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
- 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
- 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
- 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
- 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
- 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
- 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
- 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
- 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
- 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
- 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
- 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
- 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
- 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
- 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
- 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
- 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
- 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
- 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
- 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
- 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
- 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
- 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
- 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
- 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
- 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
- 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
- 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
- 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
- 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
- 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
- 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
- 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
- 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
- 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
- 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
- 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
- 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
-100. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
-101. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
-102. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
-103. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
-104. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
-105. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
-106. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
-107. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
-108. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
-109. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
-110. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
-111. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
-112. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
-113. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
-114. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
-115. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
-116. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
-117. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
-118. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
-119. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
-120. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
-121. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
-122. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
-123. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
-124. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
-125. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
-126. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
-127. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
-128. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
-129. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
-130. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
-131. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
-132. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
-133. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
-134. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
-135. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
-136. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
-137. Parameter Settings for User Entity Instance: BUSMUX:inst12
-138. Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
-139. Parameter Settings for User Entity Instance: LPM_FF:inst11
-140. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
-141. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
-142. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
-143. Parameter Settings for User Entity Instance: BUSMUX:inst17
-144. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
-145. altsyncram Parameter Settings by Entity Instance
-146. Port Connectivity Checks: "g21_RANDU:inst9|add_sub:A2"
-147. Port Connectivity Checks: "g21_RANDU:inst9|add_sub:A1"
-148. SignalTap II Logic Analyzer Settings
-149. Elapsed Time Per Partition
-150. Connections to In-System Debugging Instance "auto_signaltap_0"
-151. Analysis & Synthesis Messages
+ 13. Source assignments for g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component|altsyncram_q371:auto_generated
+ 14. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+ 15. Parameter Settings for User Entity Instance: g21_SPG:inst15|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+ 16. Parameter Settings for User Entity Instance: g21_SPG:inst15|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+ 17. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+ 18. Parameter Settings for User Entity Instance: g21_SPG:inst|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+ 19. Parameter Settings for User Entity Instance: g21_SPG:inst|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+ 20. Parameter Settings for User Entity Instance: g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component
+ 21. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst119
+ 22. Parameter Settings for User Entity Instance: g21_stack52:inst8|NOP_lpm_constant:inst106|lpm_constant:LPM_CONSTANT_component
+ 23. Parameter Settings for User Entity Instance: g21_stack52:inst8|MODE_Select_lpm_mux:inst118|lpm_mux:LPM_MUX_component
+ 24. Parameter Settings for User Entity Instance: g21_stack52:inst8|INIT_lpm_constant:inst107|lpm_constant:LPM_CONSTANT_component
+ 25. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst113
+ 26. Parameter Settings for User Entity Instance: g21_stack52:inst8|POP_lpm_constant:inst108|lpm_constant:LPM_CONSTANT_component
+ 27. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst115
+ 28. Parameter Settings for User Entity Instance: g21_stack52:inst8|a52_lpm_constant:inst127|lpm_constant:LPM_CONSTANT_component
+ 29. Parameter Settings for User Entity Instance: g21_stack52:inst8|PUSH_lpm_constant:inst109|lpm_constant:LPM_CONSTANT_component
+ 30. Parameter Settings for User Entity Instance: g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component
+ 32. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst
+ 33. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst1
+ 34. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst2
+ 35. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst3
+ 36. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst4
+ 37. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst5
+ 38. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst6
+ 39. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst7
+ 40. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst8
+ 41. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst9
+ 42. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst10
+ 43. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst11
+ 44. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst12
+ 45. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst13
+ 46. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst14
+ 47. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst15
+ 48. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst16
+ 49. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst17
+ 50. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst18
+ 51. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst19
+ 52. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst20
+ 53. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst21
+ 54. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst22
+ 55. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst23
+ 56. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst25
+ 57. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst24
+ 58. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst26
+ 59. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst27
+ 60. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst28
+ 61. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst29
+ 62. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst30
+ 63. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst31
+ 64. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst32
+ 65. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst33
+ 66. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst34
+ 67. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst35
+ 68. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst36
+ 69. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst37
+ 70. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst38
+ 71. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst39
+ 72. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst40
+ 73. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst41
+ 74. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst42
+ 75. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst43
+ 76. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst44
+ 77. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst45
+ 78. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst46
+ 79. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst47
+ 80. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst48
+ 81. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst49
+ 82. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst50
+ 83. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst51
+ 84. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst52
+ 85. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst53
+ 86. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst54
+ 87. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst55
+ 88. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst56
+ 89. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst57
+ 90. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst58
+ 91. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst59
+ 92. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst60
+ 93. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst61
+ 94. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst62
+ 95. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst63
+ 96. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst64
+ 97. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst65
+ 98. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst66
+ 99. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst67
+100. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst68
+101. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst69
+102. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst70
+103. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst71
+104. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst72
+105. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst73
+106. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst74
+107. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst75
+108. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst76
+109. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst77
+110. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst78
+111. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst79
+112. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst80
+113. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst81
+114. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst82
+115. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst83
+116. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst84
+117. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst85
+118. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst86
+119. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst87
+120. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst88
+121. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst89
+122. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst90
+123. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst91
+124. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst92
+125. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst93
+126. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst94
+127. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst95
+128. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst96
+129. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst97
+130. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst98
+131. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst99
+132. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst100
+133. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst101
+134. Parameter Settings for User Entity Instance: g21_stack52:inst8|LPM_FF:inst102
+135. Parameter Settings for User Entity Instance: g21_stack52:inst8|BUSMUX:inst103
+136. Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
+137. Parameter Settings for User Entity Instance: LPM_FF:inst11
+138. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
+139. Parameter Settings for User Entity Instance: g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
+140. Parameter Settings for User Entity Instance: lpm_constantdata:inst99|lpm_constant:LPM_CONSTANT_component
+141. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+142. altsyncram Parameter Settings by Entity Instance
+143. Port Connectivity Checks: "g21_RANDU:inst9|add_sub:A2"
+144. Port Connectivity Checks: "g21_RANDU:inst9|add_sub:A1"
+145. SignalTap II Logic Analyzer Settings
+146. Elapsed Time Per Partition
+147. Connections to In-System Debugging Instance "auto_signaltap_0"
+148. Analysis & Synthesis Messages
 
 
 
@@ -182,16 +179,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 19 18:18:25 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 20 08:28:16 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_test_bed_lab4                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,530                                           ;
-;     Total combinational functions  ; 1,201                                           ;
+; Total logic elements               ; 1,528                                           ;
+;     Total combinational functions  ; 1,200                                           ;
 ;     Dedicated logic registers      ; 968                                             ;
 ; Total registers                    ; 968                                             ;
-; Total pins                         ; 49                                              ;
+; Total pins                         ; 43                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 6,144                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -381,7 +378,6 @@ applicable agreement for further details.
 ; look_add.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                           ;         ;
 ; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                ;         ;
 ; db/add_sub_plh.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/add_sub_plh.tdf           ;         ;
-; db/mux_mmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/db/mux_mmc.tdf               ;         ;
 ; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_modulo_13.bdf            ;         ;
 ; sld_signaltap.vhd                ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap.vhd                      ;         ;
 ; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                 ;         ;
@@ -418,29 +414,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,530 ;
+; Estimated Total logic elements              ; 1,528 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1201  ;
+; Total combinational functions               ; 1200  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 484   ;
-;     -- 3 input functions                    ; 534   ;
+;     -- 4 input functions                    ; 479   ;
+;     -- 3 input functions                    ; 538   ;
 ;     -- <=2 input functions                  ; 183   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1046  ;
+;     -- normal mode                          ; 1045  ;
 ;     -- arithmetic mode                      ; 155   ;
 ;                                             ;       ;
 ; Total registers                             ; 968   ;
 ;     -- Dedicated logic registers            ; 968   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 49    ;
+; I/O pins                                    ; 43    ;
 ; Total memory bits                           ; 6144  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 757   ;
-; Total fan-out                               ; 8486  ;
-; Average fan-out                             ; 3.69  ;
+; Total fan-out                               ; 8476  ;
+; Average fan-out                             ; 3.70  ;
 +---------------------------------------------+-------+
 
 
@@ -449,10 +445,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_test_bed_lab4                                                                                      ; 1201 (2)          ; 968 (0)      ; 6144        ; 0            ; 0       ; 0         ; 49   ; 0            ; |g21_test_bed_lab4                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |busmux:inst17|                                                                                      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17                                                                                                                                                                                                                                                                                                                        ; work         ;
-;       |lpm_mux:$00000|                                                                                  ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17|lpm_mux:$00000                                                                                                                                                                                                                                                                                                         ; work         ;
-;          |mux_mmc:auto_generated|                                                                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|busmux:inst17|lpm_mux:$00000|mux_mmc:auto_generated                                                                                                                                                                                                                                                                                  ; work         ;
+; |g21_test_bed_lab4                                                                                      ; 1200 (3)          ; 968 (0)      ; 6144        ; 0            ; 0       ; 0         ; 43   ; 0            ; |g21_test_bed_lab4                                                                                                                                                                                                                                                                                                                                      ; work         ;
 ;    |g21_7_segment_decoder:inst3|                                                                        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_7_segment_decoder:inst3                                                                                                                                                                                                                                                                                                          ; work         ;
 ;    |g21_7_segment_decoder:inst4|                                                                        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_7_segment_decoder:inst4                                                                                                                                                                                                                                                                                                          ; work         ;
 ;    |g21_Modulo_13:inst2|                                                                                ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_test_bed_lab4|g21_Modulo_13:inst2                                                                                                                                                                                                                                                                                                                  ; work         ;
@@ -869,20 +862,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0] ; 1       ;
 ; Total number of inverted registers = 12                                                                                                                                       ;         ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                       ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |g21_test_bed_lab4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2773,16 +2752,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:inst12 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; WIDTH          ; 6     ; Untyped                           ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component ;
 +------------------------+----------------+-------------------------------------------------------+
@@ -2894,16 +2863,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:inst17 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; WIDTH          ; 2     ; Untyped                           ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                                                                            ;
 +-------------------------------------------------+-----------------------------------------------------------------------------------------+----------------+
@@ -3012,67 +2971,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:03     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                    ;
-+---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; Name          ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                      ; Details ;
-+---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; CLK           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CLK                                                                                                                    ; N/A     ;
-; NUM[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[0] ; N/A     ;
-; NUM[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[0] ; N/A     ;
-; NUM[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[1] ; N/A     ;
-; NUM[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[1] ; N/A     ;
-; NUM[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[2] ; N/A     ;
-; NUM[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[2] ; N/A     ;
-; NUM[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[3] ; N/A     ;
-; NUM[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[3] ; N/A     ;
-; NUM[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[4] ; N/A     ;
-; NUM[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[4] ; N/A     ;
-; NUM[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[5] ; N/A     ;
-; NUM[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[5] ; N/A     ;
-; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A     ;
-; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A     ;
-; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A     ;
-; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A     ;
-; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A     ;
-; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A     ;
-; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A     ;
-; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A     ;
-; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A     ;
-; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A     ;
-; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A     ;
-; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A     ;
-; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A     ;
-; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A     ;
-; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A     ;
-; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A     ;
-; dipswitch1[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[1]                                                                                                          ; N/A     ;
-; dipswitch1[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[1]                                                                                                          ; N/A     ;
-; dipswitch2[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[0]                                                                                                          ; N/A     ;
-; dipswitch2[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[0]                                                                                                          ; N/A     ;
-; dipswitch2[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[1]                                                                                                          ; N/A     ;
-; dipswitch2[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[1]                                                                                                          ; N/A     ;
-; dipswitch2[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[2]                                                                                                          ; N/A     ;
-; dipswitch2[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[2]                                                                                                          ; N/A     ;
-; dipswitch2[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[3]                                                                                                          ; N/A     ;
-; dipswitch2[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[3]                                                                                                          ; N/A     ;
-; dipswitch2[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[4]                                                                                                          ; N/A     ;
-; dipswitch2[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[4]                                                                                                          ; N/A     ;
-; dipswitch2[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[5]                                                                                                          ; N/A     ;
-; dipswitch2[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch2[5]                                                                                                          ; N/A     ;
-; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A     ;
-; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A     ;
-+---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                                                                                           ;
++---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name          ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                      ; Details                                                                                                                                                        ;
++---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CLK           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CLK                                                                                                                    ; N/A                                                                                                                                                            ;
+; NUM[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[0] ; N/A                                                                                                                                                            ;
+; NUM[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[0] ; N/A                                                                                                                                                            ;
+; NUM[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[1] ; N/A                                                                                                                                                            ;
+; NUM[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[1] ; N/A                                                                                                                                                            ;
+; NUM[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[2] ; N/A                                                                                                                                                            ;
+; NUM[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[2] ; N/A                                                                                                                                                            ;
+; NUM[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[3] ; N/A                                                                                                                                                            ;
+; NUM[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[3] ; N/A                                                                                                                                                            ;
+; NUM[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[4] ; N/A                                                                                                                                                            ;
+; NUM[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[4] ; N/A                                                                                                                                                            ;
+; NUM[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[5] ; N/A                                                                                                                                                            ;
+; NUM[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated|safe_q[5] ; N/A                                                                                                                                                            ;
+; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A                                                                                                                                                            ;
+; RSTButton     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RSTButton                                                                                                              ; N/A                                                                                                                                                            ;
+; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A                                                                                                                                                            ;
+; VALUE[0]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[0]~59                  ; N/A                                                                                                                                                            ;
+; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A                                                                                                                                                            ;
+; VALUE[1]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[1]~84                  ; N/A                                                                                                                                                            ;
+; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A                                                                                                                                                            ;
+; VALUE[2]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[2]                     ; N/A                                                                                                                                                            ;
+; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A                                                                                                                                                            ;
+; VALUE[3]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[3]                     ; N/A                                                                                                                                                            ;
+; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A                                                                                                                                                            ;
+; VALUE[4]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[4]~12                  ; N/A                                                                                                                                                            ;
+; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A                                                                                                                                                            ;
+; VALUE[5]      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated|result_node[5]~7                   ; N/A                                                                                                                                                            ;
+; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A                                                                                                                                                            ;
+; dipswitch1[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[0]                                                                                                          ; N/A                                                                                                                                                            ;
+; dipswitch1[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[1]                                                                                                          ; N/A                                                                                                                                                            ;
+; dipswitch1[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dipswitch1[1]                                                                                                          ; N/A                                                                                                                                                            ;
+; dipswitch2[0] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[0] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[1] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[1] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[2] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[2] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[3] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[3] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[4] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[4] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[5] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; dipswitch2[5] ; pre-synthesis ; missing   ; Top            ; post-synthesis    ; GND                                                                                                                    ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A                                                                                                                                                            ;
+; enable        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; inst21                                                                                                                 ; N/A                                                                                                                                                            ;
++---------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -3081,7 +3039,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Nov 19 18:18:12 2017
+    Info: Processing started: Mon Nov 20 08:27:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab3 -c g21_lab3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -4041,10 +3999,6 @@ Info (12128): Elaborating entity "BUSMUX" for hierarchy "g21_stack52:inst8|BUSMU
 Info (12130): Elaborated megafunction instantiation "g21_stack52:inst8|BUSMUX:inst103"
 Info (12133): Instantiated megafunction "g21_stack52:inst8|BUSMUX:inst103" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst12"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:inst12"
-Info (12133): Instantiated megafunction "BUSMUX:inst12" with the following parameter:
-    Info (12134): Parameter "WIDTH" = "6"
 Info (12128): Elaborating entity "lpm_divide0" for hierarchy "lpm_divide0:inst10"
 Info (12128): Elaborating entity "lpm_divide" for hierarchy "lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component"
 Info (12130): Elaborated megafunction instantiation "lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component"
@@ -4115,15 +4069,6 @@ Info (12133): Instantiated megafunction "lpm_constantdata:inst99|lpm_constant:LP
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst17"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:inst17"
-Info (12133): Instantiated megafunction "BUSMUX:inst17" with the following parameter:
-    Info (12134): Parameter "WIDTH" = "2"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst17|lpm_mux:$00000"
-Info (12131): Elaborated megafunction instantiation "BUSMUX:inst17|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst17"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mmc.tdf
-    Info (12023): Found entity 1: mux_mmc
-Info (12128): Elaborating entity "mux_mmc" for hierarchy "BUSMUX:inst17|lpm_mux:$00000|mux_mmc:auto_generated"
 Info (12128): Elaborating entity "g21_7_segment_decoder" for hierarchy "g21_7_segment_decoder:inst3"
 Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: g21_Modulo_13
@@ -4173,22 +4118,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED3[1]" is stuck at VCC
     Warning (13410): Pin "LED3[0]" is stuck at VCC
     Warning (13410): Pin "LEDfloor[1]" is stuck at GND
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
-Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 33 of its 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 12 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1676 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
+Info (21057): Implemented 1669 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 1548 logic cells
+    Info (21061): Implemented 1547 logic cells
     Info (21064): Implemented 74 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 286 warnings
-    Info: Peak virtual memory: 674 megabytes
-    Info: Processing ended: Sun Nov 19 18:18:26 2017
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:12
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 285 warnings
+    Info: Peak virtual memory: 675 megabytes
+    Info: Processing ended: Mon Nov 20 08:28:16 2017
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:22
 
 
