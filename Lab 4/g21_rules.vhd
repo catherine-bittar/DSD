@@ -13,14 +13,14 @@ use ieee.numeric_std.all;
 library lpm;
 use lpm.lpm_components.all;
 
-entity g21_rules is
+entity g21_rules1 is
 	port(play_pile_top_card: in std_logic_vector(5 downto 0); -- card to add to out hand
 	     card_to_play      : in std_logic_vector(5 downto 0); -- sum of cards we already have
         legal_play        : out std_logic;
 		  total_value       : out unsigned(5 downto 0));
-end g21_rules;	
+end g21_rules1;	
 
-architecture game_rules of g21_rules is
+architecture game_rules of g21_rules1 is
 	signal face_top: std_logic_vector(3 downto 0); -- numerical face value
 	signal suit_top: std_logic_vector(2 downto 0); 
 	signal top_val: unsigned(3 downto 0); -- integer value of card to add (face_top + 1)

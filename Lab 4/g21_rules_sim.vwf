@@ -622,7 +622,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 0;
 	CHILDREN = 16, 17, 18, 19, 20, 21;
@@ -632,7 +632,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
 	PARENT = 15;
@@ -642,7 +642,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
 	PARENT = 15;
@@ -652,7 +652,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
 	PARENT = 15;
@@ -662,7 +662,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
 	PARENT = 15;
@@ -672,7 +672,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
 	PARENT = 15;
@@ -682,7 +682,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "total_value[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
 	PARENT = 15;
