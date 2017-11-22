@@ -1,0 +1,6346 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|card_to_add[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|current_hand[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "g21_rules_2_again_vlg_vec_tst|current_hand";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|legal_play")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|total_value[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|sampler")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~1_cout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~6_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add1~8_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Equal0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Equal0~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|LessThan2~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[0]~5_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Equal0~1clkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst26|inst16~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst29|inst13~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst30|inst13~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst16~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst27|inst16~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst4|inst25|inst15~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst13~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst|inst23~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_value[2]~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|LessThan4~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~6_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|total_value_int~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~1_cout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~6_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~9")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~10_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~8_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|LessThan5~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add3~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|Add2~8_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|ace_in_total~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|fake_add[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|fake_add[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|fake_add[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|fake_add[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|fake_add[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|card_to_add[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|current_hand[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|legal_play")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 21.096;
+		LEVEL 1 FOR 53.974;
+		LEVEL 0 FOR 68.777;
+		LEVEL 1 FOR 9.583;
+		LEVEL 0 FOR 4.745;
+		LEVEL 1 FOR 43.874;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 5.281;
+		LEVEL 0 FOR 40.419;
+		LEVEL 1 FOR 58.769;
+		LEVEL 0 FOR 67.216;
+		LEVEL 1 FOR 9.41;
+		LEVEL 0 FOR 3.25;
+		LEVEL 1 FOR 45.655;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 3.377;
+		LEVEL 0 FOR 41.872;
+		LEVEL 1 FOR 57.772;
+		LEVEL 0 FOR 61.813;
+		LEVEL 1 FOR 58.187;
+		LEVEL 0 FOR 68.777;
+		LEVEL 1 FOR 9.583;
+		LEVEL 0 FOR 4.745;
+		LEVEL 1 FOR 43.874;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 5.281;
+		LEVEL 0 FOR 40.419;
+		LEVEL 1 FOR 58.769;
+		LEVEL 0 FOR 23.482;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.642;
+		LEVEL 0 FOR 989.358;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 14.867;
+		LEVEL 1 FOR 15.853;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 256.7;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 256.7;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 116.7;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 256.7;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 65.98;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 19.699;
+		LEVEL 0 FOR 10.395;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 61.32;
+		LEVEL 1 FOR 47.736;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 43.874;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 18.477;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 13.742;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 8.353;
+		LEVEL 1 FOR 3.25;
+		LEVEL 0 FOR 45.655;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 18.477;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 3.377;
+		LEVEL 1 FOR 41.872;
+		LEVEL 0 FOR 14.193;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 42.092;
+		LEVEL 0 FOR 14.608;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 61.32;
+		LEVEL 1 FOR 47.736;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 43.874;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 18.477;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 13.742;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 6.606;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.098;
+		LEVEL 0 FOR 15.853;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 41.32;
+		LEVEL 0 FOR 88.68;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 19.368;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 3.73;
+		LEVEL 0 FOR 55.4;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 16.365;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 19.368;
+		LEVEL 0 FOR 66.7;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 21.557;
+		LEVEL 1 FOR 38.443;
+		LEVEL 0 FOR 56.7;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 41.32;
+		LEVEL 0 FOR 88.68;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 19.368;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 3.73;
+		LEVEL 0 FOR 55.4;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 5.749;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 20.186;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 23.615;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 68.68;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.267;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 34.486;
+		LEVEL 1 FOR 23.615;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.267;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 34.118;
+		LEVEL 1 FOR 25.172;
+		LEVEL 0 FOR 18.443;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 56.385;
+		LEVEL 1 FOR 23.615;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 68.68;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.267;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 34.486;
+		LEVEL 1 FOR 23.615;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 6.199;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|total_value[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 13.793;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 41.995;
+		LEVEL 0 FOR 8.005;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.557;
+		LEVEL 0 FOR 8.443;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 31.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 7.054;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~1_cout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.686;
+		LEVEL 1 FOR 998.314;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.096;
+		LEVEL 1 FOR 997.904;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.463;
+		LEVEL 0 FOR 998.537;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.873;
+		LEVEL 0 FOR 998.127;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.534;
+		LEVEL 1 FOR 998.466;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.944;
+		LEVEL 1 FOR 998.056;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1.487;
+		LEVEL 0 FOR 998.513;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add1~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.018;
+		LEVEL 1 FOR 993.982;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.227;
+		LEVEL 0 FOR 121.509;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 18.694;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 1.306;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 59.549;
+		LEVEL 0 FOR 66.123;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.022;
+		LEVEL 1 FOR 80.862;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 119.343;
+		LEVEL 0 FOR 120.657;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 18.694;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 1.306;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 59.549;
+		LEVEL 0 FOR 33.264;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.288;
+		LEVEL 0 FOR 40.852;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.149;
+		LEVEL 0 FOR 39.851;
+		LEVEL 1 FOR 41.455;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 18.545;
+		LEVEL 0 FOR 41.004;
+		LEVEL 1 FOR 38.996;
+		LEVEL 0 FOR 27.127;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 42.873;
+		LEVEL 1 FOR 41.011;
+		LEVEL 0 FOR 38.989;
+		LEVEL 1 FOR 1.004;
+		LEVEL 0 FOR 38.996;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.149;
+		LEVEL 0 FOR 39.851;
+		LEVEL 1 FOR 41.455;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 18.545;
+		LEVEL 0 FOR 41.004;
+		LEVEL 1 FOR 32.856;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.397;
+		LEVEL 0 FOR 40.35;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.584;
+		LEVEL 0 FOR 8.878;
+		LEVEL 1 FOR 5.45;
+		LEVEL 0 FOR 24.55;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 19.498;
+		LEVEL 0 FOR 0.502;
+		LEVEL 1 FOR 5.96;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.04;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.953;
+		LEVEL 0 FOR 5.007;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 0.953;
+		LEVEL 0 FOR 18.545;
+		LEVEL 1 FOR 0.502;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.502;
+		LEVEL 1 FOR 19.498;
+		LEVEL 0 FOR 19.498;
+		LEVEL 1 FOR 0.502;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 6.625;
+		LEVEL 0 FOR 9.335;
+		LEVEL 1 FOR 0.665;
+		LEVEL 0 FOR 0.457;
+		LEVEL 1 FOR 2.918;
+		LEVEL 0 FOR 25.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.538;
+		LEVEL 1 FOR 26.462;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.549;
+		LEVEL 0 FOR 25.451;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.538;
+		LEVEL 1 FOR 1.004;
+		LEVEL 0 FOR 38.996;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.584;
+		LEVEL 0 FOR 8.878;
+		LEVEL 1 FOR 5.45;
+		LEVEL 0 FOR 24.55;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 19.498;
+		LEVEL 0 FOR 0.502;
+		LEVEL 1 FOR 5.96;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.04;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.953;
+		LEVEL 0 FOR 5.007;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 0.953;
+		LEVEL 0 FOR 18.545;
+		LEVEL 1 FOR 0.502;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.502;
+		LEVEL 1 FOR 19.498;
+		LEVEL 0 FOR 12.751;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.315;
+		LEVEL 0 FOR 59.756;
+		LEVEL 1 FOR 0.212;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 29.788;
+		LEVEL 0 FOR 85.947;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.645;
+		LEVEL 1 FOR 5.09;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 4.719;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.147;
+		LEVEL 0 FOR 5.853;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 13.183;
+		LEVEL 1 FOR 0.857;
+		LEVEL 0 FOR 60.502;
+		LEVEL 1 FOR 0.336;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 1.228;
+		LEVEL 1 FOR 18.772;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.857;
+		LEVEL 0 FOR 65.09;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.735;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 5.419;
+		LEVEL 1 FOR 4.581;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 73.183;
+		LEVEL 1 FOR 0.212;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 0.781;
+		LEVEL 1 FOR 19.219;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.781;
+		LEVEL 0 FOR 59.219;
+		LEVEL 1 FOR 0.212;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 29.788;
+		LEVEL 0 FOR 85.947;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.645;
+		LEVEL 1 FOR 5.09;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 4.719;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.147;
+		LEVEL 0 FOR 5.853;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 13.183;
+		LEVEL 1 FOR 0.857;
+		LEVEL 0 FOR 60.502;
+		LEVEL 1 FOR 0.336;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 1.228;
+		LEVEL 1 FOR 11.701;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Equal0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.6;
+		LEVEL 1 FOR 20.473;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.224;
+		LEVEL 1 FOR 8.723;
+		LEVEL 0 FOR 5.605;
+		LEVEL 1 FOR 4.395;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.873;
+		LEVEL 0 FOR 39.851;
+		LEVEL 1 FOR 0.329;
+		LEVEL 0 FOR 6.102;
+		LEVEL 1 FOR 9.845;
+		LEVEL 0 FOR 4.195;
+		LEVEL 1 FOR 5.805;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.195;
+		LEVEL 0 FOR 20.984;
+		LEVEL 1 FOR 18.545;
+		LEVEL 0 FOR 40.471;
+		LEVEL 1 FOR 0.533;
+		LEVEL 0 FOR 19.467;
+		LEVEL 1 FOR 19.529;
+		LEVEL 0 FOR 27.127;
+		LEVEL 1 FOR 9.149;
+		LEVEL 0 FOR 4.195;
+		LEVEL 1 FOR 5.805;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 46.102;
+		LEVEL 1 FOR 9.845;
+		LEVEL 0 FOR 4.735;
+		LEVEL 1 FOR 5.265;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 20.675;
+		LEVEL 1 FOR 19.325;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.224;
+		LEVEL 1 FOR 8.723;
+		LEVEL 0 FOR 5.605;
+		LEVEL 1 FOR 4.395;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.873;
+		LEVEL 0 FOR 39.851;
+		LEVEL 1 FOR 0.329;
+		LEVEL 0 FOR 6.102;
+		LEVEL 1 FOR 9.845;
+		LEVEL 0 FOR 4.195;
+		LEVEL 1 FOR 5.805;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.195;
+		LEVEL 0 FOR 20.984;
+		LEVEL 1 FOR 18.545;
+		LEVEL 0 FOR 40.471;
+		LEVEL 1 FOR 0.533;
+		LEVEL 0 FOR 19.467;
+		LEVEL 1 FOR 12.785;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Equal0~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.179;
+		LEVEL 1 FOR 5.056;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 107.458;
+		LEVEL 1 FOR 6.99;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 93.295;
+		LEVEL 1 FOR 0.9;
+		LEVEL 0 FOR 21.197;
+		LEVEL 1 FOR 3.109;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.223;
+		LEVEL 0 FOR 40.471;
+		LEVEL 1 FOR 0.533;
+		LEVEL 0 FOR 66.123;
+		LEVEL 1 FOR 7.65;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 114.941;
+		LEVEL 1 FOR 3.56;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 99.929;
+		LEVEL 1 FOR 4.519;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 107.458;
+		LEVEL 1 FOR 6.99;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 93.295;
+		LEVEL 1 FOR 0.9;
+		LEVEL 0 FOR 21.197;
+		LEVEL 1 FOR 3.109;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.223;
+		LEVEL 0 FOR 40.471;
+		LEVEL 1 FOR 0.533;
+		LEVEL 0 FOR 31.538;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 11.245;
+		LEVEL 0 FOR 988.755;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|LessThan2~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.041;
+		LEVEL 1 FOR 79.69;
+		LEVEL 0 FOR 1.197;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 19.652;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 7.09;
+		LEVEL 1 FOR 8.833;
+		LEVEL 0 FOR 5.495;
+		LEVEL 1 FOR 84.395;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.15;
+		LEVEL 0 FOR 21.029;
+		LEVEL 1 FOR 58.522;
+		LEVEL 0 FOR 0.494;
+		LEVEL 1 FOR 39.529;
+		LEVEL 0 FOR 26.1;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 79.032;
+		LEVEL 0 FOR 1.879;
+		LEVEL 1 FOR 5.265;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 20.675;
+		LEVEL 1 FOR 38.128;
+		LEVEL 0 FOR 0.847;
+		LEVEL 1 FOR 60.35;
+		LEVEL 0 FOR 19.65;
+		LEVEL 1 FOR 79.153;
+		LEVEL 0 FOR 1.197;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 19.652;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 7.09;
+		LEVEL 1 FOR 8.833;
+		LEVEL 0 FOR 5.495;
+		LEVEL 1 FOR 84.395;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.15;
+		LEVEL 0 FOR 21.029;
+		LEVEL 1 FOR 58.522;
+		LEVEL 0 FOR 0.494;
+		LEVEL 1 FOR 31.93;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 12.954;
+		LEVEL 0 FOR 65.218;
+		LEVEL 1 FOR 29.788;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 19.652;
+		LEVEL 0 FOR 0.482;
+		LEVEL 1 FOR 7.09;
+		LEVEL 0 FOR 8.833;
+		LEVEL 1 FOR 5.495;
+		LEVEL 0 FOR 43.874;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.645;
+		LEVEL 1 FOR 5.09;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 4.719;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 13.626;
+		LEVEL 0 FOR 0.524;
+		LEVEL 1 FOR 21.029;
+		LEVEL 0 FOR 58.522;
+		LEVEL 1 FOR 0.494;
+		LEVEL 0 FOR 9.549;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 1.228;
+		LEVEL 1 FOR 18.772;
+		LEVEL 0 FOR 0.192;
+		LEVEL 1 FOR 26.1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 45.655;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.735;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 3.377;
+		LEVEL 1 FOR 6.623;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 13.532;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 20.675;
+		LEVEL 0 FOR 38.128;
+		LEVEL 1 FOR 0.847;
+		LEVEL 0 FOR 30.041;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 0.781;
+		LEVEL 1 FOR 19.219;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 20.26;
+		LEVEL 0 FOR 69.431;
+		LEVEL 1 FOR 29.788;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 19.652;
+		LEVEL 0 FOR 0.482;
+		LEVEL 1 FOR 7.09;
+		LEVEL 0 FOR 8.833;
+		LEVEL 1 FOR 5.495;
+		LEVEL 0 FOR 43.874;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.645;
+		LEVEL 1 FOR 5.09;
+		LEVEL 0 FOR 1.241;
+		LEVEL 1 FOR 8.759;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 4.719;
+		LEVEL 0 FOR 0.521;
+		LEVEL 1 FOR 13.626;
+		LEVEL 0 FOR 0.524;
+		LEVEL 1 FOR 21.029;
+		LEVEL 0 FOR 58.522;
+		LEVEL 1 FOR 0.494;
+		LEVEL 0 FOR 9.549;
+		LEVEL 1 FOR 9.788;
+		LEVEL 0 FOR 1.228;
+		LEVEL 1 FOR 10.812;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.948;
+		LEVEL 0 FOR 10.023;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.763;
+		LEVEL 1 FOR 22.295;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.577;
+		LEVEL 1 FOR 1.299;
+		LEVEL 0 FOR 18.124;
+		LEVEL 1 FOR 1.876;
+		LEVEL 0 FOR 8.066;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.763;
+		LEVEL 1 FOR 22.295;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.858;
+		LEVEL 0 FOR 0.574;
+		LEVEL 1 FOR 18.568;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 1.425;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 27.763;
+		LEVEL 1 FOR 22.295;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.577;
+		LEVEL 1 FOR 1.299;
+		LEVEL 0 FOR 18.124;
+		LEVEL 1 FOR 1.876;
+		LEVEL 0 FOR 8.066;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 4.029;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 12.904;
+		LEVEL 0 FOR 4.015;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 5.552;
+		LEVEL 1 FOR 8.463;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.67;
+		LEVEL 1 FOR 1.197;
+		LEVEL 0 FOR 8.133;
+		LEVEL 1 FOR 31.519;
+		LEVEL 0 FOR 0.482;
+		LEVEL 1 FOR 7.09;
+		LEVEL 0 FOR 8.833;
+		LEVEL 1 FOR 8.061;
+		LEVEL 0 FOR 1.499;
+		LEVEL 1 FOR 12.574;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.721;
+		LEVEL 0 FOR 0.9;
+		LEVEL 1 FOR 21.314;
+		LEVEL 0 FOR 7.007;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 5.223;
+		LEVEL 1 FOR 8.792;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 37.638;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 8.347;
+		LEVEL 0 FOR 1.499;
+		LEVEL 1 FOR 12.574;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 1.809;
+		LEVEL 1 FOR 20.675;
+		LEVEL 0 FOR 7.458;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 5.552;
+		LEVEL 1 FOR 8.463;
+		LEVEL 0 FOR 10.67;
+		LEVEL 1 FOR 0.847;
+		LEVEL 0 FOR 8.483;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 31.517;
+		LEVEL 0 FOR 8.483;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 5.552;
+		LEVEL 1 FOR 8.463;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.67;
+		LEVEL 1 FOR 1.197;
+		LEVEL 0 FOR 8.133;
+		LEVEL 1 FOR 31.519;
+		LEVEL 0 FOR 0.482;
+		LEVEL 1 FOR 7.09;
+		LEVEL 0 FOR 8.833;
+		LEVEL 1 FOR 8.061;
+		LEVEL 0 FOR 1.499;
+		LEVEL 1 FOR 12.574;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.721;
+		LEVEL 0 FOR 0.9;
+		LEVEL 1 FOR 21.314;
+		LEVEL 0 FOR 7.007;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 5.223;
+		LEVEL 1 FOR 8.792;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 3.081;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[0]~5_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.007;
+		LEVEL 1 FOR 9.153;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 0.45;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.32;
+		LEVEL 0 FOR 28.68;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 7.267;
+		LEVEL 0 FOR 0.697;
+		LEVEL 1 FOR 2.036;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 0.614;
+		LEVEL 1 FOR 1.285;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 7.554;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.881;
+		LEVEL 0 FOR 0.567;
+		LEVEL 1 FOR 8.552;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.991;
+		LEVEL 0 FOR 29.009;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 7.267;
+		LEVEL 0 FOR 0.697;
+		LEVEL 1 FOR 2.036;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 21.995;
+		LEVEL 1 FOR 8.005;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 0.687;
+		LEVEL 1 FOR 8.443;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.32;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.87;
+		LEVEL 0 FOR 0.45;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.32;
+		LEVEL 0 FOR 28.68;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 7.267;
+		LEVEL 0 FOR 0.697;
+		LEVEL 1 FOR 2.036;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 0.614;
+		LEVEL 1 FOR 1.285;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 7.554;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.881;
+		LEVEL 0 FOR 0.567;
+		LEVEL 1 FOR 8.552;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.84;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Equal0~1clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.126;
+		LEVEL 1 FOR 5.056;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 107.458;
+		LEVEL 1 FOR 6.99;
+		LEVEL 0 FOR 126.891;
+		LEVEL 1 FOR 3.109;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.223;
+		LEVEL 0 FOR 107.127;
+		LEVEL 1 FOR 7.65;
+		LEVEL 0 FOR 126.44;
+		LEVEL 1 FOR 3.56;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 99.929;
+		LEVEL 1 FOR 4.519;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.552;
+		LEVEL 0 FOR 107.458;
+		LEVEL 1 FOR 6.99;
+		LEVEL 0 FOR 126.891;
+		LEVEL 1 FOR 3.109;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.223;
+		LEVEL 0 FOR 70.595;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst26|inst16~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.041;
+		LEVEL 0 FOR 66.968;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 34.107;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.451;
+		LEVEL 0 FOR 66.975;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.877;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 40.451;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 59.549;
+		LEVEL 0 FOR 66.123;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.877;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 40.451;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 59.549;
+		LEVEL 0 FOR 66.123;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.877;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 40.451;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 59.549;
+		LEVEL 0 FOR 33.697;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.234;
+		LEVEL 0 FOR 240.658;
+		LEVEL 1 FOR 1.289;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 58.981;
+		LEVEL 0 FOR 0.568;
+		LEVEL 1 FOR 66.123;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.039;
+		LEVEL 0 FOR 80.27;
+		LEVEL 1 FOR 0.575;
+		LEVEL 0 FOR 39.993;
+		LEVEL 1 FOR 119.356;
+		LEVEL 0 FOR 239.806;
+		LEVEL 1 FOR 1.289;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 58.981;
+		LEVEL 0 FOR 0.568;
+		LEVEL 1 FOR 33.27;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst29|inst13~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.311;
+		LEVEL 0 FOR 121.417;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 98.715;
+		LEVEL 0 FOR 1.285;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 58.982;
+		LEVEL 1 FOR 0.567;
+		LEVEL 0 FOR 66.123;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.043;
+		LEVEL 1 FOR 80.267;
+		LEVEL 0 FOR 0.574;
+		LEVEL 1 FOR 39.993;
+		LEVEL 0 FOR 240.0;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 98.715;
+		LEVEL 0 FOR 1.285;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 58.982;
+		LEVEL 1 FOR 0.567;
+		LEVEL 0 FOR 33.272;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst30|inst13~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.229;
+		LEVEL 0 FOR 240.658;
+		LEVEL 1 FOR 1.299;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 218.982;
+		LEVEL 0 FOR 0.574;
+		LEVEL 1 FOR 39.993;
+		LEVEL 0 FOR 359.152;
+		LEVEL 1 FOR 1.299;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 92.814;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst16~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.473;
+		LEVEL 0 FOR 127.934;
+		LEVEL 1 FOR 8.878;
+		LEVEL 0 FOR 5.45;
+		LEVEL 1 FOR 18.59;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 15.96;
+		LEVEL 0 FOR 1.122;
+		LEVEL 1 FOR 2.918;
+		LEVEL 0 FOR 25.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 251.122;
+		LEVEL 1 FOR 8.878;
+		LEVEL 0 FOR 5.45;
+		LEVEL 1 FOR 18.59;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 13.675;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.765;
+		LEVEL 0 FOR 128.066;
+		LEVEL 1 FOR 8.878;
+		LEVEL 0 FOR 5.45;
+		LEVEL 1 FOR 18.143;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 0.447;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.963;
+		LEVEL 1 FOR 58.981;
+		LEVEL 0 FOR 20.056;
+		LEVEL 1 FOR 55.96;
+		LEVEL 0 FOR 0.675;
+		LEVEL 1 FOR 3.039;
+		LEVEL 0 FOR 66.286;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.552;
+		LEVEL 1 FOR 39.041;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 127.529;
+		LEVEL 1 FOR 8.878;
+		LEVEL 0 FOR 5.45;
+		LEVEL 1 FOR 18.143;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 0.447;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.963;
+		LEVEL 1 FOR 58.981;
+		LEVEL 0 FOR 20.056;
+		LEVEL 1 FOR 13.251;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst27|inst16~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.425;
+		LEVEL 0 FOR 67.006;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.846;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.518;
+		LEVEL 0 FOR 66.154;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.846;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.518;
+		LEVEL 0 FOR 66.154;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 43.846;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.556;
+		LEVEL 0 FOR 66.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.884;
+		LEVEL 1 FOR 0.444;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 19.518;
+		LEVEL 0 FOR 33.723;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst4|inst25|inst15~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.309;
+		LEVEL 0 FOR 121.36;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 499.008;
+		LEVEL 0 FOR 120.51;
+		LEVEL 1 FOR 0.482;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.328;
+		LEVEL 1 FOR 212.849;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.315;
+		LEVEL 0 FOR 80.574;
+		LEVEL 1 FOR 40.845;
+		LEVEL 0 FOR 0.451;
+		LEVEL 1 FOR 5.672;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.328;
+		LEVEL 0 FOR 18.98;
+		LEVEL 1 FOR 79.724;
+		LEVEL 0 FOR 80.845;
+		LEVEL 1 FOR 66.123;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 83.032;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.276;
+		LEVEL 0 FOR 79.724;
+		LEVEL 1 FOR 40.845;
+		LEVEL 0 FOR 0.451;
+		LEVEL 1 FOR 5.672;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.328;
+		LEVEL 0 FOR 18.98;
+		LEVEL 1 FOR 79.724;
+		LEVEL 0 FOR 80.845;
+		LEVEL 1 FOR 33.266;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.436;
+		LEVEL 0 FOR 79.85;
+		LEVEL 1 FOR 48.216;
+		LEVEL 0 FOR 8.752;
+		LEVEL 1 FOR 5.576;
+		LEVEL 0 FOR 58.143;
+		LEVEL 1 FOR 0.447;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 18.866;
+		LEVEL 0 FOR 1.134;
+		LEVEL 1 FOR 20.963;
+		LEVEL 0 FOR 79.037;
+		LEVEL 1 FOR 45.834;
+		LEVEL 0 FOR 10.801;
+		LEVEL 1 FOR 3.039;
+		LEVEL 0 FOR 66.286;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.906;
+		LEVEL 1 FOR 41.646;
+		LEVEL 0 FOR 38.354;
+		LEVEL 1 FOR 0.687;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 79.313;
+		LEVEL 1 FOR 48.216;
+		LEVEL 0 FOR 8.752;
+		LEVEL 1 FOR 5.576;
+		LEVEL 0 FOR 58.143;
+		LEVEL 1 FOR 0.447;
+		LEVEL 0 FOR 5.96;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 18.866;
+		LEVEL 0 FOR 1.134;
+		LEVEL 1 FOR 20.963;
+		LEVEL 0 FOR 79.037;
+		LEVEL 1 FOR 12.58;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst13~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.863;
+		LEVEL 0 FOR 20.473;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.944;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 14.552;
+		LEVEL 1 FOR 1.12;
+		LEVEL 0 FOR 2.933;
+		LEVEL 1 FOR 1.395;
+		LEVEL 0 FOR 4.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.163;
+		LEVEL 1 FOR 5.837;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.377;
+		LEVEL 0 FOR 0.567;
+		LEVEL 1 FOR 19.056;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.947;
+		LEVEL 1 FOR 1.12;
+		LEVEL 0 FOR 8.88;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 0.944;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 14.552;
+		LEVEL 1 FOR 1.12;
+		LEVEL 0 FOR 2.933;
+		LEVEL 1 FOR 1.395;
+		LEVEL 0 FOR 4.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.053;
+		LEVEL 1 FOR 5.947;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 5.947;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.163;
+		LEVEL 1 FOR 5.837;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.053;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 0.377;
+		LEVEL 0 FOR 0.567;
+		LEVEL 1 FOR 19.056;
+		LEVEL 0 FOR 13.664;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst|inst23~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.942;
+		LEVEL 0 FOR 10.026;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 1.483;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 7.606;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 1.934;
+		LEVEL 1 FOR 8.066;
+		LEVEL 0 FOR 10.628;
+		LEVEL 1 FOR 9.372;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.628;
+		LEVEL 0 FOR 1.306;
+		LEVEL 1 FOR 8.066;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.934;
+		LEVEL 0 FOR 8.066;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.483;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 7.606;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 7.606;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 0.628;
+		LEVEL 1 FOR 9.372;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.49;
+		LEVEL 1 FOR 8.51;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.483;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.826;
+		LEVEL 0 FOR 9.174;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 1.483;
+		LEVEL 1 FOR 0.451;
+		LEVEL 0 FOR 5.672;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 7.606;
+		LEVEL 1 FOR 2.394;
+		LEVEL 0 FOR 1.934;
+		LEVEL 1 FOR 8.066;
+		LEVEL 0 FOR 10.628;
+		LEVEL 1 FOR 9.372;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.628;
+		LEVEL 0 FOR 1.306;
+		LEVEL 1 FOR 8.066;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.934;
+		LEVEL 0 FOR 8.066;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.483;
+		LEVEL 0 FOR 8.517;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.032;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_value[2]~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.101;
+		LEVEL 0 FOR 19.97;
+		LEVEL 1 FOR 0.214;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 29.786;
+		LEVEL 0 FOR 0.214;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 75.733;
+		LEVEL 1 FOR 4.267;
+		LEVEL 0 FOR 10.628;
+		LEVEL 1 FOR 5.105;
+		LEVEL 0 FOR 0.895;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.668;
+		LEVEL 0 FOR 5.065;
+		LEVEL 1 FOR 0.895;
+		LEVEL 0 FOR 10.31;
+		LEVEL 1 FOR 3.73;
+		LEVEL 0 FOR 59.332;
+		LEVEL 1 FOR 0.668;
+		LEVEL 0 FOR 9.332;
+		LEVEL 1 FOR 9.786;
+		LEVEL 0 FOR 0.882;
+		LEVEL 1 FOR 20.502;
+		LEVEL 0 FOR 0.313;
+		LEVEL 1 FOR 8.517;
+		LEVEL 0 FOR 9.786;
+		LEVEL 1 FOR 0.882;
+		LEVEL 0 FOR 46.144;
+		LEVEL 1 FOR 0.481;
+		LEVEL 0 FOR 9.335;
+		LEVEL 1 FOR 0.665;
+		LEVEL 0 FOR 8.44;
+		LEVEL 1 FOR 4.267;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.733;
+		LEVEL 0 FOR 0.895;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 3.538;
+		LEVEL 1 FOR 5.567;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.733;
+		LEVEL 1 FOR 0.895;
+		LEVEL 0 FOR 10.31;
+		LEVEL 1 FOR 2.906;
+		LEVEL 0 FOR 59.942;
+		LEVEL 1 FOR 0.214;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 9.844;
+		LEVEL 0 FOR 0.687;
+		LEVEL 1 FOR 19.255;
+		LEVEL 0 FOR 0.214;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 69.786;
+		LEVEL 1 FOR 0.214;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 29.786;
+		LEVEL 0 FOR 0.214;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 75.733;
+		LEVEL 1 FOR 4.267;
+		LEVEL 0 FOR 10.628;
+		LEVEL 1 FOR 5.105;
+		LEVEL 0 FOR 0.895;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.04;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.668;
+		LEVEL 0 FOR 5.065;
+		LEVEL 1 FOR 0.895;
+		LEVEL 0 FOR 10.31;
+		LEVEL 1 FOR 3.73;
+		LEVEL 0 FOR 59.332;
+		LEVEL 1 FOR 0.668;
+		LEVEL 0 FOR 9.332;
+		LEVEL 1 FOR 9.786;
+		LEVEL 0 FOR 0.882;
+		LEVEL 1 FOR 20.502;
+		LEVEL 0 FOR 0.313;
+		LEVEL 1 FOR 8.517;
+		LEVEL 0 FOR 9.786;
+		LEVEL 1 FOR 0.882;
+		LEVEL 0 FOR 12.047;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.868;
+		LEVEL 1 FOR 9.153;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.32;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 7.554;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.448;
+		LEVEL 1 FOR 8.552;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 21.995;
+		LEVEL 1 FOR 8.005;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.557;
+		LEVEL 1 FOR 8.443;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 31.32;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.32;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 12.429;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 17.267;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 7.554;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 11.448;
+		LEVEL 1 FOR 8.552;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 1.979;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.939;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 10.715;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 39.091;
+		LEVEL 1 FOR 0.194;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 12.574;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 49.227;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 10.715;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 37.638;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.782;
+		LEVEL 0 FOR 8.347;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 12.574;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 1.809;
+		LEVEL 0 FOR 27.418;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 10.715;
+		LEVEL 1 FOR 10.842;
+		LEVEL 0 FOR 8.443;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 39.285;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 10.715;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 39.091;
+		LEVEL 1 FOR 0.194;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 12.574;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.227;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 49.227;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 10.715;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 9.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 1.193;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.349;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 30.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 46.856;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 9.56;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 10.141;
+		LEVEL 1 FOR 0.487;
+		LEVEL 0 FOR 8.74;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.141;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.7;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 0.527;
+		LEVEL 0 FOR 48.7;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 37.638;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.782;
+		LEVEL 0 FOR 9.846;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 19.368;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 6.365;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 19.368;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 20.773;
+		LEVEL 1 FOR 1.809;
+		LEVEL 0 FOR 27.418;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 21.557;
+		LEVEL 1 FOR 8.443;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 39.285;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 30.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 46.856;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 9.56;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 10.141;
+		LEVEL 1 FOR 0.487;
+		LEVEL 0 FOR 8.74;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.141;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.7;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 0.527;
+		LEVEL 0 FOR 48.7;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 0.783;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 14.816;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 18.063;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 48.171;
+		LEVEL 1 FOR 0.509;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.753;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 12.992;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.608;
+		LEVEL 1 FOR 18.392;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 48.038;
+		LEVEL 1 FOR 1.962;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.467;
+		LEVEL 0 FOR 8.347;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 1.809;
+		LEVEL 0 FOR 19.728;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 13.443;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 19.62;
+		LEVEL 0 FOR 18.443;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 41.32;
+		LEVEL 1 FOR 0.597;
+		LEVEL 0 FOR 14.468;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 18.063;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 48.171;
+		LEVEL 1 FOR 0.509;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.753;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 12.992;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.608;
+		LEVEL 1 FOR 18.392;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 11.569;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|LessThan4~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.874;
+		LEVEL 0 FOR 15.853;
+		LEVEL 1 FOR 3.122;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 56.429;
+		LEVEL 1 FOR 0.575;
+		LEVEL 0 FOR 11.676;
+		LEVEL 1 FOR 0.81;
+		LEVEL 0 FOR 10.141;
+		LEVEL 1 FOR 0.487;
+		LEVEL 0 FOR 18.74;
+		LEVEL 1 FOR 0.28;
+		LEVEL 0 FOR 10.352;
+		LEVEL 1 FOR 9.19;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 0.493;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.522;
+		LEVEL 0 FOR 66.878;
+		LEVEL 1 FOR 3.122;
+		LEVEL 0 FOR 41.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 48.531;
+		LEVEL 1 FOR 1.469;
+		LEVEL 0 FOR 7.749;
+		LEVEL 1 FOR 0.289;
+		LEVEL 0 FOR 11.962;
+		LEVEL 1 FOR 0.81;
+		LEVEL 0 FOR 29.368;
+		LEVEL 1 FOR 0.28;
+		LEVEL 0 FOR 10.352;
+		LEVEL 1 FOR 9.19;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 30.951;
+		LEVEL 1 FOR 1.316;
+		LEVEL 0 FOR 34.611;
+		LEVEL 1 FOR 3.122;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 56.878;
+		LEVEL 1 FOR 3.122;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 56.429;
+		LEVEL 1 FOR 0.575;
+		LEVEL 0 FOR 11.676;
+		LEVEL 1 FOR 0.81;
+		LEVEL 0 FOR 10.141;
+		LEVEL 1 FOR 0.487;
+		LEVEL 0 FOR 18.74;
+		LEVEL 1 FOR 0.28;
+		LEVEL 0 FOR 10.352;
+		LEVEL 1 FOR 9.19;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 0.493;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.522;
+		LEVEL 0 FOR 66.878;
+		LEVEL 1 FOR 3.122;
+		LEVEL 0 FOR 41.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 11.151;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.01;
+		LEVEL 1 FOR 9.153;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 10.605;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 39.091;
+		LEVEL 0 FOR 0.194;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 1.068;
+		LEVEL 1 FOR 22.134;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 8.388;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 9.285;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 37.638;
+		LEVEL 0 FOR 1.647;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 0.782;
+		LEVEL 1 FOR 41.647;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 9.227;
+		LEVEL 1 FOR 30.773;
+		LEVEL 0 FOR 1.809;
+		LEVEL 1 FOR 27.418;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 9.285;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 39.285;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 10.605;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 39.091;
+		LEVEL 0 FOR 0.194;
+		LEVEL 1 FOR 7.571;
+		LEVEL 0 FOR 1.068;
+		LEVEL 1 FOR 22.134;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 8.388;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 9.285;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 1.122;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 14.878;
+		LEVEL 0 FOR 3.695;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 9.797;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 38.341;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 17.389;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.089;
+		LEVEL 1 FOR 0.556;
+		LEVEL 0 FOR 7.832;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 7.042;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 36.888;
+		LEVEL 0 FOR 0.75;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 8.353;
+		LEVEL 1 FOR 3.25;
+		LEVEL 0 FOR 38.397;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 9.25;
+		LEVEL 1 FOR 0.75;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 3.377;
+		LEVEL 1 FOR 20.138;
+		LEVEL 0 FOR 1.809;
+		LEVEL 1 FOR 19.925;
+		LEVEL 0 FOR 7.493;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 31.377;
+		LEVEL 0 FOR 7.908;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 9.797;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 38.341;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 17.389;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.089;
+		LEVEL 1 FOR 0.556;
+		LEVEL 0 FOR 7.832;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 7.042;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 0.712;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|total_value_int~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.815;
+		LEVEL 1 FOR 994.185;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~1_cout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.479;
+		LEVEL 0 FOR 993.521;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.55;
+		LEVEL 1 FOR 993.45;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.621;
+		LEVEL 0 FOR 993.379;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.273;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 30.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 46.856;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 9.56;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 19.368;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.141;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.7;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 0.527;
+		LEVEL 0 FOR 48.7;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 37.638;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.782;
+		LEVEL 0 FOR 9.846;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 19.368;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 6.365;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 19.368;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 20.773;
+		LEVEL 1 FOR 1.809;
+		LEVEL 0 FOR 27.418;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 21.557;
+		LEVEL 1 FOR 8.443;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 39.285;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 30.605;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 46.856;
+		LEVEL 1 FOR 1.068;
+		LEVEL 0 FOR 9.56;
+		LEVEL 1 FOR 2.433;
+		LEVEL 0 FOR 19.368;
+		LEVEL 1 FOR 7.26;
+		LEVEL 0 FOR 2.74;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 5.065;
+		LEVEL 0 FOR 4.267;
+		LEVEL 1 FOR 10.141;
+		LEVEL 0 FOR 0.527;
+		LEVEL 1 FOR 8.7;
+		LEVEL 0 FOR 7.57;
+		LEVEL 1 FOR 2.43;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 0.527;
+		LEVEL 0 FOR 48.7;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 29.285;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.574;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.692;
+		LEVEL 1 FOR 993.308;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~9")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.763;
+		LEVEL 0 FOR 993.237;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~10_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.224;
+		LEVEL 1 FOR 9.153;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 65.733;
+		LEVEL 0 FOR 0.633;
+		LEVEL 1 FOR 22.569;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 0.871;
+		LEVEL 1 FOR 67.517;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 56.515;
+		LEVEL 0 FOR 1.647;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 1.065;
+		LEVEL 1 FOR 68.162;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 58.162;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 65.733;
+		LEVEL 0 FOR 0.633;
+		LEVEL 1 FOR 22.569;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 0.871;
+		LEVEL 1 FOR 67.517;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 18.785;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.547;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 18.063;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 48.171;
+		LEVEL 1 FOR 0.509;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.753;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 12.992;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.608;
+		LEVEL 1 FOR 18.392;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 48.038;
+		LEVEL 1 FOR 1.962;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.467;
+		LEVEL 0 FOR 8.347;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 2.733;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 1.809;
+		LEVEL 0 FOR 19.728;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 13.443;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 19.62;
+		LEVEL 0 FOR 18.443;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 41.32;
+		LEVEL 1 FOR 0.597;
+		LEVEL 0 FOR 14.468;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.937;
+		LEVEL 1 FOR 18.063;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 21.32;
+		LEVEL 0 FOR 48.171;
+		LEVEL 1 FOR 0.509;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.753;
+		LEVEL 0 FOR 8.061;
+		LEVEL 1 FOR 1.499;
+		LEVEL 0 FOR 2.116;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 9.542;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.458;
+		LEVEL 1 FOR 9.542;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 16.809;
+		LEVEL 1 FOR 4.632;
+		LEVEL 0 FOR 20.547;
+		LEVEL 1 FOR 0.947;
+		LEVEL 0 FOR 12.992;
+		LEVEL 1 FOR 3.615;
+		LEVEL 0 FOR 1.608;
+		LEVEL 1 FOR 18.392;
+		LEVEL 0 FOR 21.448;
+		LEVEL 1 FOR 18.552;
+		LEVEL 0 FOR 10.838;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.612;
+		LEVEL 0 FOR 3.695;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 9.797;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 38.341;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 17.389;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.089;
+		LEVEL 1 FOR 0.556;
+		LEVEL 0 FOR 7.832;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 7.042;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 36.888;
+		LEVEL 0 FOR 0.75;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 8.353;
+		LEVEL 1 FOR 3.25;
+		LEVEL 0 FOR 38.397;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 9.25;
+		LEVEL 1 FOR 0.75;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 3.377;
+		LEVEL 1 FOR 20.138;
+		LEVEL 0 FOR 1.809;
+		LEVEL 1 FOR 19.925;
+		LEVEL 0 FOR 7.493;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 31.377;
+		LEVEL 0 FOR 7.908;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 9.797;
+		LEVEL 1 FOR 8.68;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 38.341;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 17.389;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 6.485;
+		LEVEL 1 FOR 4.265;
+		LEVEL 0 FOR 10.089;
+		LEVEL 1 FOR 0.556;
+		LEVEL 0 FOR 7.832;
+		LEVEL 1 FOR 7.258;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 7.042;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 0.808;
+		LEVEL 0 FOR 8.477;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 0.693;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|LessThan5~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 17.098;
+		LEVEL 0 FOR 10.395;
+		LEVEL 1 FOR 0.59;
+		LEVEL 0 FOR 42.989;
+		LEVEL 1 FOR 68.777;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 6.895;
+		LEVEL 1 FOR 0.964;
+		LEVEL 0 FOR 36.015;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 13.742;
+		LEVEL 1 FOR 0.59;
+		LEVEL 0 FOR 44.437;
+		LEVEL 1 FOR 67.216;
+		LEVEL 0 FOR 9.41;
+		LEVEL 1 FOR 3.25;
+		LEVEL 0 FOR 8.676;
+		LEVEL 1 FOR 0.964;
+		LEVEL 0 FOR 36.015;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 3.377;
+		LEVEL 1 FOR 20.138;
+		LEVEL 0 FOR 0.611;
+		LEVEL 1 FOR 21.123;
+		LEVEL 0 FOR 14.193;
+		LEVEL 1 FOR 0.59;
+		LEVEL 0 FOR 42.989;
+		LEVEL 1 FOR 61.813;
+		LEVEL 0 FOR 14.608;
+		LEVEL 1 FOR 0.59;
+		LEVEL 0 FOR 42.989;
+		LEVEL 1 FOR 68.777;
+		LEVEL 0 FOR 9.583;
+		LEVEL 1 FOR 4.745;
+		LEVEL 0 FOR 6.895;
+		LEVEL 1 FOR 0.964;
+		LEVEL 0 FOR 36.015;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 5.281;
+		LEVEL 1 FOR 40.419;
+		LEVEL 0 FOR 13.742;
+		LEVEL 1 FOR 0.59;
+		LEVEL 0 FOR 44.437;
+		LEVEL 1 FOR 27.48;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 8.891;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 2.733;
+		LEVEL 1 FOR 21.995;
+		LEVEL 0 FOR 8.005;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.557;
+		LEVEL 0 FOR 8.443;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 31.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.956;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add3~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.809;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 2.733;
+		LEVEL 1 FOR 21.995;
+		LEVEL 0 FOR 8.005;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.557;
+		LEVEL 0 FOR 8.443;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 31.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.32;
+		LEVEL 0 FOR 8.68;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 12.429;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 17.267;
+		LEVEL 0 FOR 4.632;
+		LEVEL 1 FOR 20.547;
+		LEVEL 0 FOR 7.554;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 11.448;
+		LEVEL 0 FOR 8.552;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 1.038;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.081;
+		LEVEL 0 FOR 9.153;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 1.123;
+		LEVEL 0 FOR 57.968;
+		LEVEL 1 FOR 0.194;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.633;
+		LEVEL 0 FOR 22.569;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.839;
+		LEVEL 1 FOR 0.871;
+		LEVEL 0 FOR 67.517;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 1.123;
+		LEVEL 0 FOR 56.515;
+		LEVEL 1 FOR 1.647;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 1.065;
+		LEVEL 0 FOR 68.162;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 1.123;
+		LEVEL 0 FOR 58.162;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 1.123;
+		LEVEL 0 FOR 57.968;
+		LEVEL 1 FOR 0.194;
+		LEVEL 0 FOR 7.571;
+		LEVEL 1 FOR 0.633;
+		LEVEL 0 FOR 22.569;
+		LEVEL 1 FOR 0.799;
+		LEVEL 0 FOR 18.428;
+		LEVEL 1 FOR 0.773;
+		LEVEL 0 FOR 20.839;
+		LEVEL 1 FOR 0.871;
+		LEVEL 0 FOR 67.517;
+		LEVEL 1 FOR 0.715;
+		LEVEL 0 FOR 5.985;
+		LEVEL 1 FOR 3.3;
+		LEVEL 0 FOR 50.715;
+		LEVEL 1 FOR 1.123;
+		LEVEL 0 FOR 19.928;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|Add2~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 9.491;
+		LEVEL 1 FOR 9.153;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 65.733;
+		LEVEL 0 FOR 0.633;
+		LEVEL 1 FOR 22.569;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 0.871;
+		LEVEL 1 FOR 67.517;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 56.515;
+		LEVEL 0 FOR 1.647;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 1.065;
+		LEVEL 1 FOR 68.162;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 58.162;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 65.733;
+		LEVEL 0 FOR 0.633;
+		LEVEL 1 FOR 22.569;
+		LEVEL 0 FOR 0.799;
+		LEVEL 1 FOR 18.428;
+		LEVEL 0 FOR 0.773;
+		LEVEL 1 FOR 20.839;
+		LEVEL 0 FOR 0.871;
+		LEVEL 1 FOR 67.517;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 5.985;
+		LEVEL 0 FOR 3.3;
+		LEVEL 1 FOR 50.715;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 19.518;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|ace_in_total~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 5.816;
+		LEVEL 0 FOR 994.184;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|fake_add[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.327;
+		LEVEL 1 FOR 989.673;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|fake_add[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.456;
+		LEVEL 1 FOR 989.544;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|fake_add[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.327;
+		LEVEL 0 FOR 989.673;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|fake_add[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10.456;
+		LEVEL 1 FOR 989.544;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|fake_add[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 320.852;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 39.148;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.85;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 39.15;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.852;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 39.148;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.852;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 39.148;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.852;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 19.148;
+	}
+}
+
+TRANSITION_LIST("g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.85;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 9.15;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 1, 2, 3, 4, 5, 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|card_to_add[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+	CHILDREN = 8, 9, 10, 11, 12, 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|current_hand[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|legal_play";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|total_value[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|sampler";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~1_cout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~4_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~6_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add1~8_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst13~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Equal0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Equal0~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|LessThan2~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[3]~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[1]~4_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[0]~5_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Equal0~1clkctrl_outclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst26|inst16~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst28|inst16~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~3_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst29|inst13~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst30|inst13~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 53;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst16~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst25|inst16~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 55;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst1|inst27|inst16~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 56;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst4|inst25|inst15~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 57;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~3_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 58;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst26|inst13~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst24|inst13~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 60;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|modulo_top|inst5|inst|inst23~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 61;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_value[2]~3_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 62;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~4_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|LessThan4~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~6_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|total_value_int~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~1_cout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 72;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 73;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~6_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 74;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 75;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~9";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 76;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~10_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 77;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~4_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 78;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~8_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 79;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|LessThan5~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 80;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 81;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add3~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 82;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 83;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|Add2~8_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 84;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|ace_in_total~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 85;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|fake_add[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 86;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|fake_add[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 87;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|fake_add[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 88;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|fake_add[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 89;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|fake_add[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 90;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 91;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 92;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 93;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 94;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 95;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|current_hand~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 96;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 97;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 98;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 99;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 100;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g21_rules_2_again_vlg_vec_tst|i1|card_to_add~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 0;
+}
+;

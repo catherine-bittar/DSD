@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4_trial\simulation\qsim
+vg21_rules_2_again
+Z1 I=16_N?OVh]J_9SfATamB`0
+Z2 Vz9eJ[309hA_:4QR<hi0F`0
+Z3 dC:\Users\bitta\Documents\GitHub\DSD\Lab 4_trial\simulation\qsim
+Z4 w1511322062
+Z5 8g21_Lab_4_tryagain.vo
+Z6 Fg21_Lab_4_tryagain.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|g21_Lab_4_tryagain.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 W`[L:iXMQBZFYjk^A@;S]1
+!s85 0
+Z11 !s108 1511322064.048000
+Z12 !s107 g21_Lab_4_tryagain.vo|
+!s101 -O0
+vg21_rules_2_again_vlg_check_tst
+!i10b 1
+Z13 !s100 cBAjzkSDYUI2^=lPG5@;=0
+Z14 IPDMh^K7UDEfWeRV@c7Umd3
+Z15 V2DQOmnoOmDQY905R<AeYY2
+R3
+Z16 w1511322061
+Z17 8g21_Lab_4_tryagain.vt
+Z18 Fg21_Lab_4_tryagain.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1511322064.168000
+Z20 !s107 g21_Lab_4_tryagain.vt|
+Z21 !s90 -work|work|g21_Lab_4_tryagain.vt|
+!s101 -O0
+R9
+vg21_rules_2_again_vlg_sample_tst
+!i10b 1
+Z22 !s100 70QoToYnRUU0gMOBaA=;R2
+Z23 ID4dhbB`I3BQMDceV^I6c[2
+Z24 V<:@WjBSbYHoEgiDFE6O0P3
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vg21_rules_2_again_vlg_vec_tst
+!i10b 1
+Z25 !s100 7[lcf@<:Lhed0B:7S^eAj2
+Z26 Ill_k@ezg^_b;6C`HYVh]=0
+Z27 VZ3e=zYF`P4FlJ`WPVTVK_0
+R3
+R16
+R17
+R18
+Z28 L0 270
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

@@ -1,0 +1,13 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Minimum Pulse Width 'card_to_add[0]'
+Slack : -2.276
+TNS   : -89.744
+
+Type  : Fast Model Minimum Pulse Width 'card_to_add[0]'
+Slack : -1.222
+TNS   : -18.954
+
+------------------------------------------------------------

@@ -1,0 +1,387 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/21/2017 22:41:01"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    g21_rules_2_again
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module g21_rules_2_again_vlg_sample_tst(
+	card_to_add,
+	current_hand,
+	sampler_tx
+);
+input [5:0] card_to_add;
+input [5:0] current_hand;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(card_to_add or current_hand)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module g21_rules_2_again_vlg_check_tst (
+	legal_play,
+	total_value,
+	sampler_rx
+);
+input  legal_play;
+input [5:0] total_value;
+input sampler_rx;
+
+reg  legal_play_expected;
+reg [5:0] total_value_expected;
+
+reg  legal_play_prev;
+reg [5:0] total_value_prev;
+
+reg  legal_play_expected_prev;
+reg [5:0] total_value_expected_prev;
+
+reg  last_legal_play_exp;
+reg [5:0] last_total_value_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	legal_play_prev = legal_play;
+	total_value_prev = total_value;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	legal_play_expected_prev = legal_play_expected;
+	total_value_expected_prev = total_value_expected;
+end
+
+
+
+// expected legal_play
+initial
+begin
+	legal_play_expected = 1'bX;
+end 
+// expected total_value[ 5 ]
+initial
+begin
+	total_value_expected[5] = 1'bX;
+end 
+// expected total_value[ 4 ]
+initial
+begin
+	total_value_expected[4] = 1'bX;
+end 
+// expected total_value[ 3 ]
+initial
+begin
+	total_value_expected[3] = 1'bX;
+end 
+// expected total_value[ 2 ]
+initial
+begin
+	total_value_expected[2] = 1'bX;
+end 
+// expected total_value[ 1 ]
+initial
+begin
+	total_value_expected[1] = 1'bX;
+end 
+// expected total_value[ 0 ]
+initial
+begin
+	total_value_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(legal_play_expected or legal_play or total_value_expected or total_value)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected legal_play = %b | expected total_value = %b | ",legal_play_expected_prev,total_value_expected_prev);
+	$display("| real legal_play = %b | real total_value = %b | ",legal_play_prev,total_value_prev);
+`endif
+	if (
+		( legal_play_expected_prev !== 1'bx ) && ( legal_play_prev !== legal_play_expected_prev )
+		&& ((legal_play_expected_prev !== last_legal_play_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port legal_play :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", legal_play_expected_prev);
+		$display ("     Real value = %b", legal_play_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_legal_play_exp = legal_play_expected_prev;
+	end
+	if (
+		( total_value_expected_prev[0] !== 1'bx ) && ( total_value_prev[0] !== total_value_expected_prev[0] )
+		&& ((total_value_expected_prev[0] !== last_total_value_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[0] = total_value_expected_prev[0];
+	end
+	if (
+		( total_value_expected_prev[1] !== 1'bx ) && ( total_value_prev[1] !== total_value_expected_prev[1] )
+		&& ((total_value_expected_prev[1] !== last_total_value_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[1] = total_value_expected_prev[1];
+	end
+	if (
+		( total_value_expected_prev[2] !== 1'bx ) && ( total_value_prev[2] !== total_value_expected_prev[2] )
+		&& ((total_value_expected_prev[2] !== last_total_value_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[2] = total_value_expected_prev[2];
+	end
+	if (
+		( total_value_expected_prev[3] !== 1'bx ) && ( total_value_prev[3] !== total_value_expected_prev[3] )
+		&& ((total_value_expected_prev[3] !== last_total_value_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[3] = total_value_expected_prev[3];
+	end
+	if (
+		( total_value_expected_prev[4] !== 1'bx ) && ( total_value_prev[4] !== total_value_expected_prev[4] )
+		&& ((total_value_expected_prev[4] !== last_total_value_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[4] = total_value_expected_prev[4];
+	end
+	if (
+		( total_value_expected_prev[5] !== 1'bx ) && ( total_value_prev[5] !== total_value_expected_prev[5] )
+		&& ((total_value_expected_prev[5] !== last_total_value_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port total_value[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", total_value_expected_prev);
+		$display ("     Real value = %b", total_value_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_total_value_exp[5] = total_value_expected_prev[5];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module g21_rules_2_again_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [5:0] card_to_add;
+reg [5:0] current_hand;
+// wires                                               
+wire legal_play;
+wire [5:0] total_value;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+g21_rules_2_again i1 (
+// port map - connection between master ports and signals/registers   
+	.card_to_add(card_to_add),
+	.current_hand(current_hand),
+	.legal_play(legal_play),
+	.total_value(total_value)
+);
+// card_to_add[ 5 ]
+initial
+begin
+	card_to_add[5] = 1'b0;
+	card_to_add[5] = #320000 1'b1;
+	card_to_add[5] = #320000 1'b0;
+	card_to_add[5] = #320000 1'b1;
+end 
+// card_to_add[ 4 ]
+initial
+begin
+	repeat(3)
+	begin
+		card_to_add[4] = 1'b0;
+		card_to_add[4] = #160000 1'b1;
+		# 160000;
+	end
+	card_to_add[4] = 1'b0;
+end 
+// card_to_add[ 3 ]
+initial
+begin
+	repeat(6)
+	begin
+		card_to_add[3] = 1'b0;
+		card_to_add[3] = #80000 1'b1;
+		# 80000;
+	end
+	card_to_add[3] = 1'b0;
+end 
+// card_to_add[ 2 ]
+initial
+begin
+	repeat(12)
+	begin
+		card_to_add[2] = 1'b0;
+		card_to_add[2] = #40000 1'b1;
+		# 40000;
+	end
+	card_to_add[2] = 1'b0;
+end 
+// card_to_add[ 1 ]
+always
+begin
+	card_to_add[1] = 1'b0;
+	card_to_add[1] = #20000 1'b1;
+	#20000;
+end 
+// card_to_add[ 0 ]
+always
+begin
+	card_to_add[0] = 1'b0;
+	card_to_add[0] = #10000 1'b1;
+	#10000;
+end 
+// current_hand[ 5 ]
+initial
+begin
+	current_hand[5] = 1'b0;
+end 
+// current_hand[ 4 ]
+initial
+begin
+	current_hand[4] = 1'b0;
+end 
+// current_hand[ 3 ]
+initial
+begin
+	current_hand[3] = 1'b1;
+end 
+// current_hand[ 2 ]
+initial
+begin
+	current_hand[2] = 1'b1;
+end 
+// current_hand[ 1 ]
+initial
+begin
+	current_hand[1] = 1'b1;
+end 
+// current_hand[ 0 ]
+initial
+begin
+	current_hand[0] = 1'b1;
+end 
+
+g21_rules_2_again_vlg_sample_tst tb_sample (
+	.card_to_add(card_to_add),
+	.current_hand(current_hand),
+	.sampler_tx(sampler)
+);
+
+g21_rules_2_again_vlg_check_tst tb_out(
+	.legal_play(legal_play),
+	.total_value(total_value),
+	.sampler_rx(sampler)
+);
+endmodule
+
