@@ -1,0 +1,169 @@
+Restore Archived Project report for g21_lab3
+Thu Nov 23 13:32:06 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Thu Nov 23 13:32:06 2017 ;
+; Revision Name                   ; g21_lab3                              ;
+; Top-level Entity Name           ; g21_dealer_FSM                        ;
+; Family                          ; Cyclone II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 3/g21_lab3_tmp_archive.qar' into the 'C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5' directory
+Info: Generated report 'g21_lab3.restore.rpt'
+
+
++-----------------------------------------------------+
+; Files Restored                                      ;
++-----------------------------------------------------+
+; File Name                                           ;
++-----------------------------------------------------+
+; Equal1_lpm_compare0.bsf                             ;
+; Equal1_lpm_compare0.cmp                             ;
+; Equal1_lpm_compare0.qip                             ;
+; Equal1_lpm_compare0.vhd                             ;
+; INIT_lpm_constant.bsf                               ;
+; INIT_lpm_constant.cmp                               ;
+; INIT_lpm_constant.qip                               ;
+; INIT_lpm_constant.vhd                               ;
+; MODE_Select_lpm_mux.bsf                             ;
+; MODE_Select_lpm_mux.cmp                             ;
+; MODE_Select_lpm_mux.qip                             ;
+; MODE_Select_lpm_mux.vhd                             ;
+; NOP_lpm_constant.bsf                                ;
+; NOP_lpm_constant.cmp                                ;
+; NOP_lpm_constant.qip                                ;
+; NOP_lpm_constant.vhd                                ;
+; POP_lpm_constant.bsf                                ;
+; POP_lpm_constant.cmp                                ;
+; POP_lpm_constant.qip                                ;
+; POP_lpm_constant.vhd                                ;
+; PUSH_lpm_constant.bsf                               ;
+; PUSH_lpm_constant.cmp                               ;
+; PUSH_lpm_constant.qip                               ;
+; PUSH_lpm_constant.vhd                               ;
+; SPG_lpm_compare.bsf                                 ;
+; SPG_lpm_compare.cmp                                 ;
+; SPG_lpm_compare.qip                                 ;
+; SPG_lpm_compare.vhd                                 ;
+; SPG_lpm_counter.bsf                                 ;
+; SPG_lpm_counter.cmp                                 ;
+; SPG_lpm_counter.qip                                 ;
+; SPG_lpm_counter.vhd                                 ;
+; StackCounter_lpm_counter.bsf                        ;
+; StackCounter_lpm_counter.cmp                        ;
+; StackCounter_lpm_counter.qip                        ;
+; StackCounter_lpm_counter.vhd                        ;
+; TEST_lpm_mux3.bsf                                   ;
+; TEST_lpm_mux3.cmp                                   ;
+; TEST_lpm_mux3.qip                                   ;
+; TEST_lpm_mux3.vhd                                   ;
+; a52_lpm_constant.bsf                                ;
+; a52_lpm_constant.cmp                                ;
+; a52_lpm_constant.qip                                ;
+; a52_lpm_constant.vhd                                ;
+; g21_1bitAdder.bdf                                   ;
+; g21_1bitAdder.bsf                                   ;
+; g21_7_segment_decoder.vhd                           ;
+; g21_Modulo_13.bdf                                   ;
+; g21_SPG.bdf                                         ;
+; g21_adder.bdf                                       ;
+; g21_adder.bsf                                       ;
+; g21_comp7.bdf                                       ;
+; g21_comp7.bsf                                       ;
+; g21_dealer_FSM.vhd                                  ;
+; g21_dealer_FSM_sim.vwf                              ;
+; g21_lab2.mif                                        ;
+; g21_lab2_rom1.qip                                   ;
+; g21_lab2_rom1.vhd                                   ;
+; g21_lab3.qpf                                        ;
+; g21_lab3.qsf                                        ;
+; g21_pop_enable.bsf                                  ;
+; g21_pop_enable.vhd                                  ;
+; g21_rules.vhd                                       ;
+; g21_rules_sim.vwf                                   ;
+; g21_spg_sim.vwf                                     ;
+; g21_stack52.bdf                                     ;
+; g21_stack52.vwf                                     ;
+; g21_test_bed.bdf                                    ;
+; g21_test_bed.stp                                    ;
+; g21_test_bed_auto_stripped.stp                      ;
+; g21_test_bed_lab4.bdf                               ;
+; g21_test_bed_lab4_sim.vwf                           ;
+; g21_test_bed_sim.vwf                                ;
+; g21_test_bed_tim.vwf                                ;
+; incremental_db/compiled_partitions/g21_lab3.db_info ;
+; lpm_compare1.bsf                                    ;
+; lpm_compare1.cmp                                    ;
+; lpm_compare1.qip                                    ;
+; lpm_compare1.vhd                                    ;
+; lpm_constantdata.bsf                                ;
+; lpm_constantdata.cmp                                ;
+; lpm_constantdata.qip                                ;
+; lpm_constantdata.vhd                                ;
+; lpm_divide0.bsf                                     ;
+; lpm_divide0.cmp                                     ;
+; lpm_divide0.qip                                     ;
+; lpm_divide0.vhd                                     ;
+; lpm_mux0.bsf                                        ;
+; lpm_mux0.cmp                                        ;
+; lpm_mux0.qip                                        ;
+; lpm_mux0.vhd                                        ;
+; lpm_mux1.bsf                                        ;
+; lpm_mux1.cmp                                        ;
+; lpm_mux1.qip                                        ;
+; lpm_mux1.vhd                                        ;
+; lpm_mux2.bsf                                        ;
+; lpm_mux2.cmp                                        ;
+; lpm_mux2.qip                                        ;
+; lpm_mux2.vhd                                        ;
+; Lab 4/g21_rules.vhd                                 ;
+; Lab 4/g21_rules_sim.vwf                             ;
+; assignment_defaults.qdf                             ;
++-----------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
