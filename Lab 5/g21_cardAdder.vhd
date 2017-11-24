@@ -25,11 +25,10 @@ architecture game_rules of g21_cardAdder is
 	signal face_card: std_logic_vector(3 downto 0);
 	signal suit_card: std_logic_vector(2 downto 0);
 	
-	signal top_val: unsigned(3 downto 0); -- integer value of card to add (face_top + 1)
-	signal card_val: unsigned(3 downto 0); -- truncated value of sum
+	signal top_val: unsigned(4 downto 0); -- integer value of card to add (face_top + 1)
+	signal card_val: unsigned(4 downto 0); -- truncated value of sum
 	signal card_val_int: unsigned (4 downto 0);
 	signal ace_in_hand : std_logic; -- presence of ace in previous hand
-	-- signal ace_new_card : std_logic; -- new card is an ace
 	signal face_top_int : unsigned(3 downto 0);
 	signal face_card_int: unsigned(3 downto 0);
 	signal one_int : unsigned(1 downto 0);
@@ -63,8 +62,6 @@ begin-- use g21_Modulo_13 component to assign signal values
 	
 	one_int <= "01"; -- create a value of 1
 	ace_in_hand <= card_to_play(5);
-	--card_val <= card_to_play(4 downto 0);
-	--card_val_int <= unsigned(card_val);
 	eleven_int <= "1011";
 	ten_int <= "1010";
 	
@@ -72,82 +69,36 @@ begin-- use g21_Modulo_13 component to assign signal values
 	begin
 	
 		new_ace <= '0';
+		top_val <= "00000";
+		card_val <= "00000";
 	
 		if (face_top >= "0001" and face_top <= "1001") then -- if mod was 1-9 need to add 1 for actual value
-			top_val <= face_top_int + one_int;
-			--try_add <= top_val + card_val_int;
-			--if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
-				--total_value_temp <= try_add - ten_int;
-				--new_ace <= '0';
-			--elsif (ace_in_hand = '1' and try_add <= "10101") then
-				--new_ace <= '1';
-				--total_value_temp <= try_add;
-			--else
-				--total_value_temp <= try_add;
-				--new_ace <= '0';
-			--end if;
+			top_val <= '0' & (face_top_int + one_int);
 			
 		elsif (face_top >= "1010") then -- if mod was 10 or more, its jack, queen or king so need actual value 10
-			top_val <= "1010";
-			--try_add <= top_val + card_val_int;
-			--if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
-				--total_value_temp <= try_add - ten_int;
-				--new_ace <= '0';
-			--elsif (ace_in_hand = '1' and try_add <= "10101") then
-				--new_ace <= '1';
-				--total_value_temp <= try_add;
-			--else
-				--total_value_temp <= try_add;
-				--new_ace <= '0';
-			--end if;
+			top_val <= '0' & "1010";
 			
 		elsif (face_top = "0000") then -- if its an ace, decide which value
-			--fake_add <= eleven_int + card_val_int;
-			if (face_card /= "0000") then
-				top_val <= "1011";
-				new_ace <= '1';
-			elsif(face_card = "0000") then
-				top_val <= "0001";
-				--if (ace_in_hand = '1') then
-					new_ace <= '1';
-				--else	
-					--new_ace <= '0';
-				--end if;
-			end if;
-			
-			--total_value_temp <= top_val + card_val_int;
+			top_val <= '0' & "1011";
+			new_ace <= '1';
 		end if;
 		
-		if (face_card >= "0001" and face_top <= "1001") then -- if mod was 1-9 need to add 1 for actual value
-			card_val <= face_card_int + one_int;
+		if (face_card >= "0001" and face_card <= "1001") then -- if mod was 1-9 need to add 1 for actual value
+			card_val <= '0' & (face_card_int + one_int);
 		elsif (face_card >= "1010") then -- if mod was 10 or more, its jack, queen or king so need actual value 10
-			card_val <= "1010";
-		elsif (face_card = "0000") then -- if its an ace, decide which value
-			if (face_top /= "0000") then
-				card_val <= "1011";
-				new_ace <= '1';
-			elsif(face_top = "0000") then
-				card_val <= "0001";
-				new_ace <= '1';
-			end if;
-		--total_value_temp <= top_val + card_val_int;
+			card_val <= '0' & "1010";
+		elsif (face_card = "0000" and new_ace = '0') then -- if its an ace, decide which value
+			card_val <= '0' & "1011";
+			new_ace <= '1';
+		elsif (face_card = "0000" and new_ace = '1') then -- if its an ace, decide which value
+			card_val <= '0' & "0001";
+			new_ace <= '1';
 		end if;
 		
-		total_value <= new_ace & '0' & (top_val + card_val);
+		total_value <= new_ace & (top_val + card_val);
 			
-		
-		--if (total_value_temp <= "10101") then -- assign legal_play
-			--legal_play <= '1';
-			--total_value <= new_ace & total_value_temp;
-		--else
-			--legal_play <= '0';
-			--total_value <= new_ace & total_value_temp;
-		--end if;
 
 		
 	end process;
 	
-	--total_value <= '0' & (top_val + card_val_int);
-	
-	--total_value <= std_logic_vector(total_value_int);
 end architecture;		

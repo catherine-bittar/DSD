@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Thu Nov 23 15:17:50 2017
+Fri Nov 24 14:23:38 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
  10. General Register Statistics
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
@@ -48,13 +48,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 15:17:50 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 14:23:37 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_cardAdder                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 791                                             ;
-;     Total combinational functions  ; 459                                             ;
+; Total logic elements               ; 780                                             ;
+;     Total combinational functions  ; 448                                             ;
 ;     Dedicated logic registers      ; 561                                             ;
 ; Total registers                    ; 561                                             ;
 ; Total pins                         ; 18                                              ;
@@ -263,17 +263,17 @@ applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 791                      ;
+; Estimated Total logic elements              ; 780                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 459                      ;
+; Total combinational functions               ; 448                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 226                      ;
-;     -- 3 input functions                    ; 139                      ;
-;     -- <=2 input functions                  ; 94                       ;
+;     -- 4 input functions                    ; 218                      ;
+;     -- 3 input functions                    ; 130                      ;
+;     -- <=2 input functions                  ; 100                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 413                      ;
-;     -- arithmetic mode                      ; 46                       ;
+;     -- normal mode                          ; 401                      ;
+;     -- arithmetic mode                      ; 47                       ;
 ;                                             ;                          ;
 ; Total registers                             ; 561                      ;
 ;     -- Dedicated logic registers            ; 561                      ;
@@ -284,8 +284,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 331                      ;
-; Total fan-out                               ; 3525                     ;
-; Average fan-out                             ; 3.31                     ;
+; Total fan-out                               ; 3477                     ;
+; Average fan-out                             ; 3.30                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -294,8 +294,8 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                 ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_cardAdder                                                                                          ; 459 (33)          ; 561 (0)      ; 2816        ; 0            ; 0       ; 0         ; 18   ; 0            ; |g21_cardAdder                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |g21_Modulo_13:modulo_card|                                                                          ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card                                                                                                                                                                                                                                                                                                            ; work         ;
+; |g21_cardAdder                                                                                          ; 448 (22)          ; 561 (0)      ; 2816        ; 0            ; 0       ; 0         ; 18   ; 0            ; |g21_cardAdder                                                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g21_Modulo_13:modulo_card|                                                                          ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card                                                                                                                                                                                                                                                                                                            ; work         ;
 ;       |g21_adder:inst1|                                                                                 ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst1                                                                                                                                                                                                                                                                                            ; work         ;
 ;          |g21_1bitAdder:inst26|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst1|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                       ; work         ;
 ;          |g21_1bitAdder:inst27|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst1|g21_1bitAdder:inst27                                                                                                                                                                                                                                                                       ; work         ;
@@ -304,27 +304,25 @@ applicable agreement for further details.
 ;          |g21_1bitAdder:inst30|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst1|g21_1bitAdder:inst30                                                                                                                                                                                                                                                                       ; work         ;
 ;       |g21_adder:inst4|                                                                                 ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst4                                                                                                                                                                                                                                                                                            ; work         ;
 ;          |g21_1bitAdder:inst25|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst4|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                       ; work         ;
-;       |g21_adder:inst5|                                                                                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5                                                                                                                                                                                                                                                                                            ; work         ;
+;       |g21_adder:inst5|                                                                                 ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5                                                                                                                                                                                                                                                                                            ; work         ;
 ;          |g21_1bitAdder:inst24|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst24                                                                                                                                                                                                                                                                       ; work         ;
-;          |g21_1bitAdder:inst25|                                                                         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                       ; work         ;
+;          |g21_1bitAdder:inst25|                                                                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                       ; work         ;
 ;          |g21_1bitAdder:inst26|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                       ; work         ;
 ;          |g21_1bitAdder:inst|                                                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst                                                                                                                                                                                                                                                                         ; work         ;
 ;    |g21_Modulo_13:modulo_top|                                                                           ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top                                                                                                                                                                                                                                                                                                             ; work         ;
 ;       |g21_adder:inst1|                                                                                 ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1                                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst26|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                        ; work         ;
-;          |g21_1bitAdder:inst27|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27                                                                                                                                                                                                                                                                        ; work         ;
-;          |g21_1bitAdder:inst28|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28                                                                                                                                                                                                                                                                        ; work         ;
+;          |g21_1bitAdder:inst27|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27                                                                                                                                                                                                                                                                        ; work         ;
+;          |g21_1bitAdder:inst28|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28                                                                                                                                                                                                                                                                        ; work         ;
 ;          |g21_1bitAdder:inst29|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst29                                                                                                                                                                                                                                                                        ; work         ;
 ;          |g21_1bitAdder:inst30|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30                                                                                                                                                                                                                                                                        ; work         ;
-;       |g21_adder:inst4|                                                                                 ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst4                                                                                                                                                                                                                                                                                             ; work         ;
-;          |g21_1bitAdder:inst25|                                                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                        ; work         ;
-;       |g21_adder:inst5|                                                                                 ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5                                                                                                                                                                                                                                                                                             ; work         ;
+;       |g21_adder:inst5|                                                                                 ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5                                                                                                                                                                                                                                                                                             ; work         ;
 ;          |g21_1bitAdder:inst24|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst24                                                                                                                                                                                                                                                                        ; work         ;
-;          |g21_1bitAdder:inst25|                                                                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                        ; work         ;
-;          |g21_1bitAdder:inst26|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                        ; work         ;
+;          |g21_1bitAdder:inst25|                                                                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                                        ; work         ;
+;          |g21_1bitAdder:inst26|                                                                         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26                                                                                                                                                                                                                                                                        ; work         ;
 ;          |g21_1bitAdder:inst|                                                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst                                                                                                                                                                                                                                                                          ; work         ;
-;    |sld_hub:auto_hub|                                                                                   ; 121 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 120 (82)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                   ; 120 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 119 (81)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                      ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 274 (1)           ; 475 (44)     ; 2816        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_cardAdder|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ; work         ;
@@ -395,18 +393,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; card_val[0]                                        ; card_val[1]         ; yes                    ;
-; card_val[1]                                        ; card_val[1]         ; yes                    ;
-; card_val[2]                                        ; card_val[1]         ; yes                    ;
-; card_val[3]                                        ; card_val[1]         ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; total_value[5]~0                                       ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -597,7 +592,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 23 15:17:39 2017
+    Info: Processing started: Fri Nov 24 14:23:26 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab5 -c g21_lab3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -691,26 +686,17 @@ Info (12127): Elaborating entity "g21_cardAdder" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(24): object "suit_top" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(26): object "suit_card" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(31): object "ace_in_hand" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(36): object "ten_int" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(37): object "eleven_int" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(106): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(109): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(121): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(122): signal "face_card_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(123): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(125): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(136): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(136): signal "card_val" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at g21_cardAdder.vhd(71): inferring latch(es) for signal or variable "top_val", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at g21_cardAdder.vhd(71): inferring latch(es) for signal or variable "card_val", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "card_val[0]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "card_val[1]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "card_val[2]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "card_val[3]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "top_val[0]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "top_val[1]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "top_val[2]" at g21_cardAdder.vhd(71)
-Info (10041): Inferred latch for "top_val[3]" at g21_cardAdder.vhd(71)
+Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(35): object "ten_int" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at g21_cardAdder.vhd(36): object "eleven_int" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(86): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(87): signal "face_card_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(88): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(90): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(90): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(93): signal "face_card" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(93): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(98): signal "new_ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_cardAdder.vhd(98): signal "card_val" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: g21_Modulo_13
 Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_Modulo_13:modulo_top"
@@ -737,20 +723,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_5cc.tdf
     Info (12023): Found entity 1: cmpr_5cc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
-Warning (14026): LATCH primitive "top_val[3]" is permanently enabled
-Warning (14026): LATCH primitive "top_val[2]" is permanently enabled
-Warning (14026): LATCH primitive "top_val[1]" is permanently enabled
-Warning (14026): LATCH primitive "top_val[0]" is permanently enabled
-Warning (13012): Latch card_val[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst|inst23
-Warning (13012): Latch card_val[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst24|inst13
-Warning (13012): Latch card_val[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst25|inst13
-Warning (13012): Latch card_val[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal g21_Modulo_13:modulo_card|g21_adder:inst5|g21_1bitAdder:inst26|inst13
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "total_value[4]" is stuck at GND
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -758,15 +730,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 0 of its 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 45 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 847 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 836 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 802 logic cells
+    Info (21061): Implemented 791 logic cells
     Info (21064): Implemented 22 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 642 megabytes
-    Info: Processing ended: Thu Nov 23 15:17:50 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 634 megabytes
+    Info: Processing ended: Fri Nov 24 14:23:38 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:10
 
 

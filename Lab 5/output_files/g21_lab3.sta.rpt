@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g21_lab3
-Thu Nov 23 15:18:07 2017
+Fri Nov 24 14:23:55 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -149,60 +149,78 @@ No paths to report.
 +-----------------------+----------------+--------+--------+--------+--------+
 ; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
 +-----------------------+----------------+--------+--------+--------+--------+
-; card_to_play[0]       ; total_value[1] ; 17.821 ; 17.821 ; 17.821 ; 17.821 ;
-; card_to_play[0]       ; total_value[2] ; 18.502 ; 18.502 ; 18.502 ; 18.502 ;
-; card_to_play[0]       ; total_value[3] ; 18.370 ; 18.370 ; 18.370 ; 18.370 ;
-; card_to_play[0]       ; total_value[5] ; 16.994 ; 16.994 ; 16.994 ; 16.994 ;
-; card_to_play[1]       ; total_value[1] ; 17.402 ; 17.402 ; 17.402 ; 17.402 ;
-; card_to_play[1]       ; total_value[2] ; 18.083 ; 18.083 ; 18.083 ; 18.083 ;
-; card_to_play[1]       ; total_value[3] ; 17.951 ; 17.951 ; 17.951 ; 17.951 ;
-; card_to_play[1]       ; total_value[5] ; 16.575 ; 16.575 ; 16.575 ; 16.575 ;
-; card_to_play[2]       ; total_value[1] ; 17.317 ; 17.317 ; 17.317 ; 17.317 ;
-; card_to_play[2]       ; total_value[2] ; 17.998 ; 17.998 ; 17.998 ; 17.998 ;
-; card_to_play[2]       ; total_value[3] ; 17.866 ; 17.866 ; 17.866 ; 17.866 ;
-; card_to_play[2]       ; total_value[5] ; 16.490 ; 16.490 ; 16.490 ; 16.490 ;
-; card_to_play[3]       ; total_value[1] ; 17.848 ; 17.848 ; 17.848 ; 17.848 ;
-; card_to_play[3]       ; total_value[2] ; 18.529 ; 18.529 ; 18.529 ; 18.529 ;
-; card_to_play[3]       ; total_value[3] ; 18.397 ; 18.397 ; 18.397 ; 18.397 ;
-; card_to_play[3]       ; total_value[5] ; 17.021 ; 17.021 ; 17.021 ; 17.021 ;
-; card_to_play[4]       ; total_value[1] ; 16.561 ; 16.561 ; 16.561 ; 16.561 ;
-; card_to_play[4]       ; total_value[2] ; 17.242 ; 17.242 ; 17.242 ; 17.242 ;
-; card_to_play[4]       ; total_value[3] ; 17.110 ; 17.110 ; 17.110 ; 17.110 ;
-; card_to_play[4]       ; total_value[5] ; 15.734 ; 15.734 ; 15.734 ; 15.734 ;
-; card_to_play[5]       ; total_value[1] ; 15.576 ; 15.576 ; 15.576 ; 15.576 ;
-; card_to_play[5]       ; total_value[2] ; 16.257 ; 16.257 ; 16.257 ; 16.257 ;
-; card_to_play[5]       ; total_value[3] ; 16.125 ; 16.125 ; 16.125 ; 16.125 ;
-; card_to_play[5]       ; total_value[5] ; 14.749 ; 14.749 ; 14.749 ; 14.749 ;
-; play_pile_top_card[0] ; total_value[0] ; 16.878 ; 16.878 ; 16.878 ; 16.878 ;
-; play_pile_top_card[0] ; total_value[1] ; 17.455 ; 17.455 ; 17.455 ; 17.455 ;
-; play_pile_top_card[0] ; total_value[2] ; 18.136 ; 18.136 ; 18.136 ; 18.136 ;
-; play_pile_top_card[0] ; total_value[3] ; 18.004 ; 18.004 ; 18.004 ; 18.004 ;
-; play_pile_top_card[0] ; total_value[5] ; 16.625 ; 16.625 ; 16.625 ; 16.625 ;
-; play_pile_top_card[1] ; total_value[0] ; 17.103 ; 17.103 ; 17.103 ; 17.103 ;
-; play_pile_top_card[1] ; total_value[1] ; 17.680 ; 17.680 ; 17.680 ; 17.680 ;
-; play_pile_top_card[1] ; total_value[2] ; 18.361 ; 18.361 ; 18.361 ; 18.361 ;
-; play_pile_top_card[1] ; total_value[3] ; 18.229 ; 18.229 ; 18.229 ; 18.229 ;
-; play_pile_top_card[1] ; total_value[5] ; 16.850 ; 16.850 ; 16.850 ; 16.850 ;
-; play_pile_top_card[2] ; total_value[0] ; 17.096 ; 17.096 ; 17.096 ; 17.096 ;
-; play_pile_top_card[2] ; total_value[1] ; 17.673 ; 17.673 ; 17.673 ; 17.673 ;
-; play_pile_top_card[2] ; total_value[2] ; 18.354 ; 18.354 ; 18.354 ; 18.354 ;
-; play_pile_top_card[2] ; total_value[3] ; 18.222 ; 18.222 ; 18.222 ; 18.222 ;
-; play_pile_top_card[2] ; total_value[5] ; 16.843 ; 16.843 ; 16.843 ; 16.843 ;
-; play_pile_top_card[3] ; total_value[0] ; 17.047 ; 17.047 ; 17.047 ; 17.047 ;
-; play_pile_top_card[3] ; total_value[1] ; 17.624 ; 17.624 ; 17.624 ; 17.624 ;
-; play_pile_top_card[3] ; total_value[2] ; 18.305 ; 18.305 ; 18.305 ; 18.305 ;
-; play_pile_top_card[3] ; total_value[3] ; 18.173 ; 18.173 ; 18.173 ; 18.173 ;
-; play_pile_top_card[3] ; total_value[5] ; 16.794 ; 16.794 ; 16.794 ; 16.794 ;
-; play_pile_top_card[4] ; total_value[0] ; 16.151 ; 16.151 ; 16.151 ; 16.151 ;
-; play_pile_top_card[4] ; total_value[1] ; 16.728 ; 16.728 ; 16.728 ; 16.728 ;
-; play_pile_top_card[4] ; total_value[2] ; 17.409 ; 17.409 ; 17.409 ; 17.409 ;
-; play_pile_top_card[4] ; total_value[3] ; 17.277 ; 17.277 ; 17.277 ; 17.277 ;
-; play_pile_top_card[4] ; total_value[5] ; 15.898 ; 15.898 ; 15.898 ; 15.898 ;
-; play_pile_top_card[5] ; total_value[0] ; 15.625 ; 15.625 ; 15.625 ; 15.625 ;
-; play_pile_top_card[5] ; total_value[1] ; 16.202 ; 16.202 ; 16.202 ; 16.202 ;
-; play_pile_top_card[5] ; total_value[2] ; 16.883 ; 16.883 ; 16.883 ; 16.883 ;
-; play_pile_top_card[5] ; total_value[3] ; 16.751 ; 16.751 ; 16.751 ; 16.751 ;
-; play_pile_top_card[5] ; total_value[5] ; 15.372 ; 15.372 ; 15.372 ; 15.372 ;
+; card_to_play[0]       ; total_value[0] ; 16.844 ; 16.844 ; 16.844 ; 16.844 ;
+; card_to_play[0]       ; total_value[1] ; 17.702 ; 17.702 ; 17.702 ; 17.702 ;
+; card_to_play[0]       ; total_value[2] ; 18.498 ; 18.498 ; 18.498 ; 18.498 ;
+; card_to_play[0]       ; total_value[3] ; 18.289 ; 18.289 ; 18.289 ; 18.289 ;
+; card_to_play[0]       ; total_value[4] ; 18.380 ; 18.380 ; 18.380 ; 18.380 ;
+; card_to_play[0]       ; total_value[5] ; 15.695 ; 15.695 ; 15.695 ; 15.695 ;
+; card_to_play[1]       ; total_value[0] ; 16.803 ; 16.803 ; 16.803 ; 16.803 ;
+; card_to_play[1]       ; total_value[1] ; 17.661 ; 17.661 ; 17.661 ; 17.661 ;
+; card_to_play[1]       ; total_value[2] ; 18.457 ; 18.457 ; 18.457 ; 18.457 ;
+; card_to_play[1]       ; total_value[3] ; 18.248 ; 18.248 ; 18.248 ; 18.248 ;
+; card_to_play[1]       ; total_value[4] ; 18.339 ; 18.339 ; 18.339 ; 18.339 ;
+; card_to_play[1]       ; total_value[5] ; 15.654 ; 15.654 ; 15.654 ; 15.654 ;
+; card_to_play[2]       ; total_value[0] ; 16.512 ; 16.512 ; 16.512 ; 16.512 ;
+; card_to_play[2]       ; total_value[1] ; 17.370 ; 17.370 ; 17.370 ; 17.370 ;
+; card_to_play[2]       ; total_value[2] ; 18.166 ; 18.166 ; 18.166 ; 18.166 ;
+; card_to_play[2]       ; total_value[3] ; 17.957 ; 17.957 ; 17.957 ; 17.957 ;
+; card_to_play[2]       ; total_value[4] ; 18.048 ; 18.048 ; 18.048 ; 18.048 ;
+; card_to_play[2]       ; total_value[5] ; 15.363 ; 15.363 ; 15.363 ; 15.363 ;
+; card_to_play[3]       ; total_value[0] ; 16.725 ; 16.725 ; 16.725 ; 16.725 ;
+; card_to_play[3]       ; total_value[1] ; 17.583 ; 17.583 ; 17.583 ; 17.583 ;
+; card_to_play[3]       ; total_value[2] ; 18.379 ; 18.379 ; 18.379 ; 18.379 ;
+; card_to_play[3]       ; total_value[3] ; 18.170 ; 18.170 ; 18.170 ; 18.170 ;
+; card_to_play[3]       ; total_value[4] ; 18.261 ; 18.261 ; 18.261 ; 18.261 ;
+; card_to_play[3]       ; total_value[5] ; 15.576 ; 15.576 ; 15.576 ; 15.576 ;
+; card_to_play[4]       ; total_value[0] ; 15.709 ; 15.709 ; 15.709 ; 15.709 ;
+; card_to_play[4]       ; total_value[1] ; 16.567 ; 16.567 ; 16.567 ; 16.567 ;
+; card_to_play[4]       ; total_value[2] ; 17.363 ; 17.363 ; 17.363 ; 17.363 ;
+; card_to_play[4]       ; total_value[3] ; 17.154 ; 17.154 ; 17.154 ; 17.154 ;
+; card_to_play[4]       ; total_value[4] ; 17.245 ; 17.245 ; 17.245 ; 17.245 ;
+; card_to_play[4]       ; total_value[5] ; 14.560 ; 14.560 ; 14.560 ; 14.560 ;
+; card_to_play[5]       ; total_value[0] ; 15.040 ; 15.040 ; 15.040 ; 15.040 ;
+; card_to_play[5]       ; total_value[1] ; 15.898 ; 15.898 ; 15.898 ; 15.898 ;
+; card_to_play[5]       ; total_value[2] ; 16.694 ; 16.694 ; 16.694 ; 16.694 ;
+; card_to_play[5]       ; total_value[3] ; 16.485 ; 16.485 ; 16.485 ; 16.485 ;
+; card_to_play[5]       ; total_value[4] ; 16.576 ; 16.576 ; 16.576 ; 16.576 ;
+; card_to_play[5]       ; total_value[5] ; 13.891 ; 13.891 ; 13.891 ; 13.891 ;
+; play_pile_top_card[0] ; total_value[0] ; 15.725 ; 15.725 ; 15.725 ; 15.725 ;
+; play_pile_top_card[0] ; total_value[1] ; 16.177 ; 16.177 ; 16.177 ; 16.177 ;
+; play_pile_top_card[0] ; total_value[2] ; 16.620 ; 16.620 ; 16.620 ; 16.620 ;
+; play_pile_top_card[0] ; total_value[3] ; 16.411 ; 16.411 ; 16.411 ; 16.411 ;
+; play_pile_top_card[0] ; total_value[4] ; 16.502 ; 16.502 ; 16.502 ; 16.502 ;
+; play_pile_top_card[0] ; total_value[5] ; 17.251 ; 17.251 ; 17.251 ; 17.251 ;
+; play_pile_top_card[1] ; total_value[0] ; 15.214 ; 15.214 ; 15.214 ; 15.214 ;
+; play_pile_top_card[1] ; total_value[1] ; 15.666 ; 15.666 ; 15.666 ; 15.666 ;
+; play_pile_top_card[1] ; total_value[2] ; 16.109 ; 16.109 ; 16.109 ; 16.109 ;
+; play_pile_top_card[1] ; total_value[3] ; 15.900 ; 15.900 ; 15.900 ; 15.900 ;
+; play_pile_top_card[1] ; total_value[4] ; 15.991 ; 15.991 ; 15.991 ; 15.991 ;
+; play_pile_top_card[1] ; total_value[5] ; 16.740 ; 16.740 ; 16.740 ; 16.740 ;
+; play_pile_top_card[2] ; total_value[0] ; 15.478 ; 15.478 ; 15.478 ; 15.478 ;
+; play_pile_top_card[2] ; total_value[1] ; 15.930 ; 15.930 ; 15.930 ; 15.930 ;
+; play_pile_top_card[2] ; total_value[2] ; 16.373 ; 16.373 ; 16.373 ; 16.373 ;
+; play_pile_top_card[2] ; total_value[3] ; 16.164 ; 16.164 ; 16.164 ; 16.164 ;
+; play_pile_top_card[2] ; total_value[4] ; 16.255 ; 16.255 ; 16.255 ; 16.255 ;
+; play_pile_top_card[2] ; total_value[5] ; 17.004 ; 17.004 ; 17.004 ; 17.004 ;
+; play_pile_top_card[3] ; total_value[0] ; 15.065 ; 15.065 ; 15.065 ; 15.065 ;
+; play_pile_top_card[3] ; total_value[1] ; 15.517 ; 15.517 ; 15.517 ; 15.517 ;
+; play_pile_top_card[3] ; total_value[2] ; 15.960 ; 15.960 ; 15.960 ; 15.960 ;
+; play_pile_top_card[3] ; total_value[3] ; 15.751 ; 15.751 ; 15.751 ; 15.751 ;
+; play_pile_top_card[3] ; total_value[4] ; 15.842 ; 15.842 ; 15.842 ; 15.842 ;
+; play_pile_top_card[3] ; total_value[5] ; 16.591 ; 16.591 ; 16.591 ; 16.591 ;
+; play_pile_top_card[4] ; total_value[0] ; 15.041 ; 15.041 ; 15.041 ; 15.041 ;
+; play_pile_top_card[4] ; total_value[1] ; 15.493 ; 15.493 ; 15.493 ; 15.493 ;
+; play_pile_top_card[4] ; total_value[2] ; 15.936 ; 15.936 ; 15.936 ; 15.936 ;
+; play_pile_top_card[4] ; total_value[3] ; 15.727 ; 15.727 ; 15.727 ; 15.727 ;
+; play_pile_top_card[4] ; total_value[4] ; 15.818 ; 15.818 ; 15.818 ; 15.818 ;
+; play_pile_top_card[4] ; total_value[5] ; 16.567 ; 16.567 ; 16.567 ; 16.567 ;
+; play_pile_top_card[5] ; total_value[0] ; 13.733 ; 13.733 ; 13.733 ; 13.733 ;
+; play_pile_top_card[5] ; total_value[1] ; 14.185 ; 14.185 ; 14.185 ; 14.185 ;
+; play_pile_top_card[5] ; total_value[2] ; 14.628 ; 14.628 ; 14.628 ; 14.628 ;
+; play_pile_top_card[5] ; total_value[3] ; 14.419 ; 14.419 ; 14.419 ; 14.419 ;
+; play_pile_top_card[5] ; total_value[4] ; 14.510 ; 14.510 ; 14.510 ; 14.510 ;
+; play_pile_top_card[5] ; total_value[5] ; 15.259 ; 15.259 ; 15.259 ; 15.259 ;
 +-----------------------+----------------+--------+--------+--------+--------+
 
 
@@ -211,60 +229,78 @@ No paths to report.
 +-----------------------+----------------+--------+--------+--------+--------+
 ; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
 +-----------------------+----------------+--------+--------+--------+--------+
-; card_to_play[0]       ; total_value[1] ; 13.827 ; 13.827 ; 13.827 ; 13.827 ;
-; card_to_play[0]       ; total_value[2] ; 14.508 ; 14.508 ; 14.508 ; 14.508 ;
-; card_to_play[0]       ; total_value[3] ; 13.859 ; 13.859 ; 13.859 ; 13.859 ;
-; card_to_play[0]       ; total_value[5] ; 13.000 ; 13.000 ; 13.000 ; 13.000 ;
-; card_to_play[1]       ; total_value[1] ; 13.599 ; 13.599 ; 13.599 ; 13.599 ;
-; card_to_play[1]       ; total_value[2] ; 14.280 ; 14.280 ; 14.280 ; 14.280 ;
-; card_to_play[1]       ; total_value[3] ; 13.631 ; 13.631 ; 13.631 ; 13.631 ;
-; card_to_play[1]       ; total_value[5] ; 12.772 ; 12.772 ; 12.772 ; 12.772 ;
-; card_to_play[2]       ; total_value[1] ; 13.190 ; 13.190 ; 13.190 ; 13.190 ;
-; card_to_play[2]       ; total_value[2] ; 13.871 ; 13.871 ; 13.871 ; 13.871 ;
-; card_to_play[2]       ; total_value[3] ; 13.222 ; 13.222 ; 13.222 ; 13.222 ;
-; card_to_play[2]       ; total_value[5] ; 12.363 ; 12.363 ; 12.363 ; 12.363 ;
-; card_to_play[3]       ; total_value[1] ; 14.117 ; 14.117 ; 14.117 ; 14.117 ;
-; card_to_play[3]       ; total_value[2] ; 14.798 ; 14.798 ; 14.798 ; 14.798 ;
-; card_to_play[3]       ; total_value[3] ; 14.149 ; 14.149 ; 14.149 ; 14.149 ;
-; card_to_play[3]       ; total_value[5] ; 13.290 ; 13.290 ; 13.290 ; 13.290 ;
-; card_to_play[4]       ; total_value[1] ; 13.139 ; 13.139 ; 13.139 ; 13.139 ;
-; card_to_play[4]       ; total_value[2] ; 13.820 ; 13.820 ; 13.820 ; 13.820 ;
-; card_to_play[4]       ; total_value[3] ; 13.171 ; 13.171 ; 13.171 ; 13.171 ;
-; card_to_play[4]       ; total_value[5] ; 12.312 ; 12.312 ; 12.312 ; 12.312 ;
-; card_to_play[5]       ; total_value[1] ; 12.880 ; 12.880 ; 12.880 ; 12.880 ;
-; card_to_play[5]       ; total_value[2] ; 13.561 ; 13.561 ; 13.561 ; 13.561 ;
-; card_to_play[5]       ; total_value[3] ; 12.912 ; 12.912 ; 12.912 ; 12.912 ;
-; card_to_play[5]       ; total_value[5] ; 12.053 ; 12.053 ; 12.053 ; 12.053 ;
-; play_pile_top_card[0] ; total_value[0] ; 12.085 ; 12.085 ; 12.085 ; 12.085 ;
-; play_pile_top_card[0] ; total_value[1] ; 11.803 ; 11.803 ; 11.803 ; 11.803 ;
-; play_pile_top_card[0] ; total_value[2] ; 12.077 ; 12.077 ; 12.077 ; 12.077 ;
-; play_pile_top_card[0] ; total_value[3] ; 12.140 ; 12.140 ; 12.140 ; 12.140 ;
-; play_pile_top_card[0] ; total_value[5] ; 10.973 ; 10.973 ; 10.973 ; 10.973 ;
-; play_pile_top_card[1] ; total_value[0] ; 13.621 ; 13.621 ; 13.621 ; 13.621 ;
-; play_pile_top_card[1] ; total_value[1] ; 12.144 ; 12.144 ; 12.144 ; 12.144 ;
-; play_pile_top_card[1] ; total_value[2] ; 12.399 ; 12.399 ; 12.399 ; 12.399 ;
-; play_pile_top_card[1] ; total_value[3] ; 12.619 ; 12.619 ; 12.619 ; 12.619 ;
-; play_pile_top_card[1] ; total_value[5] ; 13.361 ; 13.361 ; 13.361 ; 13.361 ;
-; play_pile_top_card[2] ; total_value[0] ; 12.979 ; 12.979 ; 12.979 ; 12.979 ;
-; play_pile_top_card[2] ; total_value[1] ; 12.595 ; 12.595 ; 12.595 ; 12.595 ;
-; play_pile_top_card[2] ; total_value[2] ; 12.971 ; 12.971 ; 12.971 ; 12.971 ;
-; play_pile_top_card[2] ; total_value[3] ; 12.631 ; 12.631 ; 12.631 ; 12.631 ;
-; play_pile_top_card[2] ; total_value[5] ; 12.726 ; 12.726 ; 12.726 ; 12.726 ;
-; play_pile_top_card[3] ; total_value[0] ; 13.027 ; 13.027 ; 13.027 ; 13.027 ;
-; play_pile_top_card[3] ; total_value[1] ; 12.638 ; 12.638 ; 12.638 ; 12.638 ;
-; play_pile_top_card[3] ; total_value[2] ; 13.019 ; 13.019 ; 13.019 ; 13.019 ;
-; play_pile_top_card[3] ; total_value[3] ; 12.674 ; 12.674 ; 12.674 ; 12.674 ;
-; play_pile_top_card[3] ; total_value[5] ; 12.325 ; 12.325 ; 12.325 ; 12.325 ;
-; play_pile_top_card[4] ; total_value[0] ; 11.973 ; 11.973 ; 11.973 ; 11.973 ;
-; play_pile_top_card[4] ; total_value[1] ; 12.155 ; 12.155 ; 12.155 ; 12.155 ;
-; play_pile_top_card[4] ; total_value[2] ; 11.965 ; 11.965 ; 11.965 ; 11.965 ;
-; play_pile_top_card[4] ; total_value[3] ; 12.185 ; 12.185 ; 12.185 ; 12.185 ;
-; play_pile_top_card[4] ; total_value[5] ; 12.388 ; 12.388 ; 12.388 ; 12.388 ;
-; play_pile_top_card[5] ; total_value[0] ; 13.071 ; 13.071 ; 13.071 ; 13.071 ;
-; play_pile_top_card[5] ; total_value[1] ; 12.682 ; 12.682 ; 12.682 ; 12.682 ;
-; play_pile_top_card[5] ; total_value[2] ; 13.063 ; 13.063 ; 13.063 ; 13.063 ;
-; play_pile_top_card[5] ; total_value[3] ; 12.718 ; 12.718 ; 12.718 ; 12.718 ;
-; play_pile_top_card[5] ; total_value[5] ; 12.412 ; 12.412 ; 12.412 ; 12.412 ;
+; card_to_play[0]       ; total_value[0] ; 12.758 ; 12.758 ; 12.758 ; 12.758 ;
+; card_to_play[0]       ; total_value[1] ; 12.396 ; 12.396 ; 12.396 ; 12.396 ;
+; card_to_play[0]       ; total_value[2] ; 12.973 ; 12.973 ; 12.973 ; 12.973 ;
+; card_to_play[0]       ; total_value[3] ; 12.983 ; 12.983 ; 12.983 ; 12.983 ;
+; card_to_play[0]       ; total_value[4] ; 13.074 ; 13.074 ; 13.074 ; 13.074 ;
+; card_to_play[0]       ; total_value[5] ; 10.598 ; 10.598 ; 10.598 ; 10.598 ;
+; card_to_play[1]       ; total_value[0] ; 13.341 ; 13.341 ; 13.341 ; 13.341 ;
+; card_to_play[1]       ; total_value[1] ; 12.630 ; 12.630 ; 12.630 ; 12.630 ;
+; card_to_play[1]       ; total_value[2] ; 13.202 ; 13.202 ; 13.202 ; 13.202 ;
+; card_to_play[1]       ; total_value[3] ; 13.217 ; 13.217 ; 13.217 ; 13.217 ;
+; card_to_play[1]       ; total_value[4] ; 13.308 ; 13.308 ; 13.308 ; 13.308 ;
+; card_to_play[1]       ; total_value[5] ; 12.430 ; 12.430 ; 12.430 ; 12.430 ;
+; card_to_play[2]       ; total_value[0] ; 12.792 ; 12.792 ; 12.792 ; 12.792 ;
+; card_to_play[2]       ; total_value[1] ; 12.875 ; 12.875 ; 12.875 ; 12.875 ;
+; card_to_play[2]       ; total_value[2] ; 13.191 ; 13.191 ; 13.191 ; 13.191 ;
+; card_to_play[2]       ; total_value[3] ; 12.830 ; 12.830 ; 12.830 ; 12.830 ;
+; card_to_play[2]       ; total_value[4] ; 13.274 ; 13.274 ; 13.274 ; 13.274 ;
+; card_to_play[2]       ; total_value[5] ; 11.643 ; 11.643 ; 11.643 ; 11.643 ;
+; card_to_play[3]       ; total_value[0] ; 13.565 ; 13.565 ; 13.565 ; 13.565 ;
+; card_to_play[3]       ; total_value[1] ; 13.484 ; 13.484 ; 13.484 ; 13.484 ;
+; card_to_play[3]       ; total_value[2] ; 13.964 ; 13.964 ; 13.964 ; 13.964 ;
+; card_to_play[3]       ; total_value[3] ; 13.610 ; 13.610 ; 13.610 ; 13.610 ;
+; card_to_play[3]       ; total_value[4] ; 14.054 ; 14.054 ; 14.054 ; 14.054 ;
+; card_to_play[3]       ; total_value[5] ; 12.031 ; 12.031 ; 12.031 ; 12.031 ;
+; card_to_play[4]       ; total_value[0] ; 12.683 ; 12.683 ; 12.683 ; 12.683 ;
+; card_to_play[4]       ; total_value[1] ; 13.057 ; 13.057 ; 13.057 ; 13.057 ;
+; card_to_play[4]       ; total_value[2] ; 13.430 ; 13.430 ; 13.430 ; 13.430 ;
+; card_to_play[4]       ; total_value[3] ; 13.183 ; 13.183 ; 13.183 ; 13.183 ;
+; card_to_play[4]       ; total_value[4] ; 13.459 ; 13.459 ; 13.459 ; 13.459 ;
+; card_to_play[4]       ; total_value[5] ; 11.604 ; 11.604 ; 11.604 ; 11.604 ;
+; card_to_play[5]       ; total_value[0] ; 13.324 ; 13.324 ; 13.324 ; 13.324 ;
+; card_to_play[5]       ; total_value[1] ; 13.239 ; 13.239 ; 13.239 ; 13.239 ;
+; card_to_play[5]       ; total_value[2] ; 13.664 ; 13.664 ; 13.664 ; 13.664 ;
+; card_to_play[5]       ; total_value[3] ; 13.369 ; 13.369 ; 13.369 ; 13.369 ;
+; card_to_play[5]       ; total_value[4] ; 13.813 ; 13.813 ; 13.813 ; 13.813 ;
+; card_to_play[5]       ; total_value[5] ; 11.786 ; 11.786 ; 11.786 ; 11.786 ;
+; play_pile_top_card[0] ; total_value[0] ; 10.537 ; 10.537 ; 10.537 ; 10.537 ;
+; play_pile_top_card[0] ; total_value[1] ; 10.989 ; 10.989 ; 10.989 ; 10.989 ;
+; play_pile_top_card[0] ; total_value[2] ; 11.432 ; 11.432 ; 11.432 ; 11.432 ;
+; play_pile_top_card[0] ; total_value[3] ; 11.223 ; 11.223 ; 11.223 ; 11.223 ;
+; play_pile_top_card[0] ; total_value[4] ; 11.314 ; 11.314 ; 11.314 ; 11.314 ;
+; play_pile_top_card[0] ; total_value[5] ; 12.063 ; 12.063 ; 12.063 ; 12.063 ;
+; play_pile_top_card[1] ; total_value[0] ; 11.748 ; 11.748 ; 11.748 ; 11.748 ;
+; play_pile_top_card[1] ; total_value[1] ; 11.638 ; 11.638 ; 11.638 ; 11.638 ;
+; play_pile_top_card[1] ; total_value[2] ; 11.998 ; 11.998 ; 11.998 ; 11.998 ;
+; play_pile_top_card[1] ; total_value[3] ; 11.619 ; 11.619 ; 11.619 ; 11.619 ;
+; play_pile_top_card[1] ; total_value[4] ; 12.067 ; 12.067 ; 12.067 ; 12.067 ;
+; play_pile_top_card[1] ; total_value[5] ; 13.274 ; 13.274 ; 13.274 ; 13.274 ;
+; play_pile_top_card[2] ; total_value[0] ; 11.904 ; 11.904 ; 11.904 ; 11.904 ;
+; play_pile_top_card[2] ; total_value[1] ; 11.964 ; 11.964 ; 11.964 ; 11.964 ;
+; play_pile_top_card[2] ; total_value[2] ; 12.237 ; 12.237 ; 12.237 ; 12.237 ;
+; play_pile_top_card[2] ; total_value[3] ; 11.939 ; 11.939 ; 11.939 ; 11.939 ;
+; play_pile_top_card[2] ; total_value[4] ; 12.387 ; 12.387 ; 12.387 ; 12.387 ;
+; play_pile_top_card[2] ; total_value[5] ; 13.367 ; 13.367 ; 13.367 ; 13.367 ;
+; play_pile_top_card[3] ; total_value[0] ; 11.962 ; 11.962 ; 11.962 ; 11.962 ;
+; play_pile_top_card[3] ; total_value[1] ; 12.043 ; 12.043 ; 12.043 ; 12.043 ;
+; play_pile_top_card[3] ; total_value[2] ; 12.404 ; 12.404 ; 12.404 ; 12.404 ;
+; play_pile_top_card[3] ; total_value[3] ; 12.019 ; 12.019 ; 12.019 ; 12.019 ;
+; play_pile_top_card[3] ; total_value[4] ; 12.467 ; 12.467 ; 12.467 ; 12.467 ;
+; play_pile_top_card[3] ; total_value[5] ; 13.456 ; 13.456 ; 13.456 ; 13.456 ;
+; play_pile_top_card[4] ; total_value[0] ; 12.255 ; 12.255 ; 12.255 ; 12.255 ;
+; play_pile_top_card[4] ; total_value[1] ; 12.332 ; 12.332 ; 12.332 ; 12.332 ;
+; play_pile_top_card[4] ; total_value[2] ; 12.423 ; 12.423 ; 12.423 ; 12.423 ;
+; play_pile_top_card[4] ; total_value[3] ; 12.039 ; 12.039 ; 12.039 ; 12.039 ;
+; play_pile_top_card[4] ; total_value[4] ; 12.487 ; 12.487 ; 12.487 ; 12.487 ;
+; play_pile_top_card[4] ; total_value[5] ; 13.749 ; 13.749 ; 13.749 ; 13.749 ;
+; play_pile_top_card[5] ; total_value[0] ; 12.303 ; 12.303 ; 12.303 ; 12.303 ;
+; play_pile_top_card[5] ; total_value[1] ; 12.332 ; 12.332 ; 12.332 ; 12.332 ;
+; play_pile_top_card[5] ; total_value[2] ; 12.340 ; 12.340 ; 12.340 ; 12.340 ;
+; play_pile_top_card[5] ; total_value[3] ; 11.956 ; 11.956 ; 11.956 ; 11.956 ;
+; play_pile_top_card[5] ; total_value[4] ; 12.404 ; 12.404 ; 12.404 ; 12.404 ;
+; play_pile_top_card[5] ; total_value[5] ; 13.827 ; 13.827 ; 13.827 ; 13.827 ;
 +-----------------------+----------------+--------+--------+--------+--------+
 
 
@@ -315,60 +351,78 @@ No paths to report.
 +-----------------------+----------------+-------+-------+-------+-------+
 ; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
 +-----------------------+----------------+-------+-------+-------+-------+
-; card_to_play[0]       ; total_value[1] ; 7.952 ; 7.952 ; 7.952 ; 7.952 ;
-; card_to_play[0]       ; total_value[2] ; 8.173 ; 8.173 ; 8.173 ; 8.173 ;
-; card_to_play[0]       ; total_value[3] ; 8.147 ; 8.147 ; 8.147 ; 8.147 ;
-; card_to_play[0]       ; total_value[5] ; 7.668 ; 7.668 ; 7.668 ; 7.668 ;
-; card_to_play[1]       ; total_value[1] ; 7.796 ; 7.796 ; 7.796 ; 7.796 ;
-; card_to_play[1]       ; total_value[2] ; 8.017 ; 8.017 ; 8.017 ; 8.017 ;
-; card_to_play[1]       ; total_value[3] ; 7.991 ; 7.991 ; 7.991 ; 7.991 ;
-; card_to_play[1]       ; total_value[5] ; 7.512 ; 7.512 ; 7.512 ; 7.512 ;
-; card_to_play[2]       ; total_value[1] ; 7.762 ; 7.762 ; 7.762 ; 7.762 ;
-; card_to_play[2]       ; total_value[2] ; 7.983 ; 7.983 ; 7.983 ; 7.983 ;
-; card_to_play[2]       ; total_value[3] ; 7.957 ; 7.957 ; 7.957 ; 7.957 ;
-; card_to_play[2]       ; total_value[5] ; 7.478 ; 7.478 ; 7.478 ; 7.478 ;
-; card_to_play[3]       ; total_value[1] ; 7.952 ; 7.952 ; 7.952 ; 7.952 ;
-; card_to_play[3]       ; total_value[2] ; 8.173 ; 8.173 ; 8.173 ; 8.173 ;
-; card_to_play[3]       ; total_value[3] ; 8.147 ; 8.147 ; 8.147 ; 8.147 ;
-; card_to_play[3]       ; total_value[5] ; 7.668 ; 7.668 ; 7.668 ; 7.668 ;
-; card_to_play[4]       ; total_value[1] ; 7.530 ; 7.530 ; 7.530 ; 7.530 ;
-; card_to_play[4]       ; total_value[2] ; 7.751 ; 7.751 ; 7.751 ; 7.751 ;
-; card_to_play[4]       ; total_value[3] ; 7.725 ; 7.725 ; 7.725 ; 7.725 ;
-; card_to_play[4]       ; total_value[5] ; 7.246 ; 7.246 ; 7.246 ; 7.246 ;
-; card_to_play[5]       ; total_value[1] ; 7.180 ; 7.180 ; 7.180 ; 7.180 ;
-; card_to_play[5]       ; total_value[2] ; 7.401 ; 7.401 ; 7.401 ; 7.401 ;
-; card_to_play[5]       ; total_value[3] ; 7.375 ; 7.375 ; 7.375 ; 7.375 ;
-; card_to_play[5]       ; total_value[5] ; 6.896 ; 6.896 ; 6.896 ; 6.896 ;
-; play_pile_top_card[0] ; total_value[0] ; 7.634 ; 7.634 ; 7.634 ; 7.634 ;
-; play_pile_top_card[0] ; total_value[1] ; 7.836 ; 7.836 ; 7.836 ; 7.836 ;
-; play_pile_top_card[0] ; total_value[2] ; 8.057 ; 8.057 ; 8.057 ; 8.057 ;
-; play_pile_top_card[0] ; total_value[3] ; 8.031 ; 8.031 ; 8.031 ; 8.031 ;
-; play_pile_top_card[0] ; total_value[5] ; 7.548 ; 7.548 ; 7.548 ; 7.548 ;
-; play_pile_top_card[1] ; total_value[0] ; 7.728 ; 7.728 ; 7.728 ; 7.728 ;
-; play_pile_top_card[1] ; total_value[1] ; 7.930 ; 7.930 ; 7.930 ; 7.930 ;
-; play_pile_top_card[1] ; total_value[2] ; 8.151 ; 8.151 ; 8.151 ; 8.151 ;
-; play_pile_top_card[1] ; total_value[3] ; 8.125 ; 8.125 ; 8.125 ; 8.125 ;
-; play_pile_top_card[1] ; total_value[5] ; 7.642 ; 7.642 ; 7.642 ; 7.642 ;
-; play_pile_top_card[2] ; total_value[0] ; 7.712 ; 7.712 ; 7.712 ; 7.712 ;
-; play_pile_top_card[2] ; total_value[1] ; 7.914 ; 7.914 ; 7.914 ; 7.914 ;
-; play_pile_top_card[2] ; total_value[2] ; 8.135 ; 8.135 ; 8.135 ; 8.135 ;
-; play_pile_top_card[2] ; total_value[3] ; 8.109 ; 8.109 ; 8.109 ; 8.109 ;
-; play_pile_top_card[2] ; total_value[5] ; 7.626 ; 7.626 ; 7.626 ; 7.626 ;
-; play_pile_top_card[3] ; total_value[0] ; 7.698 ; 7.698 ; 7.698 ; 7.698 ;
-; play_pile_top_card[3] ; total_value[1] ; 7.900 ; 7.900 ; 7.900 ; 7.900 ;
-; play_pile_top_card[3] ; total_value[2] ; 8.121 ; 8.121 ; 8.121 ; 8.121 ;
-; play_pile_top_card[3] ; total_value[3] ; 8.095 ; 8.095 ; 8.095 ; 8.095 ;
-; play_pile_top_card[3] ; total_value[5] ; 7.612 ; 7.612 ; 7.612 ; 7.612 ;
-; play_pile_top_card[4] ; total_value[0] ; 7.389 ; 7.389 ; 7.389 ; 7.389 ;
-; play_pile_top_card[4] ; total_value[1] ; 7.591 ; 7.591 ; 7.591 ; 7.591 ;
-; play_pile_top_card[4] ; total_value[2] ; 7.812 ; 7.812 ; 7.812 ; 7.812 ;
-; play_pile_top_card[4] ; total_value[3] ; 7.786 ; 7.786 ; 7.786 ; 7.786 ;
-; play_pile_top_card[4] ; total_value[5] ; 7.303 ; 7.303 ; 7.303 ; 7.303 ;
-; play_pile_top_card[5] ; total_value[0] ; 7.192 ; 7.192 ; 7.192 ; 7.192 ;
-; play_pile_top_card[5] ; total_value[1] ; 7.394 ; 7.394 ; 7.394 ; 7.394 ;
-; play_pile_top_card[5] ; total_value[2] ; 7.615 ; 7.615 ; 7.615 ; 7.615 ;
-; play_pile_top_card[5] ; total_value[3] ; 7.589 ; 7.589 ; 7.589 ; 7.589 ;
-; play_pile_top_card[5] ; total_value[5] ; 7.106 ; 7.106 ; 7.106 ; 7.106 ;
+; card_to_play[0]       ; total_value[0] ; 7.545 ; 7.545 ; 7.545 ; 7.545 ;
+; card_to_play[0]       ; total_value[1] ; 7.861 ; 7.861 ; 7.861 ; 7.861 ;
+; card_to_play[0]       ; total_value[2] ; 8.147 ; 8.147 ; 8.147 ; 8.147 ;
+; card_to_play[0]       ; total_value[3] ; 8.075 ; 8.075 ; 8.075 ; 8.075 ;
+; card_to_play[0]       ; total_value[4] ; 8.121 ; 8.121 ; 8.121 ; 8.121 ;
+; card_to_play[0]       ; total_value[5] ; 7.180 ; 7.180 ; 7.180 ; 7.180 ;
+; card_to_play[1]       ; total_value[0] ; 7.541 ; 7.541 ; 7.541 ; 7.541 ;
+; card_to_play[1]       ; total_value[1] ; 7.857 ; 7.857 ; 7.857 ; 7.857 ;
+; card_to_play[1]       ; total_value[2] ; 8.143 ; 8.143 ; 8.143 ; 8.143 ;
+; card_to_play[1]       ; total_value[3] ; 8.071 ; 8.071 ; 8.071 ; 8.071 ;
+; card_to_play[1]       ; total_value[4] ; 8.117 ; 8.117 ; 8.117 ; 8.117 ;
+; card_to_play[1]       ; total_value[5] ; 7.176 ; 7.176 ; 7.176 ; 7.176 ;
+; card_to_play[2]       ; total_value[0] ; 7.450 ; 7.450 ; 7.450 ; 7.450 ;
+; card_to_play[2]       ; total_value[1] ; 7.766 ; 7.766 ; 7.766 ; 7.766 ;
+; card_to_play[2]       ; total_value[2] ; 8.052 ; 8.052 ; 8.052 ; 8.052 ;
+; card_to_play[2]       ; total_value[3] ; 7.980 ; 7.980 ; 7.980 ; 7.980 ;
+; card_to_play[2]       ; total_value[4] ; 8.026 ; 8.026 ; 8.026 ; 8.026 ;
+; card_to_play[2]       ; total_value[5] ; 7.085 ; 7.085 ; 7.085 ; 7.085 ;
+; card_to_play[3]       ; total_value[0] ; 7.532 ; 7.532 ; 7.532 ; 7.532 ;
+; card_to_play[3]       ; total_value[1] ; 7.848 ; 7.848 ; 7.848 ; 7.848 ;
+; card_to_play[3]       ; total_value[2] ; 8.134 ; 8.134 ; 8.134 ; 8.134 ;
+; card_to_play[3]       ; total_value[3] ; 8.062 ; 8.062 ; 8.062 ; 8.062 ;
+; card_to_play[3]       ; total_value[4] ; 8.108 ; 8.108 ; 8.108 ; 8.108 ;
+; card_to_play[3]       ; total_value[5] ; 7.167 ; 7.167 ; 7.167 ; 7.167 ;
+; card_to_play[4]       ; total_value[0] ; 7.166 ; 7.166 ; 7.166 ; 7.166 ;
+; card_to_play[4]       ; total_value[1] ; 7.482 ; 7.482 ; 7.482 ; 7.482 ;
+; card_to_play[4]       ; total_value[2] ; 7.768 ; 7.768 ; 7.768 ; 7.768 ;
+; card_to_play[4]       ; total_value[3] ; 7.696 ; 7.696 ; 7.696 ; 7.696 ;
+; card_to_play[4]       ; total_value[4] ; 7.742 ; 7.742 ; 7.742 ; 7.742 ;
+; card_to_play[4]       ; total_value[5] ; 6.801 ; 6.801 ; 6.801 ; 6.801 ;
+; card_to_play[5]       ; total_value[0] ; 6.940 ; 6.940 ; 6.940 ; 6.940 ;
+; card_to_play[5]       ; total_value[1] ; 7.256 ; 7.256 ; 7.256 ; 7.256 ;
+; card_to_play[5]       ; total_value[2] ; 7.542 ; 7.542 ; 7.542 ; 7.542 ;
+; card_to_play[5]       ; total_value[3] ; 7.470 ; 7.470 ; 7.470 ; 7.470 ;
+; card_to_play[5]       ; total_value[4] ; 7.516 ; 7.516 ; 7.516 ; 7.516 ;
+; card_to_play[5]       ; total_value[5] ; 6.575 ; 6.575 ; 6.575 ; 6.575 ;
+; play_pile_top_card[0] ; total_value[0] ; 7.119 ; 7.119 ; 7.119 ; 7.119 ;
+; play_pile_top_card[0] ; total_value[1] ; 7.274 ; 7.274 ; 7.274 ; 7.274 ;
+; play_pile_top_card[0] ; total_value[2] ; 7.455 ; 7.455 ; 7.455 ; 7.455 ;
+; play_pile_top_card[0] ; total_value[3] ; 7.383 ; 7.383 ; 7.383 ; 7.383 ;
+; play_pile_top_card[0] ; total_value[4] ; 7.429 ; 7.429 ; 7.429 ; 7.429 ;
+; play_pile_top_card[0] ; total_value[5] ; 7.736 ; 7.736 ; 7.736 ; 7.736 ;
+; play_pile_top_card[1] ; total_value[0] ; 6.956 ; 6.956 ; 6.956 ; 6.956 ;
+; play_pile_top_card[1] ; total_value[1] ; 7.111 ; 7.111 ; 7.111 ; 7.111 ;
+; play_pile_top_card[1] ; total_value[2] ; 7.292 ; 7.292 ; 7.292 ; 7.292 ;
+; play_pile_top_card[1] ; total_value[3] ; 7.220 ; 7.220 ; 7.220 ; 7.220 ;
+; play_pile_top_card[1] ; total_value[4] ; 7.266 ; 7.266 ; 7.266 ; 7.266 ;
+; play_pile_top_card[1] ; total_value[5] ; 7.573 ; 7.573 ; 7.573 ; 7.573 ;
+; play_pile_top_card[2] ; total_value[0] ; 7.050 ; 7.050 ; 7.050 ; 7.050 ;
+; play_pile_top_card[2] ; total_value[1] ; 7.205 ; 7.205 ; 7.205 ; 7.205 ;
+; play_pile_top_card[2] ; total_value[2] ; 7.386 ; 7.386 ; 7.386 ; 7.386 ;
+; play_pile_top_card[2] ; total_value[3] ; 7.314 ; 7.314 ; 7.314 ; 7.314 ;
+; play_pile_top_card[2] ; total_value[4] ; 7.360 ; 7.360 ; 7.360 ; 7.360 ;
+; play_pile_top_card[2] ; total_value[5] ; 7.667 ; 7.667 ; 7.667 ; 7.667 ;
+; play_pile_top_card[3] ; total_value[0] ; 6.928 ; 6.928 ; 6.928 ; 6.928 ;
+; play_pile_top_card[3] ; total_value[1] ; 7.083 ; 7.083 ; 7.083 ; 7.083 ;
+; play_pile_top_card[3] ; total_value[2] ; 7.264 ; 7.264 ; 7.264 ; 7.264 ;
+; play_pile_top_card[3] ; total_value[3] ; 7.192 ; 7.192 ; 7.192 ; 7.192 ;
+; play_pile_top_card[3] ; total_value[4] ; 7.238 ; 7.238 ; 7.238 ; 7.238 ;
+; play_pile_top_card[3] ; total_value[5] ; 7.545 ; 7.545 ; 7.545 ; 7.545 ;
+; play_pile_top_card[4] ; total_value[0] ; 6.908 ; 6.908 ; 6.908 ; 6.908 ;
+; play_pile_top_card[4] ; total_value[1] ; 7.063 ; 7.063 ; 7.063 ; 7.063 ;
+; play_pile_top_card[4] ; total_value[2] ; 7.244 ; 7.244 ; 7.244 ; 7.244 ;
+; play_pile_top_card[4] ; total_value[3] ; 7.172 ; 7.172 ; 7.172 ; 7.172 ;
+; play_pile_top_card[4] ; total_value[4] ; 7.218 ; 7.218 ; 7.218 ; 7.218 ;
+; play_pile_top_card[4] ; total_value[5] ; 7.525 ; 7.525 ; 7.525 ; 7.525 ;
+; play_pile_top_card[5] ; total_value[0] ; 6.436 ; 6.436 ; 6.436 ; 6.436 ;
+; play_pile_top_card[5] ; total_value[1] ; 6.591 ; 6.591 ; 6.591 ; 6.591 ;
+; play_pile_top_card[5] ; total_value[2] ; 6.772 ; 6.772 ; 6.772 ; 6.772 ;
+; play_pile_top_card[5] ; total_value[3] ; 6.700 ; 6.700 ; 6.700 ; 6.700 ;
+; play_pile_top_card[5] ; total_value[4] ; 6.746 ; 6.746 ; 6.746 ; 6.746 ;
+; play_pile_top_card[5] ; total_value[5] ; 7.053 ; 7.053 ; 7.053 ; 7.053 ;
 +-----------------------+----------------+-------+-------+-------+-------+
 
 
@@ -377,60 +431,78 @@ No paths to report.
 +-----------------------+----------------+-------+-------+-------+-------+
 ; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
 +-----------------------+----------------+-------+-------+-------+-------+
-; card_to_play[0]       ; total_value[1] ; 6.539 ; 6.539 ; 6.539 ; 6.539 ;
-; card_to_play[0]       ; total_value[2] ; 6.760 ; 6.760 ; 6.760 ; 6.760 ;
-; card_to_play[0]       ; total_value[3] ; 6.558 ; 6.558 ; 6.558 ; 6.558 ;
-; card_to_play[0]       ; total_value[5] ; 6.255 ; 6.255 ; 6.255 ; 6.255 ;
-; card_to_play[1]       ; total_value[1] ; 6.465 ; 6.465 ; 6.465 ; 6.465 ;
-; card_to_play[1]       ; total_value[2] ; 6.686 ; 6.686 ; 6.686 ; 6.686 ;
-; card_to_play[1]       ; total_value[3] ; 6.484 ; 6.484 ; 6.484 ; 6.484 ;
-; card_to_play[1]       ; total_value[5] ; 6.181 ; 6.181 ; 6.181 ; 6.181 ;
-; card_to_play[2]       ; total_value[1] ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
-; card_to_play[2]       ; total_value[2] ; 6.516 ; 6.516 ; 6.516 ; 6.516 ;
-; card_to_play[2]       ; total_value[3] ; 6.314 ; 6.314 ; 6.314 ; 6.314 ;
-; card_to_play[2]       ; total_value[5] ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
-; card_to_play[3]       ; total_value[1] ; 6.638 ; 6.638 ; 6.638 ; 6.638 ;
-; card_to_play[3]       ; total_value[2] ; 6.859 ; 6.859 ; 6.859 ; 6.859 ;
-; card_to_play[3]       ; total_value[3] ; 6.657 ; 6.657 ; 6.657 ; 6.657 ;
-; card_to_play[3]       ; total_value[5] ; 6.354 ; 6.354 ; 6.354 ; 6.354 ;
-; card_to_play[4]       ; total_value[1] ; 6.293 ; 6.293 ; 6.293 ; 6.293 ;
-; card_to_play[4]       ; total_value[2] ; 6.514 ; 6.514 ; 6.514 ; 6.514 ;
-; card_to_play[4]       ; total_value[3] ; 6.312 ; 6.312 ; 6.312 ; 6.312 ;
-; card_to_play[4]       ; total_value[5] ; 6.009 ; 6.009 ; 6.009 ; 6.009 ;
-; card_to_play[5]       ; total_value[1] ; 6.224 ; 6.224 ; 6.224 ; 6.224 ;
-; card_to_play[5]       ; total_value[2] ; 6.445 ; 6.445 ; 6.445 ; 6.445 ;
-; card_to_play[5]       ; total_value[3] ; 6.243 ; 6.243 ; 6.243 ; 6.243 ;
-; card_to_play[5]       ; total_value[5] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
-; play_pile_top_card[0] ; total_value[0] ; 5.935 ; 5.935 ; 5.935 ; 5.935 ;
-; play_pile_top_card[0] ; total_value[1] ; 5.836 ; 5.836 ; 5.836 ; 5.836 ;
-; play_pile_top_card[0] ; total_value[2] ; 5.929 ; 5.929 ; 5.929 ; 5.929 ;
-; play_pile_top_card[0] ; total_value[3] ; 5.963 ; 5.963 ; 5.963 ; 5.963 ;
-; play_pile_top_card[0] ; total_value[5] ; 5.548 ; 5.548 ; 5.548 ; 5.548 ;
-; play_pile_top_card[1] ; total_value[0] ; 6.509 ; 6.509 ; 6.509 ; 6.509 ;
-; play_pile_top_card[1] ; total_value[1] ; 5.960 ; 5.960 ; 5.960 ; 5.960 ;
-; play_pile_top_card[1] ; total_value[2] ; 6.047 ; 6.047 ; 6.047 ; 6.047 ;
-; play_pile_top_card[1] ; total_value[3] ; 6.124 ; 6.124 ; 6.124 ; 6.124 ;
-; play_pile_top_card[1] ; total_value[5] ; 6.425 ; 6.425 ; 6.425 ; 6.425 ;
-; play_pile_top_card[2] ; total_value[0] ; 6.254 ; 6.254 ; 6.254 ; 6.254 ;
-; play_pile_top_card[2] ; total_value[1] ; 6.139 ; 6.139 ; 6.139 ; 6.139 ;
-; play_pile_top_card[2] ; total_value[2] ; 6.244 ; 6.244 ; 6.244 ; 6.244 ;
-; play_pile_top_card[2] ; total_value[3] ; 6.163 ; 6.163 ; 6.163 ; 6.163 ;
-; play_pile_top_card[2] ; total_value[5] ; 6.168 ; 6.168 ; 6.168 ; 6.168 ;
-; play_pile_top_card[3] ; total_value[0] ; 6.276 ; 6.276 ; 6.276 ; 6.276 ;
-; play_pile_top_card[3] ; total_value[1] ; 6.160 ; 6.160 ; 6.160 ; 6.160 ;
-; play_pile_top_card[3] ; total_value[2] ; 6.266 ; 6.266 ; 6.266 ; 6.266 ;
-; play_pile_top_card[3] ; total_value[3] ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
-; play_pile_top_card[3] ; total_value[5] ; 6.037 ; 6.037 ; 6.037 ; 6.037 ;
-; play_pile_top_card[4] ; total_value[0] ; 5.902 ; 5.902 ; 5.902 ; 5.902 ;
-; play_pile_top_card[4] ; total_value[1] ; 5.955 ; 5.955 ; 5.955 ; 5.955 ;
-; play_pile_top_card[4] ; total_value[2] ; 5.896 ; 5.896 ; 5.896 ; 5.896 ;
-; play_pile_top_card[4] ; total_value[3] ; 5.973 ; 5.973 ; 5.973 ; 5.973 ;
-; play_pile_top_card[4] ; total_value[5] ; 6.058 ; 6.058 ; 6.058 ; 6.058 ;
-; play_pile_top_card[5] ; total_value[0] ; 6.293 ; 6.293 ; 6.293 ; 6.293 ;
-; play_pile_top_card[5] ; total_value[1] ; 6.177 ; 6.177 ; 6.177 ; 6.177 ;
-; play_pile_top_card[5] ; total_value[2] ; 6.283 ; 6.283 ; 6.283 ; 6.283 ;
-; play_pile_top_card[5] ; total_value[3] ; 6.201 ; 6.201 ; 6.201 ; 6.201 ;
-; play_pile_top_card[5] ; total_value[5] ; 6.053 ; 6.053 ; 6.053 ; 6.053 ;
+; card_to_play[0]       ; total_value[0] ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
+; card_to_play[0]       ; total_value[1] ; 5.973 ; 5.973 ; 5.973 ; 5.973 ;
+; card_to_play[0]       ; total_value[2] ; 6.197 ; 6.197 ; 6.197 ; 6.197 ;
+; card_to_play[0]       ; total_value[3] ; 6.187 ; 6.187 ; 6.187 ; 6.187 ;
+; card_to_play[0]       ; total_value[4] ; 6.233 ; 6.233 ; 6.233 ; 6.233 ;
+; card_to_play[0]       ; total_value[5] ; 5.366 ; 5.366 ; 5.366 ; 5.366 ;
+; card_to_play[1]       ; total_value[0] ; 6.304 ; 6.304 ; 6.304 ; 6.304 ;
+; card_to_play[1]       ; total_value[1] ; 6.065 ; 6.065 ; 6.065 ; 6.065 ;
+; card_to_play[1]       ; total_value[2] ; 6.287 ; 6.287 ; 6.287 ; 6.287 ;
+; card_to_play[1]       ; total_value[3] ; 6.279 ; 6.279 ; 6.279 ; 6.279 ;
+; card_to_play[1]       ; total_value[4] ; 6.325 ; 6.325 ; 6.325 ; 6.325 ;
+; card_to_play[1]       ; total_value[5] ; 6.022 ; 6.022 ; 6.022 ; 6.022 ;
+; card_to_play[2]       ; total_value[0] ; 6.132 ; 6.132 ; 6.132 ; 6.132 ;
+; card_to_play[2]       ; total_value[1] ; 6.188 ; 6.188 ; 6.188 ; 6.188 ;
+; card_to_play[2]       ; total_value[2] ; 6.308 ; 6.308 ; 6.308 ; 6.308 ;
+; card_to_play[2]       ; total_value[3] ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; card_to_play[2]       ; total_value[4] ; 6.324 ; 6.324 ; 6.324 ; 6.324 ;
+; card_to_play[2]       ; total_value[5] ; 5.767 ; 5.767 ; 5.767 ; 5.767 ;
+; card_to_play[3]       ; total_value[0] ; 6.394 ; 6.394 ; 6.394 ; 6.394 ;
+; card_to_play[3]       ; total_value[1] ; 6.378 ; 6.378 ; 6.378 ; 6.378 ;
+; card_to_play[3]       ; total_value[2] ; 6.570 ; 6.570 ; 6.570 ; 6.570 ;
+; card_to_play[3]       ; total_value[3] ; 6.437 ; 6.437 ; 6.437 ; 6.437 ;
+; card_to_play[3]       ; total_value[4] ; 6.588 ; 6.588 ; 6.588 ; 6.588 ;
+; card_to_play[3]       ; total_value[5] ; 5.891 ; 5.891 ; 5.891 ; 5.891 ;
+; card_to_play[4]       ; total_value[0] ; 6.095 ; 6.095 ; 6.095 ; 6.095 ;
+; card_to_play[4]       ; total_value[1] ; 6.226 ; 6.226 ; 6.226 ; 6.226 ;
+; card_to_play[4]       ; total_value[2] ; 6.370 ; 6.370 ; 6.370 ; 6.370 ;
+; card_to_play[4]       ; total_value[3] ; 6.286 ; 6.286 ; 6.286 ; 6.286 ;
+; card_to_play[4]       ; total_value[4] ; 6.410 ; 6.410 ; 6.410 ; 6.410 ;
+; card_to_play[4]       ; total_value[5] ; 5.739 ; 5.739 ; 5.739 ; 5.739 ;
+; card_to_play[5]       ; total_value[0] ; 6.320 ; 6.320 ; 6.320 ; 6.320 ;
+; card_to_play[5]       ; total_value[1] ; 6.300 ; 6.300 ; 6.300 ; 6.300 ;
+; card_to_play[5]       ; total_value[2] ; 6.470 ; 6.470 ; 6.470 ; 6.470 ;
+; card_to_play[5]       ; total_value[3] ; 6.363 ; 6.363 ; 6.363 ; 6.363 ;
+; card_to_play[5]       ; total_value[4] ; 6.514 ; 6.514 ; 6.514 ; 6.514 ;
+; card_to_play[5]       ; total_value[5] ; 5.813 ; 5.813 ; 5.813 ; 5.813 ;
+; play_pile_top_card[0] ; total_value[0] ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
+; play_pile_top_card[0] ; total_value[1] ; 5.454 ; 5.454 ; 5.454 ; 5.454 ;
+; play_pile_top_card[0] ; total_value[2] ; 5.635 ; 5.635 ; 5.635 ; 5.635 ;
+; play_pile_top_card[0] ; total_value[3] ; 5.563 ; 5.563 ; 5.563 ; 5.563 ;
+; play_pile_top_card[0] ; total_value[4] ; 5.609 ; 5.609 ; 5.609 ; 5.609 ;
+; play_pile_top_card[0] ; total_value[5] ; 5.916 ; 5.916 ; 5.916 ; 5.916 ;
+; play_pile_top_card[1] ; total_value[0] ; 5.738 ; 5.738 ; 5.738 ; 5.738 ;
+; play_pile_top_card[1] ; total_value[1] ; 5.707 ; 5.707 ; 5.707 ; 5.707 ;
+; play_pile_top_card[1] ; total_value[2] ; 5.852 ; 5.852 ; 5.852 ; 5.852 ;
+; play_pile_top_card[1] ; total_value[3] ; 5.692 ; 5.692 ; 5.692 ; 5.692 ;
+; play_pile_top_card[1] ; total_value[4] ; 5.841 ; 5.841 ; 5.841 ; 5.841 ;
+; play_pile_top_card[1] ; total_value[5] ; 6.356 ; 6.356 ; 6.356 ; 6.356 ;
+; play_pile_top_card[2] ; total_value[0] ; 5.802 ; 5.802 ; 5.802 ; 5.802 ;
+; play_pile_top_card[2] ; total_value[1] ; 5.828 ; 5.828 ; 5.828 ; 5.828 ;
+; play_pile_top_card[2] ; total_value[2] ; 5.968 ; 5.968 ; 5.968 ; 5.968 ;
+; play_pile_top_card[2] ; total_value[3] ; 5.803 ; 5.803 ; 5.803 ; 5.803 ;
+; play_pile_top_card[2] ; total_value[4] ; 5.952 ; 5.952 ; 5.952 ; 5.952 ;
+; play_pile_top_card[2] ; total_value[5] ; 6.419 ; 6.419 ; 6.419 ; 6.419 ;
+; play_pile_top_card[3] ; total_value[0] ; 5.841 ; 5.841 ; 5.841 ; 5.841 ;
+; play_pile_top_card[3] ; total_value[1] ; 5.887 ; 5.887 ; 5.887 ; 5.887 ;
+; play_pile_top_card[3] ; total_value[2] ; 6.029 ; 6.029 ; 6.029 ; 6.029 ;
+; play_pile_top_card[3] ; total_value[3] ; 5.863 ; 5.863 ; 5.863 ; 5.863 ;
+; play_pile_top_card[3] ; total_value[4] ; 6.012 ; 6.012 ; 6.012 ; 6.012 ;
+; play_pile_top_card[3] ; total_value[5] ; 6.456 ; 6.456 ; 6.456 ; 6.456 ;
+; play_pile_top_card[4] ; total_value[0] ; 5.925 ; 5.925 ; 5.925 ; 5.925 ;
+; play_pile_top_card[4] ; total_value[1] ; 5.969 ; 5.969 ; 5.969 ; 5.969 ;
+; play_pile_top_card[4] ; total_value[2] ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; play_pile_top_card[4] ; total_value[3] ; 5.839 ; 5.839 ; 5.839 ; 5.839 ;
+; play_pile_top_card[4] ; total_value[4] ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; play_pile_top_card[4] ; total_value[5] ; 6.540 ; 6.540 ; 6.540 ; 6.540 ;
+; play_pile_top_card[5] ; total_value[0] ; 5.934 ; 5.934 ; 5.934 ; 5.934 ;
+; play_pile_top_card[5] ; total_value[1] ; 5.961 ; 5.961 ; 5.961 ; 5.961 ;
+; play_pile_top_card[5] ; total_value[2] ; 5.975 ; 5.975 ; 5.975 ; 5.975 ;
+; play_pile_top_card[5] ; total_value[3] ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
+; play_pile_top_card[5] ; total_value[4] ; 5.961 ; 5.961 ; 5.961 ; 5.961 ;
+; play_pile_top_card[5] ; total_value[5] ; 6.552 ; 6.552 ; 6.552 ; 6.552 ;
 +-----------------------+----------------+-------+-------+-------+-------+
 
 
@@ -451,60 +523,78 @@ No paths to report.
 +-----------------------+----------------+--------+--------+--------+--------+
 ; Input Port            ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
 +-----------------------+----------------+--------+--------+--------+--------+
-; card_to_play[0]       ; total_value[1] ; 17.821 ; 17.821 ; 17.821 ; 17.821 ;
-; card_to_play[0]       ; total_value[2] ; 18.502 ; 18.502 ; 18.502 ; 18.502 ;
-; card_to_play[0]       ; total_value[3] ; 18.370 ; 18.370 ; 18.370 ; 18.370 ;
-; card_to_play[0]       ; total_value[5] ; 16.994 ; 16.994 ; 16.994 ; 16.994 ;
-; card_to_play[1]       ; total_value[1] ; 17.402 ; 17.402 ; 17.402 ; 17.402 ;
-; card_to_play[1]       ; total_value[2] ; 18.083 ; 18.083 ; 18.083 ; 18.083 ;
-; card_to_play[1]       ; total_value[3] ; 17.951 ; 17.951 ; 17.951 ; 17.951 ;
-; card_to_play[1]       ; total_value[5] ; 16.575 ; 16.575 ; 16.575 ; 16.575 ;
-; card_to_play[2]       ; total_value[1] ; 17.317 ; 17.317 ; 17.317 ; 17.317 ;
-; card_to_play[2]       ; total_value[2] ; 17.998 ; 17.998 ; 17.998 ; 17.998 ;
-; card_to_play[2]       ; total_value[3] ; 17.866 ; 17.866 ; 17.866 ; 17.866 ;
-; card_to_play[2]       ; total_value[5] ; 16.490 ; 16.490 ; 16.490 ; 16.490 ;
-; card_to_play[3]       ; total_value[1] ; 17.848 ; 17.848 ; 17.848 ; 17.848 ;
-; card_to_play[3]       ; total_value[2] ; 18.529 ; 18.529 ; 18.529 ; 18.529 ;
-; card_to_play[3]       ; total_value[3] ; 18.397 ; 18.397 ; 18.397 ; 18.397 ;
-; card_to_play[3]       ; total_value[5] ; 17.021 ; 17.021 ; 17.021 ; 17.021 ;
-; card_to_play[4]       ; total_value[1] ; 16.561 ; 16.561 ; 16.561 ; 16.561 ;
-; card_to_play[4]       ; total_value[2] ; 17.242 ; 17.242 ; 17.242 ; 17.242 ;
-; card_to_play[4]       ; total_value[3] ; 17.110 ; 17.110 ; 17.110 ; 17.110 ;
-; card_to_play[4]       ; total_value[5] ; 15.734 ; 15.734 ; 15.734 ; 15.734 ;
-; card_to_play[5]       ; total_value[1] ; 15.576 ; 15.576 ; 15.576 ; 15.576 ;
-; card_to_play[5]       ; total_value[2] ; 16.257 ; 16.257 ; 16.257 ; 16.257 ;
-; card_to_play[5]       ; total_value[3] ; 16.125 ; 16.125 ; 16.125 ; 16.125 ;
-; card_to_play[5]       ; total_value[5] ; 14.749 ; 14.749 ; 14.749 ; 14.749 ;
-; play_pile_top_card[0] ; total_value[0] ; 16.878 ; 16.878 ; 16.878 ; 16.878 ;
-; play_pile_top_card[0] ; total_value[1] ; 17.455 ; 17.455 ; 17.455 ; 17.455 ;
-; play_pile_top_card[0] ; total_value[2] ; 18.136 ; 18.136 ; 18.136 ; 18.136 ;
-; play_pile_top_card[0] ; total_value[3] ; 18.004 ; 18.004 ; 18.004 ; 18.004 ;
-; play_pile_top_card[0] ; total_value[5] ; 16.625 ; 16.625 ; 16.625 ; 16.625 ;
-; play_pile_top_card[1] ; total_value[0] ; 17.103 ; 17.103 ; 17.103 ; 17.103 ;
-; play_pile_top_card[1] ; total_value[1] ; 17.680 ; 17.680 ; 17.680 ; 17.680 ;
-; play_pile_top_card[1] ; total_value[2] ; 18.361 ; 18.361 ; 18.361 ; 18.361 ;
-; play_pile_top_card[1] ; total_value[3] ; 18.229 ; 18.229 ; 18.229 ; 18.229 ;
-; play_pile_top_card[1] ; total_value[5] ; 16.850 ; 16.850 ; 16.850 ; 16.850 ;
-; play_pile_top_card[2] ; total_value[0] ; 17.096 ; 17.096 ; 17.096 ; 17.096 ;
-; play_pile_top_card[2] ; total_value[1] ; 17.673 ; 17.673 ; 17.673 ; 17.673 ;
-; play_pile_top_card[2] ; total_value[2] ; 18.354 ; 18.354 ; 18.354 ; 18.354 ;
-; play_pile_top_card[2] ; total_value[3] ; 18.222 ; 18.222 ; 18.222 ; 18.222 ;
-; play_pile_top_card[2] ; total_value[5] ; 16.843 ; 16.843 ; 16.843 ; 16.843 ;
-; play_pile_top_card[3] ; total_value[0] ; 17.047 ; 17.047 ; 17.047 ; 17.047 ;
-; play_pile_top_card[3] ; total_value[1] ; 17.624 ; 17.624 ; 17.624 ; 17.624 ;
-; play_pile_top_card[3] ; total_value[2] ; 18.305 ; 18.305 ; 18.305 ; 18.305 ;
-; play_pile_top_card[3] ; total_value[3] ; 18.173 ; 18.173 ; 18.173 ; 18.173 ;
-; play_pile_top_card[3] ; total_value[5] ; 16.794 ; 16.794 ; 16.794 ; 16.794 ;
-; play_pile_top_card[4] ; total_value[0] ; 16.151 ; 16.151 ; 16.151 ; 16.151 ;
-; play_pile_top_card[4] ; total_value[1] ; 16.728 ; 16.728 ; 16.728 ; 16.728 ;
-; play_pile_top_card[4] ; total_value[2] ; 17.409 ; 17.409 ; 17.409 ; 17.409 ;
-; play_pile_top_card[4] ; total_value[3] ; 17.277 ; 17.277 ; 17.277 ; 17.277 ;
-; play_pile_top_card[4] ; total_value[5] ; 15.898 ; 15.898 ; 15.898 ; 15.898 ;
-; play_pile_top_card[5] ; total_value[0] ; 15.625 ; 15.625 ; 15.625 ; 15.625 ;
-; play_pile_top_card[5] ; total_value[1] ; 16.202 ; 16.202 ; 16.202 ; 16.202 ;
-; play_pile_top_card[5] ; total_value[2] ; 16.883 ; 16.883 ; 16.883 ; 16.883 ;
-; play_pile_top_card[5] ; total_value[3] ; 16.751 ; 16.751 ; 16.751 ; 16.751 ;
-; play_pile_top_card[5] ; total_value[5] ; 15.372 ; 15.372 ; 15.372 ; 15.372 ;
+; card_to_play[0]       ; total_value[0] ; 16.844 ; 16.844 ; 16.844 ; 16.844 ;
+; card_to_play[0]       ; total_value[1] ; 17.702 ; 17.702 ; 17.702 ; 17.702 ;
+; card_to_play[0]       ; total_value[2] ; 18.498 ; 18.498 ; 18.498 ; 18.498 ;
+; card_to_play[0]       ; total_value[3] ; 18.289 ; 18.289 ; 18.289 ; 18.289 ;
+; card_to_play[0]       ; total_value[4] ; 18.380 ; 18.380 ; 18.380 ; 18.380 ;
+; card_to_play[0]       ; total_value[5] ; 15.695 ; 15.695 ; 15.695 ; 15.695 ;
+; card_to_play[1]       ; total_value[0] ; 16.803 ; 16.803 ; 16.803 ; 16.803 ;
+; card_to_play[1]       ; total_value[1] ; 17.661 ; 17.661 ; 17.661 ; 17.661 ;
+; card_to_play[1]       ; total_value[2] ; 18.457 ; 18.457 ; 18.457 ; 18.457 ;
+; card_to_play[1]       ; total_value[3] ; 18.248 ; 18.248 ; 18.248 ; 18.248 ;
+; card_to_play[1]       ; total_value[4] ; 18.339 ; 18.339 ; 18.339 ; 18.339 ;
+; card_to_play[1]       ; total_value[5] ; 15.654 ; 15.654 ; 15.654 ; 15.654 ;
+; card_to_play[2]       ; total_value[0] ; 16.512 ; 16.512 ; 16.512 ; 16.512 ;
+; card_to_play[2]       ; total_value[1] ; 17.370 ; 17.370 ; 17.370 ; 17.370 ;
+; card_to_play[2]       ; total_value[2] ; 18.166 ; 18.166 ; 18.166 ; 18.166 ;
+; card_to_play[2]       ; total_value[3] ; 17.957 ; 17.957 ; 17.957 ; 17.957 ;
+; card_to_play[2]       ; total_value[4] ; 18.048 ; 18.048 ; 18.048 ; 18.048 ;
+; card_to_play[2]       ; total_value[5] ; 15.363 ; 15.363 ; 15.363 ; 15.363 ;
+; card_to_play[3]       ; total_value[0] ; 16.725 ; 16.725 ; 16.725 ; 16.725 ;
+; card_to_play[3]       ; total_value[1] ; 17.583 ; 17.583 ; 17.583 ; 17.583 ;
+; card_to_play[3]       ; total_value[2] ; 18.379 ; 18.379 ; 18.379 ; 18.379 ;
+; card_to_play[3]       ; total_value[3] ; 18.170 ; 18.170 ; 18.170 ; 18.170 ;
+; card_to_play[3]       ; total_value[4] ; 18.261 ; 18.261 ; 18.261 ; 18.261 ;
+; card_to_play[3]       ; total_value[5] ; 15.576 ; 15.576 ; 15.576 ; 15.576 ;
+; card_to_play[4]       ; total_value[0] ; 15.709 ; 15.709 ; 15.709 ; 15.709 ;
+; card_to_play[4]       ; total_value[1] ; 16.567 ; 16.567 ; 16.567 ; 16.567 ;
+; card_to_play[4]       ; total_value[2] ; 17.363 ; 17.363 ; 17.363 ; 17.363 ;
+; card_to_play[4]       ; total_value[3] ; 17.154 ; 17.154 ; 17.154 ; 17.154 ;
+; card_to_play[4]       ; total_value[4] ; 17.245 ; 17.245 ; 17.245 ; 17.245 ;
+; card_to_play[4]       ; total_value[5] ; 14.560 ; 14.560 ; 14.560 ; 14.560 ;
+; card_to_play[5]       ; total_value[0] ; 15.040 ; 15.040 ; 15.040 ; 15.040 ;
+; card_to_play[5]       ; total_value[1] ; 15.898 ; 15.898 ; 15.898 ; 15.898 ;
+; card_to_play[5]       ; total_value[2] ; 16.694 ; 16.694 ; 16.694 ; 16.694 ;
+; card_to_play[5]       ; total_value[3] ; 16.485 ; 16.485 ; 16.485 ; 16.485 ;
+; card_to_play[5]       ; total_value[4] ; 16.576 ; 16.576 ; 16.576 ; 16.576 ;
+; card_to_play[5]       ; total_value[5] ; 13.891 ; 13.891 ; 13.891 ; 13.891 ;
+; play_pile_top_card[0] ; total_value[0] ; 15.725 ; 15.725 ; 15.725 ; 15.725 ;
+; play_pile_top_card[0] ; total_value[1] ; 16.177 ; 16.177 ; 16.177 ; 16.177 ;
+; play_pile_top_card[0] ; total_value[2] ; 16.620 ; 16.620 ; 16.620 ; 16.620 ;
+; play_pile_top_card[0] ; total_value[3] ; 16.411 ; 16.411 ; 16.411 ; 16.411 ;
+; play_pile_top_card[0] ; total_value[4] ; 16.502 ; 16.502 ; 16.502 ; 16.502 ;
+; play_pile_top_card[0] ; total_value[5] ; 17.251 ; 17.251 ; 17.251 ; 17.251 ;
+; play_pile_top_card[1] ; total_value[0] ; 15.214 ; 15.214 ; 15.214 ; 15.214 ;
+; play_pile_top_card[1] ; total_value[1] ; 15.666 ; 15.666 ; 15.666 ; 15.666 ;
+; play_pile_top_card[1] ; total_value[2] ; 16.109 ; 16.109 ; 16.109 ; 16.109 ;
+; play_pile_top_card[1] ; total_value[3] ; 15.900 ; 15.900 ; 15.900 ; 15.900 ;
+; play_pile_top_card[1] ; total_value[4] ; 15.991 ; 15.991 ; 15.991 ; 15.991 ;
+; play_pile_top_card[1] ; total_value[5] ; 16.740 ; 16.740 ; 16.740 ; 16.740 ;
+; play_pile_top_card[2] ; total_value[0] ; 15.478 ; 15.478 ; 15.478 ; 15.478 ;
+; play_pile_top_card[2] ; total_value[1] ; 15.930 ; 15.930 ; 15.930 ; 15.930 ;
+; play_pile_top_card[2] ; total_value[2] ; 16.373 ; 16.373 ; 16.373 ; 16.373 ;
+; play_pile_top_card[2] ; total_value[3] ; 16.164 ; 16.164 ; 16.164 ; 16.164 ;
+; play_pile_top_card[2] ; total_value[4] ; 16.255 ; 16.255 ; 16.255 ; 16.255 ;
+; play_pile_top_card[2] ; total_value[5] ; 17.004 ; 17.004 ; 17.004 ; 17.004 ;
+; play_pile_top_card[3] ; total_value[0] ; 15.065 ; 15.065 ; 15.065 ; 15.065 ;
+; play_pile_top_card[3] ; total_value[1] ; 15.517 ; 15.517 ; 15.517 ; 15.517 ;
+; play_pile_top_card[3] ; total_value[2] ; 15.960 ; 15.960 ; 15.960 ; 15.960 ;
+; play_pile_top_card[3] ; total_value[3] ; 15.751 ; 15.751 ; 15.751 ; 15.751 ;
+; play_pile_top_card[3] ; total_value[4] ; 15.842 ; 15.842 ; 15.842 ; 15.842 ;
+; play_pile_top_card[3] ; total_value[5] ; 16.591 ; 16.591 ; 16.591 ; 16.591 ;
+; play_pile_top_card[4] ; total_value[0] ; 15.041 ; 15.041 ; 15.041 ; 15.041 ;
+; play_pile_top_card[4] ; total_value[1] ; 15.493 ; 15.493 ; 15.493 ; 15.493 ;
+; play_pile_top_card[4] ; total_value[2] ; 15.936 ; 15.936 ; 15.936 ; 15.936 ;
+; play_pile_top_card[4] ; total_value[3] ; 15.727 ; 15.727 ; 15.727 ; 15.727 ;
+; play_pile_top_card[4] ; total_value[4] ; 15.818 ; 15.818 ; 15.818 ; 15.818 ;
+; play_pile_top_card[4] ; total_value[5] ; 16.567 ; 16.567 ; 16.567 ; 16.567 ;
+; play_pile_top_card[5] ; total_value[0] ; 13.733 ; 13.733 ; 13.733 ; 13.733 ;
+; play_pile_top_card[5] ; total_value[1] ; 14.185 ; 14.185 ; 14.185 ; 14.185 ;
+; play_pile_top_card[5] ; total_value[2] ; 14.628 ; 14.628 ; 14.628 ; 14.628 ;
+; play_pile_top_card[5] ; total_value[3] ; 14.419 ; 14.419 ; 14.419 ; 14.419 ;
+; play_pile_top_card[5] ; total_value[4] ; 14.510 ; 14.510 ; 14.510 ; 14.510 ;
+; play_pile_top_card[5] ; total_value[5] ; 15.259 ; 15.259 ; 15.259 ; 15.259 ;
 +-----------------------+----------------+--------+--------+--------+--------+
 
 
@@ -513,60 +603,78 @@ No paths to report.
 +-----------------------+----------------+-------+-------+-------+-------+
 ; Input Port            ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
 +-----------------------+----------------+-------+-------+-------+-------+
-; card_to_play[0]       ; total_value[1] ; 6.539 ; 6.539 ; 6.539 ; 6.539 ;
-; card_to_play[0]       ; total_value[2] ; 6.760 ; 6.760 ; 6.760 ; 6.760 ;
-; card_to_play[0]       ; total_value[3] ; 6.558 ; 6.558 ; 6.558 ; 6.558 ;
-; card_to_play[0]       ; total_value[5] ; 6.255 ; 6.255 ; 6.255 ; 6.255 ;
-; card_to_play[1]       ; total_value[1] ; 6.465 ; 6.465 ; 6.465 ; 6.465 ;
-; card_to_play[1]       ; total_value[2] ; 6.686 ; 6.686 ; 6.686 ; 6.686 ;
-; card_to_play[1]       ; total_value[3] ; 6.484 ; 6.484 ; 6.484 ; 6.484 ;
-; card_to_play[1]       ; total_value[5] ; 6.181 ; 6.181 ; 6.181 ; 6.181 ;
-; card_to_play[2]       ; total_value[1] ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
-; card_to_play[2]       ; total_value[2] ; 6.516 ; 6.516 ; 6.516 ; 6.516 ;
-; card_to_play[2]       ; total_value[3] ; 6.314 ; 6.314 ; 6.314 ; 6.314 ;
-; card_to_play[2]       ; total_value[5] ; 6.011 ; 6.011 ; 6.011 ; 6.011 ;
-; card_to_play[3]       ; total_value[1] ; 6.638 ; 6.638 ; 6.638 ; 6.638 ;
-; card_to_play[3]       ; total_value[2] ; 6.859 ; 6.859 ; 6.859 ; 6.859 ;
-; card_to_play[3]       ; total_value[3] ; 6.657 ; 6.657 ; 6.657 ; 6.657 ;
-; card_to_play[3]       ; total_value[5] ; 6.354 ; 6.354 ; 6.354 ; 6.354 ;
-; card_to_play[4]       ; total_value[1] ; 6.293 ; 6.293 ; 6.293 ; 6.293 ;
-; card_to_play[4]       ; total_value[2] ; 6.514 ; 6.514 ; 6.514 ; 6.514 ;
-; card_to_play[4]       ; total_value[3] ; 6.312 ; 6.312 ; 6.312 ; 6.312 ;
-; card_to_play[4]       ; total_value[5] ; 6.009 ; 6.009 ; 6.009 ; 6.009 ;
-; card_to_play[5]       ; total_value[1] ; 6.224 ; 6.224 ; 6.224 ; 6.224 ;
-; card_to_play[5]       ; total_value[2] ; 6.445 ; 6.445 ; 6.445 ; 6.445 ;
-; card_to_play[5]       ; total_value[3] ; 6.243 ; 6.243 ; 6.243 ; 6.243 ;
-; card_to_play[5]       ; total_value[5] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
-; play_pile_top_card[0] ; total_value[0] ; 5.935 ; 5.935 ; 5.935 ; 5.935 ;
-; play_pile_top_card[0] ; total_value[1] ; 5.836 ; 5.836 ; 5.836 ; 5.836 ;
-; play_pile_top_card[0] ; total_value[2] ; 5.929 ; 5.929 ; 5.929 ; 5.929 ;
-; play_pile_top_card[0] ; total_value[3] ; 5.963 ; 5.963 ; 5.963 ; 5.963 ;
-; play_pile_top_card[0] ; total_value[5] ; 5.548 ; 5.548 ; 5.548 ; 5.548 ;
-; play_pile_top_card[1] ; total_value[0] ; 6.509 ; 6.509 ; 6.509 ; 6.509 ;
-; play_pile_top_card[1] ; total_value[1] ; 5.960 ; 5.960 ; 5.960 ; 5.960 ;
-; play_pile_top_card[1] ; total_value[2] ; 6.047 ; 6.047 ; 6.047 ; 6.047 ;
-; play_pile_top_card[1] ; total_value[3] ; 6.124 ; 6.124 ; 6.124 ; 6.124 ;
-; play_pile_top_card[1] ; total_value[5] ; 6.425 ; 6.425 ; 6.425 ; 6.425 ;
-; play_pile_top_card[2] ; total_value[0] ; 6.254 ; 6.254 ; 6.254 ; 6.254 ;
-; play_pile_top_card[2] ; total_value[1] ; 6.139 ; 6.139 ; 6.139 ; 6.139 ;
-; play_pile_top_card[2] ; total_value[2] ; 6.244 ; 6.244 ; 6.244 ; 6.244 ;
-; play_pile_top_card[2] ; total_value[3] ; 6.163 ; 6.163 ; 6.163 ; 6.163 ;
-; play_pile_top_card[2] ; total_value[5] ; 6.168 ; 6.168 ; 6.168 ; 6.168 ;
-; play_pile_top_card[3] ; total_value[0] ; 6.276 ; 6.276 ; 6.276 ; 6.276 ;
-; play_pile_top_card[3] ; total_value[1] ; 6.160 ; 6.160 ; 6.160 ; 6.160 ;
-; play_pile_top_card[3] ; total_value[2] ; 6.266 ; 6.266 ; 6.266 ; 6.266 ;
-; play_pile_top_card[3] ; total_value[3] ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
-; play_pile_top_card[3] ; total_value[5] ; 6.037 ; 6.037 ; 6.037 ; 6.037 ;
-; play_pile_top_card[4] ; total_value[0] ; 5.902 ; 5.902 ; 5.902 ; 5.902 ;
-; play_pile_top_card[4] ; total_value[1] ; 5.955 ; 5.955 ; 5.955 ; 5.955 ;
-; play_pile_top_card[4] ; total_value[2] ; 5.896 ; 5.896 ; 5.896 ; 5.896 ;
-; play_pile_top_card[4] ; total_value[3] ; 5.973 ; 5.973 ; 5.973 ; 5.973 ;
-; play_pile_top_card[4] ; total_value[5] ; 6.058 ; 6.058 ; 6.058 ; 6.058 ;
-; play_pile_top_card[5] ; total_value[0] ; 6.293 ; 6.293 ; 6.293 ; 6.293 ;
-; play_pile_top_card[5] ; total_value[1] ; 6.177 ; 6.177 ; 6.177 ; 6.177 ;
-; play_pile_top_card[5] ; total_value[2] ; 6.283 ; 6.283 ; 6.283 ; 6.283 ;
-; play_pile_top_card[5] ; total_value[3] ; 6.201 ; 6.201 ; 6.201 ; 6.201 ;
-; play_pile_top_card[5] ; total_value[5] ; 6.053 ; 6.053 ; 6.053 ; 6.053 ;
+; card_to_play[0]       ; total_value[0] ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
+; card_to_play[0]       ; total_value[1] ; 5.973 ; 5.973 ; 5.973 ; 5.973 ;
+; card_to_play[0]       ; total_value[2] ; 6.197 ; 6.197 ; 6.197 ; 6.197 ;
+; card_to_play[0]       ; total_value[3] ; 6.187 ; 6.187 ; 6.187 ; 6.187 ;
+; card_to_play[0]       ; total_value[4] ; 6.233 ; 6.233 ; 6.233 ; 6.233 ;
+; card_to_play[0]       ; total_value[5] ; 5.366 ; 5.366 ; 5.366 ; 5.366 ;
+; card_to_play[1]       ; total_value[0] ; 6.304 ; 6.304 ; 6.304 ; 6.304 ;
+; card_to_play[1]       ; total_value[1] ; 6.065 ; 6.065 ; 6.065 ; 6.065 ;
+; card_to_play[1]       ; total_value[2] ; 6.287 ; 6.287 ; 6.287 ; 6.287 ;
+; card_to_play[1]       ; total_value[3] ; 6.279 ; 6.279 ; 6.279 ; 6.279 ;
+; card_to_play[1]       ; total_value[4] ; 6.325 ; 6.325 ; 6.325 ; 6.325 ;
+; card_to_play[1]       ; total_value[5] ; 6.022 ; 6.022 ; 6.022 ; 6.022 ;
+; card_to_play[2]       ; total_value[0] ; 6.132 ; 6.132 ; 6.132 ; 6.132 ;
+; card_to_play[2]       ; total_value[1] ; 6.188 ; 6.188 ; 6.188 ; 6.188 ;
+; card_to_play[2]       ; total_value[2] ; 6.308 ; 6.308 ; 6.308 ; 6.308 ;
+; card_to_play[2]       ; total_value[3] ; 6.173 ; 6.173 ; 6.173 ; 6.173 ;
+; card_to_play[2]       ; total_value[4] ; 6.324 ; 6.324 ; 6.324 ; 6.324 ;
+; card_to_play[2]       ; total_value[5] ; 5.767 ; 5.767 ; 5.767 ; 5.767 ;
+; card_to_play[3]       ; total_value[0] ; 6.394 ; 6.394 ; 6.394 ; 6.394 ;
+; card_to_play[3]       ; total_value[1] ; 6.378 ; 6.378 ; 6.378 ; 6.378 ;
+; card_to_play[3]       ; total_value[2] ; 6.570 ; 6.570 ; 6.570 ; 6.570 ;
+; card_to_play[3]       ; total_value[3] ; 6.437 ; 6.437 ; 6.437 ; 6.437 ;
+; card_to_play[3]       ; total_value[4] ; 6.588 ; 6.588 ; 6.588 ; 6.588 ;
+; card_to_play[3]       ; total_value[5] ; 5.891 ; 5.891 ; 5.891 ; 5.891 ;
+; card_to_play[4]       ; total_value[0] ; 6.095 ; 6.095 ; 6.095 ; 6.095 ;
+; card_to_play[4]       ; total_value[1] ; 6.226 ; 6.226 ; 6.226 ; 6.226 ;
+; card_to_play[4]       ; total_value[2] ; 6.370 ; 6.370 ; 6.370 ; 6.370 ;
+; card_to_play[4]       ; total_value[3] ; 6.286 ; 6.286 ; 6.286 ; 6.286 ;
+; card_to_play[4]       ; total_value[4] ; 6.410 ; 6.410 ; 6.410 ; 6.410 ;
+; card_to_play[4]       ; total_value[5] ; 5.739 ; 5.739 ; 5.739 ; 5.739 ;
+; card_to_play[5]       ; total_value[0] ; 6.320 ; 6.320 ; 6.320 ; 6.320 ;
+; card_to_play[5]       ; total_value[1] ; 6.300 ; 6.300 ; 6.300 ; 6.300 ;
+; card_to_play[5]       ; total_value[2] ; 6.470 ; 6.470 ; 6.470 ; 6.470 ;
+; card_to_play[5]       ; total_value[3] ; 6.363 ; 6.363 ; 6.363 ; 6.363 ;
+; card_to_play[5]       ; total_value[4] ; 6.514 ; 6.514 ; 6.514 ; 6.514 ;
+; card_to_play[5]       ; total_value[5] ; 5.813 ; 5.813 ; 5.813 ; 5.813 ;
+; play_pile_top_card[0] ; total_value[0] ; 5.299 ; 5.299 ; 5.299 ; 5.299 ;
+; play_pile_top_card[0] ; total_value[1] ; 5.454 ; 5.454 ; 5.454 ; 5.454 ;
+; play_pile_top_card[0] ; total_value[2] ; 5.635 ; 5.635 ; 5.635 ; 5.635 ;
+; play_pile_top_card[0] ; total_value[3] ; 5.563 ; 5.563 ; 5.563 ; 5.563 ;
+; play_pile_top_card[0] ; total_value[4] ; 5.609 ; 5.609 ; 5.609 ; 5.609 ;
+; play_pile_top_card[0] ; total_value[5] ; 5.916 ; 5.916 ; 5.916 ; 5.916 ;
+; play_pile_top_card[1] ; total_value[0] ; 5.738 ; 5.738 ; 5.738 ; 5.738 ;
+; play_pile_top_card[1] ; total_value[1] ; 5.707 ; 5.707 ; 5.707 ; 5.707 ;
+; play_pile_top_card[1] ; total_value[2] ; 5.852 ; 5.852 ; 5.852 ; 5.852 ;
+; play_pile_top_card[1] ; total_value[3] ; 5.692 ; 5.692 ; 5.692 ; 5.692 ;
+; play_pile_top_card[1] ; total_value[4] ; 5.841 ; 5.841 ; 5.841 ; 5.841 ;
+; play_pile_top_card[1] ; total_value[5] ; 6.356 ; 6.356 ; 6.356 ; 6.356 ;
+; play_pile_top_card[2] ; total_value[0] ; 5.802 ; 5.802 ; 5.802 ; 5.802 ;
+; play_pile_top_card[2] ; total_value[1] ; 5.828 ; 5.828 ; 5.828 ; 5.828 ;
+; play_pile_top_card[2] ; total_value[2] ; 5.968 ; 5.968 ; 5.968 ; 5.968 ;
+; play_pile_top_card[2] ; total_value[3] ; 5.803 ; 5.803 ; 5.803 ; 5.803 ;
+; play_pile_top_card[2] ; total_value[4] ; 5.952 ; 5.952 ; 5.952 ; 5.952 ;
+; play_pile_top_card[2] ; total_value[5] ; 6.419 ; 6.419 ; 6.419 ; 6.419 ;
+; play_pile_top_card[3] ; total_value[0] ; 5.841 ; 5.841 ; 5.841 ; 5.841 ;
+; play_pile_top_card[3] ; total_value[1] ; 5.887 ; 5.887 ; 5.887 ; 5.887 ;
+; play_pile_top_card[3] ; total_value[2] ; 6.029 ; 6.029 ; 6.029 ; 6.029 ;
+; play_pile_top_card[3] ; total_value[3] ; 5.863 ; 5.863 ; 5.863 ; 5.863 ;
+; play_pile_top_card[3] ; total_value[4] ; 6.012 ; 6.012 ; 6.012 ; 6.012 ;
+; play_pile_top_card[3] ; total_value[5] ; 6.456 ; 6.456 ; 6.456 ; 6.456 ;
+; play_pile_top_card[4] ; total_value[0] ; 5.925 ; 5.925 ; 5.925 ; 5.925 ;
+; play_pile_top_card[4] ; total_value[1] ; 5.969 ; 5.969 ; 5.969 ; 5.969 ;
+; play_pile_top_card[4] ; total_value[2] ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; play_pile_top_card[4] ; total_value[3] ; 5.839 ; 5.839 ; 5.839 ; 5.839 ;
+; play_pile_top_card[4] ; total_value[4] ; 5.988 ; 5.988 ; 5.988 ; 5.988 ;
+; play_pile_top_card[4] ; total_value[5] ; 6.540 ; 6.540 ; 6.540 ; 6.540 ;
+; play_pile_top_card[5] ; total_value[0] ; 5.934 ; 5.934 ; 5.934 ; 5.934 ;
+; play_pile_top_card[5] ; total_value[1] ; 5.961 ; 5.961 ; 5.961 ; 5.961 ;
+; play_pile_top_card[5] ; total_value[2] ; 5.975 ; 5.975 ; 5.975 ; 5.975 ;
+; play_pile_top_card[5] ; total_value[3] ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
+; play_pile_top_card[5] ; total_value[4] ; 5.961 ; 5.961 ; 5.961 ; 5.961 ;
+; play_pile_top_card[5] ; total_value[5] ; 6.552 ; 6.552 ; 6.552 ; 6.552 ;
 +-----------------------+----------------+-------+-------+-------+-------+
 
 
@@ -594,11 +702,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 12    ; 12   ;
-; Unconstrained Input Port Paths  ; 102   ; 102  ;
-; Unconstrained Output Ports      ; 5     ; 5    ;
-; Unconstrained Output Port Paths ; 64    ; 64   ;
+; Unconstrained Input Port Paths  ; 72    ; 72   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 72    ; 72   ;
 +---------------------------------+-------+------+
 
 
@@ -608,19 +716,17 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 23 15:18:05 2017
+    Info: Processing started: Fri Nov 24 14:23:52 2017
 Info: Command: quartus_sta g21_lab5 -c g21_lab3
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 4 combinational loops as latches.
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'g21_lab3.out.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Warning (332060): Node: card_to_play[0] was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -634,7 +740,6 @@ Info (332146): Worst-case minimum pulse width slack is 97.531
     Info (332119):    97.531         0.000 altera_reserved_tck 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Warning (332060): Node: card_to_play[0] was determined to be a clock but was found without an associated clock assignment.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -646,10 +751,10 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 571 megabytes
-    Info: Processing ended: Thu Nov 23 15:18:07 2017
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 560 megabytes
+    Info: Processing ended: Fri Nov 24 14:23:55 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

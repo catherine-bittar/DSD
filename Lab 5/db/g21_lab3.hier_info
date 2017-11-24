@@ -15,8 +15,8 @@ total_value[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 total_value[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 total_value[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 total_value[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
-total_value[4] <= <GND>
-total_value[5] <= new_ace~6.DB_MAX_OUTPUT_PORT_TYPE
+total_value[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+total_value[5] <= total_value[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_cardAdder|g21_Modulo_13:modulo_top

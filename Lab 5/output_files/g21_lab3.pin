@@ -74,9 +74,9 @@ GND*                         : A3        :        :                   :         
 GND*                         : A4        :        :                   :         : 3         :                
 GND*                         : A5        :        :                   :         : 3         :                
 GND*                         : A6        :        :                   :         : 3         :                
-card_to_play[4]              : A7        : input  : 3.3-V LVTTL       :         : 3         : N              
-total_value[5]               : A8        : output : 3.3-V LVTTL       :         : 3         : N              
-play_pile_top_card[4]        : A9        : input  : 3.3-V LVTTL       :         : 3         : N              
+card_to_play[2]              : A7        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A8        :        :                   :         : 3         :                
+GND*                         : A9        :        :                   :         : 3         :                
 GND*                         : A10       :        :                   :         : 3         :                
 GND*                         : A11       :        :                   :         : 3         :                
 GND+                         : A12       :        :                   :         : 4         :                
@@ -140,9 +140,9 @@ GND*                         : B3        :        :                   :         
 GND*                         : B4        :        :                   :         : 3         :                
 GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
-total_value[0]               : B7        : output : 3.3-V LVTTL       :         : 3         : N              
-card_to_play[5]              : B8        : input  : 3.3-V LVTTL       :         : 3         : N              
-play_pile_top_card[2]        : B9        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B7        :        :                   :         : 3         :                
+GND*                         : B8        :        :                   :         : 3         :                
+GND*                         : B9        :        :                   :         : 3         :                
 GND*                         : B10       :        :                   :         : 3         :                
 GND*                         : B11       :        :                   :         : 3         :                
 GND+                         : B12       :        :                   :         : 4         :                
@@ -184,9 +184,9 @@ GND*                         : D3        :        :                   :         
 GND*                         : D4        :        :                   :         : 2         :                
 GND*                         : D5        :        :                   :         : 2         :                
 GND*                         : D6        :        :                   :         : 2         :                
-card_to_play[3]              : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
-card_to_play[0]              : D8        : input  : 3.3-V LVTTL       :         : 3         : N              
-total_value[1]               : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+card_to_play[0]              : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
+card_to_play[5]              : D8        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D9        :        :                   :         : 3         :                
 GND                          : D10       : gnd    :                   :         :           :                
 GND*                         : D11       :        :                   :         : 3         :                
 GND+                         : D12       :        :                   :         : 3         :                
@@ -200,15 +200,15 @@ GND*                         : D19       :        :                   :         
 GND*                         : D20       :        :                   :         : 5         :                
 GND*                         : D21       :        :                   :         : 5         :                
 GND*                         : D22       :        :                   :         : 5         :                
-GND*                         : E1        :        :                   :         : 2         :                
-GND*                         : E2        :        :                   :         : 2         :                
+play_pile_top_card[2]        : E1        : input  : 3.3-V LVTTL       :         : 2         : N              
+play_pile_top_card[3]        : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : E3        :        :                   :         : 2         :                
 GND*                         : E4        :        :                   :         : 2         :                
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
 GND*                         : E7        :        :                   :         : 3         :                
-total_value[2]               : E8        : output : 3.3-V LVTTL       :         : 3         : N              
-total_value[3]               : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+card_to_play[4]              : E8        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
 GND*                         : E11       :        :                   :         : 3         :                
 GND+                         : E12       :        :                   :         : 3         :                
@@ -222,17 +222,17 @@ GND*                         : E19       :        :                   :         
 GND*                         : E20       :        :                   :         : 5         :                
 GND*                         : E21       :        :                   :         : 5         :                
 GND*                         : E22       :        :                   :         : 5         :                
-GND*                         : F1        :        :                   :         : 2         :                
-GND*                         : F2        :        :                   :         : 2         :                
+play_pile_top_card[1]        : F1        : input  : 3.3-V LVTTL       :         : 2         : N              
+play_pile_top_card[5]        : F2        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : F3        :        :                   :         : 2         :                
 GND*                         : F4        :        :                   :         : 2         :                
 GND_PLL3                     : F5        : gnd    :                   :         :           :                
 GND_PLL3                     : F6        : gnd    :                   :         :           :                
 GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
 card_to_play[1]              : F8        : input  : 3.3-V LVTTL       :         : 3         : N              
-card_to_play[2]              : F9        : input  : 3.3-V LVTTL       :         : 3         : N              
-play_pile_top_card[3]        : F10       : input  : 3.3-V LVTTL       :         : 3         : N              
-play_pile_top_card[5]        : F11       : input  : 3.3-V LVTTL       :         : 3         : N              
+card_to_play[3]              : F9        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F10       :        :                   :         : 3         :                
+GND*                         : F11       :        :                   :         : 3         :                
 GND*                         : F12       :        :                   :         : 4         :                
 GND*                         : F13       :        :                   :         : 4         :                
 GND*                         : F14       :        :                   :         : 4         :                
@@ -246,7 +246,7 @@ GND*                         : F21       :        :                   :         
 GND*                         : F22       :        :                   :         : 5         :                
 NC                           : G1        :        :                   :         :           :                
 NC                           : G2        :        :                   :         :           :                
-GND*                         : G3        :        :                   :         : 2         :                
+total_value[1]               : G3        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : G4        : gnd    :                   :         :           :                
 GND*                         : G5        :        :                   :         : 2         :                
 GND*                         : G6        :        :                   :         : 2         :                
@@ -266,16 +266,16 @@ VCCIO5                       : G19       : power  :                   : 3.3V    
 GND*                         : G20       :        :                   :         : 5         :                
 GND*                         : G21       :        :                   :         : 5         :                
 GND*                         : G22       :        :                   :         : 5         :                
-GND*                         : H1        :        :                   :         : 2         :                
+total_value[2]               : H1        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : H2        :        :                   :         : 2         :                
-GND*                         : H3        :        :                   :         : 2         :                
-GND*                         : H4        :        :                   :         : 2         :                
-GND*                         : H5        :        :                   :         : 2         :                
-GND*                         : H6        :        :                   :         : 2         :                
+play_pile_top_card[4]        : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
+total_value[4]               : H4        : output : 3.3-V LVTTL       :         : 2         : N              
+total_value[3]               : H5        : output : 3.3-V LVTTL       :         : 2         : N              
+total_value[0]               : H6        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : H7        :        :                   :         : 3         :                
-GND*                         : H8        :        :                   :         : 3         :                
-play_pile_top_card[0]        : H9        : input  : 3.3-V LVTTL       :         : 3         : N              
-play_pile_top_card[1]        : H10       : input  : 3.3-V LVTTL       :         : 3         : N              
+total_value[5]               : H8        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : H9        :        :                   :         : 3         :                
+GND*                         : H10       :        :                   :         : 3         :                
 GND*                         : H11       :        :                   :         : 3         :                
 GND*                         : H12       :        :                   :         : 4         :                
 GND*                         : H13       :        :                   :         : 4         :                
@@ -339,7 +339,7 @@ nCONFIG                      : L4        :        :                   :         
 altera_reserved_tdo          : L5        : output : 3.3-V LVTTL       :         : 2         : N              
 DCLK                         : L6        :        :                   :         : 2         :                
 NC                           : L7        :        :                   :         :           :                
-GND*                         : L8        :        :                   :         : 2         :                
+play_pile_top_card[0]        : L8        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : L9        : power  :                   : 1.2V    :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -406,7 +406,7 @@ GND*                         : P5        :        :                   :         
 GND*                         : P6        :        :                   :         : 1         :                
 VCCIO1                       : P7        : power  :                   : 3.3V    : 1         :                
 GND*                         : P8        :        :                   :         : 8         :                
-total_value[4]               : P9        : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : P9        :        :                   :         : 8         :                
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 VCCINT                       : P11       : power  :                   : 1.2V    :           :                
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
