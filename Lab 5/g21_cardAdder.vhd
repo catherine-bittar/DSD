@@ -28,15 +28,9 @@ architecture game_rules of g21_cardAdder is
 	signal top_val: unsigned(4 downto 0); -- integer value of card to add (face_top + 1)
 	signal card_val: unsigned(4 downto 0); -- truncated value of sum
 	signal card_val_int: unsigned (4 downto 0);
-	signal ace_in_hand : std_logic; -- presence of ace in previous hand
 	signal face_top_int : unsigned(3 downto 0);
 	signal face_card_int: unsigned(3 downto 0);
 	signal one_int : unsigned(1 downto 0);
-	signal ten_int : unsigned (3 downto 0);
-	signal eleven_int: unsigned (3 downto 0);
-	signal fake_add: unsigned (4 downto 0); -- attempt to add 11 if new card is an ace
-	signal try_add: unsigned (4 downto 0);
-	signal total_value_temp : unsigned(4 downto 0);
 	signal new_ace: std_logic;
 
 		
@@ -61,11 +55,9 @@ begin-- use g21_Modulo_13 component to assign signal values
 	face_card_int <= unsigned(face_card);
 	
 	one_int <= "01"; -- create a value of 1
-	ace_in_hand <= card_to_play(5);
-	eleven_int <= "1011";
-	ten_int <= "1010";
+
 	
-	card_val_assign: process(face_top, top_val, card_val_int, face_top_int, eleven_int, one_int, fake_add, try_add, total_value_temp)
+	card_val_assign: process(face_top, top_val, card_val_int, face_top_int, one_int)
 	begin
 	
 		new_ace <= '0';
