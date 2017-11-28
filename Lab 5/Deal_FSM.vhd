@@ -26,8 +26,8 @@ entity Deal_FSM is
 		  Dealer_high  : in std_logic; -- TODO: 1 when dealer sum > player sum (would require a comparator module)
 		  Player_high  : in std_logic; -- TODO: similarly like above
 		  Rand_Enable  : out std_logic;
-		  Dealer_Enable: out std_logic;
-		  Player_Enable: out std_logic);
+		  Dealer_Enable: out std_logic; -- TODO: add eneable condition to rules (and most likely a clock too)
+		  Player_Enable: out std_logic);-- TODO: similarly like above
 end Deal_FSM;
 
 architecture deal_machine of Deal_FSM is
@@ -147,8 +147,77 @@ begin
 					next_state <= ready;
 				end if;
 					
-		
 		end case;
 	end process state_assign;
+	
+	controller: process(Clock)
+	begin
+		
+		if(Clock = '1' and Clock'event) then
+			case present_state is
+			
+				when waiting =>
+					--
+					Rand_Enable <= '0';  
+					Dealer_Enable <= '0';
+					Player_Enable <= '0';	
+				when ready =>
+					--
+					Rand_Enable <= '0';  
+					Dealer_Enable <= '0';
+					Player_Enable <= '0';
+				when dealer_wait =>
+					--
+				when player_wait =>
+					--
+				when dealer_card1 =>
+					--
+					Dealer_Enable <= '1';
+				when player_card1 =>
+					-- 
+					Player_Enable <= '1';
+				when dealer_card2 =>
+					--
+					Dealer_Enable <= '1';
+				when player_card2 =>
+					--
+					Player_Enable <= '1';
+				when dealer_play =>
+					--
+				when dealer_fc =>
+					--
+					Rand_Enable <= '0';  
+					Dealer_Enable <= '0';
+					Player_Enable <= '0';
+				when player_play =>
+					--
+				when player_fc =>
+					--
+					Rand_Enable <= '0';  
+					Dealer_Enable <= '0';
+					Player_Enable <= '0';
+				when dealer_en =>
+					--
+					Dealer_Enable  <= '1';
+				when player_en =>
+					--
+					Player_Enable <= '1';
+				when dealer_test =>
+					--
+				when player_test =>
+					--
+				when dealer_win =>
+					--
+				when player_win =>
+					--
+				when compare =>
+					--
+				
+				
+			end case;
+		end if;
+	end process controller;
+	
+
 	
 end architecture;
