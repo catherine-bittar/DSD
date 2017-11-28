@@ -1,0 +1,22 @@
+
+State Machine - |Deal_FSM|present_state
+Name present_state.compare present_state.player_win present_state.dealer_win present_state.player_test present_state.dealer_test present_state.player_en present_state.dealer_en present_state.player_play present_state.player_fc present_state.dealer_fc present_state.dealer_play present_state.player_card2 present_state.player_card1 present_state.dealer_card2 present_state.dealer_card1 present_state.player_wait present_state.dealer_wait present_state.ready present_state.waiting 
+present_state.waiting 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+present_state.ready 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+present_state.dealer_wait 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+present_state.player_wait 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+present_state.dealer_card1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+present_state.dealer_card2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+present_state.player_card1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+present_state.player_card2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+present_state.dealer_play 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+present_state.dealer_fc 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+present_state.player_fc 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+present_state.player_play 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+present_state.dealer_en 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.player_en 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.dealer_test 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.player_test 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.dealer_win 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.player_win 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+present_state.compare 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
