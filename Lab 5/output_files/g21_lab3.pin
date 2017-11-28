@@ -76,14 +76,14 @@ GND*                         : A5        :        :                   :         
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
-Dealer_total[2]              : A9        : input  : 3.3-V LVTTL       :         : 3         : N              
-Dealer_high                  : A10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Player_total[3]              : A11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_score[2]              : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+Stop                         : A10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_Enable                : A11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : A12       :        :                   :         : 4         :                
-Player_total[5]              : A13       : input  : 3.3-V LVTTL       :         : 4         : N              
-Player_total[0]              : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
-Rand_Enable                  : A15       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : A16       :        :                   :         : 4         :                
+Player_total[2]              : A13       : input  : 3.3-V LVTTL       :         : 4         : N              
+Dealer_total[0]              : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A15       :        :                   :         : 4         :                
+Dealer_total[1]              : A16       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A17       :        :                   :         : 4         :                
 GND*                         : A18       :        :                   :         : 4         :                
 GND*                         : A19       :        :                   :         : 4         :                
@@ -98,7 +98,7 @@ GND*                         : AA5       :        :                   :         
 GND*                         : AA6       :        :                   :         : 8         :                
 GND*                         : AA7       :        :                   :         : 8         :                
 GND*                         : AA8       :        :                   :         : 8         :                
-GND*                         : AA9       :        :                   :         : 8         :                
+Dealer_score[2]              : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AA10      :        :                   :         : 8         :                
 GND*                         : AA11      :        :                   :         : 8         :                
 GND*                         : AA12      :        :                   :         : 7         :                
@@ -106,7 +106,7 @@ GND*                         : AA13      :        :                   :         
 GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
 GND*                         : AA16      :        :                   :         : 7         :                
-GND*                         : AA17      :        :                   :         : 7         :                
+Compare_enable               : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA18      :        :                   :         : 7         :                
 GND*                         : AA19      :        :                   :         : 7         :                
 GND*                         : AA20      :        :                   :         : 7         :                
@@ -114,13 +114,13 @@ GND                          : AA21      : gnd    :                   :         
 VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
 GND                          : AB1       : gnd    :                   :         :           :                
 VCCIO8                       : AB2       : power  :                   : 3.3V    : 8         :                
-Dealer_legal                 : AB3       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB3       :        :                   :         : 8         :                
 GND*                         : AB4       :        :                   :         : 8         :                
 GND*                         : AB5       :        :                   :         : 8         :                
 GND*                         : AB6       :        :                   :         : 8         :                
 GND*                         : AB7       :        :                   :         : 8         :                
 GND*                         : AB8       :        :                   :         : 8         :                
-GND*                         : AB9       :        :                   :         : 8         :                
+Dealer_score[1]              : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AB10      :        :                   :         : 8         :                
 GND*                         : AB11      :        :                   :         : 8         :                
 GND*                         : AB12      :        :                   :         : 7         :                
@@ -142,12 +142,12 @@ GND*                         : B5        :        :                   :         
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
-Player_Enable                : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-Player_total[2]              : B10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Stop                         : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_score[0]              : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+Dealer_Enable                : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+Dealer_high                  : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B12       :        :                   :         : 4         :                
-Player_high                  : B13       : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : B14       :        :                   :         : 4         :                
+Dealer_total[2]              : B13       : input  : 3.3-V LVTTL       :         : 4         : N              
+Dealer_total[3]              : B14       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B15       :        :                   :         : 4         :                
 GND*                         : B16       :        :                   :         : 4         :                
 GND*                         : B17       :        :                   :         : 4         :                
@@ -165,10 +165,10 @@ VCCIO3                       : C6        : power  :                   : 3.3V    
 GND*                         : C7        :        :                   :         : 3         :                
 GND                          : C8        : gnd    :                   :         :           :                
 GND*                         : C9        :        :                   :         : 3         :                
-INIT                         : C10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_legal                 : C10       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-GND*                         : C13       :        :                   :         : 4         :                
+Player_total[0]              : C13       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C14       :        :                   :         : 4         :                
 GND                          : C15       : gnd    :                   :         :           :                
 GND*                         : C16       :        :                   :         : 4         :                
@@ -186,9 +186,9 @@ GND*                         : D5        :        :                   :         
 GND*                         : D6        :        :                   :         : 2         :                
 GND*                         : D7        :        :                   :         : 3         :                
 GND*                         : D8        :        :                   :         : 3         :                
-Dealer_total[3]              : D9        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D9        :        :                   :         : 3         :                
 GND                          : D10       : gnd    :                   :         :           :                
-Player_total[1]              : D11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_total[3]              : D11       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
 GND*                         : D14       :        :                   :         : 4         :                
@@ -210,7 +210,7 @@ GND*                         : E7        :        :                   :         
 GND*                         : E8        :        :                   :         : 3         :                
 GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-Player_legal                 : E11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Dealer_total[5]              : E11       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
 GND*                         : E14       :        :                   :         : 4         :                
@@ -231,9 +231,9 @@ GND_PLL3                     : F6        : gnd    :                   :         
 GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
 GND*                         : F8        :        :                   :         : 3         :                
 GND*                         : F9        :        :                   :         : 3         :                
-Dealer_Enable                : F10       : output : 3.3-V LVTTL       :         : 3         : N              
-Dealer_total[1]              : F11       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : F12       :        :                   :         : 4         :                
+Dealer_total[4]              : F10       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F11       :        :                   :         : 3         :                
+Player_total[4]              : F12       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F13       :        :                   :         : 4         :                
 GND*                         : F14       :        :                   :         : 4         :                
 GND*                         : F15       :        :                   :         : 4         :                
@@ -254,8 +254,8 @@ GND*                         : G7        :        :                   :         
 GND*                         : G8        :        :                   :         : 3         :                
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
-Player_total[4]              : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : G12       :        :                   :         : 4         :                
+Player_high                  : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Player_total[1]              : G12       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
 GND*                         : G15       :        :                   :         : 4         :                
@@ -271,13 +271,13 @@ GND*                         : H2        :        :                   :         
 GND*                         : H3        :        :                   :         : 2         :                
 GND*                         : H4        :        :                   :         : 2         :                
 GND*                         : H5        :        :                   :         : 2         :                
-GND*                         : H6        :        :                   :         : 2         :                
+Dealer_legal                 : H6        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : H7        :        :                   :         : 3         :                
 GND*                         : H8        :        :                   :         : 3         :                
-Dealer_total[4]              : H9        : input  : 3.3-V LVTTL       :         : 3         : N              
-Dealer_total[5]              : H10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Dealer_total[0]              : H11       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : H12       :        :                   :         : 4         :                
+GND*                         : H9        :        :                   :         : 3         :                
+Player_score[1]              : H10       : output : 3.3-V LVTTL       :         : 3         : N              
+Rand_Enable                  : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+Player_total[5]              : H12       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : H13       :        :                   :         : 4         :                
 GND*                         : H14       :        :                   :         : 4         :                
 GND*                         : H15       :        :                   :         : 4         :                
@@ -332,7 +332,7 @@ GND                          : K19       : gnd    :                   :         
 GND*                         : K20       :        :                   :         : 5         :                
 GND*                         : K21       :        :                   :         : 5         :                
 GND*                         : K22       :        :                   :         : 5         :                
-GND+                         : L1        :        :                   :         : 2         :                
+INIT                         : L1        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND+                         : L2        :        :                   :         : 2         :                
 VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
 nCONFIG                      : L4        :        :                   :         : 2         :                
@@ -452,7 +452,7 @@ GND*                         : T7        :        :                   :         
 GND*                         : T8        :        :                   :         : 8         :                
 VCCIO8                       : T9        : power  :                   : 3.3V    : 8         :                
 GND                          : T10       : gnd    :                   :         :           :                
-GND*                         : T11       :        :                   :         : 8         :                
+Dealer_score[0]              : T11       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : T12       :        :                   :         : 7         :                
 GND                          : T13       : gnd    :                   :         :           :                
 VCCIO7                       : T14       : power  :                   : 3.3V    : 7         :                

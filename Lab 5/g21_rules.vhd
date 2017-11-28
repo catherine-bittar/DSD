@@ -16,6 +16,7 @@ use lpm.lpm_components.all;
 entity g21_rules is
 	port(play_pile_top_card: in std_logic_vector(5 downto 0); -- card to add to out hand
 	     card_to_play      : in std_logic_vector(5 downto 0); -- sum of cards we already have
+		  enable            : in std_logic; -- enable the rules module
         legal_play        : out std_logic;
 		  total_value       : out unsigned(5 downto 0));
 end g21_rules;	
@@ -64,7 +65,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 	card_val_assign: process(face_top, top_val, card_val_int, face_top_int, eleven_int, one_int, fake_add, try_add, total_value_temp)
 	begin
 	
-		if (face_top >= "0001" and face_top <= "1001") then -- if mod was 1-9 need to add 1 for actual value
+		if (face_top >= "0001" and face_top <= "1001" and enable = '1') then -- if mod was 1-9 need to add 1 for actual value
 			top_val <= face_top_int + one_int;
 			try_add <= top_val + card_val_int;
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
@@ -78,7 +79,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 				new_ace <= '0';
 			end if;
 			
-		elsif (face_top >= "1010") then -- if mod was 10 or more, its jack, queen or king so need actual value 10
+		elsif (face_top >= "1010" and enable = '1') then -- if mod was 10 or more, its jack, queen or king so need actual value 10
 			top_val <= "1010";
 			try_add <= top_val + card_val_int;
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
@@ -92,7 +93,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 				new_ace <= '0';
 			end if;
 			
-		elsif (face_top = "0000") then -- if its an ace, decide which value
+		elsif (face_top = "0000" and enable = '1') then -- if its an ace, decide which value
 			fake_add <= eleven_int + card_val_int;
 			if (fake_add <= "10101") then
 				top_val <= "1011";
