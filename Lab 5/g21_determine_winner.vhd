@@ -14,8 +14,8 @@ library lpm;
 use lpm.lpm_components.all;
 
 entity g21_determine_winner is
-	port( total_player : in std_logic_vector (5 downto 0);
-			total_dealer : in std_logic_vector (5 downto 0);
+	port( total_player : in std_logic_vector (4 downto 0);
+			total_dealer : in std_logic_vector (4 downto 0);
 			enable       : in std_logic;
 			
 			dealer_high  : out std_logic;

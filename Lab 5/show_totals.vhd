@@ -14,8 +14,8 @@ library lpm;
 use lpm.lpm_components.all;
 
 entity show_totals is
-	port( total_player 		: in std_logic_vector (5 downto 0);
-			total_dealer 		: in std_logic_vector (5 downto 0);
+	port( total_player 		: in std_logic_vector (4 downto 0);
+			total_dealer 		: in std_logic_vector (4 downto 0);
 			
 			dealer_total_dec	: out std_logic_vector (6 downto 0);
 			dealer_total_unit	: out std_logic_vector (6 downto 0);
@@ -26,9 +26,9 @@ entity show_totals is
 
 architecture get_totals of show_totals is
 
-	signal dealer_dec  : std_logic_vector(5 downto 0);
+	signal dealer_dec  : std_logic_vector(4 downto 0);
 	signal dealer_unit : std_logic_vector(3 downto 0);
-	signal player_dec  : std_logic_vector(5 downto 0);
+	signal player_dec  : std_logic_vector(4 downto 0);
 	signal player_unit : std_logic_vector(3 downto 0);
 	signal mode_0        : std_logic;
 	

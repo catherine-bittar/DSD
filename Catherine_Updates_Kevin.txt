@@ -1,0 +1,30 @@
+UPDATE on DSD -- I thought it would be simpler to write in a file then send you a hella long message on facebook ;)
+
+What has been done:
+	I created 3 sub-modules: 1) g21_determine_winner: determine who won and asserts dealer_high and player_high
+				 2) show_total: finds the decimal values of the two totals and outputs the 7_segment code.
+				 3) show_score: takes a numerical vector, and outputs another vector with the right pin assignments. 
+	I drew out a test bed on paper (see accompanying picture). It is still incomplete. But its a good starting point for the UI
+	and general workings between modules. I came up from some different ways to do stuff which I have listed below.
+
+Suggestions on how to do things:
+	1) Instead of keeping track of the score within the FSM, we can use an external counter which is directly linked (through the
+	show_score module) to the LEDs. The FSM can take as input whether or not the game is over from a signal game_over. The FSM
+	would output count_up_player and count_up_dealer to enable to counters to count up.
+	2) I added an enable signal which comes out of the rules modules. An LPM FF can hold the value, but we should only load new
+	values after they have been calculated (to avoid noise and such).
+	3) I'm not sure if we want to actually use the RST button, as according to the lab, the RESET is to be used to startover. 
+	I feel like we could just use our intended INIT button which when pressed, also resets all counters, clears totals and re-init
+	the stack. I know this would change our FSM, but it could possibly simplify it. Let me know what you think.
+	4) Note that I am worried about the timing of card value. This may be nothing, so I'm not changing anything, but keep this
+	in mind. I'm wondering if the moment when we read the VALUE occurs before the ADDR is changed to the random addr (this could
+	be due to propagation delays). So for example, if this is an issue, the first card would always be an ACE since the default ADDR
+	is probably 0.
+
+TODO Wednesday morning by Catherine:
+	1) Create a module for game_over. Just checks if sum of score_dealer and score_player is 5.
+	2) WITH YOUR APPROVAL: I'd like to make a specific module which handles the dealing of the card. This would replace this fairly
+	confusing circuit which has the Dealer_FSM, RANDU and LPM_FF circuit. It would take the same inputs as the Dealer_FSM and output
+	deal_card (same thing as rand_en but that language confuses me) and the ADDR we want to look at. Pretty much would do EXACTLY what
+	we have now, except would look prettier.
+	3) Start actually implementing my test_bed to the BDF file I have already created (but is currently empty :P)
