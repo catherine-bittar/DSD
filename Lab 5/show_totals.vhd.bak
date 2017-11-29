@@ -1,0 +1,25 @@
+-- this circuit translates the total value into decimal to be shown on the LED output to be used in Lab 5
+
+-- entity name: show_totals
+
+-- Copyright (C) 2017 Catherine Bittar & Kevin Sorto-Ventura
+-- Version 1.0
+-- Author: Catherine Bittar & Kevin Sorto-Ventura; catherine.bittar@mail.mcgill.ca & kevin-rafael.sorto-ventura@mail.mcgill.ca
+-- Date: 11-28-2017
+
+library ieee; -- allows use of the std_logic_vector type and lpm components
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library lpm;
+use lpm.lpm_components.all;
+
+entity g21_determine_winner is
+	port( total_player 		: in std_logic_vector (5 downto 0);
+			total_dealer 		: in std_logic_vector (5 downto 0);
+			
+			dealer_total_dec	: out std_logic_vector (6 downto 0);
+			player_high  : out std_logic);
+			
+	end g21_determine_winner;
+
+architecture determine_winner of g21_determine_winner is
