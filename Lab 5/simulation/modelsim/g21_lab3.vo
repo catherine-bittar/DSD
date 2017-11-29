@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/28/2017 22:14:52"
+// DATE "11/29/2017 10:09:20"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -28,19 +28,21 @@
 
 `timescale 1 ps/ 1 ps
 
-module g21_show_score (
+module game_over (
 	altera_reserved_tms,
 	altera_reserved_tck,
 	altera_reserved_tdi,
 	altera_reserved_tdo,
-	score,
-	led_on);
+	score_player,
+	score_dealer,
+	game_is_over);
 input 	altera_reserved_tms;
 input 	altera_reserved_tck;
 input 	altera_reserved_tdi;
 output 	altera_reserved_tdo;
-input 	[1:0] score;
-output 	[2:0] led_on;
+input 	[1:0] score_player;
+input 	[1:0] score_dealer;
+output 	game_is_over;
 
 wire gnd;
 wire vcc;
@@ -63,20 +65,20 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~10 ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~9_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~12 ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~16 ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~14 ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~17_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~12 ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~14 ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~17 ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~19 ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~10 ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~12 ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~15 ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~17 ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~regout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~regout ;
@@ -126,11 +128,10 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~9_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~10_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~11_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~12_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_proc~0_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg_ena~combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg~0_combout ;
@@ -158,28 +159,23 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~2_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal0~2_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|reset_ena_reg~regout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~0_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~0_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0]~0_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal3~0_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[0]~3_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~1_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~8_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~9_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~1_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~2_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~1_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~2_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~3_combout ;
@@ -188,9 +184,14 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~14_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~15_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR[0]~16_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ;
-wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20_combout ;
+wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~5_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~6_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[2]~0_combout ;
@@ -722,8 +723,7 @@ wire \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_m
 wire \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_enable_delayed~0_combout ;
 wire \auto_signaltap_0|~GND~combout ;
 wire \QIC_SIGNALTAP_GND~combout ;
-wire \Mux1~0_combout ;
-wire \Mux1~1_combout ;
+wire \LessThan0~0_combout ;
 wire \altera_reserved_tms~combout ;
 wire \altera_reserved_tck~combout ;
 wire \altera_reserved_tdi~combout ;
@@ -754,19 +754,20 @@ wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_
 wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
 wire [65:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
 wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
-wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
-wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
 wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
 wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
-wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
-wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
 wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
+wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
-wire [1:0] \score~combout ;
+wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
+wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
+wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
+wire [1:0] \score_dealer~combout ;
+wire [1:0] \score_player~combout ;
 
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a1_PORTBDATAOUT_bus ;
@@ -948,53 +949,17 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt[2
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt [2]));
 
-cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2] (
-	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11_combout ),
-	.sdata(vcc),
-	.aclr(gnd),
-	.sclr(gnd),
-	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]));
-
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13_combout ),
 	.sdata(vcc),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]));
-
-cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1] (
-	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~9_combout ),
-	.sdata(vcc),
-	.aclr(gnd),
-	.sclr(gnd),
-	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]));
-
-cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0] (
-	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~7_combout ),
-	.sdata(vcc),
-	.aclr(gnd),
-	.sclr(gnd),
-	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]));
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
@@ -1003,21 +968,57 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4] (
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]));
 
+cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1] (
+	.clk(\altera_internal_jtag~TCKUTAP ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~9_combout ),
+	.sdata(vcc),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]));
+
+cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2] (
+	.clk(\altera_internal_jtag~TCKUTAP ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11_combout ),
+	.sdata(vcc),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]));
+
+cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0] (
+	.clk(\altera_internal_jtag~TCKUTAP ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~7_combout ),
+	.sdata(vcc),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]));
+
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6_combout ),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ),
 	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [0]),
 	.datac(vcc),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0 .lut_mask = 16'hCCAA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0 .lut_mask = 16'hCC55;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1035,48 +1036,48 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1] (
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
-	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]));
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
-	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0]));
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
-	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]));
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
-	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3]));
@@ -1132,17 +1133,17 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11 .lut_mask
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
 	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~12 ),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15_combout ),
-	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~16 ));
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13_combout ),
+	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~14 ));
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15 .lut_mask = 16'hA505;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~15 .sum_lutc_input = "cin";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13 .lut_mask = 16'hA505;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~17 (
@@ -1150,7 +1151,7 @@ cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
-	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~16 ),
+	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~14 ),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~17_combout ),
 	.cout());
 // synopsys translate_off
@@ -1159,15 +1160,15 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~17 .sum_lutc
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [1]),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [1]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21_combout ),
 	.datac(vcc),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1 .lut_mask = 16'hCCAA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1 .lut_mask = 16'hAACC;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1185,78 +1186,78 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2] (
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20_combout ),
+	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
-	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4]));
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11_combout ),
-	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~12 ));
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9_combout ),
+	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~10 ));
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11 .lut_mask = 16'h55AA;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9 .lut_mask = 16'h55AA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
-	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~12 ),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13_combout ),
-	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~14 ));
+	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~10 ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11_combout ),
+	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~12 ));
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13 .lut_mask = 16'h5A5F;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13 .sum_lutc_input = "cin";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11 .lut_mask = 16'h5A5F;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~11 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
-	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~14 ),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16_combout ),
-	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~17 ));
+	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~12 ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14_combout ),
+	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~15 ));
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16 .lut_mask = 16'hA50A;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16 .sum_lutc_input = "cin";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14 .lut_mask = 16'hA50A;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~14 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
-	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~17 ),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18_combout ),
-	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~19 ));
+	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~15 ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16_combout ),
+	.cout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~17 ));
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18 .lut_mask = 16'h5A5F;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18 .sum_lutc_input = "cin";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16 .lut_mask = 16'h5A5F;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~16 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12_combout ),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [2]),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [2]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19_combout ),
 	.datac(vcc),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2 .lut_mask = 16'hCCAA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2 .lut_mask = 16'hAACC;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1272,29 +1273,29 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3] (
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg [3]));
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4]),
 	.datab(vcc),
 	.datac(vcc),
 	.datad(vcc),
-	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~19 ),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20_combout ),
+	.cin(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~17 ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20 .lut_mask = 16'hA5A5;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20 .sum_lutc_input = "cin";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18 .lut_mask = 16'hA5A5;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~18 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout ),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [3]),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14_combout ),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17_combout ),
 	.datac(vcc),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3 .lut_mask = 16'hCCAA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3 .lut_mask = 16'hAACC;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -2304,43 +2305,30 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~12 .lut_mask 
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 .lut_mask = 16'h889A;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
 	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
 	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4 .lut_mask = 16'h132A;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datac(vcc),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5 .lut_mask = 16'h2222;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~4_combout ),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~5_combout ),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6 .lut_mask = 16'hF850;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~6 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 .lut_mask = 16'hEEEA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0] (
@@ -2355,30 +2343,30 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_upd
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [0]));
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7 .lut_mask = 16'h8000;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12 .lut_mask = 16'h8000;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~7_combout ),
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12_combout ),
 	.datac(vcc),
 	.datad(vcc),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8 .lut_mask = 16'h8888;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~8 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13 .lut_mask = 16'h8888;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_proc~0 (
@@ -2779,30 +2767,30 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~0 .lut_mask
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13 .lut_mask = 16'hFFFE;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15 .lut_mask = 16'hFFFE;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_ir_scan_reg~regout ),
 	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [8]),
 	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [3]),
 	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_dr_scan_reg~regout ),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14 .lut_mask = 16'hF888;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~14 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16 .lut_mask = 16'hF888;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~16 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0] (
@@ -2841,32 +2829,6 @@ cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_u
 // synopsys translate_off
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0]~0 .lut_mask = 16'h0008;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0]~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9 .lut_mask = 16'hC2C2;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~9_combout ),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 .lut_mask = 16'h0432;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[1] (
@@ -2970,17 +2932,30 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~9 .lut_ma
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4]),
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4]),
+	.datab(vcc),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3]),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15 .lut_mask = 16'hFEFF;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 .lut_mask = 16'h000A;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|clear_signal~combout ),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13 .lut_mask = 16'hFF10;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~1 (
@@ -3034,32 +3009,6 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 .lut_mask = 16'hD8D8;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout ),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12 .lut_mask = 16'h3702;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~12 .sum_lutc_input = "datac";
-// synopsys translate_on
-
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[2] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
 	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [2]),
@@ -3097,6 +3046,19 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~2 .lut_mask 
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [4]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 .lut_mask = 16'h0002;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR[3] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
 	.datain(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~15_combout ),
@@ -3109,42 +3071,16 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [3]));
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4]),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 .lut_mask = 16'h1010;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout ),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 .lut_mask = 16'h0202;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11 .sum_lutc_input = "datac";
-// synopsys translate_on
-
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [4]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [3]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|clear_signal~combout ),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout ),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout ),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [4]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [3]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|clear_signal~combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12 .lut_mask = 16'h0D08;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12 .lut_mask = 16'h00EA;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -3160,43 +3096,17 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shi
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [2]));
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datac(vcc),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13 .lut_mask = 16'hEEFF;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13 .sum_lutc_input = "datac";
-// synopsys translate_on
-
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
 	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14 .lut_mask = 16'h0256;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14 .lut_mask = 16'h0008;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~13_combout ),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14_combout ),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 .lut_mask = 16'h7520;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[3] (
@@ -3210,6 +3120,19 @@ cycloneii_lcell_ff \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_upd
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [3]));
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.datab(vcc),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~12_combout ),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 .lut_mask = 16'h0AAA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15 .sum_lutc_input = "datac";
+// synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~3 (
 	.dataa(\altera_internal_jtag~TDIUTAP ),
@@ -3291,8 +3214,8 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR[0]~16 .su
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_ir_scan_reg~regout ),
 	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [8]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~13_combout ),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19_combout ),
 	.cout());
@@ -3301,30 +3224,17 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19 .lut_mask
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~19 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22 (
-	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_ir_scan_reg~regout ),
-	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [8]),
-	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2]),
-	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~15_combout ),
-	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22_combout ),
-	.cout());
-// synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22 .lut_mask = 16'h888F;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~22 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23 (
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20 (
 	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [3]),
 	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [4]),
 	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_dr_scan_reg~regout ),
 	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|clear_signal~combout ),
 	.cin(gnd),
-	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23_combout ),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23 .lut_mask = 16'hFF20;
-defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~23 .sum_lutc_input = "datac";
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20 .lut_mask = 16'hFF20;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~20 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4 (
@@ -3338,6 +3248,84 @@ cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4 
 // synopsys translate_off
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4 .lut_mask = 16'h3A04;
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16 .lut_mask = 16'hA2CD;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17 (
+	.dataa(vcc),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16_combout ),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [3]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17 .lut_mask = 16'hF0CC;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18 .lut_mask = 16'h33DA;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18_combout ),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19 .lut_mask = 16'hC28C;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20 .lut_mask = 16'h68B7;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21 (
+	.dataa(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2]),
+	.datab(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20_combout ),
+	.datac(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3]),
+	.datad(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4]),
+	.cin(gnd),
+	.combout(\auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21_combout ),
+	.cout());
+// synopsys translate_off
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21 .lut_mask = 16'h04CC;
+defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~21 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_lcell_comb \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~5 (
@@ -14169,7 +14157,7 @@ defparam QIC_SIGNALTAP_GND.lut_mask = 16'h0000;
 defparam QIC_SIGNALTAP_GND.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_io \score[0]~I (
+cycloneii_io \score_player[0]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -14183,28 +14171,28 @@ cycloneii_io \score[0]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(\score~combout [0]),
+	.combout(\score_player~combout [0]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(score[0]));
+	.padio(score_player[0]));
 // synopsys translate_off
-defparam \score[0]~I .input_async_reset = "none";
-defparam \score[0]~I .input_power_up = "low";
-defparam \score[0]~I .input_register_mode = "none";
-defparam \score[0]~I .input_sync_reset = "none";
-defparam \score[0]~I .oe_async_reset = "none";
-defparam \score[0]~I .oe_power_up = "low";
-defparam \score[0]~I .oe_register_mode = "none";
-defparam \score[0]~I .oe_sync_reset = "none";
-defparam \score[0]~I .operation_mode = "input";
-defparam \score[0]~I .output_async_reset = "none";
-defparam \score[0]~I .output_power_up = "low";
-defparam \score[0]~I .output_register_mode = "none";
-defparam \score[0]~I .output_sync_reset = "none";
+defparam \score_player[0]~I .input_async_reset = "none";
+defparam \score_player[0]~I .input_power_up = "low";
+defparam \score_player[0]~I .input_register_mode = "none";
+defparam \score_player[0]~I .input_sync_reset = "none";
+defparam \score_player[0]~I .oe_async_reset = "none";
+defparam \score_player[0]~I .oe_power_up = "low";
+defparam \score_player[0]~I .oe_register_mode = "none";
+defparam \score_player[0]~I .oe_sync_reset = "none";
+defparam \score_player[0]~I .operation_mode = "input";
+defparam \score_player[0]~I .output_async_reset = "none";
+defparam \score_player[0]~I .output_power_up = "low";
+defparam \score_player[0]~I .output_register_mode = "none";
+defparam \score_player[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-cycloneii_io \score[1]~I (
+cycloneii_io \score_dealer[0]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -14218,57 +14206,112 @@ cycloneii_io \score[1]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(\score~combout [1]),
+	.combout(\score_dealer~combout [0]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(score[1]));
+	.padio(score_dealer[0]));
 // synopsys translate_off
-defparam \score[1]~I .input_async_reset = "none";
-defparam \score[1]~I .input_power_up = "low";
-defparam \score[1]~I .input_register_mode = "none";
-defparam \score[1]~I .input_sync_reset = "none";
-defparam \score[1]~I .oe_async_reset = "none";
-defparam \score[1]~I .oe_power_up = "low";
-defparam \score[1]~I .oe_register_mode = "none";
-defparam \score[1]~I .oe_sync_reset = "none";
-defparam \score[1]~I .operation_mode = "input";
-defparam \score[1]~I .output_async_reset = "none";
-defparam \score[1]~I .output_power_up = "low";
-defparam \score[1]~I .output_register_mode = "none";
-defparam \score[1]~I .output_sync_reset = "none";
+defparam \score_dealer[0]~I .input_async_reset = "none";
+defparam \score_dealer[0]~I .input_power_up = "low";
+defparam \score_dealer[0]~I .input_register_mode = "none";
+defparam \score_dealer[0]~I .input_sync_reset = "none";
+defparam \score_dealer[0]~I .oe_async_reset = "none";
+defparam \score_dealer[0]~I .oe_power_up = "low";
+defparam \score_dealer[0]~I .oe_register_mode = "none";
+defparam \score_dealer[0]~I .oe_sync_reset = "none";
+defparam \score_dealer[0]~I .operation_mode = "input";
+defparam \score_dealer[0]~I .output_async_reset = "none";
+defparam \score_dealer[0]~I .output_power_up = "low";
+defparam \score_dealer[0]~I .output_register_mode = "none";
+defparam \score_dealer[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-cycloneii_lcell_comb \Mux1~0 (
-// Equation(s):
-// \Mux1~0_combout  = (\score~combout [0]) # (\score~combout [1])
-
-	.dataa(\score~combout [0]),
-	.datab(\score~combout [1]),
-	.datac(vcc),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\Mux1~0_combout ),
-	.cout());
+cycloneii_io \score_player[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\score_player~combout [1]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(score_player[1]));
 // synopsys translate_off
-defparam \Mux1~0 .lut_mask = 16'hEEEE;
-defparam \Mux1~0 .sum_lutc_input = "datac";
+defparam \score_player[1]~I .input_async_reset = "none";
+defparam \score_player[1]~I .input_power_up = "low";
+defparam \score_player[1]~I .input_register_mode = "none";
+defparam \score_player[1]~I .input_sync_reset = "none";
+defparam \score_player[1]~I .oe_async_reset = "none";
+defparam \score_player[1]~I .oe_power_up = "low";
+defparam \score_player[1]~I .oe_register_mode = "none";
+defparam \score_player[1]~I .oe_sync_reset = "none";
+defparam \score_player[1]~I .operation_mode = "input";
+defparam \score_player[1]~I .output_async_reset = "none";
+defparam \score_player[1]~I .output_power_up = "low";
+defparam \score_player[1]~I .output_register_mode = "none";
+defparam \score_player[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-cycloneii_lcell_comb \Mux1~1 (
-// Equation(s):
-// \Mux1~1_combout  = (\score~combout [0] & \score~combout [1])
+cycloneii_io \score_dealer[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\score_dealer~combout [1]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(score_dealer[1]));
+// synopsys translate_off
+defparam \score_dealer[1]~I .input_async_reset = "none";
+defparam \score_dealer[1]~I .input_power_up = "low";
+defparam \score_dealer[1]~I .input_register_mode = "none";
+defparam \score_dealer[1]~I .input_sync_reset = "none";
+defparam \score_dealer[1]~I .oe_async_reset = "none";
+defparam \score_dealer[1]~I .oe_power_up = "low";
+defparam \score_dealer[1]~I .oe_register_mode = "none";
+defparam \score_dealer[1]~I .oe_sync_reset = "none";
+defparam \score_dealer[1]~I .operation_mode = "input";
+defparam \score_dealer[1]~I .output_async_reset = "none";
+defparam \score_dealer[1]~I .output_power_up = "low";
+defparam \score_dealer[1]~I .output_register_mode = "none";
+defparam \score_dealer[1]~I .output_sync_reset = "none";
+// synopsys translate_on
 
-	.dataa(\score~combout [0]),
-	.datab(\score~combout [1]),
-	.datac(vcc),
-	.datad(vcc),
+cycloneii_lcell_comb \LessThan0~0 (
+// Equation(s):
+// \LessThan0~0_combout  = (\score_player~combout [0] & (!\score_dealer~combout [0] & (\score_player~combout [1] $ (\score_dealer~combout [1])))) # (!\score_player~combout [0] & (\score_dealer~combout [0] & (\score_player~combout [1] $ (\score_dealer~combout 
+// [1]))))
+
+	.dataa(\score_player~combout [0]),
+	.datab(\score_dealer~combout [0]),
+	.datac(\score_player~combout [1]),
+	.datad(\score_dealer~combout [1]),
 	.cin(gnd),
-	.combout(\Mux1~1_combout ),
+	.combout(\LessThan0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Mux1~1 .lut_mask = 16'h8888;
-defparam \Mux1~1 .sum_lutc_input = "datac";
+defparam \LessThan0~0 .lut_mask = 16'h0660;
+defparam \LessThan0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneii_io \altera_reserved_tms~I (
@@ -14428,8 +14471,8 @@ defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state[0]~_wirecell 
 defparam \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state[0]~_wirecell .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_io \led_on[0]~I (
-	.datain(\Mux1~0_combout ),
+cycloneii_io \game_is_over~I (
+	.datain(\LessThan0~0_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -14446,91 +14489,21 @@ cycloneii_io \led_on[0]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(led_on[0]));
+	.padio(game_is_over));
 // synopsys translate_off
-defparam \led_on[0]~I .input_async_reset = "none";
-defparam \led_on[0]~I .input_power_up = "low";
-defparam \led_on[0]~I .input_register_mode = "none";
-defparam \led_on[0]~I .input_sync_reset = "none";
-defparam \led_on[0]~I .oe_async_reset = "none";
-defparam \led_on[0]~I .oe_power_up = "low";
-defparam \led_on[0]~I .oe_register_mode = "none";
-defparam \led_on[0]~I .oe_sync_reset = "none";
-defparam \led_on[0]~I .operation_mode = "output";
-defparam \led_on[0]~I .output_async_reset = "none";
-defparam \led_on[0]~I .output_power_up = "low";
-defparam \led_on[0]~I .output_register_mode = "none";
-defparam \led_on[0]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-cycloneii_io \led_on[1]~I (
-	.datain(\score~combout [1]),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(led_on[1]));
-// synopsys translate_off
-defparam \led_on[1]~I .input_async_reset = "none";
-defparam \led_on[1]~I .input_power_up = "low";
-defparam \led_on[1]~I .input_register_mode = "none";
-defparam \led_on[1]~I .input_sync_reset = "none";
-defparam \led_on[1]~I .oe_async_reset = "none";
-defparam \led_on[1]~I .oe_power_up = "low";
-defparam \led_on[1]~I .oe_register_mode = "none";
-defparam \led_on[1]~I .oe_sync_reset = "none";
-defparam \led_on[1]~I .operation_mode = "output";
-defparam \led_on[1]~I .output_async_reset = "none";
-defparam \led_on[1]~I .output_power_up = "low";
-defparam \led_on[1]~I .output_register_mode = "none";
-defparam \led_on[1]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-cycloneii_io \led_on[2]~I (
-	.datain(\Mux1~1_combout ),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(led_on[2]));
-// synopsys translate_off
-defparam \led_on[2]~I .input_async_reset = "none";
-defparam \led_on[2]~I .input_power_up = "low";
-defparam \led_on[2]~I .input_register_mode = "none";
-defparam \led_on[2]~I .input_sync_reset = "none";
-defparam \led_on[2]~I .oe_async_reset = "none";
-defparam \led_on[2]~I .oe_power_up = "low";
-defparam \led_on[2]~I .oe_register_mode = "none";
-defparam \led_on[2]~I .oe_sync_reset = "none";
-defparam \led_on[2]~I .operation_mode = "output";
-defparam \led_on[2]~I .output_async_reset = "none";
-defparam \led_on[2]~I .output_power_up = "low";
-defparam \led_on[2]~I .output_register_mode = "none";
-defparam \led_on[2]~I .output_sync_reset = "none";
+defparam \game_is_over~I .input_async_reset = "none";
+defparam \game_is_over~I .input_power_up = "low";
+defparam \game_is_over~I .input_register_mode = "none";
+defparam \game_is_over~I .input_sync_reset = "none";
+defparam \game_is_over~I .oe_async_reset = "none";
+defparam \game_is_over~I .oe_power_up = "low";
+defparam \game_is_over~I .oe_register_mode = "none";
+defparam \game_is_over~I .oe_sync_reset = "none";
+defparam \game_is_over~I .operation_mode = "output";
+defparam \game_is_over~I .output_async_reset = "none";
+defparam \game_is_over~I .output_power_up = "low";
+defparam \game_is_over~I .output_register_mode = "none";
+defparam \game_is_over~I .output_sync_reset = "none";
 // synopsys translate_on
 
 cycloneii_io \altera_reserved_tdo~I (

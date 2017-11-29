@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY show_totals
+set_global_assignment -name TOP_LEVEL_ENTITY random_address_gen
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:10:43  OCTOBER 19, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -223,10 +223,15 @@ set_global_assignment -name VHDL_FILE g21_show_score.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE g21_show_score.vwf
 set_global_assignment -name VHDL_FILE show_totals.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE show_totals_sim.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/show_totals_sim.vwf"
 set_global_assignment -name BDF_FILE Game_Controller_test_bed.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE new_rules_sim.vwf
+set_global_assignment -name VHDL_FILE game_over.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE game_over_sim.vwf
+set_global_assignment -name BDF_FILE random_address_gen.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE random_address_gen_sim.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/random_address_gen_sim.vwf"
 set_global_assignment -name SLD_FILE "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_test_bed_auto_stripped.stp"

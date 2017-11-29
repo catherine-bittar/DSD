@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g21_lab3
-Tue Nov 28 22:14:52 2017
+Wed Nov 29 10:09:20 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 28 22:14:52 2017 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 29 10:09:20 2017 ;
 ; Revision Name             ; g21_lab3                              ;
-; Top-level Entity Name     ; g21_show_score                        ;
+; Top-level Entity Name     ; game_over                             ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 28 22:14:51 2017
+    Info: Processing started: Wed Nov 29 10:09:19 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g21_lab5 -c g21_lab3
 Info (119006): Selected device EP2C20F484C7 for design "g21_lab3"
 Info (204019): Generated file g21_lab3.vo in folder "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 461 megabytes
-    Info: Processing ended: Tue Nov 28 22:14:52 2017
+    Info: Processing ended: Wed Nov 29 10:09:20 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

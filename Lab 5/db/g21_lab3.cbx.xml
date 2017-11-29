@@ -1,16 +1,28 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="g21_lab3">
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_rbi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ucm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_15m.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_rqf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_mp14.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_sbi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_ucm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_15m.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|show_totals|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_02j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux2" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_rbi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|LPM_FF:inst11|lpm_constant:ac" CBX_FILE_NAME="lpm_constant_bj4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_plh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux3" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_plh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|lpm_mux:Mux3" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux0" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_02j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|lpm_mux:Mux3" CBX_FILE_NAME="mux_ooc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_grp.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|lpm_mux:Mux0" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux1" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_mp14.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_sbi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|lpm_mux:Mux0" CBX_FILE_NAME="mux_ooc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|lpm_mux:Mux1" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|lpm_mux:Mux1" CBX_FILE_NAME="mux_ooc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_hub:auto_hub|lpm_mux:Mux2" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_rqf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_gui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|random_address_gen|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|lpm_mux:Mux2" CBX_FILE_NAME="mux_ooc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

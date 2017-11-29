@@ -17,8 +17,10 @@ entity g21_rules is
 	port(play_pile_top_card: in std_logic_vector(5 downto 0); -- card to add to out hand
 	     card_to_play      : in std_logic_vector(5 downto 0); -- sum of cards we already have
 		  enable            : in std_logic; -- enable the rules module
+		  
         legal_play        : out std_logic;
-		  total_value       : out std_LOGIC_VECTOR(5 downto 0));
+		  total_value       : out std_LOGIC_VECTOR(5 downto 0);
+		  en_total			  : out std_logic);
 end g21_rules;	
 
 architecture game_rules of g21_rules is
@@ -110,12 +112,18 @@ begin-- use g21_Modulo_13 component to assign signal values
 			total_value_temp <= top_val + card_val_int;
 		end if;
 		
-		if (total_value_temp <= "10101") then -- assign legal_play
+		if (total_value_temp <= "10101" and enable = '1') then -- assign legal_play
 			legal_play <= '1';
 			total_value <= std_logic_vector(new_ace & total_value_temp);
-		else
+		elsif (total_value_temp > "10101" and enable = '1') then
 			legal_play <= '0';
 			total_value <= std_logic_vector(new_ace & total_value_temp);
+		end if;
+		
+		if(enable = '1') then
+			en_total <= '1';
+		else
+			en_total <= '0';
 		end if;
 		
 	end process;
