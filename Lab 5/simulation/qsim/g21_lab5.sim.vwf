@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("card_to_play")
+SIGNAL("total_dealer")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -42,67 +42,67 @@ SIGNAL("card_to_play")
 	PARENT = "";
 }
 
-SIGNAL("card_to_play[5]")
+SIGNAL("total_dealer[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("card_to_play[4]")
+SIGNAL("total_dealer[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("card_to_play[3]")
+SIGNAL("total_dealer[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("card_to_play[2]")
+SIGNAL("total_dealer[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("card_to_play[1]")
+SIGNAL("total_dealer[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("card_to_play[0]")
+SIGNAL("total_dealer[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "card_to_play";
+	PARENT = "total_dealer";
 }
 
-SIGNAL("play_pile_top_card")
+SIGNAL("total_player")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -112,134 +112,94 @@ SIGNAL("play_pile_top_card")
 	PARENT = "";
 }
 
-SIGNAL("play_pile_top_card[5]")
+SIGNAL("total_player[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("play_pile_top_card[4]")
+SIGNAL("total_player[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("play_pile_top_card[3]")
+SIGNAL("total_player[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("play_pile_top_card[2]")
+SIGNAL("total_player[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("play_pile_top_card[1]")
+SIGNAL("total_player[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("play_pile_top_card[0]")
+SIGNAL("total_player[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "play_pile_top_card";
+	PARENT = "total_player";
 }
 
-SIGNAL("total_value")
+SIGNAL("enable")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 6;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("player_high")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("total_value[5]")
+SIGNAL("dealer_high")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "total_value";
-}
-
-SIGNAL("total_value[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "total_value";
-}
-
-SIGNAL("total_value[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "total_value";
-}
-
-SIGNAL("total_value[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "total_value";
-}
-
-SIGNAL("total_value[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "total_value";
-}
-
-SIGNAL("total_value[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "total_value";
+	PARENT = "";
 }
 
 SIGNAL("altera_reserved_tdo")
@@ -252,7 +212,106 @@ SIGNAL("altera_reserved_tdo")
 	PARENT = "";
 }
 
-TRANSITION_LIST("card_to_play[5]")
+TRANSITION_LIST("total_dealer[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("total_dealer[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 720.0;
+		LEVEL 1 FOR 280.0;
+	}
+}
+
+TRANSITION_LIST("total_dealer[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 360.0;
+			LEVEL 1 FOR 360.0;
+		}
+		LEVEL 0 FOR 280.0;
+	}
+}
+
+TRANSITION_LIST("total_dealer[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 180.0;
+			LEVEL 1 FOR 180.0;
+		}
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("total_dealer[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 0 FOR 90.0;
+			LEVEL 1 FOR 90.0;
+		}
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("total_dealer[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 11;
+			LEVEL 0 FOR 45.0;
+			LEVEL 1 FOR 45.0;
+		}
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("total_player[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("total_player[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("total_player[3]")
 {
 	NODE
 	{
@@ -261,7 +320,7 @@ TRANSITION_LIST("card_to_play[5]")
 	}
 }
 
-TRANSITION_LIST("card_to_play[4]")
+TRANSITION_LIST("total_player[2]")
 {
 	NODE
 	{
@@ -270,25 +329,7 @@ TRANSITION_LIST("card_to_play[4]")
 	}
 }
 
-TRANSITION_LIST("card_to_play[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("card_to_play[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("card_to_play[1]")
+TRANSITION_LIST("total_player[1]")
 {
 	NODE
 	{
@@ -297,34 +338,7 @@ TRANSITION_LIST("card_to_play[1]")
 	}
 }
 
-TRANSITION_LIST("card_to_play[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("play_pile_top_card[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("play_pile_top_card[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("play_pile_top_card[3]")
+TRANSITION_LIST("total_player[0]")
 {
 	NODE
 	{
@@ -333,84 +347,40 @@ TRANSITION_LIST("play_pile_top_card[3]")
 	}
 }
 
-TRANSITION_LIST("play_pile_top_card[2]")
+TRANSITION_LIST("enable")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 430.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
-TRANSITION_LIST("play_pile_top_card[1]")
+TRANSITION_LIST("player_high")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 105.0;
+		LEVEL 0 FOR 505.0;
 	}
 }
 
-TRANSITION_LIST("play_pile_top_card[0]")
+TRANSITION_LIST("dealer_high")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("total_value[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 495.0;
+		LEVEL 1 FOR 325.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
@@ -425,7 +395,7 @@ TRANSITION_LIST("altera_reserved_tdo")
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play";
+	CHANNEL = "total_dealer";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 0;
@@ -435,7 +405,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[5]";
+	CHANNEL = "total_dealer[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 1;
@@ -445,7 +415,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[4]";
+	CHANNEL = "total_dealer[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 2;
@@ -455,7 +425,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[3]";
+	CHANNEL = "total_dealer[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
@@ -465,7 +435,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[2]";
+	CHANNEL = "total_dealer[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 4;
@@ -475,7 +445,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[1]";
+	CHANNEL = "total_dealer[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 5;
@@ -485,7 +455,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "card_to_play[0]";
+	CHANNEL = "total_dealer[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
@@ -495,7 +465,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card";
+	CHANNEL = "total_player";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 7;
@@ -505,7 +475,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[5]";
+	CHANNEL = "total_player[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 8;
@@ -515,7 +485,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[4]";
+	CHANNEL = "total_player[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 9;
@@ -525,7 +495,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[3]";
+	CHANNEL = "total_player[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 10;
@@ -535,7 +505,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[2]";
+	CHANNEL = "total_player[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 11;
@@ -545,7 +515,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[1]";
+	CHANNEL = "total_player[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 12;
@@ -555,7 +525,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "play_pile_top_card[0]";
+	CHANNEL = "total_player[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 13;
@@ -565,72 +535,29 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "total_value";
+	CHANNEL = "enable";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 0;
-	CHILDREN = 15, 16, 17, 18, 19, 20;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "total_value[5]";
+	CHANNEL = "player_high";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 15;
-	TREE_LEVEL = 1;
-	PARENT = 14;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "total_value[4]";
+	CHANNEL = "dealer_high";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 16;
-	TREE_LEVEL = 1;
-	PARENT = 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "total_value[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 17;
-	TREE_LEVEL = 1;
-	PARENT = 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "total_value[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 18;
-	TREE_LEVEL = 1;
-	PARENT = 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "total_value[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 19;
-	TREE_LEVEL = 1;
-	PARENT = 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "total_value[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 20;
-	TREE_LEVEL = 1;
-	PARENT = 14;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
@@ -638,7 +565,7 @@ DISPLAY_LINE
 	CHANNEL = "altera_reserved_tdo";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 21;
+	TREE_INDEX = 17;
 	TREE_LEVEL = 0;
 }
 

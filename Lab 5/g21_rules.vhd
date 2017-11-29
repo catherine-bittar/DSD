@@ -18,7 +18,7 @@ entity g21_rules is
 	     card_to_play      : in std_logic_vector(5 downto 0); -- sum of cards we already have
 		  enable            : in std_logic; -- enable the rules module
         legal_play        : out std_logic;
-		  total_value       : out unsigned(5 downto 0));
+		  total_value       : out std_LOGIC_VECTOR(5 downto 0));
 end g21_rules;	
 
 architecture game_rules of g21_rules is
@@ -112,10 +112,10 @@ begin-- use g21_Modulo_13 component to assign signal values
 		
 		if (total_value_temp <= "10101") then -- assign legal_play
 			legal_play <= '1';
-			total_value <= new_ace & total_value_temp;
+			total_value <= std_logic_vector(new_ace & total_value_temp);
 		else
 			legal_play <= '0';
-			total_value <= new_ace & total_value_temp;
+			total_value <= std_logic_vector(new_ace & total_value_temp);
 		end if;
 		
 	end process;
