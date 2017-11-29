@@ -25,12 +25,14 @@ entity Deal_FSM is
 		  Player_total : in std_logic_vector (5 downto 0);
 		  Dealer_high  : in std_logic; -- TODO: 1 when dealer sum > player sum (would require a comparator module)
 		  Player_high  : in std_logic; -- TODO: similarly like above
+		  Game_over    : in std_logic;
 		  
-		  Rand_Enable  : out std_logic;
+		  --Rand_Enable  : out std_logic;
 		  Dealer_Enable: out std_logic; -- TODO: add eneable condition to rules (and most likely a clock too)
 		  Player_Enable: out std_logic;-- TODO: similarly like above
-		  Dealer_score : out std_logic_vector(2 downto 0);
-		  Player_score : out std_logic_vector(2 downto 0);
+		  Dealer_score : out std_logic_vector(1 downto 0);
+		  Player_score : out std_logic_vector(1 downto 0);
+		  deal_en      : out std_logic; -- OR'd with rand_enable(deal_card) as the nable signal to DFF that holds random ADDR so that we can enable w/o pushing Request_Deal(see modified testbed 4)
 		  Compare_enable: out std_logic);
 end Deal_FSM;
 
@@ -45,8 +47,6 @@ signal present_state: state;
 signal dealer_wins, player_wins: integer;
 
 begin
---dealer_wins <= 0;
---player_wins <= 0;
 	  
 	fsm: process (reset, Clock, present_state, INIT, Stop, Request_Deal, Dealer_legal, Player_legal, Dealer_total, Player_total, Dealer_high, Player_high)
 	begin 
@@ -167,71 +167,90 @@ begin
 			case present_state is
 			
 				when waiting =>
-					--
-					Rand_Enable <= '0';  
-					Dealer_Enable <= '0';
-					Player_Enable <= '0';	
-				when ready =>
-					--
-					Rand_Enable <= '0';  
-					Dealer_Enable <= '0';
+					Dealer_Enable <= '0'; 
 					Player_Enable <= '0';
+					Dealer_score <= "00";
+					Player_score <= "00"; 
+					deal_en <= '0'; 
+					Compare_enable <= '0'; 	
+				
+				when ready =>
+					if (Game_over = '0') then
+						Dealer_Enable <= '0'; 
+						Player_Enable <= '0'; 
+						deal_en <= '0'; 
+						Compare_enable <= '0';
+					elsif (Game_over ='1') then
+						Dealer_Enable <= '0'; 
+						Player_Enable <= '0';
+						Dealer_score <= "00";
+						Player_score <= "00"; 
+						deal_en <= '0'; 
+						Compare_enable <= '0';
+					end if;
+				
 				when dealer_wait =>
 					--
+				
 				when player_wait =>
-					--
+					-- indicate player's turn somehow? LEDs?
+				
 				when dealer_card1 =>
 					--
 					Dealer_Enable <= '1';
-					Rand_Enable <= '1';
+					deal_en <= '1';
+				
 				when player_card1 =>
 					-- 
 					Player_Enable <= '1';
-					Rand_Enable <= '1';
+					deal_en <= '1';
+				
 				when dealer_card2 =>
 					--
 					Dealer_Enable <= '1';
-					Rand_Enable <= '1';
+					deal_en <= '1';
+				
 				when player_card2 =>
 					--
 					Player_Enable <= '1';
-					Rand_Enable <= '1';
+					deal_en <= '1';
+				
 				when dealer_play =>
 					--
-				when dealer_fc =>
-					--
-					Rand_Enable <= '0';  
+				
+				when dealer_fc => 
 					Dealer_Enable <= '0';
 					Player_Enable <= '0';
+				
 				when player_play =>
 					--
-				when player_fc =>
-					--
-					Rand_Enable <= '0';  
+				
+				when player_fc =>  
 					Dealer_Enable <= '0';
 					Player_Enable <= '0';
+				
 				when dealer_en =>
-					--
 					Dealer_Enable  <= '1';
-					Rand_Enable <= '1';
+					deal_en <= '1';
+				
 				when player_en =>
-					--
 					Player_Enable <= '1';
-					Rand_Enable <= '1';
+				
 				when dealer_test =>
 					--
+				
 				when player_test =>
 					--
+				
 				when dealer_win =>
-					--
 					dealer_wins <= dealer_wins + 1;
 					Dealer_score <= std_logic_vector(to_unsigned(dealer_wins, Dealer_score'length));
+				
 				when player_win =>
-					--
 					player_wins <= player_wins + 1;
 					Player_score <= std_logic_vector(to_unsigned(player_wins, Player_score'length));
+				
 				when compare =>
-					--
 					Compare_enable <= '1';
 						
 			end case;
