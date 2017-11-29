@@ -1,31 +1,11 @@
-|g21_determine_winner
-total_player[0] => LessThan0.IN6
-total_player[0] => LessThan1.IN6
-total_player[1] => LessThan0.IN5
-total_player[1] => LessThan1.IN5
-total_player[2] => LessThan0.IN4
-total_player[2] => LessThan1.IN4
-total_player[3] => LessThan0.IN3
-total_player[3] => LessThan1.IN3
-total_player[4] => LessThan0.IN2
-total_player[4] => LessThan1.IN2
-total_player[5] => LessThan0.IN1
-total_player[5] => LessThan1.IN1
-total_dealer[0] => LessThan0.IN12
-total_dealer[0] => LessThan1.IN12
-total_dealer[1] => LessThan0.IN11
-total_dealer[1] => LessThan1.IN11
-total_dealer[2] => LessThan0.IN10
-total_dealer[2] => LessThan1.IN10
-total_dealer[3] => LessThan0.IN9
-total_dealer[3] => LessThan1.IN9
-total_dealer[4] => LessThan0.IN8
-total_dealer[4] => LessThan1.IN8
-total_dealer[5] => LessThan0.IN7
-total_dealer[5] => LessThan1.IN7
-enable => assign_winner~0.IN1
-enable => assign_winner~1.IN1
-dealer_high <= dealer_high~0.DB_MAX_OUTPUT_PORT_TYPE
-player_high <= assign_winner~0.DB_MAX_OUTPUT_PORT_TYPE
+|g21_show_score
+score[0] => Mux0.IN5
+score[0] => Mux1.IN5
+score[1] => Mux0.IN4
+score[1] => Mux1.IN4
+score[1] => led_on[1].DATAIN
+led_on[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+led_on[1] <= score[1].DB_MAX_OUTPUT_PORT_TYPE
+led_on[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
