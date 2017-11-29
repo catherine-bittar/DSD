@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g21_lab3
-Wed Nov 29 13:51:57 2017
+Wed Nov 29 16:39:36 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,24 +17,20 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
  11. Slow Model Minimum Pulse Width: 'altera_reserved_tck'
- 12. Propagation Delay
- 13. Minimum Propagation Delay
- 14. Fast Model Setup Summary
- 15. Fast Model Hold Summary
- 16. Fast Model Recovery Summary
- 17. Fast Model Removal Summary
- 18. Fast Model Minimum Pulse Width Summary
- 19. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
- 20. Propagation Delay
- 21. Minimum Propagation Delay
- 22. Multicorner Timing Analysis Summary
- 23. Progagation Delay
- 24. Minimum Progagation Delay
- 25. Clock Transfers
- 26. Report TCCS
- 27. Report RSKM
- 28. Unconstrained Paths
- 29. TimeQuest Timing Analyzer Messages
+ 12. Slow Model Datasheet Report
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
+ 19. Fast Model Datasheet Report
+ 20. Multicorner Timing Analysis Summary
+ 21. Clock Transfers
+ 22. Report TCCS
+ 23. Report RSKM
+ 24. Unconstrained Paths
+ 25. TimeQuest Timing Analyzer Messages
 
 
 
@@ -144,252 +140,10 @@ No paths to report.
 +--------+--------------+----------------+-----------+---------------------+------------+---------------------+
 
 
-+----------------------------------------------------------------------------+
-; Propagation Delay                                                          ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; Input Port      ; Output Port          ; RR     ; RF     ; FR     ; FF     ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; total_dealer[0] ; dealer_total_unit[0] ; 10.486 ; 10.486 ; 10.486 ; 10.486 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; total_dealer[0] ; dealer_total_unit[2] ;        ; 10.249 ; 10.249 ;        ;
-; total_dealer[0] ; dealer_total_unit[3] ; 10.214 ; 10.214 ; 10.214 ; 10.214 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 10.215 ;        ;        ; 10.215 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 10.841 ;        ;        ; 10.841 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 14.434 ;        ;        ; 14.434 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;        ; 14.423 ; 14.423 ;        ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 14.434 ;        ;        ; 14.434 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 13.287 ;        ;        ; 13.287 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 14.139 ;        ;        ; 14.139 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 14.686 ; 14.686 ; 14.686 ; 14.686 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 14.732 ; 14.732 ; 14.732 ; 14.732 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 14.421 ; 14.421 ; 14.421 ; 14.421 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 14.436 ; 14.436 ; 14.436 ; 14.436 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 14.423 ; 14.423 ; 14.423 ; 14.423 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 15.043 ; 15.043 ; 15.043 ; 15.043 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 14.727 ; 14.727 ; 14.727 ; 14.727 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 15.952 ; 14.531 ; 14.531 ; 15.952 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 14.520 ; 15.941 ; 15.941 ; 14.520 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 15.952 ; 14.531 ; 14.531 ; 15.952 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 14.805 ; 13.384 ; 13.384 ; 14.805 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 15.657 ; 14.236 ; 14.236 ; 15.657 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;        ; 10.953 ; 10.953 ;        ;
-; total_dealer[2] ; dealer_total_unit[0] ; 15.878 ; 15.878 ; 15.878 ; 15.878 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 15.924 ; 15.924 ; 15.924 ; 15.924 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 15.613 ; 15.613 ; 15.613 ; 15.613 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 15.628 ; 15.628 ; 15.628 ; 15.628 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 15.615 ; 15.615 ; 15.615 ; 15.615 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 16.235 ; 16.235 ; 16.235 ; 16.235 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 15.919 ; 15.919 ; 15.919 ; 15.919 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 15.942 ; 14.521 ; 14.521 ; 15.942 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 14.510 ; 15.931 ; 15.931 ; 14.510 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 15.942 ; 14.521 ; 14.521 ; 15.942 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 14.795 ; 13.374 ; 13.374 ; 14.795 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 15.647 ; 14.226 ; 14.226 ; 15.647 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;        ; 10.943 ; 10.943 ;        ;
-; total_dealer[3] ; dealer_total_unit[0] ; 16.079 ; 16.079 ; 16.079 ; 16.079 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 16.125 ; 16.125 ; 16.125 ; 16.125 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 15.814 ; 15.814 ; 15.814 ; 15.814 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 15.829 ; 15.829 ; 15.829 ; 15.829 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 15.816 ; 15.816 ; 15.816 ; 15.816 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 16.436 ; 16.436 ; 16.436 ; 16.436 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 16.120 ; 16.120 ; 16.120 ; 16.120 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 15.807 ; 14.386 ; 14.386 ; 15.807 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 14.375 ; 15.796 ; 15.796 ; 14.375 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 15.807 ; 14.386 ; 14.386 ; 15.807 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 14.660 ; 13.239 ; 13.239 ; 14.660 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 15.512 ; 14.091 ; 14.091 ; 15.512 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;        ; 10.808 ; 10.808 ;        ;
-; total_dealer[4] ; dealer_total_unit[0] ; 15.766 ; 15.766 ; 15.766 ; 15.766 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 15.812 ; 15.812 ; 15.812 ; 15.812 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 15.501 ; 15.501 ; 15.501 ; 15.501 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 15.516 ; 15.516 ; 15.516 ; 15.516 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 15.503 ; 15.503 ; 15.503 ; 15.503 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 16.123 ; 16.123 ; 16.123 ; 16.123 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 15.807 ; 15.807 ; 15.807 ; 15.807 ;
-; total_player[0] ; player_total_unit[0] ; 10.385 ; 10.385 ; 10.385 ; 10.385 ;
-; total_player[0] ; player_total_unit[1] ; 10.645 ; 10.645 ; 10.645 ; 10.645 ;
-; total_player[0] ; player_total_unit[2] ;        ; 10.387 ; 10.387 ;        ;
-; total_player[0] ; player_total_unit[3] ; 10.392 ; 10.392 ; 10.392 ; 10.392 ;
-; total_player[0] ; player_total_unit[4] ; 10.396 ;        ;        ; 10.396 ;
-; total_player[0] ; player_total_unit[5] ; 10.676 ;        ;        ; 10.676 ;
-; total_player[0] ; player_total_unit[6] ; 10.391 ; 10.391 ; 10.391 ; 10.391 ;
-; total_player[1] ; player_total_dec[0]  ; 12.448 ;        ;        ; 12.448 ;
-; total_player[1] ; player_total_dec[2]  ;        ; 12.461 ; 12.461 ;        ;
-; total_player[1] ; player_total_dec[3]  ; 12.478 ;        ;        ; 12.478 ;
-; total_player[1] ; player_total_dec[4]  ; 11.740 ;        ;        ; 11.740 ;
-; total_player[1] ; player_total_dec[5]  ; 12.447 ;        ;        ; 12.447 ;
-; total_player[1] ; player_total_unit[0] ; 14.646 ; 14.646 ; 14.646 ; 14.646 ;
-; total_player[1] ; player_total_unit[1] ; 14.906 ; 14.906 ; 14.906 ; 14.906 ;
-; total_player[1] ; player_total_unit[2] ; 14.650 ; 14.650 ; 14.650 ; 14.650 ;
-; total_player[1] ; player_total_unit[3] ; 14.651 ; 14.651 ; 14.651 ; 14.651 ;
-; total_player[1] ; player_total_unit[4] ; 14.667 ; 14.667 ; 14.667 ; 14.667 ;
-; total_player[1] ; player_total_unit[5] ; 14.902 ; 14.902 ; 14.902 ; 14.902 ;
-; total_player[1] ; player_total_unit[6] ; 14.662 ; 14.662 ; 14.662 ; 14.662 ;
-; total_player[2] ; player_total_dec[0]  ; 14.232 ; 14.685 ; 14.685 ; 14.232 ;
-; total_player[2] ; player_total_dec[2]  ; 14.698 ; 14.245 ; 14.245 ; 14.698 ;
-; total_player[2] ; player_total_dec[3]  ; 14.262 ; 14.715 ; 14.715 ; 14.262 ;
-; total_player[2] ; player_total_dec[4]  ; 13.524 ; 13.977 ; 13.977 ; 13.524 ;
-; total_player[2] ; player_total_dec[5]  ; 14.231 ; 14.684 ; 14.684 ; 14.231 ;
-; total_player[2] ; player_total_dec[6]  ;        ; 11.230 ; 11.230 ;        ;
-; total_player[2] ; player_total_unit[0] ; 16.591 ; 16.591 ; 16.591 ; 16.591 ;
-; total_player[2] ; player_total_unit[1] ; 16.851 ; 16.851 ; 16.851 ; 16.851 ;
-; total_player[2] ; player_total_unit[2] ; 16.595 ; 16.595 ; 16.595 ; 16.595 ;
-; total_player[2] ; player_total_unit[3] ; 16.596 ; 16.596 ; 16.596 ; 16.596 ;
-; total_player[2] ; player_total_unit[4] ; 16.612 ; 16.612 ; 16.612 ; 16.612 ;
-; total_player[2] ; player_total_unit[5] ; 16.847 ; 16.847 ; 16.847 ; 16.847 ;
-; total_player[2] ; player_total_unit[6] ; 16.607 ; 16.607 ; 16.607 ; 16.607 ;
-; total_player[3] ; player_total_dec[0]  ; 14.060 ; 14.513 ; 14.513 ; 14.060 ;
-; total_player[3] ; player_total_dec[2]  ; 14.526 ; 14.073 ; 14.073 ; 14.526 ;
-; total_player[3] ; player_total_dec[3]  ; 14.090 ; 14.543 ; 14.543 ; 14.090 ;
-; total_player[3] ; player_total_dec[4]  ; 13.352 ; 13.805 ; 13.805 ; 13.352 ;
-; total_player[3] ; player_total_dec[5]  ; 14.059 ; 14.512 ; 14.512 ; 14.059 ;
-; total_player[3] ; player_total_dec[6]  ;        ; 11.058 ; 11.058 ;        ;
-; total_player[3] ; player_total_unit[0] ; 16.517 ; 16.517 ; 16.517 ; 16.517 ;
-; total_player[3] ; player_total_unit[1] ; 16.777 ; 16.777 ; 16.777 ; 16.777 ;
-; total_player[3] ; player_total_unit[2] ; 16.521 ; 16.521 ; 16.521 ; 16.521 ;
-; total_player[3] ; player_total_unit[3] ; 16.522 ; 16.522 ; 16.522 ; 16.522 ;
-; total_player[3] ; player_total_unit[4] ; 16.538 ; 16.538 ; 16.538 ; 16.538 ;
-; total_player[3] ; player_total_unit[5] ; 16.773 ; 16.773 ; 16.773 ; 16.773 ;
-; total_player[3] ; player_total_unit[6] ; 16.533 ; 16.533 ; 16.533 ; 16.533 ;
-; total_player[4] ; player_total_dec[0]  ; 13.759 ; 14.212 ; 14.212 ; 13.759 ;
-; total_player[4] ; player_total_dec[2]  ; 14.225 ; 13.772 ; 13.772 ; 14.225 ;
-; total_player[4] ; player_total_dec[3]  ; 13.789 ; 14.242 ; 14.242 ; 13.789 ;
-; total_player[4] ; player_total_dec[4]  ; 13.051 ; 13.504 ; 13.504 ; 13.051 ;
-; total_player[4] ; player_total_dec[5]  ; 13.758 ; 14.211 ; 14.211 ; 13.758 ;
-; total_player[4] ; player_total_dec[6]  ;        ; 10.757 ; 10.757 ;        ;
-; total_player[4] ; player_total_unit[0] ; 16.434 ; 16.434 ; 16.434 ; 16.434 ;
-; total_player[4] ; player_total_unit[1] ; 16.694 ; 16.694 ; 16.694 ; 16.694 ;
-; total_player[4] ; player_total_unit[2] ; 16.438 ; 16.438 ; 16.438 ; 16.438 ;
-; total_player[4] ; player_total_unit[3] ; 16.439 ; 16.439 ; 16.439 ; 16.439 ;
-; total_player[4] ; player_total_unit[4] ; 16.455 ; 16.455 ; 16.455 ; 16.455 ;
-; total_player[4] ; player_total_unit[5] ; 16.690 ; 16.690 ; 16.690 ; 16.690 ;
-; total_player[4] ; player_total_unit[6] ; 16.450 ; 16.450 ; 16.450 ; 16.450 ;
-+-----------------+----------------------+--------+--------+--------+--------+
-
-
-+----------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                  ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; Input Port      ; Output Port          ; RR     ; RF     ; FR     ; FF     ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; total_dealer[0] ; dealer_total_unit[0] ; 10.486 ; 10.486 ; 10.486 ; 10.486 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; total_dealer[0] ; dealer_total_unit[2] ;        ; 10.249 ; 10.249 ;        ;
-; total_dealer[0] ; dealer_total_unit[3] ; 10.214 ; 10.214 ; 10.214 ; 10.214 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 10.215 ;        ;        ; 10.215 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 10.841 ;        ;        ; 10.841 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 13.207 ;        ;        ; 13.207 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;        ; 13.196 ; 13.196 ;        ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 13.207 ;        ;        ; 13.207 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 12.060 ;        ;        ; 12.060 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 12.912 ;        ;        ; 12.912 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 11.516 ; 11.516 ; 11.516 ; 11.516 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 11.589 ; 11.589 ; 11.589 ; 11.589 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 11.310 ; 13.585 ; 13.585 ; 11.310 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 11.288 ; 11.288 ; 11.288 ; 11.288 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 13.551 ; 11.281 ; 11.281 ; 13.551 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 11.907 ; 11.907 ; 11.907 ; 11.907 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 11.578 ; 11.578 ; 11.578 ; 11.578 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 13.182 ; 12.501 ; 12.501 ; 13.182 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 12.486 ; 13.171 ; 13.171 ; 12.486 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 13.182 ; 12.501 ; 12.501 ; 13.182 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 12.035 ; 12.776 ; 12.776 ; 12.035 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 12.203 ; 13.628 ; 13.628 ; 12.203 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;        ; 10.953 ; 10.953 ;        ;
-; total_dealer[2] ; dealer_total_unit[0] ; 12.076 ; 12.076 ; 12.076 ; 12.076 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 12.122 ; 12.916 ; 12.916 ; 12.122 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 11.811 ; 11.811 ; 11.811 ; 11.811 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 11.826 ; 11.826 ; 11.826 ; 11.826 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 11.813 ; 11.813 ; 11.813 ; 11.813 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 12.433 ; 12.433 ; 12.433 ; 12.433 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 12.117 ; 12.117 ; 12.117 ; 12.117 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 12.779 ; 12.491 ; 12.491 ; 12.779 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 12.476 ; 12.768 ; 12.768 ; 12.476 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 12.779 ; 12.491 ; 12.491 ; 12.779 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 11.632 ; 12.880 ; 12.880 ; 11.632 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 12.193 ; 13.732 ; 13.732 ; 12.193 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;        ; 10.943 ; 10.943 ;        ;
-; total_dealer[3] ; dealer_total_unit[0] ; 12.366 ; 12.366 ; 12.366 ; 12.366 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 12.403 ; 12.403 ; 12.403 ; 12.403 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 12.129 ; 12.129 ; 12.129 ; 12.129 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 12.101 ; 12.101 ; 12.101 ; 12.101 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 12.708 ; 12.095 ; 12.095 ; 12.708 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 12.721 ; 12.721 ; 12.721 ; 12.721 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 12.392 ; 12.392 ; 12.392 ; 12.392 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 13.033 ; 12.356 ; 12.356 ; 13.033 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 12.341 ; 13.022 ; 13.022 ; 12.341 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 13.033 ; 12.356 ; 12.356 ; 13.033 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 11.886 ; 12.393 ; 12.393 ; 11.886 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 12.058 ; 13.245 ; 13.245 ; 12.058 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;        ; 10.808 ; 10.808 ;        ;
-; total_dealer[4] ; dealer_total_unit[0] ; 12.841 ; 12.841 ; 12.841 ; 12.841 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 12.878 ; 12.878 ; 12.878 ; 12.878 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 12.604 ; 12.604 ; 12.604 ; 12.604 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 12.576 ; 12.576 ; 12.576 ; 12.576 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 12.856 ; 12.570 ; 12.570 ; 12.856 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 13.196 ; 13.196 ; 13.196 ; 13.196 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 12.867 ; 12.867 ; 12.867 ; 12.867 ;
-; total_player[0] ; player_total_unit[0] ; 10.385 ; 10.385 ; 10.385 ; 10.385 ;
-; total_player[0] ; player_total_unit[1] ; 10.645 ; 10.645 ; 10.645 ; 10.645 ;
-; total_player[0] ; player_total_unit[2] ;        ; 10.387 ; 10.387 ;        ;
-; total_player[0] ; player_total_unit[3] ; 10.392 ; 10.392 ; 10.392 ; 10.392 ;
-; total_player[0] ; player_total_unit[4] ; 10.396 ;        ;        ; 10.396 ;
-; total_player[0] ; player_total_unit[5] ; 10.676 ;        ;        ; 10.676 ;
-; total_player[0] ; player_total_unit[6] ; 10.391 ; 10.391 ; 10.391 ; 10.391 ;
-; total_player[1] ; player_total_dec[0]  ; 12.382 ;        ;        ; 12.382 ;
-; total_player[1] ; player_total_dec[2]  ;        ; 12.395 ; 12.395 ;        ;
-; total_player[1] ; player_total_dec[3]  ; 12.412 ;        ;        ; 12.412 ;
-; total_player[1] ; player_total_dec[4]  ; 11.674 ;        ;        ; 11.674 ;
-; total_player[1] ; player_total_dec[5]  ; 12.381 ;        ;        ; 12.381 ;
-; total_player[1] ; player_total_unit[0] ; 12.040 ; 12.040 ; 12.040 ; 12.040 ;
-; total_player[1] ; player_total_unit[1] ; 12.299 ; 12.299 ; 12.299 ; 12.299 ;
-; total_player[1] ; player_total_unit[2] ; 12.073 ; 12.980 ; 12.980 ; 12.073 ;
-; total_player[1] ; player_total_unit[3] ; 12.048 ; 12.048 ; 12.048 ; 12.048 ;
-; total_player[1] ; player_total_unit[4] ; 12.957 ; 12.050 ; 12.050 ; 12.957 ;
-; total_player[1] ; player_total_unit[5] ; 12.330 ; 12.330 ; 12.330 ; 12.330 ;
-; total_player[1] ; player_total_unit[6] ; 12.046 ; 12.046 ; 12.046 ; 12.046 ;
-; total_player[2] ; player_total_dec[0]  ; 12.723 ; 12.099 ; 12.099 ; 12.723 ;
-; total_player[2] ; player_total_dec[2]  ; 12.111 ; 12.736 ; 12.736 ; 12.111 ;
-; total_player[2] ; player_total_dec[3]  ; 12.753 ; 12.129 ; 12.129 ; 12.753 ;
-; total_player[2] ; player_total_dec[4]  ; 12.015 ; 12.654 ; 12.654 ; 12.015 ;
-; total_player[2] ; player_total_dec[5]  ; 12.102 ; 13.361 ; 13.361 ; 12.102 ;
-; total_player[2] ; player_total_dec[6]  ;        ; 11.230 ; 11.230 ;        ;
-; total_player[2] ; player_total_unit[0] ; 12.057 ; 12.057 ; 12.057 ; 12.057 ;
-; total_player[2] ; player_total_unit[1] ; 12.317 ; 13.298 ; 13.298 ; 12.317 ;
-; total_player[2] ; player_total_unit[2] ; 12.091 ; 12.091 ; 12.091 ; 12.091 ;
-; total_player[2] ; player_total_unit[3] ; 12.065 ; 12.065 ; 12.065 ; 12.065 ;
-; total_player[2] ; player_total_unit[4] ; 12.064 ; 12.064 ; 12.064 ; 12.064 ;
-; total_player[2] ; player_total_unit[5] ; 12.346 ; 12.346 ; 12.346 ; 12.346 ;
-; total_player[2] ; player_total_unit[6] ; 12.061 ; 12.061 ; 12.061 ; 12.061 ;
-; total_player[3] ; player_total_dec[0]  ; 13.141 ; 11.927 ; 11.927 ; 13.141 ;
-; total_player[3] ; player_total_dec[2]  ; 11.939 ; 13.154 ; 13.154 ; 11.939 ;
-; total_player[3] ; player_total_dec[3]  ; 13.171 ; 11.957 ; 11.957 ; 13.171 ;
-; total_player[3] ; player_total_dec[4]  ; 12.433 ; 12.715 ; 12.715 ; 12.433 ;
-; total_player[3] ; player_total_dec[5]  ; 11.930 ; 13.422 ; 13.422 ; 11.930 ;
-; total_player[3] ; player_total_dec[6]  ;        ; 11.058 ; 11.058 ;        ;
-; total_player[3] ; player_total_unit[0] ; 12.619 ; 12.619 ; 12.619 ; 12.619 ;
-; total_player[3] ; player_total_unit[1] ; 12.879 ; 12.879 ; 12.879 ; 12.879 ;
-; total_player[3] ; player_total_unit[2] ; 12.623 ; 12.623 ; 12.623 ; 12.623 ;
-; total_player[3] ; player_total_unit[3] ; 12.624 ; 12.624 ; 12.624 ; 12.624 ;
-; total_player[3] ; player_total_unit[4] ; 13.352 ; 12.640 ; 12.640 ; 13.352 ;
-; total_player[3] ; player_total_unit[5] ; 12.875 ; 12.875 ; 12.875 ; 12.875 ;
-; total_player[3] ; player_total_unit[6] ; 12.635 ; 12.635 ; 12.635 ; 12.635 ;
-; total_player[4] ; player_total_dec[0]  ; 12.182 ; 11.626 ; 11.626 ; 12.182 ;
-; total_player[4] ; player_total_dec[2]  ; 11.638 ; 12.195 ; 12.195 ; 11.638 ;
-; total_player[4] ; player_total_dec[3]  ; 12.212 ; 11.656 ; 11.656 ; 12.212 ;
-; total_player[4] ; player_total_dec[4]  ; 11.474 ; 12.175 ; 12.175 ; 11.474 ;
-; total_player[4] ; player_total_dec[5]  ; 11.629 ; 12.882 ; 12.882 ; 11.629 ;
-; total_player[4] ; player_total_dec[6]  ;        ; 10.757 ; 10.757 ;        ;
-; total_player[4] ; player_total_unit[0] ; 13.665 ; 13.665 ; 13.665 ; 13.665 ;
-; total_player[4] ; player_total_unit[1] ; 13.925 ; 13.925 ; 13.925 ; 13.925 ;
-; total_player[4] ; player_total_unit[2] ; 13.699 ; 13.699 ; 13.699 ; 13.699 ;
-; total_player[4] ; player_total_unit[3] ; 13.673 ; 13.673 ; 13.673 ; 13.673 ;
-; total_player[4] ; player_total_unit[4] ; 13.672 ; 13.672 ; 13.672 ; 13.672 ;
-; total_player[4] ; player_total_unit[5] ; 13.954 ; 13.954 ; 13.954 ; 13.954 ;
-; total_player[4] ; player_total_unit[6] ; 13.669 ; 13.669 ; 13.669 ; 13.669 ;
-+-----------------+----------------------+--------+--------+--------+--------+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -434,252 +188,10 @@ No paths to report.
 +--------+--------------+----------------+-----------+---------------------+------------+---------------------+
 
 
-+------------------------------------------------------------------------+
-; Propagation Delay                                                      ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; Input Port      ; Output Port          ; RR    ; RF    ; FR    ; FF    ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; total_dealer[0] ; dealer_total_unit[0] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 5.394 ; 5.394 ; 5.394 ; 5.394 ;
-; total_dealer[0] ; dealer_total_unit[2] ;       ; 5.291 ; 5.291 ;       ;
-; total_dealer[0] ; dealer_total_unit[3] ; 5.260 ; 5.260 ; 5.260 ; 5.260 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 5.262 ;       ;       ; 5.262 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 5.526 ;       ;       ; 5.526 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 6.815 ;       ;       ; 6.815 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;       ; 6.799 ; 6.799 ;       ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 6.815 ;       ;       ; 6.815 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 6.379 ;       ;       ; 6.379 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 6.711 ;       ;       ; 6.711 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 6.833 ; 6.833 ; 6.833 ; 6.833 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 6.875 ; 6.875 ; 6.875 ; 6.875 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 6.775 ; 6.775 ; 6.775 ; 6.775 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 6.753 ; 6.753 ; 6.753 ; 6.753 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 6.739 ; 6.739 ; 6.739 ; 6.739 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 7.005 ; 7.005 ; 7.005 ; 7.005 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 6.871 ; 6.871 ; 6.871 ; 6.871 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 7.329 ; 6.842 ; 6.842 ; 7.329 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 6.826 ; 7.313 ; 7.313 ; 6.826 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 7.329 ; 6.842 ; 6.842 ; 7.329 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 6.893 ; 6.406 ; 6.406 ; 6.893 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 7.225 ; 6.738 ; 6.738 ; 7.225 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;       ; 5.507 ; 5.507 ;       ;
-; total_dealer[2] ; dealer_total_unit[0] ; 7.225 ; 7.225 ; 7.225 ; 7.225 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 7.267 ; 7.267 ; 7.267 ; 7.267 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 7.167 ; 7.167 ; 7.167 ; 7.167 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 7.145 ; 7.145 ; 7.145 ; 7.145 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 7.131 ; 7.131 ; 7.131 ; 7.131 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 7.397 ; 7.397 ; 7.397 ; 7.397 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 7.263 ; 7.263 ; 7.263 ; 7.263 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 7.330 ; 6.843 ; 6.843 ; 7.330 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 6.827 ; 7.314 ; 7.314 ; 6.827 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 7.330 ; 6.843 ; 6.843 ; 7.330 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 6.894 ; 6.407 ; 6.407 ; 6.894 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 7.226 ; 6.739 ; 6.739 ; 7.226 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;       ; 5.508 ; 5.508 ;       ;
-; total_dealer[3] ; dealer_total_unit[0] ; 7.302 ; 7.302 ; 7.302 ; 7.302 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 7.344 ; 7.344 ; 7.344 ; 7.344 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 7.244 ; 7.244 ; 7.244 ; 7.244 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 7.222 ; 7.222 ; 7.222 ; 7.222 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 7.208 ; 7.208 ; 7.208 ; 7.208 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 7.474 ; 7.474 ; 7.474 ; 7.474 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 7.340 ; 7.340 ; 7.340 ; 7.340 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 7.271 ; 6.784 ; 6.784 ; 7.271 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 6.768 ; 7.255 ; 7.255 ; 6.768 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 7.271 ; 6.784 ; 6.784 ; 7.271 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 6.835 ; 6.348 ; 6.348 ; 6.835 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 7.167 ; 6.680 ; 6.680 ; 7.167 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;       ; 5.449 ; 5.449 ;       ;
-; total_dealer[4] ; dealer_total_unit[0] ; 7.178 ; 7.178 ; 7.178 ; 7.178 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 7.220 ; 7.220 ; 7.220 ; 7.220 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 7.120 ; 7.120 ; 7.120 ; 7.120 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 7.098 ; 7.098 ; 7.098 ; 7.098 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 7.084 ; 7.084 ; 7.084 ; 7.084 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 7.350 ; 7.350 ; 7.350 ; 7.350 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 7.216 ; 7.216 ; 7.216 ; 7.216 ;
-; total_player[0] ; player_total_unit[0] ; 5.272 ; 5.272 ; 5.272 ; 5.272 ;
-; total_player[0] ; player_total_unit[1] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_player[0] ; player_total_unit[2] ;       ; 5.305 ; 5.305 ;       ;
-; total_player[0] ; player_total_unit[3] ; 5.284 ; 5.284 ; 5.284 ; 5.284 ;
-; total_player[0] ; player_total_unit[4] ; 5.282 ;       ;       ; 5.282 ;
-; total_player[0] ; player_total_unit[5] ; 5.402 ;       ;       ; 5.402 ;
-; total_player[0] ; player_total_unit[6] ; 5.277 ; 5.277 ; 5.277 ; 5.277 ;
-; total_player[1] ; player_total_dec[0]  ; 5.999 ;       ;       ; 5.999 ;
-; total_player[1] ; player_total_dec[2]  ;       ; 6.009 ; 6.009 ;       ;
-; total_player[1] ; player_total_dec[3]  ; 6.029 ;       ;       ; 6.029 ;
-; total_player[1] ; player_total_dec[4]  ; 5.752 ;       ;       ; 5.752 ;
-; total_player[1] ; player_total_dec[5]  ; 6.017 ;       ;       ; 6.017 ;
-; total_player[1] ; player_total_unit[0] ; 6.782 ; 6.782 ; 6.782 ; 6.782 ;
-; total_player[1] ; player_total_unit[1] ; 6.870 ; 6.870 ; 6.870 ; 6.870 ;
-; total_player[1] ; player_total_unit[2] ; 6.820 ; 6.820 ; 6.820 ; 6.820 ;
-; total_player[1] ; player_total_unit[3] ; 6.796 ; 6.796 ; 6.796 ; 6.796 ;
-; total_player[1] ; player_total_unit[4] ; 6.809 ; 6.809 ; 6.809 ; 6.809 ;
-; total_player[1] ; player_total_unit[5] ; 6.914 ; 6.914 ; 6.914 ; 6.914 ;
-; total_player[1] ; player_total_unit[6] ; 6.800 ; 6.800 ; 6.800 ; 6.800 ;
-; total_player[2] ; player_total_dec[0]  ; 6.681 ; 6.829 ; 6.829 ; 6.681 ;
-; total_player[2] ; player_total_dec[2]  ; 6.839 ; 6.691 ; 6.691 ; 6.839 ;
-; total_player[2] ; player_total_dec[3]  ; 6.711 ; 6.859 ; 6.859 ; 6.711 ;
-; total_player[2] ; player_total_dec[4]  ; 6.434 ; 6.582 ; 6.582 ; 6.434 ;
-; total_player[2] ; player_total_dec[5]  ; 6.699 ; 6.847 ; 6.847 ; 6.699 ;
-; total_player[2] ; player_total_dec[6]  ;       ; 5.597 ; 5.597 ;       ;
-; total_player[2] ; player_total_unit[0] ; 7.543 ; 7.543 ; 7.543 ; 7.543 ;
-; total_player[2] ; player_total_unit[1] ; 7.631 ; 7.631 ; 7.631 ; 7.631 ;
-; total_player[2] ; player_total_unit[2] ; 7.581 ; 7.581 ; 7.581 ; 7.581 ;
-; total_player[2] ; player_total_unit[3] ; 7.557 ; 7.557 ; 7.557 ; 7.557 ;
-; total_player[2] ; player_total_unit[4] ; 7.570 ; 7.570 ; 7.570 ; 7.570 ;
-; total_player[2] ; player_total_unit[5] ; 7.675 ; 7.675 ; 7.675 ; 7.675 ;
-; total_player[2] ; player_total_unit[6] ; 7.561 ; 7.561 ; 7.561 ; 7.561 ;
-; total_player[3] ; player_total_dec[0]  ; 6.583 ; 6.731 ; 6.731 ; 6.583 ;
-; total_player[3] ; player_total_dec[2]  ; 6.741 ; 6.593 ; 6.593 ; 6.741 ;
-; total_player[3] ; player_total_dec[3]  ; 6.613 ; 6.761 ; 6.761 ; 6.613 ;
-; total_player[3] ; player_total_dec[4]  ; 6.336 ; 6.484 ; 6.484 ; 6.336 ;
-; total_player[3] ; player_total_dec[5]  ; 6.601 ; 6.749 ; 6.749 ; 6.601 ;
-; total_player[3] ; player_total_dec[6]  ;       ; 5.499 ; 5.499 ;       ;
-; total_player[3] ; player_total_unit[0] ; 7.495 ; 7.495 ; 7.495 ; 7.495 ;
-; total_player[3] ; player_total_unit[1] ; 7.583 ; 7.583 ; 7.583 ; 7.583 ;
-; total_player[3] ; player_total_unit[2] ; 7.533 ; 7.533 ; 7.533 ; 7.533 ;
-; total_player[3] ; player_total_unit[3] ; 7.509 ; 7.509 ; 7.509 ; 7.509 ;
-; total_player[3] ; player_total_unit[4] ; 7.522 ; 7.522 ; 7.522 ; 7.522 ;
-; total_player[3] ; player_total_unit[5] ; 7.627 ; 7.627 ; 7.627 ; 7.627 ;
-; total_player[3] ; player_total_unit[6] ; 7.513 ; 7.513 ; 7.513 ; 7.513 ;
-; total_player[4] ; player_total_dec[0]  ; 6.494 ; 6.642 ; 6.642 ; 6.494 ;
-; total_player[4] ; player_total_dec[2]  ; 6.652 ; 6.504 ; 6.504 ; 6.652 ;
-; total_player[4] ; player_total_dec[3]  ; 6.524 ; 6.672 ; 6.672 ; 6.524 ;
-; total_player[4] ; player_total_dec[4]  ; 6.247 ; 6.395 ; 6.395 ; 6.247 ;
-; total_player[4] ; player_total_dec[5]  ; 6.512 ; 6.660 ; 6.660 ; 6.512 ;
-; total_player[4] ; player_total_dec[6]  ;       ; 5.410 ; 5.410 ;       ;
-; total_player[4] ; player_total_unit[0] ; 7.473 ; 7.473 ; 7.473 ; 7.473 ;
-; total_player[4] ; player_total_unit[1] ; 7.561 ; 7.561 ; 7.561 ; 7.561 ;
-; total_player[4] ; player_total_unit[2] ; 7.511 ; 7.511 ; 7.511 ; 7.511 ;
-; total_player[4] ; player_total_unit[3] ; 7.487 ; 7.487 ; 7.487 ; 7.487 ;
-; total_player[4] ; player_total_unit[4] ; 7.500 ; 7.500 ; 7.500 ; 7.500 ;
-; total_player[4] ; player_total_unit[5] ; 7.605 ; 7.605 ; 7.605 ; 7.605 ;
-; total_player[4] ; player_total_unit[6] ; 7.491 ; 7.491 ; 7.491 ; 7.491 ;
-+-----------------+----------------------+-------+-------+-------+-------+
-
-
-+------------------------------------------------------------------------+
-; Minimum Propagation Delay                                              ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; Input Port      ; Output Port          ; RR    ; RF    ; FR    ; FF    ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; total_dealer[0] ; dealer_total_unit[0] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 5.394 ; 5.394 ; 5.394 ; 5.394 ;
-; total_dealer[0] ; dealer_total_unit[2] ;       ; 5.291 ; 5.291 ;       ;
-; total_dealer[0] ; dealer_total_unit[3] ; 5.260 ; 5.260 ; 5.260 ; 5.260 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 5.262 ;       ;       ; 5.262 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 5.526 ;       ;       ; 5.526 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 6.377 ;       ;       ; 6.377 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;       ; 6.361 ; 6.361 ;       ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 6.377 ;       ;       ; 6.377 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 5.941 ;       ;       ; 5.941 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 6.273 ;       ;       ; 6.273 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 5.753 ; 5.753 ; 5.753 ; 5.753 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 5.686 ; 6.488 ; 6.488 ; 5.686 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 5.663 ; 5.663 ; 5.663 ; 5.663 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 6.456 ; 5.651 ; 5.651 ; 6.456 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 5.918 ; 5.918 ; 5.918 ; 5.918 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 5.776 ; 5.776 ; 5.776 ; 5.776 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 6.329 ; 6.115 ; 6.115 ; 6.329 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 6.070 ; 6.313 ; 6.313 ; 6.070 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 6.329 ; 6.115 ; 6.115 ; 6.329 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 5.893 ; 6.147 ; 6.147 ; 5.893 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 5.961 ; 6.479 ; 6.479 ; 5.961 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;       ; 5.507 ; 5.507 ;       ;
-; total_dealer[2] ; dealer_total_unit[0] ; 5.906 ; 5.906 ; 5.906 ; 5.906 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 5.948 ; 6.225 ; 6.225 ; 5.948 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 5.826 ; 5.826 ; 5.826 ; 5.826 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 6.078 ; 6.078 ; 6.078 ; 6.078 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 5.944 ; 5.944 ; 5.944 ; 5.944 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 6.190 ; 6.116 ; 6.116 ; 6.190 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 6.071 ; 6.174 ; 6.174 ; 6.071 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 6.190 ; 6.116 ; 6.116 ; 6.190 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 5.754 ; 6.167 ; 6.167 ; 5.754 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 5.962 ; 6.499 ; 6.499 ; 5.962 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;       ; 5.508 ; 5.508 ;       ;
-; total_dealer[3] ; dealer_total_unit[0] ; 6.031 ; 6.031 ; 6.031 ; 6.031 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 6.068 ; 6.068 ; 6.068 ; 6.068 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 5.965 ; 5.965 ; 5.965 ; 5.965 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 6.173 ; 5.933 ; 5.933 ; 6.173 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 6.196 ; 6.196 ; 6.196 ; 6.196 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 6.058 ; 6.058 ; 6.058 ; 6.058 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 6.269 ; 6.057 ; 6.057 ; 6.269 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 6.012 ; 6.253 ; 6.253 ; 6.012 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 6.269 ; 6.057 ; 6.057 ; 6.269 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 5.833 ; 6.005 ; 6.005 ; 5.833 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 5.903 ; 6.337 ; 6.337 ; 5.903 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;       ; 5.449 ; 5.449 ;       ;
-; total_dealer[4] ; dealer_total_unit[0] ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 6.229 ; 6.229 ; 6.229 ; 6.229 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 6.101 ; 6.101 ; 6.101 ; 6.101 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 6.182 ; 6.094 ; 6.094 ; 6.182 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 6.357 ; 6.357 ; 6.357 ; 6.357 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 6.219 ; 6.219 ; 6.219 ; 6.219 ;
-; total_player[0] ; player_total_unit[0] ; 5.272 ; 5.272 ; 5.272 ; 5.272 ;
-; total_player[0] ; player_total_unit[1] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_player[0] ; player_total_unit[2] ;       ; 5.305 ; 5.305 ;       ;
-; total_player[0] ; player_total_unit[3] ; 5.284 ; 5.284 ; 5.284 ; 5.284 ;
-; total_player[0] ; player_total_unit[4] ; 5.282 ;       ;       ; 5.282 ;
-; total_player[0] ; player_total_unit[5] ; 5.402 ;       ;       ; 5.402 ;
-; total_player[0] ; player_total_unit[6] ; 5.277 ; 5.277 ; 5.277 ; 5.277 ;
-; total_player[1] ; player_total_dec[0]  ; 5.971 ;       ;       ; 5.971 ;
-; total_player[1] ; player_total_dec[2]  ;       ; 5.981 ; 5.981 ;       ;
-; total_player[1] ; player_total_dec[3]  ; 6.001 ;       ;       ; 6.001 ;
-; total_player[1] ; player_total_dec[4]  ; 5.724 ;       ;       ; 5.724 ;
-; total_player[1] ; player_total_dec[5]  ; 5.989 ;       ;       ; 5.989 ;
-; total_player[1] ; player_total_unit[0] ; 5.869 ; 5.869 ; 5.869 ; 5.869 ;
-; total_player[1] ; player_total_unit[1] ; 5.958 ; 5.958 ; 5.958 ; 5.958 ;
-; total_player[1] ; player_total_unit[2] ; 5.901 ; 6.223 ; 6.223 ; 5.901 ;
-; total_player[1] ; player_total_unit[3] ; 5.881 ; 5.881 ; 5.881 ; 5.881 ;
-; total_player[1] ; player_total_unit[4] ; 6.204 ; 5.882 ; 5.882 ; 6.204 ;
-; total_player[1] ; player_total_unit[5] ; 5.993 ; 5.993 ; 5.993 ; 5.993 ;
-; total_player[1] ; player_total_unit[6] ; 5.876 ; 5.876 ; 5.876 ; 5.876 ;
-; total_player[2] ; player_total_dec[0]  ; 6.147 ; 5.927 ; 5.927 ; 6.147 ;
-; total_player[2] ; player_total_dec[2]  ; 5.908 ; 6.157 ; 6.157 ; 5.908 ;
-; total_player[2] ; player_total_dec[3]  ; 6.177 ; 5.957 ; 5.957 ; 6.177 ;
-; total_player[2] ; player_total_dec[4]  ; 5.900 ; 6.109 ; 6.109 ; 5.900 ;
-; total_player[2] ; player_total_dec[5]  ; 5.902 ; 6.374 ; 6.374 ; 5.902 ;
-; total_player[2] ; player_total_dec[6]  ;       ; 5.597 ; 5.597 ;       ;
-; total_player[2] ; player_total_unit[0] ; 5.915 ; 5.915 ; 5.915 ; 5.915 ;
-; total_player[2] ; player_total_unit[1] ; 6.003 ; 6.350 ; 6.350 ; 6.003 ;
-; total_player[2] ; player_total_unit[2] ; 5.947 ; 5.947 ; 5.947 ; 5.947 ;
-; total_player[2] ; player_total_unit[3] ; 5.926 ; 5.926 ; 5.926 ; 5.926 ;
-; total_player[2] ; player_total_unit[4] ; 5.924 ; 5.924 ; 5.924 ; 5.924 ;
-; total_player[2] ; player_total_unit[5] ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
-; total_player[2] ; player_total_unit[6] ; 5.919 ; 5.919 ; 5.919 ; 5.919 ;
-; total_player[3] ; player_total_dec[0]  ; 6.237 ; 5.829 ; 5.829 ; 6.237 ;
-; total_player[3] ; player_total_dec[2]  ; 5.810 ; 6.247 ; 6.247 ; 5.810 ;
-; total_player[3] ; player_total_dec[3]  ; 6.267 ; 5.859 ; 5.859 ; 6.267 ;
-; total_player[3] ; player_total_dec[4]  ; 5.990 ; 6.086 ; 6.086 ; 5.990 ;
-; total_player[3] ; player_total_dec[5]  ; 5.804 ; 6.351 ; 6.351 ; 5.804 ;
-; total_player[3] ; player_total_dec[6]  ;       ; 5.499 ; 5.499 ;       ;
-; total_player[3] ; player_total_unit[0] ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
-; total_player[3] ; player_total_unit[1] ; 6.176 ; 6.176 ; 6.176 ; 6.176 ;
-; total_player[3] ; player_total_unit[2] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
-; total_player[3] ; player_total_unit[3] ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
-; total_player[3] ; player_total_unit[4] ; 6.362 ; 6.115 ; 6.115 ; 6.362 ;
-; total_player[3] ; player_total_unit[5] ; 6.220 ; 6.220 ; 6.220 ; 6.220 ;
-; total_player[3] ; player_total_unit[6] ; 6.106 ; 6.106 ; 6.106 ; 6.106 ;
-; total_player[4] ; player_total_dec[0]  ; 5.902 ; 5.740 ; 5.740 ; 5.902 ;
-; total_player[4] ; player_total_dec[2]  ; 5.721 ; 5.912 ; 5.912 ; 5.721 ;
-; total_player[4] ; player_total_dec[3]  ; 5.932 ; 5.770 ; 5.770 ; 5.932 ;
-; total_player[4] ; player_total_dec[4]  ; 5.655 ; 5.922 ; 5.922 ; 5.655 ;
-; total_player[4] ; player_total_dec[5]  ; 5.715 ; 6.187 ; 6.187 ; 5.715 ;
-; total_player[4] ; player_total_dec[6]  ;       ; 5.410 ; 5.410 ;       ;
-; total_player[4] ; player_total_unit[0] ; 6.457 ; 6.457 ; 6.457 ; 6.457 ;
-; total_player[4] ; player_total_unit[1] ; 6.545 ; 6.545 ; 6.545 ; 6.545 ;
-; total_player[4] ; player_total_unit[2] ; 6.489 ; 6.489 ; 6.489 ; 6.489 ;
-; total_player[4] ; player_total_unit[3] ; 6.468 ; 6.468 ; 6.468 ; 6.468 ;
-; total_player[4] ; player_total_unit[4] ; 6.466 ; 6.466 ; 6.466 ; 6.466 ;
-; total_player[4] ; player_total_unit[5] ; 6.580 ; 6.580 ; 6.580 ; 6.580 ;
-; total_player[4] ; player_total_unit[6] ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
-+-----------------+----------------------+-------+-------+-------+-------+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +--------------------------------------------------------------------------------+
@@ -692,254 +204,6 @@ No paths to report.
 ; Design-wide TNS      ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 ;  altera_reserved_tck ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
 +----------------------+-------+------+----------+---------+---------------------+
-
-
-+----------------------------------------------------------------------------+
-; Progagation Delay                                                          ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; Input Port      ; Output Port          ; RR     ; RF     ; FR     ; FF     ;
-+-----------------+----------------------+--------+--------+--------+--------+
-; total_dealer[0] ; dealer_total_unit[0] ; 10.486 ; 10.486 ; 10.486 ; 10.486 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; total_dealer[0] ; dealer_total_unit[2] ;        ; 10.249 ; 10.249 ;        ;
-; total_dealer[0] ; dealer_total_unit[3] ; 10.214 ; 10.214 ; 10.214 ; 10.214 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 10.215 ;        ;        ; 10.215 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 10.841 ;        ;        ; 10.841 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 10.504 ; 10.504 ; 10.504 ; 10.504 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 14.434 ;        ;        ; 14.434 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;        ; 14.423 ; 14.423 ;        ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 14.434 ;        ;        ; 14.434 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 13.287 ;        ;        ; 13.287 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 14.139 ;        ;        ; 14.139 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 14.686 ; 14.686 ; 14.686 ; 14.686 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 14.732 ; 14.732 ; 14.732 ; 14.732 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 14.421 ; 14.421 ; 14.421 ; 14.421 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 14.436 ; 14.436 ; 14.436 ; 14.436 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 14.423 ; 14.423 ; 14.423 ; 14.423 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 15.043 ; 15.043 ; 15.043 ; 15.043 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 14.727 ; 14.727 ; 14.727 ; 14.727 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 15.952 ; 14.531 ; 14.531 ; 15.952 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 14.520 ; 15.941 ; 15.941 ; 14.520 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 15.952 ; 14.531 ; 14.531 ; 15.952 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 14.805 ; 13.384 ; 13.384 ; 14.805 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 15.657 ; 14.236 ; 14.236 ; 15.657 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;        ; 10.953 ; 10.953 ;        ;
-; total_dealer[2] ; dealer_total_unit[0] ; 15.878 ; 15.878 ; 15.878 ; 15.878 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 15.924 ; 15.924 ; 15.924 ; 15.924 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 15.613 ; 15.613 ; 15.613 ; 15.613 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 15.628 ; 15.628 ; 15.628 ; 15.628 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 15.615 ; 15.615 ; 15.615 ; 15.615 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 16.235 ; 16.235 ; 16.235 ; 16.235 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 15.919 ; 15.919 ; 15.919 ; 15.919 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 15.942 ; 14.521 ; 14.521 ; 15.942 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 14.510 ; 15.931 ; 15.931 ; 14.510 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 15.942 ; 14.521 ; 14.521 ; 15.942 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 14.795 ; 13.374 ; 13.374 ; 14.795 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 15.647 ; 14.226 ; 14.226 ; 15.647 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;        ; 10.943 ; 10.943 ;        ;
-; total_dealer[3] ; dealer_total_unit[0] ; 16.079 ; 16.079 ; 16.079 ; 16.079 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 16.125 ; 16.125 ; 16.125 ; 16.125 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 15.814 ; 15.814 ; 15.814 ; 15.814 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 15.829 ; 15.829 ; 15.829 ; 15.829 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 15.816 ; 15.816 ; 15.816 ; 15.816 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 16.436 ; 16.436 ; 16.436 ; 16.436 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 16.120 ; 16.120 ; 16.120 ; 16.120 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 15.807 ; 14.386 ; 14.386 ; 15.807 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 14.375 ; 15.796 ; 15.796 ; 14.375 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 15.807 ; 14.386 ; 14.386 ; 15.807 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 14.660 ; 13.239 ; 13.239 ; 14.660 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 15.512 ; 14.091 ; 14.091 ; 15.512 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;        ; 10.808 ; 10.808 ;        ;
-; total_dealer[4] ; dealer_total_unit[0] ; 15.766 ; 15.766 ; 15.766 ; 15.766 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 15.812 ; 15.812 ; 15.812 ; 15.812 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 15.501 ; 15.501 ; 15.501 ; 15.501 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 15.516 ; 15.516 ; 15.516 ; 15.516 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 15.503 ; 15.503 ; 15.503 ; 15.503 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 16.123 ; 16.123 ; 16.123 ; 16.123 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 15.807 ; 15.807 ; 15.807 ; 15.807 ;
-; total_player[0] ; player_total_unit[0] ; 10.385 ; 10.385 ; 10.385 ; 10.385 ;
-; total_player[0] ; player_total_unit[1] ; 10.645 ; 10.645 ; 10.645 ; 10.645 ;
-; total_player[0] ; player_total_unit[2] ;        ; 10.387 ; 10.387 ;        ;
-; total_player[0] ; player_total_unit[3] ; 10.392 ; 10.392 ; 10.392 ; 10.392 ;
-; total_player[0] ; player_total_unit[4] ; 10.396 ;        ;        ; 10.396 ;
-; total_player[0] ; player_total_unit[5] ; 10.676 ;        ;        ; 10.676 ;
-; total_player[0] ; player_total_unit[6] ; 10.391 ; 10.391 ; 10.391 ; 10.391 ;
-; total_player[1] ; player_total_dec[0]  ; 12.448 ;        ;        ; 12.448 ;
-; total_player[1] ; player_total_dec[2]  ;        ; 12.461 ; 12.461 ;        ;
-; total_player[1] ; player_total_dec[3]  ; 12.478 ;        ;        ; 12.478 ;
-; total_player[1] ; player_total_dec[4]  ; 11.740 ;        ;        ; 11.740 ;
-; total_player[1] ; player_total_dec[5]  ; 12.447 ;        ;        ; 12.447 ;
-; total_player[1] ; player_total_unit[0] ; 14.646 ; 14.646 ; 14.646 ; 14.646 ;
-; total_player[1] ; player_total_unit[1] ; 14.906 ; 14.906 ; 14.906 ; 14.906 ;
-; total_player[1] ; player_total_unit[2] ; 14.650 ; 14.650 ; 14.650 ; 14.650 ;
-; total_player[1] ; player_total_unit[3] ; 14.651 ; 14.651 ; 14.651 ; 14.651 ;
-; total_player[1] ; player_total_unit[4] ; 14.667 ; 14.667 ; 14.667 ; 14.667 ;
-; total_player[1] ; player_total_unit[5] ; 14.902 ; 14.902 ; 14.902 ; 14.902 ;
-; total_player[1] ; player_total_unit[6] ; 14.662 ; 14.662 ; 14.662 ; 14.662 ;
-; total_player[2] ; player_total_dec[0]  ; 14.232 ; 14.685 ; 14.685 ; 14.232 ;
-; total_player[2] ; player_total_dec[2]  ; 14.698 ; 14.245 ; 14.245 ; 14.698 ;
-; total_player[2] ; player_total_dec[3]  ; 14.262 ; 14.715 ; 14.715 ; 14.262 ;
-; total_player[2] ; player_total_dec[4]  ; 13.524 ; 13.977 ; 13.977 ; 13.524 ;
-; total_player[2] ; player_total_dec[5]  ; 14.231 ; 14.684 ; 14.684 ; 14.231 ;
-; total_player[2] ; player_total_dec[6]  ;        ; 11.230 ; 11.230 ;        ;
-; total_player[2] ; player_total_unit[0] ; 16.591 ; 16.591 ; 16.591 ; 16.591 ;
-; total_player[2] ; player_total_unit[1] ; 16.851 ; 16.851 ; 16.851 ; 16.851 ;
-; total_player[2] ; player_total_unit[2] ; 16.595 ; 16.595 ; 16.595 ; 16.595 ;
-; total_player[2] ; player_total_unit[3] ; 16.596 ; 16.596 ; 16.596 ; 16.596 ;
-; total_player[2] ; player_total_unit[4] ; 16.612 ; 16.612 ; 16.612 ; 16.612 ;
-; total_player[2] ; player_total_unit[5] ; 16.847 ; 16.847 ; 16.847 ; 16.847 ;
-; total_player[2] ; player_total_unit[6] ; 16.607 ; 16.607 ; 16.607 ; 16.607 ;
-; total_player[3] ; player_total_dec[0]  ; 14.060 ; 14.513 ; 14.513 ; 14.060 ;
-; total_player[3] ; player_total_dec[2]  ; 14.526 ; 14.073 ; 14.073 ; 14.526 ;
-; total_player[3] ; player_total_dec[3]  ; 14.090 ; 14.543 ; 14.543 ; 14.090 ;
-; total_player[3] ; player_total_dec[4]  ; 13.352 ; 13.805 ; 13.805 ; 13.352 ;
-; total_player[3] ; player_total_dec[5]  ; 14.059 ; 14.512 ; 14.512 ; 14.059 ;
-; total_player[3] ; player_total_dec[6]  ;        ; 11.058 ; 11.058 ;        ;
-; total_player[3] ; player_total_unit[0] ; 16.517 ; 16.517 ; 16.517 ; 16.517 ;
-; total_player[3] ; player_total_unit[1] ; 16.777 ; 16.777 ; 16.777 ; 16.777 ;
-; total_player[3] ; player_total_unit[2] ; 16.521 ; 16.521 ; 16.521 ; 16.521 ;
-; total_player[3] ; player_total_unit[3] ; 16.522 ; 16.522 ; 16.522 ; 16.522 ;
-; total_player[3] ; player_total_unit[4] ; 16.538 ; 16.538 ; 16.538 ; 16.538 ;
-; total_player[3] ; player_total_unit[5] ; 16.773 ; 16.773 ; 16.773 ; 16.773 ;
-; total_player[3] ; player_total_unit[6] ; 16.533 ; 16.533 ; 16.533 ; 16.533 ;
-; total_player[4] ; player_total_dec[0]  ; 13.759 ; 14.212 ; 14.212 ; 13.759 ;
-; total_player[4] ; player_total_dec[2]  ; 14.225 ; 13.772 ; 13.772 ; 14.225 ;
-; total_player[4] ; player_total_dec[3]  ; 13.789 ; 14.242 ; 14.242 ; 13.789 ;
-; total_player[4] ; player_total_dec[4]  ; 13.051 ; 13.504 ; 13.504 ; 13.051 ;
-; total_player[4] ; player_total_dec[5]  ; 13.758 ; 14.211 ; 14.211 ; 13.758 ;
-; total_player[4] ; player_total_dec[6]  ;        ; 10.757 ; 10.757 ;        ;
-; total_player[4] ; player_total_unit[0] ; 16.434 ; 16.434 ; 16.434 ; 16.434 ;
-; total_player[4] ; player_total_unit[1] ; 16.694 ; 16.694 ; 16.694 ; 16.694 ;
-; total_player[4] ; player_total_unit[2] ; 16.438 ; 16.438 ; 16.438 ; 16.438 ;
-; total_player[4] ; player_total_unit[3] ; 16.439 ; 16.439 ; 16.439 ; 16.439 ;
-; total_player[4] ; player_total_unit[4] ; 16.455 ; 16.455 ; 16.455 ; 16.455 ;
-; total_player[4] ; player_total_unit[5] ; 16.690 ; 16.690 ; 16.690 ; 16.690 ;
-; total_player[4] ; player_total_unit[6] ; 16.450 ; 16.450 ; 16.450 ; 16.450 ;
-+-----------------+----------------------+--------+--------+--------+--------+
-
-
-+------------------------------------------------------------------------+
-; Minimum Progagation Delay                                              ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; Input Port      ; Output Port          ; RR    ; RF    ; FR    ; FF    ;
-+-----------------+----------------------+-------+-------+-------+-------+
-; total_dealer[0] ; dealer_total_unit[0] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_dealer[0] ; dealer_total_unit[1] ; 5.394 ; 5.394 ; 5.394 ; 5.394 ;
-; total_dealer[0] ; dealer_total_unit[2] ;       ; 5.291 ; 5.291 ;       ;
-; total_dealer[0] ; dealer_total_unit[3] ; 5.260 ; 5.260 ; 5.260 ; 5.260 ;
-; total_dealer[0] ; dealer_total_unit[4] ; 5.262 ;       ;       ; 5.262 ;
-; total_dealer[0] ; dealer_total_unit[5] ; 5.526 ;       ;       ; 5.526 ;
-; total_dealer[0] ; dealer_total_unit[6] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; total_dealer[1] ; dealer_total_dec[0]  ; 6.377 ;       ;       ; 6.377 ;
-; total_dealer[1] ; dealer_total_dec[2]  ;       ; 6.361 ; 6.361 ;       ;
-; total_dealer[1] ; dealer_total_dec[3]  ; 6.377 ;       ;       ; 6.377 ;
-; total_dealer[1] ; dealer_total_dec[4]  ; 5.941 ;       ;       ; 5.941 ;
-; total_dealer[1] ; dealer_total_dec[5]  ; 6.273 ;       ;       ; 6.273 ;
-; total_dealer[1] ; dealer_total_unit[0] ; 5.753 ; 5.753 ; 5.753 ; 5.753 ;
-; total_dealer[1] ; dealer_total_unit[1] ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
-; total_dealer[1] ; dealer_total_unit[2] ; 5.686 ; 6.488 ; 6.488 ; 5.686 ;
-; total_dealer[1] ; dealer_total_unit[3] ; 5.663 ; 5.663 ; 5.663 ; 5.663 ;
-; total_dealer[1] ; dealer_total_unit[4] ; 6.456 ; 5.651 ; 5.651 ; 6.456 ;
-; total_dealer[1] ; dealer_total_unit[5] ; 5.918 ; 5.918 ; 5.918 ; 5.918 ;
-; total_dealer[1] ; dealer_total_unit[6] ; 5.776 ; 5.776 ; 5.776 ; 5.776 ;
-; total_dealer[2] ; dealer_total_dec[0]  ; 6.329 ; 6.115 ; 6.115 ; 6.329 ;
-; total_dealer[2] ; dealer_total_dec[2]  ; 6.070 ; 6.313 ; 6.313 ; 6.070 ;
-; total_dealer[2] ; dealer_total_dec[3]  ; 6.329 ; 6.115 ; 6.115 ; 6.329 ;
-; total_dealer[2] ; dealer_total_dec[4]  ; 5.893 ; 6.147 ; 6.147 ; 5.893 ;
-; total_dealer[2] ; dealer_total_dec[5]  ; 5.961 ; 6.479 ; 6.479 ; 5.961 ;
-; total_dealer[2] ; dealer_total_dec[6]  ;       ; 5.507 ; 5.507 ;       ;
-; total_dealer[2] ; dealer_total_unit[0] ; 5.906 ; 5.906 ; 5.906 ; 5.906 ;
-; total_dealer[2] ; dealer_total_unit[1] ; 5.948 ; 6.225 ; 6.225 ; 5.948 ;
-; total_dealer[2] ; dealer_total_unit[2] ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
-; total_dealer[2] ; dealer_total_unit[3] ; 5.826 ; 5.826 ; 5.826 ; 5.826 ;
-; total_dealer[2] ; dealer_total_unit[4] ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
-; total_dealer[2] ; dealer_total_unit[5] ; 6.078 ; 6.078 ; 6.078 ; 6.078 ;
-; total_dealer[2] ; dealer_total_unit[6] ; 5.944 ; 5.944 ; 5.944 ; 5.944 ;
-; total_dealer[3] ; dealer_total_dec[0]  ; 6.190 ; 6.116 ; 6.116 ; 6.190 ;
-; total_dealer[3] ; dealer_total_dec[2]  ; 6.071 ; 6.174 ; 6.174 ; 6.071 ;
-; total_dealer[3] ; dealer_total_dec[3]  ; 6.190 ; 6.116 ; 6.116 ; 6.190 ;
-; total_dealer[3] ; dealer_total_dec[4]  ; 5.754 ; 6.167 ; 6.167 ; 5.754 ;
-; total_dealer[3] ; dealer_total_dec[5]  ; 5.962 ; 6.499 ; 6.499 ; 5.962 ;
-; total_dealer[3] ; dealer_total_dec[6]  ;       ; 5.508 ; 5.508 ;       ;
-; total_dealer[3] ; dealer_total_unit[0] ; 6.031 ; 6.031 ; 6.031 ; 6.031 ;
-; total_dealer[3] ; dealer_total_unit[1] ; 6.068 ; 6.068 ; 6.068 ; 6.068 ;
-; total_dealer[3] ; dealer_total_unit[2] ; 5.965 ; 5.965 ; 5.965 ; 5.965 ;
-; total_dealer[3] ; dealer_total_unit[3] ; 5.940 ; 5.940 ; 5.940 ; 5.940 ;
-; total_dealer[3] ; dealer_total_unit[4] ; 6.173 ; 5.933 ; 5.933 ; 6.173 ;
-; total_dealer[3] ; dealer_total_unit[5] ; 6.196 ; 6.196 ; 6.196 ; 6.196 ;
-; total_dealer[3] ; dealer_total_unit[6] ; 6.058 ; 6.058 ; 6.058 ; 6.058 ;
-; total_dealer[4] ; dealer_total_dec[0]  ; 6.269 ; 6.057 ; 6.057 ; 6.269 ;
-; total_dealer[4] ; dealer_total_dec[2]  ; 6.012 ; 6.253 ; 6.253 ; 6.012 ;
-; total_dealer[4] ; dealer_total_dec[3]  ; 6.269 ; 6.057 ; 6.057 ; 6.269 ;
-; total_dealer[4] ; dealer_total_dec[4]  ; 5.833 ; 6.005 ; 6.005 ; 5.833 ;
-; total_dealer[4] ; dealer_total_dec[5]  ; 5.903 ; 6.337 ; 6.337 ; 5.903 ;
-; total_dealer[4] ; dealer_total_dec[6]  ;       ; 5.449 ; 5.449 ;       ;
-; total_dealer[4] ; dealer_total_unit[0] ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
-; total_dealer[4] ; dealer_total_unit[1] ; 6.229 ; 6.229 ; 6.229 ; 6.229 ;
-; total_dealer[4] ; dealer_total_unit[2] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
-; total_dealer[4] ; dealer_total_unit[3] ; 6.101 ; 6.101 ; 6.101 ; 6.101 ;
-; total_dealer[4] ; dealer_total_unit[4] ; 6.182 ; 6.094 ; 6.094 ; 6.182 ;
-; total_dealer[4] ; dealer_total_unit[5] ; 6.357 ; 6.357 ; 6.357 ; 6.357 ;
-; total_dealer[4] ; dealer_total_unit[6] ; 6.219 ; 6.219 ; 6.219 ; 6.219 ;
-; total_player[0] ; player_total_unit[0] ; 5.272 ; 5.272 ; 5.272 ; 5.272 ;
-; total_player[0] ; player_total_unit[1] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
-; total_player[0] ; player_total_unit[2] ;       ; 5.305 ; 5.305 ;       ;
-; total_player[0] ; player_total_unit[3] ; 5.284 ; 5.284 ; 5.284 ; 5.284 ;
-; total_player[0] ; player_total_unit[4] ; 5.282 ;       ;       ; 5.282 ;
-; total_player[0] ; player_total_unit[5] ; 5.402 ;       ;       ; 5.402 ;
-; total_player[0] ; player_total_unit[6] ; 5.277 ; 5.277 ; 5.277 ; 5.277 ;
-; total_player[1] ; player_total_dec[0]  ; 5.971 ;       ;       ; 5.971 ;
-; total_player[1] ; player_total_dec[2]  ;       ; 5.981 ; 5.981 ;       ;
-; total_player[1] ; player_total_dec[3]  ; 6.001 ;       ;       ; 6.001 ;
-; total_player[1] ; player_total_dec[4]  ; 5.724 ;       ;       ; 5.724 ;
-; total_player[1] ; player_total_dec[5]  ; 5.989 ;       ;       ; 5.989 ;
-; total_player[1] ; player_total_unit[0] ; 5.869 ; 5.869 ; 5.869 ; 5.869 ;
-; total_player[1] ; player_total_unit[1] ; 5.958 ; 5.958 ; 5.958 ; 5.958 ;
-; total_player[1] ; player_total_unit[2] ; 5.901 ; 6.223 ; 6.223 ; 5.901 ;
-; total_player[1] ; player_total_unit[3] ; 5.881 ; 5.881 ; 5.881 ; 5.881 ;
-; total_player[1] ; player_total_unit[4] ; 6.204 ; 5.882 ; 5.882 ; 6.204 ;
-; total_player[1] ; player_total_unit[5] ; 5.993 ; 5.993 ; 5.993 ; 5.993 ;
-; total_player[1] ; player_total_unit[6] ; 5.876 ; 5.876 ; 5.876 ; 5.876 ;
-; total_player[2] ; player_total_dec[0]  ; 6.147 ; 5.927 ; 5.927 ; 6.147 ;
-; total_player[2] ; player_total_dec[2]  ; 5.908 ; 6.157 ; 6.157 ; 5.908 ;
-; total_player[2] ; player_total_dec[3]  ; 6.177 ; 5.957 ; 5.957 ; 6.177 ;
-; total_player[2] ; player_total_dec[4]  ; 5.900 ; 6.109 ; 6.109 ; 5.900 ;
-; total_player[2] ; player_total_dec[5]  ; 5.902 ; 6.374 ; 6.374 ; 5.902 ;
-; total_player[2] ; player_total_dec[6]  ;       ; 5.597 ; 5.597 ;       ;
-; total_player[2] ; player_total_unit[0] ; 5.915 ; 5.915 ; 5.915 ; 5.915 ;
-; total_player[2] ; player_total_unit[1] ; 6.003 ; 6.350 ; 6.350 ; 6.003 ;
-; total_player[2] ; player_total_unit[2] ; 5.947 ; 5.947 ; 5.947 ; 5.947 ;
-; total_player[2] ; player_total_unit[3] ; 5.926 ; 5.926 ; 5.926 ; 5.926 ;
-; total_player[2] ; player_total_unit[4] ; 5.924 ; 5.924 ; 5.924 ; 5.924 ;
-; total_player[2] ; player_total_unit[5] ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
-; total_player[2] ; player_total_unit[6] ; 5.919 ; 5.919 ; 5.919 ; 5.919 ;
-; total_player[3] ; player_total_dec[0]  ; 6.237 ; 5.829 ; 5.829 ; 6.237 ;
-; total_player[3] ; player_total_dec[2]  ; 5.810 ; 6.247 ; 6.247 ; 5.810 ;
-; total_player[3] ; player_total_dec[3]  ; 6.267 ; 5.859 ; 5.859 ; 6.267 ;
-; total_player[3] ; player_total_dec[4]  ; 5.990 ; 6.086 ; 6.086 ; 5.990 ;
-; total_player[3] ; player_total_dec[5]  ; 5.804 ; 6.351 ; 6.351 ; 5.804 ;
-; total_player[3] ; player_total_dec[6]  ;       ; 5.499 ; 5.499 ;       ;
-; total_player[3] ; player_total_unit[0] ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
-; total_player[3] ; player_total_unit[1] ; 6.176 ; 6.176 ; 6.176 ; 6.176 ;
-; total_player[3] ; player_total_unit[2] ; 6.126 ; 6.126 ; 6.126 ; 6.126 ;
-; total_player[3] ; player_total_unit[3] ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
-; total_player[3] ; player_total_unit[4] ; 6.362 ; 6.115 ; 6.115 ; 6.362 ;
-; total_player[3] ; player_total_unit[5] ; 6.220 ; 6.220 ; 6.220 ; 6.220 ;
-; total_player[3] ; player_total_unit[6] ; 6.106 ; 6.106 ; 6.106 ; 6.106 ;
-; total_player[4] ; player_total_dec[0]  ; 5.902 ; 5.740 ; 5.740 ; 5.902 ;
-; total_player[4] ; player_total_dec[2]  ; 5.721 ; 5.912 ; 5.912 ; 5.721 ;
-; total_player[4] ; player_total_dec[3]  ; 5.932 ; 5.770 ; 5.770 ; 5.932 ;
-; total_player[4] ; player_total_dec[4]  ; 5.655 ; 5.922 ; 5.922 ; 5.655 ;
-; total_player[4] ; player_total_dec[5]  ; 5.715 ; 6.187 ; 6.187 ; 5.715 ;
-; total_player[4] ; player_total_dec[6]  ;       ; 5.410 ; 5.410 ;       ;
-; total_player[4] ; player_total_unit[0] ; 6.457 ; 6.457 ; 6.457 ; 6.457 ;
-; total_player[4] ; player_total_unit[1] ; 6.545 ; 6.545 ; 6.545 ; 6.545 ;
-; total_player[4] ; player_total_unit[2] ; 6.489 ; 6.489 ; 6.489 ; 6.489 ;
-; total_player[4] ; player_total_unit[3] ; 6.468 ; 6.468 ; 6.468 ; 6.468 ;
-; total_player[4] ; player_total_unit[4] ; 6.466 ; 6.466 ; 6.466 ; 6.466 ;
-; total_player[4] ; player_total_unit[5] ; 6.580 ; 6.580 ; 6.580 ; 6.580 ;
-; total_player[4] ; player_total_unit[6] ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
-+-----------------+----------------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -966,11 +230,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 116   ; 116  ;
-; Unconstrained Output Ports      ; 26    ; 26   ;
-; Unconstrained Output Port Paths ; 116   ; 116  ;
+; Unconstrained Clocks            ; 3     ; 3    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 3     ; 3    ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 10    ; 10   ;
 +---------------------------------+-------+------+
 
 
@@ -980,17 +244,21 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 29 13:51:56 2017
+    Info: Processing started: Wed Nov 29 16:39:34 2017
 Info: Command: quartus_sta g21_lab5 -c g21_lab3
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 51 combinational loops as latches.
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'g21_lab3.out.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Deal_FSM:Controller|Dealer_Enable was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Deal_FSM:Controller|Player_Enable was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -1004,6 +272,9 @@ Info (332146): Worst-case minimum pulse width slack is 97.531
     Info (332119):    97.531         0.000 altera_reserved_tck 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
+Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Deal_FSM:Controller|Dealer_Enable was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Deal_FSM:Controller|Player_Enable was determined to be a clock but was found without an associated clock assignment.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -1015,10 +286,10 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 560 megabytes
-    Info: Processing ended: Wed Nov 29 13:51:57 2017
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 575 megabytes
+    Info: Processing ended: Wed Nov 29 16:39:36 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

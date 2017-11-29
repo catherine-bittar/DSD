@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 24 -24 192 -8)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 32 144 200 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "butt2" (rect 5 0 30 12)(font "Arial" ))
+	(text "butt2" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect 24 288 192 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "butt3" (rect 5 0 30 12)(font "Arial" ))
+	(text "butt3" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect 24 16 192 32)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "butt1" (rect 5 0 30 12)(font "Arial" ))
+	(text "butt1" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -190,50 +190,7 @@ applicable agreement for further details.
 	(annotation_block (location)(rect 552 760 608 776))
 )
 (symbol
-	(rect 768 520 984 632)
-	(text "g21_determine_winner" (rect 5 0 113 12)(font "Arial" ))
-	(text "inst" (rect 8 96 25 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "total_player[4..0]" (rect 0 0 83 12)(font "Arial" ))
-		(text "total_player[4..0]" (rect 21 27 104 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "total_dealer[4..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "total_dealer[4..0]" (rect 21 43 103 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "enable" (rect 0 0 31 12)(font "Arial" ))
-		(text "enable" (rect 21 59 52 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "dealer_high" (rect 0 0 55 12)(font "Arial" ))
-		(text "dealer_high" (rect 149 27 204 39)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "player_high" (rect 0 0 56 12)(font "Arial" ))
-		(text "player_high" (rect 148 43 204 55)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 96))
-	)
-)
-(symbol
-	(rect 1248 136 1480 216)
+	(rect 1272 144 1504 224)
 	(text "game_over" (rect 5 0 60 12)(font "Arial" ))
 	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
 	(port
@@ -720,7 +677,7 @@ applicable agreement for further details.
 		(line (pt 16 80)(pt 24 88))
 		(line (pt 24 88)(pt 16 96))
 	)
-	(annotation_block (parameter)(rect 1048 -144 1192 -74))
+	(annotation_block (parameter)(rect 1032 72 1176 142))
 )
 (symbol
 	(rect 256 408 448 488)
@@ -901,7 +858,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1368 536 1400 568)
+	(rect 1368 544 1400 576)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst100" (rect 3 21 38 33)(font "Arial" )(invisible))
 	(port
@@ -918,9 +875,105 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 1040 -240 1152 -152)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst13" (rect 3 77 32 89)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"2"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 1032 -272 1160 -244))
+)
+(symbol
+	(rect 1368 600 1400 616)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1080 -128 1144 -80)
+	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36))
+		(line (pt 14 13)(pt 25 13))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
+	)
+)
+(symbol
 	(rect 768 664 1024 776)
 	(text "show_totals" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst" (rect 8 96 25 108)(font "Arial" ))
+	(text "total_display" (rect 8 96 70 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -965,6 +1018,49 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 240 96))
+	)
+)
+(symbol
+	(rect 768 520 984 632)
+	(text "g21_determine_winner" (rect 5 0 113 12)(font "Arial" ))
+	(text "winner_determine" (rect 8 96 92 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "total_player[4..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "total_player[4..0]" (rect 21 27 104 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "total_dealer[4..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "total_dealer[4..0]" (rect 21 43 103 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "enable" (rect 0 0 31 12)(font "Arial" ))
+		(text "enable" (rect 21 59 52 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "dealer_high" (rect 0 0 55 12)(font "Arial" ))
+		(text "dealer_high" (rect 149 27 204 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "player_high" (rect 0 0 56 12)(font "Arial" ))
+		(text "player_high" (rect 148 43 204 55)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 96))
 	)
 )
 (connector
@@ -1240,23 +1336,6 @@ applicable agreement for further details.
 	(pt 1072 568)
 )
 (connector
-	(text "Player_score[1..0]" (rect 1162 144 1252 156)(font "Arial" ))
-	(pt 1248 168)
-	(pt 1160 168)
-	(bus)
-)
-(connector
-	(text "Dealer_score[1..0]" (rect 1154 168 1244 180)(font "Arial" ))
-	(pt 1248 184)
-	(pt 1160 184)
-	(bus)
-)
-(connector
-	(text "Game_over" (rect 1490 152 1547 164)(font "Arial" ))
-	(pt 1480 168)
-	(pt 1544 168)
-)
-(connector
 	(text "Dealer_score[1..0]" (rect 170 424 260 436)(font "Arial" ))
 	(pt 160 440)
 	(pt 256 440)
@@ -1375,15 +1454,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1384 536)
-	(pt 1384 528)
-)
-(connector
-	(text "ground" (rect 1394 512 1427 524)(font "Arial" ))
-	(pt 1384 528)
-	(pt 1440 528)
-)
-(connector
 	(text "dealer_LED[0]" (rect 306 608 375 620)(font "Arial" ))
 	(pt 376 624)
 	(pt 296 624)
@@ -1424,6 +1494,104 @@ applicable agreement for further details.
 	(pt 768 712)
 	(pt 680 712)
 	(bus)
+)
+(connector
+	(pt 1152 -192)
+	(pt 1256 -192)
+	(bus)
+)
+(connector
+	(pt 1096 -152)
+	(pt 1096 -136)
+)
+(connector
+	(pt 1256 -48)
+	(pt 1256 -192)
+	(bus)
+)
+(connector
+	(pt 1256 -48)
+	(pt 1272 -48)
+	(bus)
+)
+(connector
+	(pt 1384 544)
+	(pt 1384 536)
+)
+(connector
+	(pt 1384 616)
+	(pt 1384 632)
+)
+(connector
+	(text "ground" (rect 1394 520 1427 532)(font "Arial" ))
+	(pt 1384 536)
+	(pt 1440 536)
+)
+(connector
+	(text "high" (rect 1394 616 1414 628)(font "Arial" ))
+	(pt 1384 632)
+	(pt 1440 632)
+)
+(connector
+	(text "Request_Deal" (rect 1010 -152 1079 -140)(font "Arial" ))
+	(pt 1096 -136)
+	(pt 1000 -136)
+)
+(connector
+	(text "high,ground" (rect 946 -192 1002 -180)(font "Arial" ))
+	(pt 936 -176)
+	(pt 1040 -176)
+	(bus)
+)
+(connector
+	(text "ground,high" (rect 946 -224 1002 -212)(font "Arial" ))
+	(pt 936 -208)
+	(pt 1040 -208)
+	(bus)
+)
+(connector
+	(pt 1144 -104)
+	(pt 1224 -104)
+)
+(connector
+	(pt 1224 -104)
+	(pt 1224 -64)
+)
+(connector
+	(pt 1224 -64)
+	(pt 1272 -64)
+)
+(connector
+	(text "ground" (rect 1242 -16 1275 -4)(font "Arial" ))
+	(pt 1272 0)
+	(pt 1232 0)
+)
+(connector
+	(text "Request_Deal" (rect 1010 -128 1079 -116)(font "Arial" ))
+	(pt 1080 -112)
+	(pt 1000 -112)
+)
+(connector
+	(text "INIT" (rect 1010 -112 1031 -100)(font "Arial" ))
+	(pt 1080 -96)
+	(pt 1000 -96)
+)
+(connector
+	(text "Player_score[1..0]" (rect 1186 152 1276 164)(font "Arial" ))
+	(pt 1272 176)
+	(pt 1184 176)
+	(bus)
+)
+(connector
+	(text "Dealer_score[1..0]" (rect 1178 176 1268 188)(font "Arial" ))
+	(pt 1272 192)
+	(pt 1184 192)
+	(bus)
+)
+(connector
+	(text "Game_over" (rect 1514 160 1571 172)(font "Arial" ))
+	(pt 1504 176)
+	(pt 1568 176)
 )
 (junction (pt 232 40))
 (junction (pt 232 168))
