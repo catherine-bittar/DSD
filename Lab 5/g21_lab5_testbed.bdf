@@ -602,7 +602,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1368 544 1400 576)
+	(rect 784 -248 816 -216)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst100" (rect 3 21 38 33)(font "Arial" )(invisible))
 	(port
@@ -667,7 +667,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1032 -272 1160 -244))
 )
 (symbol
-	(rect 1368 600 1400 616)
+	(rect 784 -192 816 -176)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst1" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -1015,11 +1015,6 @@ applicable agreement for further details.
 	(pt 544 296)
 )
 (connector
-	(text "Clock" (rect 586 -8 614 4)(font "Arial" ))
-	(pt 624 8)
-	(pt 592 8)
-)
-(connector
 	(text "INIT" (rect 474 8 495 20)(font "Arial" ))
 	(pt 624 24)
 	(pt 464 24)
@@ -1057,7 +1052,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Request_Deal" (rect 522 -40 591 -28)(font "Arial" ))
+	(text "Request_Deal" (rect 562 -40 631 -28)(font "Arial" ))
 	(pt 624 -24)
 	(pt 560 -24)
 )
@@ -1358,41 +1353,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1384 544)
-	(pt 1384 536)
-)
-(connector
-	(pt 1384 616)
-	(pt 1384 632)
-)
-(connector
-	(text "ground" (rect 1394 520 1427 532)(font "Arial" ))
-	(pt 1384 536)
-	(pt 1440 536)
-)
-(connector
-	(text "high" (rect 1394 616 1414 628)(font "Arial" ))
-	(pt 1384 632)
-	(pt 1440 632)
-)
-(connector
-	(text "Request_Deal" (rect 1010 -152 1079 -140)(font "Arial" ))
-	(pt 1096 -136)
-	(pt 1000 -136)
-)
-(connector
-	(text "high,ground" (rect 946 -192 1002 -180)(font "Arial" ))
-	(pt 936 -176)
-	(pt 1040 -176)
-	(bus)
-)
-(connector
-	(text "ground,high" (rect 946 -224 1002 -212)(font "Arial" ))
-	(pt 936 -208)
-	(pt 1040 -208)
-	(bus)
-)
-(connector
 	(pt 1224 -104)
 	(pt 1224 -64)
 )
@@ -1476,8 +1436,55 @@ applicable agreement for further details.
 	(pt 1136 -104)
 	(pt 1224 -104)
 )
+(connector
+	(text "ground" (rect 570 -24 603 -12)(font "Arial" ))
+	(pt 624 -8)
+	(pt 560 -8)
+)
+(connector
+	(text "Clock" (rect 570 -8 598 4)(font "Arial" ))
+	(pt 560 8)
+	(pt 624 8)
+)
+(connector
+	(text "INIT" (rect 1010 -152 1031 -140)(font "Arial" ))
+	(pt 1096 -136)
+	(pt 1000 -136)
+)
+(connector
+	(text "ground,high" (rect 946 -192 1002 -180)(font "Arial" ))
+	(pt 936 -176)
+	(pt 1040 -176)
+	(bus)
+)
+(connector
+	(text "high,ground" (rect 946 -224 1002 -212)(font "Arial" ))
+	(pt 936 -208)
+	(pt 1040 -208)
+	(bus)
+)
+(connector
+	(pt 800 -248)
+	(pt 800 -256)
+)
+(connector
+	(pt 800 -176)
+	(pt 800 -160)
+)
+(connector
+	(text "ground" (rect 810 -272 843 -260)(font "Arial" ))
+	(pt 800 -256)
+	(pt 856 -256)
+)
+(connector
+	(text "high" (rect 810 -176 830 -164)(font "Arial" ))
+	(pt 800 -160)
+	(pt 856 -160)
+)
 (junction (pt 232 40))
 (junction (pt 232 168))
 (junction (pt 232 -16))
 (junction (pt 1048 176))
 (junction (pt 1056 376))
+(text "INIT" (rect 904 -184 924 -170)(font "Arial" (font_size 8)))
+(text "POP" (rect 904 -216 927 -202)(font "Arial" (font_size 8)))

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Thu Nov 30 10:12:05 2017
+Thu Nov 30 18:55:13 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -190,15 +190,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 30 10:12:04 2017           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 30 18:55:13 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_lab5_testbed                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,695                                           ;
-;     Total combinational functions  ; 1,352                                           ;
-;     Dedicated logic registers      ; 993                                             ;
-; Total registers                    ; 993                                             ;
+; Total logic elements               ; 1,737                                           ;
+;     Total combinational functions  ; 1,391                                           ;
+;     Dedicated logic registers      ; 1,023                                           ;
+; Total registers                    ; 1023                                            ;
 ; Total pins                         ; 11                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 6,144                                           ;
@@ -432,29 +432,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,695 ;
+; Estimated Total logic elements              ; 1,737 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1352  ;
+; Total combinational functions               ; 1391  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 562   ;
-;     -- 3 input functions                    ; 544   ;
+;     -- 4 input functions                    ; 534   ;
+;     -- 3 input functions                    ; 611   ;
 ;     -- <=2 input functions                  ; 246   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1201  ;
-;     -- arithmetic mode                      ; 151   ;
+;     -- normal mode                          ; 1198  ;
+;     -- arithmetic mode                      ; 193   ;
 ;                                             ;       ;
-; Total registers                             ; 993   ;
-;     -- Dedicated logic registers            ; 993   ;
+; Total registers                             ; 1023  ;
+;     -- Dedicated logic registers            ; 1023  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 11    ;
 ; Total memory bits                           ; 6144  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 782   ;
-; Total fan-out                               ; 8685  ;
-; Average fan-out                             ; 3.57  ;
+; Maximum fan-out                             ; 812   ;
+; Total fan-out                               ; 8859  ;
+; Average fan-out                             ; 3.54  ;
 +---------------------------------------------+-------+
 
 
@@ -463,7 +463,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                    ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_lab5_testbed                                                                                       ; 1352 (3)          ; 993 (0)      ; 6144        ; 0            ; 0       ; 0         ; 11   ; 0            ; |g21_lab5_testbed                                                                                                                                                                                                                                                                                                                                      ; work         ;
+; |g21_lab5_testbed                                                                                       ; 1391 (2)          ; 1023 (0)     ; 6144        ; 0            ; 0       ; 0         ; 11   ; 0            ; |g21_lab5_testbed                                                                                                                                                                                                                                                                                                                                      ; work         ;
 ;    |Deal_FSM:inst|                                                                                      ; 45 (45)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|Deal_FSM:inst                                                                                                                                                                                                                                                                                                                        ; work         ;
 ;    |g21_SPG:INIT_debounce|                                                                              ; 43 (6)            ; 26 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_SPG:INIT_debounce                                                                                                                                                                                                                                                                                                                ; work         ;
 ;       |Equal1_lpm_compare0:inst5|                                                                       ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_SPG:INIT_debounce|Equal1_lpm_compare0:inst5                                                                                                                                                                                                                                                                                      ; work         ;
@@ -517,7 +517,7 @@ applicable agreement for further details.
 ;             |g21_1bitAdder:inst25|                                                                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25                                                                                                                                                                                                                                                 ; work         ;
 ;    |g21_show_score:dealer_score_show|                                                                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_show_score:dealer_score_show                                                                                                                                                                                                                                                                                                     ; work         ;
 ;    |g21_show_score:player_score_show|                                                                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_show_score:player_score_show                                                                                                                                                                                                                                                                                                     ; work         ;
-;    |g21_stack52:inst8|                                                                                  ; 594 (0)           ; 322 (4)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8                                                                                                                                                                                                                                                                                                                    ; work         ;
+;    |g21_stack52:inst8|                                                                                  ; 584 (0)           ; 323 (5)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8                                                                                                                                                                                                                                                                                                                    ; work         ;
 ;       |StackCounter_lpm_counter:inst124|                                                                ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|StackCounter_lpm_counter:inst124                                                                                                                                                                                                                                                                                   ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|                                                            ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component                                                                                                                                                                                                                                                 ; work         ;
 ;             |cntr_p5j:auto_generated|                                                                   ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|StackCounter_lpm_counter:inst124|lpm_counter:LPM_COUNTER_component|cntr_p5j:auto_generated                                                                                                                                                                                                                         ; work         ;
@@ -737,17 +737,23 @@ applicable agreement for further details.
 ;       |lpm_ff:inst96|                                                                                   ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_ff:inst96                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_ff:inst98|                                                                                   ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_ff:inst98                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_ff:inst|                                                                                     ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_ff:inst                                                                                                                                                                                                                                                                                                        ; work         ;
-;       |lpm_mux0:inst114|                                                                                ; 265 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114                                                                                                                                                                                                                                                                                                   ; work         ;
-;          |lpm_mux:LPM_MUX_component|                                                                    ; 265 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                         ; work         ;
-;             |mux_v4e:auto_generated|                                                                    ; 265 (265)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                  ; work         ;
-;    |random_address_gen:inst6|                                                                           ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6                                                                                                                                                                                                                                                                                                             ; work         ;
-;       |lpm_divide0:inst10|                                                                              ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10                                                                                                                                                                                                                                                                                          ; work         ;
-;          |lpm_divide:LPM_DIVIDE_component|                                                              ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                                                                                          ; work         ;
-;             |lpm_divide_grp:auto_generated|                                                             ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated                                                                                                                                                                                                                            ; work         ;
-;                |sign_div_unsign_bkh:divider|                                                            ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                ; work         ;
-;                   |alt_u_div_ove:divider|                                                               ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                          ; work         ;
-;    |sld_hub:auto_hub|                                                                                   ; 121 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 120 (82)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
+;       |lpm_mux0:inst114|                                                                                ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114                                                                                                                                                                                                                                                                                                   ; work         ;
+;          |lpm_mux:LPM_MUX_component|                                                                    ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component                                                                                                                                                                                                                                                                         ; work         ;
+;             |mux_v4e:auto_generated|                                                                    ; 255 (255)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                                                                                                                                                                                                                                  ; work         ;
+;    |random_address_gen:inst6|                                                                           ; 85 (0)            ; 29 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6                                                                                                                                                                                                                                                                                                             ; work         ;
+;       |g21_RANDU:inst9|                                                                                 ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9                                                                                                                                                                                                                                                                                             ; work         ;
+;          |add_sub:A1|                                                                                   ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1                                                                                                                                                                                                                                                                                  ; work         ;
+;             |lpm_add_sub:LPM_ADD_SUB_component|                                                         ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component                                                                                                                                                                                                                                                ; work         ;
+;                |add_sub_plh:auto_generated|                                                             ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                                                                                                                                                                                                     ; work         ;
+;       |g21_dealer_FSM:inst1|                                                                            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|g21_dealer_FSM:inst1                                                                                                                                                                                                                                                                                        ; work         ;
+;       |lpm_divide0:inst10|                                                                              ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10                                                                                                                                                                                                                                                                                          ; work         ;
+;          |lpm_divide:LPM_DIVIDE_component|                                                              ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                                                                                          ; work         ;
+;             |lpm_divide_grp:auto_generated|                                                             ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated                                                                                                                                                                                                                            ; work         ;
+;                |sign_div_unsign_bkh:divider|                                                            ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider                                                                                                                                                                                                ; work         ;
+;                   |alt_u_div_ove:divider|                                                               ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider                                                                                                                                                                          ; work         ;
+;       |lpm_ff:inst11|                                                                                   ; 28 (28)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|random_address_gen:inst6|lpm_ff:inst11                                                                                                                                                                                                                                                                                               ; work         ;
+;    |sld_hub:auto_hub|                                                                                   ; 119 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 118 (80)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                      ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 274 (1)           ; 475 (44)     ; 2816        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ; work         ;
@@ -937,38 +943,30 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                 ;
-+-----------------------------------------------------------+----------------------------------------+
-; Register name                                             ; Reason for Removal                     ;
-+-----------------------------------------------------------+----------------------------------------+
-; random_address_gen:inst6|lpm_ff:inst11|dffs[0..31]        ; Stuck at GND due to stuck port clear   ;
-; random_address_gen:inst6|g21_dealer_FSM:inst1|Rand_Enable ; Stuck at GND due to stuck port clear   ;
-; g21_stack52:inst8|inst126                                 ; Stuck at GND due to stuck port data_in ;
-; Deal_FSM:inst|dealer_wins[2..31]                          ; Lost fanout                            ;
-; Deal_FSM:inst|player_wins[2..31]                          ; Lost fanout                            ;
-; g21_stack52:inst8|inst111                                 ; Merged with g21_stack52:inst8|inst116  ;
-; Total Number of Removed Registers = 95                    ;                                        ;
-+-----------------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                       ;
++-------------------------------------------------+----------------------------------------+
+; Register name                                   ; Reason for Removal                     ;
++-------------------------------------------------+----------------------------------------+
+; random_address_gen:inst6|lpm_ff:inst11|dffs[31] ; Stuck at GND due to stuck port data_in ;
+; g21_stack52:inst8|inst126                       ; Stuck at GND due to stuck port data_in ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[0]  ; Stuck at GND due to stuck port data_in ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[1]  ; Stuck at VCC due to stuck port data_in ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[3]  ; Stuck at GND due to stuck port data_in ;
+; Deal_FSM:inst|dealer_wins[2..31]                ; Lost fanout                            ;
+; Deal_FSM:inst|player_wins[2..31]                ; Lost fanout                            ;
+; Total Number of Removed Registers = 65          ;                                        ;
++-------------------------------------------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                            ;
-+-----------------------------------------------------------+-------------------------+--------------------------------------------------+
-; Register name                                             ; Reason for Removal      ; Registers Removed due to This Register           ;
-+-----------------------------------------------------------+-------------------------+--------------------------------------------------+
-; random_address_gen:inst6|lpm_ff:inst11|dffs[31]           ; Stuck at GND            ; random_address_gen:inst6|lpm_ff:inst11|dffs[30], ;
-;                                                           ; due to stuck port clear ; random_address_gen:inst6|lpm_ff:inst11|dffs[29], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[28], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[27], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[26], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[25], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[24], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[23], ;
-;                                                           ;                         ; random_address_gen:inst6|lpm_ff:inst11|dffs[22]  ;
-; random_address_gen:inst6|g21_dealer_FSM:inst1|Rand_Enable ; Stuck at GND            ; g21_stack52:inst8|inst126                        ;
-;                                                           ; due to stuck port clear ;                                                  ;
-+-----------------------------------------------------------+-------------------------+--------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++------------------------------------------------+---------------------------+-------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register          ;
++------------------------------------------------+---------------------------+-------------------------------------------------+
+; random_address_gen:inst6|lpm_ff:inst11|dffs[0] ; Stuck at GND              ; random_address_gen:inst6|lpm_ff:inst11|dffs[1], ;
+;                                                ; due to stuck port data_in ; random_address_gen:inst6|lpm_ff:inst11|dffs[3]  ;
++------------------------------------------------+---------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -976,10 +974,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 993   ;
+; Total registers                              ; 1023  ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 420   ;
-; Number of registers using Asynchronous Clear ; 223   ;
+; Number of registers using Asynchronous Clear ; 251   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 669   ;
 ; Number of registers using Preset             ; 0     ;
@@ -991,6 +989,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                             ; Fan out ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; random_address_gen:inst6|lpm_ff:inst11|dffs[13]                                                                                                                               ; 3       ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[8]                                                                                                                                ; 3       ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[6]                                                                                                                                ; 3       ;
+; random_address_gen:inst6|lpm_ff:inst11|dffs[5]                                                                                                                                ; 3       ;
 ; Deal_FSM:inst|dealer_wins[0]                                                                                                                                                  ; 3       ;
 ; Deal_FSM:inst|player_wins[0]                                                                                                                                                  ; 3       ;
 ; sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|tdo                                                                                                             ; 1       ;
@@ -1005,7 +1007,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[7] ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|trigger_out_mode_ff                                               ; 2       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0] ; 1       ;
-; Total number of inverted registers = 14                                                                                                                                       ;         ;
+; Total number of inverted registers = 18                                                                                                                                       ;         ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1014,8 +1016,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |g21_lab5_testbed|Deal_FSM:inst|Dealer_score[0]                                                                         ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |g21_lab5_testbed|Deal_FSM:inst|Player_score[0]                                                                         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |g21_lab5_testbed|Deal_FSM:inst|Dealer_score[1]                                                                         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |g21_lab5_testbed|Deal_FSM:inst|Player_score[1]                                                                         ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:dealer_rules|total_value_temp[1]                                                            ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:player_rules|total_value_temp[2]                                                            ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |g21_lab5_testbed|Deal_FSM:inst|Selector1                                                                               ;
@@ -3248,7 +3250,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:07     ;
+; Top              ; 00:00:03     ;
 ; sld_hub:auto_hub ; 00:00:00     ;
 +------------------+--------------+
 
@@ -3312,7 +3314,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 30 10:11:36 2017
+    Info: Processing started: Thu Nov 30 18:54:57 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab5 -c g21_lab3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
@@ -4470,15 +4472,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 13 of its 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 32 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1798 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1839 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 1708 logic cells
+    Info (21061): Implemented 1749 logic cells
     Info (21064): Implemented 74 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 291 warnings
-    Info: Peak virtual memory: 680 megabytes
-    Info: Processing ended: Thu Nov 30 10:12:05 2017
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 682 megabytes
+    Info: Processing ended: Thu Nov 30 18:55:13 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:13
 
 
