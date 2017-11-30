@@ -5,9 +5,8 @@ CLK => g21_SPG:Play_debounce.CLK
 CLK => g21_SPG:Stop_debounce.CLK
 CLK => g21_SPG:INIT_debounce.CLK
 CLK => Deal_FSM:inst.Clock
-CLK => g21_stack52:inst8.CLK
 CLK => random_address_gen:inst6.CLK
-CLK => LPM_FF:card_hold.clock
+CLK => g21_stack52:inst8.CLK
 butt2 => g21_SPG:Stop_debounce.SwitchEnable
 butt1 => g21_SPG:INIT_debounce.SwitchEnable
 red_led2 <= dealer_LED[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -15709,39 +15708,6 @@ sel[0] => result_node[1].IN0
 sel[0] => _.IN0
 sel[0] => result_node[0].IN0
 sel[0] => _.IN0
-
-
-|g21_lab5_testbed|LPM_FF:card_hold
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|random_address_gen:inst6
