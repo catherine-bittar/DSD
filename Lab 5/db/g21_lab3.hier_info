@@ -4,7 +4,7 @@ butt3 => g21_SPG:Play_debounce.SwitchEnable
 CLK => g21_SPG:Play_debounce.CLK
 CLK => g21_SPG:Stop_debounce.CLK
 CLK => g21_SPG:INIT_debounce.CLK
-CLK => Deal_FSM:Controller.Clock
+CLK => Deal_FSM:inst.Clock
 CLK => g21_stack52:inst8.CLK
 CLK => random_address_gen:inst6.CLK
 CLK => LPM_FF:card_hold.clock
@@ -15,6 +15,7 @@ red_led3 <= dealer_LED[2].DB_MAX_OUTPUT_PORT_TYPE
 green_led3 <= player_LED[2].DB_MAX_OUTPUT_PORT_TYPE
 green_led1 <= player_LED[0].DB_MAX_OUTPUT_PORT_TYPE
 green_led2 <= player_LED[1].DB_MAX_OUTPUT_PORT_TYPE
+player_turn_led <= player_turn.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_show_score:dealer_score_show
@@ -28,7 +29,7 @@ led_on[1] <= score[1].DB_MAX_OUTPUT_PORT_TYPE
 led_on[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|Deal_FSM:Controller
+|g21_lab5_testbed|Deal_FSM:inst
 Request_Deal => present_state.DATAA
 Request_Deal => present_state.DATAA
 Stop => present_state.OUTPUTSELECT
@@ -120,6 +121,7 @@ Clock => dealer_wins[28].CLK
 Clock => dealer_wins[29].CLK
 Clock => dealer_wins[30].CLK
 Clock => dealer_wins[31].CLK
+Clock => player_turn~reg0.CLK
 Clock => Compare_enable~reg0.CLK
 Clock => deal_en~reg0.CLK
 Clock => Player_score[0]~reg0.CLK
@@ -223,6 +225,7 @@ Game_over => Dealer_Enable.OUTPUTSELECT
 Game_over => Player_Enable.OUTPUTSELECT
 Game_over => deal_en.OUTPUTSELECT
 Game_over => Compare_enable.OUTPUTSELECT
+Game_over => player_turn.OUTPUTSELECT
 Game_over => Dealer_score.OUTPUTSELECT
 Game_over => Dealer_score.OUTPUTSELECT
 Game_over => Player_score.OUTPUTSELECT
@@ -231,6 +234,7 @@ Game_over => Dealer_Enable.OUTPUTSELECT
 Game_over => Player_Enable.OUTPUTSELECT
 Game_over => deal_en.OUTPUTSELECT
 Game_over => Compare_enable.OUTPUTSELECT
+Game_over => player_turn.OUTPUTSELECT
 Game_over => Dealer_score.OUTPUTSELECT
 Game_over => Dealer_score.OUTPUTSELECT
 Game_over => Player_score.OUTPUTSELECT
@@ -241,6 +245,7 @@ Dealer_score[0] <= Dealer_score[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dealer_score[1] <= Dealer_score[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Player_score[0] <= Player_score[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Player_score[1] <= Player_score[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+player_turn <= player_turn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 deal_en <= deal_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Compare_enable <= Compare_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 

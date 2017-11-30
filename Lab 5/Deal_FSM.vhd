@@ -32,6 +32,7 @@ entity Deal_FSM is
 		  Player_Enable: out std_logic;-- TODO: similarly like above
 		  Dealer_score : out std_logic_vector(1 downto 0);
 		  Player_score : out std_logic_vector(1 downto 0);
+		  player_turn  : out std_logic; -- activate rightmost gree LED to indicate player's turn
 		  deal_en      : out std_logic; -- OR'd with rand_enable(deal_card) as the nable signal to DFF that holds random ADDR so that we can enable w/o pushing Request_Deal(see modified testbed 4)
 		  Compare_enable: out std_logic);
 end Deal_FSM;
@@ -172,7 +173,8 @@ begin
 					Dealer_score <= "00";
 					Player_score <= "00"; 
 					deal_en <= '0'; 
-					Compare_enable <= '0'; 	
+					Compare_enable <= '0'; 
+					player_turn <= '0';
 				
 				when ready =>
 					if (Game_over = '0') then
@@ -180,6 +182,7 @@ begin
 						Player_Enable <= '0'; 
 						deal_en <= '0'; 
 						Compare_enable <= '0';
+						player_turn <= '0';
 					elsif (Game_over ='1') then
 						Dealer_Enable <= '0'; 
 						Player_Enable <= '0';
@@ -187,6 +190,7 @@ begin
 						Player_score <= "00"; 
 						deal_en <= '0'; 
 						Compare_enable <= '0';
+						player_turn <= '0';
 					end if;
 				
 				when dealer_wait =>
@@ -194,6 +198,7 @@ begin
 				
 				when player_wait =>
 					-- indicate player's turn somehow? LEDs?
+					player_turn <= '1';
 				
 				when dealer_card1 =>
 					--

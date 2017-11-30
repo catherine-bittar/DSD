@@ -138,16 +138,23 @@ applicable agreement for further details.
 	(port
 		(pt 240 96)
 		(output)
-		(text "deal_en" (rect 0 0 30 12)(font "Arial" ))
-		(text "deal_en" (rect 189 91 219 103)(font "Arial" ))
+		(text "player_turn" (rect 0 0 46 12)(font "Arial" ))
+		(text "player_turn" (rect 173 91 219 103)(font "Arial" ))
 		(line (pt 240 96)(pt 224 96)(line_width 1))
 	)
 	(port
 		(pt 240 112)
 		(output)
-		(text "Compare_enable" (rect 0 0 68 12)(font "Arial" ))
-		(text "Compare_enable" (rect 151 107 219 119)(font "Arial" ))
+		(text "deal_en" (rect 0 0 30 12)(font "Arial" ))
+		(text "deal_en" (rect 189 107 219 119)(font "Arial" ))
 		(line (pt 240 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "Compare_enable" (rect 0 0 68 12)(font "Arial" ))
+		(text "Compare_enable" (rect 151 123 219 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 224 224)(line_width 1))
