@@ -1,20 +1,74 @@
 |g21_lab5_testbed
 red_led1 <= dealer_LED[0].DB_MAX_OUTPUT_PORT_TYPE
-butt3 => g21_SPG:Play_debounce.SwitchEnable
+CLK => lpm_counter_score:inst7.clock
 CLK => g21_SPG:Play_debounce.CLK
 CLK => g21_SPG:Stop_debounce.CLK
 CLK => g21_SPG:INIT_debounce.CLK
+CLK => g21_SPG:INIT_debounce17.CLK
 CLK => Deal_FSM:inst.Clock
 CLK => random_address_gen:inst6.CLK
 CLK => g21_stack52:inst8.CLK
-butt2 => g21_SPG:Stop_debounce.SwitchEnable
-butt1 => g21_SPG:INIT_debounce.SwitchEnable
+CLK => LPM_FF:inst12.clock
+CLK => LPM_FF:inst16.clock
+CLK => lpm_counter_score:inst15.clock
+CLK => LPM_FF:inst3.clock
+butt_play => g21_SPG:Play_debounce.SwitchEnable
+butt_Stop => g21_SPG:Stop_debounce.SwitchEnable
+butt_INIT => g21_SPG:INIT_debounce.SwitchEnable
+buttreset => g21_SPG:INIT_debounce17.SwitchEnable
 red_led2 <= dealer_LED[1].DB_MAX_OUTPUT_PORT_TYPE
 red_led3 <= dealer_LED[2].DB_MAX_OUTPUT_PORT_TYPE
 green_led3 <= player_LED[2].DB_MAX_OUTPUT_PORT_TYPE
 green_led1 <= player_LED[0].DB_MAX_OUTPUT_PORT_TYPE
 green_led2 <= player_LED[1].DB_MAX_OUTPUT_PORT_TYPE
 player_turn_led <= player_turn.DB_MAX_OUTPUT_PORT_TYPE
+7_dealer_dec[0] <= BUSMUX:inst14.result[0]
+7_dealer_dec[1] <= BUSMUX:inst14.result[1]
+7_dealer_dec[2] <= BUSMUX:inst14.result[2]
+7_dealer_dec[3] <= BUSMUX:inst14.result[3]
+7_dealer_dec[4] <= BUSMUX:inst14.result[4]
+7_dealer_dec[5] <= BUSMUX:inst14.result[5]
+7_dealer_dec[6] <= BUSMUX:inst14.result[6]
+pin_name1 => BUSMUX:inst14.sel
+7_dealer_un[0] <= show_totals:total_display.dealer_total_unit[0]
+7_dealer_un[1] <= show_totals:total_display.dealer_total_unit[1]
+7_dealer_un[2] <= show_totals:total_display.dealer_total_unit[2]
+7_dealer_un[3] <= show_totals:total_display.dealer_total_unit[3]
+7_dealer_un[4] <= show_totals:total_display.dealer_total_unit[4]
+7_dealer_un[5] <= show_totals:total_display.dealer_total_unit[5]
+7_dealer_un[6] <= show_totals:total_display.dealer_total_unit[6]
+7_player_dec[0] <= show_totals:total_display.player_total_dec[0]
+7_player_dec[1] <= show_totals:total_display.player_total_dec[1]
+7_player_dec[2] <= show_totals:total_display.player_total_dec[2]
+7_player_dec[3] <= show_totals:total_display.player_total_dec[3]
+7_player_dec[4] <= show_totals:total_display.player_total_dec[4]
+7_player_dec[5] <= show_totals:total_display.player_total_dec[5]
+7_player_dec[6] <= show_totals:total_display.player_total_dec[6]
+7_player_un[0] <= show_totals:total_display.player_total_unit[0]
+7_player_un[1] <= show_totals:total_display.player_total_unit[1]
+7_player_un[2] <= show_totals:total_display.player_total_unit[2]
+7_player_un[3] <= show_totals:total_display.player_total_unit[3]
+7_player_un[4] <= show_totals:total_display.player_total_unit[4]
+7_player_un[5] <= show_totals:total_display.player_total_unit[5]
+7_player_un[6] <= show_totals:total_display.player_total_unit[6]
+dealertotal[0] <= dealer_total[0].DB_MAX_OUTPUT_PORT_TYPE
+dealertotal[1] <= dealer_total[1].DB_MAX_OUTPUT_PORT_TYPE
+dealertotal[2] <= dealer_total[2].DB_MAX_OUTPUT_PORT_TYPE
+dealertotal[3] <= dealer_total[3].DB_MAX_OUTPUT_PORT_TYPE
+dealertotal[4] <= dealer_total[4].DB_MAX_OUTPUT_PORT_TYPE
+dealertotal[5] <= dealer_total[5].DB_MAX_OUTPUT_PORT_TYPE
+numstack[0] <= NUM[0].DB_MAX_OUTPUT_PORT_TYPE
+numstack[1] <= NUM[1].DB_MAX_OUTPUT_PORT_TYPE
+numstack[2] <= NUM[2].DB_MAX_OUTPUT_PORT_TYPE
+numstack[3] <= NUM[3].DB_MAX_OUTPUT_PORT_TYPE
+numstack[4] <= NUM[4].DB_MAX_OUTPUT_PORT_TYPE
+numstack[5] <= NUM[5].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[0] <= player_total[0].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[1] <= player_total[1].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[2] <= player_total[2].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[3] <= player_total[3].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[4] <= player_total[4].DB_MAX_OUTPUT_PORT_TYPE
+playertotal[5] <= player_total[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_show_score:dealer_score_show
@@ -28,160 +82,193 @@ led_on[1] <= score[1].DB_MAX_OUTPUT_PORT_TYPE
 led_on[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|g21_lab5_testbed|lpm_counter_score:inst15
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+
+
+|g21_lab5_testbed|lpm_counter_score:inst15|lpm_counter:LPM_COUNTER_component
+clock => cntr_1oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_1oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_1oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_1oi:auto_generated.q[0]
+q[1] <= cntr_1oi:auto_generated.q[1]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|g21_lab5_testbed|lpm_counter_score:inst15|lpm_counter:LPM_COUNTER_component|cntr_1oi:auto_generated
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|g21_lab5_testbed|game_over:inst5
+score_player[0] => LessThan1.IN4
+score_player[1] => LessThan1.IN3
+score_dealer[0] => LessThan0.IN4
+score_dealer[1] => LessThan0.IN3
+game_is_over <= determine_game_over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|lpm_counter_score:inst7
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+
+
+|g21_lab5_testbed|lpm_counter_score:inst7|lpm_counter:LPM_COUNTER_component
+clock => cntr_1oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_1oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_1oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_1oi:auto_generated.q[0]
+q[1] <= cntr_1oi:auto_generated.q[1]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|g21_lab5_testbed|lpm_counter_score:inst7|lpm_counter:LPM_COUNTER_component|cntr_1oi:auto_generated
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
 |g21_lab5_testbed|Deal_FSM:inst
 Request_Deal => present_state.DATAA
 Request_Deal => present_state.DATAA
 Stop => present_state.OUTPUTSELECT
 Stop => present_state.OUTPUTSELECT
-Stop => Selector2.IN8
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => present_state.OUTPUTSELECT
-INIT => Selector1.IN7
-INIT => Selector0.IN1
+Stop => Selector2.IN7
+INIT => Selector1.IN6
+INIT => Selector0.IN3
 reset => present_state~22.DATAIN
-Clock => player_wins[0].CLK
-Clock => player_wins[1].CLK
-Clock => player_wins[2].CLK
-Clock => player_wins[3].CLK
-Clock => player_wins[4].CLK
-Clock => player_wins[5].CLK
-Clock => player_wins[6].CLK
-Clock => player_wins[7].CLK
-Clock => player_wins[8].CLK
-Clock => player_wins[9].CLK
-Clock => player_wins[10].CLK
-Clock => player_wins[11].CLK
-Clock => player_wins[12].CLK
-Clock => player_wins[13].CLK
-Clock => player_wins[14].CLK
-Clock => player_wins[15].CLK
-Clock => player_wins[16].CLK
-Clock => player_wins[17].CLK
-Clock => player_wins[18].CLK
-Clock => player_wins[19].CLK
-Clock => player_wins[20].CLK
-Clock => player_wins[21].CLK
-Clock => player_wins[22].CLK
-Clock => player_wins[23].CLK
-Clock => player_wins[24].CLK
-Clock => player_wins[25].CLK
-Clock => player_wins[26].CLK
-Clock => player_wins[27].CLK
-Clock => player_wins[28].CLK
-Clock => player_wins[29].CLK
-Clock => player_wins[30].CLK
-Clock => player_wins[31].CLK
-Clock => dealer_wins[0].CLK
-Clock => dealer_wins[1].CLK
-Clock => dealer_wins[2].CLK
-Clock => dealer_wins[3].CLK
-Clock => dealer_wins[4].CLK
-Clock => dealer_wins[5].CLK
-Clock => dealer_wins[6].CLK
-Clock => dealer_wins[7].CLK
-Clock => dealer_wins[8].CLK
-Clock => dealer_wins[9].CLK
-Clock => dealer_wins[10].CLK
-Clock => dealer_wins[11].CLK
-Clock => dealer_wins[12].CLK
-Clock => dealer_wins[13].CLK
-Clock => dealer_wins[14].CLK
-Clock => dealer_wins[15].CLK
-Clock => dealer_wins[16].CLK
-Clock => dealer_wins[17].CLK
-Clock => dealer_wins[18].CLK
-Clock => dealer_wins[19].CLK
-Clock => dealer_wins[20].CLK
-Clock => dealer_wins[21].CLK
-Clock => dealer_wins[22].CLK
-Clock => dealer_wins[23].CLK
-Clock => dealer_wins[24].CLK
-Clock => dealer_wins[25].CLK
-Clock => dealer_wins[26].CLK
-Clock => dealer_wins[27].CLK
-Clock => dealer_wins[28].CLK
-Clock => dealer_wins[29].CLK
-Clock => dealer_wins[30].CLK
-Clock => dealer_wins[31].CLK
+reset => player_change.ENA
+reset => temp_player[4].ENA
+reset => temp_player[3].ENA
+reset => temp_player[2].ENA
+reset => temp_player[1].ENA
+reset => temp_player[0].ENA
 Clock => player_turn~reg0.CLK
 Clock => Compare_enable~reg0.CLK
 Clock => deal_en~reg0.CLK
-Clock => Player_score[0]~reg0.CLK
-Clock => Player_score[1]~reg0.CLK
-Clock => Dealer_score[0]~reg0.CLK
-Clock => Dealer_score[1]~reg0.CLK
+Clock => count_player~reg0.CLK
+Clock => count_dealer~reg0.CLK
 Clock => Player_Enable~reg0.CLK
 Clock => Dealer_Enable~reg0.CLK
+Clock => temp_player[0].CLK
+Clock => temp_player[1].CLK
+Clock => temp_player[2].CLK
+Clock => temp_player[3].CLK
+Clock => temp_player[4].CLK
+Clock => player_change.CLK
 Clock => present_state~20.DATAIN
 Dealer_legal => ~NO_FANOUT~
-Player_legal => fsm.IN1
-Player_legal => fsm.IN1
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Player_legal => present_state.OUTPUTSELECT
-Dealer_total[0] => LessThan0.IN12
-Dealer_total[0] => LessThan1.IN12
-Dealer_total[0] => LessThan2.IN12
-Dealer_total[0] => Equal1.IN5
-Dealer_total[1] => LessThan0.IN11
-Dealer_total[1] => LessThan1.IN11
-Dealer_total[1] => LessThan2.IN11
-Dealer_total[1] => Equal1.IN2
-Dealer_total[2] => LessThan0.IN10
-Dealer_total[2] => LessThan1.IN10
-Dealer_total[2] => LessThan2.IN10
-Dealer_total[2] => Equal1.IN4
-Dealer_total[3] => LessThan0.IN9
-Dealer_total[3] => LessThan1.IN9
-Dealer_total[3] => LessThan2.IN9
-Dealer_total[3] => Equal1.IN1
-Dealer_total[4] => LessThan0.IN8
-Dealer_total[4] => LessThan1.IN8
-Dealer_total[4] => LessThan2.IN8
-Dealer_total[4] => Equal1.IN3
-Dealer_total[5] => LessThan0.IN7
-Dealer_total[5] => LessThan1.IN7
-Dealer_total[5] => LessThan2.IN7
-Dealer_total[5] => Equal1.IN0
-Player_total[0] => Equal0.IN5
-Player_total[1] => Equal0.IN2
-Player_total[2] => Equal0.IN4
-Player_total[3] => Equal0.IN1
-Player_total[4] => Equal0.IN3
-Player_total[5] => Equal0.IN0
+Player_legal => Selector3.IN7
+Player_legal => Selector16.IN2
+Dealer_total[0] => LessThan0.IN10
+Dealer_total[0] => LessThan1.IN10
+Dealer_total[0] => LessThan2.IN10
+Dealer_total[0] => Equal1.IN4
+Dealer_total[1] => LessThan0.IN9
+Dealer_total[1] => LessThan1.IN9
+Dealer_total[1] => LessThan2.IN9
+Dealer_total[1] => Equal1.IN1
+Dealer_total[2] => LessThan0.IN8
+Dealer_total[2] => LessThan1.IN8
+Dealer_total[2] => LessThan2.IN8
+Dealer_total[2] => Equal1.IN3
+Dealer_total[3] => LessThan0.IN7
+Dealer_total[3] => LessThan1.IN7
+Dealer_total[3] => LessThan2.IN7
+Dealer_total[3] => Equal1.IN0
+Dealer_total[4] => LessThan0.IN6
+Dealer_total[4] => LessThan1.IN6
+Dealer_total[4] => LessThan2.IN6
+Dealer_total[4] => Equal1.IN2
+Player_total[0] => player_change.IN1
+Player_total[0] => Equal0.IN4
+Player_total[0] => temp_player[0].DATAIN
+Player_total[1] => player_change.IN1
+Player_total[1] => Equal0.IN1
+Player_total[1] => temp_player[1].DATAIN
+Player_total[2] => player_change.IN1
+Player_total[2] => Equal0.IN3
+Player_total[2] => temp_player[2].DATAIN
+Player_total[3] => player_change.IN1
+Player_total[3] => Equal0.IN0
+Player_total[3] => temp_player[3].DATAIN
+Player_total[4] => player_change.IN1
+Player_total[4] => Equal0.IN2
+Player_total[4] => temp_player[4].DATAIN
 Dealer_high => present_state.OUTPUTSELECT
 Dealer_high => present_state.OUTPUTSELECT
 Dealer_high => present_state.OUTPUTSELECT
@@ -225,28 +312,22 @@ Game_over => Player_Enable.OUTPUTSELECT
 Game_over => deal_en.OUTPUTSELECT
 Game_over => Compare_enable.OUTPUTSELECT
 Game_over => player_turn.OUTPUTSELECT
-Game_over => Dealer_score.OUTPUTSELECT
-Game_over => Dealer_score.OUTPUTSELECT
-Game_over => Player_score.OUTPUTSELECT
-Game_over => Player_score.OUTPUTSELECT
 Game_over => Dealer_Enable.OUTPUTSELECT
 Game_over => Player_Enable.OUTPUTSELECT
 Game_over => deal_en.OUTPUTSELECT
 Game_over => Compare_enable.OUTPUTSELECT
 Game_over => player_turn.OUTPUTSELECT
-Game_over => Dealer_score.OUTPUTSELECT
-Game_over => Dealer_score.OUTPUTSELECT
-Game_over => Player_score.OUTPUTSELECT
-Game_over => Player_score.OUTPUTSELECT
 Dealer_Enable <= Dealer_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Player_Enable <= Player_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Dealer_score[0] <= Dealer_score[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Dealer_score[1] <= Dealer_score[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Player_score[0] <= Player_score[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Player_score[1] <= Player_score[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dealer_score[0] <= Dealer_score[0].DB_MAX_OUTPUT_PORT_TYPE
+Dealer_score[1] <= Dealer_score[1].DB_MAX_OUTPUT_PORT_TYPE
+Player_score[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Player_score[1] <= Player_score[1].DB_MAX_OUTPUT_PORT_TYPE
 player_turn <= player_turn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 deal_en <= deal_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Compare_enable <= Compare_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_dealer <= count_dealer~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_player <= count_player~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_SPG:Play_debounce
@@ -1956,7 +2037,576 @@ datab[24] => _.IN1
 datab[24] => op_1.IN1
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules
+|g21_lab5_testbed|g21_SPG:INIT_debounce17
+SPG_ENABLE <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => SPG_lpm_counter:inst2.clock
+CLK => inst.CLK
+SwitchEnable => inst1.IN0
+SwitchEnable => inst.IN0
+counter[0] <= SPG_lpm_counter:inst2.q[0]
+counter[1] <= SPG_lpm_counter:inst2.q[1]
+counter[2] <= SPG_lpm_counter:inst2.q[2]
+counter[3] <= SPG_lpm_counter:inst2.q[3]
+counter[4] <= SPG_lpm_counter:inst2.q[4]
+counter[5] <= SPG_lpm_counter:inst2.q[5]
+counter[6] <= SPG_lpm_counter:inst2.q[6]
+counter[7] <= SPG_lpm_counter:inst2.q[7]
+counter[8] <= SPG_lpm_counter:inst2.q[8]
+counter[9] <= SPG_lpm_counter:inst2.q[9]
+counter[10] <= SPG_lpm_counter:inst2.q[10]
+counter[11] <= SPG_lpm_counter:inst2.q[11]
+counter[12] <= SPG_lpm_counter:inst2.q[12]
+counter[13] <= SPG_lpm_counter:inst2.q[13]
+counter[14] <= SPG_lpm_counter:inst2.q[14]
+counter[15] <= SPG_lpm_counter:inst2.q[15]
+counter[16] <= SPG_lpm_counter:inst2.q[16]
+counter[17] <= SPG_lpm_counter:inst2.q[17]
+counter[18] <= SPG_lpm_counter:inst2.q[18]
+counter[19] <= SPG_lpm_counter:inst2.q[19]
+counter[20] <= SPG_lpm_counter:inst2.q[20]
+counter[21] <= SPG_lpm_counter:inst2.q[21]
+counter[22] <= SPG_lpm_counter:inst2.q[22]
+counter[23] <= SPG_lpm_counter:inst2.q[23]
+counter[24] <= SPG_lpm_counter:inst2.q[24]
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_compare:inst3
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+dataa[5] => lpm_compare:LPM_COMPARE_component.dataa[5]
+dataa[6] => lpm_compare:LPM_COMPARE_component.dataa[6]
+dataa[7] => lpm_compare:LPM_COMPARE_component.dataa[7]
+dataa[8] => lpm_compare:LPM_COMPARE_component.dataa[8]
+dataa[9] => lpm_compare:LPM_COMPARE_component.dataa[9]
+dataa[10] => lpm_compare:LPM_COMPARE_component.dataa[10]
+dataa[11] => lpm_compare:LPM_COMPARE_component.dataa[11]
+dataa[12] => lpm_compare:LPM_COMPARE_component.dataa[12]
+dataa[13] => lpm_compare:LPM_COMPARE_component.dataa[13]
+dataa[14] => lpm_compare:LPM_COMPARE_component.dataa[14]
+dataa[15] => lpm_compare:LPM_COMPARE_component.dataa[15]
+dataa[16] => lpm_compare:LPM_COMPARE_component.dataa[16]
+dataa[17] => lpm_compare:LPM_COMPARE_component.dataa[17]
+dataa[18] => lpm_compare:LPM_COMPARE_component.dataa[18]
+dataa[19] => lpm_compare:LPM_COMPARE_component.dataa[19]
+dataa[20] => lpm_compare:LPM_COMPARE_component.dataa[20]
+dataa[21] => lpm_compare:LPM_COMPARE_component.dataa[21]
+dataa[22] => lpm_compare:LPM_COMPARE_component.dataa[22]
+dataa[23] => lpm_compare:LPM_COMPARE_component.dataa[23]
+dataa[24] => lpm_compare:LPM_COMPARE_component.dataa[24]
+alb <= lpm_compare:LPM_COMPARE_component.alb
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_a9j:auto_generated.dataa[0]
+dataa[1] => cmpr_a9j:auto_generated.dataa[1]
+dataa[2] => cmpr_a9j:auto_generated.dataa[2]
+dataa[3] => cmpr_a9j:auto_generated.dataa[3]
+dataa[4] => cmpr_a9j:auto_generated.dataa[4]
+dataa[5] => cmpr_a9j:auto_generated.dataa[5]
+dataa[6] => cmpr_a9j:auto_generated.dataa[6]
+dataa[7] => cmpr_a9j:auto_generated.dataa[7]
+dataa[8] => cmpr_a9j:auto_generated.dataa[8]
+dataa[9] => cmpr_a9j:auto_generated.dataa[9]
+dataa[10] => cmpr_a9j:auto_generated.dataa[10]
+dataa[11] => cmpr_a9j:auto_generated.dataa[11]
+dataa[12] => cmpr_a9j:auto_generated.dataa[12]
+dataa[13] => cmpr_a9j:auto_generated.dataa[13]
+dataa[14] => cmpr_a9j:auto_generated.dataa[14]
+dataa[15] => cmpr_a9j:auto_generated.dataa[15]
+dataa[16] => cmpr_a9j:auto_generated.dataa[16]
+dataa[17] => cmpr_a9j:auto_generated.dataa[17]
+dataa[18] => cmpr_a9j:auto_generated.dataa[18]
+dataa[19] => cmpr_a9j:auto_generated.dataa[19]
+dataa[20] => cmpr_a9j:auto_generated.dataa[20]
+dataa[21] => cmpr_a9j:auto_generated.dataa[21]
+dataa[22] => cmpr_a9j:auto_generated.dataa[22]
+dataa[23] => cmpr_a9j:auto_generated.dataa[23]
+dataa[24] => cmpr_a9j:auto_generated.dataa[24]
+datab[0] => cmpr_a9j:auto_generated.datab[0]
+datab[1] => cmpr_a9j:auto_generated.datab[1]
+datab[2] => cmpr_a9j:auto_generated.datab[2]
+datab[3] => cmpr_a9j:auto_generated.datab[3]
+datab[4] => cmpr_a9j:auto_generated.datab[4]
+datab[5] => cmpr_a9j:auto_generated.datab[5]
+datab[6] => cmpr_a9j:auto_generated.datab[6]
+datab[7] => cmpr_a9j:auto_generated.datab[7]
+datab[8] => cmpr_a9j:auto_generated.datab[8]
+datab[9] => cmpr_a9j:auto_generated.datab[9]
+datab[10] => cmpr_a9j:auto_generated.datab[10]
+datab[11] => cmpr_a9j:auto_generated.datab[11]
+datab[12] => cmpr_a9j:auto_generated.datab[12]
+datab[13] => cmpr_a9j:auto_generated.datab[13]
+datab[14] => cmpr_a9j:auto_generated.datab[14]
+datab[15] => cmpr_a9j:auto_generated.datab[15]
+datab[16] => cmpr_a9j:auto_generated.datab[16]
+datab[17] => cmpr_a9j:auto_generated.datab[17]
+datab[18] => cmpr_a9j:auto_generated.datab[18]
+datab[19] => cmpr_a9j:auto_generated.datab[19]
+datab[20] => cmpr_a9j:auto_generated.datab[20]
+datab[21] => cmpr_a9j:auto_generated.datab[21]
+datab[22] => cmpr_a9j:auto_generated.datab[22]
+datab[23] => cmpr_a9j:auto_generated.datab[23]
+datab[24] => cmpr_a9j:auto_generated.datab[24]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= cmpr_a9j:auto_generated.alb
+aeb <= <GND>
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_compare:inst3|lpm_compare:LPM_COMPARE_component|cmpr_a9j:auto_generated
+alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN49
+dataa[1] => op_1.IN47
+dataa[2] => op_1.IN45
+dataa[3] => op_1.IN43
+dataa[4] => op_1.IN41
+dataa[5] => op_1.IN39
+dataa[6] => op_1.IN37
+dataa[7] => op_1.IN35
+dataa[8] => op_1.IN33
+dataa[9] => op_1.IN31
+dataa[10] => op_1.IN29
+dataa[11] => op_1.IN27
+dataa[12] => op_1.IN25
+dataa[13] => op_1.IN23
+dataa[14] => op_1.IN21
+dataa[15] => op_1.IN19
+dataa[16] => op_1.IN17
+dataa[17] => op_1.IN15
+dataa[18] => op_1.IN13
+dataa[19] => op_1.IN11
+dataa[20] => op_1.IN9
+dataa[21] => op_1.IN7
+dataa[22] => op_1.IN5
+dataa[23] => op_1.IN3
+dataa[24] => op_1.IN1
+datab[0] => op_1.IN50
+datab[1] => op_1.IN48
+datab[2] => op_1.IN46
+datab[3] => op_1.IN44
+datab[4] => op_1.IN42
+datab[5] => op_1.IN40
+datab[6] => op_1.IN38
+datab[7] => op_1.IN36
+datab[8] => op_1.IN34
+datab[9] => op_1.IN32
+datab[10] => op_1.IN30
+datab[11] => op_1.IN28
+datab[12] => op_1.IN26
+datab[13] => op_1.IN24
+datab[14] => op_1.IN22
+datab[15] => op_1.IN20
+datab[16] => op_1.IN18
+datab[17] => op_1.IN16
+datab[18] => op_1.IN14
+datab[19] => op_1.IN12
+datab[20] => op_1.IN10
+datab[21] => op_1.IN8
+datab[22] => op_1.IN6
+datab[23] => op_1.IN4
+datab[24] => op_1.IN2
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_counter:inst2
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sset => lpm_counter:LPM_COUNTER_component.sset
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
+q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
+q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
+q[6] <= lpm_counter:LPM_COUNTER_component.q[6]
+q[7] <= lpm_counter:LPM_COUNTER_component.q[7]
+q[8] <= lpm_counter:LPM_COUNTER_component.q[8]
+q[9] <= lpm_counter:LPM_COUNTER_component.q[9]
+q[10] <= lpm_counter:LPM_COUNTER_component.q[10]
+q[11] <= lpm_counter:LPM_COUNTER_component.q[11]
+q[12] <= lpm_counter:LPM_COUNTER_component.q[12]
+q[13] <= lpm_counter:LPM_COUNTER_component.q[13]
+q[14] <= lpm_counter:LPM_COUNTER_component.q[14]
+q[15] <= lpm_counter:LPM_COUNTER_component.q[15]
+q[16] <= lpm_counter:LPM_COUNTER_component.q[16]
+q[17] <= lpm_counter:LPM_COUNTER_component.q[17]
+q[18] <= lpm_counter:LPM_COUNTER_component.q[18]
+q[19] <= lpm_counter:LPM_COUNTER_component.q[19]
+q[20] <= lpm_counter:LPM_COUNTER_component.q[20]
+q[21] <= lpm_counter:LPM_COUNTER_component.q[21]
+q[22] <= lpm_counter:LPM_COUNTER_component.q[22]
+q[23] <= lpm_counter:LPM_COUNTER_component.q[23]
+q[24] <= lpm_counter:LPM_COUNTER_component.q[24]
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component
+clock => cntr_70k:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_70k:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => cntr_70k:auto_generated.sset
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
+data[10] => ~NO_FANOUT~
+data[11] => ~NO_FANOUT~
+data[12] => ~NO_FANOUT~
+data[13] => ~NO_FANOUT~
+data[14] => ~NO_FANOUT~
+data[15] => ~NO_FANOUT~
+data[16] => ~NO_FANOUT~
+data[17] => ~NO_FANOUT~
+data[18] => ~NO_FANOUT~
+data[19] => ~NO_FANOUT~
+data[20] => ~NO_FANOUT~
+data[21] => ~NO_FANOUT~
+data[22] => ~NO_FANOUT~
+data[23] => ~NO_FANOUT~
+data[24] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_70k:auto_generated.q[0]
+q[1] <= cntr_70k:auto_generated.q[1]
+q[2] <= cntr_70k:auto_generated.q[2]
+q[3] <= cntr_70k:auto_generated.q[3]
+q[4] <= cntr_70k:auto_generated.q[4]
+q[5] <= cntr_70k:auto_generated.q[5]
+q[6] <= cntr_70k:auto_generated.q[6]
+q[7] <= cntr_70k:auto_generated.q[7]
+q[8] <= cntr_70k:auto_generated.q[8]
+q[9] <= cntr_70k:auto_generated.q[9]
+q[10] <= cntr_70k:auto_generated.q[10]
+q[11] <= cntr_70k:auto_generated.q[11]
+q[12] <= cntr_70k:auto_generated.q[12]
+q[13] <= cntr_70k:auto_generated.q[13]
+q[14] <= cntr_70k:auto_generated.q[14]
+q[15] <= cntr_70k:auto_generated.q[15]
+q[16] <= cntr_70k:auto_generated.q[16]
+q[17] <= cntr_70k:auto_generated.q[17]
+q[18] <= cntr_70k:auto_generated.q[18]
+q[19] <= cntr_70k:auto_generated.q[19]
+q[20] <= cntr_70k:auto_generated.q[20]
+q[21] <= cntr_70k:auto_generated.q[21]
+q[22] <= cntr_70k:auto_generated.q[22]
+q[23] <= cntr_70k:auto_generated.q[23]
+q[24] <= cntr_70k:auto_generated.q[24]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_counter:inst2|lpm_counter:LPM_COUNTER_component|cntr_70k:auto_generated
+clock => counter_reg_bit1a[24].CLK
+clock => counter_reg_bit1a[23].CLK
+clock => counter_reg_bit1a[22].CLK
+clock => counter_reg_bit1a[21].CLK
+clock => counter_reg_bit1a[20].CLK
+clock => counter_reg_bit1a[19].CLK
+clock => counter_reg_bit1a[18].CLK
+clock => counter_reg_bit1a[17].CLK
+clock => counter_reg_bit1a[16].CLK
+clock => counter_reg_bit1a[15].CLK
+clock => counter_reg_bit1a[14].CLK
+clock => counter_reg_bit1a[13].CLK
+clock => counter_reg_bit1a[12].CLK
+clock => counter_reg_bit1a[11].CLK
+clock => counter_reg_bit1a[10].CLK
+clock => counter_reg_bit1a[9].CLK
+clock => counter_reg_bit1a[8].CLK
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+q[3] <= counter_reg_bit1a[3].REGOUT
+q[4] <= counter_reg_bit1a[4].REGOUT
+q[5] <= counter_reg_bit1a[5].REGOUT
+q[6] <= counter_reg_bit1a[6].REGOUT
+q[7] <= counter_reg_bit1a[7].REGOUT
+q[8] <= counter_reg_bit1a[8].REGOUT
+q[9] <= counter_reg_bit1a[9].REGOUT
+q[10] <= counter_reg_bit1a[10].REGOUT
+q[11] <= counter_reg_bit1a[11].REGOUT
+q[12] <= counter_reg_bit1a[12].REGOUT
+q[13] <= counter_reg_bit1a[13].REGOUT
+q[14] <= counter_reg_bit1a[14].REGOUT
+q[15] <= counter_reg_bit1a[15].REGOUT
+q[16] <= counter_reg_bit1a[16].REGOUT
+q[17] <= counter_reg_bit1a[17].REGOUT
+q[18] <= counter_reg_bit1a[18].REGOUT
+q[19] <= counter_reg_bit1a[19].REGOUT
+q[20] <= counter_reg_bit1a[20].REGOUT
+q[21] <= counter_reg_bit1a[21].REGOUT
+q[22] <= counter_reg_bit1a[22].REGOUT
+q[23] <= counter_reg_bit1a[23].REGOUT
+q[24] <= counter_reg_bit1a[24].REGOUT
+sset => _.IN1
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN1
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+dataa[5] => lpm_compare:LPM_COMPARE_component.dataa[5]
+dataa[6] => lpm_compare:LPM_COMPARE_component.dataa[6]
+dataa[7] => lpm_compare:LPM_COMPARE_component.dataa[7]
+dataa[8] => lpm_compare:LPM_COMPARE_component.dataa[8]
+dataa[9] => lpm_compare:LPM_COMPARE_component.dataa[9]
+dataa[10] => lpm_compare:LPM_COMPARE_component.dataa[10]
+dataa[11] => lpm_compare:LPM_COMPARE_component.dataa[11]
+dataa[12] => lpm_compare:LPM_COMPARE_component.dataa[12]
+dataa[13] => lpm_compare:LPM_COMPARE_component.dataa[13]
+dataa[14] => lpm_compare:LPM_COMPARE_component.dataa[14]
+dataa[15] => lpm_compare:LPM_COMPARE_component.dataa[15]
+dataa[16] => lpm_compare:LPM_COMPARE_component.dataa[16]
+dataa[17] => lpm_compare:LPM_COMPARE_component.dataa[17]
+dataa[18] => lpm_compare:LPM_COMPARE_component.dataa[18]
+dataa[19] => lpm_compare:LPM_COMPARE_component.dataa[19]
+dataa[20] => lpm_compare:LPM_COMPARE_component.dataa[20]
+dataa[21] => lpm_compare:LPM_COMPARE_component.dataa[21]
+dataa[22] => lpm_compare:LPM_COMPARE_component.dataa[22]
+dataa[23] => lpm_compare:LPM_COMPARE_component.dataa[23]
+dataa[24] => lpm_compare:LPM_COMPARE_component.dataa[24]
+ageb <= lpm_compare:LPM_COMPARE_component.ageb
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_acj:auto_generated.dataa[0]
+dataa[1] => cmpr_acj:auto_generated.dataa[1]
+dataa[2] => cmpr_acj:auto_generated.dataa[2]
+dataa[3] => cmpr_acj:auto_generated.dataa[3]
+dataa[4] => cmpr_acj:auto_generated.dataa[4]
+dataa[5] => cmpr_acj:auto_generated.dataa[5]
+dataa[6] => cmpr_acj:auto_generated.dataa[6]
+dataa[7] => cmpr_acj:auto_generated.dataa[7]
+dataa[8] => cmpr_acj:auto_generated.dataa[8]
+dataa[9] => cmpr_acj:auto_generated.dataa[9]
+dataa[10] => cmpr_acj:auto_generated.dataa[10]
+dataa[11] => cmpr_acj:auto_generated.dataa[11]
+dataa[12] => cmpr_acj:auto_generated.dataa[12]
+dataa[13] => cmpr_acj:auto_generated.dataa[13]
+dataa[14] => cmpr_acj:auto_generated.dataa[14]
+dataa[15] => cmpr_acj:auto_generated.dataa[15]
+dataa[16] => cmpr_acj:auto_generated.dataa[16]
+dataa[17] => cmpr_acj:auto_generated.dataa[17]
+dataa[18] => cmpr_acj:auto_generated.dataa[18]
+dataa[19] => cmpr_acj:auto_generated.dataa[19]
+dataa[20] => cmpr_acj:auto_generated.dataa[20]
+dataa[21] => cmpr_acj:auto_generated.dataa[21]
+dataa[22] => cmpr_acj:auto_generated.dataa[22]
+dataa[23] => cmpr_acj:auto_generated.dataa[23]
+dataa[24] => cmpr_acj:auto_generated.dataa[24]
+datab[0] => cmpr_acj:auto_generated.datab[0]
+datab[1] => cmpr_acj:auto_generated.datab[1]
+datab[2] => cmpr_acj:auto_generated.datab[2]
+datab[3] => cmpr_acj:auto_generated.datab[3]
+datab[4] => cmpr_acj:auto_generated.datab[4]
+datab[5] => cmpr_acj:auto_generated.datab[5]
+datab[6] => cmpr_acj:auto_generated.datab[6]
+datab[7] => cmpr_acj:auto_generated.datab[7]
+datab[8] => cmpr_acj:auto_generated.datab[8]
+datab[9] => cmpr_acj:auto_generated.datab[9]
+datab[10] => cmpr_acj:auto_generated.datab[10]
+datab[11] => cmpr_acj:auto_generated.datab[11]
+datab[12] => cmpr_acj:auto_generated.datab[12]
+datab[13] => cmpr_acj:auto_generated.datab[13]
+datab[14] => cmpr_acj:auto_generated.datab[14]
+datab[15] => cmpr_acj:auto_generated.datab[15]
+datab[16] => cmpr_acj:auto_generated.datab[16]
+datab[17] => cmpr_acj:auto_generated.datab[17]
+datab[18] => cmpr_acj:auto_generated.datab[18]
+datab[19] => cmpr_acj:auto_generated.datab[19]
+datab[20] => cmpr_acj:auto_generated.datab[20]
+datab[21] => cmpr_acj:auto_generated.datab[21]
+datab[22] => cmpr_acj:auto_generated.datab[22]
+datab[23] => cmpr_acj:auto_generated.datab[23]
+datab[24] => cmpr_acj:auto_generated.datab[24]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= <GND>
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= cmpr_acj:auto_generated.ageb
+
+
+|g21_lab5_testbed|g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated
+ageb <= ageb.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => _.IN0
+dataa[0] => op_1.IN50
+dataa[1] => _.IN0
+dataa[1] => op_1.IN48
+dataa[2] => _.IN0
+dataa[2] => op_1.IN46
+dataa[3] => _.IN0
+dataa[3] => op_1.IN44
+dataa[4] => _.IN0
+dataa[4] => op_1.IN42
+dataa[5] => _.IN0
+dataa[5] => op_1.IN40
+dataa[6] => _.IN0
+dataa[6] => op_1.IN38
+dataa[7] => _.IN0
+dataa[7] => op_1.IN36
+dataa[8] => _.IN0
+dataa[8] => op_1.IN34
+dataa[9] => _.IN0
+dataa[9] => op_1.IN32
+dataa[10] => _.IN0
+dataa[10] => op_1.IN30
+dataa[11] => _.IN0
+dataa[11] => op_1.IN28
+dataa[12] => _.IN0
+dataa[12] => op_1.IN26
+dataa[13] => _.IN0
+dataa[13] => op_1.IN24
+dataa[14] => _.IN0
+dataa[14] => op_1.IN22
+dataa[15] => _.IN0
+dataa[15] => op_1.IN20
+dataa[16] => _.IN0
+dataa[16] => op_1.IN18
+dataa[17] => _.IN0
+dataa[17] => op_1.IN16
+dataa[18] => _.IN0
+dataa[18] => op_1.IN14
+dataa[19] => _.IN0
+dataa[19] => op_1.IN12
+dataa[20] => _.IN0
+dataa[20] => op_1.IN10
+dataa[21] => _.IN0
+dataa[21] => op_1.IN8
+dataa[22] => _.IN0
+dataa[22] => op_1.IN6
+dataa[23] => _.IN0
+dataa[23] => op_1.IN4
+dataa[24] => _.IN0
+dataa[24] => op_1.IN2
+datab[0] => _.IN1
+datab[0] => op_1.IN49
+datab[1] => _.IN1
+datab[1] => op_1.IN47
+datab[2] => _.IN1
+datab[2] => op_1.IN45
+datab[3] => _.IN1
+datab[3] => op_1.IN43
+datab[4] => _.IN1
+datab[4] => op_1.IN41
+datab[5] => _.IN1
+datab[5] => op_1.IN39
+datab[6] => _.IN1
+datab[6] => op_1.IN37
+datab[7] => _.IN1
+datab[7] => op_1.IN35
+datab[8] => _.IN1
+datab[8] => op_1.IN33
+datab[9] => _.IN1
+datab[9] => op_1.IN31
+datab[10] => _.IN1
+datab[10] => op_1.IN29
+datab[11] => _.IN1
+datab[11] => op_1.IN27
+datab[12] => _.IN1
+datab[12] => op_1.IN25
+datab[13] => _.IN1
+datab[13] => op_1.IN23
+datab[14] => _.IN1
+datab[14] => op_1.IN21
+datab[15] => _.IN1
+datab[15] => op_1.IN19
+datab[16] => _.IN1
+datab[16] => op_1.IN17
+datab[17] => _.IN1
+datab[17] => op_1.IN15
+datab[18] => _.IN1
+datab[18] => op_1.IN13
+datab[19] => _.IN1
+datab[19] => op_1.IN11
+datab[20] => _.IN1
+datab[20] => op_1.IN9
+datab[21] => _.IN1
+datab[21] => op_1.IN7
+datab[22] => _.IN1
+datab[22] => op_1.IN5
+datab[23] => _.IN1
+datab[23] => op_1.IN3
+datab[24] => _.IN1
+datab[24] => op_1.IN1
+
+
+|g21_lab5_testbed|g21_rules:inst17
 play_pile_top_card[0] => g21_Modulo_13:modulo_top.A[0]
 play_pile_top_card[1] => g21_Modulo_13:modulo_top.A[1]
 play_pile_top_card[2] => g21_Modulo_13:modulo_top.A[2]
@@ -1964,23 +2614,28 @@ play_pile_top_card[3] => g21_Modulo_13:modulo_top.A[3]
 play_pile_top_card[4] => g21_Modulo_13:modulo_top.A[4]
 play_pile_top_card[5] => g21_Modulo_13:modulo_top.A[5]
 card_to_play[0] => Add3.IN10
+card_to_play[0] => total_value_temp.DATAA
 card_to_play[0] => Add2.IN5
 card_to_play[1] => Add3.IN9
+card_to_play[1] => total_value_temp.DATAA
 card_to_play[1] => Add2.IN4
 card_to_play[2] => Add3.IN8
+card_to_play[2] => total_value_temp.DATAA
 card_to_play[2] => Add2.IN2
 card_to_play[3] => Add3.IN7
+card_to_play[3] => total_value_temp.DATAA
 card_to_play[3] => Add2.IN3
 card_to_play[4] => Add3.IN6
+card_to_play[4] => total_value_temp.DATAA
 card_to_play[4] => Add2.IN1
 card_to_play[5] => card_val_assign.IN1
 card_to_play[5] => card_val_assign.IN1
 card_to_play[5] => new_ace.DATAA
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
 enable => en_total.DATAIN
 legal_play <= legal_play$latch.DB_MAX_OUTPUT_PORT_TYPE
 total_value[0] <= total_value[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
@@ -1992,7 +2647,7 @@ total_value[5] <= total_value[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 en_total <= enable.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top
 floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
 floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
 floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
@@ -2020,7 +2675,7 @@ modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
 modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -2048,7 +2703,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2059,7 +2714,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2070,7 +2725,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2081,7 +2736,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2092,7 +2747,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2103,7 +2758,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2114,7 +2769,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2125,7 +2780,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2136,7 +2791,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -2164,7 +2819,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2175,7 +2830,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2186,7 +2841,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2197,7 +2852,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2208,7 +2863,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2219,7 +2874,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2230,7 +2885,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2241,7 +2896,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2252,7 +2907,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -2280,7 +2935,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2291,7 +2946,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2302,7 +2957,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2313,7 +2968,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2324,7 +2979,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2335,7 +2990,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2346,7 +3001,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2357,7 +3012,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2368,7 +3023,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -2396,7 +3051,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2407,7 +3062,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2418,7 +3073,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2429,7 +3084,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2440,7 +3095,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2451,7 +3106,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2462,7 +3117,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2473,7 +3128,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2484,7 +3139,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -2512,7 +3167,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2523,7 +3178,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2534,7 +3189,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2545,7 +3200,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2556,7 +3211,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2567,7 +3222,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2578,7 +3233,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2589,7 +3244,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:dealer_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst17|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -2598,6 +3253,1214 @@ IN_1 => inst14.IN0
 IN_2 => inst23.IN1
 IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6
+deal_card <= rand_en.DB_MAX_OUTPUT_PORT_TYPE
+request_deal => g21_dealer_FSM:inst1.Request_Deal
+rst => g21_dealer_FSM:inst1.reset
+rst => LPM_FF:inst11.aclr
+CLK => g21_dealer_FSM:inst1.Clock
+CLK => LPM_FF:inst11.clock
+rand_ADDR[0] <= lpm_divide0:inst10.remain[0]
+rand_ADDR[1] <= lpm_divide0:inst10.remain[1]
+rand_ADDR[2] <= lpm_divide0:inst10.remain[2]
+rand_ADDR[3] <= lpm_divide0:inst10.remain[3]
+rand_ADDR[4] <= lpm_divide0:inst10.remain[4]
+rand_ADDR[5] <= lpm_divide0:inst10.remain[5]
+NUM[0] => lpm_divide0:inst10.denom[0]
+NUM[1] => lpm_divide0:inst10.denom[1]
+NUM[2] => lpm_divide0:inst10.denom[2]
+NUM[3] => lpm_divide0:inst10.denom[3]
+NUM[4] => lpm_divide0:inst10.denom[4]
+NUM[5] => lpm_divide0:inst10.denom[5]
+INIT => LPM_FF:inst11.aset
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_dealer_FSM:inst1
+Request_Deal => Rand_Enable~reg0.DATAIN
+reset => Rand_Enable~reg0.ACLR
+Clock => Rand_Enable~reg0.CLK
+Rand_Enable <= Rand_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10
+denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
+denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
+denom[2] => lpm_divide:LPM_DIVIDE_component.denom[2]
+denom[3] => lpm_divide:LPM_DIVIDE_component.denom[3]
+denom[4] => lpm_divide:LPM_DIVIDE_component.denom[4]
+denom[5] => lpm_divide:LPM_DIVIDE_component.denom[5]
+numer[0] => lpm_divide:LPM_DIVIDE_component.numer[0]
+numer[1] => lpm_divide:LPM_DIVIDE_component.numer[1]
+numer[2] => lpm_divide:LPM_DIVIDE_component.numer[2]
+numer[3] => lpm_divide:LPM_DIVIDE_component.numer[3]
+numer[4] => lpm_divide:LPM_DIVIDE_component.numer[4]
+numer[5] => lpm_divide:LPM_DIVIDE_component.numer[5]
+quotient[0] <= lpm_divide:LPM_DIVIDE_component.quotient[0]
+quotient[1] <= lpm_divide:LPM_DIVIDE_component.quotient[1]
+quotient[2] <= lpm_divide:LPM_DIVIDE_component.quotient[2]
+quotient[3] <= lpm_divide:LPM_DIVIDE_component.quotient[3]
+quotient[4] <= lpm_divide:LPM_DIVIDE_component.quotient[4]
+quotient[5] <= lpm_divide:LPM_DIVIDE_component.quotient[5]
+remain[0] <= lpm_divide:LPM_DIVIDE_component.remain[0]
+remain[1] <= lpm_divide:LPM_DIVIDE_component.remain[1]
+remain[2] <= lpm_divide:LPM_DIVIDE_component.remain[2]
+remain[3] <= lpm_divide:LPM_DIVIDE_component.remain[3]
+remain[4] <= lpm_divide:LPM_DIVIDE_component.remain[4]
+remain[5] <= lpm_divide:LPM_DIVIDE_component.remain[5]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
+numer[0] => lpm_divide_grp:auto_generated.numer[0]
+numer[1] => lpm_divide_grp:auto_generated.numer[1]
+numer[2] => lpm_divide_grp:auto_generated.numer[2]
+numer[3] => lpm_divide_grp:auto_generated.numer[3]
+numer[4] => lpm_divide_grp:auto_generated.numer[4]
+numer[5] => lpm_divide_grp:auto_generated.numer[5]
+denom[0] => lpm_divide_grp:auto_generated.denom[0]
+denom[1] => lpm_divide_grp:auto_generated.denom[1]
+denom[2] => lpm_divide_grp:auto_generated.denom[2]
+denom[3] => lpm_divide_grp:auto_generated.denom[3]
+denom[4] => lpm_divide_grp:auto_generated.denom[4]
+denom[5] => lpm_divide_grp:auto_generated.denom[5]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+quotient[0] <= lpm_divide_grp:auto_generated.quotient[0]
+quotient[1] <= lpm_divide_grp:auto_generated.quotient[1]
+quotient[2] <= lpm_divide_grp:auto_generated.quotient[2]
+quotient[3] <= lpm_divide_grp:auto_generated.quotient[3]
+quotient[4] <= lpm_divide_grp:auto_generated.quotient[4]
+quotient[5] <= lpm_divide_grp:auto_generated.quotient[5]
+remain[0] <= lpm_divide_grp:auto_generated.remain[0]
+remain[1] <= lpm_divide_grp:auto_generated.remain[1]
+remain[2] <= lpm_divide_grp:auto_generated.remain[2]
+remain[3] <= lpm_divide_grp:auto_generated.remain[3]
+remain[4] <= lpm_divide_grp:auto_generated.remain[4]
+remain[5] <= lpm_divide_grp:auto_generated.remain[5]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated
+denom[0] => sign_div_unsign_bkh:divider.denominator[0]
+denom[1] => sign_div_unsign_bkh:divider.denominator[1]
+denom[2] => sign_div_unsign_bkh:divider.denominator[2]
+denom[3] => sign_div_unsign_bkh:divider.denominator[3]
+denom[4] => sign_div_unsign_bkh:divider.denominator[4]
+denom[5] => sign_div_unsign_bkh:divider.denominator[5]
+numer[0] => sign_div_unsign_bkh:divider.numerator[0]
+numer[1] => sign_div_unsign_bkh:divider.numerator[1]
+numer[2] => sign_div_unsign_bkh:divider.numerator[2]
+numer[3] => sign_div_unsign_bkh:divider.numerator[3]
+numer[4] => sign_div_unsign_bkh:divider.numerator[4]
+numer[5] => sign_div_unsign_bkh:divider.numerator[5]
+quotient[0] <= sign_div_unsign_bkh:divider.quotient[0]
+quotient[1] <= sign_div_unsign_bkh:divider.quotient[1]
+quotient[2] <= sign_div_unsign_bkh:divider.quotient[2]
+quotient[3] <= sign_div_unsign_bkh:divider.quotient[3]
+quotient[4] <= sign_div_unsign_bkh:divider.quotient[4]
+quotient[5] <= sign_div_unsign_bkh:divider.quotient[5]
+remain[0] <= sign_div_unsign_bkh:divider.remainder[0]
+remain[1] <= sign_div_unsign_bkh:divider.remainder[1]
+remain[2] <= sign_div_unsign_bkh:divider.remainder[2]
+remain[3] <= sign_div_unsign_bkh:divider.remainder[3]
+remain[4] <= sign_div_unsign_bkh:divider.remainder[4]
+remain[5] <= sign_div_unsign_bkh:divider.remainder[5]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider
+denominator[0] => alt_u_div_ove:divider.denominator[0]
+denominator[1] => alt_u_div_ove:divider.denominator[1]
+denominator[2] => alt_u_div_ove:divider.denominator[2]
+denominator[3] => alt_u_div_ove:divider.denominator[3]
+denominator[4] => alt_u_div_ove:divider.denominator[4]
+denominator[5] => alt_u_div_ove:divider.denominator[5]
+numerator[0] => alt_u_div_ove:divider.numerator[0]
+numerator[1] => alt_u_div_ove:divider.numerator[1]
+numerator[2] => alt_u_div_ove:divider.numerator[2]
+numerator[3] => alt_u_div_ove:divider.numerator[3]
+numerator[4] => alt_u_div_ove:divider.numerator[4]
+numerator[5] => alt_u_div_ove:divider.numerator[5]
+quotient[0] <= protect_quotient[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= protect_quotient[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= protect_quotient[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= protect_quotient[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= protect_quotient[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= protect_quotient[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= protect_remainder[0].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= protect_remainder[1].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= protect_remainder[2].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= protect_remainder[3].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= protect_remainder[4].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= protect_remainder[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider
+denominator[0] => add_sub_lkc:add_sub_0.datab[0]
+denominator[0] => add_sub_mkc:add_sub_1.datab[0]
+denominator[0] => op_1.IN8
+denominator[0] => op_2.IN10
+denominator[0] => op_3.IN12
+denominator[0] => op_4.IN14
+denominator[1] => sel[0].IN1
+denominator[1] => add_sub_mkc:add_sub_1.datab[1]
+denominator[1] => sel[6].IN1
+denominator[1] => sel[12].IN1
+denominator[1] => op_1.IN6
+denominator[1] => sel[18].IN1
+denominator[1] => op_2.IN8
+denominator[1] => sel[24].IN1
+denominator[1] => op_3.IN10
+denominator[1] => sel[30].IN1
+denominator[1] => op_4.IN12
+denominator[1] => sel[36].IN1
+denominator[2] => sel[1].IN1
+denominator[2] => sel[7].IN1
+denominator[2] => sel[13].IN1
+denominator[2] => op_1.IN4
+denominator[2] => sel[19].IN1
+denominator[2] => op_2.IN6
+denominator[2] => sel[25].IN1
+denominator[2] => op_3.IN8
+denominator[2] => sel[31].IN1
+denominator[2] => op_4.IN10
+denominator[2] => sel[37].IN1
+denominator[3] => sel[2].IN1
+denominator[3] => sel[8].IN1
+denominator[3] => sel[14].IN1
+denominator[3] => sel[20].IN1
+denominator[3] => op_2.IN4
+denominator[3] => sel[26].IN1
+denominator[3] => op_3.IN6
+denominator[3] => sel[32].IN1
+denominator[3] => op_4.IN8
+denominator[3] => sel[38].IN1
+denominator[4] => sel[3].IN1
+denominator[4] => sel[9].IN1
+denominator[4] => sel[15].IN1
+denominator[4] => sel[21].IN1
+denominator[4] => sel[27].IN1
+denominator[4] => op_3.IN4
+denominator[4] => sel[33].IN1
+denominator[4] => op_4.IN6
+denominator[4] => sel[39].IN1
+denominator[5] => sel[4].IN1
+denominator[5] => sel[10].IN1
+denominator[5] => sel[16].IN1
+denominator[5] => sel[22].IN1
+denominator[5] => sel[28].IN1
+denominator[5] => sel[34].IN1
+denominator[5] => op_4.IN4
+denominator[5] => sel[40].IN1
+numerator[0] => StageOut[30].IN0
+numerator[0] => op_4.IN13
+numerator[1] => StageOut[24].IN0
+numerator[1] => op_3.IN11
+numerator[2] => StageOut[18].IN0
+numerator[2] => op_2.IN9
+numerator[3] => StageOut[12].IN0
+numerator[3] => op_1.IN7
+numerator[4] => add_sub_mkc:add_sub_1.dataa[0]
+numerator[4] => StageOut[6].IN0
+numerator[5] => add_sub_lkc:add_sub_0.dataa[0]
+numerator[5] => StageOut[0].IN0
+quotient[0] <= quotient_tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= quotient_tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= quotient_tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= quotient_tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] <= quotient_tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] <= quotient_tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= StageOut[30].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= StageOut[31].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= StageOut[32].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= StageOut[33].DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] <= StageOut[34].DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] <= StageOut[35].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_lkc:add_sub_0
+cout <= carry_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+datab[0] => datab_node[0].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_mkc:add_sub_1
+cout <= carry_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => carry_eqn[0].IN0
+dataa[0] => _.IN0
+dataa[0] => sum_eqn[0].IN0
+dataa[1] => carry_eqn[1].IN0
+dataa[1] => _.IN0
+dataa[1] => sum_eqn[1].IN0
+datab[0] => datab_node[0].IN0
+datab[1] => datab_node[1].IN0
+result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+data[8] => dffs[8].DATAIN
+data[9] => dffs[9].DATAIN
+data[10] => dffs[10].DATAIN
+data[11] => dffs[11].DATAIN
+data[12] => dffs[12].DATAIN
+data[13] => dffs[13].DATAIN
+data[14] => dffs[14].DATAIN
+data[15] => dffs[15].DATAIN
+data[16] => dffs[16].DATAIN
+data[17] => dffs[17].DATAIN
+data[18] => dffs[18].DATAIN
+data[19] => dffs[19].DATAIN
+data[20] => dffs[20].DATAIN
+data[21] => dffs[21].DATAIN
+data[22] => dffs[22].DATAIN
+data[23] => dffs[23].DATAIN
+data[24] => dffs[24].DATAIN
+data[25] => dffs[25].DATAIN
+data[26] => dffs[26].DATAIN
+data[27] => dffs[27].DATAIN
+data[28] => dffs[28].DATAIN
+data[29] => dffs[29].DATAIN
+data[30] => dffs[30].DATAIN
+data[31] => dffs[31].DATAIN
+clock => dffs[31].CLK
+clock => dffs[30].CLK
+clock => dffs[29].CLK
+clock => dffs[28].CLK
+clock => dffs[27].CLK
+clock => dffs[26].CLK
+clock => dffs[25].CLK
+clock => dffs[24].CLK
+clock => dffs[23].CLK
+clock => dffs[22].CLK
+clock => dffs[21].CLK
+clock => dffs[20].CLK
+clock => dffs[19].CLK
+clock => dffs[18].CLK
+clock => dffs[17].CLK
+clock => dffs[16].CLK
+clock => dffs[15].CLK
+clock => dffs[14].CLK
+clock => dffs[13].CLK
+clock => dffs[12].CLK
+clock => dffs[11].CLK
+clock => dffs[10].CLK
+clock => dffs[9].CLK
+clock => dffs[8].CLK
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[31].ENA
+enable => dffs[30].ENA
+enable => dffs[29].ENA
+enable => dffs[28].ENA
+enable => dffs[27].ENA
+enable => dffs[26].ENA
+enable => dffs[25].ENA
+enable => dffs[24].ENA
+enable => dffs[23].ENA
+enable => dffs[22].ENA
+enable => dffs[21].ENA
+enable => dffs[20].ENA
+enable => dffs[19].ENA
+enable => dffs[18].ENA
+enable => dffs[17].ENA
+enable => dffs[16].ENA
+enable => dffs[15].ENA
+enable => dffs[14].ENA
+enable => dffs[13].ENA
+enable => dffs[12].ENA
+enable => dffs[11].ENA
+enable => dffs[10].ENA
+enable => dffs[9].ENA
+enable => dffs[8].ENA
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => _.IN0
+aclr => dffs[31].IN0
+aclr => dffs[30].IN0
+aclr => dffs[29].IN0
+aclr => dffs[28].IN0
+aclr => dffs[27].IN0
+aclr => dffs[26].IN0
+aclr => dffs[25].IN0
+aclr => dffs[24].IN0
+aclr => dffs[23].IN0
+aclr => dffs[22].IN0
+aclr => dffs[21].IN0
+aclr => dffs[20].IN0
+aclr => dffs[19].IN0
+aclr => dffs[18].IN0
+aclr => dffs[17].IN0
+aclr => dffs[16].IN0
+aclr => dffs[15].IN0
+aclr => dffs[14].IN0
+aclr => dffs[13].IN0
+aclr => dffs[12].IN0
+aclr => dffs[11].IN0
+aclr => dffs[10].IN0
+aclr => dffs[9].IN0
+aclr => dffs[8].IN0
+aclr => dffs[7].IN0
+aclr => dffs[6].IN0
+aclr => dffs[5].IN0
+aclr => dffs[4].IN0
+aclr => dffs[3].IN0
+aclr => dffs[2].IN0
+aclr => dffs[1].IN0
+aclr => dffs[0].IN0
+aset => _.IN0
+aset => _.IN0
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= dffs[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= dffs[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= dffs[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= dffs[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= dffs[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= dffs[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= dffs[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= dffs[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= dffs[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= dffs[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= dffs[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= dffs[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= dffs[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= dffs[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= dffs[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= dffs[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= dffs[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= dffs[27].DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= dffs[28].DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= dffs[29].DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= dffs[30].DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= dffs[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11|lpm_constant:ac
+result[0] <= lpm_constant_bj4:ag.result[0]
+result[1] <= lpm_constant_bj4:ag.result[1]
+result[2] <= lpm_constant_bj4:ag.result[2]
+result[3] <= lpm_constant_bj4:ag.result[3]
+result[4] <= lpm_constant_bj4:ag.result[4]
+result[5] <= lpm_constant_bj4:ag.result[5]
+result[6] <= lpm_constant_bj4:ag.result[6]
+result[7] <= lpm_constant_bj4:ag.result[7]
+result[8] <= lpm_constant_bj4:ag.result[8]
+result[9] <= lpm_constant_bj4:ag.result[9]
+result[10] <= lpm_constant_bj4:ag.result[10]
+result[11] <= lpm_constant_bj4:ag.result[11]
+result[12] <= lpm_constant_bj4:ag.result[12]
+result[13] <= lpm_constant_bj4:ag.result[13]
+result[14] <= lpm_constant_bj4:ag.result[14]
+result[15] <= lpm_constant_bj4:ag.result[15]
+result[16] <= lpm_constant_bj4:ag.result[16]
+result[17] <= lpm_constant_bj4:ag.result[17]
+result[18] <= lpm_constant_bj4:ag.result[18]
+result[19] <= lpm_constant_bj4:ag.result[19]
+result[20] <= lpm_constant_bj4:ag.result[20]
+result[21] <= lpm_constant_bj4:ag.result[21]
+result[22] <= lpm_constant_bj4:ag.result[22]
+result[23] <= lpm_constant_bj4:ag.result[23]
+result[24] <= lpm_constant_bj4:ag.result[24]
+result[25] <= lpm_constant_bj4:ag.result[25]
+result[26] <= lpm_constant_bj4:ag.result[26]
+result[27] <= lpm_constant_bj4:ag.result[27]
+result[28] <= lpm_constant_bj4:ag.result[28]
+result[29] <= lpm_constant_bj4:ag.result[29]
+result[30] <= lpm_constant_bj4:ag.result[30]
+result[31] <= lpm_constant_bj4:ag.result[31]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11|lpm_constant:ac|lpm_constant_bj4:ag
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
+result[6] <= <VCC>
+result[7] <= <GND>
+result[8] <= <VCC>
+result[9] <= <GND>
+result[10] <= <GND>
+result[11] <= <GND>
+result[12] <= <GND>
+result[13] <= <VCC>
+result[14] <= <GND>
+result[15] <= <GND>
+result[16] <= <GND>
+result[17] <= <GND>
+result[18] <= <GND>
+result[19] <= <GND>
+result[20] <= <GND>
+result[21] <= <GND>
+result[22] <= <GND>
+result[23] <= <GND>
+result[24] <= <GND>
+result[25] <= <GND>
+result[26] <= <GND>
+result[27] <= <GND>
+result[28] <= <GND>
+result[29] <= <GND>
+result[30] <= <GND>
+result[31] <= <GND>
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9
+seed[0] => add_sub:A2.datab[0]
+seed[0] => add_sub:A1.dataa[16]
+seed[0] => add_sub:A1.datab[1]
+seed[1] => add_sub:A2.datab[1]
+seed[1] => add_sub:A1.dataa[17]
+seed[1] => add_sub:A1.datab[2]
+seed[2] => add_sub:A2.datab[2]
+seed[2] => add_sub:A1.dataa[18]
+seed[2] => add_sub:A1.datab[3]
+seed[3] => add_sub:A2.datab[3]
+seed[3] => add_sub:A1.dataa[19]
+seed[3] => add_sub:A1.datab[4]
+seed[4] => add_sub:A2.datab[4]
+seed[4] => add_sub:A1.dataa[20]
+seed[4] => add_sub:A1.datab[5]
+seed[5] => add_sub:A2.datab[5]
+seed[5] => add_sub:A1.dataa[21]
+seed[5] => add_sub:A1.datab[6]
+seed[6] => add_sub:A2.datab[6]
+seed[6] => add_sub:A1.dataa[22]
+seed[6] => add_sub:A1.datab[7]
+seed[7] => add_sub:A2.datab[7]
+seed[7] => add_sub:A1.dataa[23]
+seed[7] => add_sub:A1.datab[8]
+seed[8] => add_sub:A2.datab[8]
+seed[8] => add_sub:A1.dataa[24]
+seed[8] => add_sub:A1.datab[9]
+seed[9] => add_sub:A2.datab[9]
+seed[9] => add_sub:A1.dataa[25]
+seed[9] => add_sub:A1.datab[10]
+seed[10] => add_sub:A2.datab[10]
+seed[10] => add_sub:A1.dataa[26]
+seed[10] => add_sub:A1.datab[11]
+seed[11] => add_sub:A2.datab[11]
+seed[11] => add_sub:A1.dataa[27]
+seed[11] => add_sub:A1.datab[12]
+seed[12] => add_sub:A2.datab[12]
+seed[12] => add_sub:A1.dataa[28]
+seed[12] => add_sub:A1.datab[13]
+seed[13] => add_sub:A2.datab[13]
+seed[13] => add_sub:A1.dataa[29]
+seed[13] => add_sub:A1.datab[14]
+seed[14] => add_sub:A2.datab[14]
+seed[14] => add_sub:A1.dataa[30]
+seed[14] => add_sub:A1.datab[15]
+seed[15] => add_sub:A2.datab[15]
+seed[15] => add_sub:A1.dataa[31]
+seed[15] => add_sub:A1.datab[16]
+seed[16] => add_sub:A2.datab[16]
+seed[16] => add_sub:A1.datab[17]
+seed[17] => add_sub:A2.datab[17]
+seed[17] => add_sub:A1.datab[18]
+seed[18] => add_sub:A2.datab[18]
+seed[18] => add_sub:A1.datab[19]
+seed[19] => add_sub:A2.datab[19]
+seed[19] => add_sub:A1.datab[20]
+seed[20] => add_sub:A2.datab[20]
+seed[20] => add_sub:A1.datab[21]
+seed[21] => add_sub:A2.datab[21]
+seed[21] => add_sub:A1.datab[22]
+seed[22] => add_sub:A2.datab[22]
+seed[22] => add_sub:A1.datab[23]
+seed[23] => add_sub:A2.datab[23]
+seed[23] => add_sub:A1.datab[24]
+seed[24] => add_sub:A2.datab[24]
+seed[24] => add_sub:A1.datab[25]
+seed[25] => add_sub:A2.datab[25]
+seed[25] => add_sub:A1.datab[26]
+seed[26] => add_sub:A2.datab[26]
+seed[26] => add_sub:A1.datab[27]
+seed[27] => add_sub:A2.datab[27]
+seed[27] => add_sub:A1.datab[28]
+seed[28] => add_sub:A2.datab[28]
+seed[28] => add_sub:A1.datab[29]
+seed[29] => add_sub:A2.datab[29]
+seed[29] => add_sub:A1.datab[30]
+seed[30] => add_sub:A2.datab[30]
+seed[30] => add_sub:A1.datab[31]
+seed[31] => add_sub:A2.datab[31]
+rand[0] <= add_sub:A2.result[0]
+rand[1] <= add_sub:A2.result[1]
+rand[2] <= add_sub:A2.result[2]
+rand[3] <= add_sub:A2.result[3]
+rand[4] <= add_sub:A2.result[4]
+rand[5] <= add_sub:A2.result[5]
+rand[6] <= add_sub:A2.result[6]
+rand[7] <= add_sub:A2.result[7]
+rand[8] <= add_sub:A2.result[8]
+rand[9] <= add_sub:A2.result[9]
+rand[10] <= add_sub:A2.result[10]
+rand[11] <= add_sub:A2.result[11]
+rand[12] <= add_sub:A2.result[12]
+rand[13] <= add_sub:A2.result[13]
+rand[14] <= add_sub:A2.result[14]
+rand[15] <= add_sub:A2.result[15]
+rand[16] <= add_sub:A2.result[16]
+rand[17] <= add_sub:A2.result[17]
+rand[18] <= add_sub:A2.result[18]
+rand[19] <= add_sub:A2.result[19]
+rand[20] <= add_sub:A2.result[20]
+rand[21] <= add_sub:A2.result[21]
+rand[22] <= add_sub:A2.result[22]
+rand[23] <= add_sub:A2.result[23]
+rand[24] <= add_sub:A2.result[24]
+rand[25] <= add_sub:A2.result[25]
+rand[26] <= add_sub:A2.result[26]
+rand[27] <= add_sub:A2.result[27]
+rand[28] <= add_sub:A2.result[28]
+rand[29] <= add_sub:A2.result[29]
+rand[30] <= add_sub:A2.result[30]
+rand[31] <= <GND>
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1
+dataa[0] => lpm_add_sub:LPM_ADD_SUB_component.dataa[0]
+dataa[1] => lpm_add_sub:LPM_ADD_SUB_component.dataa[1]
+dataa[2] => lpm_add_sub:LPM_ADD_SUB_component.dataa[2]
+dataa[3] => lpm_add_sub:LPM_ADD_SUB_component.dataa[3]
+dataa[4] => lpm_add_sub:LPM_ADD_SUB_component.dataa[4]
+dataa[5] => lpm_add_sub:LPM_ADD_SUB_component.dataa[5]
+dataa[6] => lpm_add_sub:LPM_ADD_SUB_component.dataa[6]
+dataa[7] => lpm_add_sub:LPM_ADD_SUB_component.dataa[7]
+dataa[8] => lpm_add_sub:LPM_ADD_SUB_component.dataa[8]
+dataa[9] => lpm_add_sub:LPM_ADD_SUB_component.dataa[9]
+dataa[10] => lpm_add_sub:LPM_ADD_SUB_component.dataa[10]
+dataa[11] => lpm_add_sub:LPM_ADD_SUB_component.dataa[11]
+dataa[12] => lpm_add_sub:LPM_ADD_SUB_component.dataa[12]
+dataa[13] => lpm_add_sub:LPM_ADD_SUB_component.dataa[13]
+dataa[14] => lpm_add_sub:LPM_ADD_SUB_component.dataa[14]
+dataa[15] => lpm_add_sub:LPM_ADD_SUB_component.dataa[15]
+dataa[16] => lpm_add_sub:LPM_ADD_SUB_component.dataa[16]
+dataa[17] => lpm_add_sub:LPM_ADD_SUB_component.dataa[17]
+dataa[18] => lpm_add_sub:LPM_ADD_SUB_component.dataa[18]
+dataa[19] => lpm_add_sub:LPM_ADD_SUB_component.dataa[19]
+dataa[20] => lpm_add_sub:LPM_ADD_SUB_component.dataa[20]
+dataa[21] => lpm_add_sub:LPM_ADD_SUB_component.dataa[21]
+dataa[22] => lpm_add_sub:LPM_ADD_SUB_component.dataa[22]
+dataa[23] => lpm_add_sub:LPM_ADD_SUB_component.dataa[23]
+dataa[24] => lpm_add_sub:LPM_ADD_SUB_component.dataa[24]
+dataa[25] => lpm_add_sub:LPM_ADD_SUB_component.dataa[25]
+dataa[26] => lpm_add_sub:LPM_ADD_SUB_component.dataa[26]
+dataa[27] => lpm_add_sub:LPM_ADD_SUB_component.dataa[27]
+dataa[28] => lpm_add_sub:LPM_ADD_SUB_component.dataa[28]
+dataa[29] => lpm_add_sub:LPM_ADD_SUB_component.dataa[29]
+dataa[30] => lpm_add_sub:LPM_ADD_SUB_component.dataa[30]
+dataa[31] => lpm_add_sub:LPM_ADD_SUB_component.dataa[31]
+datab[0] => lpm_add_sub:LPM_ADD_SUB_component.datab[0]
+datab[1] => lpm_add_sub:LPM_ADD_SUB_component.datab[1]
+datab[2] => lpm_add_sub:LPM_ADD_SUB_component.datab[2]
+datab[3] => lpm_add_sub:LPM_ADD_SUB_component.datab[3]
+datab[4] => lpm_add_sub:LPM_ADD_SUB_component.datab[4]
+datab[5] => lpm_add_sub:LPM_ADD_SUB_component.datab[5]
+datab[6] => lpm_add_sub:LPM_ADD_SUB_component.datab[6]
+datab[7] => lpm_add_sub:LPM_ADD_SUB_component.datab[7]
+datab[8] => lpm_add_sub:LPM_ADD_SUB_component.datab[8]
+datab[9] => lpm_add_sub:LPM_ADD_SUB_component.datab[9]
+datab[10] => lpm_add_sub:LPM_ADD_SUB_component.datab[10]
+datab[11] => lpm_add_sub:LPM_ADD_SUB_component.datab[11]
+datab[12] => lpm_add_sub:LPM_ADD_SUB_component.datab[12]
+datab[13] => lpm_add_sub:LPM_ADD_SUB_component.datab[13]
+datab[14] => lpm_add_sub:LPM_ADD_SUB_component.datab[14]
+datab[15] => lpm_add_sub:LPM_ADD_SUB_component.datab[15]
+datab[16] => lpm_add_sub:LPM_ADD_SUB_component.datab[16]
+datab[17] => lpm_add_sub:LPM_ADD_SUB_component.datab[17]
+datab[18] => lpm_add_sub:LPM_ADD_SUB_component.datab[18]
+datab[19] => lpm_add_sub:LPM_ADD_SUB_component.datab[19]
+datab[20] => lpm_add_sub:LPM_ADD_SUB_component.datab[20]
+datab[21] => lpm_add_sub:LPM_ADD_SUB_component.datab[21]
+datab[22] => lpm_add_sub:LPM_ADD_SUB_component.datab[22]
+datab[23] => lpm_add_sub:LPM_ADD_SUB_component.datab[23]
+datab[24] => lpm_add_sub:LPM_ADD_SUB_component.datab[24]
+datab[25] => lpm_add_sub:LPM_ADD_SUB_component.datab[25]
+datab[26] => lpm_add_sub:LPM_ADD_SUB_component.datab[26]
+datab[27] => lpm_add_sub:LPM_ADD_SUB_component.datab[27]
+datab[28] => lpm_add_sub:LPM_ADD_SUB_component.datab[28]
+datab[29] => lpm_add_sub:LPM_ADD_SUB_component.datab[29]
+datab[30] => lpm_add_sub:LPM_ADD_SUB_component.datab[30]
+datab[31] => lpm_add_sub:LPM_ADD_SUB_component.datab[31]
+result[0] <= lpm_add_sub:LPM_ADD_SUB_component.result[0]
+result[1] <= lpm_add_sub:LPM_ADD_SUB_component.result[1]
+result[2] <= lpm_add_sub:LPM_ADD_SUB_component.result[2]
+result[3] <= lpm_add_sub:LPM_ADD_SUB_component.result[3]
+result[4] <= lpm_add_sub:LPM_ADD_SUB_component.result[4]
+result[5] <= lpm_add_sub:LPM_ADD_SUB_component.result[5]
+result[6] <= lpm_add_sub:LPM_ADD_SUB_component.result[6]
+result[7] <= lpm_add_sub:LPM_ADD_SUB_component.result[7]
+result[8] <= lpm_add_sub:LPM_ADD_SUB_component.result[8]
+result[9] <= lpm_add_sub:LPM_ADD_SUB_component.result[9]
+result[10] <= lpm_add_sub:LPM_ADD_SUB_component.result[10]
+result[11] <= lpm_add_sub:LPM_ADD_SUB_component.result[11]
+result[12] <= lpm_add_sub:LPM_ADD_SUB_component.result[12]
+result[13] <= lpm_add_sub:LPM_ADD_SUB_component.result[13]
+result[14] <= lpm_add_sub:LPM_ADD_SUB_component.result[14]
+result[15] <= lpm_add_sub:LPM_ADD_SUB_component.result[15]
+result[16] <= lpm_add_sub:LPM_ADD_SUB_component.result[16]
+result[17] <= lpm_add_sub:LPM_ADD_SUB_component.result[17]
+result[18] <= lpm_add_sub:LPM_ADD_SUB_component.result[18]
+result[19] <= lpm_add_sub:LPM_ADD_SUB_component.result[19]
+result[20] <= lpm_add_sub:LPM_ADD_SUB_component.result[20]
+result[21] <= lpm_add_sub:LPM_ADD_SUB_component.result[21]
+result[22] <= lpm_add_sub:LPM_ADD_SUB_component.result[22]
+result[23] <= lpm_add_sub:LPM_ADD_SUB_component.result[23]
+result[24] <= lpm_add_sub:LPM_ADD_SUB_component.result[24]
+result[25] <= lpm_add_sub:LPM_ADD_SUB_component.result[25]
+result[26] <= lpm_add_sub:LPM_ADD_SUB_component.result[26]
+result[27] <= lpm_add_sub:LPM_ADD_SUB_component.result[27]
+result[28] <= lpm_add_sub:LPM_ADD_SUB_component.result[28]
+result[29] <= lpm_add_sub:LPM_ADD_SUB_component.result[29]
+result[30] <= lpm_add_sub:LPM_ADD_SUB_component.result[30]
+result[31] <= lpm_add_sub:LPM_ADD_SUB_component.result[31]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
+dataa[0] => add_sub_plh:auto_generated.dataa[0]
+dataa[1] => add_sub_plh:auto_generated.dataa[1]
+dataa[2] => add_sub_plh:auto_generated.dataa[2]
+dataa[3] => add_sub_plh:auto_generated.dataa[3]
+dataa[4] => add_sub_plh:auto_generated.dataa[4]
+dataa[5] => add_sub_plh:auto_generated.dataa[5]
+dataa[6] => add_sub_plh:auto_generated.dataa[6]
+dataa[7] => add_sub_plh:auto_generated.dataa[7]
+dataa[8] => add_sub_plh:auto_generated.dataa[8]
+dataa[9] => add_sub_plh:auto_generated.dataa[9]
+dataa[10] => add_sub_plh:auto_generated.dataa[10]
+dataa[11] => add_sub_plh:auto_generated.dataa[11]
+dataa[12] => add_sub_plh:auto_generated.dataa[12]
+dataa[13] => add_sub_plh:auto_generated.dataa[13]
+dataa[14] => add_sub_plh:auto_generated.dataa[14]
+dataa[15] => add_sub_plh:auto_generated.dataa[15]
+dataa[16] => add_sub_plh:auto_generated.dataa[16]
+dataa[17] => add_sub_plh:auto_generated.dataa[17]
+dataa[18] => add_sub_plh:auto_generated.dataa[18]
+dataa[19] => add_sub_plh:auto_generated.dataa[19]
+dataa[20] => add_sub_plh:auto_generated.dataa[20]
+dataa[21] => add_sub_plh:auto_generated.dataa[21]
+dataa[22] => add_sub_plh:auto_generated.dataa[22]
+dataa[23] => add_sub_plh:auto_generated.dataa[23]
+dataa[24] => add_sub_plh:auto_generated.dataa[24]
+dataa[25] => add_sub_plh:auto_generated.dataa[25]
+dataa[26] => add_sub_plh:auto_generated.dataa[26]
+dataa[27] => add_sub_plh:auto_generated.dataa[27]
+dataa[28] => add_sub_plh:auto_generated.dataa[28]
+dataa[29] => add_sub_plh:auto_generated.dataa[29]
+dataa[30] => add_sub_plh:auto_generated.dataa[30]
+dataa[31] => add_sub_plh:auto_generated.dataa[31]
+datab[0] => add_sub_plh:auto_generated.datab[0]
+datab[1] => add_sub_plh:auto_generated.datab[1]
+datab[2] => add_sub_plh:auto_generated.datab[2]
+datab[3] => add_sub_plh:auto_generated.datab[3]
+datab[4] => add_sub_plh:auto_generated.datab[4]
+datab[5] => add_sub_plh:auto_generated.datab[5]
+datab[6] => add_sub_plh:auto_generated.datab[6]
+datab[7] => add_sub_plh:auto_generated.datab[7]
+datab[8] => add_sub_plh:auto_generated.datab[8]
+datab[9] => add_sub_plh:auto_generated.datab[9]
+datab[10] => add_sub_plh:auto_generated.datab[10]
+datab[11] => add_sub_plh:auto_generated.datab[11]
+datab[12] => add_sub_plh:auto_generated.datab[12]
+datab[13] => add_sub_plh:auto_generated.datab[13]
+datab[14] => add_sub_plh:auto_generated.datab[14]
+datab[15] => add_sub_plh:auto_generated.datab[15]
+datab[16] => add_sub_plh:auto_generated.datab[16]
+datab[17] => add_sub_plh:auto_generated.datab[17]
+datab[18] => add_sub_plh:auto_generated.datab[18]
+datab[19] => add_sub_plh:auto_generated.datab[19]
+datab[20] => add_sub_plh:auto_generated.datab[20]
+datab[21] => add_sub_plh:auto_generated.datab[21]
+datab[22] => add_sub_plh:auto_generated.datab[22]
+datab[23] => add_sub_plh:auto_generated.datab[23]
+datab[24] => add_sub_plh:auto_generated.datab[24]
+datab[25] => add_sub_plh:auto_generated.datab[25]
+datab[26] => add_sub_plh:auto_generated.datab[26]
+datab[27] => add_sub_plh:auto_generated.datab[27]
+datab[28] => add_sub_plh:auto_generated.datab[28]
+datab[29] => add_sub_plh:auto_generated.datab[29]
+datab[30] => add_sub_plh:auto_generated.datab[30]
+datab[31] => add_sub_plh:auto_generated.datab[31]
+cin => ~NO_FANOUT~
+add_sub => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= add_sub_plh:auto_generated.result[0]
+result[1] <= add_sub_plh:auto_generated.result[1]
+result[2] <= add_sub_plh:auto_generated.result[2]
+result[3] <= add_sub_plh:auto_generated.result[3]
+result[4] <= add_sub_plh:auto_generated.result[4]
+result[5] <= add_sub_plh:auto_generated.result[5]
+result[6] <= add_sub_plh:auto_generated.result[6]
+result[7] <= add_sub_plh:auto_generated.result[7]
+result[8] <= add_sub_plh:auto_generated.result[8]
+result[9] <= add_sub_plh:auto_generated.result[9]
+result[10] <= add_sub_plh:auto_generated.result[10]
+result[11] <= add_sub_plh:auto_generated.result[11]
+result[12] <= add_sub_plh:auto_generated.result[12]
+result[13] <= add_sub_plh:auto_generated.result[13]
+result[14] <= add_sub_plh:auto_generated.result[14]
+result[15] <= add_sub_plh:auto_generated.result[15]
+result[16] <= add_sub_plh:auto_generated.result[16]
+result[17] <= add_sub_plh:auto_generated.result[17]
+result[18] <= add_sub_plh:auto_generated.result[18]
+result[19] <= add_sub_plh:auto_generated.result[19]
+result[20] <= add_sub_plh:auto_generated.result[20]
+result[21] <= add_sub_plh:auto_generated.result[21]
+result[22] <= add_sub_plh:auto_generated.result[22]
+result[23] <= add_sub_plh:auto_generated.result[23]
+result[24] <= add_sub_plh:auto_generated.result[24]
+result[25] <= add_sub_plh:auto_generated.result[25]
+result[26] <= add_sub_plh:auto_generated.result[26]
+result[27] <= add_sub_plh:auto_generated.result[27]
+result[28] <= add_sub_plh:auto_generated.result[28]
+result[29] <= add_sub_plh:auto_generated.result[29]
+result[30] <= add_sub_plh:auto_generated.result[30]
+result[31] <= add_sub_plh:auto_generated.result[31]
+cout <= <GND>
+overflow <= <GND>
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated
+dataa[0] => op_1.IN62
+dataa[1] => op_1.IN60
+dataa[2] => op_1.IN58
+dataa[3] => op_1.IN56
+dataa[4] => op_1.IN54
+dataa[5] => op_1.IN52
+dataa[6] => op_1.IN50
+dataa[7] => op_1.IN48
+dataa[8] => op_1.IN46
+dataa[9] => op_1.IN44
+dataa[10] => op_1.IN42
+dataa[11] => op_1.IN40
+dataa[12] => op_1.IN38
+dataa[13] => op_1.IN36
+dataa[14] => op_1.IN34
+dataa[15] => op_1.IN32
+dataa[16] => op_1.IN30
+dataa[17] => op_1.IN28
+dataa[18] => op_1.IN26
+dataa[19] => op_1.IN24
+dataa[20] => op_1.IN22
+dataa[21] => op_1.IN20
+dataa[22] => op_1.IN18
+dataa[23] => op_1.IN16
+dataa[24] => op_1.IN14
+dataa[25] => op_1.IN12
+dataa[26] => op_1.IN10
+dataa[27] => op_1.IN8
+dataa[28] => op_1.IN6
+dataa[29] => op_1.IN4
+dataa[30] => op_1.IN2
+dataa[31] => op_1.IN0
+datab[0] => op_1.IN63
+datab[1] => op_1.IN61
+datab[2] => op_1.IN59
+datab[3] => op_1.IN57
+datab[4] => op_1.IN55
+datab[5] => op_1.IN53
+datab[6] => op_1.IN51
+datab[7] => op_1.IN49
+datab[8] => op_1.IN47
+datab[9] => op_1.IN45
+datab[10] => op_1.IN43
+datab[11] => op_1.IN41
+datab[12] => op_1.IN39
+datab[13] => op_1.IN37
+datab[14] => op_1.IN35
+datab[15] => op_1.IN33
+datab[16] => op_1.IN31
+datab[17] => op_1.IN29
+datab[18] => op_1.IN27
+datab[19] => op_1.IN25
+datab[20] => op_1.IN23
+datab[21] => op_1.IN21
+datab[22] => op_1.IN19
+datab[23] => op_1.IN17
+datab[24] => op_1.IN15
+datab[25] => op_1.IN13
+datab[26] => op_1.IN11
+datab[27] => op_1.IN9
+datab[28] => op_1.IN7
+datab[29] => op_1.IN5
+datab[30] => op_1.IN3
+datab[31] => op_1.IN1
+result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2
+dataa[0] => lpm_add_sub:LPM_ADD_SUB_component.dataa[0]
+dataa[1] => lpm_add_sub:LPM_ADD_SUB_component.dataa[1]
+dataa[2] => lpm_add_sub:LPM_ADD_SUB_component.dataa[2]
+dataa[3] => lpm_add_sub:LPM_ADD_SUB_component.dataa[3]
+dataa[4] => lpm_add_sub:LPM_ADD_SUB_component.dataa[4]
+dataa[5] => lpm_add_sub:LPM_ADD_SUB_component.dataa[5]
+dataa[6] => lpm_add_sub:LPM_ADD_SUB_component.dataa[6]
+dataa[7] => lpm_add_sub:LPM_ADD_SUB_component.dataa[7]
+dataa[8] => lpm_add_sub:LPM_ADD_SUB_component.dataa[8]
+dataa[9] => lpm_add_sub:LPM_ADD_SUB_component.dataa[9]
+dataa[10] => lpm_add_sub:LPM_ADD_SUB_component.dataa[10]
+dataa[11] => lpm_add_sub:LPM_ADD_SUB_component.dataa[11]
+dataa[12] => lpm_add_sub:LPM_ADD_SUB_component.dataa[12]
+dataa[13] => lpm_add_sub:LPM_ADD_SUB_component.dataa[13]
+dataa[14] => lpm_add_sub:LPM_ADD_SUB_component.dataa[14]
+dataa[15] => lpm_add_sub:LPM_ADD_SUB_component.dataa[15]
+dataa[16] => lpm_add_sub:LPM_ADD_SUB_component.dataa[16]
+dataa[17] => lpm_add_sub:LPM_ADD_SUB_component.dataa[17]
+dataa[18] => lpm_add_sub:LPM_ADD_SUB_component.dataa[18]
+dataa[19] => lpm_add_sub:LPM_ADD_SUB_component.dataa[19]
+dataa[20] => lpm_add_sub:LPM_ADD_SUB_component.dataa[20]
+dataa[21] => lpm_add_sub:LPM_ADD_SUB_component.dataa[21]
+dataa[22] => lpm_add_sub:LPM_ADD_SUB_component.dataa[22]
+dataa[23] => lpm_add_sub:LPM_ADD_SUB_component.dataa[23]
+dataa[24] => lpm_add_sub:LPM_ADD_SUB_component.dataa[24]
+dataa[25] => lpm_add_sub:LPM_ADD_SUB_component.dataa[25]
+dataa[26] => lpm_add_sub:LPM_ADD_SUB_component.dataa[26]
+dataa[27] => lpm_add_sub:LPM_ADD_SUB_component.dataa[27]
+dataa[28] => lpm_add_sub:LPM_ADD_SUB_component.dataa[28]
+dataa[29] => lpm_add_sub:LPM_ADD_SUB_component.dataa[29]
+dataa[30] => lpm_add_sub:LPM_ADD_SUB_component.dataa[30]
+dataa[31] => lpm_add_sub:LPM_ADD_SUB_component.dataa[31]
+datab[0] => lpm_add_sub:LPM_ADD_SUB_component.datab[0]
+datab[1] => lpm_add_sub:LPM_ADD_SUB_component.datab[1]
+datab[2] => lpm_add_sub:LPM_ADD_SUB_component.datab[2]
+datab[3] => lpm_add_sub:LPM_ADD_SUB_component.datab[3]
+datab[4] => lpm_add_sub:LPM_ADD_SUB_component.datab[4]
+datab[5] => lpm_add_sub:LPM_ADD_SUB_component.datab[5]
+datab[6] => lpm_add_sub:LPM_ADD_SUB_component.datab[6]
+datab[7] => lpm_add_sub:LPM_ADD_SUB_component.datab[7]
+datab[8] => lpm_add_sub:LPM_ADD_SUB_component.datab[8]
+datab[9] => lpm_add_sub:LPM_ADD_SUB_component.datab[9]
+datab[10] => lpm_add_sub:LPM_ADD_SUB_component.datab[10]
+datab[11] => lpm_add_sub:LPM_ADD_SUB_component.datab[11]
+datab[12] => lpm_add_sub:LPM_ADD_SUB_component.datab[12]
+datab[13] => lpm_add_sub:LPM_ADD_SUB_component.datab[13]
+datab[14] => lpm_add_sub:LPM_ADD_SUB_component.datab[14]
+datab[15] => lpm_add_sub:LPM_ADD_SUB_component.datab[15]
+datab[16] => lpm_add_sub:LPM_ADD_SUB_component.datab[16]
+datab[17] => lpm_add_sub:LPM_ADD_SUB_component.datab[17]
+datab[18] => lpm_add_sub:LPM_ADD_SUB_component.datab[18]
+datab[19] => lpm_add_sub:LPM_ADD_SUB_component.datab[19]
+datab[20] => lpm_add_sub:LPM_ADD_SUB_component.datab[20]
+datab[21] => lpm_add_sub:LPM_ADD_SUB_component.datab[21]
+datab[22] => lpm_add_sub:LPM_ADD_SUB_component.datab[22]
+datab[23] => lpm_add_sub:LPM_ADD_SUB_component.datab[23]
+datab[24] => lpm_add_sub:LPM_ADD_SUB_component.datab[24]
+datab[25] => lpm_add_sub:LPM_ADD_SUB_component.datab[25]
+datab[26] => lpm_add_sub:LPM_ADD_SUB_component.datab[26]
+datab[27] => lpm_add_sub:LPM_ADD_SUB_component.datab[27]
+datab[28] => lpm_add_sub:LPM_ADD_SUB_component.datab[28]
+datab[29] => lpm_add_sub:LPM_ADD_SUB_component.datab[29]
+datab[30] => lpm_add_sub:LPM_ADD_SUB_component.datab[30]
+datab[31] => lpm_add_sub:LPM_ADD_SUB_component.datab[31]
+result[0] <= lpm_add_sub:LPM_ADD_SUB_component.result[0]
+result[1] <= lpm_add_sub:LPM_ADD_SUB_component.result[1]
+result[2] <= lpm_add_sub:LPM_ADD_SUB_component.result[2]
+result[3] <= lpm_add_sub:LPM_ADD_SUB_component.result[3]
+result[4] <= lpm_add_sub:LPM_ADD_SUB_component.result[4]
+result[5] <= lpm_add_sub:LPM_ADD_SUB_component.result[5]
+result[6] <= lpm_add_sub:LPM_ADD_SUB_component.result[6]
+result[7] <= lpm_add_sub:LPM_ADD_SUB_component.result[7]
+result[8] <= lpm_add_sub:LPM_ADD_SUB_component.result[8]
+result[9] <= lpm_add_sub:LPM_ADD_SUB_component.result[9]
+result[10] <= lpm_add_sub:LPM_ADD_SUB_component.result[10]
+result[11] <= lpm_add_sub:LPM_ADD_SUB_component.result[11]
+result[12] <= lpm_add_sub:LPM_ADD_SUB_component.result[12]
+result[13] <= lpm_add_sub:LPM_ADD_SUB_component.result[13]
+result[14] <= lpm_add_sub:LPM_ADD_SUB_component.result[14]
+result[15] <= lpm_add_sub:LPM_ADD_SUB_component.result[15]
+result[16] <= lpm_add_sub:LPM_ADD_SUB_component.result[16]
+result[17] <= lpm_add_sub:LPM_ADD_SUB_component.result[17]
+result[18] <= lpm_add_sub:LPM_ADD_SUB_component.result[18]
+result[19] <= lpm_add_sub:LPM_ADD_SUB_component.result[19]
+result[20] <= lpm_add_sub:LPM_ADD_SUB_component.result[20]
+result[21] <= lpm_add_sub:LPM_ADD_SUB_component.result[21]
+result[22] <= lpm_add_sub:LPM_ADD_SUB_component.result[22]
+result[23] <= lpm_add_sub:LPM_ADD_SUB_component.result[23]
+result[24] <= lpm_add_sub:LPM_ADD_SUB_component.result[24]
+result[25] <= lpm_add_sub:LPM_ADD_SUB_component.result[25]
+result[26] <= lpm_add_sub:LPM_ADD_SUB_component.result[26]
+result[27] <= lpm_add_sub:LPM_ADD_SUB_component.result[27]
+result[28] <= lpm_add_sub:LPM_ADD_SUB_component.result[28]
+result[29] <= lpm_add_sub:LPM_ADD_SUB_component.result[29]
+result[30] <= lpm_add_sub:LPM_ADD_SUB_component.result[30]
+result[31] <= lpm_add_sub:LPM_ADD_SUB_component.result[31]
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
+dataa[0] => add_sub_plh:auto_generated.dataa[0]
+dataa[1] => add_sub_plh:auto_generated.dataa[1]
+dataa[2] => add_sub_plh:auto_generated.dataa[2]
+dataa[3] => add_sub_plh:auto_generated.dataa[3]
+dataa[4] => add_sub_plh:auto_generated.dataa[4]
+dataa[5] => add_sub_plh:auto_generated.dataa[5]
+dataa[6] => add_sub_plh:auto_generated.dataa[6]
+dataa[7] => add_sub_plh:auto_generated.dataa[7]
+dataa[8] => add_sub_plh:auto_generated.dataa[8]
+dataa[9] => add_sub_plh:auto_generated.dataa[9]
+dataa[10] => add_sub_plh:auto_generated.dataa[10]
+dataa[11] => add_sub_plh:auto_generated.dataa[11]
+dataa[12] => add_sub_plh:auto_generated.dataa[12]
+dataa[13] => add_sub_plh:auto_generated.dataa[13]
+dataa[14] => add_sub_plh:auto_generated.dataa[14]
+dataa[15] => add_sub_plh:auto_generated.dataa[15]
+dataa[16] => add_sub_plh:auto_generated.dataa[16]
+dataa[17] => add_sub_plh:auto_generated.dataa[17]
+dataa[18] => add_sub_plh:auto_generated.dataa[18]
+dataa[19] => add_sub_plh:auto_generated.dataa[19]
+dataa[20] => add_sub_plh:auto_generated.dataa[20]
+dataa[21] => add_sub_plh:auto_generated.dataa[21]
+dataa[22] => add_sub_plh:auto_generated.dataa[22]
+dataa[23] => add_sub_plh:auto_generated.dataa[23]
+dataa[24] => add_sub_plh:auto_generated.dataa[24]
+dataa[25] => add_sub_plh:auto_generated.dataa[25]
+dataa[26] => add_sub_plh:auto_generated.dataa[26]
+dataa[27] => add_sub_plh:auto_generated.dataa[27]
+dataa[28] => add_sub_plh:auto_generated.dataa[28]
+dataa[29] => add_sub_plh:auto_generated.dataa[29]
+dataa[30] => add_sub_plh:auto_generated.dataa[30]
+dataa[31] => add_sub_plh:auto_generated.dataa[31]
+datab[0] => add_sub_plh:auto_generated.datab[0]
+datab[1] => add_sub_plh:auto_generated.datab[1]
+datab[2] => add_sub_plh:auto_generated.datab[2]
+datab[3] => add_sub_plh:auto_generated.datab[3]
+datab[4] => add_sub_plh:auto_generated.datab[4]
+datab[5] => add_sub_plh:auto_generated.datab[5]
+datab[6] => add_sub_plh:auto_generated.datab[6]
+datab[7] => add_sub_plh:auto_generated.datab[7]
+datab[8] => add_sub_plh:auto_generated.datab[8]
+datab[9] => add_sub_plh:auto_generated.datab[9]
+datab[10] => add_sub_plh:auto_generated.datab[10]
+datab[11] => add_sub_plh:auto_generated.datab[11]
+datab[12] => add_sub_plh:auto_generated.datab[12]
+datab[13] => add_sub_plh:auto_generated.datab[13]
+datab[14] => add_sub_plh:auto_generated.datab[14]
+datab[15] => add_sub_plh:auto_generated.datab[15]
+datab[16] => add_sub_plh:auto_generated.datab[16]
+datab[17] => add_sub_plh:auto_generated.datab[17]
+datab[18] => add_sub_plh:auto_generated.datab[18]
+datab[19] => add_sub_plh:auto_generated.datab[19]
+datab[20] => add_sub_plh:auto_generated.datab[20]
+datab[21] => add_sub_plh:auto_generated.datab[21]
+datab[22] => add_sub_plh:auto_generated.datab[22]
+datab[23] => add_sub_plh:auto_generated.datab[23]
+datab[24] => add_sub_plh:auto_generated.datab[24]
+datab[25] => add_sub_plh:auto_generated.datab[25]
+datab[26] => add_sub_plh:auto_generated.datab[26]
+datab[27] => add_sub_plh:auto_generated.datab[27]
+datab[28] => add_sub_plh:auto_generated.datab[28]
+datab[29] => add_sub_plh:auto_generated.datab[29]
+datab[30] => add_sub_plh:auto_generated.datab[30]
+datab[31] => add_sub_plh:auto_generated.datab[31]
+cin => ~NO_FANOUT~
+add_sub => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= add_sub_plh:auto_generated.result[0]
+result[1] <= add_sub_plh:auto_generated.result[1]
+result[2] <= add_sub_plh:auto_generated.result[2]
+result[3] <= add_sub_plh:auto_generated.result[3]
+result[4] <= add_sub_plh:auto_generated.result[4]
+result[5] <= add_sub_plh:auto_generated.result[5]
+result[6] <= add_sub_plh:auto_generated.result[6]
+result[7] <= add_sub_plh:auto_generated.result[7]
+result[8] <= add_sub_plh:auto_generated.result[8]
+result[9] <= add_sub_plh:auto_generated.result[9]
+result[10] <= add_sub_plh:auto_generated.result[10]
+result[11] <= add_sub_plh:auto_generated.result[11]
+result[12] <= add_sub_plh:auto_generated.result[12]
+result[13] <= add_sub_plh:auto_generated.result[13]
+result[14] <= add_sub_plh:auto_generated.result[14]
+result[15] <= add_sub_plh:auto_generated.result[15]
+result[16] <= add_sub_plh:auto_generated.result[16]
+result[17] <= add_sub_plh:auto_generated.result[17]
+result[18] <= add_sub_plh:auto_generated.result[18]
+result[19] <= add_sub_plh:auto_generated.result[19]
+result[20] <= add_sub_plh:auto_generated.result[20]
+result[21] <= add_sub_plh:auto_generated.result[21]
+result[22] <= add_sub_plh:auto_generated.result[22]
+result[23] <= add_sub_plh:auto_generated.result[23]
+result[24] <= add_sub_plh:auto_generated.result[24]
+result[25] <= add_sub_plh:auto_generated.result[25]
+result[26] <= add_sub_plh:auto_generated.result[26]
+result[27] <= add_sub_plh:auto_generated.result[27]
+result[28] <= add_sub_plh:auto_generated.result[28]
+result[29] <= add_sub_plh:auto_generated.result[29]
+result[30] <= add_sub_plh:auto_generated.result[30]
+result[31] <= add_sub_plh:auto_generated.result[31]
+cout <= <GND>
+overflow <= <GND>
+
+
+|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated
+dataa[0] => op_1.IN62
+dataa[1] => op_1.IN60
+dataa[2] => op_1.IN58
+dataa[3] => op_1.IN56
+dataa[4] => op_1.IN54
+dataa[5] => op_1.IN52
+dataa[6] => op_1.IN50
+dataa[7] => op_1.IN48
+dataa[8] => op_1.IN46
+dataa[9] => op_1.IN44
+dataa[10] => op_1.IN42
+dataa[11] => op_1.IN40
+dataa[12] => op_1.IN38
+dataa[13] => op_1.IN36
+dataa[14] => op_1.IN34
+dataa[15] => op_1.IN32
+dataa[16] => op_1.IN30
+dataa[17] => op_1.IN28
+dataa[18] => op_1.IN26
+dataa[19] => op_1.IN24
+dataa[20] => op_1.IN22
+dataa[21] => op_1.IN20
+dataa[22] => op_1.IN18
+dataa[23] => op_1.IN16
+dataa[24] => op_1.IN14
+dataa[25] => op_1.IN12
+dataa[26] => op_1.IN10
+dataa[27] => op_1.IN8
+dataa[28] => op_1.IN6
+dataa[29] => op_1.IN4
+dataa[30] => op_1.IN2
+dataa[31] => op_1.IN0
+datab[0] => op_1.IN63
+datab[1] => op_1.IN61
+datab[2] => op_1.IN59
+datab[3] => op_1.IN57
+datab[4] => op_1.IN55
+datab[5] => op_1.IN53
+datab[6] => op_1.IN51
+datab[7] => op_1.IN49
+datab[8] => op_1.IN47
+datab[9] => op_1.IN45
+datab[10] => op_1.IN43
+datab[11] => op_1.IN41
+datab[12] => op_1.IN39
+datab[13] => op_1.IN37
+datab[14] => op_1.IN35
+datab[15] => op_1.IN33
+datab[16] => op_1.IN31
+datab[17] => op_1.IN29
+datab[18] => op_1.IN27
+datab[19] => op_1.IN25
+datab[20] => op_1.IN23
+datab[21] => op_1.IN21
+datab[22] => op_1.IN19
+datab[23] => op_1.IN17
+datab[24] => op_1.IN15
+datab[25] => op_1.IN13
+datab[26] => op_1.IN11
+datab[27] => op_1.IN9
+datab[28] => op_1.IN7
+datab[29] => op_1.IN5
+datab[30] => op_1.IN3
+datab[31] => op_1.IN1
+result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_stack52:inst8
@@ -15710,1214 +17573,6 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_lab5_testbed|random_address_gen:inst6
-deal_card <= rand_en.DB_MAX_OUTPUT_PORT_TYPE
-request_deal => g21_dealer_FSM:inst1.Request_Deal
-rst => g21_dealer_FSM:inst1.reset
-rst => LPM_FF:inst11.aclr
-CLK => g21_dealer_FSM:inst1.Clock
-CLK => LPM_FF:inst11.clock
-rand_ADDR[0] <= lpm_divide0:inst10.remain[0]
-rand_ADDR[1] <= lpm_divide0:inst10.remain[1]
-rand_ADDR[2] <= lpm_divide0:inst10.remain[2]
-rand_ADDR[3] <= lpm_divide0:inst10.remain[3]
-rand_ADDR[4] <= lpm_divide0:inst10.remain[4]
-rand_ADDR[5] <= lpm_divide0:inst10.remain[5]
-NUM[0] => lpm_divide0:inst10.denom[0]
-NUM[1] => lpm_divide0:inst10.denom[1]
-NUM[2] => lpm_divide0:inst10.denom[2]
-NUM[3] => lpm_divide0:inst10.denom[3]
-NUM[4] => lpm_divide0:inst10.denom[4]
-NUM[5] => lpm_divide0:inst10.denom[5]
-INIT => LPM_FF:inst11.aset
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_dealer_FSM:inst1
-Request_Deal => Rand_Enable~reg0.DATAIN
-reset => Rand_Enable~reg0.ACLR
-Clock => Rand_Enable~reg0.CLK
-Rand_Enable <= Rand_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10
-denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
-denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
-denom[2] => lpm_divide:LPM_DIVIDE_component.denom[2]
-denom[3] => lpm_divide:LPM_DIVIDE_component.denom[3]
-denom[4] => lpm_divide:LPM_DIVIDE_component.denom[4]
-denom[5] => lpm_divide:LPM_DIVIDE_component.denom[5]
-numer[0] => lpm_divide:LPM_DIVIDE_component.numer[0]
-numer[1] => lpm_divide:LPM_DIVIDE_component.numer[1]
-numer[2] => lpm_divide:LPM_DIVIDE_component.numer[2]
-numer[3] => lpm_divide:LPM_DIVIDE_component.numer[3]
-numer[4] => lpm_divide:LPM_DIVIDE_component.numer[4]
-numer[5] => lpm_divide:LPM_DIVIDE_component.numer[5]
-quotient[0] <= lpm_divide:LPM_DIVIDE_component.quotient[0]
-quotient[1] <= lpm_divide:LPM_DIVIDE_component.quotient[1]
-quotient[2] <= lpm_divide:LPM_DIVIDE_component.quotient[2]
-quotient[3] <= lpm_divide:LPM_DIVIDE_component.quotient[3]
-quotient[4] <= lpm_divide:LPM_DIVIDE_component.quotient[4]
-quotient[5] <= lpm_divide:LPM_DIVIDE_component.quotient[5]
-remain[0] <= lpm_divide:LPM_DIVIDE_component.remain[0]
-remain[1] <= lpm_divide:LPM_DIVIDE_component.remain[1]
-remain[2] <= lpm_divide:LPM_DIVIDE_component.remain[2]
-remain[3] <= lpm_divide:LPM_DIVIDE_component.remain[3]
-remain[4] <= lpm_divide:LPM_DIVIDE_component.remain[4]
-remain[5] <= lpm_divide:LPM_DIVIDE_component.remain[5]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component
-numer[0] => lpm_divide_grp:auto_generated.numer[0]
-numer[1] => lpm_divide_grp:auto_generated.numer[1]
-numer[2] => lpm_divide_grp:auto_generated.numer[2]
-numer[3] => lpm_divide_grp:auto_generated.numer[3]
-numer[4] => lpm_divide_grp:auto_generated.numer[4]
-numer[5] => lpm_divide_grp:auto_generated.numer[5]
-denom[0] => lpm_divide_grp:auto_generated.denom[0]
-denom[1] => lpm_divide_grp:auto_generated.denom[1]
-denom[2] => lpm_divide_grp:auto_generated.denom[2]
-denom[3] => lpm_divide_grp:auto_generated.denom[3]
-denom[4] => lpm_divide_grp:auto_generated.denom[4]
-denom[5] => lpm_divide_grp:auto_generated.denom[5]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-quotient[0] <= lpm_divide_grp:auto_generated.quotient[0]
-quotient[1] <= lpm_divide_grp:auto_generated.quotient[1]
-quotient[2] <= lpm_divide_grp:auto_generated.quotient[2]
-quotient[3] <= lpm_divide_grp:auto_generated.quotient[3]
-quotient[4] <= lpm_divide_grp:auto_generated.quotient[4]
-quotient[5] <= lpm_divide_grp:auto_generated.quotient[5]
-remain[0] <= lpm_divide_grp:auto_generated.remain[0]
-remain[1] <= lpm_divide_grp:auto_generated.remain[1]
-remain[2] <= lpm_divide_grp:auto_generated.remain[2]
-remain[3] <= lpm_divide_grp:auto_generated.remain[3]
-remain[4] <= lpm_divide_grp:auto_generated.remain[4]
-remain[5] <= lpm_divide_grp:auto_generated.remain[5]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated
-denom[0] => sign_div_unsign_bkh:divider.denominator[0]
-denom[1] => sign_div_unsign_bkh:divider.denominator[1]
-denom[2] => sign_div_unsign_bkh:divider.denominator[2]
-denom[3] => sign_div_unsign_bkh:divider.denominator[3]
-denom[4] => sign_div_unsign_bkh:divider.denominator[4]
-denom[5] => sign_div_unsign_bkh:divider.denominator[5]
-numer[0] => sign_div_unsign_bkh:divider.numerator[0]
-numer[1] => sign_div_unsign_bkh:divider.numerator[1]
-numer[2] => sign_div_unsign_bkh:divider.numerator[2]
-numer[3] => sign_div_unsign_bkh:divider.numerator[3]
-numer[4] => sign_div_unsign_bkh:divider.numerator[4]
-numer[5] => sign_div_unsign_bkh:divider.numerator[5]
-quotient[0] <= sign_div_unsign_bkh:divider.quotient[0]
-quotient[1] <= sign_div_unsign_bkh:divider.quotient[1]
-quotient[2] <= sign_div_unsign_bkh:divider.quotient[2]
-quotient[3] <= sign_div_unsign_bkh:divider.quotient[3]
-quotient[4] <= sign_div_unsign_bkh:divider.quotient[4]
-quotient[5] <= sign_div_unsign_bkh:divider.quotient[5]
-remain[0] <= sign_div_unsign_bkh:divider.remainder[0]
-remain[1] <= sign_div_unsign_bkh:divider.remainder[1]
-remain[2] <= sign_div_unsign_bkh:divider.remainder[2]
-remain[3] <= sign_div_unsign_bkh:divider.remainder[3]
-remain[4] <= sign_div_unsign_bkh:divider.remainder[4]
-remain[5] <= sign_div_unsign_bkh:divider.remainder[5]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider
-denominator[0] => alt_u_div_ove:divider.denominator[0]
-denominator[1] => alt_u_div_ove:divider.denominator[1]
-denominator[2] => alt_u_div_ove:divider.denominator[2]
-denominator[3] => alt_u_div_ove:divider.denominator[3]
-denominator[4] => alt_u_div_ove:divider.denominator[4]
-denominator[5] => alt_u_div_ove:divider.denominator[5]
-numerator[0] => alt_u_div_ove:divider.numerator[0]
-numerator[1] => alt_u_div_ove:divider.numerator[1]
-numerator[2] => alt_u_div_ove:divider.numerator[2]
-numerator[3] => alt_u_div_ove:divider.numerator[3]
-numerator[4] => alt_u_div_ove:divider.numerator[4]
-numerator[5] => alt_u_div_ove:divider.numerator[5]
-quotient[0] <= protect_quotient[0].DB_MAX_OUTPUT_PORT_TYPE
-quotient[1] <= protect_quotient[1].DB_MAX_OUTPUT_PORT_TYPE
-quotient[2] <= protect_quotient[2].DB_MAX_OUTPUT_PORT_TYPE
-quotient[3] <= protect_quotient[3].DB_MAX_OUTPUT_PORT_TYPE
-quotient[4] <= protect_quotient[4].DB_MAX_OUTPUT_PORT_TYPE
-quotient[5] <= protect_quotient[5].DB_MAX_OUTPUT_PORT_TYPE
-remainder[0] <= protect_remainder[0].DB_MAX_OUTPUT_PORT_TYPE
-remainder[1] <= protect_remainder[1].DB_MAX_OUTPUT_PORT_TYPE
-remainder[2] <= protect_remainder[2].DB_MAX_OUTPUT_PORT_TYPE
-remainder[3] <= protect_remainder[3].DB_MAX_OUTPUT_PORT_TYPE
-remainder[4] <= protect_remainder[4].DB_MAX_OUTPUT_PORT_TYPE
-remainder[5] <= protect_remainder[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider
-denominator[0] => add_sub_lkc:add_sub_0.datab[0]
-denominator[0] => add_sub_mkc:add_sub_1.datab[0]
-denominator[0] => op_1.IN8
-denominator[0] => op_2.IN10
-denominator[0] => op_3.IN12
-denominator[0] => op_4.IN14
-denominator[1] => sel[0].IN1
-denominator[1] => add_sub_mkc:add_sub_1.datab[1]
-denominator[1] => sel[6].IN1
-denominator[1] => sel[12].IN1
-denominator[1] => op_1.IN6
-denominator[1] => sel[18].IN1
-denominator[1] => op_2.IN8
-denominator[1] => sel[24].IN1
-denominator[1] => op_3.IN10
-denominator[1] => sel[30].IN1
-denominator[1] => op_4.IN12
-denominator[1] => sel[36].IN1
-denominator[2] => sel[1].IN1
-denominator[2] => sel[7].IN1
-denominator[2] => sel[13].IN1
-denominator[2] => op_1.IN4
-denominator[2] => sel[19].IN1
-denominator[2] => op_2.IN6
-denominator[2] => sel[25].IN1
-denominator[2] => op_3.IN8
-denominator[2] => sel[31].IN1
-denominator[2] => op_4.IN10
-denominator[2] => sel[37].IN1
-denominator[3] => sel[2].IN1
-denominator[3] => sel[8].IN1
-denominator[3] => sel[14].IN1
-denominator[3] => sel[20].IN1
-denominator[3] => op_2.IN4
-denominator[3] => sel[26].IN1
-denominator[3] => op_3.IN6
-denominator[3] => sel[32].IN1
-denominator[3] => op_4.IN8
-denominator[3] => sel[38].IN1
-denominator[4] => sel[3].IN1
-denominator[4] => sel[9].IN1
-denominator[4] => sel[15].IN1
-denominator[4] => sel[21].IN1
-denominator[4] => sel[27].IN1
-denominator[4] => op_3.IN4
-denominator[4] => sel[33].IN1
-denominator[4] => op_4.IN6
-denominator[4] => sel[39].IN1
-denominator[5] => sel[4].IN1
-denominator[5] => sel[10].IN1
-denominator[5] => sel[16].IN1
-denominator[5] => sel[22].IN1
-denominator[5] => sel[28].IN1
-denominator[5] => sel[34].IN1
-denominator[5] => op_4.IN4
-denominator[5] => sel[40].IN1
-numerator[0] => StageOut[30].IN0
-numerator[0] => op_4.IN13
-numerator[1] => StageOut[24].IN0
-numerator[1] => op_3.IN11
-numerator[2] => StageOut[18].IN0
-numerator[2] => op_2.IN9
-numerator[3] => StageOut[12].IN0
-numerator[3] => op_1.IN7
-numerator[4] => add_sub_mkc:add_sub_1.dataa[0]
-numerator[4] => StageOut[6].IN0
-numerator[5] => add_sub_lkc:add_sub_0.dataa[0]
-numerator[5] => StageOut[0].IN0
-quotient[0] <= quotient_tmp[0].DB_MAX_OUTPUT_PORT_TYPE
-quotient[1] <= quotient_tmp[1].DB_MAX_OUTPUT_PORT_TYPE
-quotient[2] <= quotient_tmp[2].DB_MAX_OUTPUT_PORT_TYPE
-quotient[3] <= quotient_tmp[3].DB_MAX_OUTPUT_PORT_TYPE
-quotient[4] <= quotient_tmp[4].DB_MAX_OUTPUT_PORT_TYPE
-quotient[5] <= quotient_tmp[5].DB_MAX_OUTPUT_PORT_TYPE
-remainder[0] <= StageOut[30].DB_MAX_OUTPUT_PORT_TYPE
-remainder[1] <= StageOut[31].DB_MAX_OUTPUT_PORT_TYPE
-remainder[2] <= StageOut[32].DB_MAX_OUTPUT_PORT_TYPE
-remainder[3] <= StageOut[33].DB_MAX_OUTPUT_PORT_TYPE
-remainder[4] <= StageOut[34].DB_MAX_OUTPUT_PORT_TYPE
-remainder[5] <= StageOut[35].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_lkc:add_sub_0
-cout <= carry_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => carry_eqn[0].IN0
-dataa[0] => _.IN0
-dataa[0] => sum_eqn[0].IN0
-datab[0] => datab_node[0].IN0
-result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|lpm_divide0:inst10|lpm_divide:LPM_DIVIDE_component|lpm_divide_grp:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_mkc:add_sub_1
-cout <= carry_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => carry_eqn[0].IN0
-dataa[0] => _.IN0
-dataa[0] => sum_eqn[0].IN0
-dataa[1] => carry_eqn[1].IN0
-dataa[1] => _.IN0
-dataa[1] => sum_eqn[1].IN0
-datab[0] => datab_node[0].IN0
-datab[1] => datab_node[1].IN0
-result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-data[7] => dffs[7].DATAIN
-data[8] => dffs[8].DATAIN
-data[9] => dffs[9].DATAIN
-data[10] => dffs[10].DATAIN
-data[11] => dffs[11].DATAIN
-data[12] => dffs[12].DATAIN
-data[13] => dffs[13].DATAIN
-data[14] => dffs[14].DATAIN
-data[15] => dffs[15].DATAIN
-data[16] => dffs[16].DATAIN
-data[17] => dffs[17].DATAIN
-data[18] => dffs[18].DATAIN
-data[19] => dffs[19].DATAIN
-data[20] => dffs[20].DATAIN
-data[21] => dffs[21].DATAIN
-data[22] => dffs[22].DATAIN
-data[23] => dffs[23].DATAIN
-data[24] => dffs[24].DATAIN
-data[25] => dffs[25].DATAIN
-data[26] => dffs[26].DATAIN
-data[27] => dffs[27].DATAIN
-data[28] => dffs[28].DATAIN
-data[29] => dffs[29].DATAIN
-data[30] => dffs[30].DATAIN
-data[31] => dffs[31].DATAIN
-clock => dffs[31].CLK
-clock => dffs[30].CLK
-clock => dffs[29].CLK
-clock => dffs[28].CLK
-clock => dffs[27].CLK
-clock => dffs[26].CLK
-clock => dffs[25].CLK
-clock => dffs[24].CLK
-clock => dffs[23].CLK
-clock => dffs[22].CLK
-clock => dffs[21].CLK
-clock => dffs[20].CLK
-clock => dffs[19].CLK
-clock => dffs[18].CLK
-clock => dffs[17].CLK
-clock => dffs[16].CLK
-clock => dffs[15].CLK
-clock => dffs[14].CLK
-clock => dffs[13].CLK
-clock => dffs[12].CLK
-clock => dffs[11].CLK
-clock => dffs[10].CLK
-clock => dffs[9].CLK
-clock => dffs[8].CLK
-clock => dffs[7].CLK
-clock => dffs[6].CLK
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[31].ENA
-enable => dffs[30].ENA
-enable => dffs[29].ENA
-enable => dffs[28].ENA
-enable => dffs[27].ENA
-enable => dffs[26].ENA
-enable => dffs[25].ENA
-enable => dffs[24].ENA
-enable => dffs[23].ENA
-enable => dffs[22].ENA
-enable => dffs[21].ENA
-enable => dffs[20].ENA
-enable => dffs[19].ENA
-enable => dffs[18].ENA
-enable => dffs[17].ENA
-enable => dffs[16].ENA
-enable => dffs[15].ENA
-enable => dffs[14].ENA
-enable => dffs[13].ENA
-enable => dffs[12].ENA
-enable => dffs[11].ENA
-enable => dffs[10].ENA
-enable => dffs[9].ENA
-enable => dffs[8].ENA
-enable => dffs[7].ENA
-enable => dffs[6].ENA
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => _.IN0
-aclr => dffs[31].IN0
-aclr => dffs[30].IN0
-aclr => dffs[29].IN0
-aclr => dffs[28].IN0
-aclr => dffs[27].IN0
-aclr => dffs[26].IN0
-aclr => dffs[25].IN0
-aclr => dffs[24].IN0
-aclr => dffs[23].IN0
-aclr => dffs[22].IN0
-aclr => dffs[21].IN0
-aclr => dffs[20].IN0
-aclr => dffs[19].IN0
-aclr => dffs[18].IN0
-aclr => dffs[17].IN0
-aclr => dffs[16].IN0
-aclr => dffs[15].IN0
-aclr => dffs[14].IN0
-aclr => dffs[13].IN0
-aclr => dffs[12].IN0
-aclr => dffs[11].IN0
-aclr => dffs[10].IN0
-aclr => dffs[9].IN0
-aclr => dffs[8].IN0
-aclr => dffs[7].IN0
-aclr => dffs[6].IN0
-aclr => dffs[5].IN0
-aclr => dffs[4].IN0
-aclr => dffs[3].IN0
-aclr => dffs[2].IN0
-aclr => dffs[1].IN0
-aclr => dffs[0].IN0
-aset => _.IN0
-aset => _.IN0
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= dffs[10].DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= dffs[11].DB_MAX_OUTPUT_PORT_TYPE
-q[12] <= dffs[12].DB_MAX_OUTPUT_PORT_TYPE
-q[13] <= dffs[13].DB_MAX_OUTPUT_PORT_TYPE
-q[14] <= dffs[14].DB_MAX_OUTPUT_PORT_TYPE
-q[15] <= dffs[15].DB_MAX_OUTPUT_PORT_TYPE
-q[16] <= dffs[16].DB_MAX_OUTPUT_PORT_TYPE
-q[17] <= dffs[17].DB_MAX_OUTPUT_PORT_TYPE
-q[18] <= dffs[18].DB_MAX_OUTPUT_PORT_TYPE
-q[19] <= dffs[19].DB_MAX_OUTPUT_PORT_TYPE
-q[20] <= dffs[20].DB_MAX_OUTPUT_PORT_TYPE
-q[21] <= dffs[21].DB_MAX_OUTPUT_PORT_TYPE
-q[22] <= dffs[22].DB_MAX_OUTPUT_PORT_TYPE
-q[23] <= dffs[23].DB_MAX_OUTPUT_PORT_TYPE
-q[24] <= dffs[24].DB_MAX_OUTPUT_PORT_TYPE
-q[25] <= dffs[25].DB_MAX_OUTPUT_PORT_TYPE
-q[26] <= dffs[26].DB_MAX_OUTPUT_PORT_TYPE
-q[27] <= dffs[27].DB_MAX_OUTPUT_PORT_TYPE
-q[28] <= dffs[28].DB_MAX_OUTPUT_PORT_TYPE
-q[29] <= dffs[29].DB_MAX_OUTPUT_PORT_TYPE
-q[30] <= dffs[30].DB_MAX_OUTPUT_PORT_TYPE
-q[31] <= dffs[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11|lpm_constant:ac
-result[0] <= lpm_constant_bj4:ag.result[0]
-result[1] <= lpm_constant_bj4:ag.result[1]
-result[2] <= lpm_constant_bj4:ag.result[2]
-result[3] <= lpm_constant_bj4:ag.result[3]
-result[4] <= lpm_constant_bj4:ag.result[4]
-result[5] <= lpm_constant_bj4:ag.result[5]
-result[6] <= lpm_constant_bj4:ag.result[6]
-result[7] <= lpm_constant_bj4:ag.result[7]
-result[8] <= lpm_constant_bj4:ag.result[8]
-result[9] <= lpm_constant_bj4:ag.result[9]
-result[10] <= lpm_constant_bj4:ag.result[10]
-result[11] <= lpm_constant_bj4:ag.result[11]
-result[12] <= lpm_constant_bj4:ag.result[12]
-result[13] <= lpm_constant_bj4:ag.result[13]
-result[14] <= lpm_constant_bj4:ag.result[14]
-result[15] <= lpm_constant_bj4:ag.result[15]
-result[16] <= lpm_constant_bj4:ag.result[16]
-result[17] <= lpm_constant_bj4:ag.result[17]
-result[18] <= lpm_constant_bj4:ag.result[18]
-result[19] <= lpm_constant_bj4:ag.result[19]
-result[20] <= lpm_constant_bj4:ag.result[20]
-result[21] <= lpm_constant_bj4:ag.result[21]
-result[22] <= lpm_constant_bj4:ag.result[22]
-result[23] <= lpm_constant_bj4:ag.result[23]
-result[24] <= lpm_constant_bj4:ag.result[24]
-result[25] <= lpm_constant_bj4:ag.result[25]
-result[26] <= lpm_constant_bj4:ag.result[26]
-result[27] <= lpm_constant_bj4:ag.result[27]
-result[28] <= lpm_constant_bj4:ag.result[28]
-result[29] <= lpm_constant_bj4:ag.result[29]
-result[30] <= lpm_constant_bj4:ag.result[30]
-result[31] <= lpm_constant_bj4:ag.result[31]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|LPM_FF:inst11|lpm_constant:ac|lpm_constant_bj4:ag
-result[0] <= <GND>
-result[1] <= <VCC>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <VCC>
-result[6] <= <VCC>
-result[7] <= <GND>
-result[8] <= <VCC>
-result[9] <= <GND>
-result[10] <= <GND>
-result[11] <= <GND>
-result[12] <= <GND>
-result[13] <= <VCC>
-result[14] <= <GND>
-result[15] <= <GND>
-result[16] <= <GND>
-result[17] <= <GND>
-result[18] <= <GND>
-result[19] <= <GND>
-result[20] <= <GND>
-result[21] <= <GND>
-result[22] <= <GND>
-result[23] <= <GND>
-result[24] <= <GND>
-result[25] <= <GND>
-result[26] <= <GND>
-result[27] <= <GND>
-result[28] <= <GND>
-result[29] <= <GND>
-result[30] <= <GND>
-result[31] <= <GND>
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9
-seed[0] => add_sub:A2.datab[0]
-seed[0] => add_sub:A1.dataa[16]
-seed[0] => add_sub:A1.datab[1]
-seed[1] => add_sub:A2.datab[1]
-seed[1] => add_sub:A1.dataa[17]
-seed[1] => add_sub:A1.datab[2]
-seed[2] => add_sub:A2.datab[2]
-seed[2] => add_sub:A1.dataa[18]
-seed[2] => add_sub:A1.datab[3]
-seed[3] => add_sub:A2.datab[3]
-seed[3] => add_sub:A1.dataa[19]
-seed[3] => add_sub:A1.datab[4]
-seed[4] => add_sub:A2.datab[4]
-seed[4] => add_sub:A1.dataa[20]
-seed[4] => add_sub:A1.datab[5]
-seed[5] => add_sub:A2.datab[5]
-seed[5] => add_sub:A1.dataa[21]
-seed[5] => add_sub:A1.datab[6]
-seed[6] => add_sub:A2.datab[6]
-seed[6] => add_sub:A1.dataa[22]
-seed[6] => add_sub:A1.datab[7]
-seed[7] => add_sub:A2.datab[7]
-seed[7] => add_sub:A1.dataa[23]
-seed[7] => add_sub:A1.datab[8]
-seed[8] => add_sub:A2.datab[8]
-seed[8] => add_sub:A1.dataa[24]
-seed[8] => add_sub:A1.datab[9]
-seed[9] => add_sub:A2.datab[9]
-seed[9] => add_sub:A1.dataa[25]
-seed[9] => add_sub:A1.datab[10]
-seed[10] => add_sub:A2.datab[10]
-seed[10] => add_sub:A1.dataa[26]
-seed[10] => add_sub:A1.datab[11]
-seed[11] => add_sub:A2.datab[11]
-seed[11] => add_sub:A1.dataa[27]
-seed[11] => add_sub:A1.datab[12]
-seed[12] => add_sub:A2.datab[12]
-seed[12] => add_sub:A1.dataa[28]
-seed[12] => add_sub:A1.datab[13]
-seed[13] => add_sub:A2.datab[13]
-seed[13] => add_sub:A1.dataa[29]
-seed[13] => add_sub:A1.datab[14]
-seed[14] => add_sub:A2.datab[14]
-seed[14] => add_sub:A1.dataa[30]
-seed[14] => add_sub:A1.datab[15]
-seed[15] => add_sub:A2.datab[15]
-seed[15] => add_sub:A1.dataa[31]
-seed[15] => add_sub:A1.datab[16]
-seed[16] => add_sub:A2.datab[16]
-seed[16] => add_sub:A1.datab[17]
-seed[17] => add_sub:A2.datab[17]
-seed[17] => add_sub:A1.datab[18]
-seed[18] => add_sub:A2.datab[18]
-seed[18] => add_sub:A1.datab[19]
-seed[19] => add_sub:A2.datab[19]
-seed[19] => add_sub:A1.datab[20]
-seed[20] => add_sub:A2.datab[20]
-seed[20] => add_sub:A1.datab[21]
-seed[21] => add_sub:A2.datab[21]
-seed[21] => add_sub:A1.datab[22]
-seed[22] => add_sub:A2.datab[22]
-seed[22] => add_sub:A1.datab[23]
-seed[23] => add_sub:A2.datab[23]
-seed[23] => add_sub:A1.datab[24]
-seed[24] => add_sub:A2.datab[24]
-seed[24] => add_sub:A1.datab[25]
-seed[25] => add_sub:A2.datab[25]
-seed[25] => add_sub:A1.datab[26]
-seed[26] => add_sub:A2.datab[26]
-seed[26] => add_sub:A1.datab[27]
-seed[27] => add_sub:A2.datab[27]
-seed[27] => add_sub:A1.datab[28]
-seed[28] => add_sub:A2.datab[28]
-seed[28] => add_sub:A1.datab[29]
-seed[29] => add_sub:A2.datab[29]
-seed[29] => add_sub:A1.datab[30]
-seed[30] => add_sub:A2.datab[30]
-seed[30] => add_sub:A1.datab[31]
-seed[31] => add_sub:A2.datab[31]
-rand[0] <= add_sub:A2.result[0]
-rand[1] <= add_sub:A2.result[1]
-rand[2] <= add_sub:A2.result[2]
-rand[3] <= add_sub:A2.result[3]
-rand[4] <= add_sub:A2.result[4]
-rand[5] <= add_sub:A2.result[5]
-rand[6] <= add_sub:A2.result[6]
-rand[7] <= add_sub:A2.result[7]
-rand[8] <= add_sub:A2.result[8]
-rand[9] <= add_sub:A2.result[9]
-rand[10] <= add_sub:A2.result[10]
-rand[11] <= add_sub:A2.result[11]
-rand[12] <= add_sub:A2.result[12]
-rand[13] <= add_sub:A2.result[13]
-rand[14] <= add_sub:A2.result[14]
-rand[15] <= add_sub:A2.result[15]
-rand[16] <= add_sub:A2.result[16]
-rand[17] <= add_sub:A2.result[17]
-rand[18] <= add_sub:A2.result[18]
-rand[19] <= add_sub:A2.result[19]
-rand[20] <= add_sub:A2.result[20]
-rand[21] <= add_sub:A2.result[21]
-rand[22] <= add_sub:A2.result[22]
-rand[23] <= add_sub:A2.result[23]
-rand[24] <= add_sub:A2.result[24]
-rand[25] <= add_sub:A2.result[25]
-rand[26] <= add_sub:A2.result[26]
-rand[27] <= add_sub:A2.result[27]
-rand[28] <= add_sub:A2.result[28]
-rand[29] <= add_sub:A2.result[29]
-rand[30] <= add_sub:A2.result[30]
-rand[31] <= <GND>
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1
-dataa[0] => lpm_add_sub:LPM_ADD_SUB_component.dataa[0]
-dataa[1] => lpm_add_sub:LPM_ADD_SUB_component.dataa[1]
-dataa[2] => lpm_add_sub:LPM_ADD_SUB_component.dataa[2]
-dataa[3] => lpm_add_sub:LPM_ADD_SUB_component.dataa[3]
-dataa[4] => lpm_add_sub:LPM_ADD_SUB_component.dataa[4]
-dataa[5] => lpm_add_sub:LPM_ADD_SUB_component.dataa[5]
-dataa[6] => lpm_add_sub:LPM_ADD_SUB_component.dataa[6]
-dataa[7] => lpm_add_sub:LPM_ADD_SUB_component.dataa[7]
-dataa[8] => lpm_add_sub:LPM_ADD_SUB_component.dataa[8]
-dataa[9] => lpm_add_sub:LPM_ADD_SUB_component.dataa[9]
-dataa[10] => lpm_add_sub:LPM_ADD_SUB_component.dataa[10]
-dataa[11] => lpm_add_sub:LPM_ADD_SUB_component.dataa[11]
-dataa[12] => lpm_add_sub:LPM_ADD_SUB_component.dataa[12]
-dataa[13] => lpm_add_sub:LPM_ADD_SUB_component.dataa[13]
-dataa[14] => lpm_add_sub:LPM_ADD_SUB_component.dataa[14]
-dataa[15] => lpm_add_sub:LPM_ADD_SUB_component.dataa[15]
-dataa[16] => lpm_add_sub:LPM_ADD_SUB_component.dataa[16]
-dataa[17] => lpm_add_sub:LPM_ADD_SUB_component.dataa[17]
-dataa[18] => lpm_add_sub:LPM_ADD_SUB_component.dataa[18]
-dataa[19] => lpm_add_sub:LPM_ADD_SUB_component.dataa[19]
-dataa[20] => lpm_add_sub:LPM_ADD_SUB_component.dataa[20]
-dataa[21] => lpm_add_sub:LPM_ADD_SUB_component.dataa[21]
-dataa[22] => lpm_add_sub:LPM_ADD_SUB_component.dataa[22]
-dataa[23] => lpm_add_sub:LPM_ADD_SUB_component.dataa[23]
-dataa[24] => lpm_add_sub:LPM_ADD_SUB_component.dataa[24]
-dataa[25] => lpm_add_sub:LPM_ADD_SUB_component.dataa[25]
-dataa[26] => lpm_add_sub:LPM_ADD_SUB_component.dataa[26]
-dataa[27] => lpm_add_sub:LPM_ADD_SUB_component.dataa[27]
-dataa[28] => lpm_add_sub:LPM_ADD_SUB_component.dataa[28]
-dataa[29] => lpm_add_sub:LPM_ADD_SUB_component.dataa[29]
-dataa[30] => lpm_add_sub:LPM_ADD_SUB_component.dataa[30]
-dataa[31] => lpm_add_sub:LPM_ADD_SUB_component.dataa[31]
-datab[0] => lpm_add_sub:LPM_ADD_SUB_component.datab[0]
-datab[1] => lpm_add_sub:LPM_ADD_SUB_component.datab[1]
-datab[2] => lpm_add_sub:LPM_ADD_SUB_component.datab[2]
-datab[3] => lpm_add_sub:LPM_ADD_SUB_component.datab[3]
-datab[4] => lpm_add_sub:LPM_ADD_SUB_component.datab[4]
-datab[5] => lpm_add_sub:LPM_ADD_SUB_component.datab[5]
-datab[6] => lpm_add_sub:LPM_ADD_SUB_component.datab[6]
-datab[7] => lpm_add_sub:LPM_ADD_SUB_component.datab[7]
-datab[8] => lpm_add_sub:LPM_ADD_SUB_component.datab[8]
-datab[9] => lpm_add_sub:LPM_ADD_SUB_component.datab[9]
-datab[10] => lpm_add_sub:LPM_ADD_SUB_component.datab[10]
-datab[11] => lpm_add_sub:LPM_ADD_SUB_component.datab[11]
-datab[12] => lpm_add_sub:LPM_ADD_SUB_component.datab[12]
-datab[13] => lpm_add_sub:LPM_ADD_SUB_component.datab[13]
-datab[14] => lpm_add_sub:LPM_ADD_SUB_component.datab[14]
-datab[15] => lpm_add_sub:LPM_ADD_SUB_component.datab[15]
-datab[16] => lpm_add_sub:LPM_ADD_SUB_component.datab[16]
-datab[17] => lpm_add_sub:LPM_ADD_SUB_component.datab[17]
-datab[18] => lpm_add_sub:LPM_ADD_SUB_component.datab[18]
-datab[19] => lpm_add_sub:LPM_ADD_SUB_component.datab[19]
-datab[20] => lpm_add_sub:LPM_ADD_SUB_component.datab[20]
-datab[21] => lpm_add_sub:LPM_ADD_SUB_component.datab[21]
-datab[22] => lpm_add_sub:LPM_ADD_SUB_component.datab[22]
-datab[23] => lpm_add_sub:LPM_ADD_SUB_component.datab[23]
-datab[24] => lpm_add_sub:LPM_ADD_SUB_component.datab[24]
-datab[25] => lpm_add_sub:LPM_ADD_SUB_component.datab[25]
-datab[26] => lpm_add_sub:LPM_ADD_SUB_component.datab[26]
-datab[27] => lpm_add_sub:LPM_ADD_SUB_component.datab[27]
-datab[28] => lpm_add_sub:LPM_ADD_SUB_component.datab[28]
-datab[29] => lpm_add_sub:LPM_ADD_SUB_component.datab[29]
-datab[30] => lpm_add_sub:LPM_ADD_SUB_component.datab[30]
-datab[31] => lpm_add_sub:LPM_ADD_SUB_component.datab[31]
-result[0] <= lpm_add_sub:LPM_ADD_SUB_component.result[0]
-result[1] <= lpm_add_sub:LPM_ADD_SUB_component.result[1]
-result[2] <= lpm_add_sub:LPM_ADD_SUB_component.result[2]
-result[3] <= lpm_add_sub:LPM_ADD_SUB_component.result[3]
-result[4] <= lpm_add_sub:LPM_ADD_SUB_component.result[4]
-result[5] <= lpm_add_sub:LPM_ADD_SUB_component.result[5]
-result[6] <= lpm_add_sub:LPM_ADD_SUB_component.result[6]
-result[7] <= lpm_add_sub:LPM_ADD_SUB_component.result[7]
-result[8] <= lpm_add_sub:LPM_ADD_SUB_component.result[8]
-result[9] <= lpm_add_sub:LPM_ADD_SUB_component.result[9]
-result[10] <= lpm_add_sub:LPM_ADD_SUB_component.result[10]
-result[11] <= lpm_add_sub:LPM_ADD_SUB_component.result[11]
-result[12] <= lpm_add_sub:LPM_ADD_SUB_component.result[12]
-result[13] <= lpm_add_sub:LPM_ADD_SUB_component.result[13]
-result[14] <= lpm_add_sub:LPM_ADD_SUB_component.result[14]
-result[15] <= lpm_add_sub:LPM_ADD_SUB_component.result[15]
-result[16] <= lpm_add_sub:LPM_ADD_SUB_component.result[16]
-result[17] <= lpm_add_sub:LPM_ADD_SUB_component.result[17]
-result[18] <= lpm_add_sub:LPM_ADD_SUB_component.result[18]
-result[19] <= lpm_add_sub:LPM_ADD_SUB_component.result[19]
-result[20] <= lpm_add_sub:LPM_ADD_SUB_component.result[20]
-result[21] <= lpm_add_sub:LPM_ADD_SUB_component.result[21]
-result[22] <= lpm_add_sub:LPM_ADD_SUB_component.result[22]
-result[23] <= lpm_add_sub:LPM_ADD_SUB_component.result[23]
-result[24] <= lpm_add_sub:LPM_ADD_SUB_component.result[24]
-result[25] <= lpm_add_sub:LPM_ADD_SUB_component.result[25]
-result[26] <= lpm_add_sub:LPM_ADD_SUB_component.result[26]
-result[27] <= lpm_add_sub:LPM_ADD_SUB_component.result[27]
-result[28] <= lpm_add_sub:LPM_ADD_SUB_component.result[28]
-result[29] <= lpm_add_sub:LPM_ADD_SUB_component.result[29]
-result[30] <= lpm_add_sub:LPM_ADD_SUB_component.result[30]
-result[31] <= lpm_add_sub:LPM_ADD_SUB_component.result[31]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component
-dataa[0] => add_sub_plh:auto_generated.dataa[0]
-dataa[1] => add_sub_plh:auto_generated.dataa[1]
-dataa[2] => add_sub_plh:auto_generated.dataa[2]
-dataa[3] => add_sub_plh:auto_generated.dataa[3]
-dataa[4] => add_sub_plh:auto_generated.dataa[4]
-dataa[5] => add_sub_plh:auto_generated.dataa[5]
-dataa[6] => add_sub_plh:auto_generated.dataa[6]
-dataa[7] => add_sub_plh:auto_generated.dataa[7]
-dataa[8] => add_sub_plh:auto_generated.dataa[8]
-dataa[9] => add_sub_plh:auto_generated.dataa[9]
-dataa[10] => add_sub_plh:auto_generated.dataa[10]
-dataa[11] => add_sub_plh:auto_generated.dataa[11]
-dataa[12] => add_sub_plh:auto_generated.dataa[12]
-dataa[13] => add_sub_plh:auto_generated.dataa[13]
-dataa[14] => add_sub_plh:auto_generated.dataa[14]
-dataa[15] => add_sub_plh:auto_generated.dataa[15]
-dataa[16] => add_sub_plh:auto_generated.dataa[16]
-dataa[17] => add_sub_plh:auto_generated.dataa[17]
-dataa[18] => add_sub_plh:auto_generated.dataa[18]
-dataa[19] => add_sub_plh:auto_generated.dataa[19]
-dataa[20] => add_sub_plh:auto_generated.dataa[20]
-dataa[21] => add_sub_plh:auto_generated.dataa[21]
-dataa[22] => add_sub_plh:auto_generated.dataa[22]
-dataa[23] => add_sub_plh:auto_generated.dataa[23]
-dataa[24] => add_sub_plh:auto_generated.dataa[24]
-dataa[25] => add_sub_plh:auto_generated.dataa[25]
-dataa[26] => add_sub_plh:auto_generated.dataa[26]
-dataa[27] => add_sub_plh:auto_generated.dataa[27]
-dataa[28] => add_sub_plh:auto_generated.dataa[28]
-dataa[29] => add_sub_plh:auto_generated.dataa[29]
-dataa[30] => add_sub_plh:auto_generated.dataa[30]
-dataa[31] => add_sub_plh:auto_generated.dataa[31]
-datab[0] => add_sub_plh:auto_generated.datab[0]
-datab[1] => add_sub_plh:auto_generated.datab[1]
-datab[2] => add_sub_plh:auto_generated.datab[2]
-datab[3] => add_sub_plh:auto_generated.datab[3]
-datab[4] => add_sub_plh:auto_generated.datab[4]
-datab[5] => add_sub_plh:auto_generated.datab[5]
-datab[6] => add_sub_plh:auto_generated.datab[6]
-datab[7] => add_sub_plh:auto_generated.datab[7]
-datab[8] => add_sub_plh:auto_generated.datab[8]
-datab[9] => add_sub_plh:auto_generated.datab[9]
-datab[10] => add_sub_plh:auto_generated.datab[10]
-datab[11] => add_sub_plh:auto_generated.datab[11]
-datab[12] => add_sub_plh:auto_generated.datab[12]
-datab[13] => add_sub_plh:auto_generated.datab[13]
-datab[14] => add_sub_plh:auto_generated.datab[14]
-datab[15] => add_sub_plh:auto_generated.datab[15]
-datab[16] => add_sub_plh:auto_generated.datab[16]
-datab[17] => add_sub_plh:auto_generated.datab[17]
-datab[18] => add_sub_plh:auto_generated.datab[18]
-datab[19] => add_sub_plh:auto_generated.datab[19]
-datab[20] => add_sub_plh:auto_generated.datab[20]
-datab[21] => add_sub_plh:auto_generated.datab[21]
-datab[22] => add_sub_plh:auto_generated.datab[22]
-datab[23] => add_sub_plh:auto_generated.datab[23]
-datab[24] => add_sub_plh:auto_generated.datab[24]
-datab[25] => add_sub_plh:auto_generated.datab[25]
-datab[26] => add_sub_plh:auto_generated.datab[26]
-datab[27] => add_sub_plh:auto_generated.datab[27]
-datab[28] => add_sub_plh:auto_generated.datab[28]
-datab[29] => add_sub_plh:auto_generated.datab[29]
-datab[30] => add_sub_plh:auto_generated.datab[30]
-datab[31] => add_sub_plh:auto_generated.datab[31]
-cin => ~NO_FANOUT~
-add_sub => ~NO_FANOUT~
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= add_sub_plh:auto_generated.result[0]
-result[1] <= add_sub_plh:auto_generated.result[1]
-result[2] <= add_sub_plh:auto_generated.result[2]
-result[3] <= add_sub_plh:auto_generated.result[3]
-result[4] <= add_sub_plh:auto_generated.result[4]
-result[5] <= add_sub_plh:auto_generated.result[5]
-result[6] <= add_sub_plh:auto_generated.result[6]
-result[7] <= add_sub_plh:auto_generated.result[7]
-result[8] <= add_sub_plh:auto_generated.result[8]
-result[9] <= add_sub_plh:auto_generated.result[9]
-result[10] <= add_sub_plh:auto_generated.result[10]
-result[11] <= add_sub_plh:auto_generated.result[11]
-result[12] <= add_sub_plh:auto_generated.result[12]
-result[13] <= add_sub_plh:auto_generated.result[13]
-result[14] <= add_sub_plh:auto_generated.result[14]
-result[15] <= add_sub_plh:auto_generated.result[15]
-result[16] <= add_sub_plh:auto_generated.result[16]
-result[17] <= add_sub_plh:auto_generated.result[17]
-result[18] <= add_sub_plh:auto_generated.result[18]
-result[19] <= add_sub_plh:auto_generated.result[19]
-result[20] <= add_sub_plh:auto_generated.result[20]
-result[21] <= add_sub_plh:auto_generated.result[21]
-result[22] <= add_sub_plh:auto_generated.result[22]
-result[23] <= add_sub_plh:auto_generated.result[23]
-result[24] <= add_sub_plh:auto_generated.result[24]
-result[25] <= add_sub_plh:auto_generated.result[25]
-result[26] <= add_sub_plh:auto_generated.result[26]
-result[27] <= add_sub_plh:auto_generated.result[27]
-result[28] <= add_sub_plh:auto_generated.result[28]
-result[29] <= add_sub_plh:auto_generated.result[29]
-result[30] <= add_sub_plh:auto_generated.result[30]
-result[31] <= add_sub_plh:auto_generated.result[31]
-cout <= <GND>
-overflow <= <GND>
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated
-dataa[0] => op_1.IN62
-dataa[1] => op_1.IN60
-dataa[2] => op_1.IN58
-dataa[3] => op_1.IN56
-dataa[4] => op_1.IN54
-dataa[5] => op_1.IN52
-dataa[6] => op_1.IN50
-dataa[7] => op_1.IN48
-dataa[8] => op_1.IN46
-dataa[9] => op_1.IN44
-dataa[10] => op_1.IN42
-dataa[11] => op_1.IN40
-dataa[12] => op_1.IN38
-dataa[13] => op_1.IN36
-dataa[14] => op_1.IN34
-dataa[15] => op_1.IN32
-dataa[16] => op_1.IN30
-dataa[17] => op_1.IN28
-dataa[18] => op_1.IN26
-dataa[19] => op_1.IN24
-dataa[20] => op_1.IN22
-dataa[21] => op_1.IN20
-dataa[22] => op_1.IN18
-dataa[23] => op_1.IN16
-dataa[24] => op_1.IN14
-dataa[25] => op_1.IN12
-dataa[26] => op_1.IN10
-dataa[27] => op_1.IN8
-dataa[28] => op_1.IN6
-dataa[29] => op_1.IN4
-dataa[30] => op_1.IN2
-dataa[31] => op_1.IN0
-datab[0] => op_1.IN63
-datab[1] => op_1.IN61
-datab[2] => op_1.IN59
-datab[3] => op_1.IN57
-datab[4] => op_1.IN55
-datab[5] => op_1.IN53
-datab[6] => op_1.IN51
-datab[7] => op_1.IN49
-datab[8] => op_1.IN47
-datab[9] => op_1.IN45
-datab[10] => op_1.IN43
-datab[11] => op_1.IN41
-datab[12] => op_1.IN39
-datab[13] => op_1.IN37
-datab[14] => op_1.IN35
-datab[15] => op_1.IN33
-datab[16] => op_1.IN31
-datab[17] => op_1.IN29
-datab[18] => op_1.IN27
-datab[19] => op_1.IN25
-datab[20] => op_1.IN23
-datab[21] => op_1.IN21
-datab[22] => op_1.IN19
-datab[23] => op_1.IN17
-datab[24] => op_1.IN15
-datab[25] => op_1.IN13
-datab[26] => op_1.IN11
-datab[27] => op_1.IN9
-datab[28] => op_1.IN7
-datab[29] => op_1.IN5
-datab[30] => op_1.IN3
-datab[31] => op_1.IN1
-result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2
-dataa[0] => lpm_add_sub:LPM_ADD_SUB_component.dataa[0]
-dataa[1] => lpm_add_sub:LPM_ADD_SUB_component.dataa[1]
-dataa[2] => lpm_add_sub:LPM_ADD_SUB_component.dataa[2]
-dataa[3] => lpm_add_sub:LPM_ADD_SUB_component.dataa[3]
-dataa[4] => lpm_add_sub:LPM_ADD_SUB_component.dataa[4]
-dataa[5] => lpm_add_sub:LPM_ADD_SUB_component.dataa[5]
-dataa[6] => lpm_add_sub:LPM_ADD_SUB_component.dataa[6]
-dataa[7] => lpm_add_sub:LPM_ADD_SUB_component.dataa[7]
-dataa[8] => lpm_add_sub:LPM_ADD_SUB_component.dataa[8]
-dataa[9] => lpm_add_sub:LPM_ADD_SUB_component.dataa[9]
-dataa[10] => lpm_add_sub:LPM_ADD_SUB_component.dataa[10]
-dataa[11] => lpm_add_sub:LPM_ADD_SUB_component.dataa[11]
-dataa[12] => lpm_add_sub:LPM_ADD_SUB_component.dataa[12]
-dataa[13] => lpm_add_sub:LPM_ADD_SUB_component.dataa[13]
-dataa[14] => lpm_add_sub:LPM_ADD_SUB_component.dataa[14]
-dataa[15] => lpm_add_sub:LPM_ADD_SUB_component.dataa[15]
-dataa[16] => lpm_add_sub:LPM_ADD_SUB_component.dataa[16]
-dataa[17] => lpm_add_sub:LPM_ADD_SUB_component.dataa[17]
-dataa[18] => lpm_add_sub:LPM_ADD_SUB_component.dataa[18]
-dataa[19] => lpm_add_sub:LPM_ADD_SUB_component.dataa[19]
-dataa[20] => lpm_add_sub:LPM_ADD_SUB_component.dataa[20]
-dataa[21] => lpm_add_sub:LPM_ADD_SUB_component.dataa[21]
-dataa[22] => lpm_add_sub:LPM_ADD_SUB_component.dataa[22]
-dataa[23] => lpm_add_sub:LPM_ADD_SUB_component.dataa[23]
-dataa[24] => lpm_add_sub:LPM_ADD_SUB_component.dataa[24]
-dataa[25] => lpm_add_sub:LPM_ADD_SUB_component.dataa[25]
-dataa[26] => lpm_add_sub:LPM_ADD_SUB_component.dataa[26]
-dataa[27] => lpm_add_sub:LPM_ADD_SUB_component.dataa[27]
-dataa[28] => lpm_add_sub:LPM_ADD_SUB_component.dataa[28]
-dataa[29] => lpm_add_sub:LPM_ADD_SUB_component.dataa[29]
-dataa[30] => lpm_add_sub:LPM_ADD_SUB_component.dataa[30]
-dataa[31] => lpm_add_sub:LPM_ADD_SUB_component.dataa[31]
-datab[0] => lpm_add_sub:LPM_ADD_SUB_component.datab[0]
-datab[1] => lpm_add_sub:LPM_ADD_SUB_component.datab[1]
-datab[2] => lpm_add_sub:LPM_ADD_SUB_component.datab[2]
-datab[3] => lpm_add_sub:LPM_ADD_SUB_component.datab[3]
-datab[4] => lpm_add_sub:LPM_ADD_SUB_component.datab[4]
-datab[5] => lpm_add_sub:LPM_ADD_SUB_component.datab[5]
-datab[6] => lpm_add_sub:LPM_ADD_SUB_component.datab[6]
-datab[7] => lpm_add_sub:LPM_ADD_SUB_component.datab[7]
-datab[8] => lpm_add_sub:LPM_ADD_SUB_component.datab[8]
-datab[9] => lpm_add_sub:LPM_ADD_SUB_component.datab[9]
-datab[10] => lpm_add_sub:LPM_ADD_SUB_component.datab[10]
-datab[11] => lpm_add_sub:LPM_ADD_SUB_component.datab[11]
-datab[12] => lpm_add_sub:LPM_ADD_SUB_component.datab[12]
-datab[13] => lpm_add_sub:LPM_ADD_SUB_component.datab[13]
-datab[14] => lpm_add_sub:LPM_ADD_SUB_component.datab[14]
-datab[15] => lpm_add_sub:LPM_ADD_SUB_component.datab[15]
-datab[16] => lpm_add_sub:LPM_ADD_SUB_component.datab[16]
-datab[17] => lpm_add_sub:LPM_ADD_SUB_component.datab[17]
-datab[18] => lpm_add_sub:LPM_ADD_SUB_component.datab[18]
-datab[19] => lpm_add_sub:LPM_ADD_SUB_component.datab[19]
-datab[20] => lpm_add_sub:LPM_ADD_SUB_component.datab[20]
-datab[21] => lpm_add_sub:LPM_ADD_SUB_component.datab[21]
-datab[22] => lpm_add_sub:LPM_ADD_SUB_component.datab[22]
-datab[23] => lpm_add_sub:LPM_ADD_SUB_component.datab[23]
-datab[24] => lpm_add_sub:LPM_ADD_SUB_component.datab[24]
-datab[25] => lpm_add_sub:LPM_ADD_SUB_component.datab[25]
-datab[26] => lpm_add_sub:LPM_ADD_SUB_component.datab[26]
-datab[27] => lpm_add_sub:LPM_ADD_SUB_component.datab[27]
-datab[28] => lpm_add_sub:LPM_ADD_SUB_component.datab[28]
-datab[29] => lpm_add_sub:LPM_ADD_SUB_component.datab[29]
-datab[30] => lpm_add_sub:LPM_ADD_SUB_component.datab[30]
-datab[31] => lpm_add_sub:LPM_ADD_SUB_component.datab[31]
-result[0] <= lpm_add_sub:LPM_ADD_SUB_component.result[0]
-result[1] <= lpm_add_sub:LPM_ADD_SUB_component.result[1]
-result[2] <= lpm_add_sub:LPM_ADD_SUB_component.result[2]
-result[3] <= lpm_add_sub:LPM_ADD_SUB_component.result[3]
-result[4] <= lpm_add_sub:LPM_ADD_SUB_component.result[4]
-result[5] <= lpm_add_sub:LPM_ADD_SUB_component.result[5]
-result[6] <= lpm_add_sub:LPM_ADD_SUB_component.result[6]
-result[7] <= lpm_add_sub:LPM_ADD_SUB_component.result[7]
-result[8] <= lpm_add_sub:LPM_ADD_SUB_component.result[8]
-result[9] <= lpm_add_sub:LPM_ADD_SUB_component.result[9]
-result[10] <= lpm_add_sub:LPM_ADD_SUB_component.result[10]
-result[11] <= lpm_add_sub:LPM_ADD_SUB_component.result[11]
-result[12] <= lpm_add_sub:LPM_ADD_SUB_component.result[12]
-result[13] <= lpm_add_sub:LPM_ADD_SUB_component.result[13]
-result[14] <= lpm_add_sub:LPM_ADD_SUB_component.result[14]
-result[15] <= lpm_add_sub:LPM_ADD_SUB_component.result[15]
-result[16] <= lpm_add_sub:LPM_ADD_SUB_component.result[16]
-result[17] <= lpm_add_sub:LPM_ADD_SUB_component.result[17]
-result[18] <= lpm_add_sub:LPM_ADD_SUB_component.result[18]
-result[19] <= lpm_add_sub:LPM_ADD_SUB_component.result[19]
-result[20] <= lpm_add_sub:LPM_ADD_SUB_component.result[20]
-result[21] <= lpm_add_sub:LPM_ADD_SUB_component.result[21]
-result[22] <= lpm_add_sub:LPM_ADD_SUB_component.result[22]
-result[23] <= lpm_add_sub:LPM_ADD_SUB_component.result[23]
-result[24] <= lpm_add_sub:LPM_ADD_SUB_component.result[24]
-result[25] <= lpm_add_sub:LPM_ADD_SUB_component.result[25]
-result[26] <= lpm_add_sub:LPM_ADD_SUB_component.result[26]
-result[27] <= lpm_add_sub:LPM_ADD_SUB_component.result[27]
-result[28] <= lpm_add_sub:LPM_ADD_SUB_component.result[28]
-result[29] <= lpm_add_sub:LPM_ADD_SUB_component.result[29]
-result[30] <= lpm_add_sub:LPM_ADD_SUB_component.result[30]
-result[31] <= lpm_add_sub:LPM_ADD_SUB_component.result[31]
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component
-dataa[0] => add_sub_plh:auto_generated.dataa[0]
-dataa[1] => add_sub_plh:auto_generated.dataa[1]
-dataa[2] => add_sub_plh:auto_generated.dataa[2]
-dataa[3] => add_sub_plh:auto_generated.dataa[3]
-dataa[4] => add_sub_plh:auto_generated.dataa[4]
-dataa[5] => add_sub_plh:auto_generated.dataa[5]
-dataa[6] => add_sub_plh:auto_generated.dataa[6]
-dataa[7] => add_sub_plh:auto_generated.dataa[7]
-dataa[8] => add_sub_plh:auto_generated.dataa[8]
-dataa[9] => add_sub_plh:auto_generated.dataa[9]
-dataa[10] => add_sub_plh:auto_generated.dataa[10]
-dataa[11] => add_sub_plh:auto_generated.dataa[11]
-dataa[12] => add_sub_plh:auto_generated.dataa[12]
-dataa[13] => add_sub_plh:auto_generated.dataa[13]
-dataa[14] => add_sub_plh:auto_generated.dataa[14]
-dataa[15] => add_sub_plh:auto_generated.dataa[15]
-dataa[16] => add_sub_plh:auto_generated.dataa[16]
-dataa[17] => add_sub_plh:auto_generated.dataa[17]
-dataa[18] => add_sub_plh:auto_generated.dataa[18]
-dataa[19] => add_sub_plh:auto_generated.dataa[19]
-dataa[20] => add_sub_plh:auto_generated.dataa[20]
-dataa[21] => add_sub_plh:auto_generated.dataa[21]
-dataa[22] => add_sub_plh:auto_generated.dataa[22]
-dataa[23] => add_sub_plh:auto_generated.dataa[23]
-dataa[24] => add_sub_plh:auto_generated.dataa[24]
-dataa[25] => add_sub_plh:auto_generated.dataa[25]
-dataa[26] => add_sub_plh:auto_generated.dataa[26]
-dataa[27] => add_sub_plh:auto_generated.dataa[27]
-dataa[28] => add_sub_plh:auto_generated.dataa[28]
-dataa[29] => add_sub_plh:auto_generated.dataa[29]
-dataa[30] => add_sub_plh:auto_generated.dataa[30]
-dataa[31] => add_sub_plh:auto_generated.dataa[31]
-datab[0] => add_sub_plh:auto_generated.datab[0]
-datab[1] => add_sub_plh:auto_generated.datab[1]
-datab[2] => add_sub_plh:auto_generated.datab[2]
-datab[3] => add_sub_plh:auto_generated.datab[3]
-datab[4] => add_sub_plh:auto_generated.datab[4]
-datab[5] => add_sub_plh:auto_generated.datab[5]
-datab[6] => add_sub_plh:auto_generated.datab[6]
-datab[7] => add_sub_plh:auto_generated.datab[7]
-datab[8] => add_sub_plh:auto_generated.datab[8]
-datab[9] => add_sub_plh:auto_generated.datab[9]
-datab[10] => add_sub_plh:auto_generated.datab[10]
-datab[11] => add_sub_plh:auto_generated.datab[11]
-datab[12] => add_sub_plh:auto_generated.datab[12]
-datab[13] => add_sub_plh:auto_generated.datab[13]
-datab[14] => add_sub_plh:auto_generated.datab[14]
-datab[15] => add_sub_plh:auto_generated.datab[15]
-datab[16] => add_sub_plh:auto_generated.datab[16]
-datab[17] => add_sub_plh:auto_generated.datab[17]
-datab[18] => add_sub_plh:auto_generated.datab[18]
-datab[19] => add_sub_plh:auto_generated.datab[19]
-datab[20] => add_sub_plh:auto_generated.datab[20]
-datab[21] => add_sub_plh:auto_generated.datab[21]
-datab[22] => add_sub_plh:auto_generated.datab[22]
-datab[23] => add_sub_plh:auto_generated.datab[23]
-datab[24] => add_sub_plh:auto_generated.datab[24]
-datab[25] => add_sub_plh:auto_generated.datab[25]
-datab[26] => add_sub_plh:auto_generated.datab[26]
-datab[27] => add_sub_plh:auto_generated.datab[27]
-datab[28] => add_sub_plh:auto_generated.datab[28]
-datab[29] => add_sub_plh:auto_generated.datab[29]
-datab[30] => add_sub_plh:auto_generated.datab[30]
-datab[31] => add_sub_plh:auto_generated.datab[31]
-cin => ~NO_FANOUT~
-add_sub => ~NO_FANOUT~
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= add_sub_plh:auto_generated.result[0]
-result[1] <= add_sub_plh:auto_generated.result[1]
-result[2] <= add_sub_plh:auto_generated.result[2]
-result[3] <= add_sub_plh:auto_generated.result[3]
-result[4] <= add_sub_plh:auto_generated.result[4]
-result[5] <= add_sub_plh:auto_generated.result[5]
-result[6] <= add_sub_plh:auto_generated.result[6]
-result[7] <= add_sub_plh:auto_generated.result[7]
-result[8] <= add_sub_plh:auto_generated.result[8]
-result[9] <= add_sub_plh:auto_generated.result[9]
-result[10] <= add_sub_plh:auto_generated.result[10]
-result[11] <= add_sub_plh:auto_generated.result[11]
-result[12] <= add_sub_plh:auto_generated.result[12]
-result[13] <= add_sub_plh:auto_generated.result[13]
-result[14] <= add_sub_plh:auto_generated.result[14]
-result[15] <= add_sub_plh:auto_generated.result[15]
-result[16] <= add_sub_plh:auto_generated.result[16]
-result[17] <= add_sub_plh:auto_generated.result[17]
-result[18] <= add_sub_plh:auto_generated.result[18]
-result[19] <= add_sub_plh:auto_generated.result[19]
-result[20] <= add_sub_plh:auto_generated.result[20]
-result[21] <= add_sub_plh:auto_generated.result[21]
-result[22] <= add_sub_plh:auto_generated.result[22]
-result[23] <= add_sub_plh:auto_generated.result[23]
-result[24] <= add_sub_plh:auto_generated.result[24]
-result[25] <= add_sub_plh:auto_generated.result[25]
-result[26] <= add_sub_plh:auto_generated.result[26]
-result[27] <= add_sub_plh:auto_generated.result[27]
-result[28] <= add_sub_plh:auto_generated.result[28]
-result[29] <= add_sub_plh:auto_generated.result[29]
-result[30] <= add_sub_plh:auto_generated.result[30]
-result[31] <= add_sub_plh:auto_generated.result[31]
-cout <= <GND>
-overflow <= <GND>
-
-
-|g21_lab5_testbed|random_address_gen:inst6|g21_RANDU:inst9|add_sub:A2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated
-dataa[0] => op_1.IN62
-dataa[1] => op_1.IN60
-dataa[2] => op_1.IN58
-dataa[3] => op_1.IN56
-dataa[4] => op_1.IN54
-dataa[5] => op_1.IN52
-dataa[6] => op_1.IN50
-dataa[7] => op_1.IN48
-dataa[8] => op_1.IN46
-dataa[9] => op_1.IN44
-dataa[10] => op_1.IN42
-dataa[11] => op_1.IN40
-dataa[12] => op_1.IN38
-dataa[13] => op_1.IN36
-dataa[14] => op_1.IN34
-dataa[15] => op_1.IN32
-dataa[16] => op_1.IN30
-dataa[17] => op_1.IN28
-dataa[18] => op_1.IN26
-dataa[19] => op_1.IN24
-dataa[20] => op_1.IN22
-dataa[21] => op_1.IN20
-dataa[22] => op_1.IN18
-dataa[23] => op_1.IN16
-dataa[24] => op_1.IN14
-dataa[25] => op_1.IN12
-dataa[26] => op_1.IN10
-dataa[27] => op_1.IN8
-dataa[28] => op_1.IN6
-dataa[29] => op_1.IN4
-dataa[30] => op_1.IN2
-dataa[31] => op_1.IN0
-datab[0] => op_1.IN63
-datab[1] => op_1.IN61
-datab[2] => op_1.IN59
-datab[3] => op_1.IN57
-datab[4] => op_1.IN55
-datab[5] => op_1.IN53
-datab[6] => op_1.IN51
-datab[7] => op_1.IN49
-datab[8] => op_1.IN47
-datab[9] => op_1.IN45
-datab[10] => op_1.IN43
-datab[11] => op_1.IN41
-datab[12] => op_1.IN39
-datab[13] => op_1.IN37
-datab[14] => op_1.IN35
-datab[15] => op_1.IN33
-datab[16] => op_1.IN31
-datab[17] => op_1.IN29
-datab[18] => op_1.IN27
-datab[19] => op_1.IN25
-datab[20] => op_1.IN23
-datab[21] => op_1.IN21
-datab[22] => op_1.IN19
-datab[23] => op_1.IN17
-datab[24] => op_1.IN15
-datab[25] => op_1.IN13
-datab[26] => op_1.IN11
-datab[27] => op_1.IN9
-datab[28] => op_1.IN7
-datab[29] => op_1.IN5
-datab[30] => op_1.IN3
-datab[31] => op_1.IN1
-result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |g21_lab5_testbed|BUSMUX:inst13
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
@@ -16954,34 +17609,40 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|g21_lab5_testbed|g21_determine_winner:winner_determine
-total_player[0] => LessThan0.IN5
-total_player[0] => LessThan1.IN5
-total_player[1] => LessThan0.IN4
-total_player[1] => LessThan1.IN4
-total_player[2] => LessThan0.IN3
-total_player[2] => LessThan1.IN3
-total_player[3] => LessThan0.IN2
-total_player[3] => LessThan1.IN2
-total_player[4] => LessThan0.IN1
-total_player[4] => LessThan1.IN1
-total_dealer[0] => LessThan0.IN10
-total_dealer[0] => LessThan1.IN10
-total_dealer[1] => LessThan0.IN9
-total_dealer[1] => LessThan1.IN9
-total_dealer[2] => LessThan0.IN8
-total_dealer[2] => LessThan1.IN8
-total_dealer[3] => LessThan0.IN7
-total_dealer[3] => LessThan1.IN7
-total_dealer[4] => LessThan0.IN6
-total_dealer[4] => LessThan1.IN6
-enable => assign_winner.IN1
-enable => assign_winner.IN1
-dealer_high <= dealer_high.DB_MAX_OUTPUT_PORT_TYPE
-player_high <= assign_winner.DB_MAX_OUTPUT_PORT_TYPE
+|g21_lab5_testbed|LPM_FF:inst12
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[5].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules
+|g21_lab5_testbed|g21_rules:inst18
 play_pile_top_card[0] => g21_Modulo_13:modulo_top.A[0]
 play_pile_top_card[1] => g21_Modulo_13:modulo_top.A[1]
 play_pile_top_card[2] => g21_Modulo_13:modulo_top.A[2]
@@ -16989,23 +17650,28 @@ play_pile_top_card[3] => g21_Modulo_13:modulo_top.A[3]
 play_pile_top_card[4] => g21_Modulo_13:modulo_top.A[4]
 play_pile_top_card[5] => g21_Modulo_13:modulo_top.A[5]
 card_to_play[0] => Add3.IN10
+card_to_play[0] => total_value_temp.DATAA
 card_to_play[0] => Add2.IN5
 card_to_play[1] => Add3.IN9
+card_to_play[1] => total_value_temp.DATAA
 card_to_play[1] => Add2.IN4
 card_to_play[2] => Add3.IN8
+card_to_play[2] => total_value_temp.DATAA
 card_to_play[2] => Add2.IN2
 card_to_play[3] => Add3.IN7
+card_to_play[3] => total_value_temp.DATAA
 card_to_play[3] => Add2.IN3
 card_to_play[4] => Add3.IN6
+card_to_play[4] => total_value_temp.DATAA
 card_to_play[4] => Add2.IN1
 card_to_play[5] => card_val_assign.IN1
 card_to_play[5] => card_val_assign.IN1
 card_to_play[5] => new_ace.DATAA
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
-enable => card_val_assign.IN1
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
+enable => total_value_temp.OUTPUTSELECT
 enable => en_total.DATAIN
 legal_play <= legal_play$latch.DB_MAX_OUTPUT_PORT_TYPE
 total_value[0] <= total_value[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
@@ -17017,7 +17683,7 @@ total_value[5] <= total_value[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 en_total <= enable.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top
 floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
 floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
 floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
@@ -17045,7 +17711,7 @@ modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
 modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -17073,7 +17739,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17084,7 +17750,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17095,7 +17761,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17106,7 +17772,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17117,7 +17783,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17128,7 +17794,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17139,7 +17805,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17150,7 +17816,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17161,7 +17827,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -17189,7 +17855,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17200,7 +17866,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17211,7 +17877,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17222,7 +17888,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17233,7 +17899,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17244,7 +17910,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17255,7 +17921,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17266,7 +17932,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst5|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17277,7 +17943,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -17305,7 +17971,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17316,7 +17982,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17327,7 +17993,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17338,7 +18004,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17349,7 +18015,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17360,7 +18026,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17371,7 +18037,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17382,7 +18048,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst4|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17393,7 +18059,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -17421,7 +18087,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17432,7 +18098,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17443,7 +18109,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17454,7 +18120,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17465,7 +18131,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17476,7 +18142,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17487,7 +18153,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17498,7 +18164,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst3|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17509,7 +18175,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2
 Cout <= g21_1bitAdder:inst30.Cout
 in_1[0] => g21_1bitAdder:inst.IN_1
 in_1[1] => g21_1bitAdder:inst24.IN_1
@@ -17537,7 +18203,7 @@ out[6] <= g21_1bitAdder:inst29.S
 out[7] <= g21_1bitAdder:inst30.S
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst30
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst30
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17548,7 +18214,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst29
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst29
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17559,7 +18225,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst28
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst28
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17570,7 +18236,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst27
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst27
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17581,7 +18247,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst26
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst26
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17592,7 +18258,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst25
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst25
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17603,7 +18269,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst24
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst24
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17614,7 +18280,7 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|g21_rules:player_rules|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst
+|g21_lab5_testbed|g21_rules:inst18|g21_Modulo_13:modulo_top|g21_adder:inst2|g21_1bitAdder:inst
 S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Cin => inst13.IN0
 Cin => inst15.IN0
@@ -17625,12 +18291,64 @@ IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g21_lab5_testbed|game_over:inst5
-score_player[0] => LessThan1.IN4
-score_player[1] => LessThan1.IN3
-score_dealer[0] => LessThan0.IN4
-score_dealer[1] => LessThan0.IN3
-game_is_over <= determine_game_over.DB_MAX_OUTPUT_PORT_TYPE
+|g21_lab5_testbed|LPM_FF:inst16
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[5].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_determine_winner:winner_determine
+total_player[0] => LessThan0.IN5
+total_player[0] => LessThan1.IN5
+total_player[1] => LessThan0.IN4
+total_player[1] => LessThan1.IN4
+total_player[2] => LessThan0.IN3
+total_player[2] => LessThan1.IN3
+total_player[3] => LessThan0.IN2
+total_player[3] => LessThan1.IN2
+total_player[4] => LessThan0.IN1
+total_player[4] => LessThan1.IN1
+total_dealer[0] => LessThan0.IN10
+total_dealer[0] => LessThan1.IN10
+total_dealer[1] => LessThan0.IN9
+total_dealer[1] => LessThan1.IN9
+total_dealer[2] => LessThan0.IN8
+total_dealer[2] => LessThan1.IN8
+total_dealer[3] => LessThan0.IN7
+total_dealer[3] => LessThan1.IN7
+total_dealer[4] => LessThan0.IN6
+total_dealer[4] => LessThan1.IN6
+enable => assign_winner.IN1
+enable => assign_winner.IN1
+dealer_high <= dealer_high.DB_MAX_OUTPUT_PORT_TYPE
+player_high <= assign_winner.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_show_score:player_score_show
@@ -17642,6 +18360,97 @@ score[1] => led_on[1].DATAIN
 led_on[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 led_on[1] <= score[1].DB_MAX_OUTPUT_PORT_TYPE
 led_on[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|BUSMUX:inst14
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+
+
+|g21_lab5_testbed|BUSMUX:inst14|lpm_mux:$00000
+data[0][0] => mux_rmc:auto_generated.data[0]
+data[0][1] => mux_rmc:auto_generated.data[1]
+data[0][2] => mux_rmc:auto_generated.data[2]
+data[0][3] => mux_rmc:auto_generated.data[3]
+data[0][4] => mux_rmc:auto_generated.data[4]
+data[0][5] => mux_rmc:auto_generated.data[5]
+data[0][6] => mux_rmc:auto_generated.data[6]
+data[1][0] => mux_rmc:auto_generated.data[7]
+data[1][1] => mux_rmc:auto_generated.data[8]
+data[1][2] => mux_rmc:auto_generated.data[9]
+data[1][3] => mux_rmc:auto_generated.data[10]
+data[1][4] => mux_rmc:auto_generated.data[11]
+data[1][5] => mux_rmc:auto_generated.data[12]
+data[1][6] => mux_rmc:auto_generated.data[13]
+sel[0] => mux_rmc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_rmc:auto_generated.result[0]
+result[1] <= mux_rmc:auto_generated.result[1]
+result[2] <= mux_rmc:auto_generated.result[2]
+result[3] <= mux_rmc:auto_generated.result[3]
+result[4] <= mux_rmc:auto_generated.result[4]
+result[5] <= mux_rmc:auto_generated.result[5]
+result[6] <= mux_rmc:auto_generated.result[6]
+
+
+|g21_lab5_testbed|BUSMUX:inst14|lpm_mux:$00000|mux_rmc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[0].IN1
+data[8] => result_node[1].IN1
+data[9] => result_node[2].IN1
+data[10] => result_node[3].IN1
+data[11] => result_node[4].IN1
+data[12] => result_node[5].IN1
+data[13] => result_node[6].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |g21_lab5_testbed|show_totals:total_display
@@ -17873,5 +18682,691 @@ segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_7_segment_decoder:inst4
+code[0] => Mux0.IN35
+code[0] => Mux1.IN35
+code[0] => Mux2.IN35
+code[0] => Mux3.IN35
+code[0] => Mux4.IN35
+code[0] => Mux5.IN35
+code[0] => Mux6.IN35
+code[1] => Mux0.IN34
+code[1] => Mux1.IN34
+code[1] => Mux2.IN34
+code[1] => Mux3.IN34
+code[1] => Mux4.IN34
+code[1] => Mux5.IN34
+code[1] => Mux6.IN34
+code[2] => Mux0.IN33
+code[2] => Mux1.IN33
+code[2] => Mux2.IN33
+code[2] => Mux3.IN33
+code[2] => Mux4.IN33
+code[2] => Mux5.IN33
+code[2] => Mux6.IN33
+code[3] => Mux0.IN32
+code[3] => Mux1.IN32
+code[3] => Mux2.IN32
+code[3] => Mux3.IN32
+code[3] => Mux4.IN32
+code[3] => Mux5.IN32
+code[3] => Mux6.IN32
+mode => Mux0.IN36
+mode => Mux1.IN36
+mode => Mux2.IN36
+mode => Mux3.IN36
+mode => Mux4.IN36
+mode => Mux5.IN36
+mode => Mux6.IN36
+segments_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segments_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2
+floor[0] <= out1[6].DB_MAX_OUTPUT_PORT_TYPE
+floor[1] <= out1[7].DB_MAX_OUTPUT_PORT_TYPE
+floor[2] <= Cout1.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => g21_adder:inst1.in_1[2]
+A[0] => g21_adder:inst1.in_2[0]
+A[0] => g21_adder:inst5.in_1[0]
+A[1] => g21_adder:inst1.in_1[3]
+A[1] => g21_adder:inst1.in_2[1]
+A[1] => g21_adder:inst5.in_1[1]
+A[2] => g21_adder:inst1.in_1[4]
+A[2] => g21_adder:inst1.in_2[2]
+A[2] => g21_adder:inst5.in_1[2]
+A[3] => g21_adder:inst1.in_1[5]
+A[3] => g21_adder:inst1.in_2[3]
+A[3] => g21_adder:inst5.in_1[3]
+A[4] => g21_adder:inst1.in_1[6]
+A[4] => g21_adder:inst1.in_2[4]
+A[4] => g21_adder:inst5.in_1[4]
+A[5] => g21_adder:inst1.in_1[7]
+A[5] => g21_adder:inst1.in_2[5]
+A[5] => g21_adder:inst5.in_1[5]
+modout[0] <= modA[0].DB_MAX_OUTPUT_PORT_TYPE
+modout[1] <= modA[1].DB_MAX_OUTPUT_PORT_TYPE
+modout[2] <= modA[2].DB_MAX_OUTPUT_PORT_TYPE
+modout[3] <= modA[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst1|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst5|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst4|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst3|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2
+Cout <= g21_1bitAdder:inst30.Cout
+in_1[0] => g21_1bitAdder:inst.IN_1
+in_1[1] => g21_1bitAdder:inst24.IN_1
+in_1[2] => g21_1bitAdder:inst25.IN_1
+in_1[3] => g21_1bitAdder:inst26.IN_1
+in_1[4] => g21_1bitAdder:inst27.IN_1
+in_1[5] => g21_1bitAdder:inst28.IN_1
+in_1[6] => g21_1bitAdder:inst29.IN_1
+in_1[7] => g21_1bitAdder:inst30.IN_1
+in_2[0] => g21_1bitAdder:inst.IN_2
+in_2[1] => g21_1bitAdder:inst24.IN_2
+in_2[2] => g21_1bitAdder:inst25.IN_2
+in_2[3] => g21_1bitAdder:inst26.IN_2
+in_2[4] => g21_1bitAdder:inst27.IN_2
+in_2[5] => g21_1bitAdder:inst28.IN_2
+in_2[6] => g21_1bitAdder:inst29.IN_2
+in_2[7] => g21_1bitAdder:inst30.IN_2
+out[0] <= g21_1bitAdder:inst.S
+out[1] <= g21_1bitAdder:inst24.S
+out[2] <= g21_1bitAdder:inst25.S
+out[3] <= g21_1bitAdder:inst26.S
+out[4] <= g21_1bitAdder:inst27.S
+out[5] <= g21_1bitAdder:inst28.S
+out[6] <= g21_1bitAdder:inst29.S
+out[7] <= g21_1bitAdder:inst30.S
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst30
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst29
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst28
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst27
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst26
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst25
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst24
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|g21_Modulo_13:inst2|g21_adder:inst2|g21_1bitAdder:inst
+S <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst13.IN0
+Cin => inst15.IN0
+IN_1 => inst23.IN0
+IN_1 => inst14.IN0
+IN_2 => inst23.IN1
+IN_2 => inst14.IN1
+Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|LPM_FF:inst3
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 

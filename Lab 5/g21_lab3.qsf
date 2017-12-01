@@ -188,7 +188,6 @@ set_global_assignment -name VHDL_FILE game_over.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE game_over_sim.vwf
 set_global_assignment -name BDF_FILE random_address_gen.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE random_address_gen_sim.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/random_address_gen_sim.vwf"
 set_global_assignment -name VHDL_FILE Controller_FSM.vhd
 set_global_assignment -name BDF_FILE g21_lab5_testbed.bdf
 set_location_assignment PIN_Y21 -to green_led1
@@ -197,12 +196,46 @@ set_location_assignment PIN_W21 -to green_led3
 set_location_assignment PIN_R20 -to red_led1
 set_location_assignment PIN_R19 -to red_led2
 set_location_assignment PIN_U19 -to red_led3
-set_location_assignment PIN_T21 -to butt1
-set_location_assignment PIN_T22 -to butt2
-set_location_assignment PIN_R22 -to butt3
+set_location_assignment PIN_U22 -to player_turn_led
+set_location_assignment PIN_D4 -to 7_dealer_dec[6]
+set_location_assignment PIN_F3 -to 7_dealer_dec[5]
+set_location_assignment PIN_L8 -to 7_dealer_dec[4]
+set_location_assignment PIN_J4 -to 7_dealer_dec[3]
+set_location_assignment PIN_D6 -to 7_dealer_dec[2]
+set_location_assignment PIN_D5 -to 7_dealer_dec[1]
+set_location_assignment PIN_F4 -to 7_dealer_dec[0]
+set_location_assignment PIN_D3 -to 7_dealer_un[6]
+set_location_assignment PIN_E4 -to 7_dealer_un[5]
+set_location_assignment PIN_E3 -to 7_dealer_un[4]
+set_location_assignment PIN_C1 -to 7_dealer_un[3]
+set_location_assignment PIN_C2 -to 7_dealer_un[2]
+set_location_assignment PIN_G6 -to 7_dealer_un[1]
+set_location_assignment PIN_G5 -to 7_dealer_un[0]
+set_location_assignment PIN_D1 -to 7_player_dec[6]
+set_location_assignment PIN_D2 -to 7_player_dec[5]
+set_location_assignment PIN_G3 -to 7_player_dec[4]
+set_location_assignment PIN_H4 -to 7_player_dec[3]
+set_location_assignment PIN_H5 -to 7_player_dec[2]
+set_location_assignment PIN_H6 -to 7_player_dec[1]
+set_location_assignment PIN_E1 -to 7_player_dec[0]
+set_location_assignment PIN_E2 -to 7_player_un[6]
+set_location_assignment PIN_F1 -to 7_player_un[5]
+set_location_assignment PIN_F2 -to 7_player_un[4]
+set_location_assignment PIN_H1 -to 7_player_un[3]
+set_location_assignment PIN_H2 -to 7_player_un[2]
+set_location_assignment PIN_J1 -to 7_player_un[1]
+set_location_assignment PIN_J2 -to 7_player_un[0]
+set_location_assignment PIN_L2 -to pin_name1
+set_global_assignment -name QIP_FILE lpm_counter_score.qip
+set_location_assignment PIN_R21 -to butt_INIT
+set_location_assignment PIN_T21 -to butt_play
+set_location_assignment PIN_T22 -to butt_Stop
+set_location_assignment PIN_R22 -to buttreset
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/testbed_sim.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/output_files/testbed_sim.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_U22 -to player_turn_led
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_test_bed_auto_stripped.stp"

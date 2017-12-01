@@ -75,15 +75,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
-		(text "Dealer_total[5..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "Dealer_total[5..0]" (rect 21 139 88 151)(font "Arial" ))
+		(text "Dealer_total[4..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "Dealer_total[4..0]" (rect 21 139 89 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 0 160)
 		(input)
-		(text "Player_total[5..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "Player_total[5..0]" (rect 21 155 88 167)(font "Arial" ))
+		(text "Player_total[4..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "Player_total[4..0]" (rect 21 155 89 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
@@ -155,6 +155,20 @@ applicable agreement for further details.
 		(text "Compare_enable" (rect 0 0 68 12)(font "Arial" ))
 		(text "Compare_enable" (rect 151 123 219 135)(font "Arial" ))
 		(line (pt 240 128)(pt 224 128)(line_width 1))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "count_dealer" (rect 0 0 50 12)(font "Arial" ))
+		(text "count_dealer" (rect 169 139 219 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144)(line_width 1))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "count_player" (rect 0 0 51 12)(font "Arial" ))
+		(text "count_player" (rect 168 155 219 167)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 224 224)(line_width 1))

@@ -67,7 +67,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 	card_val_assign: process(face_top, top_val, card_val_int, face_top_int, eleven_int, one_int, fake_add, try_add, total_value_temp)
 	begin
 	
-		if (face_top >= "0001" and face_top <= "1001" and enable = '1') then -- if mod was 1-9 need to add 1 for actual value
+		if (face_top >= "0001" and face_top <= "1001" ) then -- if mod was 1-9 need to add 1 for actual value
 			top_val <= face_top_int + one_int;
 			try_add <= top_val + card_val_int;
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
@@ -81,7 +81,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 				new_ace <= '0';
 			end if;
 			
-		elsif (face_top >= "1010" and enable = '1') then -- if mod was 10 or more, its jack, queen or king so need actual value 10
+		elsif (face_top >= "1010" ) then -- if mod was 10 or more, its jack, queen or king so need actual value 10
 			top_val <= "1010";
 			try_add <= top_val + card_val_int;
 			if(ace_in_hand = '1' and try_add > "10101") then -- if card in hand was an ace and you go bust, you could change that ace to be 1
@@ -95,7 +95,7 @@ begin-- use g21_Modulo_13 component to assign signal values
 				new_ace <= '0';
 			end if;
 			
-		elsif (face_top = "0000" and enable = '1') then -- if its an ace, decide which value
+		elsif (face_top = "0000" ) then -- if its an ace, decide which value
 			fake_add <= eleven_int + card_val_int;
 			if (fake_add <= "10101") then
 				top_val <= "1011";
@@ -109,13 +109,18 @@ begin-- use g21_Modulo_13 component to assign signal values
 				end if;
 			end if;
 			
-			total_value_temp <= top_val + card_val_int;
+			if (enable = '1') then
+				total_value_temp <= top_val + card_val_int;
+			elsif (enable = '0') then
+				total_value_temp <= "000" + card_val_int;
+			end if;
+		
 		end if;
 		
-		if (total_value_temp <= "10101" and enable = '1') then -- assign legal_play
+		if (total_value_temp <= "10101" ) then -- assign legal_play
 			legal_play <= '1';
 			total_value <= std_logic_vector(new_ace & total_value_temp);
-		elsif (total_value_temp > "10101" and enable = '1') then
+		elsif (total_value_temp > "10101" ) then
 			legal_play <= '0';
 			total_value <= std_logic_vector(new_ace & total_value_temp);
 		end if;
