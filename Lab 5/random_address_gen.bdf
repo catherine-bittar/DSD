@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 176 392 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "request_deal" (rect 5 0 68 12)(font "Arial" ))
+	(text "request_deal" (rect 5 0 67 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 232 392 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "rst" (rect 5 0 18 12)(font "Arial" ))
+	(text "rst" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 296 392 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -73,7 +73,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 360 392 376)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "INIT" (rect 5 0 27 12)(font "Arial" ))
+	(text "INIT" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -89,7 +89,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 408 392 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "NUM[5..0]" (rect 5 0 56 12)(font "Arial" ))
+	(text "NUM[5..0]" (rect 5 0 55 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -219,6 +219,28 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 664 256 848 336)
+	(text "g21_RANDU" (rect 5 0 68 12)(font "Arial" ))
+	(text "inst9" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "seed[31..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "seed[31..0]" (rect 21 27 76 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "rand[31..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "rand[31..0]" (rect 119 27 172 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
+)
+(symbol
 	(rect 952 264 1128 408)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
 	(text "inst11" (rect 3 133 32 145)(font "Arial" ))
@@ -287,7 +309,6 @@ applicable agreement for further details.
 		(text "sset" (rect 20 33 44 47)(font "Arial" (font_size 8)))
 		(text "sset" (rect 20 33 44 47)(font "Arial" (font_size 8)))
 		(line (pt 0 40)(pt 16 40))
-		(unused)
 	)
 	(port
 		(pt 176 88)
@@ -327,28 +348,6 @@ applicable agreement for further details.
 		(line (pt 24 88)(pt 16 96))
 	)
 	(annotation_block (parameter)(rect 1184 160 1396 230))
-)
-(symbol
-	(rect 664 256 848 336)
-	(text "g21_RANDU" (rect 5 0 68 12)(font "Arial" ))
-	(text "inst9" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "seed[31..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "seed[31..0]" (rect 21 27 76 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "rand[31..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "rand[31..0]" (rect 119 27 163 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 168 64))
-	)
 )
 (connector
 	(pt 1160 240)
@@ -439,11 +438,6 @@ applicable agreement for further details.
 	(pt 456 368)
 )
 (connector
-	(text "INIT" (rect 1024 172 1036 193)(font "Arial" )(vertical))
-	(pt 1040 168)
-	(pt 1040 264)
-)
-(connector
 	(text "request_deal" (rect 730 464 792 476)(font "Arial" ))
 	(pt 712 488)
 	(pt 936 488)
@@ -498,5 +492,14 @@ applicable agreement for further details.
 	(pt 1704 368)
 	(pt 1600 368)
 	(bus)
+)
+(connector
+	(text "INIT" (rect 834 160 855 172)(font "Arial" ))
+	(pt 1040 176)
+	(pt 824 176)
+)
+(connector
+	(pt 1040 176)
+	(pt 1040 264)
 )
 (junction (pt 1160 352))

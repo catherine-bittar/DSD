@@ -16,6 +16,9 @@ entity game_over is
 	port(score_player   : in std_logic_vector(1 downto 0); -- player score
 	     score_dealer   : in std_logic_vector(1 downto 0); -- dealer score
 		  
+		  game_player    : out std_logic;
+		  game_dealer    : out std_logic;
+		  
         game_is_over   : out std_logic);
 
 end game_over;	
@@ -27,10 +30,19 @@ begin
 determine_game_over: process(score_dealer, score_player)
 	begin 
 	
-	if( score_dealer >= "11" or score_player >= "11") then
+	if( score_dealer = "11") then
 		game_is_over <=  '1';
-	else
+		game_dealer <= '1';
+		game_player <= '0';
+	elsif(score_player = "11") then
+		game_is_over <= '1';
+		game_player <= '1';
+		game_dealer <= '0';
+	else	
 		game_is_over <= '0';
+		game_player <= '0';
+		game_dealer <= '0';
+		
 	end if;
 	
 end process determine_game_over;

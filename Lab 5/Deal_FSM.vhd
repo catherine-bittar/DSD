@@ -27,16 +27,19 @@ entity Deal_FSM is
 		  Dealer_high  : in std_logic; -- TODO: 1 when dealer sum > player sum (would require a comparator module)
 		  Player_high  : in std_logic; -- TODO: similarly like above
 		  Game_over    : in std_logic;
+		  score_player : in std_logic_vector(1 downto 0);
+		  score_dealer : in std_logic_vector(1 downto 0);
 		  
-		  --Rand_Enable  : out std_logic;
+		  Clear_count  : out std_logic;
 		  Dealer_Enable: out std_logic; -- TODO: add eneable condition to rules (and most likely a clock too)
 		  Player_Enable: out std_logic;-- TODO: similarly like above
 		  Dealer_score : out std_logic_vector(1 downto 0);
 		  Player_score : out std_logic_vector(1 downto 0);
 		  player_turn  : out std_logic; -- activate rightmost gree LED to indicate player's turn
-		  deal_en      : out std_logic; -- OR'd with rand_enable(deal_card) as the nable signal to DFF that holds random ADDR so that we can enable w/o pushing Request_Deal(see modified testbed 4)
 		  Compare_enable: out std_logic;
 		  count_dealer: out std_logic;
+		  count_gp    : out std_logic;
+		  count_gd    : out std_logic;
 		  count_player: out std_logic);
 end Deal_FSM;
 
@@ -100,7 +103,7 @@ begin
 				end if;
 			
 			when player_wait =>
-				if (stop = '1') then
+				if (Stop = '1') then
 					present_state <= dealer_wait;
 				elsif (Request_Deal = '1') then
 					present_state <= player_play;
@@ -118,18 +121,18 @@ begin
 				end if;
 				
 			when player_test =>
-				if (Player_legal = '1' and Player_total /= "010101") then
+				if (Player_total < "10101") then
 					present_state <= player_wait;
-				elsif (Player_legal = '1' and Player_total = "010101") then
+				elsif (Player_total = "10101") then
 					present_state <= player_win;
-				elsif (Player_legal = '0') then
+				elsif (Player_total > "10101") then
 					present_state <= dealer_win;
 				end if;
 				
 			when dealer_wait =>
 				if (Dealer_total <= "10000") then
 					present_state <= dealer_play;
-				elsif (Dealer_total > "10000" and Dealer_total /= "10101") then 
+				elsif (Dealer_total > "10000" and Dealer_total < "10101") then 
 					present_state <= compare;
 				elsif (Dealer_total = "10101") then
 					present_state <= dealer_win;
@@ -139,7 +142,10 @@ begin
 				present_state <= dealer_en;
 				
 			when dealer_en =>
-				present_state <= dealer_test;
+				dealer_change <= or_reduce(Dealer_total xor temp_dealer);
+				if (dealer_change = '1') then
+					present_state <= dealer_test;
+				end if;
 				
 			when dealer_test =>
 				if (Dealer_total > "10101") then
@@ -156,14 +162,10 @@ begin
 				end if;
 				
 			when dealer_win =>
-				--if (INIT = '1') then
 					present_state <= waiting;
-				--end if;
 				
 			when player_win =>
-				--if (INIT = '1') then
 					present_state <= waiting;
-				--end if;
 					
 		end case;
 		temp_dealer <= Dealer_total;
@@ -184,63 +186,85 @@ begin
 					Player_Enable <= '0';
 					count_dealer <= '0';
 					count_player <= '0'; 
-					deal_en <= '0'; 
 					Compare_enable <= '0'; 
 					player_turn <= '0';
+					count_gp <= '0';
+					count_gd <= '0';
 				
 				when ready =>
-					count_dealer <= '0';
-					count_player <= '0';
 					
 					if (Game_over = '0') then
 						Dealer_Enable <= '0'; 
 						Player_Enable <= '0'; 
-						deal_en <= '0'; 
+						count_dealer <= '0';
+						count_player <= '0';
 						Compare_enable <= '0';
 						player_turn <= '0';
-					elsif (Game_over ='1') then
+						Clear_count <= '0';
+						count_gp <= '0';
+						count_gd <= '0';
+					elsif (Game_over = '1' and score_dealer = "11") then
 						Dealer_Enable <= '0'; 
 						Player_Enable <= '0';
 						count_dealer <= '0';
 						count_player <= '0'; 
-						deal_en <= '0'; 
 						Compare_enable <= '0';
 						player_turn <= '0';
+						Clear_count <= '0';
+						count_gp <= '0';
+						count_gd <= '1';
+					elsif (Game_over = '1' and score_player = "11") then
+						Dealer_Enable <= '0'; 
+						Player_Enable <= '0';
+						count_dealer <= '0';
+						count_player <= '0'; 
+						Compare_enable <= '0';
+						player_turn <= '0';
+						Clear_count <= '0';
+						count_gp <= '1';
+						count_gd <= '0';
+					else
+						Dealer_Enable <= '0'; 
+						Player_Enable <= '0';
+						count_dealer <= '0';
+						count_player <= '0'; 
+						Compare_enable <= '0';
+						player_turn <= '0';
+						Clear_count <= '1';
+						count_gp <= '0';
+						count_gd <= '0';
 					end if;
 				
 				when dealer_wait =>
 					player_turn <= '0';
 				
 				when player_wait =>
-					-- indicate player's turn somehow? LEDs?
 					player_turn <= '1';
 				
-				when dealer_card1 =>
-					--
+				when dealer_card1 =>	
 					Dealer_Enable <= '1';
-					deal_en <= '1';
-				
+					Clear_count <= '0';
+					count_gp <= '0';
+					count_gd <= '0';
+					if (Game_over = '1') then
+						Clear_count <= '1';
+					end if;
+	
 				when player_card1 =>
-					-- 
 					Player_Enable <= '1';
-					deal_en <= '1';
 					Dealer_Enable <= '0';
+					Clear_count <= '0';
 				
 				when dealer_card2 =>
-					--
 					Dealer_Enable <= '1';
-					deal_en <= '1';
 					Player_Enable <= '0';
 				
 				when player_card2 =>
-					--
 					Player_Enable <= '1';
-					deal_en <= '1';
 					Dealer_Enable <= '0';
 				
 				when dealer_play =>
 					Dealer_Enable  <= '1';
-					deal_en <= '1';
 				
 				when dealer_fc => 
 					Dealer_Enable <= '0';
@@ -248,7 +272,7 @@ begin
 				
 				when player_play =>
 					Player_Enable <= '1';
-					deal_en <= '1';
+					player_turn <= '0';
 				
 				when player_fc =>  
 					Dealer_Enable <= '0';
@@ -256,20 +280,17 @@ begin
 				
 				when dealer_en =>
 					Dealer_Enable  <= '0';
-					deal_en <= '0';
 				
 				when player_en =>
 					Player_Enable <= '0';
-					deal_en <= '0';
+					player_turn <= '0';
 					
 				
 				when dealer_test =>
 					Dealer_Enable <= '0';
-					deal_en <= '0';
 				
 				when player_test =>
 					Player_Enable <= '0';
-					deal_en <= '0';
 				
 				when dealer_win =>
 					count_dealer <= '1';
@@ -278,7 +299,8 @@ begin
 					--Dealer_score <= std_logic_vector(to_unsigned(dealer_wins, Dealer_score'length));
 				
 				when player_win =>
-					count_player <= '1';
+					count_player <= '1';	
+					
 					--player_wins <= player_wins + 1;
 					--Player_score <= std_logic_vector(to_unsigned(player_wins, Player_score'length));
 				
@@ -288,7 +310,5 @@ begin
 			end case;
 		end if;
 	end process controller;
-	
-
 	
 end architecture;
