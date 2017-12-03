@@ -30,6 +30,7 @@ entity Deal_FSM is
 		  score_player : in std_logic_vector(1 downto 0);
 		  score_dealer : in std_logic_vector(1 downto 0);
 		  
+		  rand_seed    : out std_logic;
 		  Clear_count  : out std_logic;
 		  Dealer_Enable: out std_logic; -- TODO: add eneable condition to rules (and most likely a clock too)
 		  Player_Enable: out std_logic;-- TODO: similarly like above
@@ -45,26 +46,28 @@ end Deal_FSM;
 
 architecture deal_machine of Deal_FSM is
 
-type state is (waiting, ready, dealer_wait, player_wait, dealer_card1,
+type state is (rand_start, waiting, ready, dealer_wait, player_wait, dealer_card1,
                dealer_card2, player_card1, player_card2, dealer_play, 
 					dealer_fc, player_fc, player_play, dealer_en,player_en,
 					dealer_test, player_test, dealer_win, player_win, compare); 
 
 signal present_state: state;
-signal dealer_wins, player_wins: integer;
 signal temp_dealer, temp_player : std_logic_vector(4 downto 0);
 signal dealer_change, player_change : std_logic;
 
 begin
 	
 	  
-	fsm: process (reset, Clock, present_state, INIT, Stop, Request_Deal, Dealer_legal, Player_legal, Dealer_total, Player_total, Dealer_high, Player_high)
+	fsm: process (reset, Clock, present_state, INIT, Stop, Request_Deal, Dealer_legal, Player_legal, Dealer_total, Player_total, Dealer_high, Player_high, Game_over, score_dealer, score_player)
 	begin 
 		if (reset = '1') then
-			present_state <= waiting;
+			present_state <= rand_start;
 		elsif (rising_edge(Clock)) then
 		
 		case present_state is
+			
+			when rand_start =>
+				present_state <= waiting;
 			
 			when waiting =>
 				if (INIT = '1') then
@@ -115,10 +118,10 @@ begin
 				present_state <= player_en;
 				
 			when player_en =>
-				player_change <= or_reduce(player_total xor temp_player);
-				if(player_change = '1') then
+				--player_change <= or_reduce(player_total xor temp_player);
+				--if(player_change = '1') then
 					present_state <= player_test;
-				end if;
+				--end if;
 				
 			when player_test =>
 				if (Player_total < "10101") then
@@ -142,10 +145,10 @@ begin
 				present_state <= dealer_en;
 				
 			when dealer_en =>
-				dealer_change <= or_reduce(Dealer_total xor temp_dealer);
-				if (dealer_change = '1') then
+				--dealer_change <= or_reduce(Dealer_total xor temp_dealer);
+				--if (dealer_change = '1') then
 					present_state <= dealer_test;
-				end if;
+				--end if;
 				
 			when dealer_test =>
 				if (Dealer_total > "10101") then
@@ -181,6 +184,9 @@ begin
 		if(Clock = '1' and Clock'event) then
 			case present_state is
 			
+				when rand_start =>
+					rand_seed <= '1';
+			
 				when waiting =>
 					Dealer_Enable <= '0'; 
 					Player_Enable <= '0';
@@ -190,6 +196,7 @@ begin
 					player_turn <= '0';
 					count_gp <= '0';
 					count_gd <= '0';
+					rand_seed <= '0';
 				
 				when ready =>
 					

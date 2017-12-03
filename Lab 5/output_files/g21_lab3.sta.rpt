@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g21_lab3
-Sat Dec 02 16:12:12 2017
+Sun Dec 03 09:55:15 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -149,34 +149,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[1] ; 7.221 ;       ;       ; 7.221 ;
-; pin_name1  ; 7_dealer_dec[2] ; 7.269 ; 7.269 ; 7.269 ; 7.269 ;
-; pin_name1  ; 7_dealer_dec[3] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[4] ; 7.005 ; 7.005 ; 7.005 ; 7.005 ;
-; pin_name1  ; 7_dealer_dec[5] ; 7.051 ; 7.051 ; 7.051 ; 7.051 ;
-; pin_name1  ; 7_dealer_dec[6] ; 7.386 ; 7.386 ; 7.386 ; 7.386 ;
-; pin_name1  ; 7_dealer_un[0]  ; 6.771 ;       ;       ; 6.771 ;
-; pin_name1  ; 7_dealer_un[1]  ; 6.432 ;       ;       ; 6.432 ;
-; pin_name1  ; 7_dealer_un[2]  ; 6.478 ;       ;       ; 6.478 ;
-; pin_name1  ; 7_dealer_un[3]  ; 6.484 ;       ;       ; 6.484 ;
-; pin_name1  ; 7_dealer_un[4]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[5]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[6]  ; 6.805 ;       ;       ; 6.805 ;
-; pin_name1  ; 7_player_dec[0] ; 6.423 ; 6.423 ; 6.423 ; 6.423 ;
-; pin_name1  ; 7_player_dec[1] ; 6.531 ;       ;       ; 6.531 ;
-; pin_name1  ; 7_player_dec[2] ; 6.035 ; 6.035 ; 6.035 ; 6.035 ;
-; pin_name1  ; 7_player_dec[3] ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
-; pin_name1  ; 7_player_dec[4] ; 5.883 ; 5.883 ; 5.883 ; 5.883 ;
-; pin_name1  ; 7_player_dec[5] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
-; pin_name1  ; 7_player_dec[6] ; 6.774 ; 6.774 ; 6.774 ; 6.774 ;
-; pin_name1  ; 7_player_un[0]  ; 6.538 ; 6.538 ; 6.538 ; 6.538 ;
-; pin_name1  ; 7_player_un[1]  ; 6.566 ; 6.566 ; 6.566 ; 6.566 ;
-; pin_name1  ; 7_player_un[2]  ; 6.554 ; 6.554 ; 6.554 ; 6.554 ;
-; pin_name1  ; 7_player_un[3]  ; 6.546 ; 6.546 ; 6.546 ; 6.546 ;
-; pin_name1  ; 7_player_un[4]  ; 6.218 ; 6.218 ; 6.218 ; 6.218 ;
-; pin_name1  ; 7_player_un[5]  ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; pin_name1  ; 7_player_un[6]  ; 6.237 ; 6.237 ; 6.237 ; 6.237 ;
+; pin_name1  ; 7_dealer_dec[0] ; 7.555 ; 7.555 ; 7.555 ; 7.555 ;
+; pin_name1  ; 7_dealer_dec[1] ; 7.764 ;       ;       ; 7.764 ;
+; pin_name1  ; 7_dealer_dec[2] ; 7.962 ; 7.962 ; 7.962 ; 7.962 ;
+; pin_name1  ; 7_dealer_dec[3] ; 7.818 ; 7.818 ; 7.818 ; 7.818 ;
+; pin_name1  ; 7_dealer_dec[4] ; 7.530 ; 7.530 ; 7.530 ; 7.530 ;
+; pin_name1  ; 7_dealer_dec[5] ; 7.560 ; 7.560 ; 7.560 ; 7.560 ;
+; pin_name1  ; 7_dealer_dec[6] ; 7.777 ; 7.777 ; 7.777 ; 7.777 ;
+; pin_name1  ; 7_dealer_un[0]  ; 7.286 ;       ;       ; 7.286 ;
+; pin_name1  ; 7_dealer_un[1]  ; 6.936 ;       ;       ; 6.936 ;
+; pin_name1  ; 7_dealer_un[2]  ; 6.989 ;       ;       ; 6.989 ;
+; pin_name1  ; 7_dealer_un[3]  ; 6.992 ;       ;       ; 6.992 ;
+; pin_name1  ; 7_dealer_un[4]  ; 7.302 ;       ;       ; 7.302 ;
+; pin_name1  ; 7_dealer_un[5]  ; 6.949 ;       ;       ; 6.949 ;
+; pin_name1  ; 7_dealer_un[6]  ; 7.303 ;       ;       ; 7.303 ;
+; pin_name1  ; 7_player_dec[0] ; 8.556 ; 8.556 ; 8.556 ; 8.556 ;
+; pin_name1  ; 7_player_dec[1] ; 9.050 ;       ;       ; 9.050 ;
+; pin_name1  ; 7_player_dec[2] ; 8.713 ; 8.713 ; 8.713 ; 8.713 ;
+; pin_name1  ; 7_player_dec[3] ; 9.278 ; 9.278 ; 9.278 ; 9.278 ;
+; pin_name1  ; 7_player_dec[4] ; 9.553 ; 9.553 ; 9.553 ; 9.553 ;
+; pin_name1  ; 7_player_dec[5] ; 9.812 ; 9.812 ; 9.812 ; 9.812 ;
+; pin_name1  ; 7_player_dec[6] ; 9.644 ; 9.644 ; 9.644 ; 9.644 ;
+; pin_name1  ; 7_player_un[0]  ; 7.314 ; 7.314 ; 7.314 ; 7.314 ;
+; pin_name1  ; 7_player_un[1]  ; 7.336 ; 7.336 ; 7.336 ; 7.336 ;
+; pin_name1  ; 7_player_un[2]  ; 7.315 ; 7.315 ; 7.315 ; 7.315 ;
+; pin_name1  ; 7_player_un[3]  ; 7.346 ; 7.346 ; 7.346 ; 7.346 ;
+; pin_name1  ; 7_player_un[4]  ; 6.983 ; 6.983 ; 6.983 ; 6.983 ;
+; pin_name1  ; 7_player_un[5]  ; 6.989 ; 6.989 ; 6.989 ; 6.989 ;
+; pin_name1  ; 7_player_un[6]  ; 7.012 ; 7.012 ; 7.012 ; 7.012 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -185,34 +185,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[1] ; 7.221 ;       ;       ; 7.221 ;
-; pin_name1  ; 7_dealer_dec[2] ; 7.269 ; 7.269 ; 7.269 ; 7.269 ;
-; pin_name1  ; 7_dealer_dec[3] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[4] ; 7.005 ; 7.005 ; 7.005 ; 7.005 ;
-; pin_name1  ; 7_dealer_dec[5] ; 7.051 ; 7.051 ; 7.051 ; 7.051 ;
-; pin_name1  ; 7_dealer_dec[6] ; 7.386 ; 7.386 ; 7.386 ; 7.386 ;
-; pin_name1  ; 7_dealer_un[0]  ; 6.771 ;       ;       ; 6.771 ;
-; pin_name1  ; 7_dealer_un[1]  ; 6.432 ;       ;       ; 6.432 ;
-; pin_name1  ; 7_dealer_un[2]  ; 6.478 ;       ;       ; 6.478 ;
-; pin_name1  ; 7_dealer_un[3]  ; 6.484 ;       ;       ; 6.484 ;
-; pin_name1  ; 7_dealer_un[4]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[5]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[6]  ; 6.805 ;       ;       ; 6.805 ;
-; pin_name1  ; 7_player_dec[0] ; 6.423 ; 6.423 ; 6.423 ; 6.423 ;
-; pin_name1  ; 7_player_dec[1] ; 6.531 ;       ;       ; 6.531 ;
-; pin_name1  ; 7_player_dec[2] ; 6.035 ; 6.035 ; 6.035 ; 6.035 ;
-; pin_name1  ; 7_player_dec[3] ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
-; pin_name1  ; 7_player_dec[4] ; 5.883 ; 5.883 ; 5.883 ; 5.883 ;
-; pin_name1  ; 7_player_dec[5] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
-; pin_name1  ; 7_player_dec[6] ; 6.774 ; 6.774 ; 6.774 ; 6.774 ;
-; pin_name1  ; 7_player_un[0]  ; 6.538 ; 6.538 ; 6.538 ; 6.538 ;
-; pin_name1  ; 7_player_un[1]  ; 6.566 ; 6.566 ; 6.566 ; 6.566 ;
-; pin_name1  ; 7_player_un[2]  ; 6.554 ; 6.554 ; 6.554 ; 6.554 ;
-; pin_name1  ; 7_player_un[3]  ; 6.546 ; 6.546 ; 6.546 ; 6.546 ;
-; pin_name1  ; 7_player_un[4]  ; 6.218 ; 6.218 ; 6.218 ; 6.218 ;
-; pin_name1  ; 7_player_un[5]  ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; pin_name1  ; 7_player_un[6]  ; 6.237 ; 6.237 ; 6.237 ; 6.237 ;
+; pin_name1  ; 7_dealer_dec[0] ; 7.555 ; 7.555 ; 7.555 ; 7.555 ;
+; pin_name1  ; 7_dealer_dec[1] ; 7.764 ;       ;       ; 7.764 ;
+; pin_name1  ; 7_dealer_dec[2] ; 7.962 ; 7.962 ; 7.962 ; 7.962 ;
+; pin_name1  ; 7_dealer_dec[3] ; 7.818 ; 7.818 ; 7.818 ; 7.818 ;
+; pin_name1  ; 7_dealer_dec[4] ; 7.530 ; 7.530 ; 7.530 ; 7.530 ;
+; pin_name1  ; 7_dealer_dec[5] ; 7.560 ; 7.560 ; 7.560 ; 7.560 ;
+; pin_name1  ; 7_dealer_dec[6] ; 7.777 ; 7.777 ; 7.777 ; 7.777 ;
+; pin_name1  ; 7_dealer_un[0]  ; 7.286 ;       ;       ; 7.286 ;
+; pin_name1  ; 7_dealer_un[1]  ; 6.936 ;       ;       ; 6.936 ;
+; pin_name1  ; 7_dealer_un[2]  ; 6.989 ;       ;       ; 6.989 ;
+; pin_name1  ; 7_dealer_un[3]  ; 6.992 ;       ;       ; 6.992 ;
+; pin_name1  ; 7_dealer_un[4]  ; 7.302 ;       ;       ; 7.302 ;
+; pin_name1  ; 7_dealer_un[5]  ; 6.949 ;       ;       ; 6.949 ;
+; pin_name1  ; 7_dealer_un[6]  ; 7.303 ;       ;       ; 7.303 ;
+; pin_name1  ; 7_player_dec[0] ; 8.556 ; 8.556 ; 8.556 ; 8.556 ;
+; pin_name1  ; 7_player_dec[1] ; 9.050 ;       ;       ; 9.050 ;
+; pin_name1  ; 7_player_dec[2] ; 8.713 ; 8.713 ; 8.713 ; 8.713 ;
+; pin_name1  ; 7_player_dec[3] ; 9.278 ; 9.278 ; 9.278 ; 9.278 ;
+; pin_name1  ; 7_player_dec[4] ; 9.553 ; 9.553 ; 9.553 ; 9.553 ;
+; pin_name1  ; 7_player_dec[5] ; 9.812 ; 9.812 ; 9.812 ; 9.812 ;
+; pin_name1  ; 7_player_dec[6] ; 9.644 ; 9.644 ; 9.644 ; 9.644 ;
+; pin_name1  ; 7_player_un[0]  ; 7.314 ; 7.314 ; 7.314 ; 7.314 ;
+; pin_name1  ; 7_player_un[1]  ; 7.336 ; 7.336 ; 7.336 ; 7.336 ;
+; pin_name1  ; 7_player_un[2]  ; 7.315 ; 7.315 ; 7.315 ; 7.315 ;
+; pin_name1  ; 7_player_un[3]  ; 7.346 ; 7.346 ; 7.346 ; 7.346 ;
+; pin_name1  ; 7_player_un[4]  ; 6.983 ; 6.983 ; 6.983 ; 6.983 ;
+; pin_name1  ; 7_player_un[5]  ; 6.989 ; 6.989 ; 6.989 ; 6.989 ;
+; pin_name1  ; 7_player_un[6]  ; 7.012 ; 7.012 ; 7.012 ; 7.012 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -263,34 +263,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
-; pin_name1  ; 7_dealer_dec[1] ; 3.415 ;       ;       ; 3.415 ;
-; pin_name1  ; 7_dealer_dec[2] ; 3.427 ; 3.427 ; 3.427 ; 3.427 ;
-; pin_name1  ; 7_dealer_dec[3] ; 3.266 ; 3.266 ; 3.266 ; 3.266 ;
-; pin_name1  ; 7_dealer_dec[4] ; 3.238 ; 3.238 ; 3.238 ; 3.238 ;
-; pin_name1  ; 7_dealer_dec[5] ; 3.258 ; 3.258 ; 3.258 ; 3.258 ;
-; pin_name1  ; 7_dealer_dec[6] ; 3.392 ; 3.392 ; 3.392 ; 3.392 ;
-; pin_name1  ; 7_dealer_un[0]  ; 3.147 ;       ;       ; 3.147 ;
-; pin_name1  ; 7_dealer_un[1]  ; 3.023 ;       ;       ; 3.023 ;
-; pin_name1  ; 7_dealer_un[2]  ; 3.069 ;       ;       ; 3.069 ;
-; pin_name1  ; 7_dealer_un[3]  ; 3.070 ;       ;       ; 3.070 ;
-; pin_name1  ; 7_dealer_un[4]  ; 3.173 ;       ;       ; 3.173 ;
-; pin_name1  ; 7_dealer_un[5]  ; 3.168 ;       ;       ; 3.168 ;
-; pin_name1  ; 7_dealer_un[6]  ; 3.183 ;       ;       ; 3.183 ;
-; pin_name1  ; 7_player_dec[0] ; 3.046 ; 3.046 ; 3.046 ; 3.046 ;
-; pin_name1  ; 7_player_dec[1] ; 3.091 ;       ;       ; 3.091 ;
-; pin_name1  ; 7_player_dec[2] ; 2.879 ; 2.879 ; 2.879 ; 2.879 ;
-; pin_name1  ; 7_player_dec[3] ; 2.888 ; 2.888 ; 2.888 ; 2.888 ;
-; pin_name1  ; 7_player_dec[4] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
-; pin_name1  ; 7_player_dec[5] ; 3.035 ; 3.035 ; 3.035 ; 3.035 ;
-; pin_name1  ; 7_player_dec[6] ; 3.181 ; 3.181 ; 3.181 ; 3.181 ;
-; pin_name1  ; 7_player_un[0]  ; 3.074 ; 3.074 ; 3.074 ; 3.074 ;
-; pin_name1  ; 7_player_un[1]  ; 3.103 ; 3.103 ; 3.103 ; 3.103 ;
-; pin_name1  ; 7_player_un[2]  ; 3.089 ; 3.089 ; 3.089 ; 3.089 ;
-; pin_name1  ; 7_player_un[3]  ; 3.090 ; 3.090 ; 3.090 ; 3.090 ;
-; pin_name1  ; 7_player_un[4]  ; 2.970 ; 2.970 ; 2.970 ; 2.970 ;
-; pin_name1  ; 7_player_un[5]  ; 2.972 ; 2.972 ; 2.972 ; 2.972 ;
-; pin_name1  ; 7_player_un[6]  ; 2.981 ; 2.981 ; 2.981 ; 2.981 ;
+; pin_name1  ; 7_dealer_dec[0] ; 3.417 ; 3.417 ; 3.417 ; 3.417 ;
+; pin_name1  ; 7_dealer_dec[1] ; 3.599 ;       ;       ; 3.599 ;
+; pin_name1  ; 7_dealer_dec[2] ; 3.641 ; 3.641 ; 3.641 ; 3.641 ;
+; pin_name1  ; 7_dealer_dec[3] ; 3.507 ; 3.507 ; 3.507 ; 3.507 ;
+; pin_name1  ; 7_dealer_dec[4] ; 3.394 ; 3.394 ; 3.394 ; 3.394 ;
+; pin_name1  ; 7_dealer_dec[5] ; 3.418 ; 3.418 ; 3.418 ; 3.418 ;
+; pin_name1  ; 7_dealer_dec[6] ; 3.509 ; 3.509 ; 3.509 ; 3.509 ;
+; pin_name1  ; 7_dealer_un[0]  ; 3.341 ;       ;       ; 3.341 ;
+; pin_name1  ; 7_dealer_un[1]  ; 3.208 ;       ;       ; 3.208 ;
+; pin_name1  ; 7_dealer_un[2]  ; 3.253 ;       ;       ; 3.253 ;
+; pin_name1  ; 7_dealer_un[3]  ; 3.258 ;       ;       ; 3.258 ;
+; pin_name1  ; 7_dealer_un[4]  ; 3.357 ;       ;       ; 3.357 ;
+; pin_name1  ; 7_dealer_un[5]  ; 3.219 ;       ;       ; 3.219 ;
+; pin_name1  ; 7_dealer_un[6]  ; 3.367 ;       ;       ; 3.367 ;
+; pin_name1  ; 7_player_dec[0] ; 3.891 ; 3.891 ; 3.891 ; 3.891 ;
+; pin_name1  ; 7_player_dec[1] ; 4.037 ;       ;       ; 4.037 ;
+; pin_name1  ; 7_player_dec[2] ; 3.917 ; 3.917 ; 3.917 ; 3.917 ;
+; pin_name1  ; 7_player_dec[3] ; 4.130 ; 4.130 ; 4.130 ; 4.130 ;
+; pin_name1  ; 7_player_dec[4] ; 4.199 ; 4.199 ; 4.199 ; 4.199 ;
+; pin_name1  ; 7_player_dec[5] ; 4.441 ; 4.441 ; 4.441 ; 4.441 ;
+; pin_name1  ; 7_player_dec[6] ; 4.258 ; 4.258 ; 4.258 ; 4.258 ;
+; pin_name1  ; 7_player_un[0]  ; 3.325 ; 3.325 ; 3.325 ; 3.325 ;
+; pin_name1  ; 7_player_un[1]  ; 3.351 ; 3.351 ; 3.351 ; 3.351 ;
+; pin_name1  ; 7_player_un[2]  ; 3.335 ; 3.335 ; 3.335 ; 3.335 ;
+; pin_name1  ; 7_player_un[3]  ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; pin_name1  ; 7_player_un[4]  ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; pin_name1  ; 7_player_un[5]  ; 3.218 ; 3.218 ; 3.218 ; 3.218 ;
+; pin_name1  ; 7_player_un[6]  ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -299,34 +299,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
-; pin_name1  ; 7_dealer_dec[1] ; 3.415 ;       ;       ; 3.415 ;
-; pin_name1  ; 7_dealer_dec[2] ; 3.427 ; 3.427 ; 3.427 ; 3.427 ;
-; pin_name1  ; 7_dealer_dec[3] ; 3.266 ; 3.266 ; 3.266 ; 3.266 ;
-; pin_name1  ; 7_dealer_dec[4] ; 3.238 ; 3.238 ; 3.238 ; 3.238 ;
-; pin_name1  ; 7_dealer_dec[5] ; 3.258 ; 3.258 ; 3.258 ; 3.258 ;
-; pin_name1  ; 7_dealer_dec[6] ; 3.392 ; 3.392 ; 3.392 ; 3.392 ;
-; pin_name1  ; 7_dealer_un[0]  ; 3.147 ;       ;       ; 3.147 ;
-; pin_name1  ; 7_dealer_un[1]  ; 3.023 ;       ;       ; 3.023 ;
-; pin_name1  ; 7_dealer_un[2]  ; 3.069 ;       ;       ; 3.069 ;
-; pin_name1  ; 7_dealer_un[3]  ; 3.070 ;       ;       ; 3.070 ;
-; pin_name1  ; 7_dealer_un[4]  ; 3.173 ;       ;       ; 3.173 ;
-; pin_name1  ; 7_dealer_un[5]  ; 3.168 ;       ;       ; 3.168 ;
-; pin_name1  ; 7_dealer_un[6]  ; 3.183 ;       ;       ; 3.183 ;
-; pin_name1  ; 7_player_dec[0] ; 3.046 ; 3.046 ; 3.046 ; 3.046 ;
-; pin_name1  ; 7_player_dec[1] ; 3.091 ;       ;       ; 3.091 ;
-; pin_name1  ; 7_player_dec[2] ; 2.879 ; 2.879 ; 2.879 ; 2.879 ;
-; pin_name1  ; 7_player_dec[3] ; 2.888 ; 2.888 ; 2.888 ; 2.888 ;
-; pin_name1  ; 7_player_dec[4] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
-; pin_name1  ; 7_player_dec[5] ; 3.035 ; 3.035 ; 3.035 ; 3.035 ;
-; pin_name1  ; 7_player_dec[6] ; 3.181 ; 3.181 ; 3.181 ; 3.181 ;
-; pin_name1  ; 7_player_un[0]  ; 3.074 ; 3.074 ; 3.074 ; 3.074 ;
-; pin_name1  ; 7_player_un[1]  ; 3.103 ; 3.103 ; 3.103 ; 3.103 ;
-; pin_name1  ; 7_player_un[2]  ; 3.089 ; 3.089 ; 3.089 ; 3.089 ;
-; pin_name1  ; 7_player_un[3]  ; 3.090 ; 3.090 ; 3.090 ; 3.090 ;
-; pin_name1  ; 7_player_un[4]  ; 2.970 ; 2.970 ; 2.970 ; 2.970 ;
-; pin_name1  ; 7_player_un[5]  ; 2.972 ; 2.972 ; 2.972 ; 2.972 ;
-; pin_name1  ; 7_player_un[6]  ; 2.981 ; 2.981 ; 2.981 ; 2.981 ;
+; pin_name1  ; 7_dealer_dec[0] ; 3.417 ; 3.417 ; 3.417 ; 3.417 ;
+; pin_name1  ; 7_dealer_dec[1] ; 3.599 ;       ;       ; 3.599 ;
+; pin_name1  ; 7_dealer_dec[2] ; 3.641 ; 3.641 ; 3.641 ; 3.641 ;
+; pin_name1  ; 7_dealer_dec[3] ; 3.507 ; 3.507 ; 3.507 ; 3.507 ;
+; pin_name1  ; 7_dealer_dec[4] ; 3.394 ; 3.394 ; 3.394 ; 3.394 ;
+; pin_name1  ; 7_dealer_dec[5] ; 3.418 ; 3.418 ; 3.418 ; 3.418 ;
+; pin_name1  ; 7_dealer_dec[6] ; 3.509 ; 3.509 ; 3.509 ; 3.509 ;
+; pin_name1  ; 7_dealer_un[0]  ; 3.341 ;       ;       ; 3.341 ;
+; pin_name1  ; 7_dealer_un[1]  ; 3.208 ;       ;       ; 3.208 ;
+; pin_name1  ; 7_dealer_un[2]  ; 3.253 ;       ;       ; 3.253 ;
+; pin_name1  ; 7_dealer_un[3]  ; 3.258 ;       ;       ; 3.258 ;
+; pin_name1  ; 7_dealer_un[4]  ; 3.357 ;       ;       ; 3.357 ;
+; pin_name1  ; 7_dealer_un[5]  ; 3.219 ;       ;       ; 3.219 ;
+; pin_name1  ; 7_dealer_un[6]  ; 3.367 ;       ;       ; 3.367 ;
+; pin_name1  ; 7_player_dec[0] ; 3.891 ; 3.891 ; 3.891 ; 3.891 ;
+; pin_name1  ; 7_player_dec[1] ; 4.037 ;       ;       ; 4.037 ;
+; pin_name1  ; 7_player_dec[2] ; 3.917 ; 3.917 ; 3.917 ; 3.917 ;
+; pin_name1  ; 7_player_dec[3] ; 4.130 ; 4.130 ; 4.130 ; 4.130 ;
+; pin_name1  ; 7_player_dec[4] ; 4.199 ; 4.199 ; 4.199 ; 4.199 ;
+; pin_name1  ; 7_player_dec[5] ; 4.441 ; 4.441 ; 4.441 ; 4.441 ;
+; pin_name1  ; 7_player_dec[6] ; 4.258 ; 4.258 ; 4.258 ; 4.258 ;
+; pin_name1  ; 7_player_un[0]  ; 3.325 ; 3.325 ; 3.325 ; 3.325 ;
+; pin_name1  ; 7_player_un[1]  ; 3.351 ; 3.351 ; 3.351 ; 3.351 ;
+; pin_name1  ; 7_player_un[2]  ; 3.335 ; 3.335 ; 3.335 ; 3.335 ;
+; pin_name1  ; 7_player_un[3]  ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; pin_name1  ; 7_player_un[4]  ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; pin_name1  ; 7_player_un[5]  ; 3.218 ; 3.218 ; 3.218 ; 3.218 ;
+; pin_name1  ; 7_player_un[6]  ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -347,34 +347,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[1] ; 7.221 ;       ;       ; 7.221 ;
-; pin_name1  ; 7_dealer_dec[2] ; 7.269 ; 7.269 ; 7.269 ; 7.269 ;
-; pin_name1  ; 7_dealer_dec[3] ; 7.064 ; 7.064 ; 7.064 ; 7.064 ;
-; pin_name1  ; 7_dealer_dec[4] ; 7.005 ; 7.005 ; 7.005 ; 7.005 ;
-; pin_name1  ; 7_dealer_dec[5] ; 7.051 ; 7.051 ; 7.051 ; 7.051 ;
-; pin_name1  ; 7_dealer_dec[6] ; 7.386 ; 7.386 ; 7.386 ; 7.386 ;
-; pin_name1  ; 7_dealer_un[0]  ; 6.771 ;       ;       ; 6.771 ;
-; pin_name1  ; 7_dealer_un[1]  ; 6.432 ;       ;       ; 6.432 ;
-; pin_name1  ; 7_dealer_un[2]  ; 6.478 ;       ;       ; 6.478 ;
-; pin_name1  ; 7_dealer_un[3]  ; 6.484 ;       ;       ; 6.484 ;
-; pin_name1  ; 7_dealer_un[4]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[5]  ; 6.795 ;       ;       ; 6.795 ;
-; pin_name1  ; 7_dealer_un[6]  ; 6.805 ;       ;       ; 6.805 ;
-; pin_name1  ; 7_player_dec[0] ; 6.423 ; 6.423 ; 6.423 ; 6.423 ;
-; pin_name1  ; 7_player_dec[1] ; 6.531 ;       ;       ; 6.531 ;
-; pin_name1  ; 7_player_dec[2] ; 6.035 ; 6.035 ; 6.035 ; 6.035 ;
-; pin_name1  ; 7_player_dec[3] ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
-; pin_name1  ; 7_player_dec[4] ; 5.883 ; 5.883 ; 5.883 ; 5.883 ;
-; pin_name1  ; 7_player_dec[5] ; 6.406 ; 6.406 ; 6.406 ; 6.406 ;
-; pin_name1  ; 7_player_dec[6] ; 6.774 ; 6.774 ; 6.774 ; 6.774 ;
-; pin_name1  ; 7_player_un[0]  ; 6.538 ; 6.538 ; 6.538 ; 6.538 ;
-; pin_name1  ; 7_player_un[1]  ; 6.566 ; 6.566 ; 6.566 ; 6.566 ;
-; pin_name1  ; 7_player_un[2]  ; 6.554 ; 6.554 ; 6.554 ; 6.554 ;
-; pin_name1  ; 7_player_un[3]  ; 6.546 ; 6.546 ; 6.546 ; 6.546 ;
-; pin_name1  ; 7_player_un[4]  ; 6.218 ; 6.218 ; 6.218 ; 6.218 ;
-; pin_name1  ; 7_player_un[5]  ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; pin_name1  ; 7_player_un[6]  ; 6.237 ; 6.237 ; 6.237 ; 6.237 ;
+; pin_name1  ; 7_dealer_dec[0] ; 7.555 ; 7.555 ; 7.555 ; 7.555 ;
+; pin_name1  ; 7_dealer_dec[1] ; 7.764 ;       ;       ; 7.764 ;
+; pin_name1  ; 7_dealer_dec[2] ; 7.962 ; 7.962 ; 7.962 ; 7.962 ;
+; pin_name1  ; 7_dealer_dec[3] ; 7.818 ; 7.818 ; 7.818 ; 7.818 ;
+; pin_name1  ; 7_dealer_dec[4] ; 7.530 ; 7.530 ; 7.530 ; 7.530 ;
+; pin_name1  ; 7_dealer_dec[5] ; 7.560 ; 7.560 ; 7.560 ; 7.560 ;
+; pin_name1  ; 7_dealer_dec[6] ; 7.777 ; 7.777 ; 7.777 ; 7.777 ;
+; pin_name1  ; 7_dealer_un[0]  ; 7.286 ;       ;       ; 7.286 ;
+; pin_name1  ; 7_dealer_un[1]  ; 6.936 ;       ;       ; 6.936 ;
+; pin_name1  ; 7_dealer_un[2]  ; 6.989 ;       ;       ; 6.989 ;
+; pin_name1  ; 7_dealer_un[3]  ; 6.992 ;       ;       ; 6.992 ;
+; pin_name1  ; 7_dealer_un[4]  ; 7.302 ;       ;       ; 7.302 ;
+; pin_name1  ; 7_dealer_un[5]  ; 6.949 ;       ;       ; 6.949 ;
+; pin_name1  ; 7_dealer_un[6]  ; 7.303 ;       ;       ; 7.303 ;
+; pin_name1  ; 7_player_dec[0] ; 8.556 ; 8.556 ; 8.556 ; 8.556 ;
+; pin_name1  ; 7_player_dec[1] ; 9.050 ;       ;       ; 9.050 ;
+; pin_name1  ; 7_player_dec[2] ; 8.713 ; 8.713 ; 8.713 ; 8.713 ;
+; pin_name1  ; 7_player_dec[3] ; 9.278 ; 9.278 ; 9.278 ; 9.278 ;
+; pin_name1  ; 7_player_dec[4] ; 9.553 ; 9.553 ; 9.553 ; 9.553 ;
+; pin_name1  ; 7_player_dec[5] ; 9.812 ; 9.812 ; 9.812 ; 9.812 ;
+; pin_name1  ; 7_player_dec[6] ; 9.644 ; 9.644 ; 9.644 ; 9.644 ;
+; pin_name1  ; 7_player_un[0]  ; 7.314 ; 7.314 ; 7.314 ; 7.314 ;
+; pin_name1  ; 7_player_un[1]  ; 7.336 ; 7.336 ; 7.336 ; 7.336 ;
+; pin_name1  ; 7_player_un[2]  ; 7.315 ; 7.315 ; 7.315 ; 7.315 ;
+; pin_name1  ; 7_player_un[3]  ; 7.346 ; 7.346 ; 7.346 ; 7.346 ;
+; pin_name1  ; 7_player_un[4]  ; 6.983 ; 6.983 ; 6.983 ; 6.983 ;
+; pin_name1  ; 7_player_un[5]  ; 6.989 ; 6.989 ; 6.989 ; 6.989 ;
+; pin_name1  ; 7_player_un[6]  ; 7.012 ; 7.012 ; 7.012 ; 7.012 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -383,34 +383,34 @@ No paths to report.
 +------------+-----------------+-------+-------+-------+-------+
 ; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
 +------------+-----------------+-------+-------+-------+-------+
-; pin_name1  ; 7_dealer_dec[0] ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
-; pin_name1  ; 7_dealer_dec[1] ; 3.415 ;       ;       ; 3.415 ;
-; pin_name1  ; 7_dealer_dec[2] ; 3.427 ; 3.427 ; 3.427 ; 3.427 ;
-; pin_name1  ; 7_dealer_dec[3] ; 3.266 ; 3.266 ; 3.266 ; 3.266 ;
-; pin_name1  ; 7_dealer_dec[4] ; 3.238 ; 3.238 ; 3.238 ; 3.238 ;
-; pin_name1  ; 7_dealer_dec[5] ; 3.258 ; 3.258 ; 3.258 ; 3.258 ;
-; pin_name1  ; 7_dealer_dec[6] ; 3.392 ; 3.392 ; 3.392 ; 3.392 ;
-; pin_name1  ; 7_dealer_un[0]  ; 3.147 ;       ;       ; 3.147 ;
-; pin_name1  ; 7_dealer_un[1]  ; 3.023 ;       ;       ; 3.023 ;
-; pin_name1  ; 7_dealer_un[2]  ; 3.069 ;       ;       ; 3.069 ;
-; pin_name1  ; 7_dealer_un[3]  ; 3.070 ;       ;       ; 3.070 ;
-; pin_name1  ; 7_dealer_un[4]  ; 3.173 ;       ;       ; 3.173 ;
-; pin_name1  ; 7_dealer_un[5]  ; 3.168 ;       ;       ; 3.168 ;
-; pin_name1  ; 7_dealer_un[6]  ; 3.183 ;       ;       ; 3.183 ;
-; pin_name1  ; 7_player_dec[0] ; 3.046 ; 3.046 ; 3.046 ; 3.046 ;
-; pin_name1  ; 7_player_dec[1] ; 3.091 ;       ;       ; 3.091 ;
-; pin_name1  ; 7_player_dec[2] ; 2.879 ; 2.879 ; 2.879 ; 2.879 ;
-; pin_name1  ; 7_player_dec[3] ; 2.888 ; 2.888 ; 2.888 ; 2.888 ;
-; pin_name1  ; 7_player_dec[4] ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
-; pin_name1  ; 7_player_dec[5] ; 3.035 ; 3.035 ; 3.035 ; 3.035 ;
-; pin_name1  ; 7_player_dec[6] ; 3.181 ; 3.181 ; 3.181 ; 3.181 ;
-; pin_name1  ; 7_player_un[0]  ; 3.074 ; 3.074 ; 3.074 ; 3.074 ;
-; pin_name1  ; 7_player_un[1]  ; 3.103 ; 3.103 ; 3.103 ; 3.103 ;
-; pin_name1  ; 7_player_un[2]  ; 3.089 ; 3.089 ; 3.089 ; 3.089 ;
-; pin_name1  ; 7_player_un[3]  ; 3.090 ; 3.090 ; 3.090 ; 3.090 ;
-; pin_name1  ; 7_player_un[4]  ; 2.970 ; 2.970 ; 2.970 ; 2.970 ;
-; pin_name1  ; 7_player_un[5]  ; 2.972 ; 2.972 ; 2.972 ; 2.972 ;
-; pin_name1  ; 7_player_un[6]  ; 2.981 ; 2.981 ; 2.981 ; 2.981 ;
+; pin_name1  ; 7_dealer_dec[0] ; 3.417 ; 3.417 ; 3.417 ; 3.417 ;
+; pin_name1  ; 7_dealer_dec[1] ; 3.599 ;       ;       ; 3.599 ;
+; pin_name1  ; 7_dealer_dec[2] ; 3.641 ; 3.641 ; 3.641 ; 3.641 ;
+; pin_name1  ; 7_dealer_dec[3] ; 3.507 ; 3.507 ; 3.507 ; 3.507 ;
+; pin_name1  ; 7_dealer_dec[4] ; 3.394 ; 3.394 ; 3.394 ; 3.394 ;
+; pin_name1  ; 7_dealer_dec[5] ; 3.418 ; 3.418 ; 3.418 ; 3.418 ;
+; pin_name1  ; 7_dealer_dec[6] ; 3.509 ; 3.509 ; 3.509 ; 3.509 ;
+; pin_name1  ; 7_dealer_un[0]  ; 3.341 ;       ;       ; 3.341 ;
+; pin_name1  ; 7_dealer_un[1]  ; 3.208 ;       ;       ; 3.208 ;
+; pin_name1  ; 7_dealer_un[2]  ; 3.253 ;       ;       ; 3.253 ;
+; pin_name1  ; 7_dealer_un[3]  ; 3.258 ;       ;       ; 3.258 ;
+; pin_name1  ; 7_dealer_un[4]  ; 3.357 ;       ;       ; 3.357 ;
+; pin_name1  ; 7_dealer_un[5]  ; 3.219 ;       ;       ; 3.219 ;
+; pin_name1  ; 7_dealer_un[6]  ; 3.367 ;       ;       ; 3.367 ;
+; pin_name1  ; 7_player_dec[0] ; 3.891 ; 3.891 ; 3.891 ; 3.891 ;
+; pin_name1  ; 7_player_dec[1] ; 4.037 ;       ;       ; 4.037 ;
+; pin_name1  ; 7_player_dec[2] ; 3.917 ; 3.917 ; 3.917 ; 3.917 ;
+; pin_name1  ; 7_player_dec[3] ; 4.130 ; 4.130 ; 4.130 ; 4.130 ;
+; pin_name1  ; 7_player_dec[4] ; 4.199 ; 4.199 ; 4.199 ; 4.199 ;
+; pin_name1  ; 7_player_dec[5] ; 4.441 ; 4.441 ; 4.441 ; 4.441 ;
+; pin_name1  ; 7_player_dec[6] ; 4.258 ; 4.258 ; 4.258 ; 4.258 ;
+; pin_name1  ; 7_player_un[0]  ; 3.325 ; 3.325 ; 3.325 ; 3.325 ;
+; pin_name1  ; 7_player_un[1]  ; 3.351 ; 3.351 ; 3.351 ; 3.351 ;
+; pin_name1  ; 7_player_un[2]  ; 3.335 ; 3.335 ; 3.335 ; 3.335 ;
+; pin_name1  ; 7_player_un[3]  ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; pin_name1  ; 7_player_un[4]  ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; pin_name1  ; 7_player_un[5]  ; 3.218 ; 3.218 ; 3.218 ; 3.218 ;
+; pin_name1  ; 7_player_un[6]  ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
 +------------+-----------------+-------+-------+-------+-------+
 
 
@@ -452,7 +452,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Dec 02 16:12:10 2017
+    Info: Processing started: Sun Dec 03 09:55:13 2017
 Info: Command: quartus_sta g21_lab5 -c g21_lab3
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -498,7 +498,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 576 megabytes
-    Info: Processing ended: Sat Dec 02 16:12:12 2017
+    Info: Processing ended: Sun Dec 03 09:55:15 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
