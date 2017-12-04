@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "12/03/2017 09:55:16"
+// DATE "12/04/2017 10:29:59"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -166,6 +166,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("g21_lab3_v.sdo");
+// synopsys translate_on
+
 wire \total_display|Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout ;
 wire \total_display|Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout ;
 wire \total_display|Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout ;
@@ -2372,6 +2376,43 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg_ena~0_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~regout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~_wirecell_combout ;
 wire \altera_internal_jtag~TDO ;
+wire [16:0] \auto_signaltap_0|acq_trigger_in_reg ;
+wire [16:0] \auto_signaltap_0|acq_data_in_reg ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
+wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
+wire [50:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
+wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
+wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|modified_post_count ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
+wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs ;
+wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xraddr ;
+wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xq ;
+wire [4:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|safe_q ;
+wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|safe_q ;
+wire [16:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ram_data_shift_out|dffs ;
+wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|info_data_shift_out|dffs ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_advance_pointer_counter|auto_generated|safe_q ;
+wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_read_pointer_counter|auto_generated|safe_q ;
+wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_data_shift_out|dffs ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|word_counter ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|WORD_SR ;
+wire [16:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|dffs ;
+wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
+wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
+wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg ;
+wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
+wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
+wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
+wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
+wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 wire [24:0] \Play_debounce|inst2|LPM_COUNTER_component|auto_generated|safe_q ;
 wire [24:0] \Stop_debounce|inst2|LPM_COUNTER_component|auto_generated|safe_q ;
 wire [24:0] \INIT_debounce|inst2|LPM_COUNTER_component|auto_generated|safe_q ;
@@ -2447,43 +2488,6 @@ wire [5:0] \inst8|inst102|dffs ;
 wire [31:0] \inst29|inst11|dffs ;
 wire [5:0] \inst3|dffs ;
 wire [3:0] \inst10|LPM_COUNTER_component|auto_generated|safe_q ;
-wire [16:0] \auto_signaltap_0|acq_trigger_in_reg ;
-wire [16:0] \auto_signaltap_0|acq_data_in_reg ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
-wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
-wire [50:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
-wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
-wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|modified_post_count ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
-wire [7:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs ;
-wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xraddr ;
-wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xq ;
-wire [4:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|safe_q ;
-wire [6:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|safe_q ;
-wire [16:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ram_data_shift_out|dffs ;
-wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|info_data_shift_out|dffs ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_advance_pointer_counter|auto_generated|safe_q ;
-wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_read_pointer_counter|auto_generated|safe_q ;
-wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|status_data_shift_out|dffs ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|word_counter ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|WORD_SR ;
-wire [16:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|dffs ;
-wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg ;
-wire [9:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg ;
-wire [8:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg ;
-wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg ;
-wire [2:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt ;
-wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
-wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
-wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 
 wire [35:0] \inst8|inst104|R1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
 wire [15:0] \inst8|inst104|R1|altsyncram_component|auto_generated|ram_block1a32_PORTADATAOUT_bus ;
