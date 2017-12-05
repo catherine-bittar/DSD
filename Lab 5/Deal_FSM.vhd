@@ -20,8 +20,8 @@ entity Deal_FSM is
 		  INIT         : in std_logic;
 		  reset        : in std_logic;
 		  Clock        : in std_logic;
-		  Dealer_legal : in std_logic; -- TODO: take legal_play output from dealer rules module
-		  Player_legal : in std_logic; -- TODO: similarly like above
+		  --Dealer_legal : in std_logic; -- TODO: take legal_play output from dealer rules module
+		  --Player_legal : in std_logic; -- TODO: similarly like above
 		  Dealer_total : in std_logic_vector (4 downto 0);
 		  Player_total : in std_logic_vector (4 downto 0);
 		  Dealer_high  : in std_logic; -- TODO: 1 when dealer sum > player sum (would require a comparator module)
@@ -34,8 +34,8 @@ entity Deal_FSM is
 		  Clear_count  : out std_logic;
 		  Dealer_Enable: out std_logic; -- TODO: add eneable condition to rules (and most likely a clock too)
 		  Player_Enable: out std_logic;-- TODO: similarly like above
-		  Dealer_score : out std_logic_vector(1 downto 0);
-		  Player_score : out std_logic_vector(1 downto 0);
+		  --Dealer_score : out std_logic_vector(1 downto 0);
+		  --Player_score : out std_logic_vector(1 downto 0);
 		  player_turn  : out std_logic; -- activate rightmost gree LED to indicate player's turn
 		  Compare_enable: out std_logic;
 		  count_dealer: out std_logic;
@@ -58,7 +58,7 @@ signal dealer_change, player_change : std_logic;
 begin
 	
 	  
-	fsm: process (reset, Clock, present_state, INIT, Stop, Request_Deal, Dealer_legal, Player_legal, Dealer_total, Player_total, Dealer_high, Player_high, Game_over, score_dealer, score_player)
+	fsm: process (reset, Clock, present_state, INIT, Stop, Request_Deal, Dealer_total, Player_total, Dealer_high, Player_high, Game_over, score_dealer, score_player)
 	begin 
 		if (reset = '1') then
 			present_state <= rand_start;
