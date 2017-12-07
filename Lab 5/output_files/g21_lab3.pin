@@ -74,16 +74,16 @@ GND*                         : A3        :        :                   :         
 GND*                         : A4        :        :                   :         : 3         :                
 GND*                         : A5        :        :                   :         : 3         :                
 GND*                         : A6        :        :                   :         : 3         :                
-playertotal[0]               : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
 GND*                         : A9        :        :                   :         : 3         :                
-GND*                         : A10       :        :                   :         : 3         :                
-numstack[2]                  : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+dealertotal[3]               : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+test_addr[0]                 : A11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : A12       :        :                   :         : 4         :                
-test_addr[0]                 : A13       : output : 3.3-V LVTTL       :         : 4         : N              
-playertotal[1]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
-dealertotal[5]               : A15       : output : 3.3-V LVTTL       :         : 4         : N              
-dealertotal[4]               : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+test_addr[3]                 : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+dealertotal[5]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+playertotal[1]               : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+playertotal[4]               : A16       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A17       :        :                   :         : 4         :                
 GND*                         : A18       :        :                   :         : 4         :                
 GND*                         : A19       :        :                   :         : 4         :                
@@ -101,7 +101,7 @@ GND*                         : AA8       :        :                   :         
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
 GND*                         : AA11      :        :                   :         : 8         :                
-test_addr[1]                 : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA12      :        :                   :         : 7         :                
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
@@ -121,10 +121,10 @@ GND*                         : AB6       :        :                   :         
 GND*                         : AB7       :        :                   :         : 8         :                
 GND*                         : AB8       :        :                   :         : 8         :                
 GND*                         : AB9       :        :                   :         : 8         :                
-test_addr[5]                 : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB10      :        :                   :         : 8         :                
 GND*                         : AB11      :        :                   :         : 8         :                
 GND*                         : AB12      :        :                   :         : 7         :                
-test_addr[3]                 : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB13      :        :                   :         : 7         :                
 GND*                         : AB14      :        :                   :         : 7         :                
 GND*                         : AB15      :        :                   :         : 7         :                
 GND*                         : AB16      :        :                   :         : 7         :                
@@ -143,13 +143,13 @@ GND*                         : B6        :        :                   :         
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
-numstack[4]                  : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+dealertotal[4]               : B10       : output : 3.3-V LVTTL       :         : 3         : N              
 numstack[1]                  : B11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B12       :        :                   :         : 4         :                
-test_addr[4]                 : B13       : output : 3.3-V LVTTL       :         : 4         : N              
-playertotal[4]               : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-dealertotal[3]               : B15       : output : 3.3-V LVTTL       :         : 4         : N              
-dealertotal[2]               : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+numstack[4]                  : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+test_addr[1]                 : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+numstack[0]                  : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+playertotal[2]               : B16       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B17       :        :                   :         : 4         :                
 GND*                         : B18       :        :                   :         : 4         :                
 GND*                         : B19       :        :                   :         : 4         :                
@@ -168,7 +168,7 @@ GND*                         : C9        :        :                   :         
 GND*                         : C10       :        :                   :         : 3         :                
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-dealertotal[1]               : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+numstack[5]                  : C13       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C14       :        :                   :         : 4         :                
 GND                          : C15       : gnd    :                   :         :           :                
 GND*                         : C16       :        :                   :         : 4         :                
@@ -185,10 +185,10 @@ GND*                         : C22       :        :                   :         
 7_dealer_dec[1]              : D5        : output : 3.3-V LVTTL       :         : 2         : Y              
 7_dealer_dec[2]              : D6        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : D7        :        :                   :         : 3         :                
-GND*                         : D8        :        :                   :         : 3         :                
-dealertotal[0]               : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+dealertotal[1]               : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D9        :        :                   :         : 3         :                
 GND                          : D10       : gnd    :                   :         :           :                
-numstack[0]                  : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+test_addr[4]                 : D11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
 GND*                         : D14       :        :                   :         : 4         :                
@@ -207,10 +207,10 @@ GND*                         : D22       :        :                   :         
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
 GND*                         : E7        :        :                   :         : 3         :                
-GND*                         : E8        :        :                   :         : 3         :                
+dealertotal[0]               : E8        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-numstack[3]                  : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+test_addr[2]                 : E11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
 GND*                         : E14       :        :                   :         : 4         :                
@@ -232,10 +232,10 @@ GNDA_PLL3                    : F7        : gnd    :                   :         
 GND*                         : F8        :        :                   :         : 3         :                
 GND*                         : F9        :        :                   :         : 3         :                
 GND*                         : F10       :        :                   :         : 3         :                
-test_addr[2]                 : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-playertotal[5]               : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F11       :        :                   :         : 3         :                
+numstack[2]                  : F12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F13       :        :                   :         : 4         :                
-GND*                         : F14       :        :                   :         : 4         :                
+playertotal[3]               : F14       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F15       :        :                   :         : 4         :                
 VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
 VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
@@ -251,11 +251,11 @@ GND                          : G4        : gnd    :                   :         
 7_dealer_un[0]               : G5        : output : 3.3-V LVTTL       :         : 2         : Y              
 7_dealer_un[1]               : G6        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : G7        :        :                   :         : 3         :                
-GND*                         : G8        :        :                   :         : 3         :                
+playertotal[0]               : G8        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
-GND*                         : G11       :        :                   :         : 3         :                
-playertotal[2]               : G12       : output : 3.3-V LVTTL       :         : 4         : N              
+dealertotal[2]               : G11       : output : 3.3-V LVTTL       :         : 3         : N              
+playertotal[5]               : G12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
 GND*                         : G15       :        :                   :         : 4         :                
@@ -276,8 +276,8 @@ GND*                         : H7        :        :                   :         
 GND*                         : H8        :        :                   :         : 3         :                
 GND*                         : H9        :        :                   :         : 3         :                
 GND*                         : H10       :        :                   :         : 3         :                
-numstack[5]                  : H11       : output : 3.3-V LVTTL       :         : 3         : N              
-playertotal[3]               : H12       : output : 3.3-V LVTTL       :         : 4         : N              
+test_addr[5]                 : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+numstack[3]                  : H12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : H13       :        :                   :         : 4         :                
 GND*                         : H14       :        :                   :         : 4         :                
 GND*                         : H15       :        :                   :         : 4         :                

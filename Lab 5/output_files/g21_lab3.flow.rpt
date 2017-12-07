@@ -1,5 +1,5 @@
 Flow report for g21_lab3
-Tue Dec 05 14:12:25 2017
+Wed Dec 06 16:50:16 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 05 14:12:25 2017           ;
+; Flow Status                        ; Successful - Wed Dec 06 16:50:16 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_lab5_testbed                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1,821 / 18,752 ( 10 % )                         ;
-;     Total combinational functions  ; 1,568 / 18,752 ( 8 % )                          ;
+; Total logic elements               ; 1,819 / 18,752 ( 10 % )                         ;
+;     Total combinational functions  ; 1,570 / 18,752 ( 8 % )                          ;
 ;     Dedicated logic registers      ; 1,016 / 18,752 ( 5 % )                          ;
 ; Total registers                    ; 1016                                            ;
 ; Total pins                         ; 66 / 315 ( 21 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2017 14:11:14 ;
+; Start date & time ; 12/06/2017 16:49:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g21_lab3            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------------------------------+---------------+------------------+------------------+
 ; Assignment Name                     ; Value                                                                                       ; Default Value ; Entity Name      ; Section Id       ;
 +-------------------------------------+---------------------------------------------------------------------------------------------+---------------+------------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 1098086005435.151250107314044                                                               ; --            ; --               ; --               ;
+; COMPILER_SIGNATURE_ID               ; 150461128418019.151259696410768                                                             ; --            ; --               ; --               ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                                                         ; --            ; --               ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                                 ; --            ; --               ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                   ; <None>        ; --               ; --               ;
@@ -173,7 +173,7 @@ applicable agreement for further details.
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                       ; --            ; g21_lab5_testbed ; Top              ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                      ; --            ; g21_lab5_testbed ; Top              ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                ; --            ; --               ; --               ;
-; SLD_FILE                            ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_test_bed_auto_stripped.stp  ; --            ; --               ; --               ;
+; SLD_FILE                            ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_test_bed_auto_stripped.stp                    ; --            ; --               ; --               ;
 ; SLD_NODE_CREATOR_ID                 ; 110                                                                                         ; --            ; --               ; auto_signaltap_0 ;
 ; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                               ; --            ; --               ; auto_signaltap_0 ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                     ; --            ; --               ; auto_signaltap_0 ;
@@ -207,12 +207,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 688 MB              ; 00:00:31                           ;
-; Fitter                    ; 00:00:14     ; 1.3                     ; 1328 MB             ; 00:00:17                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 521 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 576 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 500 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:59     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 654 MB              ; 00:00:23                           ;
+; Fitter                    ; 00:00:11     ; 1.6                     ; 968 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 532 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 476 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:43     ; --                      ; --                  ; 00:00:42                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -221,11 +221,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-5DDC22IG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-MAN9RJG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

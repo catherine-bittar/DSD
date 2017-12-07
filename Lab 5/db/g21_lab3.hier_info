@@ -738,8 +738,6 @@ Clock => Player_Enable~reg0.CLK
 Clock => Dealer_Enable~reg0.CLK
 Clock => rand_seed~reg0.CLK
 Clock => present_state~21.DATAIN
-Dealer_legal => ~NO_FANOUT~
-Player_legal => ~NO_FANOUT~
 Dealer_total[0] => LessThan2.IN10
 Dealer_total[0] => LessThan3.IN10
 Dealer_total[0] => LessThan4.IN10
@@ -834,10 +832,6 @@ rand_seed <= rand_seed~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Clear_count <= Clear_count~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dealer_Enable <= Dealer_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Player_Enable <= Player_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Dealer_score[0] <= Dealer_score[0].DB_MAX_OUTPUT_PORT_TYPE
-Dealer_score[1] <= Dealer_score[1].DB_MAX_OUTPUT_PORT_TYPE
-Player_score[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-Player_score[1] <= Player_score[1].DB_MAX_OUTPUT_PORT_TYPE
 player_turn <= player_turn~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Compare_enable <= Compare_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count_dealer <= count_dealer~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2553,6 +2547,71 @@ datab[24] => _.IN1
 datab[24] => op_1.IN1
 
 
+|g21_lab5_testbed|g21_determine_winner:winner_determine
+total_player[0] => LessThan0.IN5
+total_player[0] => LessThan1.IN5
+total_player[1] => LessThan0.IN4
+total_player[1] => LessThan1.IN4
+total_player[2] => LessThan0.IN3
+total_player[2] => LessThan1.IN3
+total_player[3] => LessThan0.IN2
+total_player[3] => LessThan1.IN2
+total_player[4] => LessThan0.IN1
+total_player[4] => LessThan1.IN1
+total_dealer[0] => LessThan0.IN10
+total_dealer[0] => LessThan1.IN10
+total_dealer[1] => LessThan0.IN9
+total_dealer[1] => LessThan1.IN9
+total_dealer[2] => LessThan0.IN8
+total_dealer[2] => LessThan1.IN8
+total_dealer[3] => LessThan0.IN7
+total_dealer[3] => LessThan1.IN7
+total_dealer[4] => LessThan0.IN6
+total_dealer[4] => LessThan1.IN6
+enable => assign_winner.IN1
+enable => assign_winner.IN1
+dealer_high <= dealer_high.DB_MAX_OUTPUT_PORT_TYPE
+player_high <= assign_winner.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g21_lab5_testbed|LPM_FF:inst12
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[5].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => dffs[5].SCLR
+sclr => dffs[4].SCLR
+sclr => dffs[3].SCLR
+sclr => dffs[2].SCLR
+sclr => dffs[1].SCLR
+sclr => dffs[0].SCLR
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |g21_lab5_testbed|g21_rules:inst21
 play_pile_top_card[0] => g21_Modulo_13:modulo_top.A[0]
 play_pile_top_card[1] => g21_Modulo_13:modulo_top.A[1]
@@ -3204,44 +3263,6 @@ IN_1 => inst14.IN0
 IN_2 => inst23.IN1
 IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|LPM_FF:inst12
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => dffs[5].IN0
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => dffs[5].SCLR
-sclr => dffs[4].SCLR
-sclr => dffs[3].SCLR
-sclr => dffs[2].SCLR
-sclr => dffs[1].SCLR
-sclr => dffs[0].SCLR
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|g21_stack52:inst8
@@ -17598,6 +17619,44 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
+|g21_lab5_testbed|LPM_FF:inst16
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[5].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => dffs[5].SCLR
+sclr => dffs[4].SCLR
+sclr => dffs[3].SCLR
+sclr => dffs[2].SCLR
+sclr => dffs[1].SCLR
+sclr => dffs[0].SCLR
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |g21_lab5_testbed|g21_rules:inst22
 play_pile_top_card[0] => g21_Modulo_13:modulo_top.A[0]
 play_pile_top_card[1] => g21_Modulo_13:modulo_top.A[1]
@@ -18249,71 +18308,6 @@ IN_1 => inst14.IN0
 IN_2 => inst23.IN1
 IN_2 => inst14.IN1
 Cout <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|LPM_FF:inst16
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => dffs[5].IN0
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => dffs[5].SCLR
-sclr => dffs[4].SCLR
-sclr => dffs[3].SCLR
-sclr => dffs[2].SCLR
-sclr => dffs[1].SCLR
-sclr => dffs[0].SCLR
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|g21_lab5_testbed|g21_determine_winner:winner_determine
-total_player[0] => LessThan0.IN5
-total_player[0] => LessThan1.IN5
-total_player[1] => LessThan0.IN4
-total_player[1] => LessThan1.IN4
-total_player[2] => LessThan0.IN3
-total_player[2] => LessThan1.IN3
-total_player[3] => LessThan0.IN2
-total_player[3] => LessThan1.IN2
-total_player[4] => LessThan0.IN1
-total_player[4] => LessThan1.IN1
-total_dealer[0] => LessThan0.IN10
-total_dealer[0] => LessThan1.IN10
-total_dealer[1] => LessThan0.IN9
-total_dealer[1] => LessThan1.IN9
-total_dealer[2] => LessThan0.IN8
-total_dealer[2] => LessThan1.IN8
-total_dealer[3] => LessThan0.IN7
-total_dealer[3] => LessThan1.IN7
-total_dealer[4] => LessThan0.IN6
-total_dealer[4] => LessThan1.IN6
-enable => assign_winner.IN1
-enable => assign_winner.IN1
-dealer_high <= dealer_high.DB_MAX_OUTPUT_PORT_TYPE
-player_high <= assign_winner.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g21_lab5_testbed|game_over:inst24

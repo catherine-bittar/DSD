@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g21_lab3
-Tue Dec 05 14:11:52 2017
+Wed Dec 06 16:49:51 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -208,13 +208,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 05 14:11:52 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 06 16:49:51 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g21_lab3                                        ;
 ; Top-level Entity Name              ; g21_lab5_testbed                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,855                                           ;
-;     Total combinational functions  ; 1,565                                           ;
+; Total logic elements               ; 1,857                                           ;
+;     Total combinational functions  ; 1,567                                           ;
 ;     Dedicated logic registers      ; 1,016                                           ;
 ; Total registers                    ; 1016                                            ;
 ; Total pins                         ; 66                                              ;
@@ -315,143 +315,143 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; g21_stack52.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_stack52.bdf              ;         ;
-; g21_pop_enable.vhd               ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_pop_enable.vhd           ;         ;
-; g21_lab2.mif                     ; yes             ; User Memory Initialization File          ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_lab2.mif                 ;         ;
-; g21_lab2_rom1.vhd                ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_lab2_rom1.vhd            ;         ;
-; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_mux0.vhd                 ;         ;
-; NOP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/NOP_lpm_constant.vhd         ;         ;
-; INIT_lpm_constant.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/INIT_lpm_constant.vhd        ;         ;
-; POP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/POP_lpm_constant.vhd         ;         ;
-; PUSH_lpm_constant.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/PUSH_lpm_constant.vhd        ;         ;
-; MODE_Select_lpm_mux.vhd          ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/MODE_Select_lpm_mux.vhd      ;         ;
-; StackCounter_lpm_counter.vhd     ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/StackCounter_lpm_counter.vhd ;         ;
-; g21_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_comp7.bdf                ;         ;
-; a52_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/a52_lpm_constant.vhd         ;         ;
-; g21_SPG.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_SPG.bdf                  ;         ;
-; SPG_lpm_counter.vhd              ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_counter.vhd          ;         ;
-; SPG_lpm_compare.vhd              ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_compare.vhd          ;         ;
-; g21_7_segment_decoder.vhd        ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_7_segment_decoder.vhd    ;         ;
-; g21_1bitAdder.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_1bitAdder.bdf            ;         ;
-; g21_adder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_adder.bdf                ;         ;
-; Equal1_lpm_compare0.vhd          ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;         ;
-; lpm_divide0.vhd                  ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_divide0.vhd              ;         ;
-; g21_dealer_FSM.vhd               ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_dealer_FSM.vhd           ;         ;
-; g21_rules.vhd                    ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_rules.vhd                ;         ;
-; Deal_FSM.vhd                     ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Deal_FSM.vhd                 ;         ;
-; g21_determine_winner.vhd         ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_determine_winner.vhd     ;         ;
-; g21_show_score.vhd               ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_show_score.vhd           ;         ;
-; show_totals.vhd                  ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/show_totals.vhd              ;         ;
-; game_over.vhd                    ; yes             ; User VHDL File                           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/game_over.vhd                ;         ;
-; random_address_gen.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/random_address_gen.bdf       ;         ;
-; g21_lab5_testbed.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_lab5_testbed.bdf         ;         ;
-; lpm_counter_score.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_score.vhd        ;         ;
-; lpm_counter_g.vhd                ; yes             ; User Wizard-Generated File               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_g.vhd            ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf                        ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc                       ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                         ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                        ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc                           ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc                        ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc                        ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                             ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc                ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                         ;         ;
-; db/cntr_1oi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_1oi.tdf              ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf                        ;         ;
-; comptree.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc                           ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                           ;         ;
-; db/cmpr_a9j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cmpr_a9j.tdf              ;         ;
-; db/cntr_70k.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_70k.tdf              ;         ;
-; db/cmpr_acj.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cmpr_acj.tdf              ;         ;
-; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_modulo_13.bdf            ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                             ;         ;
-; db/cntr_p5j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_p5j.tdf              ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                             ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                            ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                            ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                             ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                           ;         ;
-; db/mux_5oc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_5oc.tdf               ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                       ;         ;
-; db/mux_j4e.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_j4e.tdf               ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                         ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                          ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                             ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                             ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                           ;         ;
-; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/altsyncram_q371.tdf       ;         ;
-; db/mux_v4e.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_v4e.tdf               ;         ;
-; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_qmc.tdf               ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                         ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                        ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                    ;         ;
-; db/lpm_divide_grp.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/lpm_divide_grp.tdf        ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/sign_div_unsign_bkh.tdf   ;         ;
-; db/alt_u_div_ove.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/alt_u_div_ove.tdf         ;         ;
-; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/add_sub_lkc.tdf           ;         ;
-; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/add_sub_mkc.tdf           ;         ;
-; db/lpm_constant_bj4.tdf          ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/lpm_constant_bj4.tdf      ;         ;
-; g21_randu.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_randu.vhd                ;         ;
-; add_sub.vhd                      ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/add_sub.vhd                  ;         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                        ;         ;
-; addcore.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                            ;         ;
-; look_add.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                           ;         ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                ;         ;
-; db/add_sub_plh.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/add_sub_plh.tdf           ;         ;
-; db/mux_mmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_mmc.tdf               ;         ;
-; db/mux_rmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_rmc.tdf               ;         ;
-; db/cntr_3oi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_3oi.tdf              ;         ;
-; sld_signaltap.vhd                ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap.vhd                      ;         ;
-; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                 ;         ;
-; sld_ela_control.vhd              ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_ela_control.vhd                    ;         ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                       ;         ;
-; sld_mbpmg.vhd                    ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_mbpmg.vhd                          ;         ;
-; sld_ela_trigger_flow_mgr.vhd     ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd           ;         ;
-; sld_buffer_manager.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                 ;         ;
-; db/altsyncram_up14.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/altsyncram_up14.tdf       ;         ;
-; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.tdf                           ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/memmodes.inc                         ;         ;
-; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_hdffe.inc                            ;         ;
-; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                    ;         ;
-; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.inc                         ;         ;
-; db/mux_aoc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/mux_aoc.tdf               ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.tdf                         ;         ;
-; declut.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/declut.inc                             ;         ;
-; db/decode_rqf.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/decode_rqf.tdf            ;         ;
-; db/cntr_vbi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_vbi.tdf              ;         ;
-; db/cmpr_9cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cmpr_9cc.tdf              ;         ;
-; db/cntr_02j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_02j.tdf              ;         ;
-; db/cntr_sbi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_sbi.tdf              ;         ;
-; db/cmpr_8cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cmpr_8cc.tdf              ;         ;
-; db/cntr_gui.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cntr_gui.tdf              ;         ;
-; db/cmpr_5cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/cmpr_5cc.tdf              ;         ;
-; sld_rom_sr.vhd                   ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_rom_sr.vhd                         ;         ;
-; sld_hub.vhd                      ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_hub.vhd                            ;         ;
-; sld_jtag_hub.vhd                 ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                       ;         ;
-; db/lpm_divide_ucm.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/lpm_divide_ucm.tdf        ;         ;
-; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/sign_div_unsign_8kh.tdf   ;         ;
-; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/alt_u_div_ive.tdf         ;         ;
-; db/lpm_divide_15m.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/db/lpm_divide_15m.tdf        ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
+; g21_stack52.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_stack52.bdf                      ;         ;
+; g21_pop_enable.vhd               ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_pop_enable.vhd                   ;         ;
+; g21_lab2.mif                     ; yes             ; User Memory Initialization File          ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_lab2.mif                         ;         ;
+; g21_lab2_rom1.vhd                ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_lab2_rom1.vhd                    ;         ;
+; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_mux0.vhd                         ;         ;
+; NOP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/NOP_lpm_constant.vhd                 ;         ;
+; INIT_lpm_constant.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/INIT_lpm_constant.vhd                ;         ;
+; POP_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/POP_lpm_constant.vhd                 ;         ;
+; PUSH_lpm_constant.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/PUSH_lpm_constant.vhd                ;         ;
+; MODE_Select_lpm_mux.vhd          ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/MODE_Select_lpm_mux.vhd              ;         ;
+; StackCounter_lpm_counter.vhd     ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/StackCounter_lpm_counter.vhd         ;         ;
+; g21_comp7.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_comp7.bdf                        ;         ;
+; a52_lpm_constant.vhd             ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/a52_lpm_constant.vhd                 ;         ;
+; g21_SPG.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_SPG.bdf                          ;         ;
+; SPG_lpm_counter.vhd              ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_counter.vhd                  ;         ;
+; SPG_lpm_compare.vhd              ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_compare.vhd                  ;         ;
+; g21_7_segment_decoder.vhd        ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_7_segment_decoder.vhd            ;         ;
+; g21_1bitAdder.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_1bitAdder.bdf                    ;         ;
+; g21_adder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_adder.bdf                        ;         ;
+; Equal1_lpm_compare0.vhd          ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Equal1_lpm_compare0.vhd              ;         ;
+; lpm_divide0.vhd                  ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_divide0.vhd                      ;         ;
+; g21_dealer_FSM.vhd               ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_dealer_FSM.vhd                   ;         ;
+; g21_rules.vhd                    ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_rules.vhd                        ;         ;
+; Deal_FSM.vhd                     ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Deal_FSM.vhd                         ;         ;
+; g21_determine_winner.vhd         ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_determine_winner.vhd             ;         ;
+; g21_show_score.vhd               ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_show_score.vhd                   ;         ;
+; show_totals.vhd                  ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/show_totals.vhd                      ;         ;
+; game_over.vhd                    ; yes             ; User VHDL File                           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/game_over.vhd                        ;         ;
+; random_address_gen.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/random_address_gen.bdf               ;         ;
+; g21_lab5_testbed.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_lab5_testbed.bdf                 ;         ;
+; lpm_counter_score.vhd            ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_score.vhd                ;         ;
+; lpm_counter_g.vhd                ; yes             ; User Wizard-Generated File               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_g.vhd                    ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf              ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc             ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc              ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc                 ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc              ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc              ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                   ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc      ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
+; db/cntr_1oi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_1oi.tdf                      ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf              ;         ;
+; comptree.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                 ;         ;
+; db/cmpr_a9j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cmpr_a9j.tdf                      ;         ;
+; db/cntr_70k.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_70k.tdf                      ;         ;
+; db/cmpr_acj.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cmpr_acj.tdf                      ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                   ;         ;
+; g21_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_modulo_13.bdf                    ;         ;
+; db/cntr_p5j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_p5j.tdf                      ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                   ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                  ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                   ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
+; db/mux_5oc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_5oc.tdf                       ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf             ;         ;
+; db/mux_j4e.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_j4e.tdf                       ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
+; db/altsyncram_q371.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/altsyncram_q371.tdf               ;         ;
+; db/mux_v4e.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_v4e.tdf                       ;         ;
+; db/mux_qmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_qmc.tdf                       ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
+; db/lpm_divide_grp.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/lpm_divide_grp.tdf                ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/sign_div_unsign_bkh.tdf           ;         ;
+; db/alt_u_div_ove.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/alt_u_div_ove.tdf                 ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/add_sub_lkc.tdf                   ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/add_sub_mkc.tdf                   ;         ;
+; db/lpm_constant_bj4.tdf          ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/lpm_constant_bj4.tdf              ;         ;
+; g21_randu.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_randu.vhd                        ;         ;
+; add_sub.vhd                      ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/add_sub.vhd                          ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf              ;         ;
+; addcore.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                  ;         ;
+; look_add.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                 ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc      ;         ;
+; db/add_sub_plh.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/add_sub_plh.tdf                   ;         ;
+; db/mux_mmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_mmc.tdf                       ;         ;
+; db/mux_rmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_rmc.tdf                       ;         ;
+; db/cntr_3oi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_3oi.tdf                      ;         ;
+; sld_signaltap.vhd                ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap.vhd            ;         ;
+; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd       ;         ;
+; sld_ela_control.vhd              ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_ela_control.vhd          ;         ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_shiftreg.tdf             ;         ;
+; sld_mbpmg.vhd                    ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_mbpmg.vhd                ;         ;
+; sld_ela_trigger_flow_mgr.vhd     ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd ;         ;
+; sld_buffer_manager.vhd           ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_buffer_manager.vhd       ;         ;
+; db/altsyncram_up14.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/altsyncram_up14.tdf               ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.tdf                 ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/memmodes.inc               ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_hdffe.inc                  ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_le_rden_reg.inc          ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.inc               ;         ;
+; db/mux_aoc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/mux_aoc.tdf                       ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.tdf               ;         ;
+; declut.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/declut.inc                   ;         ;
+; db/decode_rqf.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/decode_rqf.tdf                    ;         ;
+; db/cntr_vbi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_vbi.tdf                      ;         ;
+; db/cmpr_9cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cmpr_9cc.tdf                      ;         ;
+; db/cntr_02j.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_02j.tdf                      ;         ;
+; db/cntr_sbi.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_sbi.tdf                      ;         ;
+; db/cmpr_8cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cmpr_8cc.tdf                      ;         ;
+; db/cntr_gui.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cntr_gui.tdf                      ;         ;
+; db/cmpr_5cc.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/cmpr_5cc.tdf                      ;         ;
+; sld_rom_sr.vhd                   ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_rom_sr.vhd               ;         ;
+; sld_hub.vhd                      ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_hub.vhd                  ;         ;
+; sld_jtag_hub.vhd                 ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sld_jtag_hub.vhd             ;         ;
+; db/lpm_divide_ucm.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/lpm_divide_ucm.tdf                ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/sign_div_unsign_8kh.tdf           ;         ;
+; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/alt_u_div_ive.tdf                 ;         ;
+; db/lpm_divide_15m.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/db/lpm_divide_15m.tdf                ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -459,16 +459,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,855 ;
+; Estimated Total logic elements              ; 1,857 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1565  ;
+; Total combinational functions               ; 1567  ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 605   ;
-;     -- 3 input functions                    ; 616   ;
+;     -- 3 input functions                    ; 618   ;
 ;     -- <=2 input functions                  ; 344   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1312  ;
+;     -- normal mode                          ; 1314  ;
 ;     -- arithmetic mode                      ; 253   ;
 ;                                             ;       ;
 ; Total registers                             ; 1016  ;
@@ -480,7 +480,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 569   ;
-; Total fan-out                               ; 9398  ;
+; Total fan-out                               ; 9404  ;
 ; Average fan-out                             ; 3.45  ;
 +---------------------------------------------+-------+
 
@@ -490,7 +490,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                    ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g21_lab5_testbed                                                                                       ; 1565 (3)          ; 1016 (0)     ; 5504        ; 0            ; 0       ; 0         ; 66   ; 0            ; |g21_lab5_testbed                                                                                                                                                                                                                                                                                                                                      ; work         ;
+; |g21_lab5_testbed                                                                                       ; 1567 (3)          ; 1016 (0)     ; 5504        ; 0            ; 0       ; 0         ; 66   ; 0            ; |g21_lab5_testbed                                                                                                                                                                                                                                                                                                                                      ; work         ;
 ;    |Deal_FSM:inst|                                                                                      ; 51 (51)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|Deal_FSM:inst                                                                                                                                                                                                                                                                                                                        ; work         ;
 ;    |busmux:inst14|                                                                                      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|busmux:inst14                                                                                                                                                                                                                                                                                                                        ; work         ;
 ;       |lpm_mux:$00000|                                                                                  ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|busmux:inst14|lpm_mux:$00000                                                                                                                                                                                                                                                                                                         ; work         ;
@@ -850,8 +850,8 @@ applicable agreement for further details.
 ;          |lpm_divide_15m:auto_generated|                                                                ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|show_totals:total_display|lpm_divide:Mod1|lpm_divide_15m:auto_generated                                                                                                                                                                                                                                                              ; work         ;
 ;             |sign_div_unsign_8kh:divider|                                                               ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|show_totals:total_display|lpm_divide:Mod1|lpm_divide_15m:auto_generated|sign_div_unsign_8kh:divider                                                                                                                                                                                                                                  ; work         ;
 ;                |alt_u_div_ive:divider|                                                                  ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|show_totals:total_display|lpm_divide:Mod1|lpm_divide_15m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_ive:divider                                                                                                                                                                                                            ; work         ;
-;    |sld_hub:auto_hub|                                                                                   ; 118 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 117 (79)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                   ; 120 (1)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                    ; 119 (81)          ; 86 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                        ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                      ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                              ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                     ; 257 (1)           ; 415 (34)     ; 2176        ; 0            ; 0       ; 0         ; 1    ; 0            ; |g21_lab5_testbed|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                       ; work         ;
@@ -918,40 +918,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                  ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                             ; IP Include File                                                                          ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|SPG_lpm_counter:inst2               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_counter.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|SPG_lpm_compare:inst3               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_compare.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_counter:inst2             ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_counter.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_compare:inst3             ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_compare.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5         ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_score:inst7                                   ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_score.vhd        ;
-; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1 ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_lab2_rom1.vhd            ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|NOP_lpm_constant:inst106                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/NOP_lpm_constant.vhd         ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|INIT_lpm_constant:inst107               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/INIT_lpm_constant.vhd        ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|POP_lpm_constant:inst108                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/POP_lpm_constant.vhd         ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|PUSH_lpm_constant:inst109               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/PUSH_lpm_constant.vhd        ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114                        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_mux0.vhd                 ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|MODE_Select_lpm_mux:inst118             ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/MODE_Select_lpm_mux.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|StackCounter_lpm_counter:inst124        ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/StackCounter_lpm_counter.vhd ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|a52_lpm_constant:inst127                ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/a52_lpm_constant.vhd         ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_g:inst9                                       ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_g.vhd            ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_g:inst10                                      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_g.vhd            ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_score:inst15                                  ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_counter_score.vhd        ;
-; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|g21_RANDU:inst9|add_sub:A1      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/add_sub.vhd                  ;
-; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|g21_RANDU:inst9|add_sub:A2      ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/add_sub.vhd                  ;
-; Altera ; LPM_DIVIDE   ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|lpm_divide0:inst10              ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/lpm_divide0.vhd              ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|SPG_lpm_counter:inst2               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_counter.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|SPG_lpm_compare:inst3               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_compare.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|SPG_lpm_counter:inst2               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_counter.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|SPG_lpm_compare:inst3               ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/SPG_lpm_compare.vhd          ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                             ; IP Include File                                                        ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------+
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|SPG_lpm_counter:inst2               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_counter.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|SPG_lpm_compare:inst3               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_compare.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_counter:inst2             ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_counter.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|SPG_lpm_compare:inst3             ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_compare.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5         ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_score:inst7                                   ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_score.vhd        ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|g21_pop_enable:inst104|g21_lab2_rom1:R1 ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_lab2_rom1.vhd            ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|NOP_lpm_constant:inst106                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/NOP_lpm_constant.vhd         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|INIT_lpm_constant:inst107               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/INIT_lpm_constant.vhd        ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|POP_lpm_constant:inst108                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/POP_lpm_constant.vhd         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|PUSH_lpm_constant:inst109               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/PUSH_lpm_constant.vhd        ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|lpm_mux0:inst114                        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_mux0.vhd                 ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|MODE_Select_lpm_mux:inst118             ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/MODE_Select_lpm_mux.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|StackCounter_lpm_counter:inst124        ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/StackCounter_lpm_counter.vhd ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_stack52:inst8|a52_lpm_constant:inst127                ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/a52_lpm_constant.vhd         ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_g:inst9                                       ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_g.vhd            ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_g:inst10                                      ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_g.vhd            ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|lpm_counter_score:inst15                                  ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_counter_score.vhd        ;
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|g21_RANDU:inst9|add_sub:A1      ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/add_sub.vhd                  ;
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|g21_RANDU:inst9|add_sub:A2      ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/add_sub.vhd                  ;
+; Altera ; LPM_DIVIDE   ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|random_address_gen:inst29|lpm_divide0:inst10              ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/lpm_divide0.vhd              ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|SPG_lpm_counter:inst2               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_counter.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|SPG_lpm_compare:inst3               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_compare.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Play_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|SPG_lpm_counter:inst2               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_counter.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|SPG_lpm_compare:inst3               ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/SPG_lpm_compare.vhd          ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g21_lab5_testbed|g21_SPG:Stop_debounce|Equal1_lpm_compare0:inst5           ; C:/Users/bitta/Documents/GitHub/DSD/Lab 5/Equal1_lpm_compare0.vhd      ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -1086,15 +1086,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:inst21|total_value_temp[4] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:inst22|total_value_temp[3] ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |g21_lab5_testbed|Deal_FSM:inst|Selector0              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:inst21|total_value_temp[4]                                                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g21_lab5_testbed|g21_rules:inst22|total_value_temp[3]                                                                  ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |g21_lab5_testbed|Deal_FSM:inst|Selector0                                                                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[0] ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                             ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                      ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |g21_lab5_testbed|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3684,13 +3690,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:08     ;
-+----------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:05     ;
+; sld_hub:auto_hub ; 00:00:00     ;
++------------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3742,9 +3749,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Dec 05 14:11:12 2017
+    Info: Processing started: Wed Dec 06 16:49:23 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g21_lab5 -c g21_lab3
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file g21_stack52.bdf
     Info (12023): Found entity 1: g21_stack52
 Info (12021): Found 2 design units, including 1 entities, in source file g21_pop_enable.vhd
@@ -3820,7 +3827,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file g21_tes
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_divide0.vhd
     Info (12022): Found design unit 1: lpm_divide0-SYN
     Info (12023): Found entity 1: lpm_divide0
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kevin/desktop/mcgill work/f2017/ecse 323/dsd/lab 4/g21_rules.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/bitta/documents/github/dsd/lab 4/g21_rules.vhd
     Info (12022): Found design unit 1: g21_rules1-game_rules
     Info (12023): Found entity 1: g21_rules1
 Info (12021): Found 2 design units, including 1 entities, in source file g21_dealer_fsm.vhd
@@ -3914,10 +3921,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_acj
 Info (12128): Elaborating entity "cmpr_acj" for hierarchy "g21_SPG:INIT_debounce17|Equal1_lpm_compare0:inst5|lpm_compare:LPM_COMPARE_component|cmpr_acj:auto_generated"
 Info (12128): Elaborating entity "Deal_FSM" for hierarchy "Deal_FSM:inst"
-Warning (10541): VHDL Signal Declaration warning at Deal_FSM.vhd(37): used implicit default value for signal "Dealer_score" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Deal_FSM.vhd(38): used implicit default value for signal "Player_score" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at Deal_FSM.vhd(55): object "temp_dealer" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at Deal_FSM.vhd(55): object "temp_player" assigned a value but never read
+Info (12128): Elaborating entity "g21_determine_winner" for hierarchy "g21_determine_winner:winner_determine"
+Warning (10492): VHDL Process Statement warning at g21_determine_winner.vhd(33): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g21_determine_winner.vhd(36): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst12"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:inst12"
+Info (12133): Instantiated megafunction "LPM_FF:inst12" with the following parameter:
+    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
+    Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12128): Elaborating entity "g21_rules" for hierarchy "g21_rules:inst21"
 Warning (10036): Verilog HDL or VHDL warning at g21_rules.vhd(28): object "suit_top" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at g21_rules.vhd(71): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -3971,11 +3984,6 @@ Warning (12125): Using design file g21_modulo_13.bdf, which is not specified as 
 Info (12128): Elaborating entity "g21_Modulo_13" for hierarchy "g21_rules:inst21|g21_Modulo_13:modulo_top"
 Info (12128): Elaborating entity "g21_adder" for hierarchy "g21_rules:inst21|g21_Modulo_13:modulo_top|g21_adder:inst1"
 Info (12128): Elaborating entity "g21_1bitAdder" for hierarchy "g21_rules:inst21|g21_Modulo_13:modulo_top|g21_adder:inst1|g21_1bitAdder:inst30"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst12"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:inst12"
-Info (12133): Instantiated megafunction "LPM_FF:inst12" with the following parameter:
-    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
-    Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12128): Elaborating entity "g21_stack52" for hierarchy "g21_stack52:inst8"
 Warning (275083): Bus "q20[5..0]" found using same base name as "q2", which might lead to a name conflict.
 Warning (275083): Bus "q21[5..0]" found using same base name as "q2", which might lead to a name conflict.
@@ -4891,9 +4899,6 @@ Info (12131): Elaborated megafunction instantiation "BUSMUX:inst13|lpm_mux:$0000
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mmc.tdf
     Info (12023): Found entity 1: mux_mmc
 Info (12128): Elaborating entity "mux_mmc" for hierarchy "BUSMUX:inst13|lpm_mux:$00000|mux_mmc:auto_generated"
-Info (12128): Elaborating entity "g21_determine_winner" for hierarchy "g21_determine_winner:winner_determine"
-Warning (10492): VHDL Process Statement warning at g21_determine_winner.vhd(33): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g21_determine_winner.vhd(36): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "game_over" for hierarchy "game_over:inst24"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst14"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst14"
@@ -4994,18 +4999,22 @@ Info (12133): Instantiated megafunction "show_totals:total_display|lpm_divide:Mo
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_15m.tdf
     Info (12023): Found entity 1: lpm_divide_15m
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 35 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2021 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2023 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 1881 logic cells
+    Info (21061): Implemented 1883 logic cells
     Info (21064): Implemented 69 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 311 warnings
-    Info: Peak virtual memory: 688 megabytes
-    Info: Processing ended: Tue Dec 05 14:11:53 2017
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 654 megabytes
+    Info: Processing ended: Wed Dec 06 16:49:51 2017
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -232,4 +232,4 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name SLD_FILE "C:/Users/kevin/Desktop/McGill Work/F2017/ECSE 323/DSD/Lab 5/g21_test_bed_auto_stripped.stp"
+set_global_assignment -name SLD_FILE "C:/Users/bitta/Documents/GitHub/DSD/Lab 5/g21_test_bed_auto_stripped.stp"
